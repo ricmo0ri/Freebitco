@@ -46,6 +46,8 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -53,9 +55,9 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.oabapp.etica.domain.model.CardType
 import com.oabapp.etica.domain.model.StudyCard
+import com.oabapp.etica.presentation.theme.Amarelo
 import com.oabapp.etica.presentation.theme.Verde
 import com.oabapp.etica.presentation.theme.Vermelho
-import com.oabapp.etica.presentation.theme.Amarelo
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -102,12 +104,16 @@ fun StudyScreen(
                     }
                 },
                 actions = {
-                    // Cronômetro discreto
+                    // Cronômetro discreto com descrição acessível
                     val minutos = uiState.tempoRestanteSegundos / 60
                     val segundos = uiState.tempoRestanteSegundos % 60
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
-                        modifier = Modifier.padding(end = 8.dp)
+                        modifier = Modifier
+                            .padding(end = 8.dp)
+                            .semantics {
+                                contentDescription = "Tempo restante: $minutos minutos e $segundos segundos"
+                            }
                     ) {
                         Icon(
                             Icons.Filled.AccessTime,
@@ -254,7 +260,10 @@ private fun FlashcardConteudo(
         // Nível 1: apenas botão "Virar card" bem grande
         Button(
             onClick = onVirar,
-            modifier = Modifier.fillMaxWidth().height(if (focusLevel == 1) 64.dp else 52.dp)
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(if (focusLevel == 1) 64.dp else 52.dp)
+                .semantics { contentDescription = "Virar card para ver a resposta" }
         ) {
             Text(
                 "Virar card",

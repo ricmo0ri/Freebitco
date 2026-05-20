@@ -6,10 +6,17 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.SideEffect
+import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalView
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
 import androidx.core.view.WindowCompat
+
+// Fornece o tamanho mínimo de toque via CompositionLocal (acessibilidade)
+val LocalMinTouchTarget = staticCompositionLocalOf<Dp> { 48.dp }
 
 private val EsquemaClaros = lightColorScheme(
     primary = Azul40,
@@ -60,9 +67,11 @@ fun OabEticaTheme(
         }
     }
 
-    MaterialTheme(
-        colorScheme = esquemaCores,
-        typography = Typography,
-        content = content
-    )
+    CompositionLocalProvider(LocalMinTouchTarget provides 48.dp) {
+        MaterialTheme(
+            colorScheme = esquemaCores,
+            typography = Typography,
+            content = content
+        )
+    }
 }

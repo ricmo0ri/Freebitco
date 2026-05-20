@@ -6,14 +6,18 @@ import com.oabapp.etica.domain.repository.StudySessionRepository
 import javax.inject.Inject
 
 /**
- * Inicia uma sessão de estudo e retorna os cards a serem estudados.
+ * Inicia uma sessão de estudo e retorna os cards selecionados.
  *
  * Lógica de seleção:
- * 1. Cards com revisão SRS pendente hoje (prioridade máxima)
- * 2. Cards novos do módulo selecionado (complemento até o limite da sessão)
+ * 1. Cards com revisão SRS pendente (prioridade máxima)
+ * 2. Cards novos do módulo selecionado (complemento até o limite)
+ *
+ * O limite de cards é ajustado pelo nível de foco TDAH:
+ *   Nível 1 (Difícil focar) → 1 card/min (menos sobrecarga cognitiva)
+ *   Nível 2 (Mais ou menos) → 2 cards/min (padrão)
+ *   Nível 3 (Focado)        → 3 cards/min (aproveitamento máximo)
  *
  * [moduleId] = 0 significa sessão mista (todos os módulos).
- * [limiteCards] calculado a partir da duração: ~2 cards/min.
  */
 class StartStudySessionUseCase @Inject constructor(
     private val cardRepo: StudyCardRepository,
@@ -29,21 +33,28 @@ class StartStudySessionUseCase @Inject constructor(
         durationMinutes: Int,
         moduleId: Int
     ): Resultado {
-        val limiteCards = (durationMinutes * 2).coerceAtLeast(5)
+        val cardsPorMinuto = when (focusLevel) {
+            1 -> 1   // Difícil focar — ritmo lento, sem sobrecarga
+            3 -> 3   // Focado — aproveita ao máximo
+            else -> 2 // Mais ou menos — padrão
+        }
+        val limiteCards = (durationMinutes * cardsPorMinuto).coerceAtLeast(5).coerceAtMost(30)
 
-        // Revisões SRS pendentes (todos os módulos, prioridade)
+        // 1. Revisões SRS pendentes (maior prioridade)
         val pendentes = cardRepo.obterCardsParaRevisao().take(limiteCards)
-
-        // Complementa com cards novos do módulo selecionado
         val idsJaIncluidos = pendentes.map { it.id }.toSet()
-        val novos = if (moduleId == 0) {
+
+        // 2. Cards novos para completar o limite
+        val fonteNovos = if (moduleId == 0) {
             listOf(1, 2, 3).flatMap { cardRepo.obterCardsPorModulo(it) }
         } else {
             cardRepo.obterCardsPorModulo(moduleId)
         }
+        val novos = fonteNovos
             .filter { it.id !in idsJaIncluidos }
             .take(limiteCards - pendentes.size)
 
+        // 3. Embaralha para evitar memorização por posição
         val cards = (pendentes + novos).shuffled()
 
         val sessionId = sessaoRepo.iniciarSessao(focusLevel, durationMinutes, moduleId)

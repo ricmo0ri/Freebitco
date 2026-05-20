@@ -6,8 +6,8 @@ import androidx.lifecycle.viewModelScope
 import com.oabapp.etica.domain.model.StudyCard
 import com.oabapp.etica.domain.usecase.FinishStudySessionUseCase
 import com.oabapp.etica.domain.usecase.GetDueCardsUseCase
-import com.oabapp.etica.domain.usecase.StartStudySessionUseCase
 import com.oabapp.etica.domain.usecase.SubmitCardAnswerUseCase
+import com.oabapp.etica.util.SessionStateHolder
 import com.oabapp.etica.util.SoftReminderManager
 import com.oabapp.etica.util.UserPreferences
 import com.oabapp.etica.util.VibrationManager
@@ -35,6 +35,7 @@ data class StudyUiState(
     val acertos: Int = 0,
     val tempoRestanteSegundos: Int = 0,
     val carregando: Boolean = true,
+    val semCards: Boolean = false,
     val focusLevel: Int = 2,
     val sessionId: Long = 0L
 )
@@ -45,10 +46,10 @@ class StudyViewModel @Inject constructor(
     private val submitAnswer: SubmitCardAnswerUseCase,
     private val finishSession: FinishStudySessionUseCase,
     private val getDueCards: GetDueCardsUseCase,
-    private val startSession: StartStudySessionUseCase,
     private val prefs: UserPreferences,
     private val vibration: VibrationManager,
-    private val reminderManager: SoftReminderManager
+    private val reminderManager: SoftReminderManager,
+    private val sessionHolder: SessionStateHolder
 ) : ViewModel() {
 
     private val sessionId: Long = savedStateHandle["sessionId"] ?: 0L
@@ -72,17 +73,25 @@ class StudyViewModel @Inject constructor(
     private fun carregarCards() {
         viewModelScope.launch {
             val duracao = prefs.sessionDurationFlow.first()
-            val limiteCards = calcularLimiteCards(focusLevel, duracao)
 
-            val cards = if (isReviewMode) {
-                getDueCards().take(limiteCards)
-            } else {
-                val resultado = startSession(
-                    focusLevel = focusLevel,
-                    durationMinutes = duracao,
-                    moduleId = 0
-                )
-                resultado.cards
+            val cards: List<StudyCard> = when {
+                // Modo revisão: busca apenas os pendentes SRS
+                isReviewMode -> {
+                    val limite = calcularLimiteCards(focusLevel, duracao)
+                    getDueCards().take(limite)
+                }
+                // Sessão normal: consome os cards pré-carregados pelo HomeViewModel
+                sessionHolder.temCards() -> sessionHolder.consumir()
+                // Fallback: se o holder estiver vazio (app reiniciado), busca pendentes
+                else -> {
+                    val limite = calcularLimiteCards(focusLevel, duracao)
+                    getDueCards().take(limite)
+                }
+            }
+
+            if (cards.isEmpty()) {
+                _uiState.update { it.copy(carregando = false, semCards = true) }
+                return@launch
             }
 
             _uiState.update {
@@ -98,11 +107,7 @@ class StudyViewModel @Inject constructor(
     }
 
     private fun calcularLimiteCards(focusLevel: Int, durationMinutes: Int): Int {
-        val cardsPorMinuto = when (focusLevel) {
-            1 -> 1
-            3 -> 3
-            else -> 2
-        }
+        val cardsPorMinuto = when (focusLevel) { 1 -> 1; 3 -> 3; else -> 2 }
         return (durationMinutes * cardsPorMinuto).coerceAtLeast(5).coerceAtMost(30)
     }
 
@@ -132,7 +137,6 @@ class StudyViewModel @Inject constructor(
             else -> estado.respostaEscolhida == cardAtual.correctOption
         }
 
-        // Feedback tátil + marca atividade para o lembrete suave
         if (acertou) vibration.feedbackAcerto() else vibration.feedbackErro()
         reminderManager.registrarAtividade()
 
@@ -152,9 +156,7 @@ class StudyViewModel @Inject constructor(
             _uiState.update {
                 it.copy(acertos = novosAcertos, indiceAtual = proximoIndice, sessaoEncerrada = true)
             }
-            viewModelScope.launch {
-                finishSession(estado.sessionId, estado.totalCards, novosAcertos)
-            }
+            viewModelScope.launch { finishSession(estado.sessionId, estado.totalCards, novosAcertos) }
         } else {
             _uiState.update {
                 it.copy(

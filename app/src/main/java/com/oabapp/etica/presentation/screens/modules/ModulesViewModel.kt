@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.oabapp.etica.domain.model.ProgressoModulo
 import com.oabapp.etica.domain.usecase.GetModuleProgressUseCase
 import com.oabapp.etica.domain.usecase.StartStudySessionUseCase
+import com.oabapp.etica.util.SessionStateHolder
 import com.oabapp.etica.util.UserPreferences
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -27,7 +28,8 @@ data class ModulesUiState(
 class ModulesViewModel @Inject constructor(
     private val getProgress: GetModuleProgressUseCase,
     private val startSession: StartStudySessionUseCase,
-    private val prefs: UserPreferences
+    private val prefs: UserPreferences,
+    private val sessionHolder: SessionStateHolder
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(ModulesUiState())
@@ -63,6 +65,7 @@ class ModulesViewModel @Inject constructor(
                 durationMinutes = sessionDuration.value,
                 moduleId = moduleId
             )
+            sessionHolder.salvar(resultado.cards)
             _uiState.update { it.copy(sessionId = resultado.sessionId) }
         }
     }

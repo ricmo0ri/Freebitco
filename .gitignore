@@ -1,0 +1,43 @@
+# Android / Gradle
+.gradle/
+.idea/
+*.iml
+local.properties
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Room schemas exportados (desnecessários no Git se usamos migrations explícitas)
+# Comente a linha abaixo se quiser versionar os schemas
+app/schemas/
+
+# Keystore e chaves (NUNCA versionar)
+*.jks
+*.keystore
+*.pfx
+release/
+
+# Logs e temporários
+*.log
+*.tmp
+*.bak
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# IntelliJ
+out/
+*.class
+
+# Gradle wrapper (manter gradle-wrapper.jar se necessário)
+!gradle/wrapper/gradle-wrapper.jar

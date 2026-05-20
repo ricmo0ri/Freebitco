@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Tema base para o sistema (janela) antes do Compose assumir o controle -->
-    <style name="Theme.OABEtica" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- Tema base da Activity — Compose assume o controle após o splash -->
+    <style name="Theme.OABEtica" parent="Theme.SplashScreen">
+        <!-- Cor de fundo do splash (igual ao primary do tema claro) -->
+        <item name="windowSplashScreenBackground">#1A4BAD</item>
+        <!-- Ícone central do splash — usa o drawable vetorial -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <!-- Após o splash, transita para o tema sem ActionBar -->
+        <item name="postSplashScreenTheme">@style/Theme.OABEtica.NoActionBar</item>
+    </style>
+
+    <style name="Theme.OABEtica.NoActionBar" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>

@@ -141,12 +141,35 @@ fun StudyScreen(
                     CircularProgressIndicator()
                 }
             }
-            uiState.cards.isEmpty() -> {
+            uiState.semCards || uiState.cards.isEmpty() -> {
                 Box(Modifier.fillMaxSize().padding(innerPadding), Alignment.Center) {
-                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text("Nenhum card disponível", style = MaterialTheme.typography.titleMedium)
-                        Spacer(Modifier.height(12.dp))
-                        Button(onClick = onVoltar) { Text("Voltar") }
+                    Column(
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.spacedBy(12.dp),
+                        modifier = Modifier.padding(horizontal = 32.dp)
+                    ) {
+                        Icon(
+                            Icons.Filled.Check,
+                            contentDescription = null,
+                            tint = MaterialTheme.colorScheme.primary,
+                            modifier = Modifier.size(64.dp)
+                        )
+                        Text(
+                            "Tudo em dia!",
+                            style = MaterialTheme.typography.headlineSmall,
+                            fontWeight = FontWeight.Bold,
+                            textAlign = TextAlign.Center
+                        )
+                        Text(
+                            "Não há cards para estudar agora.\nVolte amanhã para as revisões.",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.outline,
+                            textAlign = TextAlign.Center
+                        )
+                        Spacer(Modifier.height(8.dp))
+                        Button(onClick = onVoltar, modifier = Modifier.fillMaxWidth()) {
+                            Text("Voltar ao início")
+                        }
                     }
                 }
             }

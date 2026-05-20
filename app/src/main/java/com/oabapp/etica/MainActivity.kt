@@ -10,13 +10,11 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.datastore.preferences.core.booleanPreferencesKey
-import androidx.datastore.preferences.core.intPreferencesKey
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.oabapp.etica.presentation.navigation.OabNavGraph
 import com.oabapp.etica.presentation.theme.OabEticaTheme
 import com.oabapp.etica.util.UserPreferences
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -26,6 +24,8 @@ class MainActivity : ComponentActivity() {
     lateinit var userPreferences: UserPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Instala a splash screen antes de qualquer inflate da Activity
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 

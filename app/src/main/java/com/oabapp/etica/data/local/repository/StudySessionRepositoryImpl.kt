@@ -39,13 +39,10 @@ class StudySessionRepositoryImpl @Inject constructor(
         totalCards: Int,
         correctAnswers: Int
     ) {
-        // Atualiza os campos da sessão em aberto
-        val sessao = sessaoDao.obterUltimaSessao() ?: return
-        sessaoDao.inserir(
-            sessao.copy(
-                totalCards = totalCards,
-                correctAnswers = correctAnswers
-            )
+        // Busca a sessão pelo ID e atualiza com os totais finais
+        val sessao = sessaoDao.obterPorId(sessionId) ?: return
+        sessaoDao.atualizar(
+            sessao.copy(totalCards = totalCards, correctAnswers = correctAnswers)
         )
     }
 
@@ -77,20 +74,14 @@ class StudySessionRepositoryImpl @Inject constructor(
     // ─── Mapeadores ──────────────────────────────────────────────────────────
 
     private fun StudySessionEntity.toDomain() = StudySession(
-        id = id,
-        date = date,
-        durationMinutes = durationMinutes,
-        focusLevel = focusLevel,
-        totalCards = totalCards,
-        correctAnswers = correctAnswers,
-        moduleId = moduleId
+        id = id, date = date, durationMinutes = durationMinutes,
+        focusLevel = focusLevel, totalCards = totalCards,
+        correctAnswers = correctAnswers, moduleId = moduleId
     )
 
     private fun CardAnswerEntity.toDomain() = CardAnswer(
-        sessionId = sessionId,
-        cardId = cardId,
+        sessionId = sessionId, cardId = cardId,
         answeredCorrectly = answeredCorrectly,
-        difficultyFelt = difficultyFelt,
-        timestamp = timestamp
+        difficultyFelt = difficultyFelt, timestamp = timestamp
     )
 }

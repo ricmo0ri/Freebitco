@@ -97,6 +97,9 @@ dependencies {
     // DataStore — preferências do usuário
     implementation(libs.androidx.datastore.preferences)
 
+    // Splash Screen API nativa (Android 12+, com compat para versões anteriores)
+    implementation(libs.androidx.core.splashscreen)
+
     // Debug
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)

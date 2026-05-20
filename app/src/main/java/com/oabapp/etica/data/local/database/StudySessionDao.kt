@@ -3,6 +3,7 @@ package com.oabapp.etica.data.local.database
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
+import androidx.room.Update
 import com.oabapp.etica.data.local.entities.StudySessionEntity
 import kotlinx.coroutines.flow.Flow
 
@@ -11,6 +12,12 @@ interface StudySessionDao {
 
     @Insert
     suspend fun inserir(sessao: StudySessionEntity): Long
+
+    @Update
+    suspend fun atualizar(sessao: StudySessionEntity)
+
+    @Query("SELECT * FROM study_session WHERE id = :id")
+    suspend fun obterPorId(id: Long): StudySessionEntity?
 
     @Query("SELECT * FROM study_session ORDER BY date DESC LIMIT 1")
     suspend fun obterUltimaSessao(): StudySessionEntity?

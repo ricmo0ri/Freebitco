@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.oabapp.etica.domain.usecase.GetDueCardsUseCase
 import com.oabapp.etica.domain.usecase.StartStudySessionUseCase
+import com.oabapp.etica.util.SessionStateHolder
 import com.oabapp.etica.util.UserPreferences
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -16,10 +17,10 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 data class HomeUiState(
-    val focoSelecionado: Int = 2,           // 1=Difícil, 2=Médio, 3=Focado
+    val focoSelecionado: Int = 2,
     val revisoesPendentes: Int = 0,
     val carregando: Boolean = false,
-    val sessionId: Long? = null,            // preenchido ao iniciar sessão
+    val sessionId: Long? = null,
     val erro: String? = null
 )
 
@@ -27,7 +28,8 @@ data class HomeUiState(
 class HomeViewModel @Inject constructor(
     private val startSession: StartStudySessionUseCase,
     private val getDueCards: GetDueCardsUseCase,
-    private val prefs: UserPreferences
+    private val prefs: UserPreferences,
+    private val sessionHolder: SessionStateHolder
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(HomeUiState())
@@ -72,9 +74,11 @@ class HomeViewModel @Inject constructor(
                     durationMinutes = sessionDuration.value,
                     moduleId = moduleId
                 )
+                // Guarda os cards para o StudyViewModel consumir sem criar nova sessão
+                sessionHolder.salvar(resultado.cards)
                 _uiState.update { it.copy(carregando = false, sessionId = resultado.sessionId) }
             } catch (e: Exception) {
-                _uiState.update { it.copy(carregando = false, erro = "Erro ao iniciar sessão") }
+                _uiState.update { it.copy(carregando = false, erro = "Erro ao iniciar sessão. Tente novamente.") }
             }
         }
     }

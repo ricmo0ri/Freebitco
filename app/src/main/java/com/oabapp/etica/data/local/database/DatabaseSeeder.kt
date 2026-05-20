@@ -32,11 +32,17 @@ class DatabaseSeeder @Inject constructor(
                 db.studyCardDao()
                     .obterCardsPorModulo(Constants.MODULO_CODIGO_ETICA).map { it.id }
 
-        val estadosIniciais = idsCards.map { id ->
+        // Escalonamos as datas para que nem todos apareçam no mesmo dia.
+        // Primeiros 5 cards ficam disponíveis hoje; os demais vão aparecendo
+        // ao longo dos próximos dias, em grupos de 3, para evitar sobrecarga cognitiva.
+        val agora = System.currentTimeMillis()
+        val umDiaMs = 24 * 60 * 60 * 1000L
+
+        val estadosIniciais = idsCards.mapIndexed { idx, id ->
+            val diasAtraso = if (idx < 5) 0L else ((idx - 5) / 3 + 1).toLong()
             SrsStateEntity(
                 cardId = id,
-                // Escalonamos as datas iniciais para não sobrecarregar a primeira sessão
-                nextReviewDate = System.currentTimeMillis()
+                nextReviewDate = agora + diasAtraso * umDiaMs
             )
         }
         db.srsStateDao().inserirTodos(estadosIniciais)

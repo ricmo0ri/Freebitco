@@ -24,8 +24,8 @@ import javax.inject.Inject
 data class StudyUiState(
     val cards: List<StudyCard> = emptyList(),
     val indiceAtual: Int = 0,
-    val cardVirado: Boolean = false,        // flashcard: verso visível
-    val respostaEscolhida: Int? = null,     // múltipla escolha: índice escolhido
+    val cardVirado: Boolean = false,
+    val respostaEscolhida: Int? = null,
     val mostrarExplicacao: Boolean = false,
     val sessaoEncerrada: Boolean = false,
     val totalCards: Int = 0,
@@ -50,7 +50,9 @@ class StudyViewModel @Inject constructor(
     private val focusLevel: Int = savedStateHandle["focusLevel"] ?: 2
     private val isReviewMode: Boolean = savedStateHandle["isReviewMode"] ?: false
 
-    private val _uiState = MutableStateFlow(StudyUiState(focusLevel = focusLevel, sessionId = sessionId))
+    private val _uiState = MutableStateFlow(
+        StudyUiState(focusLevel = focusLevel, sessionId = sessionId)
+    )
     val uiState: StateFlow<StudyUiState> = _uiState.asStateFlow()
 
     val lowTextMode: StateFlow<Boolean> = prefs.lowTextModeFlow
@@ -67,13 +69,23 @@ class StudyViewModel @Inject constructor(
 
     private fun carregarCards() {
         viewModelScope.launch {
+            val duracao = prefs.sessionDurationFlow
+                .stateIn(viewModelScope, SharingStarted.Eagerly, 10).value
+            val limiteCards = (duracao * 2).coerceAtLeast(5)
+
             val cards = if (isReviewMode) {
-                getDueCards()
+                getDueCards().take(limiteCards)
             } else {
-                // Cards já carregados via StartStudySessionUseCase — buscamos os da sessão
-                getDueCards()  // fallback; em produção: buscar do sessionId
+                // Cards novos + revisões para a sessão já criada
+                val revisoes = getDueCards()
+                val novos = startSession(
+                    focusLevel = focusLevel,
+                    durationMinutes = duracao,
+                    moduleId = 0
+                ).cards
+                (revisoes + novos).distinctBy { it.id }.take(limiteCards)
             }
-            val duracao = sessionDuration.value
+
             _uiState.update {
                 it.copy(
                     cards = cards,
@@ -97,9 +109,7 @@ class StudyViewModel @Inject constructor(
         }
     }
 
-    fun virarCard() {
-        _uiState.update { it.copy(cardVirado = true) }
-    }
+    fun virarCard() = _uiState.update { it.copy(cardVirado = true) }
 
     fun escolherOpcao(indice: Int) {
         _uiState.update { it.copy(respostaEscolhida = indice, mostrarExplicacao = true) }
@@ -108,8 +118,9 @@ class StudyViewModel @Inject constructor(
     fun submeterResposta(difficultyFelt: Int) {
         val estado = _uiState.value
         val cardAtual = estado.cards.getOrNull(estado.indiceAtual) ?: return
-        val acertou = when {
-            cardAtual.type.name == "FLASHCARD" -> difficultyFelt <= 2
+
+        val acertou = when (cardAtual.type.name) {
+            "FLASHCARD" -> difficultyFelt <= 2
             else -> estado.respostaEscolhida == cardAtual.correctOption
         }
 
@@ -127,11 +138,7 @@ class StudyViewModel @Inject constructor(
 
         if (proximoIndice >= estado.cards.size) {
             _uiState.update {
-                it.copy(
-                    acertos = novosAcertos,
-                    indiceAtual = proximoIndice,
-                    sessaoEncerrada = true
-                )
+                it.copy(acertos = novosAcertos, indiceAtual = proximoIndice, sessaoEncerrada = true)
             }
             viewModelScope.launch {
                 finishSession(estado.sessionId, estado.totalCards, novosAcertos)
@@ -152,9 +159,7 @@ class StudyViewModel @Inject constructor(
     private fun encerrarSessao() {
         val estado = _uiState.value
         _uiState.update { it.copy(sessaoEncerrada = true) }
-        viewModelScope.launch {
-            finishSession(estado.sessionId, estado.totalCards, estado.acertos)
-        }
+        viewModelScope.launch { finishSession(estado.sessionId, estado.totalCards, estado.acertos) }
     }
 
     override fun onCleared() {

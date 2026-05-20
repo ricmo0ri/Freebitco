@@ -5,116 +5,190 @@ import com.oabapp.etica.util.SrsAlgorithm
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
+import java.util.concurrent.TimeUnit
 
 class SrsAlgorithmTest {
 
-    private fun estadoPadrao(cardId: Long = 1L) = SrsStateEntity(
+    private fun estadoPadrao(
+        cardId: Long = 1L,
+        interval: Int = 1,
+        easeFactor: Float = 2.5f,
+        repetitions: Int = 0
+    ) = SrsStateEntity(
         cardId = cardId,
-        interval = 1,
-        easeFactor = 2.5f,
-        repetitions = 0,
+        interval = interval,
+        easeFactor = easeFactor,
+        repetitions = repetitions,
         nextReviewDate = System.currentTimeMillis(),
         lastAnswerQuality = 0
     )
 
-    // ─── Primeiras repetições ─────────────────────────────────────────────────
+    // ─── Sequência de intervalos SM-2 ────────────────────────────────────────
 
     @Test
-    fun `primeira repeticao correta usa intervalo 1`() {
-        val estado = estadoPadrao()
-        val resultado = SrsAlgorithm.calcularProximaRevisao(estado, qualidade = 5)
-        assertEquals(1, resultado.interval)
-        assertEquals(1, resultado.repetitions)
+    fun `primeira repeticao correta retorna interval 1`() {
+        val r = SrsAlgorithm.calcularProximaRevisao(estadoPadrao(repetitions = 0), 5)
+        assertEquals(1, r.interval)
+        assertEquals(1, r.repetitions)
     }
 
     @Test
-    fun `segunda repeticao correta usa intervalo 6`() {
-        val estado = estadoPadrao().copy(repetitions = 1, interval = 1)
-        val resultado = SrsAlgorithm.calcularProximaRevisao(estado, qualidade = 5)
-        assertEquals(6, resultado.interval)
-        assertEquals(2, resultado.repetitions)
+    fun `segunda repeticao correta retorna interval 6`() {
+        val r = SrsAlgorithm.calcularProximaRevisao(estadoPadrao(interval = 1, repetitions = 1), 5)
+        assertEquals(6, r.interval)
+        assertEquals(2, r.repetitions)
     }
 
     @Test
-    fun `terceira repeticao usa intervalo vezes EF`() {
-        val estado = estadoPadrao().copy(repetitions = 2, interval = 6, easeFactor = 2.5f)
-        val resultado = SrsAlgorithm.calcularProximaRevisao(estado, qualidade = 5)
-        // 6 * 2.6 (EF atualizado com q=5) = ~15-16
-        assertTrue(resultado.interval in 14..17)
-        assertEquals(3, resultado.repetitions)
+    fun `terceira repeticao com EF 2_5 retorna interval proximo de 15`() {
+        val r = SrsAlgorithm.calcularProximaRevisao(
+            estadoPadrao(interval = 6, repetitions = 2, easeFactor = 2.5f), 5
+        )
+        // EF após q=5: 2.5 + (0.1 - 0*(0.08+0)) = 2.6 → interval = round(6 * 2.6) = 16
+        assertTrue("Esperado 14-17, obtido ${r.interval}", r.interval in 14..17)
+        assertEquals(3, r.repetitions)
+    }
+
+    @Test
+    fun `progressao completa de 5 repeticoes com qualidade 5`() {
+        var estado = estadoPadrao()
+        val intervalosEsperados = listOf(1, 6)
+        repeat(5) { i ->
+            estado = SrsAlgorithm.calcularProximaRevisao(estado, 5)
+            if (i < 2) assertEquals(intervalosEsperados[i], estado.interval)
+            else assertTrue("Intervalo deve crescer a cada rep", estado.interval >= 6)
+        }
+        assertEquals(5, estado.repetitions)
+        assertTrue(estado.interval > 6)
     }
 
     // ─── Reinício por erro ────────────────────────────────────────────────────
 
     @Test
-    fun `qualidade abaixo de 3 reinicia o intervalo`() {
-        val estado = estadoPadrao().copy(repetitions = 5, interval = 30)
-        val resultado = SrsAlgorithm.calcularProximaRevisao(estado, qualidade = 1)
-        assertEquals(1, resultado.interval)
-        assertEquals(0, resultado.repetitions)
+    fun `qualidade 0 reinicia interval e repetitions`() {
+        val r = SrsAlgorithm.calcularProximaRevisao(estadoPadrao(interval = 30, repetitions = 5), 0)
+        assertEquals(1, r.interval)
+        assertEquals(0, r.repetitions)
     }
 
     @Test
-    fun `qualidade 2 tambem reinicia`() {
-        val estado = estadoPadrao().copy(repetitions = 3, interval = 15)
-        val resultado = SrsAlgorithm.calcularProximaRevisao(estado, qualidade = 2)
-        assertEquals(1, resultado.interval)
-        assertEquals(0, resultado.repetitions)
-    }
-
-    // ─── Fator de facilidade ──────────────────────────────────────────────────
-
-    @Test
-    fun `easeFactor nao cai abaixo de 1_3`() {
-        var estado = estadoPadrao().copy(easeFactor = 1.3f)
-        // Responder errado várias vezes não desce abaixo de 1.3
-        repeat(10) {
-            estado = SrsAlgorithm.calcularProximaRevisao(estado, qualidade = 0)
-        }
-        assertTrue(estado.easeFactor >= 1.3f)
+    fun `qualidade 1 reinicia interval e repetitions`() {
+        val r = SrsAlgorithm.calcularProximaRevisao(estadoPadrao(interval = 15, repetitions = 3), 1)
+        assertEquals(1, r.interval)
+        assertEquals(0, r.repetitions)
     }
 
     @Test
-    fun `qualidade 5 aumenta easeFactor`() {
-        val estado = estadoPadrao().copy(easeFactor = 2.5f)
-        val resultado = SrsAlgorithm.calcularProximaRevisao(estado, qualidade = 5)
-        assertTrue(resultado.easeFactor > 2.5f)
+    fun `qualidade 2 reinicia interval e repetitions`() {
+        val r = SrsAlgorithm.calcularProximaRevisao(estadoPadrao(interval = 10, repetitions = 4), 2)
+        assertEquals(1, r.interval)
+        assertEquals(0, r.repetitions)
     }
 
     @Test
-    fun `qualidade 3 mantem easeFactor aproximadamente estavel`() {
-        val estado = estadoPadrao().copy(easeFactor = 2.5f)
-        val resultado = SrsAlgorithm.calcularProximaRevisao(estado, qualidade = 3)
-        // q=3: delta = 0.1 - 2*(0.08+2*0.02) = 0.1 - 0.24 = -0.14? Não, vamos verificar
-        // delta = 0.1 - (5-3)*(0.08 + (5-3)*0.02) = 0.1 - 2*(0.08+0.04) = 0.1 - 0.24 = -0.14
-        // EF = 2.5 - 0.14 = 2.36
-        assertTrue(resultado.easeFactor in 2.3f..2.5f)
+    fun `qualidade 3 avanca sem reiniciar`() {
+        val r = SrsAlgorithm.calcularProximaRevisao(estadoPadrao(interval = 1, repetitions = 0), 3)
+        assertEquals(1, r.repetitions)  // avançou
+        assertEquals(1, r.interval)     // rep=0 → interval=1
     }
 
-    // ─── Conversão dificuldade ────────────────────────────────────────────────
+    // ─── EaseFactor ──────────────────────────────────────────────────────────
 
     @Test
-    fun `dificuldade 1 mapeia para qualidade 5`() {
-        assertEquals(5, SrsAlgorithm.dificuldadeParaQualidade(1))
-    }
-
-    @Test
-    fun `dificuldade 2 mapeia para qualidade 3`() {
-        assertEquals(3, SrsAlgorithm.dificuldadeParaQualidade(2))
+    fun `easeFactor nao cai abaixo de 1_3 com qualidade 0 repetido`() {
+        var estado = estadoPadrao(easeFactor = 1.3f)
+        repeat(20) { estado = SrsAlgorithm.calcularProximaRevisao(estado, 0) }
+        assertTrue("EF=${estado.easeFactor} deve ser >= 1.3", estado.easeFactor >= 1.3f)
     }
 
     @Test
-    fun `dificuldade 3 mapeia para qualidade 1`() {
-        assertEquals(1, SrsAlgorithm.dificuldadeParaQualidade(3))
+    fun `qualidade 5 aumenta easeFactor em 0_1`() {
+        val estado = estadoPadrao(easeFactor = 2.5f)
+        val r = SrsAlgorithm.calcularProximaRevisao(estado, 5)
+        // delta = 0.1 - 0*(0.08+0) = 0.1 → EF = 2.6
+        assertEquals(2.6f, r.easeFactor, 0.01f)
+    }
+
+    @Test
+    fun `qualidade 3 reduz easeFactor ligeiramente`() {
+        val estado = estadoPadrao(easeFactor = 2.5f)
+        val r = SrsAlgorithm.calcularProximaRevisao(estado, 3)
+        // delta = 0.1 - 2*(0.08+2*0.02) = 0.1 - 0.24 = -0.14 → EF = 2.36
+        assertEquals(2.36f, r.easeFactor, 0.01f)
+    }
+
+    @Test
+    fun `qualidade 4 mantem easeFactor quase estavel`() {
+        val estado = estadoPadrao(easeFactor = 2.5f)
+        val r = SrsAlgorithm.calcularProximaRevisao(estado, 4)
+        // delta = 0.1 - 1*(0.08+0.02) = 0.0 → EF = 2.5
+        assertEquals(2.5f, r.easeFactor, 0.01f)
     }
 
     // ─── Próxima data de revisão ──────────────────────────────────────────────
 
     @Test
-    fun `proxima data e posterior a agora`() {
-        val estado = estadoPadrao()
+    fun `proxima data e exatamente intervalo dias a frente`() {
         val antes = System.currentTimeMillis()
-        val resultado = SrsAlgorithm.calcularProximaRevisao(estado, qualidade = 5)
-        assertTrue(resultado.nextReviewDate > antes)
+        val estado = estadoPadrao(interval = 1, repetitions = 0)
+        val r = SrsAlgorithm.calcularProximaRevisao(estado, 5)
+        val depois = System.currentTimeMillis()
+
+        val diferencaDias = TimeUnit.MILLISECONDS.toDays(r.nextReviewDate - antes)
+        val diferencaDiasMax = TimeUnit.MILLISECONDS.toDays(r.nextReviewDate - depois)
+
+        // interval=1 (rep=0 → permanece 1) → deve ser ~1 dia à frente
+        assertEquals(1L, diferencaDias)
+    }
+
+    @Test
+    fun `data de revisao apos erro e amanha`() {
+        val r = SrsAlgorithm.calcularProximaRevisao(
+            estadoPadrao(interval = 30, repetitions = 5), 0
+        )
+        val dias = TimeUnit.MILLISECONDS.toDays(r.nextReviewDate - System.currentTimeMillis())
+        assertEquals(1L, dias)
+    }
+
+    // ─── Conversão dificuldade → qualidade ───────────────────────────────────
+
+    @Test
+    fun `dificuldade 1 Facil mapeia para qualidade 5`() =
+        assertEquals(5, SrsAlgorithm.dificuldadeParaQualidade(1))
+
+    @Test
+    fun `dificuldade 2 Medio mapeia para qualidade 3`() =
+        assertEquals(3, SrsAlgorithm.dificuldadeParaQualidade(2))
+
+    @Test
+    fun `dificuldade 3 Dificil mapeia para qualidade 1`() =
+        assertEquals(1, SrsAlgorithm.dificuldadeParaQualidade(3))
+
+    @Test
+    fun `dificuldade invalida retorna qualidade 3 por padrao`() =
+        assertEquals(3, SrsAlgorithm.dificuldadeParaQualidade(99))
+
+    // ─── Invariantes do estado ────────────────────────────────────────────────
+
+    @Test
+    fun `lastAnswerQuality e gravado corretamente`() {
+        val r = SrsAlgorithm.calcularProximaRevisao(estadoPadrao(), 4)
+        assertEquals(4, r.lastAnswerQuality)
+    }
+
+    @Test
+    fun `cardId e preservado apos calculo`() {
+        val r = SrsAlgorithm.calcularProximaRevisao(estadoPadrao(cardId = 42L), 5)
+        assertEquals(42L, r.cardId)
+    }
+
+    @Test(expected = IllegalArgumentException::class)
+    fun `qualidade acima de 5 lanca excecao`() {
+        SrsAlgorithm.calcularProximaRevisao(estadoPadrao(), 6)
+    }
+
+    @Test(expected = IllegalArgumentException::class)
+    fun `qualidade abaixo de 0 lanca excecao`() {
+        SrsAlgorithm.calcularProximaRevisao(estadoPadrao(), -1)
     }
 }

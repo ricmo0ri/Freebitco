@@ -1,5 +1,6 @@
 // Questões de múltipla escolha (ex: provas e gabaritos da OAB),
-// organizadas por disciplina.
+// organizadas por disciplina/território, com o "Método da Questão"
+// (explicação, pegadinha, regra de memória) usado no feedback.
 var Questoes = (function () {
   var els = {};
   var disciplinaId = null;
@@ -78,6 +79,8 @@ var Questoes = (function () {
     evt.preventDefault();
     var enunciado = els.enunciadoInput.value.trim();
     var provaOrigem = els.provaInput.value.trim();
+    var tema = els.temaInput.value.trim();
+    var dificuldade = els.dificuldadeInput.value;
     var parsed = collectFormAlternativas();
 
     if (!enunciado || !disciplinaId || parsed.alternativas.length < 2 || parsed.correctIndex < 0) {
@@ -89,9 +92,15 @@ var Questoes = (function () {
       id: Storage.makeId(),
       disciplinaId: disciplinaId,
       provaOrigem: provaOrigem,
+      tema: tema,
+      dificuldade: dificuldade,
       enunciado: enunciado,
       alternativas: parsed.alternativas,
-      respostaCorreta: parsed.correctIndex
+      respostaCorreta: parsed.correctIndex,
+      explicacaoCorreta: els.explicacaoInput.value.trim(),
+      pegadinha: els.pegadinhaInput.value.trim(),
+      regraMemoria: els.regraInput.value.trim(),
+      casoAbsurdo: els.casoInput.value.trim()
     };
 
     DB.put('questoes', questao).then(function () {
@@ -99,6 +108,8 @@ var Questoes = (function () {
       resetForm();
       renderList();
       renderReview();
+      if (window.Chefoes) Chefoes.setDisciplina(disciplinaId);
+      if (window.Missao) Missao.renderTerritorios();
     });
   }
 
@@ -106,7 +117,20 @@ var Questoes = (function () {
     DB.remove('questoes', id).then(function () {
       renderList();
       renderReview();
+      if (window.Chefoes) Chefoes.setDisciplina(disciplinaId);
     });
+  }
+
+  function refs() {
+    return {
+      casoAbsurdo: els.caso,
+      origem: els.origem,
+      enunciado: els.enunciado,
+      altList: els.altList,
+      confirmBtn: els.confirmBtn,
+      feedback: els.feedback,
+      metodo: els.metodo
+    };
   }
 
   function renderReview() {
@@ -122,54 +146,23 @@ var Questoes = (function () {
 
       els.empty.hidden = true;
       els.card.hidden = false;
-      els.origem.textContent = currentQuestao.provaOrigem || 'Questão';
-      els.enunciado.textContent = currentQuestao.enunciado;
-
-      els.altList.innerHTML = '';
-      currentQuestao.alternativas.forEach(function (alt, i) {
-        var btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'alt-option';
-        btn.textContent = alt.letra + ') ' + alt.texto;
-        btn.addEventListener('click', function () { selectAlt(i, btn); });
-        els.altList.appendChild(btn);
-      });
-
-      els.confirmBtn.hidden = false;
-      els.confirmBtn.disabled = true;
-      els.feedback.hidden = true;
       els.proximaBtn.hidden = true;
-    });
-  }
 
-  function selectAlt(index, btnEl) {
-    selectedAltIndex = index;
-    Array.prototype.forEach.call(els.altList.querySelectorAll('.alt-option'), function (b) {
-      b.classList.remove('selected');
+      QuestaoCard.render(refs(), currentQuestao, function (i) {
+        selectedAltIndex = i;
+        els.confirmBtn.disabled = false;
+      });
     });
-    btnEl.classList.add('selected');
-    els.confirmBtn.disabled = false;
   }
 
   function confirmar() {
     if (selectedAltIndex === null || !currentQuestao) return;
     var acertou = selectedAltIndex === currentQuestao.respostaCorreta;
+    var xp = Missao.calcularXp(currentQuestao, acertou);
+    Missao.registrarResposta(currentQuestao, acertou, xp);
 
-    els.feedback.hidden = false;
-    els.feedback.textContent = acertou
-      ? 'Certo!'
-      : 'Errado. Resposta correta: ' + currentQuestao.alternativas[currentQuestao.respostaCorreta].letra;
-    els.feedback.className = 'questao-feedback ' + (acertou ? 'feedback-certo' : 'feedback-errado');
-    els.confirmBtn.hidden = true;
+    QuestaoCard.showFeedback(refs(), currentQuestao, selectedAltIndex);
     els.proximaBtn.hidden = false;
-
-    var respostas = Storage.read(Storage.KEYS.questaoRespostas, []);
-    respostas.push({ date: Storage.todayStr(), questaoId: currentQuestao.id, acertou: acertou });
-    Storage.write(Storage.KEYS.questaoRespostas, respostas);
-    Storage.recordActivity();
-
-    if (window.Progress) Progress.refresh();
-    if (window.App) App.refreshStreakBadge();
   }
 
   function renderList() {
@@ -181,7 +174,8 @@ var Questoes = (function () {
         var text = document.createElement('span');
         text.className = 'item-text';
         var preview = q.enunciado.length > 60 ? q.enunciado.slice(0, 60) + '…' : q.enunciado;
-        text.textContent = q.provaOrigem ? '[' + q.provaOrigem + '] ' + preview : preview;
+        var prefixo = q.tema ? '[' + q.tema + '] ' : (q.provaOrigem ? '[' + q.provaOrigem + '] ' : '');
+        text.textContent = prefixo + preview;
         var del = document.createElement('button');
         del.className = 'delete-btn';
         del.textContent = 'Remover';
@@ -202,17 +196,27 @@ var Questoes = (function () {
   function init() {
     els.empty = document.getElementById('questoes-empty');
     els.card = document.getElementById('questao-card');
+    els.caso = document.getElementById('questao-caso');
     els.origem = document.getElementById('questao-origem');
     els.enunciado = document.getElementById('questao-enunciado');
     els.altList = document.getElementById('questao-alternativas');
     els.confirmBtn = document.getElementById('questao-confirmar');
     els.feedback = document.getElementById('questao-feedback');
+    els.metodo = document.getElementById('questao-metodo');
     els.proximaBtn = document.getElementById('questao-proxima');
+
     els.form = document.getElementById('questao-form');
     els.provaInput = document.getElementById('questao-prova');
+    els.temaInput = document.getElementById('questao-tema');
+    els.dificuldadeInput = document.getElementById('questao-dificuldade');
     els.enunciadoInput = document.getElementById('questao-enunciado-input');
     els.altInputsContainer = document.getElementById('alternativas-inputs');
     els.addAltBtn = document.getElementById('add-alternativa-btn');
+    els.explicacaoInput = document.getElementById('questao-explicacao');
+    els.pegadinhaInput = document.getElementById('questao-pegadinha');
+    els.regraInput = document.getElementById('questao-regra');
+    els.casoInput = document.getElementById('questao-caso-input');
+
     els.list = document.getElementById('questoes-list');
     els.total = document.getElementById('questoes-total');
 

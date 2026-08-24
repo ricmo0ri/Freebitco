@@ -1,6 +1,6 @@
 // Timer de foco em sessões curtas, pensado para reduzir sobrecarga (SRD/TDAH).
 var Timer = (function () {
-  var DEFAULT_MINUTES = 15;
+  var DEFAULT_MINUTES = 25;
   var selectedMinutes = DEFAULT_MINUTES;
   var remainingSeconds = DEFAULT_MINUTES * 60;
   var intervalId = null;
@@ -131,5 +131,5 @@ var Timer = (function () {
     selectDuration(DEFAULT_MINUTES);
   }
 
-  return { init: init };
+  return { init: init, getSelectedMinutes: function () { return selectedMinutes; } };
 })();

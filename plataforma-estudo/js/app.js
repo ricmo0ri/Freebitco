@@ -27,14 +27,20 @@ var App = (function () {
       btn.addEventListener('click', function () { showView(btn.dataset.view); });
     });
 
+    Perfil.init();
     Timer.init();
     Flashcards.init();
     Questoes.init();
-    Disciplinas.init();
+    Chefoes.init();
+    Missao.init();
     Tasks.init();
     Progress.init();
 
-    showView('foco');
+    Disciplinas.init().then(function () {
+      if (window.Missao) Missao.renderTerritorios();
+    });
+
+    showView('missao');
     refreshStreakBadge();
   }
 

@@ -1,14 +1,47 @@
-// Disciplinas: agrupam flashcards e questões, e controlam a navegação
-// entre a lista de disciplinas e o conteúdo de uma disciplina selecionada.
+// Disciplinas (territórios): agrupam flashcards, questões e chefões, e
+// controlam a navegação entre a lista de territórios e o conteúdo de um
+// território selecionado.
 var Disciplinas = (function () {
+  var TERRITORIOS_PADRAO = [
+    { nome: 'Ética', territorio: 'Ordem dos Advogados', icone: '⚖️' },
+    { nome: 'Direito Constitucional', territorio: 'Reino da Constituição', icone: '🏛️' },
+    { nome: 'Direito Penal', territorio: 'Território Penal', icone: '⚔️' },
+    { nome: 'Processo Penal', territorio: 'Tribunal das Sombras', icone: '🕵️' },
+    { nome: 'Direito Civil', territorio: 'Reino das Relações Privadas', icone: '📜' },
+    { nome: 'Direito do Trabalho', territorio: 'Reino Trabalhista', icone: '💼' },
+    { nome: 'Direito Tributário', territorio: 'Cofre dos Tributos', icone: '💰' },
+    { nome: 'Direito Empresarial', territorio: 'República Empresarial', icone: '🏢' }
+  ];
+
   var els = {};
 
   function loadAll() {
     return DB.getAll('disciplinas');
   }
 
+  function seedTerritoriosPadrao() {
+    return loadAll().then(function (existentes) {
+      if (existentes.length > 0) return;
+      return Promise.all(TERRITORIOS_PADRAO.map(function (t) {
+        return DB.put('disciplinas', {
+          id: Storage.makeId(),
+          nome: t.nome,
+          territorio: t.territorio,
+          icone: t.icone,
+          createdAt: Storage.todayStr()
+        });
+      }));
+    });
+  }
+
   function create(nome) {
-    var disciplina = { id: Storage.makeId(), nome: nome, createdAt: Storage.todayStr() };
+    var disciplina = {
+      id: Storage.makeId(),
+      nome: nome,
+      territorio: nome,
+      icone: '📖',
+      createdAt: Storage.todayStr()
+    };
     return DB.put('disciplinas', disciplina).then(renderList);
   }
 
@@ -26,7 +59,7 @@ var Disciplinas = (function () {
       if (disciplinas.length === 0) {
         var empty = document.createElement('p');
         empty.className = 'empty-state';
-        empty.textContent = 'Nenhuma disciplina ainda. Adicione a primeira acima.';
+        empty.textContent = 'Nenhum território ainda. Adicione o primeiro acima.';
         els.list.appendChild(empty);
         return;
       }
@@ -36,7 +69,7 @@ var Disciplinas = (function () {
         var open = document.createElement('button');
         open.type = 'button';
         open.className = 'item-text disciplina-open-btn';
-        open.textContent = disciplina.nome;
+        open.textContent = (disciplina.icone || '📖') + ' ' + (disciplina.territorio || disciplina.nome);
         open.addEventListener('click', function () { openDisciplina(disciplina); });
 
         var del = document.createElement('button');
@@ -44,7 +77,7 @@ var Disciplinas = (function () {
         del.textContent = 'Remover';
         del.addEventListener('click', function (evt) {
           evt.stopPropagation();
-          if (confirm('Remover "' + disciplina.nome + '" e todo o conteúdo dela (flashcards e questões)?')) {
+          if (confirm('Remover "' + disciplina.nome + '" e todo o conteúdo dela (flashcards, questões e chefões)?')) {
             remove(disciplina);
           }
         });
@@ -59,9 +92,10 @@ var Disciplinas = (function () {
   function openDisciplina(disciplina) {
     els.listView.hidden = true;
     els.detailView.hidden = false;
-    els.detailTitle.textContent = disciplina.nome;
+    els.detailTitle.textContent = (disciplina.icone || '📖') + ' ' + (disciplina.territorio || disciplina.nome);
     Flashcards.setDisciplina(disciplina.id);
     Questoes.setDisciplina(disciplina.id);
+    Chefoes.setDisciplina(disciplina.id);
     showSubtab('flashcards');
   }
 
@@ -69,6 +103,7 @@ var Disciplinas = (function () {
     els.detailView.hidden = true;
     els.listView.hidden = false;
     renderList();
+    if (window.Missao) Missao.renderTerritorios();
   }
 
   function showSubtab(name) {
@@ -77,6 +112,7 @@ var Disciplinas = (function () {
     });
     els.subviewFlashcards.classList.toggle('active', name === 'flashcards');
     els.subviewQuestoes.classList.toggle('active', name === 'questoes');
+    els.subviewChefao.classList.toggle('active', name === 'chefao');
   }
 
   function init() {
@@ -90,6 +126,7 @@ var Disciplinas = (function () {
     els.subtabButtons = Array.prototype.slice.call(document.querySelectorAll('.subtab-btn'));
     els.subviewFlashcards = document.getElementById('subview-flashcards');
     els.subviewQuestoes = document.getElementById('subview-questoes');
+    els.subviewChefao = document.getElementById('subview-chefao');
 
     els.form.addEventListener('submit', function (evt) {
       evt.preventDefault();
@@ -104,7 +141,7 @@ var Disciplinas = (function () {
       btn.addEventListener('click', function () { showSubtab(btn.dataset.subtab); });
     });
 
-    renderList();
+    return seedTerritoriosPadrao().then(renderList);
   }
 
   return { init: init };

@@ -7,7 +7,9 @@ var Storage = (function () {
     cardReviews: 'estudoTdah.cardReviews',
     questaoRespostas: 'estudoTdah.questaoRespostas',
     activity: 'estudoTdah.activity',
-    settings: 'estudoTdah.settings'
+    settings: 'estudoTdah.settings',
+    perfilXp: 'estudoTdah.perfilXp',
+    chefoesDerrotados: 'estudoTdah.chefoesDerrotados'
   };
 
   function read(key, fallback) {

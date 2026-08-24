@@ -52,9 +52,12 @@ var Chefoes = (function () {
 
         var info = document.createElement('div');
         info.className = 'boss-info';
+        var medalha = document.createElement('span');
+        medalha.className = 'icon-medalha icon-medalha--boss';
+        medalha.textContent = '👹';
         var nome = document.createElement('span');
         nome.className = 'item-text';
-        nome.textContent = '👹 ' + (grupo.tema || 'Geral') + (estado.derrotado ? ' — 🏆 derrotado' : '');
+        nome.textContent = (grupo.tema || 'Geral') + (estado.derrotado ? ' — 🏆 derrotado' : '');
         var barra = document.createElement('div');
         barra.className = 'boss-bar';
         var fill = document.createElement('div');
@@ -66,6 +69,7 @@ var Chefoes = (function () {
         contagem.className = 'boss-contagem';
         contagem.textContent = Math.min(estado.corretas, NECESSARIO_PARA_VENCER) + '/' + NECESSARIO_PARA_VENCER;
 
+        info.appendChild(medalha);
         info.appendChild(nome);
         info.appendChild(barra);
         info.appendChild(contagem);

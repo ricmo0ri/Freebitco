@@ -94,8 +94,16 @@ var Missao = (function () {
         var btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'item-text territorio-pick-btn';
+
+        var medalha = document.createElement('span');
+        medalha.className = 'icon-medalha';
+        medalha.textContent = d.icone || '📖';
         var dot = temFraco ? ' 🔴' : (dominado ? ' 🟢' : '');
-        btn.textContent = (d.icone || '📖') + ' ' + (d.territorio || d.nome) + dot;
+        var label = document.createElement('span');
+        label.textContent = (d.territorio || d.nome) + dot;
+        btn.appendChild(medalha);
+        btn.appendChild(label);
+
         btn.addEventListener('click', function () { iniciarMissao(d.id, d.territorio || d.nome); });
         li.appendChild(btn);
         els.territoriosList.appendChild(li);

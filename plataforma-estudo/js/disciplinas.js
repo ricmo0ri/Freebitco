@@ -46,6 +46,17 @@ var Disciplinas = (function () {
     return DB.getAll('disciplinas');
   }
 
+  function preencherComMedalha(container, icone, texto) {
+    container.innerHTML = '';
+    var medalha = document.createElement('span');
+    medalha.className = 'icon-medalha';
+    medalha.textContent = icone || '📖';
+    var label = document.createElement('span');
+    label.textContent = texto;
+    container.appendChild(medalha);
+    container.appendChild(label);
+  }
+
   function disciplinaEstaVazia(disciplina) {
     return Promise.all([
       DB.getAllByIndex('flashcards', 'disciplinaId', disciplina.id),
@@ -149,7 +160,7 @@ var Disciplinas = (function () {
         var open = document.createElement('button');
         open.type = 'button';
         open.className = 'item-text disciplina-open-btn';
-        open.textContent = (disciplina.icone || '📖') + ' ' + (disciplina.territorio || disciplina.nome);
+        preencherComMedalha(open, disciplina.icone, disciplina.territorio || disciplina.nome);
         open.addEventListener('click', function () { openDisciplina(disciplina); });
 
         var del = document.createElement('button');
@@ -172,7 +183,7 @@ var Disciplinas = (function () {
   function openDisciplina(disciplina) {
     els.listView.hidden = true;
     els.detailView.hidden = false;
-    els.detailTitle.textContent = (disciplina.icone || '📖') + ' ' + (disciplina.territorio || disciplina.nome);
+    preencherComMedalha(els.detailTitle, disciplina.icone, disciplina.territorio || disciplina.nome);
     Flashcards.setDisciplina(disciplina.id);
     Questoes.setDisciplina(disciplina.id);
     Chefoes.setDisciplina(disciplina.id);

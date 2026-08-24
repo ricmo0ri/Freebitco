@@ -98,6 +98,7 @@ var Questoes = (function () {
       alternativas: parsed.alternativas,
       respostaCorreta: parsed.correctIndex,
       explicacaoCorreta: els.explicacaoInput.value.trim(),
+      explicacaoErradas: els.explicacaoErradasInput.value.trim(),
       pegadinha: els.pegadinhaInput.value.trim(),
       regraMemoria: els.regraInput.value.trim(),
       casoAbsurdo: els.casoInput.value.trim()
@@ -213,6 +214,7 @@ var Questoes = (function () {
     els.altInputsContainer = document.getElementById('alternativas-inputs');
     els.addAltBtn = document.getElementById('add-alternativa-btn');
     els.explicacaoInput = document.getElementById('questao-explicacao');
+    els.explicacaoErradasInput = document.getElementById('questao-explicacao-erradas');
     els.pegadinhaInput = document.getElementById('questao-pegadinha');
     els.regraInput = document.getElementById('questao-regra');
     els.casoInput = document.getElementById('questao-caso-input');

@@ -54,6 +54,7 @@ var QuestaoCard = (function () {
 
     var linhas = [];
     if (questao.explicacaoCorreta) linhas.push('✅ Por que a correta está certa: ' + questao.explicacaoCorreta);
+    if (questao.explicacaoErradas) linhas.push('❌ Por que as outras estão erradas: ' + questao.explicacaoErradas);
     if (!acertou && questao.pegadinha) linhas.push('🧨 A pegadinha: ' + questao.pegadinha);
     if (questao.regraMemoria) linhas.push('🧠 Para guardar: ' + questao.regraMemoria);
 

@@ -20,15 +20,25 @@ var Disciplinas = (function () {
     { nome: 'Direitos Humanos', territorio: 'Santuário dos Direitos Humanos', icone: '🕊️', seedVersion: 2 },
     { nome: 'Direito Ambiental', territorio: 'Floresta Ambiental', icone: '🌳', seedVersion: 2 },
     { nome: 'Direito do Consumidor', territorio: 'Mercado do Consumidor', icone: '🛒', seedVersion: 2 },
-    { nome: 'Estatuto da Criança e do Adolescente', territorio: 'Vila da Infância', icone: '🧒', seedVersion: 2 },
-    { nome: 'Estatuto do Idoso', territorio: 'Conselho dos Anciãos', icone: '👴', seedVersion: 2 },
+    { nome: 'Direito da Criança e do Adolescente', territorio: 'Vila da Infância', icone: '🧒', seedVersion: 2 },
     { nome: 'Direito Internacional', territorio: 'Fronteiras do Mundo', icone: '🌍', seedVersion: 2 },
     { nome: 'Filosofia do Direito', territorio: 'Torre da Filosofia', icone: '🦉', seedVersion: 2 },
     { nome: 'Direito Eleitoral', territorio: 'Arena Eleitoral', icone: '🗳️', seedVersion: 2 },
     { nome: 'Direito Financeiro', territorio: 'Tesouraria do Estado', icone: '🏦', seedVersion: 2 },
-    { nome: 'Direito Agrário', territorio: 'Campos Agrários', icone: '🌾', seedVersion: 2 }
+    { nome: 'Direito Previdenciário', territorio: 'Reino da Previdência', icone: '👴', seedVersion: 3 }
   ];
-  var SEED_VERSION_ATUAL = 2;
+  var SEED_VERSION_ATUAL = 3;
+
+  // Territórios que entraram por engano numa leva anterior e não fazem
+  // parte do quadro padrão da OAB — removidos automaticamente se ainda
+  // estiverem vazios (sem flashcards nem questões do usuário).
+  var TERRITORIOS_REMOVER = ['Estatuto do Idoso', 'Direito Agrário'];
+
+  // Renomeações de territórios que já existem, preservando o id (e portanto
+  // o conteúdo já cadastrado neles).
+  var TERRITORIOS_RENOMEAR = {
+    'Estatuto da Criança e do Adolescente': 'Direito da Criança e do Adolescente'
+  };
 
   var els = {};
 
@@ -36,34 +46,72 @@ var Disciplinas = (function () {
     return DB.getAll('disciplinas');
   }
 
+  function disciplinaEstaVazia(disciplina) {
+    return Promise.all([
+      DB.getAllByIndex('flashcards', 'disciplinaId', disciplina.id),
+      DB.getAllByIndex('questoes', 'disciplinaId', disciplina.id)
+    ]).then(function (resultados) {
+      return resultados[0].length === 0 && resultados[1].length === 0;
+    });
+  }
+
+  function renomearExistentes(existentes) {
+    var porNome = {};
+    existentes.forEach(function (d) { porNome[d.nome] = d; });
+
+    var renomeacoes = Object.keys(TERRITORIOS_RENOMEAR).filter(function (nomeAntigo) {
+      return porNome[nomeAntigo] && !porNome[TERRITORIOS_RENOMEAR[nomeAntigo]];
+    });
+
+    return Promise.all(renomeacoes.map(function (nomeAntigo) {
+      var disciplina = porNome[nomeAntigo];
+      disciplina.nome = TERRITORIOS_RENOMEAR[nomeAntigo];
+      return DB.put('disciplinas', disciplina);
+    }));
+  }
+
+  function removerIndevidos(existentes) {
+    var alvos = existentes.filter(function (d) { return TERRITORIOS_REMOVER.indexOf(d.nome) !== -1; });
+    return Promise.all(alvos.map(function (disciplina) {
+      return disciplinaEstaVazia(disciplina).then(function (vazia) {
+        if (vazia) return DB.remove('disciplinas', disciplina.id);
+      });
+    }));
+  }
+
   function seedTerritoriosPadrao() {
     var versaoAplicada = Storage.read(Storage.KEYS.territoriosSeedVersion, 0);
     if (versaoAplicada >= SEED_VERSION_ATUAL) return Promise.resolve();
 
-    return loadAll().then(function (existentes) {
-      var nomesExistentes = {};
-      existentes.forEach(function (d) { nomesExistentes[d.nome] = true; });
+    return loadAll()
+      .then(function (existentes) {
+        return renomearExistentes(existentes).then(function () { return removerIndevidos(existentes); });
+      })
+      .then(loadAll)
+      .then(function (existentes) {
+        var nomesExistentes = {};
+        existentes.forEach(function (d) { nomesExistentes[d.nome] = true; });
 
-      var faltando = TERRITORIOS_PADRAO.filter(function (t) {
-        return t.seedVersion > versaoAplicada && !nomesExistentes[t.nome];
+        var faltando = TERRITORIOS_PADRAO.filter(function (t) {
+          return t.seedVersion > versaoAplicada && !nomesExistentes[t.nome];
+        });
+
+        var salvar = faltando.length
+          ? Promise.all(faltando.map(function (t) {
+              return DB.put('disciplinas', {
+                id: Storage.makeId(),
+                nome: t.nome,
+                territorio: t.territorio,
+                icone: t.icone,
+                createdAt: Storage.todayStr()
+              });
+            }))
+          : Promise.resolve();
+
+        return salvar.then(function () {
+          Storage.write(Storage.KEYS.territoriosSeedVersion, SEED_VERSION_ATUAL);
+        });
       });
-
-      var salvar = faltando.length
-        ? Promise.all(faltando.map(function (t) {
-            return DB.put('disciplinas', {
-              id: Storage.makeId(),
-              nome: t.nome,
-              territorio: t.territorio,
-              icone: t.icone,
-              createdAt: Storage.todayStr()
-            });
-          }))
-        : Promise.resolve();
-
-      return salvar.then(function () {
-        Storage.write(Storage.KEYS.territoriosSeedVersion, SEED_VERSION_ATUAL);
-      });
-    });
   }
 
   function create(nome) {

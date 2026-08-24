@@ -33,6 +33,7 @@ var App = (function () {
     Questoes.init();
     Chefoes.init();
     Doutrina.init();
+    ImportarProva.init();
     Missao.init();
     Tasks.init();
     Progress.init();

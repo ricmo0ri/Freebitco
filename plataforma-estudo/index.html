@@ -106,6 +106,38 @@
         </form>
 
         <ul id="disciplinas-list" class="simple-list"></ul>
+
+        <button id="abrir-importar-prova-btn" class="btn btn-ghost">📥 Importar prova em PDF</button>
+      </div>
+
+      <div id="importar-prova-view" hidden>
+        <button id="importar-prova-voltar" class="btn btn-ghost back-btn">&larr; Territórios</button>
+        <h2 class="view-title">📥 Importar prova em PDF</h2>
+        <p class="hint-text">
+          Funciona com PDFs de prova com texto selecionável (não escaneados). A extração é automática, mas
+          a classificação por disciplina não é — você escolhe o território de cada questão na revisão abaixo.
+        </p>
+
+        <form id="importar-form" class="import-panel">
+          <label for="importar-prova-input">PDF da prova</label>
+          <input id="importar-prova-input" type="file" accept="application/pdf">
+          <label for="importar-gabarito-input">PDF do gabarito</label>
+          <input id="importar-gabarito-input" type="file" accept="application/pdf">
+          <label for="importar-tipo-input">Tipo/cor da prova (detectado automaticamente, pode ajustar)</label>
+          <input id="importar-tipo-input" type="text" placeholder="1">
+          <button type="button" id="importar-processar-btn" class="btn btn-primary">Processar PDFs</button>
+        </form>
+
+        <p id="importar-status" class="hint-text"></p>
+
+        <div id="importar-revisao" class="import-panel" hidden>
+          <label for="importar-prova-origem">Prova de origem (aplicada a todas)</label>
+          <input id="importar-prova-origem" type="text">
+          <h3>Revise antes de importar</h3>
+          <p class="hint-text">Desmarque o que não quiser importar, e escolha o território de cada questão.</p>
+          <ul id="importar-revisao-lista" class="simple-list import-lista"></ul>
+          <button id="importar-confirmar-btn" class="btn btn-primary">Importar questões selecionadas</button>
+        </div>
       </div>
 
       <div id="disciplina-detail-view" hidden>
@@ -340,6 +372,8 @@
 <script src="js/questoes.js"></script>
 <script src="js/chefoes.js"></script>
 <script src="js/doutrina.js"></script>
+<script src="js/vendor/pdf.min.js"></script>
+<script src="js/importarProva.js"></script>
 <script src="js/disciplinas.js"></script>
 <script src="js/tasks.js"></script>
 <script src="js/progress.js"></script>

@@ -610,6 +610,71 @@ main { flex: 1; padding: 0 20px; }
   font-size: 0.85rem;
 }
 
+/* Importar prova em PDF */
+.import-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.import-panel label {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin-top: 6px;
+}
+.import-panel input[type="text"],
+.import-panel input[type="file"] {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: var(--surface-2);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+.import-panel h3 {
+  font-family: var(--font-display);
+  margin: 12px 0 0;
+}
+.import-lista {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+.import-lista li {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+}
+.import-numero {
+  font-family: var(--font-mono);
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+}
+.import-preview {
+  flex: 1 1 100%;
+  font-size: 0.9rem;
+}
+.import-correta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--gold);
+}
+.import-disciplina {
+  flex: 1 1 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 8px;
+  background: var(--surface-2);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 0.85rem;
+}
+
 /* Chefões */
 .boss-item {
   flex-direction: column;

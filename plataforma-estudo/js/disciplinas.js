@@ -60,9 +60,10 @@ var Disciplinas = (function () {
   function disciplinaEstaVazia(disciplina) {
     return Promise.all([
       DB.getAllByIndex('flashcards', 'disciplinaId', disciplina.id),
-      DB.getAllByIndex('questoes', 'disciplinaId', disciplina.id)
+      DB.getAllByIndex('questoes', 'disciplinaId', disciplina.id),
+      DB.getAllByIndex('doutrinas', 'disciplinaId', disciplina.id)
     ]).then(function (resultados) {
-      return resultados[0].length === 0 && resultados[1].length === 0;
+      return resultados[0].length === 0 && resultados[1].length === 0 && resultados[2].length === 0;
     });
   }
 
@@ -140,7 +141,8 @@ var Disciplinas = (function () {
     return Promise.all([
       DB.remove('disciplinas', disciplina.id),
       DB.removeAllByIndex('flashcards', 'disciplinaId', disciplina.id),
-      DB.removeAllByIndex('questoes', 'disciplinaId', disciplina.id)
+      DB.removeAllByIndex('questoes', 'disciplinaId', disciplina.id),
+      DB.removeAllByIndex('doutrinas', 'disciplinaId', disciplina.id)
     ]).then(renderList);
   }
 
@@ -168,7 +170,7 @@ var Disciplinas = (function () {
         del.textContent = 'Remover';
         del.addEventListener('click', function (evt) {
           evt.stopPropagation();
-          if (confirm('Remover "' + disciplina.nome + '" e todo o conteúdo dela (flashcards, questões e chefões)?')) {
+          if (confirm('Remover "' + disciplina.nome + '" e todo o conteúdo dela (flashcards, questões, chefões e doutrina)?')) {
             remove(disciplina);
           }
         });
@@ -187,6 +189,7 @@ var Disciplinas = (function () {
     Flashcards.setDisciplina(disciplina.id);
     Questoes.setDisciplina(disciplina.id);
     Chefoes.setDisciplina(disciplina.id);
+    Doutrina.setDisciplina(disciplina.id);
     showSubtab('flashcards');
   }
 
@@ -204,6 +207,7 @@ var Disciplinas = (function () {
     els.subviewFlashcards.classList.toggle('active', name === 'flashcards');
     els.subviewQuestoes.classList.toggle('active', name === 'questoes');
     els.subviewChefao.classList.toggle('active', name === 'chefao');
+    els.subviewDoutrina.classList.toggle('active', name === 'doutrina');
   }
 
   function init() {
@@ -218,6 +222,7 @@ var Disciplinas = (function () {
     els.subviewFlashcards = document.getElementById('subview-flashcards');
     els.subviewQuestoes = document.getElementById('subview-questoes');
     els.subviewChefao = document.getElementById('subview-chefao');
+    els.subviewDoutrina = document.getElementById('subview-doutrina');
 
     els.form.addEventListener('submit', function (evt) {
       evt.preventDefault();

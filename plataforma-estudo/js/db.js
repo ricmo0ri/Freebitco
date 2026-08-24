@@ -3,7 +3,7 @@
 // estruturado que o localStorage, capaz de indexar por disciplina.
 var DB = (function () {
   var DB_NAME = 'estudoTdahDB';
-  var DB_VERSION = 1;
+  var DB_VERSION = 2;
   var dbPromise = null;
 
   function open() {
@@ -22,6 +22,10 @@ var DB = (function () {
         if (!db.objectStoreNames.contains('questoes')) {
           var questoesStore = db.createObjectStore('questoes', { keyPath: 'id' });
           questoesStore.createIndex('disciplinaId', 'disciplinaId');
+        }
+        if (!db.objectStoreNames.contains('doutrinas')) {
+          var doutrinasStore = db.createObjectStore('doutrinas', { keyPath: 'id' });
+          doutrinasStore.createIndex('disciplinaId', 'disciplinaId');
         }
       };
       req.onsuccess = function (evt) { resolve(evt.target.result); };

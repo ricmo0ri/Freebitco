@@ -116,6 +116,7 @@
           <button class="subtab-btn active" data-subtab="flashcards">Flashcards</button>
           <button class="subtab-btn" data-subtab="questoes">Questões</button>
           <button class="subtab-btn" data-subtab="chefao">👹 Chefão</button>
+          <button class="subtab-btn" data-subtab="doutrina">📖 Doutrina</button>
         </div>
 
         <!-- Subview: Flashcards -->
@@ -230,6 +231,26 @@
             </div>
           </div>
         </div>
+
+        <!-- Subview: Doutrina -->
+        <div id="subview-doutrina" class="subview">
+          <p id="doutrina-empty" class="empty-state">Nenhuma doutrina cadastrada ainda nesta disciplina.</p>
+          <div id="doutrina-list"></div>
+
+          <details class="add-card-form">
+            <summary>Adicionar doutrina</summary>
+            <form id="doutrina-form">
+              <label for="doutrina-titulo">Título</label>
+              <input id="doutrina-titulo" type="text" placeholder="Ex: Controle de Constitucionalidade" required>
+              <label for="doutrina-tema">Tema/assunto (opcional)</label>
+              <input id="doutrina-tema" type="text" placeholder="Ex: Constitucional">
+              <label for="doutrina-conteudo">Resumo</label>
+              <textarea id="doutrina-conteudo" rows="6" required></textarea>
+              <p class="hint-text">Resumos curtos e diretos funcionam melhor do que textos longos.</p>
+              <button type="submit" class="btn btn-primary">Salvar doutrina</button>
+            </form>
+          </details>
+        </div>
       </div>
 
     </section>
@@ -312,6 +333,7 @@
 <script src="js/flashcards.js"></script>
 <script src="js/questoes.js"></script>
 <script src="js/chefoes.js"></script>
+<script src="js/doutrina.js"></script>
 <script src="js/disciplinas.js"></script>
 <script src="js/tasks.js"></script>
 <script src="js/progress.js"></script>

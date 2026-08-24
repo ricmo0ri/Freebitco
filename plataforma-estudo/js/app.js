@@ -32,6 +32,7 @@ var App = (function () {
     Flashcards.init();
     Questoes.init();
     Chefoes.init();
+    Doutrina.init();
     Missao.init();
     Tasks.init();
     Progress.init();

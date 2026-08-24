@@ -37,14 +37,19 @@ var QuestaoCard = (function () {
     refs.metodo.innerHTML = '';
   }
 
-  function showFeedback(refs, questao, selectedIndex) {
+  function showFeedback(refs, questao, selectedIndex, critico) {
     var acertou = selectedIndex === questao.respostaCorreta;
 
     refs.feedback.hidden = false;
-    refs.feedback.textContent = acertou
-      ? '✅ Certo!'
-      : '❌ VOCÊ CAIU NA ARMADILHA DA FGV. Resposta correta: ' + questao.alternativas[questao.respostaCorreta].letra;
-    refs.feedback.className = 'questao-feedback ' + (acertou ? 'feedback-certo' : 'feedback-errado');
+    if (acertou && critico) {
+      refs.feedback.textContent = '🎯 GOLPE CRÍTICO! XP em dobro!';
+      refs.feedback.className = 'questao-feedback feedback-critico';
+    } else {
+      refs.feedback.textContent = acertou
+        ? '✅ Certo!'
+        : '❌ VOCÊ CAIU NA ARMADILHA DA FGV. Resposta correta: ' + questao.alternativas[questao.respostaCorreta].letra;
+      refs.feedback.className = 'questao-feedback ' + (acertou ? 'feedback-certo' : 'feedback-errado');
+    }
     refs.confirmBtn.hidden = true;
 
     var linhas = [];

@@ -158,10 +158,10 @@ var Questoes = (function () {
   function confirmar() {
     if (selectedAltIndex === null || !currentQuestao) return;
     var acertou = selectedAltIndex === currentQuestao.respostaCorreta;
-    var xp = Missao.calcularXp(currentQuestao, acertou);
-    Missao.registrarResposta(currentQuestao, acertou, xp);
+    var resultado = Missao.calcularXp(currentQuestao, acertou);
+    Missao.registrarResposta(currentQuestao, acertou, resultado);
 
-    QuestaoCard.showFeedback(refs(), currentQuestao, selectedAltIndex);
+    QuestaoCard.showFeedback(refs(), currentQuestao, selectedAltIndex, resultado.critico);
     els.proximaBtn.hidden = false;
   }
 

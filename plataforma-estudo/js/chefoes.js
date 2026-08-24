@@ -129,8 +129,8 @@ var Chefoes = (function () {
     if (!batalhaAtual || batalhaAtual.selecionado === null) return;
     var questao = batalhaAtual.questaoAtual;
     var acertou = batalhaAtual.selecionado === questao.respostaCorreta;
-    var xp = Missao.calcularXp(questao, acertou);
-    Missao.registrarResposta(questao, acertou, xp);
+    var resultado = Missao.calcularXp(questao, acertou);
+    Missao.registrarResposta(questao, acertou, resultado);
 
     var progresso = getProgresso();
     var estado = progresso[batalhaAtual.bossKey] || { corretas: 0, derrotado: false };
@@ -144,7 +144,7 @@ var Chefoes = (function () {
     progresso[batalhaAtual.bossKey] = estado;
     salvarProgresso(progresso);
 
-    QuestaoCard.showFeedback(refsBatalha(), questao, batalhaAtual.selecionado);
+    QuestaoCard.showFeedback(refsBatalha(), questao, batalhaAtual.selecionado, resultado.critico);
     if (estado.derrotado && acertou && estado.corretas === NECESSARIO_PARA_VENCER) {
       els.feedback.textContent += ' 🏆 CHEFÃO DERROTADO!';
     }

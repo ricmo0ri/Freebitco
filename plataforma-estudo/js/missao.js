@@ -49,13 +49,16 @@ var Missao = (function () {
     return respostas.some(function (r) { return r.questaoId === questaoId && !r.acertou; });
   }
 
+  var CHANCE_GOLPE_CRITICO = 0.15; // recompensa variável: XP incerto motiva mais que XP fixo
+
   function calcularXp(questao, acertou) {
-    if (!acertou) return 0;
-    if (jaErrouAntes(questao.id)) return 25;
-    return questao.dificuldade === 'dificil' ? 20 : 10;
+    if (!acertou) return { xp: 0, critico: false };
+    var base = jaErrouAntes(questao.id) ? 25 : (questao.dificuldade === 'dificil' ? 20 : 10);
+    var critico = Math.random() < CHANCE_GOLPE_CRITICO;
+    return { xp: critico ? base * 2 : base, critico: critico };
   }
 
-  function registrarResposta(questao, acertou, xp) {
+  function registrarResposta(questao, acertou, resultado) {
     var respostas = Storage.read(Storage.KEYS.questaoRespostas, []);
     respostas.push({
       date: Storage.todayStr(),
@@ -64,11 +67,12 @@ var Missao = (function () {
       tema: questao.tema || 'Geral',
       dificuldade: questao.dificuldade || 'media',
       acertou: acertou,
-      xp: xp
+      xp: resultado.xp,
+      critico: resultado.critico
     });
     Storage.write(Storage.KEYS.questaoRespostas, respostas);
     Storage.recordActivity();
-    if (xp > 0) Perfil.addXp(xp);
+    if (resultado.xp > 0) Perfil.addXp(resultado.xp);
     if (window.Progress) Progress.refresh();
     if (window.App) App.refreshStreakBadge();
   }
@@ -185,11 +189,11 @@ var Missao = (function () {
   function confirmarQuestaoAtual(questao) {
     if (sessao.selecionado === null) return;
     var acertou = sessao.selecionado === questao.respostaCorreta;
-    var xp = calcularXp(questao, acertou);
+    var resultado = calcularXp(questao, acertou);
 
-    registrarResposta(questao, acertou, xp);
+    registrarResposta(questao, acertou, resultado);
 
-    sessao.xpTotal += xp;
+    sessao.xpTotal += resultado.xp;
     sessao.respondidas += 1;
     sessao.combo = acertou ? sessao.combo + 1 : 0;
     if (acertou) sessao.acertos += 1;
@@ -198,7 +202,7 @@ var Missao = (function () {
       sessao.pegadinhaAprendida = questao.pegadinha;
     }
 
-    QuestaoCard.showFeedback(refsMissao(), questao, sessao.selecionado);
+    QuestaoCard.showFeedback(refsMissao(), questao, sessao.selecionado, resultado.critico);
     els.proximaBtn.hidden = false;
     updateComboBadge();
   }

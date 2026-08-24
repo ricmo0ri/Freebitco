@@ -477,6 +477,11 @@ main { flex: 1; padding: 0 20px; }
 }
 .feedback-certo { color: var(--forest); }
 .feedback-errado { color: var(--oxblood); }
+.feedback-critico {
+  color: var(--gold);
+  font-size: 1.05rem;
+  text-shadow: 0 0 12px var(--gold-wash);
+}
 
 .caso-absurdo {
   font-family: var(--font-display);
@@ -781,3 +786,26 @@ main { flex: 1; padding: 0 20px; }
   cursor: pointer;
 }
 .tab-btn.active { color: var(--gold); }
+
+/* Preferências */
+.prefs-row { margin-bottom: 20px; }
+
+/* Modo baixo estímulo: desatura os acentos e corta animações/transições,
+   para dias de sobrecarga sensorial. */
+body.low-stim {
+  --gold: #8a8a7a;
+  --gold-bright: #a3a394;
+  --gold-wash: rgba(138, 138, 122, 0.14);
+  --oxblood: #7a6f6a;
+  --oxblood-bright: #8f8580;
+  --oxblood-wash: rgba(122, 111, 106, 0.12);
+  --forest: #6d7a70;
+  --amber: #8a7d68;
+}
+body.low-stim * {
+  transition: none !important;
+  animation: none !important;
+}
+body.low-stim .btn:active {
+  transform: none !important;
+}

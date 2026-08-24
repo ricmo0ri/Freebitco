@@ -36,6 +36,7 @@ var App = (function () {
     Missao.init();
     Tasks.init();
     Progress.init();
+    Preferencias.init();
 
     Disciplinas.init().then(function () {
       if (window.Missao) Missao.renderTerritorios();

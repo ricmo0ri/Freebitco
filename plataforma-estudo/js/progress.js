@@ -7,6 +7,7 @@ var Progress = (function () {
     var sessions = Storage.read(Storage.KEYS.sessions, []);
     var tasks = Storage.read(Storage.KEYS.tasks, []);
     var reviews = Storage.read(Storage.KEYS.cardReviews, []);
+    var questaoRespostas = Storage.read(Storage.KEYS.questaoRespostas, []);
 
     var totalMinutes = sessions.reduce(function (sum, s) { return sum + s.minutes; }, 0);
     var completedTasks = tasks.filter(function (t) { return t.done; }).length;
@@ -15,6 +16,7 @@ var Progress = (function () {
     els.minutes.textContent = String(totalMinutes);
     els.tasks.textContent = String(completedTasks);
     els.cards.textContent = String(reviews.length);
+    els.questoes.textContent = String(questaoRespostas.length);
 
     var streaks = Storage.getStreaks();
     els.streakCurrent.textContent = String(streaks.current);
@@ -52,6 +54,7 @@ var Progress = (function () {
     els.minutes = document.getElementById('stat-minutes');
     els.tasks = document.getElementById('stat-tasks');
     els.cards = document.getElementById('stat-cards');
+    els.questoes = document.getElementById('stat-questoes');
     els.streakCurrent = document.getElementById('streak-current');
     els.streakBest = document.getElementById('streak-best');
     els.chart = document.getElementById('week-chart');

@@ -29,6 +29,8 @@ var App = (function () {
 
     Timer.init();
     Flashcards.init();
+    Questoes.init();
+    Disciplinas.init();
     Tasks.init();
     Progress.init();
 

@@ -5,6 +5,7 @@ var Storage = (function () {
     cards: 'estudoTdah.cards',
     sessions: 'estudoTdah.sessions',
     cardReviews: 'estudoTdah.cardReviews',
+    questaoRespostas: 'estudoTdah.questaoRespostas',
     activity: 'estudoTdah.activity',
     settings: 'estudoTdah.settings'
   };
@@ -88,6 +89,7 @@ var Storage = (function () {
     var days = getActivityDays();
     var sessions = read(KEYS.sessions, []);
     var reviews = read(KEYS.cardReviews, []);
+    var questaoRespostas = read(KEYS.questaoRespostas, []);
     var tasks = read(KEYS.tasks, []);
 
     var countByDay = {};
@@ -96,6 +98,7 @@ var Storage = (function () {
     }
     sessions.forEach(function (s) { bump(s.date); });
     reviews.forEach(function (r) { bump(r.date); });
+    questaoRespostas.forEach(function (r) { bump(r.date); });
     tasks.forEach(function (t) { if (t.done && t.completedAt) bump(t.completedAt); });
 
     var result = [];

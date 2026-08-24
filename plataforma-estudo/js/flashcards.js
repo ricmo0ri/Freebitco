@@ -1,15 +1,13 @@
-// Flashcards com repetição espaçada (versão simplificada do algoritmo SM-2).
+// Flashcards com repetição espaçada (versão simplificada do algoritmo SM-2),
+// sempre associados a uma disciplina selecionada em Disciplinas.
 var Flashcards = (function () {
   var els = {};
+  var disciplinaId = null;
   var currentCard = null;
-  var revealed = false;
 
   function loadCards() {
-    return Storage.read(Storage.KEYS.cards, []);
-  }
-
-  function saveCards(cards) {
-    Storage.write(Storage.KEYS.cards, cards);
+    if (!disciplinaId) return Promise.resolve([]);
+    return DB.getAllByIndex('flashcards', 'disciplinaId', disciplinaId);
   }
 
   function isDue(card) {
@@ -39,85 +37,87 @@ var Flashcards = (function () {
   }
 
   function addCard(front, back) {
-    var cards = loadCards();
-    cards.push({
+    var card = {
       id: Storage.makeId(),
+      disciplinaId: disciplinaId,
       front: front,
       back: back,
       interval: 0,
       repetition: 0,
       easeFactor: 2.5,
       dueDate: Storage.todayStr()
+    };
+    return DB.put('flashcards', card).then(function () {
+      renderList();
+      renderReview();
     });
-    saveCards(cards);
-    renderList();
-    renderReview();
   }
 
   function deleteCard(id) {
-    saveCards(loadCards().filter(function (c) { return c.id !== id; }));
-    renderList();
-    renderReview();
-  }
-
-  function pickNextDueCard() {
-    var due = loadCards().filter(isDue);
-    return due.length ? due[0] : null;
+    return DB.remove('flashcards', id).then(function () {
+      renderList();
+      renderReview();
+    });
   }
 
   function renderReview() {
-    currentCard = pickNextDueCard();
-    revealed = false;
-    if (!currentCard) {
-      els.empty.hidden = false;
-      els.card.hidden = true;
-      return;
-    }
-    els.empty.hidden = true;
-    els.card.hidden = false;
-    els.front.textContent = currentCard.front;
-    els.back.textContent = currentCard.back;
-    els.back.hidden = true;
-    els.reveal.hidden = false;
-    els.rateButtons.hidden = true;
+    return loadCards().then(function (cards) {
+      var due = cards.filter(isDue);
+      currentCard = due.length ? due[0] : null;
+      if (!currentCard) {
+        els.empty.hidden = false;
+        els.card.hidden = true;
+        return;
+      }
+      els.empty.hidden = true;
+      els.card.hidden = false;
+      els.front.textContent = currentCard.front;
+      els.back.textContent = currentCard.back;
+      els.back.hidden = true;
+      els.reveal.hidden = false;
+      els.rateButtons.hidden = true;
+    });
   }
 
   function renderList() {
-    var cards = loadCards();
-    els.total.textContent = String(cards.length);
-    els.list.innerHTML = '';
-    cards.forEach(function (card) {
-      var li = document.createElement('li');
-      var text = document.createElement('span');
-      text.className = 'item-text';
-      text.textContent = card.front;
-      var del = document.createElement('button');
-      del.className = 'delete-btn';
-      del.textContent = 'Remover';
-      del.addEventListener('click', function () { deleteCard(card.id); });
-      li.appendChild(text);
-      li.appendChild(del);
-      els.list.appendChild(li);
+    return loadCards().then(function (cards) {
+      els.total.textContent = String(cards.length);
+      els.list.innerHTML = '';
+      cards.forEach(function (card) {
+        var li = document.createElement('li');
+        var text = document.createElement('span');
+        text.className = 'item-text';
+        text.textContent = card.front;
+        var del = document.createElement('button');
+        del.className = 'delete-btn';
+        del.textContent = 'Remover';
+        del.addEventListener('click', function () { deleteCard(card.id); });
+        li.appendChild(text);
+        li.appendChild(del);
+        els.list.appendChild(li);
+      });
     });
   }
 
   function rate(quality) {
     if (!currentCard) return;
-    var cards = loadCards();
-    var target = cards.find(function (c) { return c.id === currentCard.id; });
-    if (target) {
-      schedule(target, quality);
-      saveCards(cards);
-    }
+    schedule(currentCard, quality);
+    DB.put('flashcards', currentCard).then(function () {
+      var reviews = Storage.read(Storage.KEYS.cardReviews, []);
+      reviews.push({ date: Storage.todayStr(), cardId: currentCard.id, quality: quality });
+      Storage.write(Storage.KEYS.cardReviews, reviews);
+      Storage.recordActivity();
 
-    var reviews = Storage.read(Storage.KEYS.cardReviews, []);
-    reviews.push({ date: Storage.todayStr(), cardId: currentCard.id, quality: quality });
-    Storage.write(Storage.KEYS.cardReviews, reviews);
-    Storage.recordActivity();
+      if (window.Progress) Progress.refresh();
+      if (window.App) App.refreshStreakBadge();
 
-    if (window.Progress) Progress.refresh();
-    if (window.App) App.refreshStreakBadge();
+      renderReview();
+    });
+  }
 
+  function setDisciplina(id) {
+    disciplinaId = id;
+    renderList();
     renderReview();
   }
 
@@ -135,7 +135,6 @@ var Flashcards = (function () {
     els.total = document.getElementById('card-total');
 
     els.reveal.addEventListener('click', function () {
-      revealed = true;
       els.back.hidden = false;
       els.reveal.hidden = true;
       els.rateButtons.hidden = false;
@@ -149,15 +148,12 @@ var Flashcards = (function () {
       evt.preventDefault();
       var front = els.frontInput.value.trim();
       var back = els.backInput.value.trim();
-      if (!front || !back) return;
+      if (!front || !back || !disciplinaId) return;
       addCard(front, back);
       els.frontInput.value = '';
       els.backInput.value = '';
     });
-
-    renderList();
-    renderReview();
   }
 
-  return { init: init };
+  return { init: init, setDisciplina: setDisciplina };
 })();

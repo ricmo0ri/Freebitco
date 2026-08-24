@@ -42,40 +42,99 @@
       <button id="timer-mute" class="mute-toggle" aria-pressed="false">Som: ligado</button>
     </section>
 
-    <!-- FLASHCARDS -->
-    <section id="view-cards" class="view" data-view="cards">
-      <h2 class="view-title">Cartões de estudo</h2>
+    <!-- ESTUDO (DISCIPLINAS: FLASHCARDS + QUESTÕES) -->
+    <section id="view-estudo" class="view" data-view="estudo">
 
-      <div class="card-panel" id="review-panel">
-        <p id="cards-empty" class="empty-state">Nenhum cartão para revisar agora.</p>
-        <div id="review-card" class="flashcard" hidden>
-          <p class="flashcard-label" id="flashcard-label">Pergunta</p>
-          <p class="flashcard-text" id="flashcard-front"></p>
-          <p class="flashcard-text flashcard-back" id="flashcard-back" hidden></p>
-          <button id="reveal-btn" class="btn btn-primary">Mostrar resposta</button>
-          <div class="rate-buttons" id="rate-buttons" hidden>
-            <button class="btn rate-dificil" data-quality="dificil">Difícil</button>
-            <button class="btn rate-medio" data-quality="medio">Médio</button>
-            <button class="btn rate-facil" data-quality="facil">Fácil</button>
+      <div id="disciplinas-list-view">
+        <h2 class="view-title">Disciplinas</h2>
+
+        <form id="disciplina-form" class="inline-form">
+          <label for="disciplina-input" class="visually-hidden">Nova disciplina</label>
+          <input id="disciplina-input" type="text" placeholder="Nova disciplina..." required>
+          <button type="submit" class="btn btn-primary">Adicionar</button>
+        </form>
+
+        <ul id="disciplinas-list" class="simple-list"></ul>
+      </div>
+
+      <div id="disciplina-detail-view" hidden>
+        <button id="back-to-disciplinas" class="btn btn-ghost back-btn">&larr; Disciplinas</button>
+        <h2 class="view-title" id="disciplina-detail-title">Disciplina</h2>
+
+        <div class="subtab-bar" role="tablist">
+          <button class="subtab-btn active" data-subtab="flashcards">Flashcards</button>
+          <button class="subtab-btn" data-subtab="questoes">Questões</button>
+        </div>
+
+        <!-- Subview: Flashcards -->
+        <div id="subview-flashcards" class="subview active">
+          <div class="card-panel" id="review-panel">
+            <p id="cards-empty" class="empty-state">Nenhum cartão para revisar agora.</p>
+            <div id="review-card" class="flashcard" hidden>
+              <p class="flashcard-label" id="flashcard-label">Pergunta</p>
+              <p class="flashcard-text" id="flashcard-front"></p>
+              <p class="flashcard-text flashcard-back" id="flashcard-back" hidden></p>
+              <button id="reveal-btn" class="btn btn-primary">Mostrar resposta</button>
+              <div class="rate-buttons" id="rate-buttons" hidden>
+                <button class="btn rate-dificil" data-quality="dificil">Difícil</button>
+                <button class="btn rate-medio" data-quality="medio">Médio</button>
+                <button class="btn rate-facil" data-quality="facil">Fácil</button>
+              </div>
+            </div>
+          </div>
+
+          <details class="add-card-form">
+            <summary>Adicionar novo cartão</summary>
+            <form id="card-form">
+              <label for="card-front">Pergunta / frente</label>
+              <textarea id="card-front" required rows="2"></textarea>
+              <label for="card-back">Resposta / verso</label>
+              <textarea id="card-back" required rows="2"></textarea>
+              <button type="submit" class="btn btn-primary">Adicionar cartão</button>
+            </form>
+          </details>
+
+          <div class="card-list-section">
+            <h3>Todos os cartões (<span id="card-total">0</span>)</h3>
+            <ul id="card-list" class="simple-list"></ul>
+          </div>
+        </div>
+
+        <!-- Subview: Questões (múltipla escolha) -->
+        <div id="subview-questoes" class="subview">
+          <div class="card-panel" id="questao-panel">
+            <p id="questoes-empty" class="empty-state">Nenhuma questão cadastrada nesta disciplina ainda.</p>
+            <div id="questao-card" class="flashcard" hidden>
+              <p class="flashcard-label" id="questao-origem">Questão</p>
+              <p class="flashcard-text" id="questao-enunciado"></p>
+              <div id="questao-alternativas" class="alternativas-list"></div>
+              <button id="questao-confirmar" class="btn btn-primary" disabled>Confirmar resposta</button>
+              <p id="questao-feedback" class="questao-feedback" hidden></p>
+              <button id="questao-proxima" class="btn btn-secondary" hidden>Próxima questão</button>
+            </div>
+          </div>
+
+          <details class="add-card-form">
+            <summary>Adicionar nova questão</summary>
+            <form id="questao-form">
+              <label for="questao-prova">Prova de origem (opcional)</label>
+              <input id="questao-prova" type="text" placeholder="Ex: XXXIX Exame de Ordem - 2024.1">
+              <label for="questao-enunciado-input">Enunciado</label>
+              <textarea id="questao-enunciado-input" required rows="3"></textarea>
+              <div id="alternativas-inputs" class="alternativas-inputs"></div>
+              <button type="button" id="add-alternativa-btn" class="btn btn-ghost">+ Alternativa</button>
+              <p class="hint-text">Marque com o botão à esquerda qual alternativa é a correta.</p>
+              <button type="submit" class="btn btn-primary">Adicionar questão</button>
+            </form>
+          </details>
+
+          <div class="card-list-section">
+            <h3>Todas as questões (<span id="questoes-total">0</span>)</h3>
+            <ul id="questoes-list" class="simple-list"></ul>
           </div>
         </div>
       </div>
 
-      <details class="add-card-form">
-        <summary>Adicionar novo cartão</summary>
-        <form id="card-form">
-          <label for="card-front">Pergunta / frente</label>
-          <textarea id="card-front" required rows="2"></textarea>
-          <label for="card-back">Resposta / verso</label>
-          <textarea id="card-back" required rows="2"></textarea>
-          <button type="submit" class="btn btn-primary">Adicionar cartão</button>
-        </form>
-      </details>
-
-      <div class="card-list-section">
-        <h3>Todos os cartões (<span id="card-total">0</span>)</h3>
-        <ul id="card-list" class="simple-list"></ul>
-      </div>
     </section>
 
     <!-- TAREFAS -->
@@ -119,6 +178,10 @@
           <span class="stat-value" id="stat-cards">0</span>
           <span class="stat-label">Cartões revisados</span>
         </div>
+        <div class="stat-card">
+          <span class="stat-value" id="stat-questoes">0</span>
+          <span class="stat-label">Questões respondidas</span>
+        </div>
       </div>
 
       <div class="streak-panel">
@@ -134,7 +197,7 @@
 
   <nav class="tabbar" id="tabbar">
     <button class="tab-btn active" data-view="foco" aria-pressed="true">Foco</button>
-    <button class="tab-btn" data-view="cards" aria-pressed="false">Cartões</button>
+    <button class="tab-btn" data-view="estudo" aria-pressed="false">Estudo</button>
     <button class="tab-btn" data-view="tarefas" aria-pressed="false">Tarefas</button>
     <button class="tab-btn" data-view="progresso" aria-pressed="false">Progresso</button>
   </nav>
@@ -142,8 +205,11 @@
 </div>
 
 <script src="js/storage.js"></script>
+<script src="js/db.js"></script>
 <script src="js/timer.js"></script>
 <script src="js/flashcards.js"></script>
+<script src="js/questoes.js"></script>
+<script src="js/disciplinas.js"></script>
 <script src="js/tasks.js"></script>
 <script src="js/progress.js"></script>
 <script src="js/app.js"></script>

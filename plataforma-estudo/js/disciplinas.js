@@ -2,16 +2,33 @@
 // controlam a navegação entre a lista de territórios e o conteúdo de um
 // território selecionado.
 var Disciplinas = (function () {
+  // seedVersion marca em que "leva" cada território padrão foi introduzido,
+  // para acrescentar novos territórios padrão em atualizações futuras sem
+  // reviver territórios que o usuário já apagou de propósito.
   var TERRITORIOS_PADRAO = [
-    { nome: 'Ética', territorio: 'Ordem dos Advogados', icone: '⚖️' },
-    { nome: 'Direito Constitucional', territorio: 'Reino da Constituição', icone: '🏛️' },
-    { nome: 'Direito Penal', territorio: 'Território Penal', icone: '⚔️' },
-    { nome: 'Processo Penal', territorio: 'Tribunal das Sombras', icone: '🕵️' },
-    { nome: 'Direito Civil', territorio: 'Reino das Relações Privadas', icone: '📜' },
-    { nome: 'Direito do Trabalho', territorio: 'Reino Trabalhista', icone: '💼' },
-    { nome: 'Direito Tributário', territorio: 'Cofre dos Tributos', icone: '💰' },
-    { nome: 'Direito Empresarial', territorio: 'República Empresarial', icone: '🏢' }
+    { nome: 'Ética', territorio: 'Ordem dos Advogados', icone: '⚖️', seedVersion: 1 },
+    { nome: 'Direito Constitucional', territorio: 'Reino da Constituição', icone: '🏛️', seedVersion: 1 },
+    { nome: 'Direito Penal', territorio: 'Território Penal', icone: '⚔️', seedVersion: 1 },
+    { nome: 'Processo Penal', territorio: 'Tribunal das Sombras', icone: '🕵️', seedVersion: 1 },
+    { nome: 'Direito Civil', territorio: 'Reino das Relações Privadas', icone: '📜', seedVersion: 1 },
+    { nome: 'Direito do Trabalho', territorio: 'Reino Trabalhista', icone: '💼', seedVersion: 1 },
+    { nome: 'Direito Tributário', territorio: 'Cofre dos Tributos', icone: '💰', seedVersion: 1 },
+    { nome: 'Direito Empresarial', territorio: 'República Empresarial', icone: '🏢', seedVersion: 1 },
+    { nome: 'Direito Administrativo', territorio: 'Fortaleza Administrativa', icone: '🏰', seedVersion: 2 },
+    { nome: 'Processo Civil', territorio: 'Labirinto Processual', icone: '📯', seedVersion: 2 },
+    { nome: 'Processo do Trabalho', territorio: 'Engrenagem Trabalhista', icone: '⚙️', seedVersion: 2 },
+    { nome: 'Direitos Humanos', territorio: 'Santuário dos Direitos Humanos', icone: '🕊️', seedVersion: 2 },
+    { nome: 'Direito Ambiental', territorio: 'Floresta Ambiental', icone: '🌳', seedVersion: 2 },
+    { nome: 'Direito do Consumidor', territorio: 'Mercado do Consumidor', icone: '🛒', seedVersion: 2 },
+    { nome: 'Estatuto da Criança e do Adolescente', territorio: 'Vila da Infância', icone: '🧒', seedVersion: 2 },
+    { nome: 'Estatuto do Idoso', territorio: 'Conselho dos Anciãos', icone: '👴', seedVersion: 2 },
+    { nome: 'Direito Internacional', territorio: 'Fronteiras do Mundo', icone: '🌍', seedVersion: 2 },
+    { nome: 'Filosofia do Direito', territorio: 'Torre da Filosofia', icone: '🦉', seedVersion: 2 },
+    { nome: 'Direito Eleitoral', territorio: 'Arena Eleitoral', icone: '🗳️', seedVersion: 2 },
+    { nome: 'Direito Financeiro', territorio: 'Tesouraria do Estado', icone: '🏦', seedVersion: 2 },
+    { nome: 'Direito Agrário', territorio: 'Campos Agrários', icone: '🌾', seedVersion: 2 }
   ];
+  var SEED_VERSION_ATUAL = 2;
 
   var els = {};
 
@@ -20,17 +37,32 @@ var Disciplinas = (function () {
   }
 
   function seedTerritoriosPadrao() {
+    var versaoAplicada = Storage.read(Storage.KEYS.territoriosSeedVersion, 0);
+    if (versaoAplicada >= SEED_VERSION_ATUAL) return Promise.resolve();
+
     return loadAll().then(function (existentes) {
-      if (existentes.length > 0) return;
-      return Promise.all(TERRITORIOS_PADRAO.map(function (t) {
-        return DB.put('disciplinas', {
-          id: Storage.makeId(),
-          nome: t.nome,
-          territorio: t.territorio,
-          icone: t.icone,
-          createdAt: Storage.todayStr()
-        });
-      }));
+      var nomesExistentes = {};
+      existentes.forEach(function (d) { nomesExistentes[d.nome] = true; });
+
+      var faltando = TERRITORIOS_PADRAO.filter(function (t) {
+        return t.seedVersion > versaoAplicada && !nomesExistentes[t.nome];
+      });
+
+      var salvar = faltando.length
+        ? Promise.all(faltando.map(function (t) {
+            return DB.put('disciplinas', {
+              id: Storage.makeId(),
+              nome: t.nome,
+              territorio: t.territorio,
+              icone: t.icone,
+              createdAt: Storage.todayStr()
+            });
+          }))
+        : Promise.resolve();
+
+      return salvar.then(function () {
+        Storage.write(Storage.KEYS.territoriosSeedVersion, SEED_VERSION_ATUAL);
+      });
     });
   }
 

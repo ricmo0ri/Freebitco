@@ -9,7 +9,8 @@ var Storage = (function () {
     activity: 'estudoTdah.activity',
     settings: 'estudoTdah.settings',
     perfilXp: 'estudoTdah.perfilXp',
-    chefoesDerrotados: 'estudoTdah.chefoesDerrotados'
+    chefoesDerrotados: 'estudoTdah.chefoesDerrotados',
+    territoriosSeedVersion: 'estudoTdah.territoriosSeedVersion'
   };
 
   function read(key, fallback) {

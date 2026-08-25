@@ -279,22 +279,50 @@
 
         <!-- Subview: Doutrina -->
         <div id="subview-doutrina" class="subview">
-          <p id="doutrina-empty" class="empty-state">Nenhuma doutrina cadastrada ainda nesta disciplina.</p>
-          <div id="doutrina-list"></div>
+          <div id="doutrina-list-view">
+            <p id="doutrina-empty" class="empty-state">Nenhuma doutrina cadastrada ainda nesta disciplina.</p>
+            <div id="doutrina-list"></div>
 
-          <details class="add-card-form">
-            <summary>Adicionar doutrina</summary>
-            <form id="doutrina-form">
-              <label for="doutrina-titulo">Título</label>
-              <input id="doutrina-titulo" type="text" placeholder="Ex: Controle de Constitucionalidade" required>
-              <label for="doutrina-tema">Tema/assunto (opcional)</label>
-              <input id="doutrina-tema" type="text" placeholder="Ex: Constitucional">
-              <label for="doutrina-conteudo">Resumo</label>
-              <textarea id="doutrina-conteudo" rows="6" required></textarea>
-              <p class="hint-text">Resumos curtos e diretos funcionam melhor do que textos longos.</p>
-              <button type="submit" class="btn btn-primary">Salvar doutrina</button>
+            <details class="add-card-form">
+              <summary>Adicionar doutrina</summary>
+              <form id="doutrina-form">
+                <label for="doutrina-titulo">Título</label>
+                <input id="doutrina-titulo" type="text" placeholder="Ex: Controle de Constitucionalidade" required>
+                <label for="doutrina-tema">Tema/assunto (opcional)</label>
+                <input id="doutrina-tema" type="text" placeholder="Ex: Constitucional">
+                <label for="doutrina-conteudo">Resumo</label>
+                <textarea id="doutrina-conteudo" rows="6" required></textarea>
+                <p class="hint-text">Resumos curtos e diretos funcionam melhor do que textos longos.</p>
+                <button type="submit" class="btn btn-primary">Salvar doutrina</button>
+              </form>
+            </details>
+
+            <button id="abrir-importar-doutrina-btn" class="btn btn-ghost">📥 Importar doutrina em PDF</button>
+          </div>
+
+          <div id="importar-doutrina-view" hidden>
+            <button id="importar-doutrina-voltar" class="btn btn-ghost back-btn">&larr; Doutrina</button>
+            <h3>📥 Importar doutrina em PDF</h3>
+            <p class="hint-text">
+              Funciona com apostilas em PDF com texto selecionável (não escaneadas). A divisão em tópicos é
+              automática — revise os títulos e o conteúdo abaixo antes de salvar.
+            </p>
+
+            <form id="importar-doutrina-form" class="import-panel">
+              <label for="importar-doutrina-input">PDF da apostila</label>
+              <input id="importar-doutrina-input" type="file" accept="application/pdf">
+              <button type="button" id="importar-doutrina-processar-btn" class="btn btn-primary">Processar PDF</button>
             </form>
-          </details>
+
+            <p id="importar-doutrina-status" class="hint-text"></p>
+
+            <div id="importar-doutrina-revisao" class="import-panel" hidden>
+              <h3>Revise antes de importar</h3>
+              <p class="hint-text">Desmarque o que não quiser importar. Os títulos são editáveis.</p>
+              <ul id="importar-doutrina-revisao-lista" class="simple-list import-lista"></ul>
+              <button id="importar-doutrina-confirmar-btn" class="btn btn-primary">Importar selecionados</button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -394,6 +422,7 @@
 <script src="js/doutrina.js"></script>
 <script src="js/vendor/pdf.min.js"></script>
 <script src="js/importarProva.js"></script>
+<script src="js/importarDoutrina.js"></script>
 <script src="js/disciplinas.js"></script>
 <script src="js/tasks.js"></script>
 <script src="js/progress.js"></script>

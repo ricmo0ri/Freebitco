@@ -70,6 +70,10 @@ var Doutrina = (function () {
     renderList();
   }
 
+  function getDisciplinaId() {
+    return disciplinaId;
+  }
+
   function init() {
     els.empty = document.getElementById('doutrina-empty');
     els.list = document.getElementById('doutrina-list');
@@ -81,5 +85,5 @@ var Doutrina = (function () {
     els.form.addEventListener('submit', addDoutrina);
   }
 
-  return { init: init, setDisciplina: setDisciplina };
+  return { init: init, setDisciplina: setDisciplina, getDisciplinaId: getDisciplinaId };
 })();

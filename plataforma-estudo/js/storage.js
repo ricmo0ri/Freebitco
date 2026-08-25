@@ -11,7 +11,8 @@ var Storage = (function () {
     perfilXp: 'estudoTdah.perfilXp',
     chefoesDerrotados: 'estudoTdah.chefoesDerrotados',
     territoriosSeedVersion: 'estudoTdah.territoriosSeedVersion',
-    lowStim: 'estudoTdah.lowStim'
+    lowStim: 'estudoTdah.lowStim',
+    tema: 'estudoTdah.tema'
   };
 
   function read(key, fallback) {

@@ -7,26 +7,42 @@ var Disciplinas = (function () {
   // reviver territórios que o usuário já apagou de propósito.
   var TERRITORIOS_PADRAO = [
     { nome: 'Ética', territorio: 'Ordem dos Advogados', icone: '⚖️', seedVersion: 1 },
-    { nome: 'Direito Constitucional', territorio: 'Reino da Constituição', icone: '🏛️', seedVersion: 1 },
-    { nome: 'Direito Penal', territorio: 'Território Penal', icone: '⚔️', seedVersion: 1 },
-    { nome: 'Processo Penal', territorio: 'Tribunal das Sombras', icone: '🕵️', seedVersion: 1 },
-    { nome: 'Direito Civil', territorio: 'Reino das Relações Privadas', icone: '📜', seedVersion: 1 },
-    { nome: 'Direito do Trabalho', territorio: 'Reino Trabalhista', icone: '💼', seedVersion: 1 },
-    { nome: 'Direito Tributário', territorio: 'Cofre dos Tributos', icone: '💰', seedVersion: 1 },
-    { nome: 'Direito Empresarial', territorio: 'República Empresarial', icone: '🏢', seedVersion: 1 },
-    { nome: 'Direito Administrativo', territorio: 'Fortaleza Administrativa', icone: '🏰', seedVersion: 2 },
-    { nome: 'Processo Civil', territorio: 'Labirinto Processual', icone: '📯', seedVersion: 2 },
-    { nome: 'Processo do Trabalho', territorio: 'Engrenagem Trabalhista', icone: '⚙️', seedVersion: 2 },
-    { nome: 'Direitos Humanos', territorio: 'Santuário dos Direitos Humanos', icone: '🕊️', seedVersion: 2 },
-    { nome: 'Direito Ambiental', territorio: 'Floresta Ambiental', icone: '🌳', seedVersion: 2 },
-    { nome: 'Direito do Consumidor', territorio: 'Mercado do Consumidor', icone: '🛒', seedVersion: 2 },
-    { nome: 'Direito da Criança e do Adolescente', territorio: 'Vila da Infância', icone: '🧒', seedVersion: 2 },
-    { nome: 'Direito Internacional', territorio: 'Fronteiras do Mundo', icone: '🌍', seedVersion: 2 },
-    { nome: 'Filosofia do Direito', territorio: 'Torre da Filosofia', icone: '🦉', seedVersion: 2 },
-    { nome: 'Direito Eleitoral', territorio: 'Arena Eleitoral', icone: '🗳️', seedVersion: 2 },
-    { nome: 'Direito Financeiro', territorio: 'Tesouraria do Estado', icone: '🏦', seedVersion: 2 },
-    { nome: 'Direito Previdenciário', territorio: 'Reino da Previdência', icone: '👴', seedVersion: 3 }
+    { nome: 'Direito Constitucional', territorio: 'Reino da Constituição', icone: '🏛️', seedVersion: 1, cor: '#4a5b8c' },
+    { nome: 'Direito Penal', territorio: 'Território Penal', icone: '⚔️', seedVersion: 1, cor: '#a0522d' },
+    { nome: 'Processo Penal', territorio: 'Tribunal das Sombras', icone: '🕵️', seedVersion: 1, cor: '#5b3a6e' },
+    { nome: 'Direito Civil', territorio: 'Reino das Relações Privadas', icone: '📜', seedVersion: 1, cor: '#b0655c' },
+    { nome: 'Direito do Trabalho', territorio: 'Reino Trabalhista', icone: '💼', seedVersion: 1, cor: '#3d7a72' },
+    { nome: 'Direito Tributário', territorio: 'Cofre dos Tributos', icone: '💰', seedVersion: 1, cor: '#2f6690' },
+    { nome: 'Direito Empresarial', territorio: 'República Empresarial', icone: '🏢', seedVersion: 1, cor: '#2c3e6b' },
+    { nome: 'Direito Administrativo', territorio: 'Fortaleza Administrativa', icone: '🏰', seedVersion: 2, cor: '#5a6b7a' },
+    { nome: 'Processo Civil', territorio: 'Labirinto Processual', icone: '📯', seedVersion: 2, cor: '#6b4f8a' },
+    { nome: 'Processo do Trabalho', territorio: 'Engrenagem Trabalhista', icone: '⚙️', seedVersion: 2, cor: '#3f7d6b' },
+    { nome: 'Direitos Humanos', territorio: 'Santuário dos Direitos Humanos', icone: '🕊️', seedVersion: 2, cor: '#a3597a' },
+    { nome: 'Direito Ambiental', territorio: 'Floresta Ambiental', icone: '🌳', seedVersion: 2, cor: '#6b7a3f' },
+    { nome: 'Direito do Consumidor', territorio: 'Mercado do Consumidor', icone: '🛒', seedVersion: 2, cor: '#b1651d' },
+    { nome: 'Direito da Criança e do Adolescente', territorio: 'Vila da Infância', icone: '🧒', seedVersion: 2, cor: '#4f83a3' },
+    { nome: 'Direito Internacional', territorio: 'Fronteiras do Mundo', icone: '🌍', seedVersion: 2, cor: '#2f8f8a' },
+    { nome: 'Filosofia do Direito', territorio: 'Torre da Filosofia', icone: '🦉', seedVersion: 2, cor: '#5c4a6e' },
+    { nome: 'Direito Eleitoral', territorio: 'Arena Eleitoral', icone: '🗳️', seedVersion: 2, cor: '#96591a' },
+    { nome: 'Direito Financeiro', territorio: 'Tesouraria do Estado', icone: '🏦', seedVersion: 2, cor: '#2f7d5e' },
+    { nome: 'Direito Previdenciário', territorio: 'Reino da Previdência', icone: '👴', seedVersion: 3, cor: '#6f6b8a' }
   ];
+
+  // Paleta usada para dar uma cor própria a territórios criados pelo
+  // usuário (escolhida de forma determinística a partir do nome).
+  var PALETA_CORES_CUSTOM = [
+    '#4a5b8c', '#a0522d', '#5b3a6e', '#b0655c', '#3d7a72', '#2f6690',
+    '#2c3e6b', '#5a6b7a', '#6b4f8a', '#3f7d6b', '#a3597a', '#6b7a3f',
+    '#b1651d', '#4f83a3', '#2f8f8a', '#5c4a6e', '#96591a', '#2f7d5e', '#6f6b8a'
+  ];
+
+  function corParaNome(nome) {
+    var hash = 0;
+    for (var i = 0; i < nome.length; i++) {
+      hash = (hash * 31 + nome.charCodeAt(i)) >>> 0;
+    }
+    return PALETA_CORES_CUSTOM[hash % PALETA_CORES_CUSTOM.length];
+  }
   var SEED_VERSION_ATUAL = 3;
 
   // Territórios que entraram por engano numa leva anterior e não fazem
@@ -46,11 +62,12 @@ var Disciplinas = (function () {
     return DB.getAll('disciplinas');
   }
 
-  function preencherComMedalha(container, icone, texto) {
+  function preencherComMedalha(container, icone, texto, cor) {
     container.innerHTML = '';
     var medalha = document.createElement('span');
     medalha.className = 'icon-medalha';
     medalha.textContent = icone || '📖';
+    if (cor) medalha.style.setProperty('--accent-territorio', cor);
     var label = document.createElement('span');
     label.textContent = texto;
     container.appendChild(medalha);
@@ -115,6 +132,7 @@ var Disciplinas = (function () {
                 nome: t.nome,
                 territorio: t.territorio,
                 icone: t.icone,
+                cor: t.cor || null,
                 createdAt: Storage.todayStr()
               });
             }))
@@ -132,6 +150,7 @@ var Disciplinas = (function () {
       nome: nome,
       territorio: nome,
       icone: '📖',
+      cor: corParaNome(nome),
       createdAt: Storage.todayStr()
     };
     return DB.put('disciplinas', disciplina).then(renderList);
@@ -162,7 +181,7 @@ var Disciplinas = (function () {
         var open = document.createElement('button');
         open.type = 'button';
         open.className = 'item-text disciplina-open-btn';
-        preencherComMedalha(open, disciplina.icone, disciplina.territorio || disciplina.nome);
+        preencherComMedalha(open, disciplina.icone, disciplina.territorio || disciplina.nome, disciplina.cor);
         open.addEventListener('click', function () { openDisciplina(disciplina); });
 
         var del = document.createElement('button');
@@ -185,7 +204,12 @@ var Disciplinas = (function () {
   function openDisciplina(disciplina) {
     els.listView.hidden = true;
     els.detailView.hidden = false;
-    preencherComMedalha(els.detailTitle, disciplina.icone, disciplina.territorio || disciplina.nome);
+    preencherComMedalha(els.detailTitle, disciplina.icone, disciplina.territorio || disciplina.nome, disciplina.cor);
+    if (disciplina.cor) {
+      els.detailTitle.style.setProperty('--accent-territorio', disciplina.cor);
+    } else {
+      els.detailTitle.style.removeProperty('--accent-territorio');
+    }
     Flashcards.setDisciplina(disciplina.id);
     Questoes.setDisciplina(disciplina.id);
     Chefoes.setDisciplina(disciplina.id);

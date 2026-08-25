@@ -102,6 +102,7 @@ var Missao = (function () {
         var medalha = document.createElement('span');
         medalha.className = 'icon-medalha';
         medalha.textContent = d.icone || '📖';
+        if (d.cor) medalha.style.setProperty('--accent-territorio', d.cor);
         var dot = temFraco ? ' 🔴' : (dominado ? ' 🟢' : '');
         var label = document.createElement('span');
         label.textContent = (d.territorio || d.nome) + dot;

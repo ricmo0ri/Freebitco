@@ -177,11 +177,19 @@ var Questoes = (function () {
         var preview = q.enunciado.length > 60 ? q.enunciado.slice(0, 60) + '…' : q.enunciado;
         var prefixo = q.tema ? '[' + q.tema + '] ' : (q.provaOrigem ? '[' + q.provaOrigem + '] ' : '');
         text.textContent = prefixo + preview;
+
+        var dificuldadeLabels = { facil: 'Fácil', media: 'Média', dificil: 'Difícil' };
+        var tag = document.createElement('span');
+        var nivelDificuldade = q.dificuldade || 'media';
+        tag.className = 'dificuldade-tag ' + nivelDificuldade;
+        tag.textContent = dificuldadeLabels[nivelDificuldade] || 'Média';
+
         var del = document.createElement('button');
         del.className = 'delete-btn';
         del.textContent = 'Remover';
         del.addEventListener('click', function () { deleteQuestao(q.id); });
         li.appendChild(text);
+        li.appendChild(tag);
         li.appendChild(del);
         els.list.appendChild(li);
       });

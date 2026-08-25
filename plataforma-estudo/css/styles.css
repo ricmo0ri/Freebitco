@@ -23,7 +23,9 @@
   --oxblood-bright: #9c3b3b;
   --oxblood-wash: rgba(122, 46, 46, 0.12);
   --forest: #3f6b4a;
+  --forest-wash: rgba(63, 107, 74, 0.14);
   --amber: #a66a1f;
+  --amber-wash: rgba(166, 106, 31, 0.14);
 
   --on-ink: #f3ecd9;
 
@@ -52,7 +54,9 @@
     --oxblood-bright: #e08585;
     --oxblood-wash: rgba(196, 96, 95, 0.18);
     --forest: #6fae82;
+    --forest-wash: rgba(111, 174, 130, 0.16);
     --amber: #d6a24b;
+    --amber-wash: rgba(214, 162, 75, 0.16);
 
     --on-ink: #14161f;
     --shadow: 0 3px 16px rgba(0, 0, 0, 0.32);
@@ -74,7 +78,9 @@
   --oxblood-bright: #e08585;
   --oxblood-wash: rgba(196, 96, 95, 0.18);
   --forest: #6fae82;
+  --forest-wash: rgba(111, 174, 130, 0.16);
   --amber: #d6a24b;
+  --amber-wash: rgba(214, 162, 75, 0.16);
 
   --on-ink: #14161f;
   --shadow: 0 3px 16px rgba(0, 0, 0, 0.32);
@@ -144,6 +150,38 @@ html, body {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.nivel-badge {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+}
+.nivel-ring { width: 100%; height: 100%; transform: rotate(-90deg); }
+.nivel-ring-track {
+  fill: none;
+  stroke: var(--surface-2);
+  stroke-width: 4;
+}
+.nivel-ring-fill {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 106.8;
+  stroke-dashoffset: 106.8;
+  transition: stroke-dashoffset 0.4s ease;
+}
+.nivel-numero {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--ink);
 }
 .perfil-nivel {
   font-family: var(--font-display);
@@ -228,13 +266,18 @@ main { flex: 1; padding: 0 20px; }
   flex-shrink: 0;
   border-radius: 50%;
   background: var(--surface-2);
-  border: 1.5px solid var(--gold);
+  border: 1.5px solid var(--accent-territorio, var(--gold));
   font-size: 1rem;
   margin-right: 10px;
 }
 .icon-medalha--boss {
   border-color: var(--oxblood);
   background: var(--oxblood-wash);
+}
+
+#disciplina-detail-view .view-title {
+  border-left: 4px solid var(--accent-territorio, var(--gold));
+  padding-left: 10px;
 }
 
 /* Timer / Missão */
@@ -262,15 +305,40 @@ main { flex: 1; padding: 0 20px; }
 }
 
 .timer-display {
-  text-align: center;
-  margin: 20px 0;
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 20px auto;
 }
-#timer-clock {
+.timer-ring { width: 100%; height: 100%; transform: rotate(-90deg); }
+.timer-ring-track {
+  fill: none;
+  stroke: var(--surface-2);
+  stroke-width: 8;
+}
+.timer-ring-fill {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 565.5;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+}
+.timer-clock-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-mono);
-  font-size: 4rem;
+  font-size: 2.6rem;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
   color: var(--ink);
+}
+@media (prefers-reduced-motion: reduce) {
+  .timer-ring-fill { transition: none; }
 }
 .timer-message {
   text-align: center;
@@ -853,7 +921,54 @@ main { flex: 1; padding: 0 20px; }
 .tab-btn.active { color: var(--gold); }
 
 /* Preferências */
-.prefs-row { margin-bottom: 20px; }
+.prefs-row {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.tema-picker {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.tema-label { font-size: 0.9rem; color: var(--ink-soft); }
+.tema-opcoes { display: flex; gap: 6px; }
+.tema-btn {
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  color: var(--ink-soft);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.tema-btn.active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--on-ink);
+}
+
+/* Tags de dificuldade */
+.dificuldade-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.dificuldade-tag.facil { background: var(--forest-wash); color: var(--forest); }
+.dificuldade-tag.media { background: var(--amber-wash); color: var(--amber); }
+.dificuldade-tag.dificil { background: var(--oxblood-wash); color: var(--oxblood); }
 
 /* Modo baixo estímulo: desatura os acentos e corta animações/transições,
    para dias de sobrecarga sensorial. */
@@ -865,7 +980,9 @@ body.low-stim {
   --oxblood-bright: #8f8580;
   --oxblood-wash: rgba(122, 111, 106, 0.12);
   --forest: #6d7a70;
+  --forest-wash: rgba(109, 122, 112, 0.14);
   --amber: #8a7d68;
+  --amber-wash: rgba(138, 125, 104, 0.14);
 }
 body.low-stim * {
   transition: none !important;
@@ -873,4 +990,10 @@ body.low-stim * {
 }
 body.low-stim .btn:active {
   transform: none !important;
+}
+/* territórios têm cor própria via variável inline; o modo baixo estímulo
+   deve neutralizar isso também, então precisa sobrescrever com !important */
+body.low-stim .icon-medalha,
+body.low-stim .view-title {
+  border-color: var(--gold) !important;
 }

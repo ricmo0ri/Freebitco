@@ -11,6 +11,7 @@ var Perfil = (function () {
   ];
 
   var els = {};
+  var RING_CIRCUMFERENCE = 106.8; // 2 * PI * 17 (raio do anel de nível)
 
   function getXp() {
     return Storage.read(Storage.KEYS.perfilXp, 0);
@@ -47,7 +48,9 @@ var Perfil = (function () {
 
   function refresh() {
     var info = getNivelInfo(getXp());
-    els.nivelLabel.textContent = 'Nível ' + info.numero + ' — ' + info.titulo;
+    els.nivelLabel.textContent = info.titulo;
+    els.nivelNumero.textContent = String(info.numero);
+    els.nivelRingFill.style.strokeDashoffset = String(RING_CIRCUMFERENCE * (1 - info.progressoPct / 100));
     els.xpLabel.textContent = info.proximoXp !== null
       ? info.xp + ' / ' + info.proximoXp + ' XP'
       : info.xp + ' XP (nível máximo)';
@@ -57,6 +60,8 @@ var Perfil = (function () {
 
   function init() {
     els.nivelLabel = document.getElementById('perfil-nivel');
+    els.nivelNumero = document.getElementById('nivel-numero');
+    els.nivelRingFill = document.getElementById('nivel-ring-fill');
     els.xpLabel = document.getElementById('perfil-xp-label');
     els.xpBarFill = document.getElementById('perfil-xp-bar-fill');
     refresh();

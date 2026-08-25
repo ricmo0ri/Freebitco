@@ -7,6 +7,7 @@ var Timer = (function () {
   var soundOn = true;
 
   var els = {};
+  var RING_CIRCUMFERENCE = 565.5; // 2 * PI * 90 (raio do SVG do anel)
 
   function formatClock(totalSeconds) {
     var m = Math.floor(totalSeconds / 60);
@@ -16,6 +17,9 @@ var Timer = (function () {
 
   function updateClockDisplay() {
     els.clock.textContent = formatClock(remainingSeconds);
+    var total = selectedMinutes * 60;
+    var restante = total > 0 ? remainingSeconds / total : 0;
+    els.ringFill.style.strokeDashoffset = String(RING_CIRCUMFERENCE * (1 - restante));
   }
 
   function selectDuration(minutes) {
@@ -109,6 +113,7 @@ var Timer = (function () {
 
   function init() {
     els.clock = document.getElementById('timer-clock');
+    els.ringFill = document.getElementById('timer-ring-fill');
     els.message = document.getElementById('timer-message');
     els.startBtn = document.getElementById('timer-start');
     els.pauseBtn = document.getElementById('timer-pause');

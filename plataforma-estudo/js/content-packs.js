@@ -113,14 +113,67 @@ var ContentPacks = (function () {
   function importFromFile(file) { return readFile(file).then(importPackage); }
   function restoreFromFile(file) { return readFile(file).then(restoreBackup); }
 
+  function sha256Hex(buffer) {
+    if (!window.crypto || !window.crypto.subtle) return Promise.reject(new Error('Este navegador não oferece Web Crypto para verificar a integridade.'));
+    return window.crypto.subtle.digest('SHA-256', buffer).then(function (hashBuffer) {
+      return Array.prototype.map.call(new Uint8Array(hashBuffer), function (byte) { return byte.toString(16).padStart(2, '0'); }).join('');
+    });
+  }
+
+  function checkForUpdates(manifestUrl) {
+    manifestUrl = manifestUrl || 'conteudo/manifest.json';
+    return fetch(manifestUrl, { cache: 'no-store' }).then(function (response) {
+      if (!response.ok) throw new Error('Manifesto indisponível: HTTP ' + response.status + '.');
+      return response.json();
+    }).then(function (manifest) {
+      if (manifest.format !== 'estudo-tdah-manifest' || !Array.isArray(manifest.packs)) throw new Error('Manifesto remoto inválido.');
+      return DB.getAll('contentPacks').then(function (installed) {
+        var installedById = {};
+        installed.forEach(function (pack) { installedById[pack.packId] = pack; });
+        var available = manifest.packs.filter(function (remote) {
+          var local = installedById[remote.packId];
+          return remote.status !== 'disabled' && (!local || Number(remote.packVersion) > Number(local.version));
+        });
+        return { manifest: manifest, available: available };
+      });
+    });
+  }
+
+  function syncFromManifest(manifestUrl) {
+    return checkForUpdates(manifestUrl).then(function (result) {
+      if (!result.available.length) return { updated: 0, available: 0, details: result };
+      var chain = Promise.resolve();
+      var imported = [];
+      result.available.forEach(function (remote) {
+        chain = chain.then(function () {
+          var url = new URL(remote.url, new URL(manifestUrl || 'conteudo/manifest.json', document.baseURI));
+          return fetch(url.toString(), { cache: 'no-store' }).then(function (response) {
+            if (!response.ok) throw new Error('Pacote ' + remote.packId + ' indisponível: HTTP ' + response.status + '.');
+            return response.arrayBuffer();
+          }).then(function (buffer) {
+            return sha256Hex(buffer).then(function (actualHash) {
+              if (remote.sha256 && actualHash.toLowerCase() !== String(remote.sha256).toLowerCase()) throw new Error('SHA-256 inválido para ' + remote.packId + '.');
+              var json = new TextDecoder('utf-8').decode(buffer);
+              var pkg;
+              try { pkg = JSON.parse(json); } catch (e) { throw new Error('Pacote ' + remote.packId + ' não contém JSON válido.'); }
+              return importPackage(pkg).then(function (stats) { imported.push({ packId: remote.packId, stats: stats }); });
+            });
+          });
+        });
+      });
+      return chain.then(function () { return { updated: imported.length, available: result.available.length, details: result, imported: imported }; });
+    });
+  }
+
   function init() {
     var packInput = document.getElementById('content-pack-input');
     var packButton = document.getElementById('content-pack-import-btn');
+    var updateButton = document.getElementById('update-check-btn');
     var backupButton = document.getElementById('backup-export-btn');
     var restoreInput = document.getElementById('backup-restore-input');
     var restoreButton = document.getElementById('backup-restore-btn');
     var status = document.getElementById('data-tools-status');
-    if (!packInput || !packButton || !backupButton || !restoreInput || !restoreButton || !status) return;
+    if (!packInput || !packButton || !updateButton || !backupButton || !restoreInput || !restoreButton || !status) return;
     function show(message, isError) { status.textContent = message; status.classList.toggle('error-text', !!isError); }
     packButton.addEventListener('click', function () {
       var file = packInput.files[0];
@@ -131,6 +184,17 @@ var ContentPacks = (function () {
         packInput.value = '';
         if (window.Disciplinas) Disciplinas.renderList();
       }).catch(function (err) { show('Não foi possível importar: ' + err.message, true); }).then(function () { packButton.disabled = false; });
+    });
+    updateButton.addEventListener('click', function () {
+      updateButton.disabled = true; show('Verificando atualizações...', false);
+      syncFromManifest().then(function (result) {
+        if (!result.updated) show('Nenhum pacote novo disponível.', false);
+        else {
+          var total = result.imported.reduce(function (sum, entry) { return sum + entry.stats.created + entry.stats.updated; }, 0);
+          show(result.updated + ' pacote(s) atualizado(s), com ' + total + ' item(ns) importado(s)/atualizado(s).', false);
+          if (window.Disciplinas) Disciplinas.renderList();
+        }
+      }).catch(function (err) { show('Não foi possível verificar atualizações: ' + err.message, true); }).then(function () { updateButton.disabled = false; });
     });
     backupButton.addEventListener('click', function () {
       backupButton.disabled = true; show('Preparando backup...', false);
@@ -145,5 +209,5 @@ var ContentPacks = (function () {
     });
   }
 
-  return { FORMAT: FORMAT, SCHEMA_VERSION: SCHEMA_VERSION, init: init, validate: validate, importPackage: importPackage, importFromFile: importFromFile, exportBackup: exportBackup, restoreFromFile: restoreFromFile, downloadJson: downloadJson };
+  return { FORMAT: FORMAT, SCHEMA_VERSION: SCHEMA_VERSION, init: init, validate: validate, importPackage: importPackage, importFromFile: importFromFile, checkForUpdates: checkForUpdates, syncFromManifest: syncFromManifest, exportBackup: exportBackup, restoreFromFile: restoreFromFile, downloadJson: downloadJson };
 })();

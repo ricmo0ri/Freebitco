@@ -1001,3 +1001,33 @@ body.low-stim .icon-medalha,
 body.low-stim .view-title {
   border-color: var(--gold) !important;
 }
+
+
+/* Ferramentas de conteúdo e backup offline */
+.data-tools {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.data-tools h3,
+.data-tools .hint-text {
+  margin-top: 0;
+}
+
+.data-tools input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  color: var(--ink);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.data-tools .btn {
+  width: 100%;
+}
+
+.error-text {
+  color: var(--oxblood-bright);
+}

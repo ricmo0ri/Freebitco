@@ -39,6 +39,7 @@ var App = (function () {
     Tasks.init();
     Progress.init();
     Preferencias.init();
+    if (window.ContentPacks) ContentPacks.init();
 
     Disciplinas.init().then(function () {
       if (window.Missao) Missao.renderTerritorios();

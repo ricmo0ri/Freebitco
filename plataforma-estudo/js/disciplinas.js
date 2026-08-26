@@ -264,5 +264,5 @@ var Disciplinas = (function () {
     return seedTerritoriosPadrao().then(renderList);
   }
 
-  return { init: init };
+  return { init: init, renderList: renderList };
 })();

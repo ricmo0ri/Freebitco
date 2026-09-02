@@ -9,6 +9,7 @@ var QuestoesSeed = (function () {
   var PROVAS = [
     {
       provaOrigem: '46º Exame de Ordem Unificado',
+      seedVersion: 1,
       questoes: [
         {
           "territorio": "Ética",
@@ -1855,6 +1856,7 @@ var QuestoesSeed = (function () {
 ,
     {
       "provaOrigem": "44º Exame de Ordem Unificado",
+      "seedVersion": 2,
       "questoes": [
         {
           "territorio": "Ética",
@@ -3700,6 +3702,7 @@ var QuestoesSeed = (function () {
     },
     {
       "provaOrigem": "45º Exame de Ordem Unificado",
+      "seedVersion": 2,
       "questoes": [
         {
           "territorio": "Ética",
@@ -5555,6 +5558,7 @@ var QuestoesSeed = (function () {
 
       var pendentes = [];
       PROVAS.forEach(function (prova) {
+        if (prova.seedVersion <= versaoAplicada) return;
         prova.questoes.forEach(function (q) {
           var disciplinaId = idPorNome[q.territorio];
           if (!disciplinaId) return;

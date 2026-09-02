@@ -41,6 +41,8 @@ var App = (function () {
     Preferencias.init();
 
     Disciplinas.init().then(function () {
+      return QuestoesSeed.seedar();
+    }).then(function () {
       if (window.Missao) Missao.renderTerritorios();
     });
 

@@ -11,6 +11,7 @@ var Storage = (function () {
     perfilXp: 'estudoTdah.perfilXp',
     chefoesDerrotados: 'estudoTdah.chefoesDerrotados',
     territoriosSeedVersion: 'estudoTdah.territoriosSeedVersion',
+    questoesSeedVersion: 'estudoTdah.questoesSeedVersion',
     lowStim: 'estudoTdah.lowStim',
     tema: 'estudoTdah.tema'
   };

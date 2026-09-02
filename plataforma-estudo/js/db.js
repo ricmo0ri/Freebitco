@@ -3,7 +3,7 @@
 // estruturado que o localStorage, capaz de indexar por disciplina.
 var DB = (function () {
   var DB_NAME = 'estudoTdahDB';
-  var DB_VERSION = 2;
+  var DB_VERSION = 4;
   var dbPromise = null;
 
   function open() {

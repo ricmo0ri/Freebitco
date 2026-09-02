@@ -1,0 +1,16 @@
+{
+  "format": "estudo-tdah-manifest",
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-26T00:00:00Z",
+  "packs": [
+    {
+      "packId": "oab-xlvi-tipo-1",
+      "packVersion": 1,
+      "title": "46º Exame de Ordem — Tipo 1",
+      "url": "./oab-xlvi-tipo-1.json",
+      "sha256": "c5649c734ba5cb3d1908a50c026269d98c67e25ab8751503516a4b474259a8d6",
+      "status": "draft",
+      "updatedAt": "2026-08-26T00:00:00Z"
+    }
+  ]
+}

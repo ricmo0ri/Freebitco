@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ricmo0ri.github.io/estudo-tdah/content-pack.schema.json",
+  "title": "Pacote de conteúdo da plataforma de estudo",
+  "type": "object",
+  "required": ["format", "schemaVersion", "packId", "packVersion", "title", "disciplines", "items"],
+  "properties": {
+    "format": { "const": "estudo-tdah-content" },
+    "schemaVersion": { "const": 1 },
+    "packId": { "type": "string", "minLength": 1, "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+    "packVersion": { "type": "integer", "minimum": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "description": { "type": "string" },
+    "source": { "$ref": "#/$defs/source" },
+    "disciplines": { "type": "array", "items": { "$ref": "#/$defs/discipline" } },
+    "items": { "type": "array", "items": { "$ref": "#/$defs/item" } }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "properties": {
+        "kind": { "type": "string" },
+        "name": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "accessedAt": { "type": "string", "format": "date" },
+        "license": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "discipline": {
+      "oneOf": [
+        { "type": "string", "minLength": 1 },
+        {
+          "type": "object",
+          "required": ["key", "name"],
+          "properties": {
+            "key": { "type": "string", "minLength": 1 },
+            "name": { "type": "string", "minLength": 1 },
+            "territory": { "type": "string" },
+            "icon": { "type": "string" },
+            "color": { "type": ["string", "null"] }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "alternative": {
+      "type": "object",
+      "required": ["letter", "text"],
+      "properties": {
+        "letter": { "type": "string", "pattern": "^[A-Z]$" },
+        "text": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "item": {
+      "type": "object",
+      "required": ["contentId", "kind", "disciplineKey"],
+      "properties": {
+        "contentId": { "type": "string", "minLength": 1 },
+        "kind": { "enum": ["doctrine", "question", "flashcard"] },
+        "disciplineKey": { "type": "string", "minLength": 1 },
+        "discipline": { "type": "string" },
+        "title": { "type": "string" },
+        "theme": { "type": "string" },
+        "content": { "type": "string" },
+        "front": { "type": "string" },
+        "back": { "type": "string" },
+        "origin": { "type": "string" },
+        "statement": { "type": "string" },
+        "alternatives": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/alternative" } },
+        "correctAnswer": { "type": "string", "pattern": "^[A-Z]$" },
+        "difficulty": { "enum": ["facil", "media", "dificil"] },
+        "explanationCorrect": { "type": "string" },
+        "explanationWrong": { "type": "string" },
+        "trap": { "type": "string" },
+        "memoryRule": { "type": "string" },
+        "absurdCase": { "type": "string" },
+        "source": { "$ref": "#/$defs/source" },
+        "legalReferences": { "type": "array", "items": { "type": "string" } },
+        "status": { "enum": ["draft", "reviewed", "published", "archived"] },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "allOf": [
+        { "if": { "properties": { "kind": { "const": "doctrine" } } }, "then": { "required": ["title", "content"] } },
+        { "if": { "properties": { "kind": { "const": "flashcard" } } }, "then": { "required": ["front", "back"] } },
+        { "if": { "properties": { "kind": { "const": "question" } } }, "then": { "required": ["statement", "alternatives", "correctAnswer"] } }
+      ],
+      "additionalProperties": true
+    }
+  }
+}

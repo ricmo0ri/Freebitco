@@ -1,0 +1,56 @@
+{
+  "format": "estudo-tdah-content",
+  "schemaVersion": 1,
+  "packId": "exemplo-oab-etica",
+  "packVersion": 1,
+  "title": "Exemplo — Ética OAB",
+  "description": "Pacote mínimo demonstrativo.",
+  "source": { "kind": "authorial", "name": "Conteúdo de exemplo", "license": "CC BY 4.0" },
+  "disciplines": [
+    { "key": "etica", "name": "Ética", "territory": "Ordem dos Advogados", "icon": "⚖️", "color": "#1a4bad" }
+  ],
+  "items": [
+    {
+      "contentId": "doutrina-etica-exemplo-001",
+      "kind": "doctrine",
+      "disciplineKey": "etica",
+      "title": "Inscrição na OAB",
+      "theme": "Estatuto da Advocacia",
+      "content": "Texto doutrinário de exemplo para substituir por material revisado.",
+      "legalReferences": ["Lei nº 8.906/1994"],
+      "status": "reviewed",
+      "updatedAt": "2026-08-26T00:00:00Z"
+    },
+    {
+      "contentId": "questao-etica-exemplo-001",
+      "kind": "question",
+      "disciplineKey": "etica",
+      "theme": "Publicidade profissional",
+      "origin": "Banco autoral — questão 1",
+      "difficulty": "media",
+      "statement": "Enunciado de exemplo. Qual alternativa está correta?",
+      "alternatives": [
+        { "letter": "A", "text": "Alternativa incorreta." },
+        { "letter": "B", "text": "Alternativa correta de exemplo." },
+        { "letter": "C", "text": "Alternativa incorreta." },
+        { "letter": "D", "text": "Alternativa incorreta." }
+      ],
+      "correctAnswer": "B",
+      "explanationCorrect": "Explique a razão jurídica da alternativa correta.",
+      "explanationWrong": "Explique por que as demais alternativas estão incorretas.",
+      "legalReferences": ["Código de Ética e Disciplina da OAB"],
+      "status": "reviewed",
+      "updatedAt": "2026-08-26T00:00:00Z"
+    },
+    {
+      "contentId": "flashcard-etica-exemplo-001",
+      "kind": "flashcard",
+      "disciplineKey": "etica",
+      "theme": "Prerrogativas",
+      "front": "Qual é a finalidade deste flashcard?",
+      "back": "Testar a lembrança ativa de um conceito jurídico.",
+      "status": "published",
+      "updatedAt": "2026-08-26T00:00:00Z"
+    }
+  ]
+}

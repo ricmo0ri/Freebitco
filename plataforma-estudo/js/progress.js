@@ -23,6 +23,22 @@ var Progress = (function () {
     els.streakBest.textContent = String(streaks.best);
 
     renderWeekChart();
+    renderMetaDiaria();
+  }
+
+  function renderMetaDiaria() {
+    var feitas = Storage.getQuestoesRespondidasHoje();
+    var meta = Storage.getMetaDiariaQuestoes();
+    var pct = Math.min(100, Math.round((feitas / meta) * 100));
+    els.metaProgresso.textContent = feitas + ' / ' + meta + ' hoje' + (feitas >= meta ? ' — concluída! 🎉' : '');
+    els.metaFill.style.width = pct + '%';
+    if (document.activeElement !== els.metaInput) els.metaInput.value = meta;
+  }
+
+  function salvarMeta() {
+    Storage.setMetaDiariaQuestoes(els.metaInput.value);
+    renderMetaDiaria();
+    if (window.Missao) Missao.renderTerritorios();
   }
 
   function renderWeekChart() {
@@ -58,6 +74,11 @@ var Progress = (function () {
     els.streakCurrent = document.getElementById('streak-current');
     els.streakBest = document.getElementById('streak-best');
     els.chart = document.getElementById('week-chart');
+    els.metaProgresso = document.getElementById('meta-diaria-progresso');
+    els.metaFill = document.getElementById('meta-diaria-fill');
+    els.metaInput = document.getElementById('meta-diaria-input');
+    els.metaSalvarBtn = document.getElementById('meta-diaria-salvar');
+    if (els.metaSalvarBtn) els.metaSalvarBtn.addEventListener('click', salvarMeta);
 
     refresh();
   }

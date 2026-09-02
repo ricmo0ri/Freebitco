@@ -1162,3 +1162,125 @@ body.low-stim .icon-medalha,
 body.low-stim .view-title {
   border-color: var(--gold) !important;
 }
+
+/* ============================================================
+   Melhorias de acessibilidade/TDAH: atalhos, progresso visual,
+   pular questão, meta diária, pausa guiada e aviso de hiperfoco.
+   ============================================================ */
+
+.questao-acoes {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.questao-acoes .btn-primary { flex: 1; min-width: 160px; }
+
+.atalhos-hint {
+  font-family: var(--font-mono);
+  opacity: 0.75;
+}
+
+.missao-progress-bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  overflow: hidden;
+  margin: 4px 0 12px;
+  border: 1px solid var(--line);
+}
+.missao-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--gradient-brand);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.continuar-missao-box { margin-bottom: 12px; }
+
+.meta-diaria-widget {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  text-align: center;
+  margin: 0 0 10px;
+  font-family: var(--font-mono);
+}
+
+.meta-diaria-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow-sm);
+}
+.meta-diaria-titulo { font-weight: 700; margin: 0 0 6px; }
+.meta-diaria-progresso {
+  font-family: var(--font-mono);
+  color: var(--ink-soft);
+  margin: 0 0 6px;
+}
+.meta-diaria-editor {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.meta-diaria-editor input {
+  width: 70px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 6px 8px;
+  background: var(--surface-2);
+  color: var(--ink);
+  font-family: inherit;
+}
+
+/* ---------- overlay de bem-estar (pausa guiada / hiperfoco) ---------- */
+
+.bemestar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 12, 6, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+.bemestar-overlay[hidden] { display: none; }
+.bemestar-card {
+  background: var(--surface);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 24px 20px;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+}
+.bemestar-card h3 { margin: 8px 0 6px; }
+.bemestar-card p { color: var(--ink-soft); margin: 0 0 16px; }
+.bemestar-acoes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.bemestar-breath {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: var(--gradient-brand);
+  animation: bemestarRespirar 4s ease-in-out infinite;
+}
+@keyframes bemestarRespirar {
+  0%, 100% { transform: scale(0.7); opacity: 0.7; }
+  50% { transform: scale(1.15); opacity: 1; }
+}
+.overlay-pausa .bemestar-breath { display: block; }
+
+body.low-stim .bemestar-breath { animation: none !important; opacity: 0.9; }

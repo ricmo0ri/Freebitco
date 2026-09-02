@@ -79,7 +79,79 @@ var Missao = (function () {
 
   // ---------- renderização do território picker ----------
 
+  function renderMetaDiariaMini() {
+    if (!els.metaDiariaMini) return;
+    var feitas = Storage.getQuestoesRespondidasHoje();
+    var meta = Storage.getMetaDiariaQuestoes();
+    var texto = '🎯 Meta de hoje: ' + feitas + ' / ' + meta + ' questões';
+    if (feitas >= meta) texto += ' — concluída! 🎉';
+    els.metaDiariaMini.textContent = texto;
+  }
+
+  function renderContinuarMissao() {
+    if (!els.continuarBox) return;
+    var ultima = Storage.read(Storage.KEYS.ultimaMissao, null);
+    if (!ultima || ultima.indice >= ultima.filaIds.length) {
+      els.continuarBox.hidden = true;
+      return;
+    }
+    els.continuarBox.hidden = false;
+    els.continuarBtn.textContent = '▶️ Continuar: ' + ultima.label + ' (questão ' + (ultima.indice + 1) + ' de ' + ultima.filaIds.length + ')';
+    els.continuarBtn.onclick = retomarMissao;
+  }
+
+  function retomarMissao() {
+    var ultima = Storage.read(Storage.KEYS.ultimaMissao, null);
+    if (!ultima) return;
+    DB.getAll('questoes').then(function (todas) {
+      var porId = {};
+      todas.forEach(function (q) { porId[q.id] = q; });
+      var fila = ultima.filaIds.map(function (id) { return porId[id]; }).filter(Boolean);
+      if (fila.length === 0) {
+        Storage.write(Storage.KEYS.ultimaMissao, null);
+        renderContinuarMissao();
+        return;
+      }
+      sessao = {
+        label: ultima.label,
+        fila: fila,
+        indice: ultima.indice,
+        combo: ultima.combo || 0,
+        xpTotal: ultima.xpTotal || 0,
+        acertos: ultima.acertos || 0,
+        respondidas: ultima.respondidas || 0,
+        disciplinasTocadas: {},
+        pegadinhaAprendida: ultima.pegadinhaAprendida || null,
+        selecionado: null
+      };
+      els.picker.hidden = true;
+      els.relatorio.hidden = true;
+      els.battle.hidden = false;
+      renderQuestaoAtual();
+    });
+  }
+
+  function salvarProgressoMissao() {
+    if (!sessao) return;
+    Storage.write(Storage.KEYS.ultimaMissao, {
+      label: sessao.label,
+      filaIds: sessao.fila.map(function (q) { return q.id; }),
+      indice: sessao.indice,
+      combo: sessao.combo,
+      xpTotal: sessao.xpTotal,
+      acertos: sessao.acertos,
+      respondidas: sessao.respondidas,
+      pegadinhaAprendida: sessao.pegadinhaAprendida
+    });
+  }
+
+  function limparProgressoMissao() {
+    Storage.write(Storage.KEYS.ultimaMissao, null);
+  }
+
   function renderTerritorios() {
+    renderMetaDiariaMini();
+    renderContinuarMissao();
     return DB.getAll('disciplinas').then(function (disciplinas) {
       els.territoriosList.innerHTML = '';
       if (disciplinas.length === 0) {
@@ -163,6 +235,14 @@ var Missao = (function () {
     };
   }
 
+  function estimarMinutosRestantes() {
+    if (!sessao) return 0;
+    var minutosPlanejados = Timer.getSelectedMinutes();
+    var totalPlanejado = sessao.fila.length || 1;
+    var restantes = sessao.fila.length - sessao.indice;
+    return Math.max(1, Math.round((minutosPlanejados / totalPlanejado) * restantes));
+  }
+
   function renderQuestaoAtual() {
     if (!sessao || sessao.indice >= sessao.fila.length) {
       finalizarMissao();
@@ -170,8 +250,13 @@ var Missao = (function () {
     }
     var questao = sessao.fila[sessao.indice];
     sessao.selecionado = null;
-    els.progresso.textContent = 'Questão ' + (sessao.indice + 1) + ' de ' + sessao.fila.length + ' — ' + sessao.label;
+    els.progresso.textContent = 'Questão ' + (sessao.indice + 1) + ' de ' + sessao.fila.length + ' — ' + sessao.label +
+      ' · ≈' + estimarMinutosRestantes() + ' min restantes';
+    if (els.progressFill) {
+      els.progressFill.style.width = Math.round((sessao.indice / sessao.fila.length) * 100) + '%';
+    }
     els.proximaBtn.hidden = true;
+    if (els.pularBtn) els.pularBtn.hidden = false;
 
     QuestaoCard.render(refsMissao(), questao, function (i) {
       sessao.selecionado = i;
@@ -181,15 +266,29 @@ var Missao = (function () {
     els.confirmBtn.onclick = function () { confirmarQuestaoAtual(questao); };
     els.proximaBtn.onclick = function () {
       sessao.indice += 1;
+      salvarProgressoMissao();
       renderQuestaoAtual();
     };
 
     updateComboBadge();
   }
 
+  function pularQuestaoAtual() {
+    if (!sessao) return;
+    var questao = sessao.fila[sessao.indice];
+    var revisar = Storage.read(Storage.KEYS.revisarDepois, []);
+    if (revisar.indexOf(questao.id) === -1) revisar.push(questao.id);
+    Storage.write(Storage.KEYS.revisarDepois, revisar);
+
+    sessao.indice += 1;
+    salvarProgressoMissao();
+    renderQuestaoAtual();
+  }
+
   function confirmarQuestaoAtual(questao) {
     if (sessao.selecionado === null) return;
     var acertou = sessao.selecionado === questao.respostaCorreta;
+    var comboAntes = sessao.combo;
     var resultado = calcularXp(questao, acertou);
 
     registrarResposta(questao, acertou, resultado);
@@ -203,6 +302,16 @@ var Missao = (function () {
       sessao.pegadinhaAprendida = questao.pegadinha;
     }
 
+    if (window.Bemestar) {
+      if (resultado.critico) {
+        Bemestar.tocarConquistaGrande();
+      } else if ([3, 5, 10].indexOf(sessao.combo) !== -1 && sessao.combo !== comboAntes) {
+        Bemestar.tocarConquista();
+      }
+    }
+
+    salvarProgressoMissao();
+    if (els.pularBtn) els.pularBtn.hidden = true;
     QuestaoCard.showFeedback(refsMissao(), questao, sessao.selecionado, resultado.critico);
     els.proximaBtn.hidden = false;
     updateComboBadge();
@@ -260,6 +369,7 @@ var Missao = (function () {
     els.battle.hidden = true;
     els.relatorio.hidden = false;
     sessao = null;
+    limparProgressoMissao();
   }
 
   function voltarParaPicker() {
@@ -303,6 +413,7 @@ var Missao = (function () {
 
     els.pContinuar.hidden = true;
     els.pConfirmBtn.hidden = false;
+    if (els.pPularBtn) els.pPularBtn.hidden = false;
 
     QuestaoCard.render(refsPreguica(), questao, function (i) {
       preguicaAtual.selecionado = i;
@@ -310,6 +421,14 @@ var Missao = (function () {
     });
 
     els.pConfirmBtn.onclick = function () { confirmarPreguica(questoes); };
+    if (els.pPularBtn) {
+      els.pPularBtn.onclick = function () {
+        var revisar = Storage.read(Storage.KEYS.revisarDepois, []);
+        if (revisar.indexOf(questao.id) === -1) revisar.push(questao.id);
+        Storage.write(Storage.KEYS.revisarDepois, revisar);
+        proximaQuestaoPreguica(questoes);
+      };
+    }
   }
 
   function confirmarPreguica(questoes) {
@@ -321,6 +440,7 @@ var Missao = (function () {
 
     QuestaoCard.showFeedback(refsPreguica(), questao, preguicaAtual.selecionado);
     els.pContinuar.hidden = false;
+    if (els.pPularBtn) els.pPularBtn.hidden = true;
 
     els.pSimBtn.onclick = function () { proximaQuestaoPreguica(questoes); };
     els.pNaoBtn.onclick = function () {
@@ -335,15 +455,20 @@ var Missao = (function () {
     els.territoriosList = document.getElementById('missao-territorios-list');
     els.aleatorioBtn = document.getElementById('missao-aleatorio-btn');
     els.preguicaBtn = document.getElementById('modo-preguica-btn');
+    els.metaDiariaMini = document.getElementById('meta-diaria-mini');
+    els.continuarBox = document.getElementById('continuar-missao-box');
+    els.continuarBtn = document.getElementById('continuar-missao-btn');
 
     els.battle = document.getElementById('missao-battle');
     els.progresso = document.getElementById('missao-progresso');
+    els.progressFill = document.getElementById('missao-progress-fill');
     els.combo = document.getElementById('missao-combo');
     els.origem = document.getElementById('missao-origem');
     els.caso = document.getElementById('missao-caso');
     els.enunciado = document.getElementById('missao-enunciado');
     els.altList = document.getElementById('missao-alternativas');
     els.confirmBtn = document.getElementById('missao-confirmar');
+    els.pularBtn = document.getElementById('missao-pular');
     els.feedback = document.getElementById('missao-feedback');
     els.metodo = document.getElementById('missao-metodo');
     els.proximaBtn = document.getElementById('missao-proxima');
@@ -359,6 +484,7 @@ var Missao = (function () {
     els.pEnunciado = document.getElementById('preguica-enunciado');
     els.pAltList = document.getElementById('preguica-alternativas');
     els.pConfirmBtn = document.getElementById('preguica-confirmar');
+    els.pPularBtn = document.getElementById('preguica-pular');
     els.pFeedback = document.getElementById('preguica-feedback');
     els.pMetodo = document.getElementById('preguica-metodo');
     els.pContinuar = document.getElementById('preguica-continuar');
@@ -369,6 +495,7 @@ var Missao = (function () {
     els.preguicaBtn.addEventListener('click', iniciarModoPreguica);
     els.encerrarBtn.addEventListener('click', encerrarMissaoAgora);
     els.novaMissaoBtn.addEventListener('click', voltarParaPicker);
+    if (els.pularBtn) els.pularBtn.addEventListener('click', pularQuestaoAtual);
 
     renderTerritorios();
   }

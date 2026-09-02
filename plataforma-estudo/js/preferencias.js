@@ -41,10 +41,33 @@ var Preferencias = (function () {
     aplicarTema(tema);
   }
 
+  function isSomConquistasAtivo() {
+    return Storage.read(Storage.KEYS.somConquistas, true);
+  }
+
+  function aplicarSomConquistas(ativo) {
+    if (els.somToggleBtn) {
+      els.somToggleBtn.textContent = '🔔 Sons de conquista: ' + (ativo ? 'ligado' : 'desligado');
+      els.somToggleBtn.setAttribute('aria-pressed', String(ativo));
+    }
+  }
+
+  function alternarSomConquistas() {
+    var novoValor = !isSomConquistasAtivo();
+    Storage.write(Storage.KEYS.somConquistas, novoValor);
+    aplicarSomConquistas(novoValor);
+  }
+
   function init() {
     els.toggleBtn = document.getElementById('low-stim-toggle');
     els.toggleBtn.addEventListener('click', alternarBaixoEstimulo);
     aplicarBaixoEstimulo(isBaixoEstimuloAtivo());
+
+    els.somToggleBtn = document.getElementById('som-conquistas-toggle');
+    if (els.somToggleBtn) {
+      els.somToggleBtn.addEventListener('click', alternarSomConquistas);
+      aplicarSomConquistas(isSomConquistasAtivo());
+    }
 
     els.temaBotoes = Array.prototype.slice.call(document.querySelectorAll('.tema-btn'));
     els.temaBotoes.forEach(function (btn) {

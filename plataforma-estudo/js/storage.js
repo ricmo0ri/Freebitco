@@ -13,7 +13,11 @@ var Storage = (function () {
     territoriosSeedVersion: 'estudoTdah.territoriosSeedVersion',
     questoesSeedVersion: 'estudoTdah.questoesSeedVersion',
     lowStim: 'estudoTdah.lowStim',
-    tema: 'estudoTdah.tema'
+    tema: 'estudoTdah.tema',
+    metaDiariaQuestoes: 'estudoTdah.metaDiariaQuestoes',
+    revisarDepois: 'estudoTdah.revisarDepois',
+    ultimaMissao: 'estudoTdah.ultimaMissao',
+    somConquistas: 'estudoTdah.somConquistas'
   };
 
   function read(key, fallback) {
@@ -121,12 +125,29 @@ var Storage = (function () {
     return result;
   }
 
+  function getQuestoesRespondidasHoje() {
+    var hoje = todayStr();
+    var respostas = read(KEYS.questaoRespostas, []);
+    return respostas.filter(function (r) { return r.date === hoje; }).length;
+  }
+
+  function getMetaDiariaQuestoes() {
+    return read(KEYS.metaDiariaQuestoes, 10);
+  }
+
+  function setMetaDiariaQuestoes(valor) {
+    write(KEYS.metaDiariaQuestoes, Math.max(1, Number(valor) || 10));
+  }
+
   return {
     KEYS: KEYS,
     read: read,
     write: write,
     todayStr: todayStr,
     makeId: makeId,
+    getQuestoesRespondidasHoje: getQuestoesRespondidasHoje,
+    getMetaDiariaQuestoes: getMetaDiariaQuestoes,
+    setMetaDiariaQuestoes: setMetaDiariaQuestoes,
     recordActivity: recordActivity,
     getStreaks: getStreaks,
     getLastNDaysCounts: getLastNDaysCounts

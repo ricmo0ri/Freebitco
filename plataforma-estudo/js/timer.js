@@ -92,6 +92,7 @@ var Timer = (function () {
     els.pauseBtn.hidden = true;
     els.message.textContent = 'Sessão concluída! Faça uma pequena pausa.';
     playChime();
+    if (window.Bemestar) Bemestar.mostrarPausaGuiada();
 
     var sessions = Storage.read(Storage.KEYS.sessions, []);
     sessions.push({ date: Storage.todayStr(), minutes: selectedMinutes });

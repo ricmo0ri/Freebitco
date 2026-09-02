@@ -60,6 +60,10 @@
       <button id="modo-preguica-btn" class="btn btn-preguica">🧨 Não quero estudar</button>
 
       <div id="missao-picker">
+        <p class="meta-diaria-widget" id="meta-diaria-mini"></p>
+        <div id="continuar-missao-box" class="continuar-missao-box" hidden>
+          <button id="continuar-missao-btn" class="btn btn-primary"></button>
+        </div>
         <h3 class="section-subtitle">Escolha um território</h3>
         <button id="missao-aleatorio-btn" class="btn btn-primary missao-aleatorio-btn">🎲 Missão aleatória (prioriza fraquezas)</button>
         <ul id="missao-territorios-list" class="simple-list territorios-list"></ul>
@@ -67,13 +71,18 @@
 
       <div id="missao-battle" class="card-panel" hidden>
         <p class="hint-text" id="missao-progresso"></p>
+        <div class="missao-progress-bar"><div class="missao-progress-fill" id="missao-progress-fill"></div></div>
         <p class="combo-badge" id="missao-combo" hidden></p>
         <div class="flashcard">
           <p class="flashcard-label" id="missao-origem"></p>
           <p class="caso-absurdo" id="missao-caso" hidden></p>
           <p class="flashcard-text" id="missao-enunciado"></p>
           <div id="missao-alternativas" class="alternativas-list"></div>
-          <button id="missao-confirmar" class="btn btn-primary" disabled>Confirmar resposta</button>
+          <p class="hint-text atalhos-hint">⌨️ Atalhos: 1-4 escolhe · Enter confirma/avança</p>
+          <div class="questao-acoes">
+            <button id="missao-confirmar" class="btn btn-primary" disabled>Confirmar resposta</button>
+            <button id="missao-pular" class="btn btn-ghost">Pular (revisar depois)</button>
+          </div>
           <p id="missao-feedback" class="questao-feedback" hidden></p>
           <div id="missao-metodo" class="metodo-feedback" hidden></div>
           <button id="missao-proxima" class="btn btn-secondary" hidden>Próxima questão</button>
@@ -87,7 +96,11 @@
           <p class="caso-absurdo" id="preguica-caso" hidden></p>
           <p class="flashcard-text" id="preguica-enunciado"></p>
           <div id="preguica-alternativas" class="alternativas-list"></div>
-          <button id="preguica-confirmar" class="btn btn-primary" disabled>Confirmar resposta</button>
+          <p class="hint-text atalhos-hint">⌨️ Atalhos: 1-4 escolhe · Enter confirma/avança</p>
+          <div class="questao-acoes">
+            <button id="preguica-confirmar" class="btn btn-primary" disabled>Confirmar resposta</button>
+            <button id="preguica-pular" class="btn btn-ghost">Pular</button>
+          </div>
           <p id="preguica-feedback" class="questao-feedback" hidden></p>
           <div id="preguica-metodo" class="metodo-feedback" hidden></div>
           <div id="preguica-continuar" class="rate-buttons" hidden>
@@ -354,6 +367,7 @@
 
       <div class="prefs-row">
         <button id="low-stim-toggle" class="btn btn-ghost" aria-pressed="false">🌫️ Modo baixo estímulo: desligado</button>
+        <button id="som-conquistas-toggle" class="btn btn-ghost" aria-pressed="true">🔔 Sons de conquista: ligado</button>
 
         <div class="tema-picker">
           <span class="tema-label">Tema</span>
@@ -362,6 +376,17 @@
             <button class="tema-btn" data-tema="light">Claro</button>
             <button class="tema-btn" data-tema="dark">Escuro</button>
           </div>
+        </div>
+      </div>
+
+      <div class="meta-diaria-card">
+        <p class="meta-diaria-titulo">🎯 Meta diária de questões</p>
+        <p class="meta-diaria-progresso" id="meta-diaria-progresso">0 / 10 hoje</p>
+        <div class="missao-progress-bar"><div class="missao-progress-fill" id="meta-diaria-fill"></div></div>
+        <div class="meta-diaria-editor">
+          <label for="meta-diaria-input">Mudar meta:</label>
+          <input type="number" id="meta-diaria-input" min="1" max="200" step="1">
+          <button id="meta-diaria-salvar" class="btn btn-ghost">Salvar</button>
         </div>
       </div>
 
@@ -400,6 +425,18 @@
 
   </main>
 
+  <div id="bemestar-overlay" class="bemestar-overlay" hidden>
+    <div class="bemestar-card">
+      <div class="bemestar-breath" aria-hidden="true"></div>
+      <h3 id="bemestar-titulo"></h3>
+      <p id="bemestar-mensagem"></p>
+      <div class="bemestar-acoes">
+        <button id="bemestar-acao-principal" class="btn btn-primary"></button>
+        <button id="bemestar-acao-secundaria" class="btn btn-ghost"></button>
+      </div>
+    </div>
+  </div>
+
   <nav class="tabbar" id="tabbar">
     <button class="tab-btn active" data-view="missao" aria-pressed="true">🎮 Missão</button>
     <button class="tab-btn" data-view="estudo" aria-pressed="false">🗺️ Território</button>
@@ -415,6 +452,7 @@
 <script src="js/perfil.js"></script>
 <script src="js/fraquezas.js"></script>
 <script src="js/questaoCard.js"></script>
+<script src="js/bemestar.js"></script>
 <script src="js/timer.js"></script>
 <script src="js/missao.js"></script>
 <script src="js/flashcards.js"></script>

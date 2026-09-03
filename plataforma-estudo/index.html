@@ -34,6 +34,12 @@
     <section id="view-missao" class="view" data-view="missao">
       <h2 class="view-title">Escolha sua missão</h2>
 
+      <div id="revisao-inteligente-card" class="revisao-card" hidden>
+        <p class="revisao-titulo" id="revisao-titulo">📚 Você precisa revisar</p>
+        <ul id="revisao-lista" class="revisao-lista"></ul>
+        <button id="revisao-agora-btn" class="btn btn-primary" hidden></button>
+      </div>
+
       <div class="duration-picker" role="group" aria-label="Duração da missão">
         <button class="duration-btn" data-minutes="3">⚡ 3 min</button>
         <button class="duration-btn" data-minutes="10">⚔️ 10 min</button>
@@ -365,6 +371,15 @@
     <section id="view-progresso" class="view" data-view="progresso">
       <h2 class="view-title">Seu progresso</h2>
 
+      <div class="desempenho-hero">
+        <p class="desempenho-titulo">Seu desempenho</p>
+        <div class="desempenho-linhas">
+          <p><span class="desempenho-valor" id="desempenho-questoes">0</span> questões respondidas</p>
+          <p><span class="desempenho-valor" id="desempenho-acerto">0%</span> de aproveitamento</p>
+          <p><span class="desempenho-valor" id="desempenho-tempo">0min</span> estudados</p>
+        </div>
+      </div>
+
       <div class="prefs-row">
         <button id="low-stim-toggle" class="btn btn-ghost" aria-pressed="false">🌫️ Modo baixo estímulo: desligado</button>
         <button id="som-conquistas-toggle" class="btn btn-ghost" aria-pressed="true">🔔 Sons de conquista: ligado</button>
@@ -419,7 +434,13 @@
         <p class="hint-text">🌙 Se você ficar um dia sem estudar, seu progresso continua igual. É só retomar.</p>
       </div>
 
-      <h3>Últimos 7 dias</h3>
+      <h3>🗺️ Seu mapa da OAB</h3>
+      <ul id="mapa-oab-lista" class="mapa-oab-lista"></ul>
+
+      <h3>📈 Evolução da taxa de acerto</h3>
+      <div class="week-chart" id="acerto-chart" aria-hidden="true"></div>
+
+      <h3>Atividade dos últimos 7 dias</h3>
       <div class="week-chart" id="week-chart" aria-hidden="true"></div>
     </section>
 
@@ -451,6 +472,7 @@
 <script src="js/questoesSeed.js"></script>
 <script src="js/perfil.js"></script>
 <script src="js/fraquezas.js"></script>
+<script src="js/revisao.js"></script>
 <script src="js/questaoCard.js"></script>
 <script src="js/bemestar.js"></script>
 <script src="js/timer.js"></script>

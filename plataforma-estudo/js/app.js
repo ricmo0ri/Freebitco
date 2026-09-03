@@ -78,6 +78,7 @@ var App = (function () {
     });
 
     if (window.Bemestar) Bemestar.init();
+    if (window.Revisao) Revisao.init();
     Perfil.init();
     Timer.init();
     Flashcards.init();

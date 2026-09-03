@@ -1284,3 +1284,68 @@ body.low-stim .view-title {
 .overlay-pausa .bemestar-breath { display: block; }
 
 body.low-stim .bemestar-breath { animation: none !important; opacity: 0.9; }
+
+/* ============================================================
+   Estatísticas visuais e revisão inteligente.
+   ============================================================ */
+
+.desempenho-hero {
+  background: var(--gradient-brand);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  color: var(--on-ink);
+}
+.desempenho-titulo {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+.desempenho-linhas { display: flex; flex-direction: column; gap: 2px; }
+.desempenho-linhas p { margin: 0; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+.desempenho-valor {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-right: 4px;
+}
+
+.mapa-oab-lista, .revisao-lista {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.mapa-oab-item, .revisao-item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  font-size: 0.92rem;
+}
+
+.week-chart .bar-fill-vazia {
+  background: var(--surface-2);
+  opacity: 0.5;
+}
+
+.revisao-card {
+  background: var(--surface);
+  border: 2px solid var(--gold);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 16px 18px;
+  margin-bottom: 18px;
+}
+.revisao-titulo {
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.revisao-card .btn-primary { width: 100%; }

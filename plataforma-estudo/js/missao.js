@@ -122,7 +122,8 @@ var Missao = (function () {
         respondidas: ultima.respondidas || 0,
         disciplinasTocadas: {},
         pegadinhaAprendida: ultima.pegadinhaAprendida || null,
-        selecionado: null
+        selecionado: null,
+        minutosTotais: ultima.minutosTotais || Timer.getSelectedMinutes()
       };
       els.picker.hidden = true;
       els.relatorio.hidden = true;
@@ -141,7 +142,8 @@ var Missao = (function () {
       xpTotal: sessao.xpTotal,
       acertos: sessao.acertos,
       respondidas: sessao.respondidas,
-      pegadinhaAprendida: sessao.pegadinhaAprendida
+      pegadinhaAprendida: sessao.pegadinhaAprendida,
+      minutosTotais: sessao.minutosTotais
     });
   }
 
@@ -152,6 +154,7 @@ var Missao = (function () {
   function renderTerritorios() {
     renderMetaDiariaMini();
     renderContinuarMissao();
+    if (window.Revisao) Revisao.render();
     return DB.getAll('disciplinas').then(function (disciplinas) {
       els.territoriosList.innerHTML = '';
       if (disciplinas.length === 0) {
@@ -190,6 +193,31 @@ var Missao = (function () {
 
   // ---------- missão principal ----------
 
+  function iniciarComFila(fila, label, minutosTotais) {
+    if (fila.length === 0) {
+      alert('Ainda não há questões cadastradas aí. Adicione algumas na aba Território antes de encarar essa missão.');
+      return;
+    }
+    sessao = {
+      label: label,
+      fila: fila,
+      indice: 0,
+      combo: 0,
+      xpTotal: 0,
+      acertos: 0,
+      respondidas: 0,
+      disciplinasTocadas: {},
+      pegadinhaAprendida: null,
+      selecionado: null,
+      minutosTotais: minutosTotais || Timer.getSelectedMinutes()
+    };
+
+    els.picker.hidden = true;
+    els.relatorio.hidden = true;
+    els.battle.hidden = false;
+    renderQuestaoAtual();
+  }
+
   function iniciarMissao(disciplinaId, label) {
     var carregar = disciplinaId ? DB.getAllByIndex('questoes', 'disciplinaId', disciplinaId) : DB.getAll('questoes');
 
@@ -202,24 +230,7 @@ var Missao = (function () {
       var minutos = Timer.getSelectedMinutes();
       var quantidade = MINUTOS_PARA_QUESTOES[minutos] || 6;
       var fila = priorizarQuestoes(questoes, quantidade);
-
-      sessao = {
-        label: label,
-        fila: fila,
-        indice: 0,
-        combo: 0,
-        xpTotal: 0,
-        acertos: 0,
-        respondidas: 0,
-        disciplinasTocadas: {},
-        pegadinhaAprendida: null,
-        selecionado: null
-      };
-
-      els.picker.hidden = true;
-      els.relatorio.hidden = true;
-      els.battle.hidden = false;
-      renderQuestaoAtual();
+      iniciarComFila(fila, label, minutos);
     });
   }
 
@@ -237,7 +248,7 @@ var Missao = (function () {
 
   function estimarMinutosRestantes() {
     if (!sessao) return 0;
-    var minutosPlanejados = Timer.getSelectedMinutes();
+    var minutosPlanejados = sessao.minutosTotais || Timer.getSelectedMinutes();
     var totalPlanejado = sessao.fila.length || 1;
     var restantes = sessao.fila.length - sessao.indice;
     return Math.max(1, Math.round((minutosPlanejados / totalPlanejado) * restantes));
@@ -504,6 +515,7 @@ var Missao = (function () {
     init: init,
     renderTerritorios: renderTerritorios,
     calcularXp: calcularXp,
-    registrarResposta: registrarResposta
+    registrarResposta: registrarResposta,
+    iniciarComFila: iniciarComFila
   };
 })();

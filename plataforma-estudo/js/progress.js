@@ -22,8 +22,81 @@ var Progress = (function () {
     els.streakCurrent.textContent = String(streaks.current);
     els.streakBest.textContent = String(streaks.best);
 
+    renderDesempenhoHero(questaoRespostas, totalMinutes);
     renderWeekChart();
+    renderAcertoChart(questaoRespostas);
+    renderMapaOab();
     renderMetaDiaria();
+  }
+
+  function formatarTempo(minutos) {
+    if (minutos < 60) return minutos + 'min';
+    var h = Math.floor(minutos / 60);
+    var m = minutos % 60;
+    return h + 'h' + (m > 0 ? (m < 10 ? '0' : '') + m : '');
+  }
+
+  function renderDesempenhoHero(questaoRespostas, totalMinutes) {
+    var total = questaoRespostas.length;
+    var acertos = questaoRespostas.filter(function (r) { return r.acertou; }).length;
+    var pct = total > 0 ? Math.round((acertos / total) * 100) : 0;
+
+    els.desQuestoes.textContent = String(total);
+    els.desAcerto.textContent = pct + '%';
+    els.desTempo.textContent = formatarTempo(totalMinutes);
+  }
+
+  function renderAcertoChart(questaoRespostas) {
+    if (!els.acertoChart) return;
+    var porDia = {};
+    questaoRespostas.forEach(function (r) {
+      if (!porDia[r.date]) porDia[r.date] = { total: 0, acertos: 0 };
+      porDia[r.date].total += 1;
+      if (r.acertou) porDia[r.date].acertos += 1;
+    });
+
+    els.acertoChart.innerHTML = '';
+    for (var i = 6; i >= 0; i--) {
+      var d = new Date();
+      d.setDate(d.getDate() - i);
+      var key = d.toISOString().slice(0, 10);
+      var dados = porDia[key];
+      var pct = dados ? Math.round((dados.acertos / dados.total) * 100) : null;
+
+      var col = document.createElement('div');
+      col.className = 'day-bar';
+
+      var fill = document.createElement('div');
+      fill.className = 'bar-fill' + (pct === null ? ' bar-fill-vazia' : '');
+      var heightPct = pct === null ? 4 : Math.round((pct / 100) * 80) + 4;
+      fill.style.height = heightPct + 'px';
+      fill.title = pct === null ? 'Sem questões nesse dia' : pct + '% de acerto';
+
+      var label = document.createElement('span');
+      label.className = 'bar-label';
+      label.textContent = d.toLocaleDateString('pt-BR', { weekday: 'short' }).slice(0, 3);
+
+      col.appendChild(fill);
+      col.appendChild(label);
+      els.acertoChart.appendChild(col);
+    }
+  }
+
+  function renderMapaOab() {
+    if (!els.mapaLista || !window.DB) return;
+    DB.getAll('disciplinas').then(function (disciplinas) {
+      var mapa = Fraquezas.getMapaTerritorios(disciplinas);
+      mapa.sort(function (a, b) { return b.pct - a.pct; });
+
+      els.mapaLista.innerHTML = '';
+      mapa.forEach(function (item) {
+        var li = document.createElement('li');
+        li.className = 'mapa-oab-item';
+        var texto = item.total > 0 ? item.nome + ' — ' + item.pct + '%' : item.nome + ' — sem dados ainda';
+        li.textContent = item.emoji + ' ' + texto;
+        els.mapaLista.appendChild(li);
+      });
+    });
   }
 
   function renderMetaDiaria() {
@@ -79,6 +152,12 @@ var Progress = (function () {
     els.metaInput = document.getElementById('meta-diaria-input');
     els.metaSalvarBtn = document.getElementById('meta-diaria-salvar');
     if (els.metaSalvarBtn) els.metaSalvarBtn.addEventListener('click', salvarMeta);
+
+    els.desQuestoes = document.getElementById('desempenho-questoes');
+    els.desAcerto = document.getElementById('desempenho-acerto');
+    els.desTempo = document.getElementById('desempenho-tempo');
+    els.acertoChart = document.getElementById('acerto-chart');
+    els.mapaLista = document.getElementById('mapa-oab-lista');
 
     refresh();
   }

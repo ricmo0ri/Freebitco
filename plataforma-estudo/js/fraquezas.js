@@ -91,10 +91,29 @@ var Fraquezas = (function () {
     return { maisFraco: maisFraco, maisForte: maisForte };
   }
 
+  // Visão por território (não por tema) para o "mapa da OAB": como hoje toda
+  // questão semeada tem tema vazio ('Geral'), cada território já cai num
+  // único grupo, então isso é só uma leitura direta de getStatusPorTema.
+  function getMapaTerritorios(disciplinas) {
+    return disciplinas.map(function (d) {
+      var status = getStatusPorTema(d.id)[0];
+      if (!status || status.total === 0) {
+        return {
+          disciplinaId: d.id, nome: d.territorio || d.nome, icone: d.icone, cor: d.cor,
+          total: 0, pct: 0, status: 'sem_dados', emoji: '⚪', label: 'Sem dados ainda'
+        };
+      }
+      return Object.assign({}, status, {
+        disciplinaId: d.id, nome: d.territorio || d.nome, icone: d.icone, cor: d.cor
+      });
+    });
+  }
+
   return {
     STATUS_META: STATUS_META,
     getStatusPorTema: getStatusPorTema,
     getTemasFracos: getTemasFracos,
-    getResumoGeral: getResumoGeral
+    getResumoGeral: getResumoGeral,
+    getMapaTerritorios: getMapaTerritorios
   };
 })();

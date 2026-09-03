@@ -4328,7 +4328,7 @@ var QuestoesSeed = (function () {
             },
             {
               "letra": "D",
-              "texto": "Tendo sido sócia à época da prestação dos serviços de Joana, e enriquecido com o seu labor, Soraya pode ser executada a qualquer tempo. Questionário de percepção sobre a prova Este questionário é de preenchimento facultativo pelo examinando. Como se trata de mera pesquisa, não influi no resultado final do exame. As questões têm como objetivo avaliar a qualidade e a adequação da prova que você acabou de realizar. Assinale suas respostas nos espaços próprios (canto inferior direito) da sua folha de respostas. A OAB e a FGV agradecem sua colaboração. 1 Na sua avaliação, o grau de dificuldade dessa prova foi"
+              "texto": "Tendo sido sócia à época da prestação dos serviços de Joana, e enriquecido com o seu labor, Soraya pode ser executada a qualquer tempo."
             }
           ],
           "respostaCorreta": 0,
@@ -6504,8 +6504,7 @@ var QuestoesSeed = (function () {
           "regraMemoria": "Briga de sindicato com sindicato por representação/contribuição sindical = sempre Justiça do Trabalho."
         }
       ]
-    }
-,
+    },
     {
       "provaOrigem": "42º Exame de Ordem Unificado",
       "seedVersion": 4,
@@ -6531,7 +6530,11 @@ var QuestoesSeed = (function () {
               "texto": "A medida cautelar decretada é válida, e as informações encontradas sobre os clientes de Cláudio poderão ser utilizadas se esses clientes forem formalmente investigados como partícipes ou coautores pela prática do mesmo crime que deu causa à decretação da medida."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A inviolabilidade do escritório de advogado (art. 7º, II, EAOAB) não é absoluta: havendo indícios de autoria e materialidade contra o próprio advogado, é cabível busca e apreensão específica e pormenorizada, com acompanhamento da OAB. As informações sobre clientes só podem ser usadas se esses clientes também forem formalmente investigados como coautores ou partícipes do mesmo crime, preservando-se o sigilo profissional quanto aos demais.",
+          "explicacaoErradas": "As alternativas A e B tratam a inviolabilidade como absoluta ou insuperável, o que contraria o art. 7º, §6º do Estatuto e a jurisprudência do STF. A alternativa C erra ao condicionar apenas à investigação formal dos clientes sem reconhecer a validade da medida em si, que já é válida desde o início por ter sido específica e acompanhada pela OAB.",
+          "pegadinha": "A pegadinha é achar que sigilo profissional = escudo absoluto; na real ele cede quando o próprio advogado é investigado e a medida é específica, pormenorizada e acompanhada pela OAB.",
+          "regraMemoria": "Escritório de advogado não é bunker: sigilo protege o cliente inocente, não cobre o advogado suspeito nem o cliente que é coautor do mesmo crime."
         },
         {
           "territorio": "Ética",
@@ -6554,7 +6557,11 @@ var QuestoesSeed = (function () {
               "texto": "Caso comprovado que Celina não sabia do conteúdo temerário da lide, Antônio Carlos não poderá ser civilmente responsável de forma isolada, porque a responsabilização do advogado exige participação dolosa de Celina."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O art. 32, parágrafo único, do EAOAB só impõe responsabilidade solidária entre advogado e cliente por lide temerária quando comprovada a coligação entre ambos para lesar a parte contrária. Sem essa coligação, não há solidariedade.",
+          "explicacaoErradas": "A alternativa A erra ao tornar a solidariedade automática e independente de coligação. As alternativas C e D distorcem o critério legal, que é a coligação de intuitos entre advogado e cliente, não o dever de cuidado isolado da cliente nem a exigência de dolo isolado do advogado.",
+          "pegadinha": "A pegadinha é esquecer que 'lide temerária' sozinha não gera solidariedade automática — precisa provar que cliente e advogado estavam 'no mesmo time' para prejudicar o adversário.",
+          "regraMemoria": "Solidariedade em lide temerária só existe se tiver conluio: sem coligação comprovada, cada um responde por si."
         },
         {
           "territorio": "Ética",
@@ -6577,7 +6584,11 @@ var QuestoesSeed = (function () {
               "texto": "Embora incompatível com a advocacia, o exercício do cargo de Prefeito de Ômega, por si só, não excluirá Roberto Silva da sociedade de advogados Silva e Souza Advogados Associados. Contudo, deve o fato ser averbado no registro da sociedade, bem como observada a incompatibilidade temporária."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O exercício do cargo de Prefeito é incompatível com a advocacia (art. 28, EAOAB), mas a incompatibilidade não gera exclusão automática da sociedade de advogados — o sócio se afasta do exercício profissional, mantendo-se como sócio, devendo o fato ser averbado no registro da sociedade e observada a natureza temporária da incompatibilidade.",
+          "explicacaoErradas": "A alternativa A erra ao presumir exclusão obrigatória da sociedade. A B erra porque a incompatibilidade do Prefeito é total (não advoga em nenhuma causa, não só contra a própria Fazenda). A C erra ao permitir a sociedade explorar comercialmente nome e imagem do sócio incompatível, o que viola as normas de vedação à mercantilização da advocacia.",
+          "pegadinha": "A pegadinha é confundir incompatibilidade com expulsão automática da sociedade — o advogado incompatibilizado não advoga, mas continua sócio (com a situação averbada).",
+          "regraMemoria": "Incompatibilidade tira a toga, não tira a sociedade: o sócio incompatível fica de fora da banca, mas dentro do contrato social."
         },
         {
           "territorio": "Ética",
@@ -6589,7 +6600,7 @@ var QuestoesSeed = (function () {
             },
             {
               "letra": "B",
-              "texto": "Nina não poderá alegar sigilo profissional em razão da"
+              "texto": "Nina não poderá alegar sigilo profissional em razão da natureza das funções exercidas no Conselho Federal da OAB."
             },
             {
               "letra": "C",
@@ -6600,7 +6611,11 @@ var QuestoesSeed = (function () {
               "texto": "Nina tem o dever legal de permanecer em silêncio sobre os fatos indagados, salvo em circunstâncias excepcionais, tais como a defesa judicial de familiares e amigos íntimos."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O sigilo profissional se estende aos fatos conhecidos por advogado em razão de função exercida em órgão da OAB, sendo vedado depor sobre eles, salvo grave ameaça a direito à vida ou à honra (art. 25/26 do Código de Ética e Disciplina), o que não é o caso de ação indenizatória meramente patrimonial.",
+          "explicacaoErradas": "As demais alternativas erram ao afastar o sigilo pela natureza patrimonial da ação, ao criar exceções não previstas (familiares e amigos íntimos) ou ao tratar o dever de sigilo como puramente contratual/processual e não ético-profissional.",
+          "pegadinha": "A pegadinha é pensar que, por ser questão só de dinheiro (patrimonial), o sigilo profissional deixa de valer — mas a lei só abre exceção para grave ameaça à vida ou à honra.",
+          "regraMemoria": "Sigilo profissional só cai diante de risco grave à vida ou à honra — dinheiro sozinho nunca destrava o segredo."
         },
         {
           "territorio": "Ética",
@@ -6623,7 +6638,11 @@ var QuestoesSeed = (function () {
               "texto": "Embora, em regra, os servidores da administração indireta estejam impedidos de exercer advocacia contra a Fazenda Pública que os remunera ou à qual seja vinculada a entidade empregadora, Roberto Gil poderá assumir o patrocínio de causas contra a União, pois os docentes de cursos jurídicos não estão sujeitos a essa vedação."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O art. 30, parágrafo único, do EAOAB exclui do impedimento os docentes de cursos jurídicos, mesmo sendo servidores da administração indireta federal, permitindo-lhes advogar contra a Fazenda Pública à qual estão vinculados.",
+          "explicacaoErradas": "As alternativas A e B ignoram a exceção legal aplicável aos docentes de Direito. A C erra ao criar uma falsa hipótese de 'causa própria' estendida a familiares, o que não existe no Estatuto — causa própria é apenas a do próprio advogado.",
+          "pegadinha": "A pegadinha é achar que 'ser servidor público' sempre impede advogar contra a Fazenda que o remunera — mas professor de curso jurídico é exceção expressa na lei.",
+          "regraMemoria": "Professor de Direito é o 'coringa' do impedimento: quem dá aula de Direito pode processar a Fazenda que o paga."
         },
         {
           "territorio": "Ética",
@@ -6646,7 +6665,11 @@ var QuestoesSeed = (function () {
               "texto": "José Fabiano não poderá participar da eleição corrente e de futuras, porque, uma vez apenado com sanção disciplinar, o advogado não mais poderá recuperar sua condição de elegibilidade, estando impedido, indefinidamente, de se candidatar a cargos na OAB."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A elegibilidade para cargos da OAB exige tempo mínimo de efetivo exercício da advocacia e ausência de condenação disciplinar não reabilitada; como José Fabiano tem só 2 anos e 6 meses de exercício e carrega sanção de censura sem reabilitação, ele é inelegível para a eleição corrente.",
+          "explicacaoErradas": "As alternativas A e D erram ao criar hipóteses inexistentes na lei: flexibilização por falta de concorrentes e impedimento eterno e irreversível. A C erra ao tratar 1 ano de exercício como suficiente e ao minimizar o efeito da sanção disciplinar não reabilitada.",
+          "pegadinha": "A pegadinha é achar que reabilitação é automática com o tempo, ou que uma censura 'leve' não afeta a elegibilidade — os dois requisitos (tempo mínimo e reabilitação) precisam estar cumpridos juntos.",
+          "regraMemoria": "Para concorrer na OAB: tempo de estrada + ficha limpa (ou reabilitada). Faltando um dos dois, fora da disputa."
         },
         {
           "territorio": "Ética",
@@ -6669,7 +6692,11 @@ var QuestoesSeed = (function () {
               "texto": "O não reconhecimento das atividades prestadas por João Carlos no período anterior à formalização do contrato de honorários decorre do fato de que a atuação se deu de forma verbal, de tal modo que, se a atuação tivesse se dado por escrito, as atividades prestadas poderiam ser reconhecidas."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A atividade de consultoria jurídica independe de outorga de mandato (que é exigível para representação em juízo, art. 5º do EAOAB) e o contrato de honorários pode ser tácito ou verbal, provado por outros meios, como o efetivo cumprimento dos serviços e o pagamento posterior.",
+          "explicacaoErradas": "As demais alternativas erram ao exigir mandato ou forma escrita como condição para reconhecer o trabalho prestado, confundindo a formalidade da representação processual (mandato) com a livre forma da consultoria jurídica extrajudicial.",
+          "pegadinha": "A pegadinha é confundir mandato (necessário para atuar em juízo) com consultoria informal (que vale mesmo sem papel assinado, se os serviços foram efetivamente prestados).",
+          "regraMemoria": "Mandato é para o processo; consultoria vale pelo que foi feito, mesmo sem contrato assinado."
         },
         {
           "territorio": "Ética",
@@ -6692,7 +6719,11 @@ var QuestoesSeed = (function () {
               "texto": "inadequada, porém não ilegal, uma vez que os documentos de identidade profissional do advogado estão previstos somente no Regulamento Geral da Advocacia, não sendo exigível que o funcionário do Detran conheça as normas internas da OAB."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O art. 13 do EAOAB confere fé pública à carteira de identidade de advogado, valendo como cédula de identidade civil para todos os fins legais, inclusive perante repartições como o Detran.",
+          "explicacaoErradas": "As demais alternativas erram ao supor ausência de previsão legal ou ao tratar a validade como mero costume ou norma interna sem força de lei — a validade decorre de lei federal expressa.",
+          "pegadinha": "A pegadinha é achar que só RG e CNH servem como documento de identidade civil, ignorando que a carteira da OAB tem essa força por lei federal específica.",
+          "regraMemoria": "Carteira da OAB é RG do advogado: lei federal dá fé pública a ela para todos os fins civis."
         },
         {
           "territorio": "Filosofia do Direito",
@@ -6715,7 +6746,11 @@ var QuestoesSeed = (function () {
               "texto": "a uma concepção ideal a ser conhecida e compreendida pela razão."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Na filosofia platônica, a Justiça (como o Bem) pertence ao mundo das ideias — uma essência perfeita e imutável apreendida pela razão, não pela experiência sensível, conforme a Alegoria da Caverna e a Teoria das Formas.",
+          "explicacaoErradas": "As alternativas A, B e C trazem concepções de outras correntes (aristotélica/prática, contratualista, materialista-histórica), estranhas ao idealismo platônico, que separa aparência (mundo sensível) de essência (mundo das ideias).",
+          "pegadinha": "A pegadinha é atribuir a Platão ideias de outros filósofos (contrato social é Hobbes/Locke/Rousseau; luta de classes é Marx) só porque a questão fala em 'justiça'.",
+          "regraMemoria": "Platão é o cara da caverna: Justiça é ideia perfeita lá fora, só a razão enxerga — não é prática nem contrato."
         },
         {
           "territorio": "Filosofia do Direito",
@@ -6738,7 +6773,11 @@ var QuestoesSeed = (function () {
               "texto": "Misticismo, que cria um fetiche em torno do governante; elitismo, em que apenas um pequeno grupo governa de fato; e assembleíismo, que dificulta o processo de decisão política."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Para Aristóteles, as formas justas de governo (monarquia, aristocracia, república/politeia) degeneram, respectivamente, em tirania (interesse do governante), oligarquia (interesse dos ricos) e democracia, no sentido pejorativo de governo voltado só ao interesse dos pobres.",
+          "explicacaoErradas": "As demais alternativas inventam termos que não fazem parte da classificação aristotélica clássica (imperialismo, aporofobia, cleptocracia, misticismo etc.), misturando conceitos estranhos à Política de Aristóteles.",
+          "pegadinha": "A pegadinha é lembrar 'democracia' só no sentido positivo moderno e não perceber que, para Aristóteles, ela é a forma degenerada (governo dos pobres em causa própria) da república.",
+          "regraMemoria": "Aristóteles: monarquia vira tirania, aristocracia vira oligarquia, república vira democracia (a 'ruim', dos pobres contra todos)."
         },
         {
           "territorio": "Direito Constitucional",
@@ -6761,7 +6800,11 @@ var QuestoesSeed = (function () {
               "texto": "Os dispositivos pertencentes ao projeto de Lei Complementar nº XXX e à proposta de Emenda Constitucional nº YYY podem ser vetados, conforme as competências concedidas àquele que detém a Chefia do Poder Executivo."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O poder de veto presidencial (art. 66, §1º, CF) incide sobre projetos de lei (ordinária ou complementar), mas não existe veto presidencial sobre Proposta de Emenda Constitucional, que é promulgada diretamente pelas Mesas da Câmara e do Senado (art. 60, §3º, CF).",
+          "explicacaoErradas": "A alternativa A erra ao negar a existência do veto no sistema brasileiro. As alternativas C e D erram ao estender o veto às leis complementares de forma equivocada quanto ao alcance, ou ao incluir a PEC no rol de atos sujeitos a veto presidencial, o que não existe.",
+          "pegadinha": "A pegadinha é achar que 'lei complementar e emenda constitucional são parecidas, então seguem o mesmo rito' — só a lei passa pela sanção/veto do Presidente; a PEC nunca passa pelo Executivo.",
+          "regraMemoria": "PEC não passa pela mesa do Presidente: quem promulga emenda são as Mesas do Congresso, sem veto possível."
         },
         {
           "territorio": "Direito Constitucional",
@@ -6784,7 +6827,11 @@ var QuestoesSeed = (function () {
               "texto": "O CNJ não faz parte da estrutura do Poder Judiciário e, apesar dos seus poderes jurisdicionais atípicos, não está autorizado a desconstituir a decisão judicial."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O CNJ integra o Poder Judiciário (art. 92, I-A, CF), mas suas atribuições são de controle administrativo, financeiro e disciplinar (art. 103-B, §4º, CF), não jurisdicional — não pode rever ou desconstituir o mérito de decisões judiciais.",
+          "explicacaoErradas": "A alternativa B erra ao atribuir 'plenos poderes' jurisdicionais ao CNJ. As alternativas C e D erram ao negar que o CNJ integra o Judiciário e ao vinculá-lo ao Ministério da Justiça, o que é falso.",
+          "pegadinha": "A pegadinha é confundir controle administrativo/disciplinar (que o CNJ tem) com poder de revisar decisão judicial de mérito (que ele não tem).",
+          "regraMemoria": "CNJ fiscaliza o juiz, não julga o processo: controla conduta e administração, nunca reforma sentença."
         },
         {
           "territorio": "Direito Constitucional",
@@ -6807,7 +6854,11 @@ var QuestoesSeed = (function () {
               "texto": "Uma emenda constitucional com esse teor atacaria frontalmente o princípio federativo e, por violar cláusula pétrea, seria considerada incompatível com a Constituição da República."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Emenda constitucional que subordine deliberações e atos dos Estados-membros ao Congresso Nacional e ao Presidente da República viola a forma federativa de Estado, cláusula pétrea protegida pelo art. 60, §4º, I, CF, sendo, portanto, incompatível com a Constituição.",
+          "explicacaoErradas": "A alternativa A erra ao ignorar o limite material do poder constituinte derivado (cláusulas pétreas). As alternativas B e C erram ao supor secessão possível ou subordinação já existente dos Estados à União, o que não corresponde ao pacto federativo brasileiro.",
+          "pegadinha": "A pegadinha é achar que 'é só uma PEC, então pode tudo' — o poder constituinte reformador tem limites materiais intransponíveis, entre eles a forma federativa.",
+          "regraMemoria": "Cláusula pétrea é parede de concreto: nem emenda constitucional derruba o pacto federativo."
         },
         {
           "territorio": "Direito Constitucional",
@@ -6830,7 +6881,11 @@ var QuestoesSeed = (function () {
               "texto": "O Presidente da República poderá decretar intervenção federal no Estado Alfa, a ser executada pelo Congresso Nacional, diretamente ou por meio da autoridade que indicar."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Suspender por mais de dois anos consecutivos, sem motivo de força maior, o pagamento da dívida fundada é hipótese de intervenção federal (art. 34, V, 'a', CF), decretada de ofício pelo Presidente da República, com apreciação do Congresso Nacional em até 24 horas — portanto, a posteriori (art. 36, §1º, CF).",
+          "explicacaoErradas": "A alternativa B erra ao negar a possibilidade de intervenção em ente federativo autônomo. As alternativas C e D erram ao exigir decisão prévia do STF ou execução pelo Congresso Nacional, quando, nesse caso específico, a decretação é ato do Presidente com controle posterior do Legislativo.",
+          "pegadinha": "A pegadinha é achar que toda intervenção depende de decisão do STF — essa exigência vale para outras hipóteses do art. 34 (como recusa a decisão judicial), não para o caso de dívida fundada.",
+          "regraMemoria": "Dívida fundada suspensa por 2 anos: Presidente decreta a intervenção primeiro, Congresso confere depois."
         },
         {
           "territorio": "Direito Constitucional",
@@ -6853,7 +6908,11 @@ var QuestoesSeed = (function () {
               "texto": "O projeto de lei não está em harmonia com a CRFB/88, pois o subsídio dos Deputados Estaduais está limitado ao máximo de 75% do subsídio estabelecido para os Deputados Federais."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O art. 27, §2º, CF limita o subsídio dos Deputados Estaduais a, no máximo, 75% do subsídio fixado para os Deputados Federais, de modo que a equiparação plena pretendida no projeto de lei viola a Constituição.",
+          "explicacaoErradas": "A alternativa A erra ao supor igualdade jurídica plena de subsídios entre parlamentares estaduais e federais. As alternativas B e C erram ao inventar quóruns qualificados ou paridade com Senadores, que não existem para esse tema.",
+          "pegadinha": "A pegadinha é lembrar do teto de 75% para Vereadores em relação a Deputados Estaduais e confundir com a regra específica para Deputado Estadual em relação a Deputado Federal — mas o teto de 75% também vale aqui.",
+          "regraMemoria": "Deputado Estadual ganha no máximo 75% do subsídio do Deputado Federal — decore o número 75%."
         },
         {
           "territorio": "Direito Constitucional",
@@ -6876,7 +6935,11 @@ var QuestoesSeed = (function () {
               "texto": "Encontra-se em desacordo com a Constituição da República, pois, além de não proteger interesse público relevante, viola o princípio da liberdade de expressão artística."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Exigir inscrição em ordem profissional para o exercício da atividade de músico viola a Constituição, pois não há interesse público relevante que justifique a restrição, e a medida atinge a liberdade de expressão artística (art. 5º, IX, CF), entendimento também adotado pelo STF quanto à Ordem dos Músicos do Brasil.",
+          "explicacaoErradas": "As alternativas A e C erram ao legitimar a exigência como razoável, comparando música a profissões regulamentadas que exigem controle técnico-formal (como Direito e Medicina). A B erra ao tratar a liberdade profissional como absoluta e sem qualquer regulação possível em geral, o que não é o fundamento correto do caso.",
+          "pegadinha": "A pegadinha é achar que toda profissão pode ter 'ordem' regulamentadora só porque outras categorias têm (advogados, médicos) — música é expressão artística, não profissão técnica que exija esse controle.",
+          "regraMemoria": "Música não tem OAB: liberdade de expressão artística barra ordem profissional sem interesse público relevante."
         },
         {
           "territorio": "Direitos Humanos",
@@ -6899,7 +6962,11 @@ var QuestoesSeed = (function () {
               "texto": "Os povos originais, aos quais são reconhecidos a organização social, os costumes, as línguas, as crenças e as tradições, bem como os direitos originários sobre as terras que tradicionalmente ocuparam, competindo à União demarcá-las, proteger e fazer respeitar todos os seus bens."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O Decreto 4.887/2003, art. 2º, define remanescentes de quilombos como grupos étnico-raciais que se autoatribuem essa condição, com trajetória histórica própria, relações territoriais específicas e presunção de ancestralidade negra ligada à resistência à opressão histórica.",
+          "explicacaoErradas": "As demais alternativas descrevem outros grupos (migrantes sem documentação, população afrodescendente em geral, povos indígenas) que não correspondem ao conceito jurídico específico de comunidade quilombola.",
+          "pegadinha": "A pegadinha é confundir quilombola com 'afrodescendente em geral' ou com povos indígenas — o conceito jurídico exige autoatribuição, territorialidade e ancestralidade negra ligada à resistência histórica.",
+          "regraMemoria": "Quilombola = autoatribuição + território + ancestralidade negra de resistência — decore o Decreto 4.887/2003, art. 2º."
         },
         {
           "territorio": "Direitos Humanos",
@@ -6922,7 +6989,11 @@ var QuestoesSeed = (function () {
               "texto": "De acordo com a legislação brasileira, se for solicitado o reconhecimento da sua condição de refugiado, o indivíduo somente terá proteção jurídica após a devida instrução e o devido encerramento do procedimento para a obtenção de refúgio no Comitê Nacional para os Refugiados - Conare. Antes disso, poderá ser expulso ou deportado, como decorrência da sua entrada irregular no país."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A Lei 9.474/97 reconhece a condição de refugiado, entre outras hipóteses, a quem é obrigado a deixar seu país de nacionalidade em razão de grave e generalizada violação de direitos humanos (art. 1º, III), critério ampliado pela Declaração de Cartagena, aplicável ao migrante venezuelano em situação irregular.",
+          "explicacaoErradas": "A alternativa A inverte a lógica protetiva (refúgio suspende, e não apenas convive, com procedimentos de expulsão). A C confunde refúgio com asilo político, institutos distintos. A D erra ao permitir expulsão/deportação durante o processamento do pedido de refúgio, o que é vedado pelo princípio do non-refoulement.",
+          "pegadinha": "A pegadinha é confundir asilo político (perseguição por crime político, ato discricionário) com refúgio (grave violação de direitos humanos, direito subjetivo reconhecido pelo Conare).",
+          "regraMemoria": "Refúgio protege de violação generalizada de direitos humanos; asilo protege de perseguição por crime político — não troque os dois."
         },
         {
           "territorio": "Direito Eleitoral",
@@ -6945,7 +7016,11 @@ var QuestoesSeed = (function () {
               "texto": "Deve ser considerada ilícita se não tiver sido celebrado ajuste coletivo, pelos partidos políticos, autorizando-a, o que será apurado em investigação judicial eleitoral."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A propaganda eleitoral paga na imprensa escrita é permitida durante a campanha até a antevéspera das eleições, observados os limites legais de tamanho e número de inserções por veículo (Lei 9.504/97, art. 43).",
+          "explicacaoErradas": "A alternativa A erra ao estender o prazo até o dia da eleição. As alternativas C e D erram ao considerar a conduta vedada ou dependente de ajuste coletivo entre partidos, exigência que não existe para esse tipo de propaganda.",
+          "pegadinha": "A pegadinha é confundir o prazo geral de propaganda (que vai até a antevéspera) com a vedação total de propaganda paga na véspera e no dia da eleição.",
+          "regraMemoria": "Imprensa escrita paga vale até a antevéspera da eleição — depois disso, silêncio."
         },
         {
           "territorio": "Direito Eleitoral",
@@ -6968,7 +7043,11 @@ var QuestoesSeed = (function () {
               "texto": "O cancelamento é correto, caso ele não tenha pagado a multa ou apresentado justificativa no prazo previsto na legislação, a contar da última eleição a que deveria ter comparecido."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O cancelamento da inscrição eleitoral por deixar de votar em três eleições consecutivas sem justificar a ausência nem pagar a multa devida é procedimento previsto na legislação eleitoral, sendo lícito quando esgotado o prazo para regularização.",
+          "explicacaoErradas": "As alternativas A e C tratam a inscrição eleitoral e o passaporte como direitos totalmente desvinculados do cumprimento das obrigações eleitorais, o que ignora a exigência de quitação eleitoral para certos atos civis. A B erra ao equiparar a simples abstenção reiterada e não regularizada a uma 'objeção de consciência' amparada por lei, o que não existe na legislação eleitoral brasileira.",
+          "pegadinha": "A pegadinha é achar que só de não votar por convicção pessoal já livra o eleitor das consequências — sem justificar ou pagar a multa no prazo, o cancelamento é legítimo.",
+          "regraMemoria": "Faltou a três eleições e não regularizou? Título cancelado — e sem quitação eleitoral, adeus passaporte."
         },
         {
           "territorio": "Direito Internacional",
@@ -6991,7 +7070,11 @@ var QuestoesSeed = (function () {
               "texto": "coma possibilidade de reingresso, por ser pessoa com mais de 60 anos de idade e residente no país."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A expulsão, nos termos do art. 54 da Lei nº 13.445/2017, é medida de retirada compulsória sempre conjugada com impedimento de reingresso por prazo determinado. Luka não se enquadra em nenhuma hipótese de vedação à expulsão do art. 55.",
+          "explicacaoErradas": "A alternativa D erra porque a proteção etária do art. 55, II, 'e' exige mais de 70 anos E mais de 10 anos de residência — Luka tem só 65 anos e 6 anos, não protege. A é errada porque o impedimento de reingresso sempre existe, e C erra o prazo (é determinado, não indeterminado).",
+          "pegadinha": "A questão testa se você confunde 'tem família aqui há 6 anos' e '65 anos' com os requisitos reais do art. 55 (mais de 70 anos + mais de 10 anos de residência) — os números quase batem, mas não batem.",
+          "regraMemoria": "Escudo contra expulsão por idade = 70 anos + 10 anos de casa. Luka fica devendo idade e tempo — não se salva."
         },
         {
           "territorio": "Direito Internacional",
@@ -7014,7 +7097,11 @@ var QuestoesSeed = (function () {
               "texto": "O visto temporário para pesquisa, ensino ou extensão acadêmica poderá ser concedido ao imigrante com ou sem vínculo empregatício com a instituição de pesquisa ou de ensino brasileira, sendo exigida, na hipótese de vínculo, a comprovação de formação compatível."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O art. 39 da Lei nº 13.445/2017 admite visto temporário para pesquisa, ensino ou extensão acadêmica com ou sem vínculo empregatício, exigindo comprovação de formação compatível quando há vínculo.",
+          "explicacaoErradas": "A erra porque o visto não gera direito adquirido de ingresso (art. 7º) — a entrada ainda passa por controle migratório. B erra porque a Lei de Migração prevê sim visto de cortesia (art. 12, V). C erra porque toda recusa de visto exige ato fundamentado (art. 45).",
+          "pegadinha": "A pegadinha é achar que visto = passe livre garantido. Visto é só autorização para solicitar entrada; quem decide a entrada é o controle migratório na fronteira.",
+          "regraMemoria": "Visto abre a porta, não te põe do outro lado dela. E lembre: visto de cortesia existe, sim — é 'visita, temporário, diplomático, oficial, cortesia'."
         },
         {
           "territorio": "Direito Financeiro",
@@ -7037,7 +7124,11 @@ var QuestoesSeed = (function () {
               "texto": "A prestação de contas do Prefeito deve ter ampla divulgação, mas o respectivo parecer prévio do Tribunal de Contas do Estado Beta sobre tais contas é apenas enviado à Câmara de Vereadores para que estas possam ser julgadas, não podendo ser veiculado em meios eletrônicos de acesso público."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O art. 48, §2º da LRF obriga todos os entes, inclusive municípios, a divulgar em meio eletrônico de amplo acesso público seus dados fiscais conforme padrão (periodicidade, formato e sistema) fixado pelo órgão central de contabilidade da União — hoje o SICONFI.",
+          "explicacaoErradas": "A erra: as contas ficam disponíveis no Legislativo e para consulta pública, não só no órgão técnico. B erra: audiência pública na LDO/LOA vale para todos os entes com Legislativo, inclusive municípios. D erra: o parecer prévio do Tribunal de Contas também deve ter ampla divulgação eletrônica.",
+          "pegadinha": "O erro comum é achar que transparência fiscal é 'facultativa' para município pequeno ou que fica restrita a órgãos técnicos — a LRF trata isso como obrigação padronizada e nacional.",
+          "regraMemoria": "Transparência fiscal municipal = SICONFI manda o padrão, o município só executa. Sem desculpa de 'cidade pequena'."
         },
         {
           "territorio": "Direito Financeiro",
@@ -7060,7 +7151,11 @@ var QuestoesSeed = (function () {
               "texto": "Mantém-se dentro do limite válido para a esfera federal estabelecido na LRF, uma vez que configura o limite previsto naquela norma jurídica."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O art. 19 da LRF fixa o limite de despesa de pessoal da União em 50% da receita corrente líquida. 60% ultrapassa esse teto.",
+          "explicacaoErradas": "As demais alternativas erram o percentual do limite federal: não é 45%, não é 70%, e 60% não está 'dentro' do limite — está acima dele.",
+          "pegadinha": "É fácil trocar os percentuais entre esferas: União 50%, Estados 60%, Municípios 60%. Confundir o limite da União com o dos Estados/Municípios é o erro clássico.",
+          "regraMemoria": "Pessoal na LRF: União 50, Estado 60, Município 60 — só a União fica sozinha no 50."
         },
         {
           "territorio": "Direito Tributário",
@@ -7083,7 +7178,11 @@ var QuestoesSeed = (function () {
               "texto": "Caberá a José recorrer da decisão que determinou a penhora de sua conta bancária por meio de agravo de instrumento, sob fundamento de quitação da dívida tributária."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Como o pagamento tempestivo pode ser provado documentalmente (guia DARF) sem necessidade de dilação probatória, cabe exceção de pré-executividade (Súmula 393/STJ), que trata de matéria de ordem pública comprovável de plano.",
+          "explicacaoErradas": "Embargos (A) exigiriam garantia do juízo e são via mais custosa e demorada, desnecessária aqui. B erra ao restringir a defesa só à prescrição, ignorando que o pagamento já extingue o crédito (art. 156, I, CTN). D erra: agravo de instrumento não é o instrumento processual cabível para essa matéria de fundo dentro da própria execução.",
+          "pegadinha": "A pegadinha é achar que, por já ter havido penhora, só resta embargar garantindo o juízo — mas quando a prova é documental e pré-constituída, a exceção de pré-executividade dispensa garantia.",
+          "regraMemoria": "Prova pronta na mão, sem precisar de perícia? Exceção de pré-executividade. Precisa produzir prova? Aí sim, embargos."
         },
         {
           "territorio": "Direito Tributário",
@@ -7106,7 +7205,11 @@ var QuestoesSeed = (function () {
               "texto": "João poderá ajuizar ação declaratória de inexistência de relação jurídico-tributária, uma vez que as isenções podem ser interpretadas extensivamente e sua condição de pessoa com deficiência é comprovável por laudo médico e perícia judicial."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O art. 111, II, do CTN exige interpretação literal da legislação que outorga isenção — isenção de um tributo (IPVA) não se estende a outro (Taxa de Licenciamento) sem previsão legal expressa.",
+          "explicacaoErradas": "A erra: exigir depósito prévio para admitir recurso administrativo é inconstitucional (Súmula Vinculante 21/STF). B erra: taxas também podem ser isentas por lei, isso não compromete sua natureza contraprestacional. D erra: isenção não admite interpretação extensiva.",
+          "pegadinha": "O apelo emocional (deficiência, mínimo existencial) tenta te convencer de que a isenção deveria se estender por analogia — mas em matéria de isenção, a lei tributária não aceita interpretação ampliativa.",
+          "regraMemoria": "Isenção é como cupom de desconto: só vale para o produto escrito nele. Art. 111 CTN — isenção se lê ao pé da letra."
         },
         {
           "territorio": "Direito Tributário",
@@ -7129,7 +7232,11 @@ var QuestoesSeed = (function () {
               "texto": "O Fisco não poderá efetuar novo lançamento, pois o prazo decadencial de 5 anos se consumou em junho de 2022, 5 anos após a ocorrência dos fatos geradores objetos do lançamento original que foi anulado."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Pelo art. 173, II, CTN, quando o lançamento anterior é anulado por vício formal, o prazo decadencial de 5 anos para novo lançamento recomeça da data em que se tornar definitiva essa decisão anulatória.",
+          "explicacaoErradas": "As demais alternativas aplicam a regra geral do art. 173, I (primeiro dia do exercício seguinte ao fato gerador), que não se aplica ao caso de anulação por vício formal — essa hipótese tem regra própria e específica.",
+          "pegadinha": "A pegadinha é usar a contagem 'normal' de decadência (art. 173, I) quando o enunciado já avisou que houve anulação por vício formal — aí a regra muda para o art. 173, II.",
+          "regraMemoria": "Vício formal anulou o lançamento? O relógio da decadência zera e recomeça da decisão definitiva — art. 173, II do CTN."
         },
         {
           "territorio": "Direito Tributário",
@@ -7152,7 +7259,11 @@ var QuestoesSeed = (function () {
               "texto": "José, por ser pessoa física, não poderia arrematar bens oriundos da aplicação de pena de perdimento de mercadoria importada por abandono."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O art. 22, parágrafo único, II, do CTN define expressamente o arrematante de produtos apreendidos ou abandonados como contribuinte do Imposto de Importação.",
+          "explicacaoErradas": "B erra porque José não é responsável solidário com a antiga importadora — ele é o próprio contribuinte da nova incidência. C erra porque a base de cálculo nesse caso é o preço da arrematação (art. 20, III, CTN), não o valor de mercado. D erra porque não há vedação a pessoa física arrematar em leilão da Receita Federal.",
+          "pegadinha": "O erro comum é achar que José, por não ser o importador original, seria apenas 'responsável' e não contribuinte — mas a lei o torna contribuinte direto ao arrematar.",
+          "regraMemoria": "Arrematou mercadoria abandonada em leilão da Receita? Você virou contribuinte do II, não um mero coadjuvante."
         },
         {
           "territorio": "Direito Tributário",
@@ -7175,7 +7286,11 @@ var QuestoesSeed = (function () {
               "texto": "Aisenção que favorecia a sociedade ABC Ltda. não poderia ser revogada por mera lei municipal, mas apenas por Emenda Constitucional, por ser prevista como garantia tributária constitucional."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A revogação de isenção de IPTU representa aumento indireto de carga tributária e por isso deve observar as anterioridades anual e nonagesimal do art. 150, III, 'b' e 'c', da CF (entendimento do STF, Tema 278 de repercussão geral), prevalecendo a data mais distante entre as duas.",
+          "explicacaoErradas": "A e D erram porque revogar isenção municipal exige apenas lei municipal comum, não Lei Orgânica nem Emenda Constitucional. B erra porque isenção tributária não é cláusula pétrea e pode ser revogada por lei ordinária.",
+          "pegadinha": "A pegadinha é achar que, por afetar um 'direito' de contribuintes, a isenção teria proteção de cláusula pétrea — isenção é benefício infraconstitucional, revogável por lei, só respeitando a anterioridade.",
+          "regraMemoria": "Revogar isenção é igual a aumentar imposto: precisa esperar as duas anterioridades, a maior das duas manda."
         },
         {
           "territorio": "Direito Administrativo",
@@ -7198,7 +7313,11 @@ var QuestoesSeed = (function () {
               "texto": "Trata-se de desapropriação indireta, embasada no emprego do poder regulamentar, haja vista que reduziu parcialmente o direito de propriedade, diante da supremacia do interesse público sobre o privado."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Trata-se de limitação administrativa: restrição geral e abstrata ao direito de propriedade, fundada no poder de polícia, para condicionar o uso da propriedade à função social (limitação de gabarito de construção em bairro inteiro).",
+          "explicacaoErradas": "Servidão (A) e requisição (C) recaem sobre bem específico e determinado, não sobre um número indeterminado de imóveis. Desapropriação indireta (D) pressupõe esvaziamento do domínio com indenização, o que não ocorre aqui — a propriedade continua com o dono, só restrita.",
+          "pegadinha": "A pegadinha é confundir intervenção geral e abstrata (limitação administrativa) com intervenções específicas que recaem sobre um bem determinado (servidão, requisição, desapropriação).",
+          "regraMemoria": "Regra que vale para o bairro inteiro, sem indenização, baseada em poder de polícia = limitação administrativa."
         },
         {
           "territorio": "Direito Administrativo",
@@ -7221,7 +7340,11 @@ var QuestoesSeed = (function () {
               "texto": "Nos processos analisados por João Silva os atos administrativos viciados poderão ser invalidados a qualquer tempo, pois não há prazo para o exercício do direito da Administração de anulá-los."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O art. 55 da Lei nº 9.784/99 permite a convalidação de atos com defeitos sanáveis (como vício de forma) quando não houver lesão ao interesse público nem prejuízo a terceiros.",
+          "explicacaoErradas": "A erra porque a anulação sempre exige motivação (art. 50). B erra porque ato ilegal se anula, não se revoga — revogação é para atos válidos por conveniência e oportunidade. D erra porque há prazo decadencial de 5 anos para a Administração anular atos favoráveis a terceiros de boa-fé (art. 54).",
+          "pegadinha": "A pegadinha é misturar os conceitos de anulação (ilegalidade) e revogação (conveniência), e esquecer que nem todo vício leva à anulação — vício de forma sanável pode ser convalidado.",
+          "regraMemoria": "Vício de forma que não prejudica ninguém? Convalida e segue o jogo (art. 55, Lei 9.784/99)."
         },
         {
           "territorio": "Direito Administrativo",
@@ -7244,7 +7367,11 @@ var QuestoesSeed = (function () {
               "texto": "O exercício da pretensão disciplinar está fulminado pela prescrição, pois transcorreram mais de cinco anos entre a ocorrência do fato e a instauração do respectivo processo administrativo disciplinar."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O art. 142, §2º, da Lei nº 8.112/90 determina que, quando a infração disciplinar também é capitulada como crime, aplica-se o prazo prescricional da lei penal, mais longo que o prazo disciplinar comum.",
+          "explicacaoErradas": "B erra porque excesso de prazo do PAD, por si só, sem prejuízo à defesa, não anula a penalidade. C erra porque denúncia anônima pode legitimamente embasar apuração preliminar. D erra porque a prescrição de 5 anos é a regra geral, afastada aqui pela regra especial do art. 142, §2º.",
+          "pegadinha": "A armadilha é aplicar direto a prescrição comum de 5 anos da Lei 8.112/90 sem notar que a infração também é crime — isso puxa o prazo penal, bem mais longo.",
+          "regraMemoria": "Infração disciplinar que também é crime empresta o prazo de prescrição do Código Penal — não fica no 5 anos padrão."
         },
         {
           "territorio": "Direito Administrativo",
@@ -7267,7 +7394,11 @@ var QuestoesSeed = (function () {
               "texto": "Não pode prever a repartição de riscos entre as partes, especialmente em relação a caso fortuito, força maior, fato do príncipe e álea econômica extraordinária."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O art. 5º, I, da Lei nº 11.079/2004 fixa prazo de vigência do contrato de PPP não inferior a 5 e não superior a 35 anos, incluindo eventual prorrogação.",
+          "explicacaoErradas": "B erra porque, em serviço indivisível, não há tarifa de usuário a somar à contraprestação pública. C erra porque a PPP exige constituição de SPE antes da celebração do contrato (art. 9º). D erra porque a repartição de riscos, inclusive de álea extraordinária, é elemento obrigatório da PPP (art. 5º, III).",
+          "pegadinha": "A pegadinha mistura elementos que parecem certos mas invertem a regra legal: SPE é obrigatória (não dispensável), riscos devem ser repartidos (não podem ser excluídos).",
+          "regraMemoria": "PPP tem número mágico: prazo de 5 a 35 anos, com SPE obrigatória antes de assinar e riscos sempre repartidos."
         },
         {
           "territorio": "Direito Administrativo",
@@ -7290,7 +7421,11 @@ var QuestoesSeed = (function () {
               "texto": "A Administração contratante, mediante disposição em edital ou em contrato, poderá, em caso de inadimplemento, efetuar diretamente o pagamento das verbas trabalhistas, que serão deduzidas do pagamento devido ao contratado."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Nos contratos de dedicação exclusiva de mão de obra, a Lei nº 14.133/2021 permite que a Administração, se previsto em edital ou contrato, pague diretamente as verbas trabalhistas ao trabalhador em caso de inadimplemento, deduzindo o valor do que é devido ao contratado (mecanismo da conta vinculada).",
+          "explicacaoErradas": "A erra ao dizer que só a Administração responde, de forma objetiva. B erra porque a responsabilidade previdenciária segue regime próprio de retenção (Lei 8.212/91), não subordinado à prova de falha de fiscalização. C erra porque a fiscalização da Administração não exime o contratado de suas obrigações trabalhistas e previdenciárias.",
+          "pegadinha": "O erro comum é achar que a fiscalização da Administração 'transfere' ou 'apaga' a responsabilidade do contratado — ela não exime ninguém, só permite retenção/pagamento direto em caso de inadimplência.",
+          "regraMemoria": "Dedicação exclusiva de mão de obra: se o contratado não paga, a Administração pode pagar direto ao trabalhador e descontar do contratado depois."
         },
         {
           "territorio": "Direito Ambiental",
@@ -7313,7 +7448,11 @@ var QuestoesSeed = (function () {
               "texto": "Não se compatilibilza com qualquer das hipóteses, mas é viável a supressão vegetal, mediante pagamento de prévia compensação ambiental."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O art. 3º, X, alínea 'g', do Código Florestal (Lei nº 12.651/2012) lista expressamente a implantação de trilhas para ecoturismo como atividade de baixo impacto ambiental, autorizando a intervenção em APP.",
+          "explicacaoErradas": "A erra ao classificar como interesse social, categoria distinta na lei. B erra porque a hipótese está sim prevista em lei. D erra porque não é caso de 'ausência de enquadramento com compensação', e sim de enquadramento direto em baixo impacto.",
+          "pegadinha": "A pegadinha é confundir as três categorias do Código Florestal: utilidade pública, interesse social e baixo impacto ambiental — trilha de ecoturismo é baixo impacto, ponto.",
+          "regraMemoria": "Trilha de ecoturismo em APP = baixo impacto ambiental, está escrito literalmente no art. 3º, X, do Código Florestal."
         },
         {
           "territorio": "Direito Ambiental",
@@ -7336,7 +7475,11 @@ var QuestoesSeed = (function () {
               "texto": "Caracteriza somente infração administrativa, passível da aplicação de multa e da apreensão dos peixes e dos instrumentos, petrechos e equipamentos de qualquer natureza utilizados na infração."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Pescar em período de piracema é crime do art. 34 da Lei nº 9.605/98, com pena de detenção de 1 a 3 anos — como a pena máxima supera 2 anos, não se enquadra como infração de menor potencial ofensivo, sendo incabível a transação penal.",
+          "explicacaoErradas": "B e D erram porque a conduta é simultaneamente crime e infração administrativa, com dupla apuração. B erra também ao negar a apreensão dos instrumentos, que é sempre cabível (art. 25 da Lei 9.605/98).",
+          "pegadinha": "A pegadinha é achar que, por ser 'só pesca', caberia sempre transação penal — mas a pena do art. 34 (até 3 anos) ultrapassa o teto de 2 anos que define infração de menor potencial ofensivo.",
+          "regraMemoria": "Pena ambiental acima de 2 anos = sem transação penal. Piracema pega até 3 anos, então já era."
         },
         {
           "territorio": "Direito Civil",
@@ -7359,7 +7502,11 @@ var QuestoesSeed = (function () {
               "texto": "A conduta da sociedade empresária, que age em nome da vendedora, excede manifestamente os limites impostos pelo seu fim econômico ou social, pela boa-fé ou pelos bons costumes, caracterizando ato ilícito."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A cobrança excessiva e vexatória (dezenas de contatos diários, madrugada, exposição em redes sociais) excede manifestamente os limites da boa-fé e dos bons costumes, configurando ato ilícito por abuso de direito, nos termos do art. 187 do Código Civil.",
+          "explicacaoErradas": "A erra porque não é exercício regular de direito, é abuso. B erra porque terceiro contratado por mandato não fica isento de responsabilidade por atos ilícitos que pratica. C erra porque a responsabilização da vendedora não depende de prova de dolo omissivo, decorre da responsabilidade por atos do preposto/mandatário (art. 932, III, CC).",
+          "pegadinha": "A pegadinha é achar que 'agir em nome de terceiro por contrato' blinda a conduta — mas o abuso de direito (art. 187 CC) transforma exercício de direito em ato ilícito quando ultrapassa boa-fé e bons costumes.",
+          "regraMemoria": "Cobrar é direito, humilhar é abuso. Art. 187 CC: exercer direito demais também é ato ilícito."
         },
         {
           "territorio": "Direito Civil",
@@ -7382,7 +7529,11 @@ var QuestoesSeed = (function () {
               "texto": "Deverá renegociar as cláusulas contratuais com Manuela, e estabelecer um novo prazo, por não haver presunção de prorrogação contratual para o caso."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Encerrado o prazo de 30 meses e mantida a posse do imóvel com aceitação tácita dos aluguéis, presume-se prorrogada a locação por prazo indeterminado (art. 46, §1º, Lei 8.245/91), podendo o locador exercer denúncia vazia a qualquer tempo, com prazo de 30 dias para desocupação (art. 46, §2º).",
+          "explicacaoErradas": "A erra porque não há direito potestativo de renovação em locação residencial (isso é da ação renovatória, típica de locação comercial). C erra porque, prorrogado o contrato por prazo indeterminado, cabe sim denúncia vazia, sem necessidade de motivo. D erra porque a lei já presume a prorrogação, dispensando renegociação.",
+          "pegadinha": "A pegadinha é confundir locação residencial (denúncia vazia, sem motivo) com locação comercial protegida por ação renovatória — só esta última tem 'direito potestativo de renovação'.",
+          "regraMemoria": "Locação residencial que virou prazo indeterminado: locador manda embora quando quiser, só avisando com 30 dias — denúncia vazia."
         },
         {
           "territorio": "Direito Civil",
@@ -7405,7 +7556,11 @@ var QuestoesSeed = (function () {
               "texto": "Por ser conhecida a mãe biológica de Vitória, não é possível a configuração de parentalidade socioafetiva com Priscila, assim como, por ser conhecido o pai biológico de Hugo, não é possível a configuração de parentalidade socioafetiva com Lucas."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A jurisprudência (STF, RE 898.060, Tema 622) admite o reconhecimento da parentalidade socioafetiva concomitante com a biológica, exigindo posse do estado de filho comprovada e, tratando-se de pessoa capaz, seu consentimento — sem necessariamente excluir o vínculo já existente.",
+          "explicacaoErradas": "A erra porque a multiparentalidade não é automática, exige comprovação da posse do estado de filho e voluntariedade. B erra porque reconhecer vínculo socioafetivo com Lucas não extingue automaticamente o vínculo biológico com Pedro — a multiparentalidade permite a coexistência. D erra porque conhecer o pai/mãe biológico não impede reconhecimento de parentalidade socioafetiva adicional.",
+          "pegadinha": "A pegadinha é achar que reconhecer um vínculo socioafetivo apaga o vínculo biológico anterior — a tese do STF admite os dois convivendo (multiparentalidade), sem substituição automática.",
+          "regraMemoria": "Parentalidade socioafetiva soma, não substitui — dá pra ter pai biológico e mãe de coração ao mesmo tempo."
         },
         {
           "territorio": "Direito Civil",
@@ -7428,7 +7583,11 @@ var QuestoesSeed = (function () {
               "texto": "Tanto André como Caio permanecem responsáveis pela entrega de um carro, agora perante Ivan."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Cumprida a obrigação indivisível de dar coisa certa por um dos codevedores (Ivan entregou o carro), ele se sub-roga nos direitos do credor e pode cobrar dos demais, em dinheiro, as respectivas cotas-partes (art. 259, parágrafo único, CC).",
+          "explicacaoErradas": "A e C erram porque a dívida com Bruna já está extinta pelo cumprimento de Ivan — ela não pode mais cobrar de André e Caio. D erra porque não faz sentido exigir 'pedaço de carro'; a indivisibilidade se resolve em reembolso pecuniário entre os codevedores.",
+          "pegadinha": "A pegadinha é continuar tratando André e Caio como devedores de Bruna depois que a obrigação já foi cumprida por Ivan — a partir daí, a relação de acerto de contas é só entre os codevedores, e em dinheiro.",
+          "regraMemoria": "Um paga a coisa indivisível, os outros acertam em dinheiro com quem pagou — não dá pra devolver 'meio carro'."
         },
         {
           "territorio": "Direito Civil",
@@ -7451,7 +7610,11 @@ var QuestoesSeed = (function () {
               "texto": "O usufruto é extinto, consolidando-se a propriedade plena ao donatário com o cancelamento do registro."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O usufruto é direito personalíssimo e se extingue com a morte do usufrutuário (art. 1.410, I, CC). Morrendo Maria, a nua-propriedade que já pertencia ao filho se consolida em propriedade plena, bastando cancelar o registro do usufruto na matrícula.",
+          "explicacaoErradas": "Não é inoficiosa porque o bem doado (40%) está dentro da parte disponível, respeitando a legítima dos 50%. Não há colação porque a cláusula expressa dispensou (art. 2.005 CC, doação saída da parte disponível). Usufruto não se transmite por herança: é extinto, não herdado pelos filhos.",
+          "pegadinha": "Confundir 'doação com reserva de usufruto dentro da parte disponível' com doação inoficiosa, e achar que o usufruto passa aos herdeiros como se fosse um bem qualquer.",
+          "regraMemoria": "Usufruto morre com o usufrutuário — nunca é herança. Parte disponível até 50%? Sem inoficiosidade e sem colação."
         },
         {
           "territorio": "Direito Civil",
@@ -7474,7 +7637,11 @@ var QuestoesSeed = (function () {
               "texto": "A construção da chaminé deve ser impedida devido à função social da propriedade, positivada no Código Civil brasileiro e tutelada pelo direito dos confinantes."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Art. 1.302, CC: o proprietário prejudicado tem o prazo decadencial de ano e dia após a conclusão da obra para exigir que se desfaça a janela construída em desacordo com a lei.",
+          "explicacaoErradas": "A regra de 75 cm (não 1,5m) vale para janelas perpendiculares/oblíquas (art. 1.301, §1º); a de 1,5m é para janela de frente. Existe sim vedação legal a janela na linha divisória (art. 1.301, caput). Chaminé não tem essa tutela específica de vizinhança nesses termos.",
+          "pegadinha": "Trocar as distâncias do art. 1.301: 1,5m é para visão direta sobre a linha divisória, 75cm é para visão perpendicular/oblíqua — a banca inverte esses números para confundir.",
+          "regraMemoria": "Janela de frente: metro e meio. Janela de lado: 75 centímetros. E o prazo pra reclamar de obra irregular é sempre 'ano e dia'."
         },
         {
           "territorio": "Direito da Criança e do Adolescente",
@@ -7497,7 +7664,11 @@ var QuestoesSeed = (function () {
               "texto": "De acordo com o ECA, o poder público deve proporcionar assistência psicológica a Roberta enquanto estiver gestante. No período pós-natal, como a criança estará fora de qualquer risco, o poder público não terá a obrigação de prestar assistência psicológica."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Art. 8º, §4º, ECA: incumbe ao poder público proporcionar assistência psicológica à gestante e à mãe, no período pré e pós-natal, inclusive para prevenir ou minorar as consequências do estado puerperal.",
+          "explicacaoErradas": "Não é só pós-natal (erra a alternativa B) nem só durante a gestação (erra a D): a lei cobre os dois períodos, pré e pós-natal. E existe, sim, previsão legal expressa (erra a A).",
+          "pegadinha": "Achar que a proteção psicológica do ECA cobre só um dos momentos (só antes ou só depois do parto) — a lei garante os dois.",
+          "regraMemoria": "Gestante e mãe: assistência psicológica do poder público do pré ao pós-natal, sem intervalo."
         },
         {
           "territorio": "Direito do Consumidor",
@@ -7520,7 +7691,11 @@ var QuestoesSeed = (function () {
               "texto": "Por se tratar de um produto disponibilizado no mercado há mais de cinquenta anos, a Óleo Essencial de Barreto Ltda. não precisa tomar qualquer providência quanto ao risco descoberto."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Art. 10, §1º, CDC: descoberto risco após a introdução do produto no mercado, o fornecedor deve comunicar imediatamente às autoridades competentes e aos consumidores, via anúncios publicitários.",
+          "explicacaoErradas": "A lei não exige parar a fabricação de imediato (isso pode vir depois, conforme a gravidade), nem que a autoridade administrativa aja primeiro de ofício — o dever primário e imediato é do próprio fornecedor de comunicar. Tempo de mercado não afasta essa obrigação.",
+          "pegadinha": "Achar que 50 anos de mercado sem incidentes dispensa a comunicação do novo risco descoberto — o CDC não abre essa exceção.",
+          "regraMemoria": "Descobriu risco depois de vender? Primeiro dever é avisar — autoridade e consumidor, imediatamente, ponto final."
         },
         {
           "territorio": "Direito do Consumidor",
@@ -7543,7 +7718,11 @@ var QuestoesSeed = (function () {
               "texto": "Diante da situação e da ausência de matéria-prima, a sociedade empresária XYZ Fábrica e Comercialização Digital S.A. não responde solidariamente pelos atos do representante autônomo."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Art. 35, III, CDC: não cumprida a oferta (produto não entregue no prazo), o consumidor pode, à sua escolha, rescindir o contrato com devolução integral do valor pago, atualizado, sem precisar esperar prazo adicional.",
+          "explicacaoErradas": "O prazo de 30 dias para sanar (art. 18) é regra de vício do produto, não de atraso na entrega/oferta não cumprida. Falta de matéria-prima é risco do fornecedor, não excludente. Há responsabilidade solidária do fabricante pelos atos do representante autônomo (art. 7º, parágrafo único, e art. 34, CDC).",
+          "pegadinha": "Confundir a regra do art. 18 (30 dias para sanar vício de produto) com a hipótese de atraso na entrega/inadimplemento da oferta, que dá direito imediato à rescisão.",
+          "regraMemoria": "Não chegou no prazo combinado? Consumidor já pode cancelar e pedir o dinheiro de volta na hora, sem esperar mais nada."
         },
         {
           "territorio": "Direito Empresarial",
@@ -7566,7 +7745,11 @@ var QuestoesSeed = (function () {
               "texto": "A pessoa natural deve optar pelo Simples Nacional e ser enquadrada como Microempreendedor Individual."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Art. 966, parágrafo único, CC: profissional intelectual só é considerado empresário quando o exercício da profissão constituir elemento de empresa (organização que absorve a atividade pessoal como um fator dentro do negócio).",
+          "explicacaoErradas": "A própria lei diz que ter auxiliares/colaboradores não descaracteriza a natureza não empresarial (erra B e A). Regime tributário (Simples/MEI) é opção fiscal, não critério de caracterização civil de empresário (erra D).",
+          "pegadinha": "Achar que contratar empregados ou usar insumos já torna o profissional intelectual empresário — a lei diz expressamente que isso, sozinho, não muda nada.",
+          "regraMemoria": "Profissão intelectual só vira empresa quando ela deixa de ser o fim e passa a ser só uma peça da engrenagem do negócio (elemento de empresa)."
         },
         {
           "territorio": "Direito Empresarial",
@@ -7589,7 +7772,11 @@ var QuestoesSeed = (function () {
               "texto": "A existência de apenas um sócio, não reconstituída a pluralidade em até 180 (cento e oitenta) dias."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Art. 1.033, III, CC: na sociedade simples de prazo indeterminado, a deliberação dos sócios por maioria absoluta dissolve a sociedade de pleno direito, sem depender de decisão judicial.",
+          "explicacaoErradas": "Esgotamento do objeto social é causa de dissolução judicial (art. 1.034, II), não de pleno direito. Morte de sócio não dissolve automaticamente (art. 1.028 permite liquidar só a quota). Falta de pluralidade não reconstituída em 180 dias hoje admite exceção: o sócio remanescente pode transformar o registro em empresário individual/EIRELI, afastando a dissolução automática (art. 1.033, parágrafo único).",
+          "pegadinha": "A opção sobre unipessoalidade (180 dias) parece a resposta clássica do CC/2002, mas a Lei da Liberdade Econômica criou uma exceção que tira o automatismo dessa hipótese.",
+          "regraMemoria": "Prazo indeterminado + maioria absoluta = dissolução automática, sem precisar bater o martelo do juiz."
         },
         {
           "territorio": "Direito Empresarial",
@@ -7612,7 +7799,11 @@ var QuestoesSeed = (function () {
               "texto": "A sociedade pode vetar a citação da marca em discurso, obra científica ou literária, com ou sem conotação comercial, independentemente de prejuízo ao caráter distintivo."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Art. 130, II e III, LPI: o titular da marca tem o direito de licenciar seu uso e de zelar pela integridade material ou reputação da marca.",
+          "explicacaoErradas": "As alternativas B, C e D descrevem exatamente as limitações do art. 132, LPI — coisas que o titular da marca NÃO PODE impedir (uso de sinais próprios do comerciante junto à marca, uso por fabricante de acessório para indicar destinação, e citação em obra científica/literária sem conotação comercial).",
+          "pegadinha": "A banca inverte o sentido do art. 132: transforma 'o que o titular não pode impedir' em 'o que o titular pode proibir' — leitura rápida cai nessa.",
+          "regraMemoria": "Marca dá poder de licenciar e zelar pela reputação — mas não dá poder de proibir tudo que gira em torno dela (art. 132 é a lista do que o titular tem que aturar)."
         },
         {
           "territorio": "Direito Empresarial",
@@ -7635,7 +7826,11 @@ var QuestoesSeed = (function () {
               "texto": "A sociedade empresarial, até a aprovação do plano de recuperação judicial, estava impedida de distribuir lucros aos sócios, mas não há justificativa para o não pagamento no exercício de 2023."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Art. 6º-A, Lei 11.101/05: é vedada a distribuição de lucros entre o deferimento do processamento e a aprovação do plano de recuperação judicial. Aprovado o plano (dez/2022), a vedação cessa — logo, não há justificativa para reter o lucro de 2023.",
+          "explicacaoErradas": "A vedação não vai até o encerramento do processo, só até a aprovação do plano. Lucro é direito relevante, mas pode ser legalmente suspenso durante a RJ até a aprovação do plano. A vedação não está condicionada ao pagamento dos credores, e sim à aprovação do plano.",
+          "pegadinha": "Estender a proibição de distribuir lucros até o fim da recuperação judicial, quando a lei limita a vedação apenas até a aprovação do plano.",
+          "regraMemoria": "Recuperação judicial trava lucro só até o plano ser aprovado — depois disso, sócio volta a ter direito normal."
         },
         {
           "territorio": "Processo Civil",
@@ -7658,7 +7853,11 @@ var QuestoesSeed = (function () {
               "texto": "Ana Carolina poderá formular pedido contraposto para cobrar a quantia que lhe é devida por Eduardo, sendo que essa medida deverá ser formulada em petição apartada da contestação."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Art. 343, CPC: a reconvenção é o instrumento correto para o réu deduzir pretensão própria conexa com a ação, e deve ser formulada dentro da própria peça de contestação.",
+          "explicacaoErradas": "Não precisa de ação autônoma, pois a reconvenção resolve tudo no mesmo processo. Reconvenção em petição apartada era regra do CPC/1973, superada pelo CPC/2015. Pedido contraposto é típico de rito especial (juizados, possessórias), não do procedimento comum.",
+          "pegadinha": "Lembrar da regra antiga do CPC/73 (reconvenção em peça separada) em vez da regra atual, que unificou reconvenção dentro da contestação.",
+          "regraMemoria": "CPC novo: reconvenção mora dentro da contestação, não tem endereço próprio."
         },
         {
           "territorio": "Processo Civil",
@@ -7681,7 +7880,11 @@ var QuestoesSeed = (function () {
               "texto": "O juiz poderá admitir o depoimento de João, ainda que amigo íntimo de Marcelo, caso em que será indispensável a prestação do compromisso de dizer a verdade."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Art. 447, §2º, CPC: o impedimento por parentesco colateral só alcança até o 3º grau. Prima é parente colateral de 4º grau, logo Regina não é impedida nem suspeita, podendo depor normalmente.",
+          "explicacaoErradas": "Gabriel (17 anos) não é incapaz por idade — a incapacidade etária do art. 447, §1º, III atinge apenas menor de 16 anos. João, amigo íntimo, é sim suspeito (art. 447, §3º, I), mas seu depoimento, se admitido pelo juiz, é prestado SEM compromisso (art. 447, §5º), e não com compromisso obrigatório como diz a alternativa D.",
+          "pegadinha": "Achar que qualquer parentesco colateral impede o depoimento — a lei limita o impedimento ao 3º grau, e primo já é 4º grau, fora da lista.",
+          "regraMemoria": "Parentesco só impede até o 3º grau (irmão, tio, sobrinho). Primo pode depor numa boa."
         },
         {
           "territorio": "Processo Civil",
@@ -7704,7 +7907,11 @@ var QuestoesSeed = (function () {
               "texto": "Ela poderá iniciar o cumprimento da sentença, na modalidade provisória, mas o levantamento de depósito em dinheiro dependerá, em regra, de caução idônea prestada nos próprios autos."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Art. 520, IV, CPC: no cumprimento provisório, o levantamento de depósito em dinheiro depende, em regra, de caução idônea prestada nos próprios autos, salvo as exceções do §3º (crédito alimentar até 60 salários mínimos ou situação de necessidade demonstrada).",
+          "explicacaoErradas": "Pendente apelação, o cumprimento é sempre provisório, não definitivo (erra B). O ressarcimento de prejuízos da execução provisória corre nos próprios autos, e não exclusivamente em ação autônoma (erra C, art. 520, §2º). Como a apelação não tem efeito suspensivo quanto à parte da tutela provisória (art. 1.012, §1º, V), o cumprimento provisório pode começar mesmo sem natureza alimentar ou situação de necessidade (erra A).",
+          "pegadinha": "Achar que tutela provisória concedida na sentença já autoriza cumprimento definitivo — na verdade, enquanto pende recurso, o cumprimento continua sendo provisório e sujeito a caução.",
+          "regraMemoria": "Cumprimento provisório: quer sacar dinheiro? Cauciona primeiro, salvo se for alimentar (até 60 SM) ou necessidade comprovada."
         },
         {
           "territorio": "Processo Civil",
@@ -7727,7 +7934,11 @@ var QuestoesSeed = (function () {
               "texto": "Os honorários podem ser arbitrados por equidade, apesar de o valor da condenação ser líquido, por se tratar de ação indenizatória."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Art. 86, parágrafo único, CPC: se um litigante sucumbir em parte mínima do pedido, a parte contrária responde integralmente pelos honorários.",
+          "explicacaoErradas": "Honorários são devidos mesmo em causa própria (art. 85, §17, CPC). Cabem novos honorários no cumprimento de sentença, cumulados aos da fase de conhecimento (art. 85, §1º). Havendo condenação líquida, a base de cálculo é o valor da condenação, não arbitramento por equidade, que só se usa quando o proveito é inestimável, irrisório ou o valor da causa muito baixo.",
+          "pegadinha": "Lembrar da Súmula antiga que negava honorários ao advogado em causa própria — hoje o CPC garante expressamente esse direito.",
+          "regraMemoria": "Sucumbência mínima de um lado = o outro paga a conta toda dos honorários."
         },
         {
           "territorio": "Processo Civil",
@@ -7750,7 +7961,11 @@ var QuestoesSeed = (function () {
               "texto": "Como a alienação é a única forma de expropriação de bens admitida pelo Código de Processo Civil, caberá a Joana tentar a arrematação do bem em leilão eletrônico, tendo direito de preferência."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Art. 876, §4º, CPC: se o bem penhorado vale mais que o débito, o exequente só se torna proprietário via adjudicação depositando de imediato a diferença, que fica à disposição do executado.",
+          "explicacaoErradas": "A descrição do auto de adjudicação (alternativa A) pula a condição prévia do depósito da diferença. Adjudicação não é medida residual/subsidiária à alienação — é opção preferencial do próprio exequente, podível a qualquer tempo. Alienação não é a única forma de expropriação: o CPC também prevê adjudicação e apropriação de frutos/rendimentos (art. 825).",
+          "pegadinha": "Ignorar que, quando o bem vale mais que a dívida, a adjudicação só se aperfeiçoa com o depósito da diferença ao executado — sem isso, não há como o exequente virar proprietário.",
+          "regraMemoria": "Bem vale mais que a dívida? Sem depositar a diferença pro executado, não rola adjudicação."
         },
         {
           "territorio": "Processo Civil",
@@ -7773,7 +7988,11 @@ var QuestoesSeed = (function () {
               "texto": "Sendo julgado procedente o pedido de indenização por danos materiais, mesmo apresentando contestação quanto ao mérito, a seguradora não será condenada em honorários de sucumbência."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Art. 128, II, CPC: se o denunciado (seguradora) contestar o pedido do autor, o processo segue com denunciante e denunciado em litisconsórcio na ação principal.",
+          "explicacaoErradas": "A denunciação deve ser feita na contestação (art. 126), não até a decisão saneadora. O cumprimento de sentença pode ser dirigido também contra a seguradora, e não só contra Marisa. Se a seguradora contestou o mérito e é sucumbente por força do litisconsórcio, também responde por honorários.",
+          "pegadinha": "Achar que a seguradora denunciada fica de fora da relação processual principal — na verdade, se ela contesta, vira litisconsorte de pleno direito.",
+          "regraMemoria": "Seguradora denunciada que contesta vira parceira de banco dos réus: litisconsórcio na ação principal."
         },
         {
           "territorio": "Direito Penal",
@@ -7796,7 +8015,11 @@ var QuestoesSeed = (function () {
               "texto": "Maria está sujeita à extraterritorialidade da lei penal brasileira, em razão de a lei em vigor no Estado de sua residência determinar o regime jurídico que lhe é aplicável."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A extraterritorialidade por nacionalidade (art. 7º, II, 'b', CP) é condicionada e exige, entre outros requisitos do §2º, que o fato seja punível também no país onde ocorreu (dupla tipicidade) — como lá a conduta não é crime, Maria não pode responder no Brasil.",
+          "explicacaoErradas": "Ser brasileira não basta por si só (a hipótese é condicionada, não incondicionada). Também é falso dizer que a lei brasileira nunca alcança fatos no exterior — existem hipóteses de extraterritorialidade, só que sujeitas a requisitos. E não existe regra que aplique 'lei do país de residência' ao caso.",
+          "pegadinha": "Achar que basta ser brasileiro para responder por qualquer crime cometido fora do país — esquecer o requisito cumulativo da dupla tipicidade.",
+          "regraMemoria": "Extraterritorialidade por nacionalidade só funciona se o fato também for crime lá fora — sem dupla tipicidade, não tem jurisdição brasileira."
         },
         {
           "territorio": "Direito Penal",
@@ -7819,7 +8042,11 @@ var QuestoesSeed = (function () {
               "texto": "O caso tipifica posse sexual mediante fraude ou outro meio que dificulte ou impossibilite a livre manifestação de vontade da vítima e se processa mediante queixa."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Art. 215-A c/c art. 225, CP: importunação sexual (abraçar e beijar à força com fim libidinoso, sem violência ou grave ameaça) processa-se mediante ação penal pública incondicionada desde a Lei 13.718/2018.",
+          "explicacaoErradas": "Não é injúria real, crime contra a honra de ação privada. Não é estupro, que exige violência ou grave ameaça para conjunção carnal ou ato libidinoso mais grave. 'Posse sexual mediante fraude' é tipo penal revogado desde 2009 e não existe mais.",
+          "pegadinha": "Confundir a gravidade do ato (beijo/abraço forçado) com estupro, e esquecer que hoje todos os crimes sexuais dos Capítulos I e II do CP são de ação pública incondicionada.",
+          "regraMemoria": "Desde 2018: crime sexual dos Capítulos I e II do CP = ação pública incondicionada, sem exceção de representação."
         },
         {
           "territorio": "Direito Penal",
@@ -7842,7 +8069,11 @@ var QuestoesSeed = (function () {
               "texto": "de proibição indireto."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Caio sabia exatamente o que fazia (compartilhar as imagens) mas desconhecia que isso era crime — é erro de proibição direto (art. 21, CP), incidindo diretamente sobre a consciência da ilicitude do fato.",
+          "explicacaoErradas": "Não é erro sobre a pessoa (isso trata de erro quanto à identidade da vítima). Não é erro de tipo permissivo, que exige o agente supor situação fática que, se real, justificaria a conduta (descriminante putativa fática). Não é erro de proibição indireto, que pressupõe erro sobre a existência/limites de uma causa de justificação — aqui Caio nem imaginou nenhuma excludente, só desconhecia a lei mesmo.",
+          "pegadinha": "Misturar erro de proibição direto (desconhecimento puro da lei) com erro de proibição indireto (erro sobre causa de justificação) — o enunciado não menciona nenhuma suposta excludente.",
+          "regraMemoria": "Não sabia que era crime = erro de proibição DIRETO. Achava que tinha uma causa que justificava = erro de proibição INDIRETO."
         },
         {
           "territorio": "Direito Penal",
@@ -7865,7 +8096,11 @@ var QuestoesSeed = (function () {
               "texto": "A de exclusão da culpabilidade por inexigibilidade de conduta diversa, consistente na obediência hierárquica."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Receptação dolosa (art. 180, CP) exige que o agente saiba que a coisa é produto de crime. Alfredo desconhecia a origem ilícita do veículo, faltando o dolo — isso exclui a tipicidade subjetiva do crime.",
+          "explicacaoErradas": "Exercício regular de direito e estrito cumprimento de dever legal são excludentes de ilicitude, mas aqui o problema é anterior: falta o próprio dolo, elemento do tipo. Obediência hierárquica (art. 22, CP) exclui culpabilidade pressupondo fato típico e ilícito já configurado — não é o caso, pois falta desde já a tipicidade.",
+          "pegadinha": "Pular direto para excludentes de ilicitude ou culpabilidade quando o problema real é a ausência de dolo, que já resolve o caso na tipicidade.",
+          "regraMemoria": "Não sabia que a coisa era roubada? Falta dolo, falta tipicidade — nem chega a discutir ilicitude ou culpabilidade."
         },
         {
           "territorio": "Direito Penal",
@@ -7888,7 +8123,11 @@ var QuestoesSeed = (function () {
               "texto": "Filisteu deve responder por tentativa de homicídio, tendo a pena atenuada em razão do arrependimento posterior de Mateus."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Mateus ficou apenas de campana e foi embora sem sequer iniciar qualquer ato de execução contra a vítima — isso é mera fase preparatória, impunível (art. 14, II, CP exige início de execução para haver tentativa). Sem fato típico do executor, o mandante Filisteu também não pratica fato penalmente típico quanto ao homicídio.",
+          "explicacaoErradas": "Não há associação criminosa, que exige estabilidade e permanência de 3 ou mais pessoas — aqui é um ajuste pontual entre duas pessoas. Não há tentativa de homicídio (nem coautoria) porque nunca houve início de execução. Arrependimento posterior (art. 16, CP) exige reparação do dano em crime sem violência, hipótese que não se aplica aqui.",
+          "pegadinha": "Achar que 'contratar um matador' já configura tentativa de homicídio — sem início de atos executórios pelo executor, fica só na fase preparatória, que não é punível.",
+          "regraMemoria": "Sem início de execução não há tentativa — planejar e esperar de campana ainda é fase preparatória impunível."
         },
         {
           "territorio": "Direito Penal",
@@ -7911,7 +8150,11 @@ var QuestoesSeed = (function () {
               "texto": "Joelerson não faz jus à redução da pena, pois ambas as leis citadas entraram em vigor após o trânsito em julgado da sentença condenatória."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta: a lei penal mais benéfica retroage sempre, mesmo após o trânsito em julgado (art. 5º, XL, CF, e art. 2º, parágrafo único, CP), e a Lei A, ainda que revogada depois pela Lei B, foi uma lei intermediária mais favorável vigente entre o fato e a execução, aplicando-se por ultratividade/retroatividade em benefício do réu.",
+          "explicacaoErradas": "As alternativas A, B e D condicionam o benefício ao início da execução ou à vigência atual da lei, ignorando que a lei penal benéfica se aplica retroativamente independentemente de já ter sido revogada ou de já haver trânsito em julgado — o que importa é ela ter estado em vigor em algum momento entre o fato e o cumprimento da pena.",
+          "pegadinha": "A pegadinha é achar que, como a Lei A já foi revogada pela Lei B antes da execução, ela 'não vale mais' — mas lei intermediária benéfica sempre se aplica, mesmo revogada depois.",
+          "regraMemoria": "Lei penal mais boa pro réu nunca perde a validade: se um dia vigorou e foi mais branda, ela 'gruda' no caso, mesmo revogada depois."
         },
         {
           "territorio": "Processo Penal",
@@ -7934,7 +8177,11 @@ var QuestoesSeed = (function () {
               "texto": "O efeito extensivo do recurso permite que Rogério aproveite qualquer decisão favorável a Antônio."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta: o efeito translativo devolve ao tribunal o conhecimento de matérias de ordem pública (como a prescrição) independentemente de terem sido arguidas pelo recorrente, e como o Ministério Público recorreu, essa devolução ampla beneficia também Rogério, que pode suscitar a prescrição em contrarrazões.",
+          "explicacaoErradas": "As demais alternativas descrevem mal os efeitos recursais: o efeito devolutivo não permite ao próprio juiz reconsiderar a decisão (isso é efeito regressivo/iterativo), o efeito substitutivo apenas troca a decisão recorrida pela do tribunal, e o efeito extensivo (art. 580, CPP) estende resultado de recurso de corréu por fundamento não personalíssimo, não se confunde com matéria de ordem pública suscitada em contrarrazões.",
+          "pegadinha": "A armadilha é confundir 'efeito translativo' (matéria de ordem pública que sobe independente de pedido) com 'efeito extensivo' (art. 580, CPP, que estende resultado de recurso de corréu) — são institutos parecidos, mas aqui é o translativo por causa do recurso do MP.",
+          "regraMemoria": "Translativo = matéria de ordem pública sobe de graça; Extensivo = resultado do recurso do colega se estende a você (art. 580, CPP)."
         },
         {
           "territorio": "Processo Penal",
@@ -7957,7 +8204,11 @@ var QuestoesSeed = (function () {
               "texto": "O magistrado não pode decretar prisão preventiva de ofício, mas a gravidade em abstrato de um crime é um motivo legítimo para a decretação da prisão preventiva mesmo quando o suspeito for primário."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta: desde a Lei 13.964/2019 (Pacote Anticrime), o juiz não pode decretar prisão preventiva de ofício, inclusive no inquérito policial (art. 311, CPP), e a preventiva só é cabível, em regra, para crimes dolosos com pena máxima superior a 4 anos, sendo incompatível, em regra, com crimes culposos (art. 313, CPP).",
+          "explicacaoErradas": "As demais alternativas erram ao admitir a decretação de ofício e/ou ao aceitar a gravidade em abstrato do crime como fundamento idôneo — a jurisprudência do STJ/STF exige fundamentação concreta (art. 312, CPP), vedando motivação genérica baseada apenas na gravidade abstrata do delito.",
+          "pegadinha": "A pegadinha é achar que, por ser homicídio (crime grave), a preventiva se justificaria pela gravidade do delito — mas gravidade em abstrato nunca fundamenta preventiva, e crime culposo, em regra, nem comporta essa prisão.",
+          "regraMemoria": "Depois do Pacote Anticrime: juiz não decreta preventiva sozinho, e sem dolo, sem preventiva."
         },
         {
           "territorio": "Processo Penal",
@@ -7980,7 +8231,11 @@ var QuestoesSeed = (function () {
               "texto": "O Tribunal equivocou-se, pois fica vinculado aos argumentos apontados pelo impetrante do habeas corpus, sendo inadmissível a concessão de habeas corpus de ofício."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta: o art. 654, §2º, do CPP autoriza juízes e tribunais a expedir habeas corpus de ofício sempre que verificarem ilegalidade ou abuso de poder no curso do processo, ainda que o fundamento seja diverso do alegado pelo impetrante.",
+          "explicacaoErradas": "As demais alternativas erram ao limitar indevidamente a concessão de ofício: não é verdade que o tribunal fica adstrito aos argumentos do impetrante (isso contraria a própria natureza do habeas corpus como remédio de ordem pública), nem que a incompetência seja o único fundamento possível para concessão de ofício.",
+          "pegadinha": "A armadilha é achar que o tribunal 'inventou' um fundamento novo e por isso extrapolou — mas em HC, diferente de outros recursos, o julgador pode conceder de ofício por qualquer ilegalidade, ainda que não alegada.",
+          "regraMemoria": "Habeas corpus não tem 'camisa de força': juiz enxergou ilegalidade, concede de ofício, mesmo que ninguém tenha pedido por aquele motivo."
         },
         {
           "territorio": "Processo Penal",
@@ -8003,7 +8258,11 @@ var QuestoesSeed = (function () {
               "texto": "legal, porque a restrição legal de excesso de linguagem aplica- se apenas para o crime de homicídio."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta: a pronúncia deve se limitar a afirmar a materialidade e os indícios suficientes de autoria (art. 413, CPP), sem juízo de certeza ou eloquência acusatória, sob pena de excesso de linguagem, que macula a decisão por poder influenciar indevidamente os jurados no plenário do júri.",
+          "explicacaoErradas": "As demais alternativas erram porque não existe 'livre convencimento' que justifique afirmar culpa certa na pronúncia (isso é papel do Conselho de Sentença), a pronúncia realmente cabe ao juiz singular (não ao Tribunal do Júri), e a vedação ao excesso de linguagem vale para qualquer crime doloso contra a vida, não só homicídio.",
+          "pegadinha": "A pegadinha é confundir a pronúncia (juízo de admissibilidade, com dúvida em favor da sociedade — in dubio pro societate) com uma sentença condenatória (juízo de certeza) — o juiz da pronúncia não pode falar como se já tivesse condenado.",
+          "regraMemoria": "Na pronúncia, o juiz é só 'porteiro' do júri: abre a porta, mas quem julga com certeza é o jurado — falar em culpa certa é excesso de linguagem."
         },
         {
           "territorio": "Processo Penal",
@@ -8026,7 +8285,11 @@ var QuestoesSeed = (function () {
               "texto": "A prisão em flagrante foi válida, entretanto, a autoridade policial não poderia determinar a quebra de sigilo de dados dos telefones apreendidos, havendo nulidade da prova colhida a partir da perícia do aparelho e de todos os atos subsequentes."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta: o ingresso domiciliar noturno sem mandado é válido em situação de flagrante delito (art. 5º, XI, CF), tornando lícita a prisão e a apreensão do celular na busca pessoal; porém, o acesso ao conteúdo/dados do aparelho (mensagens, conversas) depende de prévia autorização judicial específica, por envolver sigilo de dados e comunicações (art. 5º, XII, CF), de modo que a perícia determinada apenas pela autoridade policial torna a prova ilícita, contaminando os atos dela decorrentes.",
+          "explicacaoErradas": "As demais alternativas erram ao invalidar a própria prisão em flagrante: o ingresso domiciliar à noite é permitido justamente em flagrante delito, e a apreensão física do celular durante a busca pessoal é lícita — o vício está apenas na quebra do sigilo dos dados armazenados sem ordem judicial.",
+          "pegadinha": "A pegadinha é misturar dois planos: apreender o objeto celular (lícito, decorre da prisão) e acessar seu conteúdo (exige ordem judicial) — muita gente invalida a prisão inteira quando o problema está só na perícia dos dados.",
+          "regraMemoria": "Pode pegar o celular na busca, mas não pode 'abrir' ele sem juiz — separar a caixa do conteúdo da caixa."
         },
         {
           "territorio": "Processo Penal",
@@ -8049,7 +8312,11 @@ var QuestoesSeed = (function () {
               "texto": "ilegítima para ação civil ex delicto, seja de conhecimento ou de execução, que somente pode ser proposta contra o autor do crime."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta: a execução civil ex delicto (art. 63, CPP, c/c art. 91, I, CP) só pode ser movida contra quem foi parte no processo penal, pois o título executivo se forma com respeito ao contraditório; o terceiro civilmente responsável (empregador) não participou da ação penal, de modo que a vítima deve ajuizar contra ele ação de conhecimento (não de execução) para apurar sua responsabilidade civil.",
+          "explicacaoErradas": "As demais alternativas erram ao tratar a responsabilidade civil do empregador como bastante para legitimá-lo já na fase de execução — a responsabilidade por fato de terceiro é discutida em ação de conhecimento própria, respeitando o contraditório que faltou na ação penal.",
+          "pegadinha": "A pegadinha é pensar que 'quem responde civilmente, responde na execução' — mas execução pressupõe título contra quem litigou; contra quem não litigou, cabe ação de conhecimento.",
+          "regraMemoria": "Execução só contra quem foi parte no crime — o patrão que não participou do processo penal, a vítima processa de novo, do zero (ação de conhecimento)."
         },
         {
           "territorio": "Direito Previdenciário",
@@ -8072,7 +8339,11 @@ var QuestoesSeed = (function () {
               "texto": "Somente Francisca faz jus à pensão por morte, sendo necessária a comprovação de dependência econômica."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta: pela Lei 8.213/91 (art. 16), a filha menor de 21 anos é dependente de classe I, com dependência econômica presumida (não é mais exigido o requisito de universitária até 24 anos, revogado desde a Lei 9.032/95), e a existência de dependente de classe I exclui os das classes seguintes, como a mãe (classe II, cuja dependência precisaria ser comprovada).",
+          "explicacaoErradas": "As demais alternativas erram ao incluir a mãe na pensão (ela é excluída pela existência de dependente de classe I) e/ou ao exigir comprovação de dependência econômica da filha, que é presumida por lei.",
+          "pegadinha": "A pegadinha é achar que, por 'morar junto' e a mãe também depender financeiramente do falecido, ambas teriam direito — mas as classes de dependentes são sucessivas e excludentes: havendo dependente de classe I, a classe II fica de fora.",
+          "regraMemoria": "Dependente é fila única: classe I entra e já fecha a porta pra classe II — filha jovem entra, mãe (sem comprovar nada a mais) fica de fora."
         },
         {
           "territorio": "Direito Previdenciário",
@@ -8095,7 +8366,11 @@ var QuestoesSeed = (function () {
               "texto": "É devido ao segurado que recebe auxílio por incapacidade temporária e necessita da assistência permanente de outra pessoa."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta: o adicional de 25% por grande invalidez (art. 45, Lei 8.213/91) acompanha os reajustes do benefício que lhe deu origem, sendo recalculado a cada reajuste da aposentadoria.",
+          "explicacaoErradas": "As demais alternativas erram porque o adicional não se incorpora à pensão por morte (cessa com o óbito do aposentado), é devido ainda que a aposentadoria ultrapasse o teto do RGPS, e não se aplica ao auxílio por incapacidade temporária, sendo exclusivo da aposentadoria por incapacidade permanente.",
+          "pegadinha": "A pegadinha é achar que o adicional de 25% 'vira herança' para os dependentes na pensão por morte — ele morre junto com o segurado, não se transmite.",
+          "regraMemoria": "25% de grande invalidez: sobe com o benefício, estoura o teto, mas morre com o titular — não vira pensão."
         },
         {
           "territorio": "Direito do Trabalho",
@@ -8118,7 +8393,11 @@ var QuestoesSeed = (function () {
               "texto": "Alimentação, habitação, plano de saúde e auxílio-educação integrarão a remuneração."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta: pelo art. 458, §2º, da CLT, não integram a remuneração o vale-alimentação, o plano de saúde e o auxílio-educação (matrícula, mensalidade, anuidade, livros e material didático); a habitação fornecida como benefício (aqui, um apartamento de luxo, sem se tratar de local de difícil acesso exigido pelo trabalho) configura salário-utilidade e integra a remuneração.",
+          "explicacaoErradas": "As demais alternativas erram ao incluir educação, plano de saúde ou alimentação na remuneração, quando a CLT expressamente as excluiu após a reforma trabalhista (Lei 13.467/2017), ou ao excluir a habitação, que continua sendo parcela salarial in natura nesse caso.",
+          "pegadinha": "A pegadinha é achar que 'tudo que a empresa dá' integra o salário — mas a CLT lista expressamente benefícios que NÃO integram (alimentação, saúde, educação), sobrando a habitação como utilidade salarial.",
+          "regraMemoria": "Depois da reforma: alimentação, saúde e educação NÃO contam como salário — só sobra a casa (quando é mordomia, não necessidade do serviço)."
         },
         {
           "territorio": "Direito do Trabalho",
@@ -8141,7 +8420,11 @@ var QuestoesSeed = (function () {
               "texto": "O grupo econômico pode ser reconhecido pelo parentesco, mas apenas na fase executória da reclamação."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta: pelo art. 2º, §§2º e 3º, da CLT, a caracterização de grupo econômico trabalhista exige comunhão de interesses e atuação conjunta, com relação de coordenação, direção, controle ou administração entre as empresas — o mero parentesco entre os sócios ou a identidade de sócios, isoladamente, não basta (o §3º é expresso nesse sentido).",
+          "explicacaoErradas": "As demais alternativas erram ao considerar suficiente o vínculo familiar ou a mera identidade de sócios para formar grupo econômico, ou ao supor que isso só poderia ser discutido na execução — a ausência de grupo econômico é matéria de mérito, discutível desde a fase de conhecimento.",
+          "pegadinha": "A pegadinha é achar que 'são irmãos, então é grupo econômico' — mas parentesco e coincidência societária, sozinhos, não configuram grupo; falta a coordenação/direção entre as empresas.",
+          "regraMemoria": "Grupo econômico não é sobre família, é sobre comando: uma empresa manda na outra? Só aí existe grupo."
         },
         {
           "territorio": "Direito do Trabalho",
@@ -8164,7 +8447,11 @@ var QuestoesSeed = (function () {
               "texto": "A sociedade empresária está incorreta, pois as ações que têm por objeto anotações para fins de prova junto à Previdência Social são imprescritíveis."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta: o art. 11, §1º, da CLT dispõe que a prescrição não se aplica às ações que tenham por objeto anotações na CTPS para fins de prova perante a Previdência Social, sendo essas ações imprescritíveis.",
+          "explicacaoErradas": "As demais alternativas erram ao aplicar o prazo geral de 2 anos (biênio) ou o de 30 anos do FGTS — a hipótese é de exceção legal expressa e específica para anotação de CTPS com finalidade previdenciária, que afasta qualquer prazo prescricional.",
+          "pegadinha": "A pegadinha é aplicar automaticamente o prazo de 2 anos pós-extinção do contrato — mas quando o pedido é só a ANOTAÇÃO da CTPS para fins previdenciários, a regra muda: é imprescritível.",
+          "regraMemoria": "CTPS para o INSS não prescreve nunca — o resto (verbas trabalhistas) segue o prazo de 2/5 anos, mas anotação previdenciária é eterna."
         },
         {
           "territorio": "Direito do Trabalho",
@@ -8187,7 +8474,11 @@ var QuestoesSeed = (function () {
               "texto": "Por cumprir apenas a metade da jornada dos demais empregados, ele terá direito a 15 dias de férias com adicional de 1/3."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta: desde a reforma trabalhista (Lei 13.467/2017), o art. 130 da CLT unificou a tabela de férias, e o empregado em regime de tempo parcial tem direito a 30 dias de férias com adicional de 1/3, na mesma proporção dos demais empregados, caso não tenha faltas injustificadas.",
+          "explicacaoErradas": "As demais alternativas erram ao aplicar a antiga tabela proporcional às horas do art. 58-A (revogada), ao negar férias ao trabalhador parcial ou ao condicionar o direito à previsão em norma coletiva — o direito decorre diretamente da lei.",
+          "pegadinha": "A pegadinha é lembrar da regra antiga (férias reduzidas proporcionalmente para tempo parcial) — ela não existe mais desde a reforma de 2017; hoje é tudo igual, 30 dias.",
+          "regraMemoria": "Tempo parcial não é mais 'férias parciais': depois de 2017, todo mundo sem falta tem os mesmos 30 dias."
         },
         {
           "territorio": "Direito do Trabalho",
@@ -8210,7 +8501,11 @@ var QuestoesSeed = (function () {
               "texto": "O período de deslocamento assim como o período de utilização da biblioteca, voltado para o estudo, devem ser computados na jornada. Os demais períodos não são computados na jornada."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta: o tempo de deslocamento em condução fornecida pela empresa integra a jornada apenas porque há disposição expressa em acordo coletivo nesse sentido; o uso facultativo de salas de recreação, biblioteca e capela, fora da jornada e sem qualquer obrigatoriedade ou controle do empregador, não caracteriza tempo à disposição (art. 4º, CLT).",
+          "explicacaoErradas": "As demais alternativas erram ao computar ou não computar o deslocamento sem atentar para a norma coletiva, ou ao tentar diferenciar os espaços de lazer/estudo entre si — nenhum deles gera tempo à disposição, pois falta a subordinação exigida pelo art. 4º da CLT.",
+          "pegadinha": "A pegadinha é achar que 'biblioteca é estudo, logo conta como trabalho' — mas o critério não é a natureza do espaço, é ser uso facultativo e sem controle do empregador; nenhum desses ambientes gera tempo à disposição.",
+          "regraMemoria": "Só conta como jornada o que a norma coletiva mandar contar (aqui, só o transporte) — sala de lazer, biblioteca e capela de uso livre não são 'trabalho disfarçado'."
         },
         {
           "territorio": "Processo do Trabalho",
@@ -8233,7 +8528,11 @@ var QuestoesSeed = (function () {
               "texto": "Não há medida a ser adotada, transitando em julgado a decisão do pedido de integração da habitação."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta: cabe recurso adesivo (art. 997, CPC, aplicado subsidiariamente ao processo do trabalho, e Súmula 283 do TST), interposto no prazo das contrarrazões ao recurso da parte contrária, permitindo à parte que não recorreu de forma autônoma reabrir a discussão sobre o capítulo em que sucumbiu (integração da habitação), já que a ré recorreu (recurso principal).",
+          "explicacaoErradas": "As demais alternativas erram porque o prazo do recurso ordinário autônomo já passou (preclusão) e não há agravo de instrumento cabível nessa fase — o instrumento próprio para reabrir a discussão, dependente do recurso da parte contrária, é justamente o adesivo.",
+          "pegadinha": "A pegadinha é achar que, como o prazo próprio já passou, não há mais nada a fazer — mas o recurso adesivo 'pega carona' no recurso da outra parte e reabre a discussão do que ainda cabia recurso.",
+          "regraMemoria": "Perdeu o prazo do seu recurso, mas o outro lado recorreu? Ainda dá para entrar de 'carona' com o recurso adesivo."
         },
         {
           "territorio": "Processo do Trabalho",
@@ -8256,7 +8555,11 @@ var QuestoesSeed = (function () {
               "texto": "O réu será condenado a pagar os honorários do perito, porque sucumbiu no objeto da prova, e arcará com os honorários do assistente técnico por ele indicado."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta: pelo art. 790-B da CLT, os honorários periciais são pagos pela parte sucumbente no objeto da perícia — no caso, o réu, já que a perícia confirmou a doença ocupacional —, e pela Súmula 341 do TST, cada parte é responsável pelos honorários do assistente técnico que ela própria indicou, independentemente do resultado da perícia.",
+          "explicacaoErradas": "As demais alternativas erram ao atribuir os honorários do assistente técnico do autor ao réu, ao dividir os honorários periciais meio a meio (quando a regra é sucumbência no objeto da prova) ou ao transferir o custo à Justiça — a regra correta combina sucumbência (para o perito) com responsabilidade por indicação (para os assistentes).",
+          "pegadinha": "A pegadinha é achar que 'quem perde tudo paga tudo', inclusive o assistente técnico da outra parte — mas o assistente técnico é sempre pago por quem o indicou, ganhe ou perca a causa.",
+          "regraMemoria": "Perito: paga quem perdeu na prova. Assistente técnico: paga quem chamou o seu — cada um banca o seu próprio 'reforço'."
         },
         {
           "territorio": "Processo do Trabalho",
@@ -8279,7 +8582,11 @@ var QuestoesSeed = (function () {
               "texto": "Tratando-se de um procedimento especial de jurisdição voluntária, o Juiz não pode negar a homologação de acordo alegando vício formal."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta: o art. 855-B, §2º, da CLT veda expressamente que empregado e empregador sejam representados por advogado comum no procedimento de homologação de acordo extrajudicial trabalhista, sendo essa vedação um requisito de validade do procedimento.",
+          "explicacaoErradas": "As demais alternativas erram porque não há exigência de advogado do sindicato, e mesmo sendo procedimento de jurisdição voluntária, o juiz pode e deve negar a homologação diante de vício formal, como a representação por advogado comum, que compromete a genuína bilateralidade da negociação.",
+          "pegadinha": "A pegadinha é achar que, como as partes concordam e o processo é 'de jurisdição voluntária', tudo se homologa — mas a lei impõe advogados distintos justamente para garantir que o acordo não seja uma simulação em prejuízo do empregado.",
+          "regraMemoria": "Acordo extrajudicial trabalhista: um advogado para cada lado, sempre — mesmo time jurídico não homologa."
         },
         {
           "territorio": "Processo do Trabalho",
@@ -8302,7 +8609,11 @@ var QuestoesSeed = (function () {
               "texto": "Está preclusa a arguição de matérias que impugnam os cálculos homologados em sede de embargos à execução da ré, uma vez que a parte não apresentou impugnação aos cálculos no momento oportuno, cabendo ao advogado do autor formular essa alegação na contraminuta aos embargos da ré."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta: nos termos do art. 879, §2º, da CLT, a parte que não impugna a conta de liquidação no prazo comum aberto pelo juízo sofre preclusão quanto à discussão dos cálculos, não podendo reabrir essa matéria depois, em embargos à execução; cabe ao advogado do autor, na contraminuta, arguir exatamente essa preclusão da ré.",
+          "explicacaoErradas": "As demais alternativas erram ao admitir que a ré rediscuta os cálculos nos embargos à execução (ignorando sua inércia anterior) ou ao restringir incorretamente o meio de defesa do autor — o ponto central é que o silêncio da ré na fase de impugnação da conta gerou preclusão específica sobre os cálculos.",
+          "pegadinha": "A pegadinha é achar que embargos à execução sempre reabrem tudo, inclusive os cálculos — mas quem ficou calado na fase própria de impugnação da conta perde a chance de discutir isso depois.",
+          "regraMemoria": "Calou na hora de impugnar a conta, calou para sempre sobre os cálculos — embargos à execução não é uma segunda chance para isso."
         },
         {
           "territorio": "Processo do Trabalho",
@@ -8325,7 +8636,11 @@ var QuestoesSeed = (function () {
               "texto": "Os das quatro irmãs, em condições iguais."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta: pelo art. 71 da Lei 10.741/2003 (Estatuto do Idoso), têm prioridade de tramitação as pessoas com 60 anos ou mais, o que inclui Antônia (65) e Aline (61), mas não Alessandra (58) e Alba (50), que ainda não atingiram essa idade.",
+          "explicacaoErradas": "As demais alternativas erram ao excluir Aline (que já completou 60 anos) ou ao incluir Alessandra e Alba (que ainda não atingiram a idade legal), ou ainda ao tratar todas as irmãs igualmente, ignorando o critério etário objetivo da lei.",
+          "pegadinha": "A pegadinha é fazer conta errada de quem já tem 60+ — Aline com 61 já entra, Alessandra com 58 ainda não, mesmo estando pertinho.",
+          "regraMemoria": "Prioridade de idoso na Justiça: 60 anos é a régua — bateu ou passou, tem prioridade; não bateu, espera a fila normal."
         }
       ]
     },
@@ -8354,7 +8669,11 @@ var QuestoesSeed = (function () {
               "texto": "Não houve violação da ampla defesa do advogado, porque o reconhecimento de nulidades processuais está sujeito à constatação de efetivo prejuízo e, como no caso foi aplicada apenas pena de censura, não ocorreu dano suficiente a ponto de que se reconhecesse a ilegalidade do procedimento."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta porque a redução das etapas do processo disciplinar (defesa prévia e razões finais) não pode ocorrer em razão da gravidade da infração ou da pena aplicada — o rito do processo disciplinar da OAB (Regulamento Geral do EOAB) é obrigatório em qualquer caso.",
+          "explicacaoErradas": "A A erra ao supor que a defesa oral substitui as demais fases; a ampla defesa (art. 5º, LV, CF) exige todas as etapas, não apenas uma. A B erra porque o Presidente do Conselho Seccional não pode homologar isoladamente o parecer do relator só por a pena ser branda — o julgamento cabe ao Tribunal de Ética e Disciplina. A D erra ao condicionar a nulidade a prejuízo efetivo, quando a supressão de fases é nulidade que viola diretamente o devido processo legal.",
+          "pegadinha": "A pegadinha é achar que, por ser infração 'leve' e a pena 'branda' (censura), etapas processuais podem ser puladas — gravidade nunca autoriza atalho na defesa.",
+          "regraMemoria": "Pena leve não é processo light: todo processo disciplinar da OAB tem TODAS as fases, sempre — defesa prévia, instrução, razões finais e julgamento pelo Tribunal."
         },
         {
           "territorio": "Ética",
@@ -8377,7 +8696,11 @@ var QuestoesSeed = (function () {
               "texto": "A sociedade unipessoal de advocacia de João Pedro adquirirá personalidade jurídica com o registro aprovado dos seus atos constitutivos no Conselho Federal da OAB."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta: a sociedade unipessoal de advocacia pode funcionar em espaço próprio, compartilhado ou dividido com outros escritórios/empresas, desde que preservado o sigilo profissional (art. 15 do EOAB c/c regulamentação do CFOAB).",
+          "explicacaoErradas": "A B erra porque o advogado só pode integrar uma única sociedade de advocacia (unipessoal ou pluripessoal) na mesma área territorial, sendo vedada a cumulação. A C erra porque a denominação da sociedade unipessoal não é livre: deve conter o nome do próprio advogado titular, seguido da expressão 'Sociedade Individual de Advocacia'. A D erra porque a personalidade jurídica nasce do registro no Conselho Seccional — e não no Conselho Federal — da OAB.",
+          "pegadinha": "A pegadinha é confundir Conselho Seccional com Conselho Federal no registro dos atos constitutivos, e achar que dá para acumular sociedade coletiva e unipessoal ao mesmo tempo na mesma base territorial.",
+          "regraMemoria": "Sociedade unipessoal: nome do titular na razão social, registro no Seccional, e só uma sociedade por advogado na mesma área."
         },
         {
           "territorio": "Ética",
@@ -8400,7 +8723,11 @@ var QuestoesSeed = (function () {
               "texto": "Em virtude do caráter alimentar dos honorários advocatícios, caso apresente o respectivo contrato nos autos, Roberto fará jus à liberação dos bens bloqueados até a completa satisfação da verba contratada, ainda que isso implique o esvaziamento do bloqueio judicial."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta: a jurisprudência consolidada admite, mesmo diante de bloqueio patrimonial amplo, a liberação de até 20% dos valores bloqueados para pagamento de honorários contratuais e reembolso de despesas com a defesa, dado o caráter alimentar dessa verba.",
+          "explicacaoErradas": "A B erra por restringir a liberação apenas ao reembolso de despesas, excluindo os honorários, quando o entendimento abrange ambos. A C erra por negar qualquer liberação, ignorando a natureza alimentar dos honorários. A D erra ao admitir liberação irrestrita até a integral satisfação do contrato, o que esvaziaria a garantia de ressarcimento ao erário — daí o limite de 20%.",
+          "pegadinha": "A armadilha é achar que é 'tudo ou nada': ou o advogado não recebe nada, ou recebe o valor integral do contrato — a resposta certa é o meio-termo, o percentual de 20%.",
+          "regraMemoria": "Bloqueio de bens + honorários = trava nos 20%. Nem zero, nem tudo."
         },
         {
           "territorio": "Ética",
@@ -8423,7 +8750,11 @@ var QuestoesSeed = (function () {
               "texto": "Pedro, como Deputado Federal, estará em situação de incompatibilidade total com o exercício da advocacia e não poderá atuar como advogado em nenhuma causa, mesmo em processos particulares."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta: por ser membro do Poder Legislativo, Pedro sofre impedimento (não incompatibilidade) para advogar contra ou a favor de pessoas jurídicas de direito público, empresas públicas, sociedades de economia mista e concessionárias de serviço público (art. 30, II, EOAB). Como a Caixa Econômica Federal é empresa pública, o impedimento se restringe a ela, podendo Pedro advogar livremente nas demais causas.",
+          "explicacaoErradas": "A A erra porque, se eleito Presidente da Câmara, Pedro passa a integrar a Mesa do Legislativo, hipótese de incompatibilidade TOTAL (art. 28, I, EOAB), e não apenas impedimento restrito à CEF. A B erra porque o impedimento do art. 30, II, não se limita a causas de terceiros. A D erra porque confunde o impedimento parcial do deputado comum com a incompatibilidade total, reservada a quem ocupa cargo na Mesa ou chefia do Executivo.",
+          "pegadinha": "A pegadinha é misturar o regime do deputado 'comum' (impedimento parcial contra entes públicos) com o do Presidente da Câmara (incompatibilidade total, por integrar a Mesa) — são graus diferentes de restrição.",
+          "regraMemoria": "Legislativo comum = impedido só contra o Poder Público. Mesa do Legislativo ou chefia do Executivo = incompatibilidade total, advocacia zerada."
         },
         {
           "territorio": "Ética",
@@ -8446,7 +8777,11 @@ var QuestoesSeed = (function () {
               "texto": "A impetração de habeas corpus é vedada para leigos quando se trata de crimes graves, como roubo, exigindo obrigatoriamente a atuação de advogado."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta: o art. 1º, §1º, do EOAB exclui expressamente a impetração de habeas corpus do rol de atividades privativas de advocacia, podendo ser exercida por qualquer pessoa, leiga inclusive, em qualquer instância.",
+          "explicacaoErradas": "As alternativas A, C e D erram ao criar exigências (inscrição na OAB, ausência de advogado disponível, gravidade do crime) que a lei não impõe — o habeas corpus é remédio de acesso universal justamente por tutelar a liberdade de locomoção.",
+          "pegadinha": "A pegadinha é achar que toda peça processual, inclusive o habeas corpus, é 'atividade privativa de advogado' — o HC é a exceção clássica e mais cobrada da regra.",
+          "regraMemoria": "Habeas corpus não pede diploma: qualquer pessoa pode impetrar, com ou sem OAB."
         },
         {
           "territorio": "Ética",
@@ -8469,7 +8804,11 @@ var QuestoesSeed = (function () {
               "texto": "A negativa do Delegado foi ilegal, pois Aurélio tem direito de comunicar-se pessoal e reservadamente com Adalberto, mesmo sem procuração, conforme previsto no Estatuto da OAB."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta: o art. 7º, III, do EOAB assegura ao advogado o direito de comunicar-se pessoal e reservadamente com seu cliente, ainda que preso, incomunicável e sem procuração, por ser prerrogativa inerente ao exercício da profissão.",
+          "explicacaoErradas": "As alternativas A, B e C erram ao condicionar esse direito à gravidade do crime, à existência de procuração formal ou a inexistir vínculo de amizade — nenhuma dessas exigências consta do Estatuto, que trata a comunicação reservada como prerrogativa incondicional.",
+          "pegadinha": "A pegadinha é achar que sem procuração não há prerrogativa — a lei dispensa expressamente a procuração justamente para garantir assistência imediata ao preso.",
+          "regraMemoria": "Preso incomunicável com todo mundo, menos com o advogado — nem gravidade do crime, nem falta de procuração impedem essa conversa reservada."
         },
         {
           "territorio": "Ética",
@@ -8492,7 +8831,11 @@ var QuestoesSeed = (function () {
               "texto": "Caso se trate de situação reincidente, Antônio poderá ser apenado com a sanção de exclusão, devendo ser cancelada sua inscrição na Ordem dos Advogados do Brasil."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta: o uso descuidado de citações deturpadas (mesmo geradas por IA) enquadra-se como falta passível de censura (arts. 34 e 36, EOAB), pena que pode ser convertida em advertência, em ofício reservado e sem registro nos assentamentos, havendo circunstância atenuante, como a ausência de dolo e a tentativa de revisão do texto.",
+          "explicacaoErradas": "A A erra porque a ausência de dolo não afasta a responsabilidade disciplinar por negligência no dever de zelo profissional — o advogado também responde por culpa. A B erra porque a suspensão é penalidade mais grave, reservada a infrações de maior lesividade, desproporcional a um deslize sem má-fé comprovada. A D erra porque a exclusão pressupõe reincidência em infração já apenada com suspensão (art. 38, EOAB), hipótese não descrita no caso.",
+          "pegadinha": "A pegadinha é achar que 'usei IA e não percebi o erro' exime de toda sanção — o dever de revisão é do advogado, que responde mesmo sem dolo, mas a pena cabível é a mais branda (censura), não suspensão ou exclusão.",
+          "regraMemoria": "IA erra, mas quem assina a peça é o advogado: negligência na revisão também é falta disciplinar — em regra, censura, convertível em advertência reservada se for caso isolado."
         },
         {
           "territorio": "Filosofia do Direito",
@@ -8515,7 +8858,11 @@ var QuestoesSeed = (function () {
               "texto": "A interpretação da lei é a atividade essencial do jurista, que deve realizá -la buscando a vontade da lei em si, seus fins sociais e as exigências do bem comum, de modo a assegurar a própria evolução do direito."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta: para Reale, a Escola da Exegese sustentava que o Direito se identifica com a lei escrita emanada do Estado — um positivismo legalista extremo, no qual só a atividade legislativa faz o Direito evoluir.",
+          "explicacaoErradas": "A A e a C erram por atribuir à Exegese abertura a valores superiores à lei (constituição ou princípios anteriores ao Estado) — o oposto do legalismo estrito da escola. A D erra porque descreve a Escola da Livre Investigação Científica de Gény, movimento posterior que reagiu contra o formalismo exegético em busca dos fins sociais além da letra da lei.",
+          "pegadinha": "A pegadinha é confundir a Escola da Exegese (lei escrita = tudo, interpretação literal) com escolas posteriores que vieram justamente para combater esse formalismo, como a de Gény.",
+          "regraMemoria": "Exegese = só a lei escrita vale; nada de princípios, nada de 'espírito da lei', nada além do Código de Napoleão."
         },
         {
           "territorio": "Filosofia do Direito",
@@ -8538,7 +8885,11 @@ var QuestoesSeed = (function () {
               "texto": "Como aquilo que não possui um preço – valor relativo –, mas um valor íntimo, ou seja, uma condição graças à qual algo deve ser considerado um fim em si mesmo."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta: para Kant, dignidade é o que não tem preço nem substituto equivalente — um valor íntimo que faz do ser humano um fim em si mesmo, nunca um meio.",
+          "explicacaoErradas": "A B erra por contradizer a própria tese kantiana, ao propor pôr a dignidade 'em cálculo ou confronto' com coisas que têm preço — exatamente o que Kant nega ser possível. A A e a C erram por reduzir a dignidade a direitos de cidadania ou ao valor econômico do trabalho, categorias empíricas estranhas à ética formal kantiana.",
+          "pegadinha": "A pegadinha é tentar 'quantificar' a dignidade ou vinculá-la a algo mensurável (cidadania, trabalho, preço) — a essência kantiana é justamente a incomensurabilidade.",
+          "regraMemoria": "Kant: coisa tem preço, pessoa tem dignidade — dignidade não se troca por nada, não se calcula."
         },
         {
           "territorio": "Direito Constitucional",
@@ -8561,7 +8912,11 @@ var QuestoesSeed = (function () {
               "texto": "Enzo, por ser naturalizado brasileiro e ostentar a qualidade de cidadão, pode ajuizar uma ação popular perante o Juízo competente de primeiro grau."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta: Enzo, embora francês de origem, tornou-se brasileiro pela naturalização, e sua candidatura deferida comprova o exercício de direitos políticos — legitimando-o a propor ação popular perante o juízo de primeiro grau competente (art. 5º, LXXIII, CF).",
+          "explicacaoErradas": "A A erra porque, uma vez naturalizado, Enzo é brasileiro para fins de cidadania eleitoral. A B erra quanto ao juízo competente: ação popular não é proposta no STF, mas no juízo de primeiro grau. A C erra porque o cidadão individual não tem legitimidade para ação civil pública, cujos legitimados são Ministério Público, entes públicos e associações (art. 5º, Lei 7.347/85).",
+          "pegadinha": "A pegadinha dupla: achar que naturalizado não é 'cidadão pleno' para ação popular, e confundir o foro — ação popular é sempre em primeiro grau, nunca originariamente em tribunal superior.",
+          "regraMemoria": "Ação popular: qualquer cidadão (nato ou naturalizado), sempre no juízo de primeiro grau — nunca STF, nunca STJ de cara."
         },
         {
           "territorio": "Direito Constitucional",
@@ -8584,7 +8939,11 @@ var QuestoesSeed = (function () {
               "texto": "A preferência no recebimento de precatórios não se aplica a débitos alimentares, mesmo que se trate de pessoa com deficiência, considerando que todos os credores têm a mesma necessidade vital."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta: o art. 100, §2º, CF, garante preferência no pagamento de precatórios alimentícios às pessoas com deficiência (assim como idosos com 60 anos ou mais e portadores de doença grave), limitada ao valor equivalente ao triplo do fixado em lei para RPV, sendo o restante pago pela ordem cronológica comum.",
+          "explicacaoErradas": "A A erra ao afirmar preferência 'independentemente do montante' — há um teto (o triplo do RPV). A C erra ao fixar valor incorreto (cinco salários mínimos) e ao tratar como 'preferência absoluta sobre qualquer credor'. A D erra ao negar toda preferência às pessoas com deficiência, contrariando o texto constitucional.",
+          "pegadinha": "A pegadinha é achar que a preferência é ilimitada (tudo) ou inexistente (nada) — na verdade ela existe, mas até um teto legal específico.",
+          "regraMemoria": "Idoso, doente grave ou PCD: fura a fila do precatório, mas só até o triplo do valor de RPV — depois volta pra fila comum."
         },
         {
           "territorio": "Direito Constitucional",
@@ -8607,7 +8966,11 @@ var QuestoesSeed = (function () {
               "texto": "O combate às desigualdades regionais não configura tema de índole constitucional, sendo seu enfrentamento delineado pela via legal, conforme a opção política do legislador."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta: o combate às desigualdades regionais é objetivo fundamental da República (art. 3º, III, CF), e a Constituição autoriza tratamento tributário e financeiro diferenciado para promover o equilíbrio socioeconômico entre regiões (art. 151, I, CF), legitimando medidas como juros favorecidos por bancos estatais em regiões prejudicadas.",
+          "explicacaoErradas": "As alternativas A e C erram ao enxergar violação à igualdade, quando a Constituição admite tratamento desigual justamente para reduzir disparidades regionais reais. A D erra ao afirmar que o tema não tem índole constitucional, quando é objetivo expresso do art. 3º, III, CF.",
+          "pegadinha": "A pegadinha é achar que tratamento diferenciado entre regiões sempre fere a isonomia — na verdade a isonomia material exige tratar diferente o que é desigual, para reduzir disparidades.",
+          "regraMemoria": "Desigualdade regional não é discriminação proibida — é objetivo fundamental da República (art. 3º, III, CF) tratar diferente para igualar."
         },
         {
           "territorio": "Direito Constitucional",
@@ -8630,7 +8993,11 @@ var QuestoesSeed = (function () {
               "texto": "Como o Ministro de Estado goza das mesmas imunidades do Presidente da República, já que atua por delegação desse último agente, não pode ser convocado por Comissão Parlamentar Permanente para prestar esclarecimentos sobre episódio ocorrido em sua pasta."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta: o art. 50, caput, CF, autoriza a Câmara dos Deputados, o Senado Federal OU qualquer de suas comissões (não apenas CPI) a convocar Ministro de Estado para prestar informações sobre assunto previamente determinado, sendo o comparecimento obrigatório.",
+          "explicacaoErradas": "As alternativas B, C e D erram ao restringir esse poder exclusivamente às CPIs ou ao supor imunidade do Ministro — o art. 50 CF não faz essa limitação, e comissões permanentes têm competência constitucional própria para convocar.",
+          "pegadinha": "A pegadinha é confundir 'convocar para prestar informações' (poder de qualquer comissão, inclusive permanente) com os 'poderes de investigação próprios das autoridades judiciais' (exclusivos de CPI) — são coisas diferentes.",
+          "regraMemoria": "Convocar Ministro: qualquer comissão pode. Poderes de investigação tipo juiz: só CPI."
         },
         {
           "territorio": "Direito Constitucional",
@@ -8653,7 +9020,11 @@ var QuestoesSeed = (function () {
               "texto": "Houve desproporcionalidade na atuação dos agentes, o que permite a condenação do ente federativo na ação indenizatória, visto que a prestação de socorro, sem consentimento do morador, só pode ocorrer durante o dia."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta: o art. 5º, XI, CF, permite o ingresso em domicílio sem consentimento do morador, a qualquer hora do dia ou da noite, em caso de flagrante delito, desastre ou para prestar socorro, dispensando autorização judicial nessas hipóteses.",
+          "explicacaoErradas": "A A erra ao exigir consentimento do morador mesmo em situação de desastre/socorro. A C erra ao exigir determinação judicial, necessária apenas para ingresso diurno por outros motivos. A D erra ao limitar a exceção ao período diurno — desastre e socorro dispensam a restrição de horário.",
+          "pegadinha": "A pegadinha é achar que a exceção 'só durante o dia' vale para TODAS as hipóteses do art. 5º, XI — essa limitação horária é exclusiva da determinação judicial; flagrante, desastre e socorro valem a qualquer hora.",
+          "regraMemoria": "Casa é inviolável, menos em 3 casos, a qualquer hora: flagrante, desastre, socorro. Só a ordem judicial exige ser de dia."
         },
         {
           "territorio": "Direito Constitucional",
@@ -8676,7 +9047,11 @@ var QuestoesSeed = (function () {
               "texto": "só pode ser objeto de apreciação por meio de arguição de descumprimento de preceito fundamental, pois esse é o instrumento adequado para impugnar atos administrativos do Poder Executivo."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta: o decreto autônomo (art. 84, VI, CF) extrai fundamento de validade diretamente da Constituição, sem intermediação de lei, possuindo natureza normativa primária — por isso pode ser objeto de ADI perante o STF (art. 102, I, 'a', CF).",
+          "explicacaoErradas": "A A erra porque ação popular serve para anular ato lesivo ao patrimônio público, não para controle abstrato de constitucionalidade. A B erra ao negar natureza normativa ao decreto autônomo, que é justamente ato normativo primário. A D erra ao restringir a impugnação à ADPF, quando cabe ADI por haver parâmetro de controle direto e específico.",
+          "pegadinha": "A pegadinha é confundir decreto autônomo (fundamento direto na CF, cabe ADI) com decreto regulamentar comum (depende de lei, cuja inconstitucionalidade seria só reflexa, incabível em ADI).",
+          "regraMemoria": "Decreto que tira força direto da Constituição (autônomo) = cabe ADI. Decreto que só regulamenta lei = inconstitucionalidade reflexa, não cabe ADI."
         },
         {
           "territorio": "Direitos Humanos",
@@ -8699,7 +9074,11 @@ var QuestoesSeed = (function () {
               "texto": "do Alto Comissariado das Nações Unidas para os Direitos Humanos."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta: no sistema global da ONU, o procedimento de queixas do Conselho de Direitos Humanos permite que indivíduos e ONGs submetam diretamente denúncias de violações sistemáticas e graves de direitos humanos, incluindo genocídio.",
+          "explicacaoErradas": "A A erra porque a Corte Internacional de Justiça só admite Estados como partes em processos contenciosos, nunca ONGs ou indivíduos. A B erra porque o TPI julga pessoas físicas por crimes internacionais, não sendo a via para responsabilizar diretamente o Estado. A D erra porque o Alto Comissariado tem função de assessoramento e promoção, não de apreciação formal de denúncias como órgão quase-judicial.",
+          "pegadinha": "A pegadinha é confundir os vários órgãos da ONU (Corte Internacional de Justiça, TPI, Alto Comissariado, Conselho de Direitos Humanos) — só o Conselho tem procedimento de queixa individual/de ONG diretamente acessível.",
+          "regraMemoria": "ONG quer denunciar Estado na ONU direto: vai pro Conselho de Direitos Humanos (procedimento de queixas), não pra Corte, não pro TPI."
         },
         {
           "territorio": "Direitos Humanos",
@@ -8722,7 +9101,11 @@ var QuestoesSeed = (function () {
               "texto": "Em razão de o Brasil não ter ratificado o Protocolo Adicional de São Salvador, o caso em questão não poderá ser submetido aos órgãos integrantes do Sistema Regional Americano de Proteção dos Direitos Humanos."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta: esgotados os recursos internos sem resultado eficaz, é possível submeter o caso diretamente à Comissão Interamericana de Direitos Humanos, já que o direito à educação é um dos poucos direitos sociais que admite o sistema de petições individuais previsto no Protocolo de San Salvador (art. 19.6), ao lado da liberdade sindical.",
+          "explicacaoErradas": "A B erra porque o STF reconhece o direito à educação (sobretudo acesso a vagas em creche/ensino fundamental) como direito subjetivo exigível judicialmente. A C erra porque a educação é justamente uma das exceções que admitem petição individual no sistema interamericano. A D erra porque o Brasil ratificou o Protocolo de San Salvador (Decreto 3.321/1999), estando sujeito a ele.",
+          "pegadinha": "A pegadinha é achar que direito social nunca admite petição individual no sistema interamericano — educação é exceção expressa, junto com liberdade sindical.",
+          "regraMemoria": "Protocolo de San Salvador: quase nenhum direito social vira petição individual, só dois — educação e liberdade sindical. Guarde esses dois."
         },
         {
           "territorio": "Direito Eleitoral",
@@ -8745,7 +9128,11 @@ var QuestoesSeed = (function () {
               "texto": "Ao Corregedor Regional do Tribunal Regional Eleitoral, que deve apreciar os fatos."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta: a Ação de Investigação Judicial Eleitoral (AIJE) por abuso de poder econômico, quando relativa a eleição estadual (Governador), deve ser dirigida ao Corregedor Regional Eleitoral do TRE, nos termos do art. 22 da LC 64/90.",
+          "explicacaoErradas": "As alternativas A, B e C erram quanto ao órgão de distribuição: não é qualquer juiz eleitoral, nem o Presidente do TRE, nem livre distribuição — a AIJE tem destinatário certo, o Corregedor Regional, que atua como relator nato desse tipo de ação.",
+          "pegadinha": "A pegadinha é achar que toda ação eleitoral vai por distribuição livre ao TRE — a AIJE tem destinatário certo: o Corregedor Regional (ou Corregedor-Geral, no TSE, para eleições presidenciais).",
+          "regraMemoria": "AIJE (abuso de poder) = Corregedor Regional Eleitoral. Decorou 'Corregedor', decorou a questão."
         },
         {
           "territorio": "Direito Eleitoral",
@@ -8768,7 +9155,11 @@ var QuestoesSeed = (function () {
               "texto": "Representação por captação ilícita de sufrágio, que pode ser ajuizada até a data da diplomação."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta: doar bens em troca de voto configura captação ilícita de sufrágio (art. 41-A, Lei 9.504/97), cuja representação pode ser ajuizada até a data da diplomação, acarretando multa e cassação do registro ou diploma do candidato.",
+          "explicacaoErradas": "As alternativas A, B e C erram porque tratam de instrumentos distintos: ação de impugnação de registro (AIRC) tem outro objeto e prazo, recurso contra expedição de diploma (RCED) tem hipóteses e prazos próprios, e a ação penal por corrupção eleitoral não se presta a cassar registro/diploma — quem faz isso é a representação do art. 41-A.",
+          "pegadinha": "A pegadinha é confundir os vários instrumentos eleitorais parecidos (AIRC, RCED, ação penal) com a representação específica de captação ilícita de sufrágio, o 'nome técnico' da compra de voto.",
+          "regraMemoria": "Compra de voto = captação ilícita de sufrágio = art. 41-A = representação até a diplomação."
         },
         {
           "territorio": "Direito Internacional",
@@ -8791,7 +9182,11 @@ var QuestoesSeed = (function () {
               "texto": "A autoridade brasileira deve remeter o caso, por carta rogatória, à justiça norte -americana, tendo em vista que o portal de notícias é sediado nos Estados Unidos."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta: nos termos do art. 22, III, do CPC, a autoridade judiciária brasileira tem competência internacional concorrente quando o fato ou ato causador do dano ocorreu no Brasil, o que se verifica aqui, já que a repercussão e os efeitos lesivos à imagem se deram em território nacional.",
+          "explicacaoErradas": "A A erra porque a competência não é afastada pela nacionalidade estrangeira do réu; a lei fixa a competência pelo local do dano, não pela nacionalidade das partes. A B erra porque o fundamento correto não é a nacionalidade da autora, mas o local do dano. A D erra porque, havendo competência concorrente da justiça brasileira, não há necessidade de remeter o caso à justiça norte-americana por carta rogatória.",
+          "pegadinha": "A pegadinha é buscar o critério errado (nacionalidade das partes) quando o CPC usa o critério do local do dano/fato para fixar competência internacional concorrente.",
+          "regraMemoria": "Dano ocorreu no Brasil? Justiça brasileira pode julgar, não importa a nacionalidade de quem processa ou é processado."
         },
         {
           "territorio": "Direito Internacional",
@@ -8814,7 +9209,11 @@ var QuestoesSeed = (function () {
               "texto": "Cada Estado Contratante designará uma Autoridade Central para receber as Cartas Rogatórias procedentes de autoridade judiciária de outro Estado Contratante e de transmiti -las à autoridade competente para cumprimento. A organização dessa Autoridade Central deve ser a mesma em todos os Estados signatários da Convenção da Haia sobre Provas, sem a possibilidade de cada um legislar sobre essa organização."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Pelo art. 12 da Convenção da Haia sobre Provas, o cumprimento da carta rogatória só pode ser recusado em duas hipóteses: não competir ao Judiciário do Estado requerido, ou este considerar que ela prejudica sua soberania ou segurança.",
+          "explicacaoErradas": "A cooperação não depende só de tratado (pode ocorrer por promessa de reciprocidade); quem define as formalidades da colheita da prova é a lei do Estado requerido, não a do requerente; e cada Estado organiza sua Autoridade Central conforme sua própria legislação.",
+          "pegadinha": "A banca inverte quem manda: faz parecer que a lei do país que pediu a prova (requerente) prevalece, quando na verdade quem aplica sua própria lei é o país que executa o pedido (requerido).",
+          "regraMemoria": "Carta rogatória só trava por 2 motivos: não é coisa de juiz (atribuição), ou fere soberania/segurança."
         },
         {
           "territorio": "Direito Financeiro",
@@ -8837,7 +9236,11 @@ var QuestoesSeed = (function () {
               "texto": "receber transferências voluntárias (exceto nas áreas de educação, saúde e assistência social), nem obter garantia de outro ente, nem contratar operações de crédito, ressalvadas as destinadas ao pagamento da dívida mobiliária e as que visem à redução das despesas com pessoal."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Pelo art. 23, §3º, da LRF, enquanto o ente não reduzir a despesa de pessoal ao limite, fica proibido de receber transferências voluntárias (salvo educação, saúde e assistência social), obter garantia de outro ente e contratar operações de crédito, ressalvadas as que refinanciam a dívida mobiliária ou reduzem a própria despesa com pessoal.",
+          "explicacaoErradas": "As demais alternativas erram porque restringem a vedação só à operação de crédito, ou porque afirmam que garantia e crédito continuam liberados, ou porque liberam as transferências voluntárias para qualquer área.",
+          "pegadinha": "Fazer o candidato esquecer que a vedação atinge três frentes ao mesmo tempo (transferência, garantia e crédito) e que existem duas exceções específicas para operações de crédito.",
+          "regraMemoria": "Estourou o teto de pessoal? Trava tudo: sem transferência (salvo saúde/educação/assistência), sem garantia, sem crédito novo (só refinanciar dívida mobiliária ou baixar despesa de pessoal)."
         },
         {
           "territorio": "Direito Financeiro",
@@ -8860,7 +9263,11 @@ var QuestoesSeed = (function () {
               "texto": "É inadequado em relação ao orçamento de investimentos, que deveria compor a LOA, mas é admitido em relação ao orçamento da seguridade social, que pode ser previsto em outra lei, desde que seu valor global esteja previsto na LOA."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O art. 165, §5º, da CF exige que a LOA compreenda, na mesma lei, o orçamento fiscal, o orçamento de investimento das estatais e o orçamento da seguridade social; mandar os outros dois em projetos separados descumpre essa regra.",
+          "explicacaoErradas": "O problema não é da LDO (é da LOA), a divisão em leis próprias não é autorizada pela Constituição, e não basta constar o valor global da seguridade social na LOA — o orçamento inteiro deve estar nela.",
+          "pegadinha": "Fazer crer que basta um valor global constar da LOA para regularizar a separação, ou confundir a exigência com a LDO em vez da LOA.",
+          "regraMemoria": "LOA é um pacote só, com 3 orçamentos dentro: fiscal + investimento + seguridade social. Não dá pra fatiar em leis separadas."
         },
         {
           "territorio": "Direito Tributário",
@@ -8883,7 +9290,11 @@ var QuestoesSeed = (function () {
               "texto": "Não poderá ocorrer lançamento tributário fundado em dados obtidos a partir de fiscalização com base na Lei Complementar nº XXX/2022, já que ela instituiu novos critérios de apuração ou processos de fiscalização depois da ocorrência do fato gerador da obrigação."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O art. 144, §1º, do CTN autoriza aplicação imediata de lei que amplia poderes de investigação e fiscalização, mesmo a fatos geradores anteriores à sua vigência — por isso a notificação é regular.",
+          "explicacaoErradas": "Irretroatividade e anterioridade protegem a instituição/majoração do tributo, não as normas de fiscalização e apuração, que têm regra própria de aplicação imediata; por isso não há inconstitucionalidade nem violação de prazo.",
+          "pegadinha": "Confundir a regra geral da irretroatividade tributária (para lei que institui/aumenta tributo) com a exceção específica do art. 144, §1º, CTN, que libera a lei de fiscalização para alcançar fatos passados.",
+          "regraMemoria": "Lei de fiscalização é lei de 'como investigar', não de 'quanto pagar' — por isso pode mexer em fatos geradores do passado (art. 144, §1º, CTN)."
         },
         {
           "territorio": "Direito Tributário",
@@ -8906,7 +9317,11 @@ var QuestoesSeed = (function () {
               "texto": "O locatário é responsável tributário por sucessão do locador quanto a este IPTU."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Pelo art. 123 do CTN, convenções particulares não são oponíveis à Fazenda Pública, salvo lei em contrário; logo, o Município só pode executar o contribuinte (proprietário) ou responsável legal, nunca o locatário por força do contrato.",
+          "explicacaoErradas": "O locatário não vira contribuinte de direito nem responsável por substituição ou sucessão apenas por cláusula contratual — essas qualidades só nascem de lei, e aqui a fonte é um contrato particular.",
+          "pegadinha": "Achar que a cláusula do contrato de locação, por ser 'expressa', vale também perante o Fisco — clássica armadilha do art. 123 do CTN.",
+          "regraMemoria": "Contrato entre particulares não vale contra o Fisco (art. 123 CTN): quem responde pelo IPTU é sempre o dono/responsável legal, nunca o inquilino por acordo de aluguel."
         },
         {
           "territorio": "Direito Tributário",
@@ -8929,7 +9344,11 @@ var QuestoesSeed = (function () {
               "texto": "A implantação de sistemas de monitoramento para a segurança e a preservação de logradouros públicos somente poderia ser custeada com recursos advindos de impostos, e não de uma contribuição."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O art. 149-A da CF, com a redação da EC 132/2023, autoriza expressamente o Município a instituir contribuição para custear iluminação pública e também sistemas de monitoramento para segurança e preservação de logradouros públicos.",
+          "explicacaoErradas": "As demais alternativas partem da regra antiga (só iluminação pública) ou tentam exigir taxa/imposto para o monitoramento, ignorando que a reforma tributária ampliou expressamente o campo da contribuição do art. 149-A.",
+          "pegadinha": "Aplicar a regra pré-reforma (COSIP só para iluminação pública) sem perceber que a EC 132/2023 incluiu também o monitoramento de segurança no mesmo dispositivo constitucional.",
+          "regraMemoria": "Art. 149-A CF pós-reforma: COSIP hoje cobre iluminação pública E monitoramento de segurança — não é mais só 'luz de poste'."
         },
         {
           "territorio": "Direito Tributário",
@@ -8952,7 +9371,11 @@ var QuestoesSeed = (function () {
               "texto": "A Constituição Federal, dada a relevância da seguridade social, veda a concessão de qualquer tipo de parcelamento de dívidas de contribuição previdenciária patronal."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O art. 195, §11, da CF veda moratória/parcelamento de contribuições sociais do inciso I, 'a', e II por prazo superior a 60 meses; um parcelamento de 90 meses extrapola esse teto constitucional.",
+          "explicacaoErradas": "O problema não é a lei ser ordinária (parcelamento não exige lei complementar), não há exigência constitucional de entrada de 20%, e a Constituição não proíbe parcelamento de forma absoluta — só limita seu prazo máximo a 60 meses.",
+          "pegadinha": "Achar que só remissão e anistia de contribuição social exigem lei complementar e esquecer que o mesmo §11 do art. 195 também limita o parcelamento a 60 meses.",
+          "regraMemoria": "Contribuição social: parcelamento tem teto constitucional de 60 meses (art. 195, §11, CF) — passou disso, é inconstitucional."
         },
         {
           "territorio": "Direito Tributário",
@@ -8975,7 +9398,11 @@ var QuestoesSeed = (function () {
               "texto": "A modalidade de lançamento efetivamente utilizada pelo agente fiscal do ISS foi o lançamento por declaração."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Dívida tributária inscrita em dívida ativa gera CDA, título executivo extrajudicial cuja cobrança judicial segue a Lei 6.830/80 (execução fiscal), e não o rito comum do CPC por ação de cobrança.",
+          "explicacaoErradas": "A alternativa B descreve o prazo decadencial (não prescricional) do art. 173, I, CTN; a C erra a contagem, pois em lançamento de ofício por omissão de declaração não se conta da data do fato gerador; e a D erra a modalidade, pois sem declaração do contribuinte o lançamento foi de ofício (art. 149 CTN), não por declaração.",
+          "pegadinha": "Trocar decadência por prescrição nas alternativas B e C, e confundir lançamento de ofício com lançamento por declaração quando o contribuinte simplesmente nada declarou.",
+          "regraMemoria": "Dívida tributária inscrita = CDA = execução fiscal pela Lei 6.830/80. Fazenda não processa como autor comum pelo CPC quando já tem título executivo pronto."
         },
         {
           "territorio": "Direito Administrativo",
@@ -8998,7 +9425,11 @@ var QuestoesSeed = (function () {
               "texto": "A opção de Tertuliano por um dos cargos até o último dia do prazo para defesa configura sua boa -fé, hipótese que se converterá, automaticamente, em pedido de exoneração do outro cargo."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O art. 133, §5º, da Lei 8.112/90 estabelece que a opção do servidor por um dos cargos até o último dia do prazo de defesa configura boa-fé e converte-se automaticamente em pedido de exoneração do outro cargo.",
+          "explicacaoErradas": "No rito sumário de acumulação ilegal a comissão é formada por dois servidores estáveis (não três); não é a comissão quem escolhe o cargo a manter; e a notificação para optar é etapa legal obrigatória antes de qualquer punição, não uma ilegalidade.",
+          "pegadinha": "Aplicar ao rito sumário de acumulação ilegal o número de integrantes do PAD comum (três servidores), quando a lei prevê comissão de apenas dois nesse procedimento específico.",
+          "regraMemoria": "Acumulação ilegal, rito sumário: comissão com 2 servidores. Optou até o fim do prazo de defesa = boa-fé = vira exoneração automática do outro cargo."
         },
         {
           "territorio": "Direito Administrativo",
@@ -9021,7 +9452,11 @@ var QuestoesSeed = (function () {
               "texto": "A administração do serviço, cessada a intervenção e caso não seja extinta a concessão, será devolvida à concessionária, independentemente da prestação de contas do interventor, na medida em que este não responde pelos atos por ele praticados na vigência da medida."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O art. 33 da Lei 8.987/95 determina que, declarada a intervenção por decreto, o poder concedente tem 30 dias para instaurar procedimento administrativo apurando causas e responsabilidades, assegurada ampla defesa.",
+          "explicacaoErradas": "Decreto é o instrumento correto para a intervenção (não exige lei autorizativa, diferente da encampação); inexecução contratual gera caducidade, não encampação (que depende de interesse público e lei autorizativa); e o interventor presta contas e responde pelos próprios atos ao fim da intervenção.",
+          "pegadinha": "Misturar os três institutos parecidos da concessão — intervenção, encampação e caducidade —, cada um com forma e requisitos próprios.",
+          "regraMemoria": "Intervenção = decreto + 30 dias de PAD. Encampação = precisa de lei autorizativa por interesse público. Caducidade = decorre de inexecução contratual. Não troque os três."
         },
         {
           "territorio": "Direito Administrativo",
@@ -9044,7 +9479,11 @@ var QuestoesSeed = (function () {
               "texto": "Não é possível o tombamento do imóvel vizinho à propriedade de Maria, por se tratar de bem público que integra o patrimônio do Município Alfa."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Pelo art. 10 do Decreto-Lei 25/1937, o processo de tombamento de bem particular já se considera provisoriamente tombado a partir da notificação, produzindo os efeitos do tombamento até a decisão final.",
+          "explicacaoErradas": "A conclusão do tombamento do imóvel do Município gera efeito sobre o vizinho por força da servidão administrativa do art. 18 (restrição a construções que reduzam a visibilidade do bem tombado); impugnação tempestiva não impede o tombamento definitivo — é justamente o que o torna compulsório; e bens públicos municipais podem sim ser tombados (art. 5º).",
+          "pegadinha": "Achar que a notificação é um mero aviso sem efeito imediato, e que impugnar o tombamento impede que ele se torne definitivo — na verdade é a impugnação que caracteriza o tombamento como compulsório.",
+          "regraMemoria": "Notificação de tombamento já vale como tombamento provisório (art. 10 DL 25/37). Impugnar não barra o tombamento — é isso que o torna compulsório."
         },
         {
           "territorio": "Direito Administrativo",
@@ -9067,7 +9506,11 @@ var QuestoesSeed = (function () {
               "texto": "O fato não tem muita relevância para a estratégia de defesa, na medida em que a responsabilização por improbidade administrativa é objetiva."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A Lei 14.230/2021 alterou a Lei 8.429/92 para exigir dolo em todos os atos de improbidade, inclusive os que causam dano ao erário (antigo art. 10), abolindo a modalidade culposa que antes era admitida.",
+          "explicacaoErradas": "A alternativa B usa a regra revogada (culpa ainda configurava improbidade nos casos de dano ao erário); a C erra ao dizer que ainda se admite culpa; e a D erra ao afirmar responsabilidade objetiva, quando hoje se exige prova do elemento subjetivo dolo.",
+          "pegadinha": "Aplicar a redação antiga da Lei 8.429/92 (que admitia culpa nos atos que causam prejuízo ao erário) sem notar que a reforma de 2021 extinguiu essa modalidade para todos os tipos de improbidade.",
+          "regraMemoria": "Lei 14.230/2021: acabou a improbidade culposa — hoje só dolo conta, mesmo nos casos de dano ao erário."
         },
         {
           "territorio": "Direito Administrativo",
@@ -9090,7 +9533,11 @@ var QuestoesSeed = (function () {
               "texto": "A responsabilidade civil é subjetiva tanto para Rodrigo quanto para o Estado, com base na teoria do risco administrativo, admitindo, contudo, a discussão do elemento subjetivo em ambas as hipóteses, que é imprescindível para fins de romper o nexo de causalidade."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Pelo art. 37, §6º, da CF, o Estado responde objetivamente (teoria do risco administrativo) perante a vítima, mas o direito de regresso contra o agente público exige prova de dolo ou culpa — responsabilidade subjetiva do agente.",
+          "explicacaoErradas": "As demais alternativas erram ao classificar a responsabilidade do Estado como risco integral (na verdade é risco administrativo, que admite excludentes) ou ao tratar a responsabilidade do agente na ação regressiva como objetiva, quando é subjetiva.",
+          "pegadinha": "Confundir risco integral (não admite excludentes) com risco administrativo (o regime real do Estado, que admite excludentes) e esquecer que o agente só responde no regresso se agiu com dolo ou culpa.",
+          "regraMemoria": "Art. 37, §6º, CF: Estado responde objetivo (risco administrativo); agente só responde no regresso se houve dolo ou culpa (subjetivo)."
         },
         {
           "territorio": "Direito Ambiental",
@@ -9113,7 +9560,11 @@ var QuestoesSeed = (function () {
               "texto": "Decorre das normas previstas na CRFB/88 para a proteção do meio ambiente ecologicamente equilibrado e de normas internacionais, além das editadas internamente para tal fim, como a Política Nacional sobre a Mudança do Clima (PNMC)."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A litigância climática tem base no art. 225 da CF (direito ao meio ambiente ecologicamente equilibrado, reconhecido pelo STF como fundamento constitucional na ADPF 708), somada a tratados internacionais e a normas internas como a PNMC (Lei 12.187/2009).",
+          "explicacaoErradas": "Não é correto dizer que não há amparo algum, que o fundamento é só a PNMC, ou que falta base constitucional — o STF já afirmou expressamente o fundamento constitucional da matéria climática.",
+          "pegadinha": "Achar que a base da litigância climática está só na lei ordinária (PNMC) ou só em tratados internacionais, ignorando que o STF fixou fundamento direto no art. 225 da CF.",
+          "regraMemoria": "Litigância climática = tripé: art. 225 CF + tratados internacionais (Acordo de Paris) + PNMC. Nunca falta a base constitucional."
         },
         {
           "territorio": "Direito Ambiental",
@@ -9136,7 +9587,11 @@ var QuestoesSeed = (function () {
               "texto": "Como não há órgão ambiental capacitado ou conselho do meio ambiente no Município Alfa, a sociedade empresária XYZ terá direito ao licenciamento ambiental tácito, podendo exercer suas atividades de forma regular."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Pelo art. 15 da LC 140/2011, inexistindo órgão ambiental capacitado ou conselho de meio ambiente no Município, quem assume o licenciamento é o Estado, e só se o Estado também não tiver estrutura é que a União entra supletivamente.",
+          "explicacaoErradas": "Ir direto à União pula a etapa do Estado; não existe paralisação da atividade nem licenciamento tácito — a lei resolve o vazio de competência transferindo a atuação ao ente imediatamente superior.",
+          "pegadinha": "Pular a ordem de suplência e mandar a competência direto para a União, quando a LC 140/2011 manda primeiro para o Estado.",
+          "regraMemoria": "LC 140/11, art. 15 — escada da suplência ambiental: faltou órgão no Município, sobe pro Estado; só se faltar também no Estado é que sobe pra União."
         },
         {
           "territorio": "Direito Civil",
@@ -9159,7 +9614,11 @@ var QuestoesSeed = (function () {
               "texto": "A prescrição intercorrente, se ajuizada ação indenizatória pelos eventuais herdeiros de João, não observará o mesmo prazo de prescrição da pretensão, possuindo prazo fixo de cinco anos."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Pelo art. 196 do CC, a prescrição já iniciada contra o causador do dano continua correndo, sem reiniciar, contra seus sucessores (espólio/herdeiros) após sua morte.",
+          "explicacaoErradas": "Não há prazo decadencial nesse caso, e sim prescricional; o prazo específico do art. 206, §3º, V, CC (3 anos para reparação civil) afasta o prazo geral de 10 anos; e não existe a figura de 'prescrição intercorrente fixa de 5 anos' aplicável aqui.",
+          "pegadinha": "Achar que a morte do causador do dano reinicia ou suspende a contagem da prescrição, quando na verdade ela simplesmente segue correndo contra os herdeiros.",
+          "regraMemoria": "Prescrição não morre com o réu: se já começou a correr, continua igual contra os herdeiros (art. 196 CC). Reparação civil = 3 anos (art. 206, §3º, V)."
         },
         {
           "territorio": "Direito Civil",
@@ -9182,7 +9641,11 @@ var QuestoesSeed = (function () {
               "texto": "A obrigação de pagar a multa em caso de mora tem natureza jurídica de astreintes e não pode ser reduzida equitativamente pelo Juiz caso se revele manifestamente excessiva."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Pelo art. 416 do CC, para exigir a cláusula penal o credor não precisa provar prejuízo — a multa moratória já pré-fixa as perdas e danos.",
+          "explicacaoErradas": "Multa diária por atraso é cláusula penal moratória válida (limitada ao valor da obrigação principal, art. 412 CC); por ser moratória, cumula-se com a exigência de cumprimento da obrigação principal (art. 411 CC), diferente da compensatória; e não é astreinte (que é multa judicial), podendo ser reduzida pelo juiz se excessiva (art. 413 CC).",
+          "pegadinha": "Confundir cláusula penal moratória (soma com o cumprimento da obrigação) com a compensatória (substitui as perdas e danos), e confundir multa contratual com astreintes judiciais.",
+          "regraMemoria": "Cláusula penal: não precisa provar prejuízo para cobrar (art. 416 CC). Moratória soma com a obrigação principal; compensatória substitui. E sempre pode ser reduzida se abusiva (art. 413)."
         },
         {
           "territorio": "Direito Civil",
@@ -9205,7 +9668,11 @@ var QuestoesSeed = (function () {
               "texto": "É aplicável, porque, mesmo sendo realizada por pessoa natural, em meio físico e sem finalidade lucrativa, a lei define “tratamento” de modo amplo."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O art. 4º, I, da LGPD exclui do seu alcance o tratamento de dados feito por pessoa natural para fins exclusivamente particulares e não econômicos, exatamente a hipótese de André.",
+          "explicacaoErradas": "A LGPD alcança normalmente pessoas físicas (o que afasta é a finalidade, não a natureza da pessoa); a exceção não depende do meio ser físico ou digital; e a lei tem sim exceção expressa para esse caso, então ela não se aplica.",
+          "pegadinha": "Achar que a LGPD nunca se aplica a pessoa física, ou que a exceção depende do dado estar em papel em vez de meio digital — o critério real é a finalidade particular e não econômica.",
+          "regraMemoria": "LGPD não pega o 'caderninho pessoal': pessoa física + fim particular + sem fins econômicos = fora da lei (art. 4º, I)."
         },
         {
           "territorio": "Direito Civil",
@@ -9228,7 +9695,11 @@ var QuestoesSeed = (function () {
               "texto": "Glória terá direito à meação, no valor de R$ 800.000 (oitocentos mil reais), e o valor da herança será dividido em três partes iguais, recebendo Glória e os dois irmãos de Paulo, o correspondente a 1/3 (um terço) cada um."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Após o STF equiparar o regime sucessório da união estável ao do casamento (art. 1.829 CC), Glória recebe a meação (R$ 800 mil) e, concorrendo com ascendentes de grau mais remoto que o primeiro (só há avós, não há pais vivos), tem direito à metade da herança (art. 1.837 CC), ficando a outra metade para os avós.",
+          "explicacaoErradas": "O companheiro não tem direito real de habitação isolado sem concorrer com os ascendentes, nem afasta os ascendentes automaticamente (só afastaria se não houvesse nenhum ascendente); e os irmãos, sendo colaterais, só herdariam se não houvesse ascendente nem cônjuge/companheiro vivos — o que não é o caso.",
+          "pegadinha": "Achar que o cônjuge/companheiro sempre afasta os ascendentes ou incluir os irmãos colaterais na partilha quando ainda existem ascendentes vivos, o que exclui totalmente os colaterais.",
+          "regraMemoria": "Ordem de vocação: descendente > ascendente (concorrendo com cônjuge/companheiro) > cônjuge sozinho > colateral. Só avós vivos concorrendo com cônjuge? Herança meio a meio."
         },
         {
           "territorio": "Direito Civil",
@@ -9251,7 +9722,11 @@ var QuestoesSeed = (function () {
               "texto": "Por se tratar de elemento original da construção, Carolina não tem responsabilidade pelo que cair da jardineira."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O art. 938 do CC responsabiliza quem habita o imóvel pelos danos causados por coisas que dele caírem, independentemente de prova de dolo ou culpa — é responsabilidade objetiva/presumida.",
+          "explicacaoErradas": "Não é preciso provar dolo nem culpa nesse regime especial, e o fato de a jardineira ser elemento original do projeto arquitetônico não isenta quem mora no apartamento e coloca objetos nela.",
+          "pegadinha": "Aplicar a regra geral de responsabilidade subjetiva (art. 927 CC) e exigir prova de culpa, ignorando a regra especial e objetiva do art. 938 CC para coisas que caem de prédio.",
+          "regraMemoria": "Caiu do prédio, quem mora ali paga (art. 938 CC) — não precisa provar culpa nem dolo."
         },
         {
           "territorio": "Direito Civil",
@@ -9274,7 +9749,11 @@ var QuestoesSeed = (function () {
               "texto": "O sistema jurídico brasileiro inibe que um casal casado por regime da comunhão adquira um bem por usucapião, mesmo para fins de moradia, pois nesse regime devem ser partilhados apenas os bens adquiridos a título oneroso."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A usucapião especial urbana (art. 183, CF, e art. 1.240, CC) exige posse mansa, pacífica e ininterrupta por 5 anos, área urbana de até 250 m², uso para moradia própria ou da família e não ser proprietário de outro imóvel urbano ou rural — todos os requisitos preenchidos pelo casal.",
+          "explicacaoErradas": "A usucapião é forma ORIGINÁRIA (não derivada) de aquisição, de modo que a propriedade nasce livre de ônus reais, inclusive da hipoteca anterior. Os herdeiros podem somar sua posse à dos antecessores (art. 1.243, CC), tendo legitimidade para a ação. E o regime de comunhão parcial não impede a aquisição do bem para moradia do casal.",
+          "pegadinha": "A armadilha é achar que usucapião é aquisição derivada e que a hipoteca sobrevive — é o contrário: sendo originária, a usucapião 'limpa' os ônus reais anteriores.",
+          "regraMemoria": "Usucapião é 'zero km': aquisição ORIGINÁRIA apaga hipoteca, penhora e qualquer ônus anterior."
         },
         {
           "territorio": "Direito da Criança e do Adolescente",
@@ -9297,7 +9776,11 @@ var QuestoesSeed = (function () {
               "texto": "Herminda não tinha o direito de humilhar e ridicularizar Júlia, mesmo para fins corretivos, o que caberia aos pais por serem detentores do poder familiar, mas o ECA não prevê qualquer possibilidade de sanção à tia materna."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O Conselho Tutelar tem competência para aplicar aos pais ou responsável (aqui, a tia como integrante da família ampliada, art. 25, parágrafo único, ECA) as medidas do art. 129, I a VII, do ECA, entre elas a advertência (art. 129, VII), dispensando prévia decisão judicial.",
+          "explicacaoErradas": "Só as medidas mais graves — perda da guarda, destituição de tutela ou do poder familiar (art. 129, VIII a X) — são privativas da autoridade judiciária; advertência e encaminhamento a cursos podem ser aplicados diretamente pelo Conselho Tutelar (art. 136, II, ECA). E a tia integra a 'família ampliada', estando sujeita às sanções do ECA.",
+          "pegadinha": "A pegadinha é achar que toda medida do ECA exige juiz — só as mais graves (guarda, tutela, poder familiar) são privativas da Justiça; advertência é competência do Conselho Tutelar.",
+          "regraMemoria": "Conselho Tutelar aplica do I ao VII do art. 129; do VIII ao X (guarda, tutela, poder familiar), só o Juiz."
         },
         {
           "territorio": "Direito da Criança e do Adolescente",
@@ -9320,7 +9803,11 @@ var QuestoesSeed = (function () {
               "texto": "Carlos e Mário podem realizar a adoção conjunta, pois, de acordo com o ECA, é indispensável que sejam casados civilmente ou mantenham união estável, comprovada a estabilidade da família."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O art. 42, §2º, do ECA autoriza a adoção conjunta a quem seja casado civilmente ou viva em união estável, comprovada a estabilidade da família, sem qualquer distinção quanto à orientação sexual do casal, conforme reconhecido pelo STF (ADI 4.277/ADPF 132) quanto à união homoafetiva.",
+          "explicacaoErradas": "Não há vedação à adoção conjunta por casal homoafetivo, nem preferência legal para casais heteroafetivos — seria discriminação incompatível com a igualdade e a dignidade da pessoa humana. Também não há exigência legal de definição prévia de guarda ou visitas para o caso de eventual dissolução da união.",
+          "pegadinha": "A armadilha é supor que a lei trata diferente casais hetero e homoafetivos — o requisito é só a estabilidade da união, não a orientação sexual dos adotantes.",
+          "regraMemoria": "Adoção conjunta = casamento ou união estável ESTÁVEL. Ponto. Orientação sexual não entra na conta."
         },
         {
           "territorio": "Direito do Consumidor",
@@ -9343,7 +9830,11 @@ var QuestoesSeed = (function () {
               "texto": "Caso o produto tenha na embalagem menção ao site da empresa, as informações a respeito da pesagem e dos ingredientes não precisam constar na embalagem, desde que estejam no endereço eletrônico."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O art. 31 do CDC exige que a oferta de produtos assegure informação correta, clara, precisa e ostensiva sobre quantidade, composição e características, em língua portuguesa, visível ao consumidor.",
+          "explicacaoErradas": "A violação ao dever de informação é infração formal, que independe da ocorrência de dano material. A informação deve ser prestada em língua portuguesa, não bastando idioma estrangeiro 'de fácil compreensão'. E dados essenciais (peso, composição) precisam constar na própria embalagem, não podem ficar restritos ao site da empresa.",
+          "pegadinha": "A pegadinha é achar que basta a informação estar disponível 'em algum lugar' (site, idioma estrangeiro) — a lei exige que esteja na própria embalagem, em português, de forma ostensiva.",
+          "regraMemoria": "Informação no CDC tem que ser 'CCOP': Clara, Correta, Ostensiva, em Português — direto no rótulo."
         },
         {
           "territorio": "Direito do Consumidor",
@@ -9366,7 +9857,11 @@ var QuestoesSeed = (function () {
               "texto": "A sociedade empresária não pode reter o percentual informado, pois Ângela desistiu da aquisição do serviço e informou dentro do prazo estabelecido pelo CDC."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O art. 49 do CDC garante 7 dias, a contar da contratação, para desistência incondicionada de compras feitas fora do estabelecimento comercial (como pela internet), com devolução integral dos valores pagos. Ângela exerceu o direito em 6 dias, dentro do prazo legal.",
+          "explicacaoErradas": "Não é preciso 'justo motivo' para o arrependimento — o direito é incondicionado dentro do prazo de 7 dias, e cláusula contratual reduzindo esse prazo para 5 dias não prevalece sobre a lei. Também não cabe retenção por custos operacionais, pois a devolução deve ser integral.",
+          "pegadinha": "A pegadinha é a empresa aplicar um prazo contratual de 5 dias, menor que os 7 dias do CDC — cláusula contratual não pode reduzir direito legal do consumidor.",
+          "regraMemoria": "Comprou fora da loja (internet, telefone, catálogo)? 7 dias de arrependimento, sem motivo, sem multa — regra do CDC nunca encolhe por contrato."
         },
         {
           "territorio": "Direito Empresarial",
@@ -9389,7 +9884,11 @@ var QuestoesSeed = (function () {
               "texto": "A companhia poderá adotar firma ou denominação, devendo ser mantido o nome antigo Abreu & Campos , substituindo-se o aditivo Ltda. pelo aditivo Companhia ou Cia."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A companhia opera sob denominação (art. 1.160, CC, e art. 3º, Lei 6.404/76), podendo incluir o nome de fundador, acionista ou pessoa que tenha contribuído para o êxito da empresa; a indicação do objeto social, apesar de mencionada em lei, é tratada pela prática registral como facultativa.",
+          "explicacaoErradas": "Companhia nunca adota firma, sempre denominação. A denominação pode ter nome de fantasia, não se limita ao nome dos sócios, e a expressão 'Companhia' pode vir no início ou meio do nome (só 'Cia.' abreviado é vedado ao final). Também não é obrigatório manter o nome empresarial anterior ao se transformar em S.A.",
+          "pegadinha": "A pegadinha é confundir firma com denominação — sociedade anônima é sempre denominação, nunca firma, mesmo mantendo o nome dos antigos sócios.",
+          "regraMemoria": "S.A. = denominação, sempre. 'Companhia' pode abrir ou ficar no meio; 'Cia.' abreviado nunca fecha o nome."
         },
         {
           "territorio": "Direito Empresarial",
@@ -9412,7 +9911,11 @@ var QuestoesSeed = (function () {
               "texto": "O credor está totalmente equivocado, pois a sociedade não poderia ser demandada, em razão da ausência de personalidade jurídica, e deve ser respeitado o benefício de ordem das sócias Lucélia e Natividade, que não contrataram pela sociedade."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A sociedade em comum, mesmo sem registro e sem personalidade jurídica plena, possui patrimônio especial e pode ser demandada (arts. 986, 988 e 990, CC). Pelo art. 990, todos os sócios respondem solidária e ilimitadamente, mas só quem contratou em nome da sociedade (Marília) perde o benefício de ordem — Lucélia e Natividade, que não contrataram, mantêm o direito de exigir a excussão prévia dos bens sociais.",
+          "explicacaoErradas": "É errado dizer que a sociedade não pode ser demandada — ela tem patrimônio especial que responde por suas obrigações. E também é errado estender a perda do benefício de ordem a quem não contratou: só a sócia que agiu em nome da sociedade (Marília) é excluída desse benefício.",
+          "pegadinha": "A pegadinha é achar que 'solidariedade' apaga automaticamente o benefício de ordem para todas as sócias — o art. 990 CC tira o benefício só de quem contratou pela sociedade.",
+          "regraMemoria": "Sociedade em comum: quem assinou o contrato (o 'testa de ferro') perde o benefício de ordem; quem ficou de fora, mantém."
         },
         {
           "territorio": "Direito Empresarial",
@@ -9435,7 +9938,11 @@ var QuestoesSeed = (function () {
               "texto": "A sociedade reputa-se dissolvida em razão do vencimento do prazo de duração, salvo se, sem oposição de sócio, não entrar a sociedade em liquidação, caso em que se prorrogará por tempo indeterminado."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Pelo art. 1.033, I, do Código Civil, o vencimento do prazo de duração dissolve a sociedade, salvo se, sem oposição de sócio, ela não entrar em liquidação — hipótese em que se prorroga automaticamente por prazo indeterminado.",
+          "explicacaoErradas": "Não há regra de 30 dias para dissolução judicial nesse caso, nem prazo de 180 dias para investidura de liquidante — essas alternativas inventam prazos que a lei não prevê para essa hipótese. E o fundamento da dissolução aqui é o vencimento do prazo, não o exaurimento do fim social (que é outra causa, do art. 1.034, II, CC).",
+          "pegadinha": "A pegadinha é confundir as causas de dissolução — vencimento de prazo (art. 1.033, I) é diferente de exaurimento do fim social (art. 1.034, II) — e inventar prazos (30 ou 180 dias) que a lei não prevê para o caso.",
+          "regraMemoria": "Prazo vencido e ninguém reclamou? Sociedade não morre, vira por tempo indeterminado — 'silêncio prorroga'."
         },
         {
           "territorio": "Direito Empresarial",
@@ -9458,7 +9965,11 @@ var QuestoesSeed = (function () {
               "texto": "Promover, alternativamente ao pedido de busca e apreensão dos bens, independentemente de comprovação da mora, a consolidação da propriedade perante o competente cartório de registro de títulos e documentos, desde que haja previsão expressa no contrato em cláusula em destaque."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O art. 2º, §1º, do Decreto-Lei 911/1969 permite ao credor fiduciário, comprovada a mora, vender o veículo a terceiros diretamente, sem leilão, hasta pública ou qualquer outra medida judicial, salvo disposição contratual em contrário.",
+          "explicacaoErradas": "A busca e apreensão exige comprovação da mora (art. 2º, §2º, e art. 3º, DL 911/69), não é concedida independentemente dela. A via processual adequada é a ação específica de busca e apreensão do DL 911/69, não execução para entrega de coisa certa. E a consolidação da propriedade não é uma alternativa livre e automática: decorre do não pagamento no prazo de 5 dias após a execução da liminar de busca e apreensão.",
+          "pegadinha": "A pegadinha é achar que toda medida do credor fiduciário dispensa comprovação de mora — só a venda direta a terceiros é facilitada por lei; busca e apreensão sempre exige mora comprovada.",
+          "regraMemoria": "Alienação fiduciária de veículo: mora comprovada = credor vende direto, sem leilão. Sem mora comprovada, nada anda."
         },
         {
           "territorio": "Processo Civil",
@@ -9481,7 +9992,11 @@ var QuestoesSeed = (function () {
               "texto": "O Juiz não poderá limitar o litisconsórcio facultativo, por ausência de previsão legal, sendo direito de todos os envolvidos no acidente propor a ação em conjunto."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O art. 113, §1º, do CPC autoriza o juiz a limitar o litisconsórcio facultativo multitudinário, na fase de conhecimento, liquidação ou execução, quando ele comprometer a rápida solução do litígio ou dificultar a defesa ou o cumprimento da sentença.",
+          "explicacaoErradas": "O litisconsórcio é plenamente admitido tanto no polo ativo quanto no passivo (não há vedação a nenhum deles), e existe, sim, previsão legal expressa para sua limitação pelo juiz — o CPC não deixa a matéria sem regramento.",
+          "pegadinha": "A pegadinha é achar que limitar litisconsórcio fere direito absoluto de ação conjunta — a lei expressamente permite ao juiz cortar o número de litigantes quando isso atrapalha o processo.",
+          "regraMemoria": "Litisconsórcio 'gigante' atrapalhando o processo? Juiz pode cortar — art. 113, §1º, CPC dá a tesoura."
         },
         {
           "territorio": "Processo Civil",
@@ -9504,7 +10019,11 @@ var QuestoesSeed = (function () {
               "texto": "Se nas ações propostas por Joana e Regina, o demandado não comparecer à sessão de conciliação ou à audiência de instrução e julgamento, reputar -se-ão verdadeiros os fatos alegados no pedido inicial, salvo se o contrário resultar da convicção motivada do Juiz."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O art. 20 da Lei 9.099/95 estabelece que, não comparecendo o réu à sessão de conciliação ou à audiência de instrução, presumem-se verdadeiros os fatos alegados na inicial, salvo se o contrário resultar da convicção do juiz.",
+          "explicacaoErradas": "A dispensa de advogado nos Juizados vale até 20 salários mínimos (art. 9º, Lei 9.099/95), não até 30. Joana pode, sim, ingressar no Juizado Especial Cível mesmo pedindo 100 salários mínimos, desde que renuncie ao valor excedente ao limite de 40 salários mínimos (art. 3º, §3º). E a gratuidade de justiça não depende de comprovação de renda inferior a 10 salários mínimos — basta a presunção de hipossuficiência (art. 99, CPC).",
+          "pegadinha": "A pegadinha é confundir os números dos limites dos Juizados: 20 salários mínimos dispensa advogado, 40 é o teto de competência (com renúncia ao excedente) — não são 30 nem 100 fixos.",
+          "regraMemoria": "Juizado Especial: até 20 salários mínimos, dispensa advogado; até 40, aceita processo (renunciando o excedente)."
         },
         {
           "territorio": "Processo Civil",
@@ -9527,7 +10046,11 @@ var QuestoesSeed = (function () {
               "texto": "Como a União não interpôs o recurso de apelação no prazo legal, o Juiz não poderá ordenar a remessa do processo para o reexame necessário no Tribunal, independentemente do valor dos remédios."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Não se aplica a remessa necessária às causas de competência dos Juizados Especiais da Fazenda Pública (Lei 12.153/2009), mas ela continua incidindo normalmente sobre sentenças desfavoráveis à Fazenda Pública proferidas em Varas Federais comuns, como no caso de Maria.",
+          "explicacaoErradas": "As alternativas A e B invertem a regra do art. 496, §3º e §4º, CPC: a remessa necessária é DISPENSADA (não aplicada) quando o valor é inferior aos limites legais ou quando a sentença segue entendimento de IRDR, assunção de competência ou súmula de tribunal superior — não o contrário. E a remessa necessária independe de a Fazenda Pública ter recorrido: opera como condição de eficácia da sentença mesmo sem apelação.",
+          "pegadinha": "A pegadinha é a inversão da regra: as hipóteses de dispensa da remessa necessária (valor baixo, súmula, IRDR) são apresentadas como se fossem hipóteses de aplicação — leia com atenção o 'aplica-se' vs. 'não se aplica'.",
+          "regraMemoria": "Remessa necessária: some se o valor é baixo ou já tem tese pacificada (súmula, IRDR); nos Juizados da Fazenda Pública, nunca existe."
         },
         {
           "territorio": "Processo Civil",
@@ -9550,7 +10073,11 @@ var QuestoesSeed = (function () {
               "texto": "Iniciado o cumprimento provisório de sentença, caso Juliano deposite o valor exequendo para se exonerar da multa, seu recurso de apelação não será conhecido ante a preclusão lógica do direito de recorrer."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O art. 521, I, do CPC dispensa a exigência de caução no cumprimento provisório de sentença quando o crédito é de natureza alimentar, permitindo a Henrique executar de imediato os alimentos fixados, ainda que pendente a apelação (que, aliás, tem efeito só devolutivo — art. 1.012, §1º, II, CPC).",
+          "explicacaoErradas": "Reforma parcial da sentença não anula todo o cumprimento provisório, apenas ajusta o que exceder o que restar definido no julgamento do recurso. Multa e honorários incidem normalmente no cumprimento provisório de alimentos, pois a apelação não suspende a obrigação. E o depósito do valor devido para evitar a multa não gera preclusão lógica do direito de recorrer — são atos compatíveis.",
+          "pegadinha": "A pegadinha é achar que 'provisório' significa 'sem consequência' — mesmo pendente recurso, alimentos são exigíveis de imediato, com multa, honorários e sem caução.",
+          "regraMemoria": "Alimentos não esperam recurso: apelação só devolve, não suspende, e a execução provisória dispensa caução."
         },
         {
           "territorio": "Processo Civil",
@@ -9573,7 +10100,11 @@ var QuestoesSeed = (function () {
               "texto": "Anacleto não poderá promover a liquidação de sentença antes do trânsito em julgado, uma vez que a decisão ainda pode ser modificada quando do julgamento de recurso de apelação."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O art. 512 do CPC permite a liquidação de sentença na pendência de recurso, processando-se em autos apartados no juízo de origem, independentemente do efeito (devolutivo ou suspensivo) em que a apelação foi recebida.",
+          "explicacaoErradas": "A lei não condiciona a liquidação a nenhum efeito específico do recurso, nem exige caução do autor — a liquidação em autos apartados corre normalmente mesmo com apelação pendente, seja qual for o efeito em que foi recebida.",
+          "pegadinha": "A pegadinha é achar que o efeito do recurso (suspensivo x devolutivo) importa para a liquidação — o art. 512 CPC libera a liquidação independentemente disso.",
+          "regraMemoria": "Liquidação não espera apelação: corre em autos apartados, não importa o efeito do recurso."
         },
         {
           "territorio": "Processo Civil",
@@ -9596,7 +10127,11 @@ var QuestoesSeed = (function () {
               "texto": "João não precisa se manifestar nos autos acerca da existência de cláusula compromissória no contrato, pois cabe ao Magistrado conhecer de ofício a existência de tal cláusula e extinguir a ação sem resolução do mérito, uma vez que não tem competência para julgar o caso."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A convenção de arbitragem é matéria de defesa que deve ser alegada como preliminar de contestação (art. 337, X, CPC); não sendo arguida — aqui, por revelia de João —, há renúncia à jurisdição arbitral e aceitação da jurisdição estatal (art. 337, §6º, CPC).",
+          "explicacaoErradas": "O juiz não pode conhecer de ofício da convenção de arbitragem — é uma das exceções expressas do art. 337, §5º, CPC, justamente porque depende de manifestação da parte interessada. Também não há momento posterior (como a fase de provas) para arguir a cláusula depois de ultrapassada a contestação, e a instauração de procedimento arbitral após a renúncia não afasta a jurisdição estatal já fixada.",
+          "pegadinha": "A pegadinha é lembrar que convenção de arbitragem é uma das raras matérias que o juiz NÃO pode conhecer de ofício — quem cala (não contesta), aceita a jurisdição estatal.",
+          "regraMemoria": "Arbitragem se alega na contestação ou nunca mais — é a exceção que o juiz não pode enxergar sozinho."
         },
         {
           "territorio": "Direito Penal",
@@ -9619,7 +10154,11 @@ var QuestoesSeed = (function () {
               "texto": "Ilícito civil, pois a conduta descrita não configura crime."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Rodrigo cometeu dano qualificado (art. 163, parágrafo único, III, CP), pois danificou bem pertencente ao patrimônio de entidade pública (viatura da Polícia Militar, patrimônio do Estado).",
+          "explicacaoErradas": "Não é terrorismo, pois a Lei 13.260/2016 exclui expressamente de seu alcance manifestações políticas, movimentos sociais e reivindicatórios (art. 2º, §2º). Não é dano simples, porque o objeto danificado é bem público, o que qualifica a conduta. E, claro, há crime — a conduta não se resume a ilícito civil.",
+          "pegadinha": "A pegadinha é confundir vandalismo em manifestação com terrorismo — a lei antiterrorismo exclui manifestações sociais expressamente, mesmo com violência a bens.",
+          "regraMemoria": "Pedrada em viatura = dano qualificado (bem público), nunca terrorismo — manifestação social está fora da Lei Antiterrorismo."
         },
         {
           "territorio": "Direito Penal",
@@ -9642,7 +10181,11 @@ var QuestoesSeed = (function () {
               "texto": "Apesar de a reincidência em crime culposo não obstar a substituição, o fato de o crime ter sido cometido com violência à pessoa impede a substituição pela pena restritiva de direitos."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O art. 44, I, do CP exige, como requisito objetivo para a substituição por penas restritivas de direitos, que o crime não tenha sido cometido com violência ou grave ameaça à pessoa. A lesão corporal grave envolve violência física, o que, por si só, já impede a substituição, independentemente da discussão sobre a reincidência.",
+          "explicacaoErradas": "A reincidência em crime culposo, isoladamente, não impede a substituição (o art. 44, §3º, CP admite substituição ao reincidente não específico, a critério do juiz) — por isso as alternativas que tratam a reincidência culposa como barreira absoluta erram. Mas ignorar que o crime foi cometido com violência à pessoa (requisito autônomo do art. 44, I) também é erro, pois essa é uma vedação objetiva independente da reincidência.",
+          "pegadinha": "A pegadinha é achar que só a reincidência importa — mesmo quando a reincidência culposa não barra a substituição, a violência à pessoa (lesão corporal) é, por si só, impeditivo objetivo autônomo do art. 44, I, CP.",
+          "regraMemoria": "Substituição por PRD tem 2 travas independentes: crime com violência à pessoa barra sempre; reincidência culposa não barra sozinha."
         },
         {
           "territorio": "Direito Penal",
@@ -9665,7 +10208,11 @@ var QuestoesSeed = (function () {
               "texto": "O princípio da defesa ou da proteção impede a aplicação da Lei brasileira a fatos ocorridos no exterior, especialmente quando o autor do fato for brasileiro nato."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Aplica-se o princípio da nacionalidade (personalidade) ativa: sendo Rodrigo brasileiro, o crime cometido no exterior se sujeita à lei penal brasileira por extraterritorialidade condicionada (art. 7º, II, 'b', c/c §2º, CP), preenchidos os requisitos, como a dupla tipicidade e o reingresso do agente no Brasil.",
+          "explicacaoErradas": "O princípio da bandeira/pavilhão trata de embarcações e aeronaves, não é a hipótese. A personalidade passiva (vítima brasileira) não se aplica aqui, pois a vítima é estrangeira — o fundamento correto é a personalidade ativa (autor brasileiro). E o princípio da defesa/proteção não 'impede' a lei brasileira; é outro fundamento distinto de extraterritorialidade.",
+          "pegadinha": "A pegadinha é confundir personalidade ativa (autor brasileiro) com personalidade passiva (vítima brasileira) — aqui quem é brasileiro é o autor, não a vítima.",
+          "regraMemoria": "Autor brasileiro no exterior = personalidade ATIVA. Vítima brasileira no exterior = personalidade PASSIVA. Não troque as bolas."
         },
         {
           "territorio": "Direito Penal",
@@ -9688,7 +10235,11 @@ var QuestoesSeed = (function () {
               "texto": "erro de proibição direto."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "João acreditava, por engano plenamente justificável, que a bicicleta era a sua própria — desconhecia a elementar 'coisa alheia' do tipo de furto (art. 155, CP). Isso é erro de tipo essencial, que exclui o dolo (e, no furto, que não tem modalidade culposa, afasta toda responsabilidade penal).",
+          "explicacaoErradas": "Não é erro de tipo acidental, pois o erro recaiu sobre elemento essencial do tipo (a coisa ser alheia), não sobre aspecto secundário. Não há estado de necessidade, pois não existia situação de perigo atual. E não é erro de proibição, porque João nem sabia que praticava fato típico — ele achava que a bike era dele, não que tinha permissão para levar bike alheia.",
+          "pegadinha": "A pegadinha é confundir erro de tipo com erro de proibição — João não sabia que a coisa era alheia (erro de tipo), diferente de saber que é alheia mas achar que pode pegar (erro de proibição).",
+          "regraMemoria": "Não sabia que era 'alheia' = erro de tipo. Sabia que era alheia mas achava que podia = erro de proibição."
         },
         {
           "territorio": "Direito Penal",
@@ -9711,7 +10262,11 @@ var QuestoesSeed = (function () {
               "texto": "Moisés deve ser responsabilizado mediante aplicação da pena relativa ao crime de furto."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Pelo art. 29, §2º, do CP (cooperação dolosamente distinta), quem quis participar de crime menos grave responde pela pena deste, podendo ela ser aumentada até a metade se o resultado mais grave era previsível. Moisés só aderiu ao furto e não sabia da arma, respondendo apenas pela pena do furto.",
+          "explicacaoErradas": "Moisés não fica impune, pois participou do furto. Também não há coautoria de ambos em homicídio e roubo, pois o desvio subjetivo de Ateneu (usar a arma sem o conhecimento de Moisés) afasta a responsabilização de Moisés pelo resultado mais grave. E a conduta de Ateneu, que emprega violência com arma de fogo para garantir a subtração, configura roubo/latrocínio (art. 157, §3º, CP), não 'furto qualificado pelo resultado morte' — figura que sequer existe no CP.",
+          "pegadinha": "A pegadinha é achar que todo coautor responde igualmente pelo crime mais grave — o art. 29, §2º, CP protege quem não anuiu ao excesso do comparsa (aqui, o uso da arma e a morte).",
+          "regraMemoria": "Comparsa sacou arma escondido? Quem não sabia responde só pelo crime combinado — 'cooperação dolosamente distinta' salva de responder pelo excesso."
         },
         {
           "territorio": "Direito Penal",
@@ -9734,7 +10289,11 @@ var QuestoesSeed = (function () {
               "texto": "Lesão corporal seguida de morte."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Homicídio doloso consumado: havia dolo de matar (animus necandi) e a morte ocorreu. A infecção não rompe o nexo causal porque não agiu sozinha — foi agravada pelo próprio veneno (art. 13, caput e §1º, CP).",
+          "explicacaoErradas": "Tentado (A e B) está errado porque a morte se consumou. Culposo (B) está errado porque Sara agiu com dolo direto de matar. Lesão seguida de morte (D) exige dolo de lesionar apenas, com morte por culpa — aqui o dolo era de matar desde o início.",
+          "pegadinha": "A causa superveniente (infecção) parece romper o nexo causal e reduzir para tentativa, mas só rompe quando age 'por si só' — como o veneno agravou a infecção, o nexo com a morte se mantém.",
+          "regraMemoria": "Causa superveniente só quebra o nexo se matar SOZINHA. Se o veneno ajudou a matar, é homicídio consumado, não tentado."
         },
         {
           "territorio": "Processo Penal",
@@ -9757,7 +10316,11 @@ var QuestoesSeed = (function () {
               "texto": "A prática de novo crime cometido por Gabriela configura, em tese, falta disciplinar de natureza grave, autorizando, de forma fundamentada, a regressão de regime per saltum."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A prática de fato definido como crime doloso durante a execução é falta grave (art. 52 da LEP), autorizando a regressão de regime de forma fundamentada, admitindo-se inclusive a regressão per saltum (do aberto direto ao fechado), conforme jurisprudência do STJ.",
+          "explicacaoErradas": "A está errada porque estelionato contra empresa pública federal (Caixa) é ação penal pública incondicionada, não depende de representação. B está errada porque a regressão por falta grave exige prévia oitiva do condenado (contraditório), salvo urgência. C está errada porque a prática de novo crime não gera perda definitiva e automática do livramento condicional.",
+          "pegadinha": "A pegadinha é achar que o flagrante dispensa o contraditório na execução penal, ou pensar que crime contra ente público é de ação privada — na verdade é pública incondicionada.",
+          "regraMemoria": "Crime contra ente público = ação pública incondicionada. Falta grave = precisa ouvir antes de regredir, mas pode pular direto pro fechado (per saltum)."
         },
         {
           "territorio": "Processo Penal",
@@ -9780,7 +10343,11 @@ var QuestoesSeed = (function () {
               "texto": "Aguardar o momento das alegações finais para postular a extinção da punibilidade, sendo certo que a viabilidade de debater o tema depende do reconhecimento de deficiência da defesa anteriormente constituída."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Extinção da punibilidade (como a prescrição) é matéria de ordem pública, podendo ser arguida a qualquer tempo e grau de jurisdição, inclusive reconhecida de ofício pelo juiz (art. 61, CPP) — não há preclusão.",
+          "explicacaoErradas": "A está errada porque não é preciso HC, pode ser alegado nos próprios autos. C está errada porque não existe preclusão para essa matéria de ordem pública. D está errada porque não é preciso esperar as alegações finais nem depende de reconhecer falha da defesa anterior.",
+          "pegadinha": "A armadilha é achar que, como a defesa 'se reservou' na resposta à acusação, haveria preclusão para alegar depois — prescrição não preclui.",
+          "regraMemoria": "Prescrição é matéria de ordem pública: alega a qualquer tempo, em qualquer grau, até de ofício. Preclusão não pega prescrição."
         },
         {
           "territorio": "Processo Penal",
@@ -9803,7 +10370,11 @@ var QuestoesSeed = (function () {
               "texto": "O recurso cabível tem ampla devolutividade, podendo o Tribunal rever todos os aspectos da sentença penal condenatória, inclusive as teses atinentes à materialidade e à autoria."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Contra decisão do Tribunal do Júri cabe apelação (art. 593, III, CPP), mas com efeito devolutivo restrito aos fundamentos indicados na petição de interposição, diferente da apelação comum.",
+          "explicacaoErradas": "B está errada porque a alegação de decisão manifestamente contrária à prova dos autos só pode ser usada uma única vez, não três (art. 593, §3º, CPP). C está errada porque o recurso cabível é apelação, não RESE. D está errada porque a devolutividade não é ampla — respeita a soberania dos veredictos e se limita ao que foi pedido no recurso.",
+          "pegadinha": "Confundir apelação do júri com apelação comum de ampla devolutividade — aqui o Tribunal só examina o que foi expressamente impugnado.",
+          "regraMemoria": "Recurso do júri é apelação (art. 593, III), mas devolve só o que foi pedido — e 'decisão contrária à prova' só vale uma vez na vida do processo."
         },
         {
           "territorio": "Direito Penal",
@@ -9826,7 +10397,11 @@ var QuestoesSeed = (function () {
               "texto": "comunicar o fato à autoridade policial e/ou ao Ministério Público, por se tratar de fato sujeito à ação penal pública incondicionada."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Racismo (recusa de emprego por cor da pele, Lei 7.716/89) é crime de ação penal pública incondicionada — basta comunicar à autoridade policial e/ou ao Ministério Público.",
+          "explicacaoErradas": "B e C estão erradas porque racismo nunca é ação penal privada, então não cabe queixa-crime nem ação penal privada subsidiária da pública (que só cabe em caso de inércia do MP). A está errada porque ANPP é proposta pelo Ministério Público, não pelo advogado da vítima, e a hipótese central da questão é a natureza da ação penal.",
+          "pegadinha": "Achar que, por atingir diretamente Leda, o crime seria de ação privada e caberia queixa-crime — racismo é sempre ação pública incondicionada.",
+          "regraMemoria": "Racismo é sempre ação pública incondicionada — nunca cabe queixa-crime, sempre denuncia ao MP/polícia."
         },
         {
           "territorio": "Processo Penal",
@@ -9849,7 +10424,11 @@ var QuestoesSeed = (function () {
               "texto": "devido ao término do relacionamento, as disposições da Lei de Violência Doméstica e Familiar contra a Mulher não são aplicáveis, de modo que Bernardo pode se beneficiar de sursis processual."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A Lei Maria da Penha se aplica mesmo após o fim do relacionamento, pois basta o vínculo de relação íntima de afeto (art. 5º, III, Lei 11.340/06; Súmula 600, STJ). Além disso, o art. 28-A, §2º, IV, CPP veda expressamente o ANPP em crimes praticados no contexto de violência doméstica.",
+          "explicacaoErradas": "B e D erram ao dizer que a lei não se aplica pelo término do relacionamento — o vínculo afetivo passado já é suficiente. C erra porque a lesão corporal leve em violência doméstica é ação penal pública incondicionada (STF, ADI 4424), não havendo representação da vítima a se retratar.",
+          "pegadinha": "Achar que 'terminou o relacionamento' tira a proteção da Lei Maria da Penha — não tira, o vínculo afetivo passado basta.",
+          "regraMemoria": "Terminou o namoro, mas não terminou a Maria da Penha. E nunca cabe ANPP em violência doméstica."
         },
         {
           "territorio": "Processo Penal",
@@ -9872,7 +10451,11 @@ var QuestoesSeed = (function () {
               "texto": "aguardar para alegar a nulidade apenas em eventual recurso extraordinário, momento previsto na legislação como o único adequado para esse tipo de arguição."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A psiquiatra do réu está proibida de depor sobre fatos sigilosos conhecidos em razão da profissão (art. 207, CPP), devendo o advogado oferecer contradita no momento da qualificação da testemunha (art. 214, CPP).",
+          "explicacaoErradas": "A está errada porque o caso é de proibição de depor por sigilo profissional, não suspeição. C está errada porque exceção de litispendência nada tem a ver com testemunhas. D está errada porque a arguição deve ser feita imediatamente na qualificação, não pode esperar recurso extraordinário.",
+          "pegadinha": "Confundir suspeição (parcialidade da testemunha) com proibição de depor por sigilo profissional — o instrumento certo nos dois casos é a contradita, mas o fundamento tem que ser o correto (art. 207).",
+          "regraMemoria": "Testemunha com sigilo profissional (médico, padre, advogado)? Contradita na hora da qualificação, art. 207 CPP."
         },
         {
           "territorio": "Direito Previdenciário",
@@ -9895,7 +10478,11 @@ var QuestoesSeed = (function () {
               "texto": "Sobre o afastamento do trabalho, se a incapacidade for inferior a 30 dias de afastamento, não haverá qualquer direito subjetivo a benefício previdenciário."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Acidente de trajeto (in itinere) é equiparado a acidente de trabalho (art. 21, IV, 'd', Lei 8.213/91). Havendo afastamento superior a 15 dias consecutivos, é devido o benefício por incapacidade temporária (art. 59, Lei 8.213/91).",
+          "explicacaoErradas": "A está errada porque, desde a PEC das Domésticas (EC 72/2013) e a LC 150/2015, o empregado doméstico é segurado obrigatório do RGPS com direito pleno aos benefícios. C não é o núcleo da questão e não define o direito ao benefício. D está errada porque o marco legal é afastamento superior a 15 dias, não 30.",
+          "pegadinha": "Confundir o prazo de 15 dias pago pelo empregador (regra do empregado comum) com o marco geral de 15 dias para nascer o direito ao benefício, e achar que doméstica não tem proteção previdenciária.",
+          "regraMemoria": "Mais de 15 dias afastado = INSS paga o auxílio por incapacidade temporária. Doméstica tem proteção total desde a PEC das Domésticas."
         },
         {
           "territorio": "Direito Previdenciário",
@@ -9918,7 +10505,11 @@ var QuestoesSeed = (function () {
               "texto": "O exercício de atividade remunerada do segurado recluso, em cumprimento de pena em regime fechado, não acarreta a perda do direito ao recebimento do auxílio-reclusão para seus dependentes."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O auxílio-reclusão é benefício dos DEPENDENTES do segurado de baixa renda preso em regime fechado (art. 80, Lei 8.213/91). O exercício de atividade remunerada pelo próprio preso dentro do sistema prisional não retira esse direito dos dependentes.",
+          "explicacaoErradas": "A está errada porque o benefício é dos dependentes, não do segurado preso. B está errada porque exige-se o requisito de baixa renda do segurado. C está errada porque a cônjuge pode acumular seu próprio auxílio por incapacidade temporária com o auxílio-reclusão decorrente da prisão do marido, já que decorrem de fatos geradores e qualidades distintas (segurada e dependente).",
+          "pegadinha": "Achar que o preso trabalhar dentro do presídio (laborterapia/remição) faz a família perder o auxílio-reclusão — o benefício é da família, não dele.",
+          "regraMemoria": "Auxílio-reclusão é dos dependentes, não do preso. Trabalhar dentro do presídio não tira o benefício da família."
         },
         {
           "territorio": "Processo do Trabalho",
@@ -9941,7 +10532,11 @@ var QuestoesSeed = (function () {
               "texto": "Não existe responsabilidade dos sócios atuais, porque eles não agiram com fraude e, assim, Rogéria também não pode ser responsabilizada."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Comprovada fraude na alteração societária, o sócio retirante responde SOLIDARIAMENTE com os demais sócios (art. 10-A, parágrafo único, CLT), afastando a regra geral de responsabilidade subsidiária limitada a dois anos.",
+          "explicacaoErradas": "A está errada porque o prazo de 2 anos do art. 10-A CLT protege a saída regular, não a fraudulenta. B está errada porque, havendo fraude, a responsabilidade é solidária, não subsidiária. D está errada porque há elementos claros de fraude (transferência a empregado insolvente, manutenção de procuração e uso das contas).",
+          "pegadinha": "Achar que o prazo de 2 anos do art. 10-A CLT sempre protege quem saiu da sociedade — esse benefício só vale na saída sem fraude; com fraude comprovada, a responsabilidade vira solidária e sem esse limite.",
+          "regraMemoria": "Sócio que sai limpo = subsidiário, só 2 anos. Sócio que sai com fraude (testa de ferro) = solidário, sem limite de prazo."
         },
         {
           "territorio": "Direito do Trabalho",
@@ -9964,7 +10559,11 @@ var QuestoesSeed = (function () {
               "texto": "Ela agiu corretamente, porque essa era a vontade livre manifestada pelo empregado e, atualmente, o negociado suplanta o legislado."
             }
           ],
-          "respostaCorreta": 1
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A empresa agiu incorretamente: a CTPS deve ser anotada em até cinco dias úteis a contar da admissão (art. 29, CLT), sendo esse registro direito irrenunciável do trabalhador.",
+          "explicacaoErradas": "A está errada porque norma coletiva não pode afastar obrigação de ordem pública. C traz o fundamento certo (irrenunciabilidade), mas erra o prazo — não são 15 dias corridos, são 5 dias úteis. D está errada porque a vontade do empregado não afasta direito indisponível, e o 'negociado sobre legislado' não alcança essa garantia mínima.",
+          "pegadinha": "Achar que a vontade do próprio empregado dispensa a assinatura da CTPS — é direito irrenunciável — e confundir os prazos (5 dias úteis, não 15 dias corridos).",
+          "regraMemoria": "CTPS: 5 dias úteis, sempre. Nem o empregado pode abrir mão desse direito."
         },
         {
           "territorio": "Direito do Trabalho",
@@ -9987,7 +10586,11 @@ var QuestoesSeed = (function () {
               "texto": "Nenhuma das irmãs poderá ajuizar ação, porque elas se submeteram às regras do PDV e não fizeram constar ressalva."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O PDV previsto em acordo coletivo ou convenção coletiva de trabalho gera quitação plena e irrevogável dos direitos do contrato (art. 477-B, CLT). Margarida (ACT) e Hortência (CCT) estão nessa hipótese e não podem postular diferenças.",
+          "explicacaoErradas": "B está errada porque o art. 477-B CLT não exige homologação sindical, basta a previsão em instrumento coletivo. C está errada porque tanto o ACT quanto a CCT geram quitação plena, não só a CCT. D está errada porque Rosa, cujo PDV veio de norma interna do empregador (sem participação sindical), não se enquadra no art. 477-B e pode ajuizar ação.",
+          "pegadinha": "Achar que só a convenção coletiva (por envolver toda a categoria) gera quitação, ou que a homologação sindical é indispensável — o que importa é a origem coletivamente negociada (ACT ou CCT).",
+          "regraMemoria": "PDV com sindicato (ACT ou CCT) = quitação geral, sem volta. PDV só da empresa (norma interna) = pode discutir depois."
         },
         {
           "territorio": "Direito do Trabalho",
@@ -10010,7 +10613,11 @@ var QuestoesSeed = (function () {
               "texto": "Em todas as hipóteses, não há violação à CLT ou à CRFB, pois admite-se a prevalência do negociado sobre o legislado, respeitados os limites mínimos previstos na Constituição."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O art. 611-A da CLT autoriza expressamente a negociação coletiva sobre banco de horas, jornada e redução de intervalo, desde que respeitados os pisos mínimos (intervalo de ao menos 30 minutos e limite de 2 horas extras diárias) — logo, o acordo coletivo é válido em todos os pontos.",
+          "explicacaoErradas": "A está errada porque o banco de horas é expressamente permitido por negociação (art. 59, §2º, CLT). B está errada porque a jornada de 9h (8h + 1h extra) está dentro do limite legal de até 2 horas extras diárias. C está errada porque o intervalo mínimo de 30 minutos, mesmo reduzido, é expressamente permitido pelo art. 611-A, III, CLT.",
+          "pegadinha": "Achar que qualquer alteração de jornada ou intervalo por norma coletiva é inválida por 'violar' o padrão de 8h/1h — a CLT permite a negociação, desde que respeitados os pisos mínimos constitucionais e legais.",
+          "regraMemoria": "Negociado vale sobre legislado (art. 611-A CLT), mas até o piso: intervalo nunca abaixo de 30 min, jornada nunca acima de 10h (8+2 extras)."
         },
         {
           "territorio": "Processo do Trabalho",
@@ -10033,7 +10640,11 @@ var QuestoesSeed = (function () {
               "texto": "Uma reclamação trabalhista em face da ex -empregadora e da tomadora dos serviços, que responderá subsidiariamente, sendo certo que a ação correrá pelo rito sumaríssimo."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Cabe ação em face da ex-empregadora e da autarquia tomadora dos serviços, que responde subsidiariamente por culpa in vigilando (falta de fiscalização do contrato — Tema 246 STF, Súmula 331 TST), e o rito é ordinário porque há ente da administração pública no polo passivo.",
+          "explicacaoErradas": "A está errada porque cabe responsabilidade subsidiária do ente público quando comprovada a falta de fiscalização. B está errada porque a ex-empregadora, devedora principal, também deve figurar na ação. D está errada quanto ao rito: havendo administração pública direta, autárquica ou fundacional no polo passivo, o rito sumaríssimo é vedado (art. 852-A, parágrafo único, CLT), independentemente do valor da causa.",
+          "pegadinha": "Achar que o valor da causa (dentro do limite do sumaríssimo) decide o rito sozinho — a presença de autarquia pública no polo passivo afasta automaticamente o sumaríssimo.",
+          "regraMemoria": "Autarquia ou ente público no polo passivo = nunca rito sumaríssimo, não importa o valor da causa."
         },
         {
           "territorio": "Processo do Trabalho",
@@ -10056,7 +10667,11 @@ var QuestoesSeed = (function () {
               "texto": "José Luiz poderá reclamar imediatamente, mas, independentemente, da prescrição parcial quinquenal, será descontado do prazo da sua reclamação o período de seis meses."
             }
           ],
-          "respostaCorreta": 2
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Duas ausências seguidas do reclamante que geram arquivamento configuram perempção (art. 732, CLT): fica impedido de propor a mesma reclamação por 6 meses, salvo força maior.",
+          "explicacaoErradas": "A está errada porque confissão ficta é instituto diferente, ligado à falta em audiência de depoimento pessoal, não ao arquivamento por dupla ausência. B está errada porque a gratuidade de justiça não afasta a penalidade processual da perempção, que é sanção distinta das custas. D mistura institutos (prescrição parcial x perempção) que não se confundem.",
+          "pegadinha": "Confundir confissão ficta com perempção — no processo do trabalho, duas faltas seguidas do reclamante geram arquivamento e impedimento de repropor a ação por 6 meses.",
+          "regraMemoria": "Duas faltas seguidas do reclamante = perempção: 6 meses proibido de reclamar de novo, salvo força maior."
         },
         {
           "territorio": "Processo do Trabalho",
@@ -10079,7 +10694,11 @@ var QuestoesSeed = (function () {
               "texto": "Dada a variação de horários, há presunção absoluta da validade da jornada indicada nos cartões de ponto, tendo a ré se desincumbido do ônus. Cabe à ré a prova do pagamento do 13º salário, por ser fato extintivo da obrigação."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O pagamento do 13º salário é fato extintivo da obrigação, cabendo à ré prová-lo (art. 818, II, CLT). Já as horas extras: como os cartões de ponto mostram horários variados (não uniformes), presumem-se válidos (Súmula 338, III, TST), mantendo o ônus da prova das horas extras com o autor.",
+          "explicacaoErradas": "B e D estão erradas porque, havendo variação de horários nos cartões, presume-se sua validade, não se transferindo o ônus das horas extras à ré. C erra pelo mesmo motivo: variação de horários reforça a validade do cartão, não inverte o ônus.",
+          "pegadinha": "Achar que 'horários variados' é sinal de fraude que inverteria o ônus contra a empresa — na verdade é o oposto: ponto uniforme (britânico) é que gera presunção de invalidade e inversão do ônus.",
+          "regraMemoria": "Ponto uniforme (britânico) = suspeito, ônus vira do empregador. Ponto variado = válido, ônus continua do empregado. 13º pago é sempre ônus de quem alega ter pago."
         },
         {
           "territorio": "Processo do Trabalho",
@@ -10102,7 +10721,11 @@ var QuestoesSeed = (function () {
               "texto": "Consignar protestos pela contaminação do depoimento da segunda testemunha da ré, bem como pela inquirição direta da testemunha, na primeira oportunidade de se manifestar em audiência."
             }
           ],
-          "respostaCorreta": 3
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "No processo do trabalho vigora a irrecorribilidade imediata das decisões interlocutórias (art. 893, §1º, CLT). A conduta correta é consignar protesto em ata na primeira oportunidade, contra a contaminação da testemunha que assistiu à instrução e contra a admissão de pergunta indutora, para arguir a nulidade em preliminar de recurso ordinário futuro.",
+          "explicacaoErradas": "A e B estão erradas porque não cabe recurso imediato (reclamação correicional ou agravo de instrumento) contra decisão interlocutória no processo do trabalho. C está errada por reconhecer irregularidade só na presença da testemunha e ignorar a irregularidade da inquirição indutora.",
+          "pegadinha": "Achar que existe recurso imediato contra decisão interlocutória do juiz do trabalho — a regra é protestar em ata e discutir depois, em preliminar do recurso ordinário.",
+          "regraMemoria": "No processo do trabalho, decisão interlocutória não se recorre na hora — protesta em ata e discute depois, em preliminar do recurso ordinário."
         },
         {
           "territorio": "Processo do Trabalho",
@@ -10125,7 +10748,11 @@ var QuestoesSeed = (function () {
               "texto": "Caberá ao ente público garantir o Juízo e ajuizar embargos à execução no prazo de 16 dias."
             }
           ],
-          "respostaCorreta": 0
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Na execução contra a Fazenda Pública é desnecessária a garantia do juízo, já que os bens públicos são impenhoráveis e sujeitos a precatório/RPV (art. 100, CF), e o prazo para embargar é de 30 dias (art. 1º-B da Lei 9.494/97, aplicado ao processo do trabalho).",
+          "explicacaoErradas": "B e D estão erradas quanto à garantia do juízo, desnecessária para a Fazenda Pública. C está errada quanto ao prazo, que é de 30 dias, e não de 8 dias como no rito comum trabalhista (art. 884, CLT).",
+          "pegadinha": "Achar que o ente público responsável subsidiariamente segue o mesmo prazo e a mesma exigência de garantia de um executado comum — a Fazenda Pública tem regras próprias.",
+          "regraMemoria": "Fazenda Pública nunca garante juízo (bens públicos são impenhoráveis) e tem 30 dias para embargar, não 8."
         }
       ]
     }

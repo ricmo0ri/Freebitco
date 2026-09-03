@@ -4,7 +4,7 @@
 // chefões por tema, XP/combo e estatística de fraquezas — não é um passo à
 // parte, é como o motor de questões já funciona pra qualquer questão.
 var QuestoesSeed = (function () {
-  var SEED_VERSION_ATUAL = 4;
+  var SEED_VERSION_ATUAL = 5;
 
   var PROVAS = [
     {
@@ -13,6 +13,7 @@ var QuestoesSeed = (function () {
       "questoes": [
         {
           "territorio": "Ética",
+          "tema": "Direitos e Prerrogativas do Advogado",
           "enunciado": "Paloma, advogada gestante, compareceu ao Fórum da Comarca de Itaporanga, PB, para participar de uma audiência. Ao tentar estacionar no local, foi impedida de acessar a garagem sob a justificativa de que não havia vagas reservadas para gestantes. Além disso , foi obrigada a passar por um detector de metais, mesmo tendo informado de sua condição de gestante. Indignada, Paloma buscou esclarecer os seus direitos. Sobre a hipótese narrada, com base no Estatuto da OAB, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -40,6 +41,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Incompatibilidades e Impedimentos",
           "enunciado": "Danilo, procurador de carreira, foi nomeado Procurador -Geral de sua instituição. Antes de assumir a Procuradoria -Geral do Estado, ele patrocinava várias causas trabalhistas contra empresas privadas e causas tributárias. Agora, Danilo está em dúvida se poderá continuar advogando nessas ações. Sobre a hipótese apresentada, com base nas disposições do Estatuto da OAB sobre incompatibilidades e impedimentos, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -67,6 +69,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Inscrição e Órgãos da OAB",
           "enunciado": "Alfredo é graduado em Direito pela Universidade Beta, mas não foi aprovado no Exame da Ordem dos Advogados do Brasil (OAB). Durante a graduação, Alfredo não teve a oportunidade de estagiar em um escritório de advocacia. Recentemente, após já estar formado, surgiu a oportunidade de estagiar em um escritório credenciado pelo Conselho Seccional da OAB. Ele deseja saber se pode participar do estágio profissional de advocacia mesmo após a conclusão de seu curso e se seria possível inscrever-se no quadro de estagiários da OAB. Sobre a hipótese, com base no disposto no Art. 9º do Estatuto da Advocacia e da OAB, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -94,6 +97,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Sociedade de Advogados",
           "enunciado": "Os advogados Eduardo e Diogo são sócios de uma sociedade profissional de advogados, cujos atos constitutivos foram devidamente registrados e aprovados pelo Conselho Seccional da OAB na base territorial em que está localizada a sua sede. No entanto, Eduardo foi contratado por Afonso para representá - lo em uma ação de alimentos movida por sua esposa Dalila, e Diogo foi contratado por Dalila para representá-la na mesma ação. Os advogados desejam saber se podem continuar com essas representações, tendo em vista que são sócios da mesma sociedade de advogados. Sobre o caso narrado, com base no Art. 15 do Estatuto da Advocacia e da OAB, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -121,6 +125,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Ética e Disciplina",
           "enunciado": "Mateus, advogado regularmente inscrito na OAB, contratou Marcos, profissional da área de vendas, para abordar pessoas nas imediações da agência do Instituto Nacional do Seguro Social da sua cidade, visando à captação de causas previdenciárias. Foi acertado que Marcos teria participação nos honorários advocatícios das causas que conseguisse agenciar. Constatados os fatos, e após o devido processo administrativo disciplinar, o Tribunal de Ética e Disciplina do Conselho Seccional competente aplicou a pena de censura a Mateus. Considerando o enunciado e o Estatuto da Advocacia e da OAB, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -148,6 +153,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Honorários Advocatícios",
           "enunciado": "Abelardo é contratado para representar o milionário Everardo em uma causa cível de importante vulto. Ficou combinado que, em caso de êxito, Abelardo fará jus a uma joia de elevadíssimo valor, a título de honorários. Sucede que, depois de ganhar a causa, Everardo sofreu revés na justiça criminal, quando uma decisão judicial determinou o bloqueio de todo o seu patrimônio pela suspeita de crimes financeiros. Nesse caso, à luz do Estatuto da Ordem dos Advogados do Brasil e do Código de Ética e Disciplina, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -175,6 +181,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Exercício da Advocacia",
           "enunciado": "Frederico, advogado, após alcançar grande sucesso na advocacia, decidiu se dedicar também à construção civil, passando a atuar simultaneamente nas duas áreas. Diante da afinidade temática entre o Direito Imobiliário e o setor de construção civil, Frederico teve a ideia de unir ambas as atividades em um único escritório, oferecendo aos clientes consultoria jurídica e serviços de incorporação imobiliária. Para divulgar o seu novo empreendimento, contratou um escritório de marketing, que produziu uma campanha publicitária conjunta, ressaltando seus trabalhos como advogado e como empreendedor da construção civil. Sobre o fato narrado, com base no Estatuto da OAB, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -202,6 +209,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Ética e Disciplina",
           "enunciado": "O advogado Toledo atua na defesa de Tício, investigado por crimes de corrupção e lavagem de dinheiro. Durante as investigações, o próprio Toledo passou a ser investigado por suposta participação em atos ilícitos praticados por seu cliente. Em troca de benefícios penais, o Ministério Público ofereceu a possibilidade de firmar acordo de colaboração premiada ao advogado, desde que ele fornecesse informações sobre Tício e outros envolvidos. Com base no Estatuto da OAB, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -229,6 +237,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Filosofia do Direito",
+          "tema": "Teorias Contemporâneas do Direito",
           "enunciado": "Leia os fragmentos a seguir. Sócrates estava sentado à porta de sua casa. Nesse momento, passa um homem correndo e atrás dele vem um grupo de soldados. Um dos soldados então grita: agarre esse sujeito, ele é um ladrão! Ao que responde Sócrates: que você entende por ‘ladrão’? (...) Questões zetéticas têm uma função especulativa explícita e são infinitas. Questões dogmáticas têm uma função diretiva explícita e são finitas. Nas primeiras, o problema tematizado é configurado como um ser (que é algo?). Nas segundas, a situação nelas captada configura-se como um dever-ser (como deve-ser algo?). Por isso, o enfoque zetético visa saber o que é uma coisa. Já o enfoque dogmático preocupa -se em possibilitar uma decisão e orientar ação. (FERRAZ JUNIOR, Tercio Sampaio. Introdução ao Estudo do direito: técnica, decisão, dominação.) De acordo com a terminologia utilizada pelo Professor Tercio Sampaio Ferraz Junior, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -256,6 +265,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Filosofia do Direito",
+          "tema": "Hermenêutica e Interpretação",
           "enunciado": "Em decisão histórica, o Supremo Tribunal Federal (STF) aplicou a lei de greve do setor privado, Lei nº 7.783/1989, aos servidores públicos, pois, apesar de existir previsão constitucional expressa desse direito ao setor público, não havia lei que a regulamentasse, impedindo o seu exercício. Ao verificar a ausência da norma e das razões de semelhança para aplicar o normativo já existente, assinale a opção que melhor explica a técnica utilizada pelo STF para justificar o seu julgamento.",
           "alternativas": [
             {
@@ -283,6 +293,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direitos Humanos",
+          "tema": "Tratados Internacionais de Direitos Humanos",
           "enunciado": "Maria descobriu que seu nome constava, erroneamente, em registros públicos estaduais como devedora de impostos, mesmo sem nada dever ao Fisco. Muito correta, procurou imediatamente a Secretaria de Estado da Fazenda do Estado Alfa, solicitando que fosse corrigida a informação. Porém, apesar das reiteradas solicitações, o órgão não realizou a retificação. Em razão disso, seu amigo Pedro sugeriu a impetração de um habeas data , o que seria feito diretamente por Maria, sem a presença de um(a) advogado(a). Insegura, Maria procurou você, como advogado(a), para saber se este seria o caminho adequado para a retificação desejada. Segundo o sistema jurídico -constitucional brasileiro, assinale a opção que apresenta, corretamente, a orientação a ser dada.",
           "alternativas": [
             {
@@ -310,6 +321,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Organização do Estado",
           "enunciado": "Carlos é prefeito do Município Beta, localizado no Estado Alfa. Ele tomou conhecimento da descoberta de uma nova reserva de petróleo em Alfa (reserva Mantuã), situada no território de Beta. Interessado em saber se os resultados da exploração de petróleo e gás natural poderiam gerar recursos para Beta, Carlos consultou você, como Procurador(a)-Geral do Município, para esclarecer sua dúvida. Sobre a hipótese narrada, segundo o sistema constitucional brasileiro, assinale a opção que apresenta, corretamente, o esclarecimento dado.",
           "alternativas": [
             {
@@ -337,6 +349,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Controle de Constitucionalidade",
           "enunciado": "O Estado Delta publicou lei que criou novos critérios para a concessão de benefícios fiscais no âmbito estadual. Esse diploma normativo, no entanto, foi declarado inconstitucional pelo Supremo Tribunal Federal (STF), em sede de Ação Direta de Inconstitucionalidade (ADI). Apesar disso, meses depois, a Assembleia Legislativa de Delta aprovou a Lei X/2025 com conteúdo idêntico ao da lei anteriormente declarada inconstitucional. O Governador do Estado Delta, inconformado, solicitou que o Procurador -Geral do Estado analisasse a conformidade constitucional da Lei X/2025. Assinale a opção que, do ponto de vista jurídico -constitucional, apresenta a solução correta para o tema.",
           "alternativas": [
             {
@@ -364,6 +377,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Organização do Estado",
           "enunciado": "A Câmara Municipal de Alfa constatou que o Prefeito Municipal não prestou as contas anuais de governo, afetas à administração municipal, dentro do prazo estabelecido na legislação, o que se estendeu por três exercícios. Após reiteradas notificações, a omissão permaneceu, impedindo a fiscalização do uso dos recursos públicos. Diante dessa situação, o Governador do Estado Beta decidiu decretar intervenção estadual no Município para garantir a prestação de contas. No entanto, a medida gerou debate entre os agentes políticos locais, que questionaram a sua legalidade e consultaram você, como advogado(a), a esse respeito. Sobre a hipótese narrada, considerando a ordem constitucional vigente, assinale a opção que apresenta, corretamente, a orientação jurídica prestada.",
           "alternativas": [
             {
@@ -391,6 +405,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Organização dos Poderes",
           "enunciado": "O Tribunal de Contas do Estado Ômega, ao analisar as contas de um gestor público, constatou a existência de irregularidades graves na aplicação de verbas destinadas à educação, gerando prejuízo ao erário. Após garantir o contraditório e a ampla defesa, o Tribunal proferiu decisão definitiva determinando o ressarcimento dos valores desviados. No entanto, o gestor público entendia que não deveria cumprir a decisão, pois, a seu ver, seria necessário o ajuizame nto de uma ação judicial para validar a obrigação de pagamento. Por essa razão, consultou você, como advogado(a). Sobre a hipótese, com base no sistema constitucional brasileiro, assinale a afirmativa que apresenta a orientação jurídica correta.",
           "alternativas": [
             {
@@ -418,6 +433,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Processo Legislativo",
           "enunciado": "Ao final de seu segundo mandato consecutivo, o Prefeito do Município Delta, João Carlos, encaminhou à Câmara de Vereadores um projeto de lei de sua própria iniciativa, propondo a majoração dos subsídios dos próximos Prefeito e Vice -Prefeito para a legislatura seguinte. O projeto foi devidamente aprovado pela maioria dos vereadores de Delta e sancionado por João Carlos, antes do término de seu mandato. Um legitimado à deflagração do controle concentrado de constitucionalidade consultou você, como advogado(a), em relação à compatibilidade do respectivo diploma normativo com a Constituição da República. Sobre o caso concreto apresentado, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -445,6 +461,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direitos Humanos",
+          "tema": "Direitos de Grupos Vulneráveis",
           "enunciado": "Na condição de advogado(a), você é procurado(a) por membros de uma comunidade indígena que estão sofrendo reiteradas ofensas aos seus direitos originários sobre as terras que tradicionalmente ocupam, sofrendo renitente esbulho, em conflito possessório que se arrasta desde antes da promulgação da Constituição Federal de 1988. Nesse contexto, de acordo com o entendimento da Corte Interamericana de Direitos Humanos (Corte IDH) e do Supremo Tribunal Federal (STF), assinale a opção que apresenta, corretamente, a sua orientação.",
           "alternativas": [
             {
@@ -472,6 +489,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direitos Humanos",
+          "tema": "Tratados Internacionais de Direitos Humanos",
           "enunciado": "Após a edição da Emenda Constitucional nº 45/2004, com a inserção do § 3º no Art. 5º da Constituição Federal de 1988, muito se discutiu acerca do status normativo que deveria ser atribuído aos Tratados e Convenções Internacionais sobre Direitos Humanos já incorporados ao ordenamento jurídico brasileiro em data anterior ao advento da reforma constitucional referida. Acerca do tema, e de acordo com a atual jurisprudência do Supremo Tribunal Federal (STF), assinale a opção correta.",
           "alternativas": [
             {
@@ -499,6 +517,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Eleitoral",
+          "tema": "Elegibilidade e Registro de Candidatura",
           "enunciado": "Maria pretendia concorrer ao cargo eletivo de senadora. Embora tivesse nascido no Estado Alfa e passasse a maior parte do seu tempo nesse Estado, possuía propriedades nos Estados Beta e Gama, para onde se deslocava com regularidade em razão de sua atividade profissional, ali permanecendo por longos períodos. Para saber em qual desses Estados poderia concorrer ao cargo eletivo de senadora, Maria o(a) consultou como advogado(a). Sobre a hipótese apresentada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -526,6 +545,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Eleitoral",
+          "tema": "Partidos Políticos e Financiamento",
           "enunciado": "Logo após a diplomação de Maria, candidata eleita para o cargo de Prefeita do Município Delta, Ana, candidata derrotada, procurou você, como advogado(a), com provas de que Maria recebera doação estimável em dinheiro, por meio da publicidade realizada, em seu benefício, pela organização da sociedade civil de interesse público Gama. Ana o(a) questionou em relação à juridicidade da conduta de Maria. Quanto à orientação a ser dada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -553,6 +573,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Internacional",
+          "tema": "Jurisdição e Competência Internacional",
           "enunciado": "Um cidadão brasileiro, domiciliado na Espanha, faleceu deixando um testamento particular que dispõe sobre bens situados tanto no exterior quanto no Brasil. Após a sua morte, os herdeiros promoveram, de comum acordo, perante autoridade notarial estrangeira competente, procedimento consensual de confirmação do testamento particular e partilha do patrimônio, incluindo os bens localizados no Brasil. Posteriorment e, requereram ao Superior Tribunal de Justiça (STJ) a homologação do ato notarial estrangeiro, alegando a inexistência de litígio entre os herdeiros e a plena validade do procedimento conforme a legislação do país de origem. Sobre o caso apresentado, à luz do sistema jurídico brasileiro, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -580,6 +601,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Internacional",
+          "tema": "Direito Internacional Privado (LINDB)",
           "enunciado": "François, cidadão francês, residente e domiciliado na Holanda, e Maria, cidadã brasileira, residente e domiciliada na França, são casados. Conheceram -se na Alemanha, onde concluíram o doutorado em Direito Internacional na Universidade de Frankfurt. Os nubentes eram domiciliados na Alemanha na ocasião do casamento e tiveram em Frankfurt o seu primeiro domicílio conjugal. Posteriormente, mudaram-se para países diferentes por razões profissionais. Após alguns meses, resolveram não dar continuidade ao ca samento. Maria pretende ajuizar ação de divórcio no Brasil porque está prestes a retornar ao seu país de origem. Sobre a hipótese, assinale a opção que indica a lei que será aplicada ao regime de bens de acordo com a legislação brasileira, em especial a Lei de Introdução às Normas do Direito Brasileiro.",
           "alternativas": [
             {
@@ -607,6 +629,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Financeiro",
+          "tema": "Lei de Responsabilidade Fiscal",
           "enunciado": "O Município Alfa estava enfrentando dificuldades para pagar em dia a remuneração de seus servidores públicos municipais. Em razão disso, resolveu requerer à instituição financeira federal BNDES um empréstimo, a fim de pagar as remunerações em atraso. O Município ofereceu, em garantia do empréstimo, terrenos de sua propriedade, cujo valor de mercado inclusive suplantava o montante a ser emprestado. Diante desse cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -634,6 +657,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Financeiro",
+          "tema": "Orçamento Público (LOA/LDO/PPA)",
           "enunciado": "Em determinado ano, na elaboração do projeto de Lei Orçamentária Anual (LOA) da União, o Poder Executivo resolveu inserir as previsões de despesas para os exercícios seguintes, com a especificação dos investimentos plurianuais e daqueles em andamento. Sobre esse projeto de LOA, à luz das regras constitucionais de elaboração das leis orçamentárias, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -661,6 +685,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Limitações ao Poder de Tributar",
           "enunciado": "Com necessidade de ampliar os gastos na área da seguridade social, a União criou uma nova contribuição de seguridade social, por meio da Lei Ordinária nº XXX/2024, publicada em 1º de setembro de 2024, cuja cobrança se iniciou em 1º de novembro de 2024. Diante desse cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -688,6 +713,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Prescrição e Decadência Tributária",
           "enunciado": "Mateus devia um valor elevado ao Fisco Federal, em dívidas de certo tributo federal devidamente lançadas e inscritas em Dívida Ativa da União ainda não prescritas, o que levou a Procuradoria da Fazenda Nacional (PFN), em fevereiro de 2020, a ajuizar execução fiscal contra ele. Mateus não foi localizado para ser citado nem foram encontrados bens sobre os quais poderia recair a penhora, tendo sido a PFN cientificada desses fatos, em abril de 2020. Assim, foi requerida e realizada a citação de Mateus por edital, ainda em abril de 2020. Em julho de 2025, sem que a situação se alterasse, o Magistrado, ouvida previamente a Fazenda Nacional, decretou a ocorrência da prescrição de tais créditos tributários. Diante desse cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -715,6 +741,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Processo Tributário",
           "enunciado": "João da Silva recebeu vultosa importância da sociedade empresária em que trabalhava, a título de indenização por danos morais, por ter sido exposto meses antes, em público, diante de seus colegas, a uma situação vexatória. No momento do pagamento do valor da indenização, a sociedade empresária reteve na fonte o Imposto sobre a Renda que entendeu devido, recolhendo -o em DARF no mesmo ato. João, inconformado com a retenção, impugnou administrativamente a cobrança, mas a decisã o de primeira instância administrativa denegou a restituição do imposto. João então consultou você, como advogado(a), pretendendo reaver o imposto que entende ser indevido. Diante desse cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -742,6 +769,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Limitações ao Poder de Tributar",
           "enunciado": "A lei federal que instituiu a Contribuição de Intervenção no Domínio Econômico incidente sobre a importação e a comercialização de petróleo e seus derivados (Cide Combustíveis) fixou a alíquota do álcool etílico combustível em R$ 37,20/m³ para a comerciali zação no mercado interno. Contudo, o governo federal, querendo estimular o uso do álcool etílico combustível, pelo Decreto do Presidente da República nº XXX, de 1º de agosto de 2024, reduziu esta alíquota para R$ 20,50/m³. Mudada a política governamental sobre a matéria, pelo Decreto nº YYY, datado de 1º de fevereiro de 2025, tal alíquota foi restabelecida em R$ 37,20/m³, com efeitos a serem produzidos a partir de 3 de junho de 2025. Diante desse cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -769,6 +797,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Limitações ao Poder de Tributar",
           "enunciado": "O Município Alfa, por lei ordinária municipal, criou a Taxa de Fiscalização de Cemitérios, relativa ao custeio das atividades de fiscalização das instalações e atividades das concessionárias de cemitérios em território municipal, tendo tais concessionárias como contribuintes. A lei criadora estabeleceu que a data de pagamento dessa taxa seria fixada em decreto do Prefeito Municipal. O Decreto Municipal XX/2023 fixou a data de pagamento em 15 dias após o recebimento da notificação para pagamento. Diante desse cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -796,6 +825,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Licitações e Contratos Administrativos",
           "enunciado": "A sociedade empresária Begônia deseja participar de um procedimento licitatório, na modalidade concorrência, para a contratação de uma obra, que adotará a sequência adotada como regra na Lei nº 14.133/2021, mas está com receio de ser prejudicada no julgamento das propostas, que antecede à fase de habilitação. Em razão disso, a sociedade empresária consultou você, como advogado(a), a fim de esclarecer a possibilidade de apresentar um recurso administrativo, o momento correto para fazê -lo e os efeitos dele decorrentes, caso tal receio venha a ser concretizado. Sobre essa situação hipotética, assinale a opção que indica, corretamente, o esclarecimento que você prestou.",
           "alternativas": [
             {
@@ -823,6 +853,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Intervenção do Estado na Propriedade",
           "enunciado": "O Estado Alfa, cuja capital é o Município Beta, mediante decreto do Governador, em observância às formalidades legais, declarou de utilidade pública uma grande área localizada no Município Sigma, sede de Comarca, a qual abarca o imóvel pertencente ao particular João. Em razão do grande apego emocional com a localidade, onde vive há 25 anos, João recusou todas as propostas oferecidas pelo Poder Público e tentou impedir que as autoridades administrativas estaduais ingressassem no terreno do seu imóvel para a realização de levantamentos. Por isso, o Estado Alfa pretende ingressar, em juízo, com uma ação visando à desapropriação do bem. Preocupado, João contratou você, como advogado(a), para defendê-lo na futura demanda judicial. Nesse cenário, considerando as disposições do Decreto -Lei nº 3.365/1941, que versa sobre as desapropriações por utilidade pública, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -850,6 +881,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Atos Administrativos",
           "enunciado": "A sociedade empresária Alfa tomou conhecimento de que o Conselho Diretor da Agência Reguladora Beta realizou reunião deliberativa, na semana anterior, tendo por objeto discussões sobre documentos classificados como sigilosos, bem como sobre matérias de natureza administrativa. Considerando que a data da referida reunião não foi previamente divulgada no sítio da agência reguladora na internet, tampouco foi gravada em meio eletrônico, os sócios da entidade privada procuraram você para, na qualidade de advogado (a), prestar a devida consultoria jurídica. Nesse cenário, à luz da Lei n o 13.848/2019, que dispõe sobre a gestão, a organização, o processo decisório e o controle social das agências reguladoras, assinale a opção que apresenta, corretamente, a orientação jurídica prestada.",
           "alternativas": [
             {
@@ -877,6 +909,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Improbidade Administrativa",
           "enunciado": "O Ministério Público ingressou, em Juízo, com ação de improbidade administrativa em face de João, agente público no Município Alfa, sob o fundamento de que ele teria, em outubro de 2025, frustrado, em ofensa à imparcialidade, o caráter concorrencial de procedimento licitatório. Citado, o servidor público ofereceu contestação, por meio da sua atuação, na qualidade de advogado(a). Contudo, as preliminares suscitadas pelo réu, na contestação, foram rejeitadas. Em assim sendo, João procurou você, na condição de advogado(a), para tomar conhecimento das próximas etapas procedimentais. Nesse cenário, considerando as disposições da Lei nº 8.429/1992 (Lei de Improbidade Administrativa), assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -904,6 +937,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Poderes Administrativos",
           "enunciado": "As autoridades competentes de determinado órgão federal, diante do grande acúmulo de trabalho, fizeram editar um ato formal delegando parcela de sua competência para outro órgão que a ele não é hierarquicamente subordinado, mediante a especificação das matérias e dos poderes transferidos, os limites da atuação do delegado, a duração e os objetivos da delegação e o recurso cabível. Ao tomar conhecimento de tal fato, Gyslaine ficou muito preocupada quanto à possibilidade de o órgão delegado vir a decidir determinado recurso administrativo que estava tramitando perante o órgão delegante, razão pela qual buscou a sua assessoria jurídica a fim de esclarecer as peculiaridades e os limites da delegação de competência, à luz do disposto na Lei nº 9.784/1999. Assinale a opção que apresenta a informação correta que você, na qualidade de advogado(a), prestou.",
           "alternativas": [
             {
@@ -931,6 +965,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Ambiental",
+          "tema": "Princípios e Competência Ambiental",
           "enunciado": "A sociedade empresária Alfa está em processo de licenciamento ambiental de atividade de tingimento de tecidos e fabricação de roupas, e pretende obter outorga pelo Poder Público do direito do uso de recursos hídricos, consistente em extração de água de aquífero subterrâneo existente no local, como insumo do processo produtivo. Nesse contexto, o empreendedor tomou conhecimento de que será cobrado um valor pelo recurso natural consumido. Inconformado com a cobrança, pois ainda terá grande gasto financeiro com as obras para a extração de água do aquífero, a sociedade empresária procurou a advogada Marcela, especialista em Direito Ambiental, para esclarecer as dúvidas dele acerca da viabilidade de tal exigência. Sobre a cobrança pelo uso da água, à luz dos princípios do Direito Ambiental, assinale a opção que apresenta, corretamente, o esclarecimento dado por Marcela.",
           "alternativas": [
             {
@@ -958,6 +993,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Ambiental",
+          "tema": "Espaços Territoriais Protegidos",
           "enunciado": "O Prefeito do Município Ômega, após os trâmites pertinentes, fez editar um decreto que delimitou uma Área de Proteção Ambiental (APA), unidade de conservação de uso sustentável, em decorrência de sua grande extensão e do grau de ocupação humana, diante de atributos abióticos, bióticos , estéticos ou culturais especialmente importantes para a qualidade de vida e o bem-estar das populações humanas. Dessa maneira busca proteger a diversidade biológica, disciplinar o processo de ocupação e assegurar a sustentabi lidade do uso dos recursos naturais. A propriedade privada de Adélia Figueiredo está situada dentro da mencionada unidade de conservação. Preocupada, ela procura você, como advogado, para receber orientação sobre a validade do mencionado decreto e a extensão de seus efeitos, à luz do disposto na Lei nº 9.985/2000. Acerca dessa situação hipotética, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -985,6 +1021,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Parte Geral",
           "enunciado": "Joaquim Cardoso e Celina de Holanda são pais das gêmeas Clarice e Maria, que têm 17 anos de idade. No ano passado, Clarice, com a devida autorização dos pais, casou- se com Ariano. Maria, no mês de março deste ano, iniciou o curso de Medicina em uma universidade federal. O casal procurou você, como advogado(a) especializado(a) em Direito Civil, para ser orientado sobre a situação jurídica das filhas. A respeito da capacidade civil das filhas de Joaquim e Celina, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1012,6 +1049,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Família",
           "enunciado": "Joaquim, de 71 anos de idade, é viúvo de Marta há cerca de quatro anos, e não finalizou a partilha de bens deixados por sua falecida esposa, porque há um litígio entre o filho comum do ex -casal e a filha do primeiro casamento de Marta. Na semana passada, Joaquim procurou você, como advogado(a), para ser orientado juridicamente acerca da união que pretende estabelecer com Joana, tendo em vista que a partilha anterior não será realizada antes do novo matrimônio. A respeito do regime de bens que deveria adotar na nova união, assinale a opção que apresenta, corretamente, a sua orientação.",
           "alternativas": [
             {
@@ -1039,6 +1077,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Sucessões",
           "enunciado": "Após uma intensa discussão motivada por questões financeiras, Lucas desferiu golpes fatais em seus pais, resultando na morte de ambos, que deixaram uma herança significativa. Mateus, seu irmão mais novo, ainda menor de idade, está sob a tutela de seu tio Ricardo, que se recusa a promover a exclusão de Lucas da sucessão por indignidade. Considerando que Mateus, por ser menor, não tem capacidade legal para agir diretamente, surgem dúvidas sobre quem tem legitimidade para requerer judicialmente a exclusão de Lucas da herança e quais são os procedimentos adequados para isso. Diante da situação hipotética narrada e com base na legislação vigente, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1066,6 +1105,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Parte Geral",
           "enunciado": "Lorena resolveu alienar um imóvel avaliado em R$ 2.000.000,00 para Marta. Para tanto, elas elaboraram uma minuta de contrato de compra e venda, especificando as partes, o bem, o preço e a forma de pagamento. Considerando a urgência da vendedora, que iria se mudar para o exterior, essa minuta foi impressa na casa de Marta e assinada pelas partes e pelas testemunhas Natália e Oscar. Sobre a situação hipotética narrada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1093,6 +1133,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Contratos",
           "enunciado": "Eduardo vendeu um imóvel urbano a Clara, estipulando em contrato particular que, caso futuramente ela decidisse vendê -lo, Clara deveria notificá-lo previamente, conferindo-lhe o direito de adquirir o bem nas mesmas condições ofertadas a terceiros. Passados doze meses da compra, Clara recebeu proposta de venda pelo mesmo valor pago e, sem notificar Eduardo, vendeu o imóvel para Flávio. Eduardo, ao saber do negócio já concluído, procurou Flávio para discutir o direito de preferência, mas este afirmou não ter sido informado sobre qualquer cláusula contratual anterior. Eduardo ajuizou ação para haver o imóvel para si, mediante o pagamento do mesmo valor da proposta aceita por Clara. Com base nas disposições legais sobre o direito de preempção, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1120,6 +1161,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Contratos",
           "enunciado": "Sara, em 24 de outubro de 2023, outorgou a Vítor, seu filho, uma procuração por instrumento público para vender seu imóvel até 24 de outubro de 2026. No momento da outorga, Sara gozava de boa saúde mental. A partir de 2024, Sara passou a sofrer um acelerado processo de demência, vindo a perder as suas habilidades cognitivas básicas no início de 2025. Sara foi interditada e Roberto, seu marido, tornou- se o seu curador. Em 24 de setembro de 2025, Raul se interessou em comprar o imóvel de Sara, e Vítor se apresentou como procurador da mãe. Na qualidade de advogado de Raul, assinale a opção que apresenta a sua orientação jurídica para o caso.",
           "alternativas": [
             {
@@ -1147,6 +1189,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito da Criança e do Adolescente",
+          "tema": "Ato Infracional e Medidas Socioeducativas",
           "enunciado": "Enzo, de 16 anos de idade, ingressou em um grande supermercado e subtraiu diversas peças de picanha, que totalizaram mais de R$ 2.000,00 (dois mil reais). Um segurança, percebendo a atitude suspeita de Enzo, o apreendeu no estacionamento. Enzo confessou a autoria. O Ministério Público representou contra o adolescente pela prática de ato infracional análogo ao crime de furto (Art. 155, caput, do CP). Durante a instrução processual, ficou constatado que essa foi a primeira passagem de Enzo pela Vara da Infância e Juventude. A família de Enzo procurou você, como advogado(a), para saber qual medida poderá ser aplicada ao caso. Com base na expressa disposição do Estatuto da Criança e do Adolescente (ECA), assinale a afirmativa que apresenta, corretamente, a medida que você indicou.",
           "alternativas": [
             {
@@ -1174,6 +1217,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito da Criança e do Adolescente",
+          "tema": "Direitos Fundamentais da Criança e do Adolescente",
           "enunciado": "Matheus, 17 anos, insiste em passar longos períodos na rua, deixando de lado os deveres escolares e, também, os compromissos familiares. A rebeldia de Matheus é atribuída à ausência do pai, que abandonou a família logo após o seu nascimento e de quem nunca mais ele teve notícia. Carolina, preocupada com a situação do filho, busca a inserção de Matheus no mercado formal de trabalho e encontra a oportunidade em um grande supermercado da região. O estabelecimento necessita de uma pessoa para carregar as caixas de produtos e abastecer o mercado durante a madrugada, especificamente entre meia-noite e quatro horas da manhã. Entretanto, por ainda não ter atingido a maioridade, Carolina possui dúvidas sobre a possibilidade de Matheus trabalhar. Por isso, procura você, como advogado(a), para ter sua orientação jurídica. Sobre a hipótese apresentada, assinale a afirmativa que, corretamente, apresenta a sua orientação.",
           "alternativas": [
             {
@@ -1201,6 +1245,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Consumidor",
+          "tema": "Defesa do Consumidor em Juízo",
           "enunciado": "Mário, passando por dificuldades financeiras, solicitou, em juízo, a instauração de processo de repactuação de dívidas, que é deferido juntamente com a designação de audiência conciliatória. Na data fixada, a maior parte dos credores compareceu, com exceção do Banco XYZ S.A. , que preferiu não se submeter à conciliação por superendividamento, por entender ser infrutífero o procedimento. A respeito da ausência do Banco XYZ S.A. à audiência, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1228,6 +1273,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Consumidor",
+          "tema": "Práticas e Contratos de Consumo",
           "enunciado": "Maria Victoria, em maio de 2023, decidiu aceitar a oferta do cartão de crédito Black, oferecido pelo Banco Y, do qual já era correntista há cerca de três anos. Contudo, em agosto de 2023, deixou de pagar a fatura de julho, no valor de R$ 5.300,00 (cinco mil e trezentos reais). Em razão disso, passado o vencimento, o Banco Y debitou automaticamente da conta -corrente dela o valor de R$ 300,00 (trezentos reais), referente ao denominado “pagamento mínimo” da fatura do cartão de crédito. Sobre a hipótese apresentada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1255,6 +1301,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Títulos de Crédito e Contratos Empresariais",
           "enunciado": "Mercado Barra Velha Ltda. emitiu nota promissória no valor de R$ 19.800,00 (dezenove mil e oitocentos reais), com vencimento no dia 19 de dezembro de 2021. Não houve pagamento na data do vencimento e o credor somente levou o título a protesto no dia 2 de dezembro de 2023, sendo o protesto lavrado dois dias após. Sobre o caso, com base na legislação de regência da nota promissória e das condições para sua cobrança em face do emitente, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1282,6 +1329,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Recuperação Judicial e Falência",
           "enunciado": "A padaria Jacaré dos Homens Ltda. teve sua falência requerida em razão da impontualidade no pagamento de duplicata de prestação de serviço, no valor de R$ 62.000,00 (sessenta e dois mil reais), aceita e devidamente protestada para este fim. A devedora procurou você, como advogado(a), inf ormando que pretende depositar o valor cobrado. Acerca deste depósito, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1309,6 +1357,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Propriedade Industrial",
           "enunciado": "A sociedade empresária Pinheiros & Filhos Ltda ., constituída em 2017 e com sede em Pancas, ES, pretende registrar como marca o sinal distintivo nominativo Pancadão, a ser utilizado nos produtos alimentícios que ela fornece a mercados, supermercados e armazéns na região de Pancas, ES, e Resplendor, MG. Na mesma cidade de Pancas, ES, há um estabelecimento explorado pelo empresário individual Domingos Guandu, cujo título é Bar e Mercearia Pancadão, constituído em 2000 e usado desde então, que revende os produtos alimentícios fornecidos por Pinheiros & Filhos Ltda. Considerados estes dados, a respeito do registro de marca , assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1336,6 +1385,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Empresário e Sociedade Empresária",
           "enunciado": "Em relação aos elementos caracterizadores do empresário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1363,6 +1413,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Cumprimento de Sentença e Execução",
           "enunciado": "Machado de Assis ajuizou ação indenizatória em face de Quincas Borba, pugnando pela condenação do réu ao pagamento de indenização por danos morais e materiais, resultantes do inadimplemento de contrato de prestação de serviços. O Juiz condenou o réu ao pagamento de indenização por danos morais no montante de R$ 5.000,00 (cinco mil reais) e danos materiais, a serem apurados em sede de liquidação de sentença, diante da necessidade de comprovação dos prejuízos que vêm sendo experimentados pelo autor, desde a ocorrência do ilícito. Quincas Borba contratou você, como advogado(a), para interpor recurso de apelação, buscando a reforma integral da sentença. Tomando o caso acima como premissa, assinale a opção que, corretamente, apresenta sua orientação.",
           "alternativas": [
             {
@@ -1390,6 +1441,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Cumprimento de Sentença e Execução",
           "enunciado": "Por conta de danos sofridos em um acidente de trânsito, Juciara ajuizou ação em face de Carla, pleiteando a sua condenação ao pagamento de indenização. Julgado procedente o pedido, a Ré foi condenada ao pagamento de R$ 20.000,00 (vinte mil reais) a título de indenização por danos morais e materiais. Transitada em julgado a sentença, Carla imediatamente peticiona no referido processo, antes de qualquer depósito, oferecendo o pagamento de R$ 15.000,00 (quinze mil reais), com o devido depósito de tal quantia, e pleiteando o reconhecimento do cumprimento de sua obrigação. Sobre tal fato, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1417,6 +1469,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Recursos",
           "enunciado": "Paula ajuizou ação indenizatória por atraso de voo contra a companhia aérea Big Ben perante certo Juizado Especial Cível. Em sentença, o Magistrado condenou a companhia aérea ao pagamento de determinada quantia em dinheiro. Interposto recurso inominado pela companhia aérea, a Turma Recursal competente proveu o recurso. No entanto, em sua decisão, cometeu graves erros de aplicação de normas infraconstitucionais federais e normas constitucionais. A decisão colegiada, por outro lado, não incorreu em omissão, contradição, obscuridade ou erro material, e a matéria constitucional está devidamente pré-questionada. Diante desse cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1444,6 +1497,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Recursos",
           "enunciado": "Aziz ajuizou ação de procedimento comum contra Betina, na qual requer sua condenação ao pagamento de R$ 10.000,00 (dez mil reais) por danos morais, após ter se sentido humilhado por Betina, que o xingou na frente de colegas de trabalho durante certa reunião profissional. Em primeiro grau, o Magistrado proferiu sentença que julgou parcialmente procedente o pedido de Aziz, condenando Betina ao pagamento de R$ 6.000,00 (seis mil reais). Aberto o prazo de 15 dias úteis para a interposição de recurso contra a sentença, apenas Aziz interpôs apelação, tendo requerido a reforma da decisão para que Betina fosse condenada a pagar o valor integral de R$ 10.000,00 (dez mil reais). Após a interposição do recurso de apelação por Aziz, o Magistrado abriu o prazo para que Betina apresentasse contrarrazões no prazo legal. Diante desse cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1471,6 +1525,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Procedimentos Especiais",
           "enunciado": "João propõe ação de exigência das contas contra o seu sócio, Vinícius, para verificar a regularidade da administração dos bens da pessoa jurídica Discos de Vinil Ltda , da qual ambos são sócios. Vinícius contesta o pedido, sustentando que já havia prestado as contas extrajudicialmente, bem como efetuado a juntada da prestação de contas em conjunto com a contestação. Nesse caso, continuando o procedimento, o Juiz deverá",
           "alternativas": [
             {
@@ -1498,6 +1553,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Competência e Partes",
           "enunciado": "A Associação de Defesa dos Usuários de Smartphone (ADUS) ajuizou ação civil pública em face do fabricante X, requerendo a sua condenação para a retirada do aparelho Y do mercado, em razão de vícios em seu processo construtivo. Após a oferta de contestação pelo réu, no curso da fase instrutória, houve abandono imotivado da causa pela Associação. Sobre o caso narrado, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1525,6 +1581,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Crimes contra a Dignidade Sexual",
           "enunciado": "Daniel chegou em casa embriagado e exigiu que sua esposa, Bianca, praticasse com ele conjunção carnal. Diante da recusa de Bianca, Daniel passou a empregar a coação física contra a sua esposa, porém, os gritos de Bianca foram ouvidos por vizinhos, que lograram entrar no imóvel e imobilizar Daniel, antes que consumasse o ato. Daniel foi denunciado pelo delito de estupro, mas, alguns meses após os fatos, e antes do recebimento da denúncia, Daniel e Bianca reataram o casamento. A você, na qualidade de advogado(a) de defesa de Daniel, cabe alegar",
           "alternativas": [
             {
@@ -1552,6 +1609,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
           "enunciado": "Hermenegildo e Ataulfo são amigos desde a infância, mas, devido a divergências políticas, tornaram -se inimigos. Na véspera da eleição para Presidente do Sindicato da classe a qual pertencem, eles se encontraram em um botequim da cidade de Sucupira e o primeiro sacou sua pistola, que estava carregada com 17 munições, e disparou uma vez, com a intenção de matar, na direção de Ataulfo, atingindo-o no joelho. No clima tenso que surgiu depois do ato, Ataulfo lembrou a Hermegildo que ambos formaram o ataque do time de futebol que se sagrou campeão juvenil na escola primária. Hermenegildo, emocionado com a lembrança do ex-amigo, abandonou a arma de fogo no chão e foi embora. Ataulfo sobreviveu sem sequelas. Diante da situação hipotética narrada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1579,6 +1637,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Concurso de Pessoas e de Crimes",
           "enunciado": "Leandro e Leonardo planejaram matar Sérgio e, para tanto, resolveram simular um assalto durante o qual aqueles efetuariam disparos com armas de fogo na direção deste. Leandro e Leonardo foram conduzidos ao local em dois carros pilotados, respectivamente, por José e Luciano, que estavam cientes do plano, mas se recusaram a pegar nas armas de fogo. Sérgio faleceu em razão dos ferimentos. Diante da situação hipotética, assinale a opção correta.",
           "alternativas": [
             {
@@ -1606,6 +1665,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Crimes contra a Pessoa",
           "enunciado": "Paulo, ao sair irritado da partida em que o seu clube de futebol havia perdido de goleada para o maior rival, sacou sua arma de fogo e, mesmo não desejando diretamente matar alguém, mas assumindo o risco de fazê -lo, disparou diversas vezes na direção de um a estação de trem, pois tinha ciência de que ela estava lotada e servia como ponto de encontro para a torcida do clube rival. Um dos disparos acabou atingindo fatalmente um padre, que se deslocava em direção à igreja para oficiar a missa. Sobre o crime praticado por Paulo, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1633,6 +1693,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Penas e Extinção da Punibilidade",
           "enunciado": "Josué foi condenado, por sentença transitada em julgado, pela prática do crime de tráfico de drogas, a cumprir a pena de 9 anos de reclusão e 900 dias-multa. Durante a execução da pena, entre as opções de trabalho e estudo que lhe foram ofertadas, Josué optou por aderir aos cursos profissionalizantes a distância, com o objetivo de reduzir o tempo de encarceramento. Diante de tal situação hipotética, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1660,6 +1721,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Concurso de Pessoas e de Crimes",
           "enunciado": "Pedro costumava consumir maconha. Vislumbrando a perspectiva de lucro, passou a plantá -la e a fabricar artesanalmente cigarros de maconha, mantendo-os parcialmente em depósito e vendendo o restante da produção por meio de aplicativo de mensagens telefônicas. Devido ao aumento da divulgação do serviço prestado, Pedro foi investigado e preso quando possuía, em casa, 500 gramas de maconha, sendo acusado da prática do crime de tráfico de drogas por cinco vezes, haja vista que importou sementes, plantou -as, fabricou cigarros e os manteve em depósito, além de vender parte da produção. Você, como advogado(a), foi constituído(a) por Pedro para atuar no curso da Ação Penal. Sobre o caso narrado, assinale a opção que indica, corretamente, a orientação jurídica que você prestou.",
           "alternativas": [
             {
@@ -1687,6 +1749,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Ação Penal",
           "enunciado": "Marivaldo foi denunciado por organização criminosa e peculato. A denúncia foi lastreada, exclusivamente, no depoimento de Sérgio, corréu, que celebrou acordo de colaboração premiada com o Ministério Público. Assim, recebida a denúncia, foram citados ambos os réus, sendo que a citação de Marivaldo ocorreu no dia 10/05, e a de Sérgio, no dia 20/05 do corrente ano. De acordo com o caso narrado, na qualidade de advogado(a) de Marivaldo, assinale a opção que apresenta a conduta adequada a ser adotada.",
           "alternativas": [
             {
@@ -1714,6 +1777,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Ação Penal",
           "enunciado": "Vanessa foi denunciada pelo crime de furto por ter subtraído um celular. Na audiência, a prova testemunhal apontou que Vanessa utilizou de grave ameaça, consistente em apontar um revólver para a vítima, como meio de obtenção do celular. A vítima não compareceu à audiência de reconhecimento de pessoas. O Juiz, usando a prova testemunhal, sem qualquer aditamento da denúncia por parte do Ministério Público, condenou Vanessa pelo crime de roubo. Sobre a hipótese, assinale a opção que apresenta, corretamente, o que a defesa deve alegar na apelação.",
           "alternativas": [
             {
@@ -1741,6 +1805,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Inquérito Policial e Investigação",
           "enunciado": "Anderson está sendo investigado pela prática do crime de extorsão mediante sequestro. Depois da quebra dos sigilos bancários e fiscal, a polícia efetuou o indiciamento de Anderson, sendo certo que não existia mais nenhuma diligência pendente. A defesa de Anderson requereu o acesso aos autos da investigação, que foi negado pelo Delegado de Polícia, com o argumento da inquisitividade e sigilo do inquérito policial. O Juiz também negou o acesso afirmando que o inquérito é sigiloso e possuía extratos bancários e fiscais. Assinale a opção que indica, corretamente, o argumento que você, na condição de advogado(a), deve usar no recurso para garantir o acesso ao inquérito.",
           "alternativas": [
             {
@@ -1768,6 +1833,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Ação Penal",
           "enunciado": "Nicola injuriou Robson e Carlos, servidores públicos federais, por fatos relacionados a times de futebol, mas sem caráter racial na injúria. Robson ofereceu queixa-crime, ao passo que Carlos deixou passar o prazo de decadência. O Juiz extinguiu a punibilidade, sob o argumento de que a decadência do direito de um dos envolvidos provocava a extinção de punibilidade em relação a todos. Assinale a opção que apresenta o recurso que você, na condição de advogado(a) de Robson, deve apresentar.",
           "alternativas": [
             {
@@ -1795,6 +1861,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Recursos Penais",
           "enunciado": "Leandro oferece queixa-crime no Juizado Especial Criminal. O Juiz rejeita a queixa sustentando a existência de decadência. Na condição de advogado(a) de Leandro, assinale a opção que indica, corretamente, o recurso que deve ser interposto contra a decisão que rejeitou a queixa.",
           "alternativas": [
             {
@@ -1822,6 +1889,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Crimes contra a Administração Pública",
           "enunciado": "Débora, primária e sem antecedentes, foi presa em flagrante no Aeroporto Internacional de Guarulhos, quando desembarcava no Brasil, em voo vindo do exterior, com um artefato que simulava uma arma de fogo de uso proibido na bagagem, ou seja, um simulacro que pode facilmente ser confundido com uma arma de fogo real. O simulacro é produto de importação proibida no Brasil. Débora foi enquadrada no delito de tráfico internacional de armas, previsto no Art. 18 do Estatuto do Desarmamento, cuja pena cominada é de 8 a 16 anos de reclusão, com a causa de aumento de metade (Art. 19 do Estatuto). A Polícia Federal lavrou o auto de prisão em flagrante e Débora foi submetida à audiência de custódia perante o Juiz Federal de Guarulhos. Como advogado(a) de Débora, assinale a afirmativa que contém as teses defensivas corretas.",
           "alternativas": [
             {
@@ -1849,6 +1917,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Previdenciário",
+          "tema": "Benefícios Previdenciários",
           "enunciado": "Antônio José, segurado obrigatório do Regime Geral de Previdência Social, completou 65 anos de idade, após 30 anos ininterruptos de atividade remunerada como segurado empregado. Diante disso, procurou você, como advogado(a), para ser orientado sobre sua aposentadoria. Assinale a opção que apresenta, corretamente, a sua orientação.",
           "alternativas": [
             {
@@ -1876,6 +1945,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Previdenciário",
+          "tema": "Acidente de Trabalho",
           "enunciado": "Manuela Dias, empregada doméstica, procurou você, como advogado(a), para receber orientação jurídica para uma demanda relacionada a acidente de trabalho, que ocorreu durante os seus afazeres diários na residência da empregadora doméstica, que gerou incapacidade temporária. Assinale a opção que indica a orientação correta.",
           "alternativas": [
             {
@@ -1903,6 +1973,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Remuneração e Verbas Rescisórias",
           "enunciado": "Paulo foi contratado pela sociedade empresária Novos Horizontes para exercer a função de técnico em informática. João trabalha no mesmo setor e, por força de readaptação, exerce a mesma função de Paulo há seis meses. Luciana foi contratada um ano depois de Paulo, e ambos exercem a mesma função, não havendo diferença no trabalho realizado pelos três empregados. A sociedade empresária não tinha pessoal organizado em quadro de carreira, e o trabalho era distribuído entre os três indistintamente. Contudo, João recebia R$ 600,00 (seiscentos reais) a mais que Paulo, que, por sua vez recebia R$ 500,00 (quinhentos reais ) a mais de salário que Luciana. Diante disso, você, como advogado(a), foi consultado(a) por Luciana acerca da diferença salarial. Assinale a opção que apresenta a resposta correta dada ao questionamento.",
           "alternativas": [
             {
@@ -1930,6 +2001,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Relação de Emprego",
           "enunciado": "Uma Organização não Governamental está realizando uma série de parcerias com entidades privadas visando à inserção e ao aprendizado de menores no mercado de trabalho, a fim de estimular o primeiro emprego, bem como evitar os riscos de envolvimento com a criminalidade. Diante disso, consultou você, na qualidade de advogado(a), a respeito do trabalho do menor como empregado. Assinale a opção que apresenta, corretamente, a sua orientação sobre o caso.",
           "alternativas": [
             {
@@ -1957,6 +2029,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Direito Coletivo do Trabalho",
           "enunciado": "Pedro trabalha numa sociedade empresária desde 2022. Na norma coletiva da categoria de Pedro há uma cláusula que fixa o intervalo intrajornada de 20 minutos para a jornada superior a seis horas diárias e, outra cláusula, prevendo que a remuneração do trabalho noturno será igual à do diurno. Considerando o que foi estipulado na norma coletiva, de acordo com a CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -1984,6 +2057,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Remuneração e Verbas Rescisórias",
           "enunciado": "A sociedade empresária Distribuidora de Bebidas Bom Paladar Ltda. pretende instituir uma política de incentivo aos seus empregados. Para tanto, deseja dar benefícios compreendidos em melhorias da condição de trabalho, com o fornecimento de uniformes novos, mais leves e confortáveis, computadores portáteis, transporte co letivo de ida e volta para o trabalho em ônibus da sociedade empresária, além de incentivo à educação, com pagamento de mensalidades e bolsa -livros para todos os empregados. Você foi procurado(a), como advogado(a), para responder à consulta da sociedade empresária acerca da integração dos valores à remuneração dos empregados. Diante disso, observado o texto da CLT, assinale a afirmativa que, corretamente, apresenta a sua resposta.",
           "alternativas": [
             {
@@ -2011,6 +2085,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Estabilidades e Garantias de Emprego",
           "enunciado": "Jonas trabalhava em uma sociedade empresária desde 2021. Com a nova chefia, que assumiu em janeiro de 2025, Jonas passou a ser explícita e sistematicamente discriminado pelo chefe em razão de sua orientação sexual, já que mantinha uma relação homoafetiva que era de conhecimento geral. Jonas foi dispensado, sem justa causa, em março de 2025. Em razão disso, Jonas o(a) procurou, na condição de advogado(a), para conhecer dos seus direitos. Assinale a opção que, considerando os fatos narrados e a norma de regência, apresenta, corretamente, sua orientação jurídica para o caso.",
           "alternativas": [
             {
@@ -2038,6 +2113,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Remuneração e Verbas Rescisórias",
           "enunciado": "Jorge Lucas trabalhou por um ano na sociedade empresária Alfa Beta Gama Ltda . Insatisfeito por trabalhar várias horas extras diárias sem recebê -las, apesar de consignar corretamente a sobrejornada nos controles de ponto, Jorge Lucas pediu demissão. Na rescisão do contrato de trabalho, por um equívoco do Departamento de Pessoal, foi pago um valor equivalente ao aviso prévio. Dias depois, Jorge Lucas ajuizou reclamação trabalhista pleiteando horas extras. A sociedade empresária contratou você, como advogado(a), para defendê-la. Acerca do que poderá ser alegado sobre o equívoco do pagamento a mais de aviso prévio, à luz do entendimento consolidado na jurisprudência do Tribunal Superior do Trabalho (TST), assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2065,6 +2141,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Provas no Processo do Trabalho",
           "enunciado": "Em determinada reclamação trabalhista que tramita perante a 60ª Vara do Trabalho de Maringá, PR, o autor requereu o pagamento do vale-transporte, que jamais fora pago, e as diferenças do FGTS, afirmando que, em parte do contrato, ele não foi depositado pelo ex-empregador na conta vinculada. Em defesa, a sociedade empresária sustentou que o empregado não necessitava de vale -transporte, porque ele residia próximo à sede da sociedade empresária em que exercia as suas atividades, deslocando-se a pé para ir ao serviço e voltar, e que recolheu de forma escorreita o FGTS. Sobre o ônus da prova, considerando os fatos narrados e o entendimento consolidado do Tribunal Superior do Trabalho (TST), assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2092,6 +2169,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Recursos Trabalhistas",
           "enunciado": "Em determinada reclamação trabalhista que tramita perante a 58ª Vara do Trabalho de Cuiabá, MT, o pedido formulado foi julgado procedente em parte. A sociedade empresária reclamada recorreu ordinariamente e o reclamante, de forma adesiva. Distribuídos os apelos pelo Tribunal Regional, o Relator verificou que o recurso ordinário da reclamada se encontrava intempestivo, já que interposto no 16º dia contado da publicação da sentença. Considerando esses fatos e a norma de regência, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2119,6 +2197,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Atos, Prazos e Nulidades",
           "enunciado": "Daniele, assistida pelo seu sindicato de classe, ajuizou reclamação trabalhista contra o seu ex -empregador. Na audiência, as partes chegaram a um acordo de R$ 200.000,00 (duzentos mil reais), mas o Juiz indeferiu a concessão de gratuidade de justiça à auto ra, porque a situação financeira dela era, comprovadamente, muito confortável. O Juiz fixou as custas em R$ 4.000,00 (quatro mil reais). Considerando esses fatos e o previsto na CLT, uma vez que nada foi convencionado no acordo, assinale a opção que indica quem pagará as custas.",
           "alternativas": [
             {
@@ -2146,6 +2225,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Atos, Prazos e Nulidades",
           "enunciado": "Jonas, executado na Justiça do Trabalho, reclamou com você, na condição de advogado(a), porque um Oficial de Justiça chegou à residência dele, em uma quinta-feira, dia útil, às 5h30, com ordem judicial para penhorar o seu imóvel, sendo certo que o mandado de penhora não continha nenhuma previsão de excepcionalidade. A revolta do executado reside no horário de chegada do Oficial de Justiça à sua residência, o que o obrigou a acordar muito cedo, o mesmo valendo para sua esposa. Sobre os fatos apresentados, considerando o previsto na CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2179,6 +2259,7 @@ var QuestoesSeed = (function () {
       "questoes": [
         {
           "territorio": "Ética",
+          "tema": "Ética e Disciplina",
           "enunciado": "Antônia, advogada atuante na área previdenciária, foi consultada por Osvaldo sobre a possibilidade de propor ação judicial contra decisão do Instituto Nacional do Seguro Social (INSS), visando à obtenção de benefício previdenciário indeferido na via administrativa. Ao estudar o caso, Antônia verificou que o indeferimento do benefício havia se dado com base em dispositivo claro e expresso da lei que dispõe sobre o Plano de Benefícios da Previdência Social; e que não havia, até aquele momento, notícia de precedente judicial favorável à pretensão de Osvaldo. Essas informações, bem como os riscos de eventual ação judicial, foram prestadas de modo claro e inequívoco por Antônia ao cliente. No entanto, d evido à insistência de Osvaldo, Antônia decidiu propor a demanda judicial. Com base nesse cenário, considerando o regime das infrações e sanções disciplinares da Advocacia, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2206,6 +2287,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Incompatibilidades e Impedimentos",
           "enunciado": "Roberto, advogado autônomo com destacada atuação no Direito Criminal, foi investido no cargo de diretor jurídico da Nossa Estatal, empresa pública federal que atua no mercado financeiro em regime de competição com o setor privado. Acerca da nova condição profissional de Roberto, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2233,6 +2315,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Sociedade de Advogados",
           "enunciado": "Gustavo, conhecido comerciante de Brasília/DF, obteve graduação no c urso de Direito. Em sequência, foi aprovado no Exame de Ordem, e, em razão disso, inscreveu-se como advogado na OAB. Desejando conciliar as atividades de comércio com o exercício da advocacia, decidiu reunir, em um mesmo estabelecimento, seu escritório de advocacia e sua loja comercial, adaptando a fachada do prédio para identificar que, naquele local, praticava -se, conjuntamente, o comércio e a advocacia. Para solucionar a parte contábil, decidiu elaborar aditivo ao contrato social da sua sociedade empresá ria de comércio, tendo incorporado, como finalidade adicional da pessoa jurídica, a atividade de advocacia. Em função da expansão do negócio, admitiu sócios sem formação jurídica na sociedade, para que esses últimos conduzissem a parte comercial, e ele, Gu stavo, pudesse se dedicar à prestação de serviços jurídicos. Sobre a natureza e as características da sociedade de advogados e sobre sua constituição e registro, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2260,6 +2343,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Ética e Disciplina",
           "enunciado": "O Presidente do Conselho Seccional da Ordem dos Advogados do Brasil do Estado Alfa recebeu representação devidamente identificada, contendo narrativa fática indicat iva da prática de infração disciplinar pelo advogado Paulo. O autor da representação apresentou documentos, rol de testemunhas e indicou a produção de provas. Ato contínuo, o Presidente imediatamente designou relator para a competente instrução do processo disciplinar. Considerando a legislação que rege o processo disciplinar do advogado, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2287,6 +2371,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Honorários Advocatícios",
           "enunciado": "O advogado Gomes representou Dênis em uma ação de responsabilidade civil contra o Banco Alfa, tendo firmado contrato escrito com Dênis, no qual foi estipul ado que Gomes receberia honorários convencionais de 20% sobre o proveito econômico obtido, além dos honorários sucumbenciais que fossem concedidos. No entanto, Dênis entrou em contato diretamente com o advogado do Banco Alfa e firmou um acordo extrajudicia l para receber R$ 5.000,00 de indenização por danos morais, sem a participação de Gomes e renunciando aos direitos aos honorários advocatícios. Gomes foi informado do acordo posteriormente. Sobre o caso relatado, com base no Art. 24 do Estatuto da Advocacia e da OAB, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2314,6 +2399,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Direitos e Prerrogativas do Advogado",
           "enunciado": "O advogado Ivan precisava embarcar em um voo doméstico de Recife para Curitiba, a fim de participar do Congresso Brasileiro de Direito de Família. Ao chegar ao balcão de check-in, percebeu que havia esquecido todos os seus documentos de identificação em seu escritório, com exceção da carteira da Ordem dos Advogados do Brasil (OAB), na qual consta sua foto. A responsável pelo atendimento da companhia aérea informou que não aceitaria a carteira da OAB como documento de identidade e, por iss o, Ivan estaria impedido de embarcar. Ivan argumentou que o documento deveria ser aceito como prova de identidade civil, uma vez que é o único documento de identidade profissional obrigatório para o exercício da advocacia. Sobre a hipótese, com base no Estatuto da Ordem dos Advogados do Brasil, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2341,6 +2427,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Direitos e Prerrogativas do Advogado",
           "enunciado": "No âmbito de investigação sigilosa, o Magistrado com petente decretou a prisão de João, amigo íntimo de Carlos. Carlos é advogado regularmente inscrito na Ordem dos Advogados do Brasil. Ao saber do cumprimento do mandado, com a consequente custódia de João, Carlos se dirigiu à delegacia e, em seguida, procurou o Magistrado plantonista para tratar do caso. Nesse contexto, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2368,6 +2455,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Ética e Disciplina",
           "enunciado": "Euclides é advogado regularmente inscrito na OAB e foi flagrado praticando assédio sexual contra diversas colaboradoras de seu escritório, conduta que foi amplamente divulgada na imprensa regional após a veiculação de imagens captadas por câmeras de segurança, nas quais o advogado aparece se insinuando de forma inapropriada. O caso causou grande repercussão regional, afetando a imagem da Advocacia. Diante disso, o Tribunal de Ética e Disciplina do Conselho Seccional determinou a suspensão preventiva de Euclides, designando sessão especial para ouvi -lo na semana seguinte à suspensão. No mesmo ato, o Tribunal estabeleceu que o processo disciplinar deveria ser concluído em prazo máximo de 180 dias. Com base no Estatuto da Advocacia e da OAB, sobre a decisão do Tribunal, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2395,6 +2483,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Filosofia do Direito",
+          "tema": "Justiça (autores clássicos)",
           "enunciado": "John Locke, em seu Segundo Tratado sobre o Governo , fala da instituição de uma sociedade política onde devem vigorar não mais as leis da natureza, mas as leis feitas pelo poder civil. Portanto, nessa sociedade política, o parlamento faz as leis para que sejam cumpridas. Assinale a opção que, segundo Lock e no livro em referência, expressa corretamente a ideia de cumprimento e obediência às leis civis.",
           "alternativas": [
             {
@@ -2422,6 +2511,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Filosofia do Direito",
+          "tema": "Hermenêutica e Interpretação",
           "enunciado": "O Artigo 5º , inciso XI, da CRFB/88 dispõe que “ a casa é asilo inviolável do indivíduo, ninguém nela podendo penetrar sem consentimento do morador, salvo em caso de flagrante delito ou desastre, ou para prestar socorro, ou, durante o dia, por determinação judicial.” João Vicente, que residia em um quarto de hotel, procura você, na função de advogado(a), para tentar anular o ingresso policial, sem mandado judicial e sem flagrante delito, utilizando como fundamento a norma constitucional acima citada. Assinale a opção que indica o tipo de interpretação adequado para fundamentar a ilegalidade do ingresso.",
           "alternativas": [
             {
@@ -2449,6 +2539,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Ordem Social e Econômica",
           "enunciado": "Após diversos indicadores de qualidade da saúde evidenciarem que, entre todos os estados da Federação, o Estado Delta é aquele que oferta o pior serviço de saúde à sua população, o governador desse Estado prometeu elevado investimento público na área. Ele assegurou que iria trabalhar junto à Assembleia Legislativa no sentido de aumentar a dotação orçamentária dos hospitais públicos estaduais, como, também, auxiliar financeiramente os hospitais privados que comprovassem, por vias fidedignas, que sua margem de lucro estaria sendo insufic iente para investir em uma melhor qualidade no atendimento. Sobre o posicionamento do governador, segundo a perspectiva jurídico-constitucional, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2476,6 +2567,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Organização dos Poderes",
           "enunciado": "Um consumidor, cliente de instituição financeira constituída sob a forma de sociedade de economia mista federal, teve seu nome negativado indevidamente em um cadastro de devedores. Por essa razão, procurou você, na qualidade de advogado(a), para saber se seria possível ingressar, de acordo com a Constituição da República, com uma ação de responsabilidade civil em face da referida instituição no âmbito da Justiça Federal. Com base na situação descrita e no sistema jurídico-constitucional brasileiro, assinale a opção que apresenta, corretamente, sua resposta.",
           "alternativas": [
             {
@@ -2503,6 +2595,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Controle de Constitucionalidade",
           "enunciado": "No Estado Sigma foi promulgada a Lei Estadual nº X/2024, que aborda matéria de Direito Financeiro. Ocorre que os dispositivos desse diploma normativo entram em confli to com as normas do Ato das Disposições Constitucionais Transitórias (ADCT) que ainda produzem seus naturais efeitos. O Presidente do Partido Político Delta, o deputado federal João Silva, sem possuir conhecimentos jurídicos, resolve consultar você, como a dvogado(a), para saber se poderia questionar a constitucionalidade das normas da Lei Estadual nº X/2024, por afrontarem as normas do ADCT. Assinale a opção que indica a resposta correta à consulta formulada.",
           "alternativas": [
             {
@@ -2530,6 +2623,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Processo Legislativo",
           "enunciado": "O Presidente da República apresentou projeto de lei para aumentar a remuneração dos cargos X e Y do Poder Executivo. Durante a tramitação na Câmara dos Deputados, foi aprovada uma emenda parlamentar que estendeu esse aumen to também aos cargos W e X. Sobre a emenda parlamentar apresentada, considerando a sistemática estabelecida pela Constituição da República, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2557,6 +2651,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Controle de Constitucionalidade",
           "enunciado": "A partir da análise do conflito entre normas constitucionais originárias em uma relação processual, ambas válidas e vigentes, João, advogado do autor, sustentou que a norma X, por ser, sob a perspectiva conteudística, materialmente constitucional, deve ter preponderância sobre a norma Y, pois esta última versa sobre matéria que não é própria de uma Constituição, sendo considerada norma constitucional apenas sob o prisma da forma. Pedro, advogado da parte ex adversa, por não concordar com a análise de João, se opõe, afirmando que, sob uma perspectiva normativo-hierárquica, a discussão não possui sentido, já que, prima facie , ambas as normas possuem a mesma hierarquia no âmbito do ordenamento jurídico brasileiro. Sobre a hipótese apresentada, segundo a visão jurídico - constitucional brasileira, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2584,6 +2679,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Intervenção do Estado na Propriedade",
           "enunciado": "Durante uma forte tempestade que causou inundações e interrupções no fornecimento de energia na cidade Delta, o Prefeito Municipal, buscando evitar o agravamento da situação de iminente perigo público, requisitou um gerador de energia de propriedade da soc iedade empresária Gama para manter em funcionamento o hospital municipal. O equipamento foi utilizado por dois dias, até que o fornecimento de energia fosse restabelecido, o que não causou qualquer dano ao bem requisitado. Diante dessa situação, o sócio -gerente de Gama compareceu à Prefeitura de Delta para exigir indenização pela requisição do bem. A esse respeito, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2611,6 +2707,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direitos Humanos",
+          "tema": "Sistema Interamericano (Corte/Comissão)",
           "enunciado": "No que concerne aos standards internacionais atualmente adotados para defesa do Direito Humano à Igualdade, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2638,6 +2735,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direitos Humanos",
+          "tema": "Sistema Global de Proteção (ONU)",
           "enunciado": "Em relação aos Direitos Humanos das pessoas presas, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2665,6 +2763,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Eleitoral",
+          "tema": "Ações Eleitorais",
           "enunciado": "Maria e João foram eleitos, respectivamente, prefeita e vice - prefeito do Município Alfa, com poucos votos de vantagem sobre Ana e Antônio, que formavam a outra chapa que disputou a eleição. Dez dias após a diplomação dos eleitos, os integrantes da chapa derrotada obtiveram provas cabais de que os integrantes da chapa vencedora teriam praticado uma fraude, o que comprometera a normalidade e a legitimidade do pleito. Sobre o caso apresentado, como advogado(a) dos integrantes da chapa derrotada, assinale a medida judicial que deve ser ajuizada em face dos integrantes da chapa vencedora.",
           "alternativas": [
             {
@@ -2692,6 +2791,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Eleitoral",
+          "tema": "Propaganda Eleitoral",
           "enunciado": "Pedro, que teve deferido o registro de candidatura para concorrer ao cargo eletivo de Prefeito Municipal de uma importante capital brasileira, deseja aumentar a capilaridade de seu projeto de governo junto à população, de modo que um número maior de eleitores tenha conhecimento de suas propostas. Com esse objetivo, consultou você, como advogado(a), a respeito da possibilidade de veicular propaganda eleitoral paga, na imprensa escrita, durante o período de propaganda eleitoral. Quanto à orientação a ser dada, assinale a afirmativa que apresenta, corretamente, sua resposta.",
           "alternativas": [
             {
@@ -2719,6 +2819,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Internacional",
+          "tema": "Direito Internacional Privado (LINDB)",
           "enunciado": "João, brasileiro domiciliado no Japão, celebrou um contrato presencial no Japão com Adam, estrangeiro domiciliado no Brasil, com uma cláusula de eleição de foro, em que o Brasil foi escolhido como competente para resolver eventuais conflitos. A controvérsia sobre o contrato foi submetida à justiça brasileira. Assinale a opção que indica, conforme a Lei de Introdução às normas do Direito Brasileiro (LINDB), a lei que deve ser aplicada para a resolução da lide.",
           "alternativas": [
             {
@@ -2746,6 +2847,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Internacional",
+          "tema": "Direito Internacional Público",
           "enunciado": "A Convenção de Viena sobre os Direitos dos Tratados de 1969 estabelece regras gerais para os tratados internacionais em relação a diversos aspectos, como entrada em vigor, aplicação e interpretação. Quanto à interpretação dos tratados, estes devem ser interpretados de boa-fé levando em consideração o contexto, o objetivo e a finalidade. A esse respeito, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2773,6 +2875,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Financeiro",
+          "tema": "Orçamento Público (LOA/LDO/PPA)",
           "enunciado": "Em um determinado exercício financeiro , o Projeto de Lei Orçamentária Anual (PLOA) enviado pelo Governador do Estado Alfa à Assembleia Legislativa dispunha sobre matérias relacionadas ao direito financeiro, entre as quais: I. autorização para abertura de créditos adicionais suplementares; II. autorização para abertura de créditos adicionais especiais; III. autorização para contratação de operações de crédito; IV. autorização para contratação de operações de crédito por antecipação de receita. Diante desse cenário, à luz do texto da Constituição Federal de 1988, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2800,6 +2903,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Financeiro",
+          "tema": "Lei de Responsabilidade Fiscal",
           "enunciado": "O Município Alfa revogou a lei que instituía a cobrança do Imposto Predial e Territorial Urbano (IPTU) dos imóveis situados em seu território, há mais de 5 anos, deixando, desde então, de realizar sua cobrança e arrecadação. Notificado pelo respectivo Tribunal de Contas para retornar a cobrar o imposto por descumprir um dos requisitos essenciais de uma gestão fiscal responsável, o prefeito pergunta a você, como advogado(a), qual será a consequência para a municipalidade, caso mantenha a política da não instituição, previsão e efetiva arrecadação de todo s os impostos de sua competência constitucionalmente atribuída. Nesse cenário, à luz da Lei de Responsabilidade Fiscal (LC nº 101/2000), você respondeu que o Município Alfa ficará impedido de",
           "alternativas": [
             {
@@ -2827,6 +2931,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Competência Tributária",
           "enunciado": "Paulo, domiciliado em Ubatuba (SP), era proprietário de uma única embarcação automotora, que ficava ancorada em Paraty (RJ). Ele veio a falecer no início do ano de 2024, em Belo Horizonte (MG), durante visita à filha e única herdeira, Joana, domiciliada nesta mesma cidade. A filha, maior de idade e capaz, realizou o inventário extr ajudicial de seu pai perante tabelião de Belo Horizonte (MG). De acordo com o texto da Constituição Federal de 1988, assinale a opção que indica, corretamente, o Estado em que o Imposto sobre Transmissão Causa Mortis e Doação (ITCMD) incidente sobre essa transmissão causa mortis é devido.",
           "alternativas": [
             {
@@ -2854,6 +2959,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Limitações ao Poder de Tributar",
           "enunciado": "A entidade religiosa ABC requereu o reconhecimento da imunidade de IPTU do imóvel em que realizava seus cultos, bem como do edifício ao lado, que servia de moradia para se us ministros religiosos e suas famílias. O Município Alfa negou parcialmente tal reconhecimento, afirmando que, embora ambos os imóveis fossem registrados em nome da entidade religiosa ABC, possuíam matrículas distintas no Registro de Imóveis. Desta forma, reconheceu que apenas o imóvel em que realizava seus cultos seria contemplado com a imunidade tributária reconhecida pela Constituição Federal. Surpreendida, a entidade religiosa ABC procurou você, como advogado(a), para questionar essa decisão. Assinale a opção que apresenta, corretamente, sua orientação para o caso.",
           "alternativas": [
             {
@@ -2881,6 +2987,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Impostos em Espécie",
           "enunciado": "Uma sociedade empresária do setor petrolífero adquiriu uma Unidade Flutuante de Produção, Armazenamento e Transferência de Petróleo , a fim de produzir petróleo nas águas territoriais brasileiras. Esta Unidade tem capacidade de se locomover pelas águas por meio de motores próprios, razão pela qual o Estado Alfa, onde fica o domicílio da sociedade empresária, publicou, em 10/02/2024, lei estadual ordinária estabelecendo que a propriedade de tais Unidades configura fato gerador de IPVA. Diante desse cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2908,6 +3015,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Lançamento e Crédito Tributário",
           "enunciado": "José recebeu notificação para pagar ou impugnar o lançamento referente a determinado crédito tributário estadual dentro do prazo de 30 dias corridos. No 20º dia do recebimento da notificação, quando pretendia protocolizar impu gnação administrativa contra a cobrança, verificou, por meio da Internet, que seu nome já constava do cadastro da Dívida Ativa Estadual, em razão da dívida que lhe fora notificada. Diante desse cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2935,6 +3043,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Limitações ao Poder de Tributar",
           "enunciado": "Tendo ocorrido uma situação de calamidade pública no Município Alfa, no final do ano de 2022, a União enviou vultosos recursos federais para enfrentar tal situação. De modo a também diminuir a carga tributária sobre a população municipal nesse período, a União, por lei federal, aprovou uma isenção de Imposto sobre a Propriedade Predial e Territorial Urbana (IPTU) no Município, por todo o ano de 2023. O Prefeito municipal estava de acordo e editou um decreto para regulamentar a forma como se daria o gozo dessa isenção. Diante desse cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -2962,6 +3071,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Responsabilidade Civil do Estado",
           "enunciado": "Juliana ajuizou duas ações indenizatórias que resultaram na condenação dos réus, obrigando -os a pagar vultosa quantia em dinheiro. A primeira foi ajuizada em face de uma autarquia e, a segunda, em face de uma sociedade de economia mista que realiza atividade econômica em regime concorrencial, cujos bens não estão afetados ao serviço público. Considerando que ambas as condenações transitaram em julgado e estão em fase de cumprimento de sentença, Juliana questionou você, como advogada(o), acerca da viabilidade de penhora dos bens das mencionadas entidades administrativas. Considerando a definição legal de bens públicos, assinale a opção que indica a informação correta que você prestou.",
           "alternativas": [
             {
@@ -2989,6 +3099,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Intervenção do Estado na Propriedade",
           "enunciado": "Jaílson pretende adquirir uma propriedade rural, considerada média nos termos da lei, que será a única de sua titularidade, para realizar a plantação de alimentos orgânicos para subsistência, mas tem o receio de investir todas as suas economias em imóvel que seja passível de desapropriação para fins de reforma agrá ria pela União, mediante indenização em títulos da dívida agrária. Diante disso, Jaílson consultou você, como advogado(a), acerca dos bens que podem ser objeto dessa intervenção do Estado na propriedade. Assinale a opção que apresenta a informação que você , corretamente, prestou.",
           "alternativas": [
             {
@@ -3016,6 +3127,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Licitações e Contratos Administrativos",
           "enunciado": "A sociedade empresária Chique possui dois contratos administrativos distintos regularmente formalizados com o Município Gama, tendo por objeto a realização de serviços contínuos, com contratação de mão de obra para atividades de limpeza e manutenção predial. Registre -se que em apenas uma das contratações há cláusula expressa para a adoção de meios alternativos de solução de controvérsias. Durante a execução, o equilíbrio econômico -financeiro dos contratos foi fortemente afetado por áleas econômicas extraordinárias e imprevisíveis. Dessa forma, os representantes da sociedade empresária Chique procuram você, como advogado(a), sobre a viabilidade de usar instrumentos consensuais para restabelecer o equilíbrio econômico-financeiro do contrato ou outro meio extrajudicial para dirimir o conflito. À luz do disposto na Lei nº 14.133/2021, assinale a opção que, corretamente, materializa a essência da consultoria jurídica prestada por você à sociedade empresária Chique.",
           "alternativas": [
             {
@@ -3043,6 +3155,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Princípios da Administração Pública",
           "enunciado": "A sociedade empresária Bemquerer obteve junto ao órgão municipal competente uma licença, que não tem cunho ambiental, versando sobre matéria administrativa, a qual é ato vinculado, mediante o preenchimento dos requisitos legais, de acordo com a orientação geral da Administração, vigente à época do deferimento, quanto a certo conceito jurídico indeterminado constante da respectiva norma local. Diante da relevância de tal licença para as suas atividades, os dirigentes da aludida sociedade consultaram você, na condição de advogado(a), em relação à viabilidade de modificação da situação jurídica deles, em decorrência de eventual mudança de entendimento atinente ao referido conceito jurídico indeterminado, notadamente se a nova orientação vier a impor um novo condicionamento para o Direito. À l uz das normas sobre segurança jurídica e eficiência na interpretação e aplicação do Direito Público, introduzidas pela Lei nº 13.655/2018 no Decreto -Lei nº 4.657/1942 (Lei de Introdução às Normas do Direito Brasileiro), assinale a opção que, corretamente, apresenta seu esclarecimento.",
           "alternativas": [
             {
@@ -3070,6 +3183,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Improbidade Administrativa",
           "enunciado": "Em dezembro de 2024, Lucas, servidor público celetista no âmbito da empresa pública XYZ, permitiu, culposamente, que Matheus da Silva utilizasse veículos automotores da estatal para a execução de serviços particulares, sem qualquer relação com a empresa pública. Nesse contexto, após tomar ciência de que o Ministério Público deflagrou inquérito civil para apurar os fatos, Lucas procurou você para, na qualidade de advogado(a), lhe prestar a adequada orientação jurídica. Sobre a posição de Lucas, considerando a Lei nº 8.429/1992 (Lei de Improbidade Administrativa), assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3097,6 +3211,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Ambiental",
+          "tema": "Licenciamento Ambiental",
           "enunciado": "A sociedade empresária Empreendedorix deseja construir um grande shopping center em terreno situado na área urbana do Município Delta, que contribuirá para incrementar o comércio na localidade, mas surtirá efeitos na qualidade de vida da população e no meio ambiente do entorno, razão pela qual a atividade se enquadra entre aquelas para as quais é necessária a elaboração de Estudo de Impacto Ambiental (EIA). Ocorre que o Município Delta tem legislação local que define que tal empreendimento privado depende de elaboração de Estudo Prévio de Impacto de Vizinhança (EIV), para obter as lice nças ou autorizações de construção, ampliação ou funcionamento a cargo do Poder Público local. Em razão disso, os representantes da sociedade empresária Empreendedorix procuram você, como advogado(a), para esclarecer as peculiaridades do instrumento previs to na referida legislação municipal. Considerando os fatos narrados, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3124,6 +3239,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Ambiental",
+          "tema": "Responsabilidade Ambiental",
           "enunciado": "Por decisão de seus representantes legais, o exercício de determinada atividade empresarial da sociedade Aurora, em benefício próprio, ensejou a poluição de um determinado rio, de modo que a conduta praticada ocasionou severos danos ao meio ambiente e, ao mesmo tempo, caracteriza ilícito penal, civil e administrativo. Diante dessa situação hipotética e considerando as normas de responsabilização da pessoa jurídica em matéria ambiental, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3151,6 +3267,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Família",
           "enunciado": "Gabriel e Vitória, pais de Ana e de Clara, faleceram em um acidente aéreo. Os parentes mais próximos de Ana e Clara são os tios, Rafael – irmão de Gabriel –, com 42 anos de idade, e a tia, Júlia – irmã de Vitória –, com 38 anos de idade. Atualmente, Ana tem 9 anos de idade e, Clara, 7. Verificou-se que, em seus respectivos testamentos, Gabriel e Vitória nomearam, como tutor de Ana e Clara, Lucas, primo de Gabriel. Sobre o caso narrado, segundo o ordenamento jurídico brasileiro, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3178,6 +3295,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Proteção de Dados/LGPD",
           "enunciado": "A sociedade empresária Calçados Novos Ltda. consultou você, como advogado(a), na qualidade de controladora dos dados pessoais de seus clientes. Isso porque há quantidade relevante de dados cujo término do tratamento já ocorreu, considerando o fim do período de tratamento. Contudo, a sociedade empre sária tem a intenção de manter as informações históricas de seus clientes, para fins exclusivamente estatísticos, sem a necessidade de identificar pessoalmente os titulares de cada informação. Sobre a hipótese narrada, considerando o interesse do cliente, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3205,6 +3323,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Parte Geral",
           "enunciado": "Cláudia é devedora de valores elevados e foi executada em determinada demanda. Para evitar a penhora de seu carro, celebrou contrato de compra e venda do veículo com Eduardo, seu amigo fraterno, indicando data anterior às dívidas. Cláudia e Eduardo combinaram que o contrato não produziria qualquer efeito, de modo que não h ouve o pagamento do preço e tampouco a transferência da propriedade do carro. Sobre o contrato celebrado entre Cláudia e Eduardo , assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3232,6 +3351,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Sucessões",
           "enunciado": "Do testamento deixado por Natália constou a seguinte cláusula acerca da parte disponível: “lego o apartamento X para meus filhos Henrique e Carolina, os quais serão individualmente substituídos, se não puderem aceitar, pelo meu filho Carlos.” Após o registro, abertura e determinação de seu cumprimento, Henrique renunciou à sucessão testamentária, satisfazendo -se com a legítima. Você, como advogado(a), foi consultado(a) acerca da transmissão causa mortis do apartamento X. Assinale a opção que apresenta, corretamente, sua orientação.",
           "alternativas": [
             {
@@ -3259,6 +3379,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Família",
           "enunciado": "Beatriz nasceu duzentos e cinquenta dias após a morte do pai, Bernardo, com quem sua mãe, Gabriela, era casada há 2 anos. Quando Gabriela foi registrar Beatriz, Leonardo, irmão de Bernardo, afirmou que não aceitaria que ela a registrasse como filha de Bernardo, a não ser que Gabriela provasse a paternidade, por meio de exame de DNA. Sobre a situação apresentada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3286,6 +3407,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Direitos Reais",
           "enunciado": "Carlos é titular de direito real de uma laje, referente à parte superior de uma edificação localizada em uma área urbana. Recentemente, ele tomou conhecimento de que uma empresa de internet está negociando diretamente com o proprietário da construção-base para instalar cabeamentos de fibra ótica e outros equipamentos de infraestrutura no subsolo dessa construção. A instalação não interfere no direito real de Carlos, bem como não afeta o uso do bem. Mesmo assim, Carlos tem dúvidas sobre a legalidade dessa instalação sem a sua expressa autorização, bem como sobre seu direito a eventual compensação. Diante disso, ele consultou você, como advogado(a ), para orientá -lo sobre a questão. Assinale a opção que apresenta, corretamente, sua orientação.",
           "alternativas": [
             {
@@ -3313,6 +3435,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito da Criança e do Adolescente",
+          "tema": "Ato Infracional e Medidas Socioeducativas",
           "enunciado": "João, 17 anos, foi representado pelo Ministério Público pela prática de ato infracional análogo a roubo. Consta nos autos que o representado teria abordado dois transeuntes e, simulando estar armado, anunciou o roubo, tendo subtraído os celulares e as carteiras das vítimas. Ao final do procedimento, o Juízo da Infância considerou comprovadas a autoria e a materialidade, tendo julgado procedente o pedido e fixado a medida socioeducativa de internação. O(A) advogado(a) do adolescente deseja apresentar recurso de apelação. Sobre o recurso a ser interposto, com base no Estatuto da Criança e do Adolescente, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3340,6 +3463,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito da Criança e do Adolescente",
+          "tema": "Adoção e Família Substituta",
           "enunciado": "Ricardo, 13 anos, filho de Vanda, não foi registrado pelo pai biológico. Desde tenra idade, o adolescente foi criado por João, de 50 anos, marido de Vanda. João e Ricardo se viam como pai e filho e assim eram reconhecidos na vizinhança. João procura você, como advogado(a), e diz que tem inequívoca vontade de adotar Ricardo. Após a juntada de toda a documentação necessária, e com anuência de Vanda e Ricardo, é ajuizada a ação de adoção, sendo certo que, no curso da ação, João reitera a inequívoca vontade de adotar Ricardo. Ocorre que, dois meses após a distribuição, João sofre um ataque cardíaco e vem a falecer. Vanda e Ricardo, desesperados, o(a) procuram, como advogado(a), para que você indique o caminho jurídico viável para o caso. De acordo com o ECA, assinale a afirmativa que apresenta, corretamente, sua orientação.",
           "alternativas": [
             {
@@ -3367,6 +3491,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Consumidor",
+          "tema": "Defesa do Consumidor em Juízo",
           "enunciado": "Joana, aposentada, contratou diversos empréstimos ao longo dos anos para fazer frente a necessidades inesperadas, em razão de um grave problema de saúde que enfrentou, além de assumir dívidas com cartões de crédito, lojas e empréstimos consignados. Com o tempo, Joana não conseguiu mais pagar todas as parcelas, que agora superam o valor de sua aposentadoria, comprometendo suas despesas básicas, como alimentação e saúde. Buscando uma solução, Joana o(a) procurou, como advogado(a), para que você a assessorasse no caso. Com base no Código de Defesa do Consumidor, assinale a opção que apresenta seu parecer.",
           "alternativas": [
             {
@@ -3394,6 +3519,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Consumidor",
+          "tema": "Conceitos e Princípios",
           "enunciado": "A sociedade empresária VittaBem Alimentos Ltda. lançou no mercado nacional uma nova linha de sucos naturais, supostamente livres de conservantes e aditivos químicos, amplamente divulgada em campanhas publicitárias nas principais redes de televisão e mídias digitais. Após quatro meses de intensa comerci alização, o Ministério da Saúde, por meio de fiscalização e laudos laboratoriais, constatou que os produtos continham substâncias artificiais em níveis superiores aos permitidos pela Anvisa, representando risco potencial à saúde dos consumidores. Diante da repercussão nacional do caso, uma associação de defesa do consumidor ajuizou ação civil pública, pleiteando: a retirada imediata dos produtos do mercado; e a condenação da sociedade empresária ao pagamento de indenização por danos morais coletivos. A soci edade empresária contestou, sustentando, entre outros argumentos, a inaplicabilidade do Código de Defesa do Consumidor e a ausência de culpa e de dano individual comprovado. Sobre o caso apresentado, com base no ordenamento jurídico brasileiro, especialmen te no Código de Defesa do Consumidor, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3421,6 +3547,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Tipos Societários",
           "enunciado": "No contrato de sociedade em conta de participação firmado entre o sócio ostensivo e quatro sócios participantes não há cláusula dispondo sobre a admissão de novos sócios. Diante da omissão, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3448,6 +3575,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Recuperação Judicial e Falência",
           "enunciado": "Santa Aceguá, administradora e sócia da Mercearia Cerro Branco Ltda., para saber os efeitos que a falência de um dos seus devedores, o empresário Júlio Cidreira, terá em relação a seu crédito, consulta você como advogado(a). Assinale a opção que apresenta, corretamente, sua orientação.",
           "alternativas": [
             {
@@ -3475,6 +3603,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Empresário e Sociedade Empresária",
           "enunciado": "Francisco Morato tem domicílio em Cidade Ocidental/GO e pretende ser empresário individual em Brasília/DF. Se o negócio der certo, Francisco Morato pretende abrir duas filiais, uma em Unaí/MG e, outra, em Natividade/TO. Considerando-se as normas do Código Civil para a inscrição do empresário e da instituição de filiais, é correto afirmar que Francisco Morato deverá realizar sua inscrição como empresário na Junta Comercial do",
           "alternativas": [
             {
@@ -3502,6 +3631,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Empresário e Sociedade Empresária",
           "enunciado": "Nísia Parnamirim realizou sua inscrição como microempreendedora individual (MEI) e consultou você, como advogado(a), para saber o tratamento que lhe é dispensado pela Lei Complementar nº 123/2006 (Lei do Simples Nacional). Sobre a hipótese, assinale a opção que apresenta, corretamente, sua resposta.",
           "alternativas": [
             {
@@ -3529,6 +3659,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Recursos",
           "enunciado": "Ricardo propôs a execução de um título executivo extrajudicial contra Isabela. Diante da propositura da execução por Ricardo, Isabela apresentou embargos à execução. O Magistrado julgou improcedentes os embargos à execução de Isabela que, irresignada, interpôs recurso de a pelação contra a sentença de improcedência dos embargos à execução. Ao receber a apelação interposta por Isabela, o Desembargador relator, integrante de Câmara Cível, julgou o recurso monocraticamente, negando provimento à apelação. Assinale a opção que apresenta o recurso cabível a ser interposto por Isabela.",
           "alternativas": [
             {
@@ -3556,6 +3687,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Competência e Partes",
           "enunciado": "João é advogado regularmente inscrito nos quadros da Ordem dos Advogados do Brasil. Em uma sexta-feira à noite, seu amigo Thiago o procurou e, bastante nervoso, indagou se João poderia ingressar com um requerimento de tutela antecipada an tecedente perante o Plantão Judicial, porque sua irmã necessitava de uma cirurgia de emergência. João reuniu os documentos enviados por Thiago e protocolou o requerimento, porém deixou de fazer a juntada da procuração assinada pela irmã de Thiago, que também é advogada. A medida de urgência foi concedida e, ato contínuo, João foi intimado para efetuar a juntada da procuração, bem como para complementar a petição inicial, nos termos do Art. 303, § 1º, inciso I, do CPC. A irmã de Thiago outorgou procuração geral para o foro por meio de instrumento particular por ela assinado. Sobre o caso narrado, com base no ordenamento jurídico brasileiro, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3583,6 +3715,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Cumprimento de Sentença e Execução",
           "enunciado": "Em execução fundada em título extrajudicial, movida por Murilo, seu ex-sócio, Marília foi executada. Após regular citação, Marília não ofertou defesa, não nomeou bens à penhora, nem pagou o débito exequendo. Por essa razão, Murilo requereu a realização de penhora em contas correntes de titularidade de Marília, com o intuito de satisfazer seu crédito. A indisponibilidade do valor foi determinada pelo Juízo. Tomando o caso acima como premissa, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3610,6 +3743,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Procedimentos Especiais",
           "enunciado": "Juliana e André foram casados por anos, tiveram um filho que atualmente está com 6 a nos, mas, por adversidades conjugais, resolveram pôr fim ao casamento. Após a separação, o filho ficou residindo com a mãe em cidade distinta do pai. Considerando que não tem mais volta a relação conjugal, Juliana, por meio do seu advogado, deseja propor a ção de divórcio e guarda. Sobre o caso, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3637,6 +3771,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Cumprimento de Sentença e Execução",
           "enunciado": "Débora, servidora pública aposentada do Município de Fortaleza, procurou você, como advogado(a), para ajuizar uma ação pelo procedimento comum em face do Município, pleiteando o pagamento de verbas em atraso a título de auxílio alimentação. Proferida se ntença de procedência do pedido, foi interposto recurso de apelação pelo réu, não provido, assim como foi mantida a sentença em remessa necessária na mesma oportunidade. Transitada em julgado a sentença, Débora pretende receber os valores que lhe são devidos. Sobre o caso, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3664,6 +3799,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Procedimentos Especiais",
           "enunciado": "Pedro, locatário de um imóvel, ingressa com ação de consignação em pagamento após a locadora, Ana, recusar -se a receber o aluguel, o que foi comprovado pela juntada de documentos, nos quais Ana se recusa, expressamente, a receber a quantia. Atendendo a requerimento de Pedro, o Juiz determinou o depósito do valor em juízo, o que foi tempestivamente cumprido pelo autor. Ato contínuo, Ana é citada, mas não ofereceu contestação. Em tal hipótese, assinale a opção que apresen ta, corretamente, a providência que o(a) advogado(a) deverá requerer ao Juízo.",
           "alternativas": [
             {
@@ -3691,6 +3827,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Crimes contra a Dignidade Sexual",
           "enunciado": "Matheus foi a uma festa de réveillon onde reencontrou sua ex - namorada, Laís, sendo ambos maiores e capazes. Assim que a viu, ele se aproximou dela e, a partir daí, iniciaram uma animada conversa sobre os “velhos tempos”. Em determinado momento, Matheus, sem a anuência de Laís, acariciou suas nádegas e tentou beijá-la, para satisfazer sua própria lascívia. Acerca da tipificação da conduta de Matheus, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3718,6 +3855,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Crimes contra a Pessoa",
           "enunciado": "Saulo, em razão de seu posicionamento político, foi chamado de “burro” e “idiota” por João, Paulo e Sérgio, seus adversários políticos, que tinham a intenção de ofender sua dignidade e decoro. Inconformado, Saulo decidiu processar seus três ofensores. Após a propositura da queixa, Saulo reconciliou -se com Sérgio, sendo o perdão dado pela vítima aceito pelo ofensor, e comunicou o fato ao Juizado Especial em que tramitava a ação penal. Em relação ao caso narrado, assinale a opção que indi ca, corretamente, o crime cometido pelos três amigos e as implicações da reconciliação entre Saulo e Sérgio.",
           "alternativas": [
             {
@@ -3745,6 +3883,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
           "enunciado": "Thiago, 21 anos de idade, e Vinicius, 17 anos, se conheceram no interior de uma boate. Alterados em razão da ingestão de cerveja, decidiram praticar um crime de furto em um posto de gasolina, mas foram abordados por policiais logo após a prática delitiva. Apenas naquele momento, Thiago veio a tomar conhecimento da idade de Vinicius, e que ele já tinha sido apreendido uma vez pela suposta prática de ato infracional análogo ao crime de dano. O Ministério Público ofereceu denúncia em face de Thiago como incurso nas penas do Art. 155, § 4 º, inciso IV, do CP (furto qualificado pelo concurso de agentes) e do Art. 244 -B do ECA (corrupção de menores). Assinale a opção que indica a alegação que você, como advogado(a) de defesa de Thiago, deve apresentar para questionar a capitulação delitiva.",
           "alternativas": [
             {
@@ -3772,6 +3911,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
           "enunciado": "Marisa administrava os proventos de pensão recebidos por sua mãe, Sônia, que faleceu em dezembro de 2022. Com a intenção de continuar recebendo os proventos, Marisa deixou de comunicar à autarquia previdenciária o falecimento de Sônia e, assim, conseguiu efetuar os saques dos valores depositados nos meses de janeiro a março de 2023. Em abril, a autarquia recebeu notícia do falecimento e cessou os pagamentos. Ato contínuo, apurou o valor dos saques indevidos realizados por Marisa após o fal ecimento da segurada, acrescidos de multa e juros e a inscreveu em dívida ativa. Marisa, notificada, efetuou o pagamento integral do débito, de forma parcelada, entre os meses de outubro de 2023 e janeiro de 2024. A denúncia foi ajuizada em janeiro de 2024 , e recebida em fevereiro de 2024. De acordo com a teoria do crime, assinale a opção que apresenta o que a defesa de Marisa deve, corretamente, alegar.",
           "alternativas": [
             {
@@ -3799,6 +3939,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Aplicação da Lei Penal",
           "enunciado": "Pierre, estrangeiro, nacional e residente no país Alfa, veio ao Brasil, onde praticou o crime de homicídio contra Bruna, cidadã brasileira. Em seguida, Pierre deixou o território nacional e retornou ao seu país de residência. Você, como advogado(a) de Pierre, deve analisar a aplicação da lei penal brasileira ao caso. Assinale a opção que apresenta seu parecer.",
           "alternativas": [
             {
@@ -3826,6 +3967,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Crimes contra a Pessoa",
           "enunciado": "Hermes, aposentado com 65 anos de idade, encontrou sua esposa, Diana, 40 anos mais jovem, em plena execução de ato sexual com seu primo, Aquiles, também sexagenário. Tomado pela fúria, Hermes sacou sua arma de fogo e disparou um tiro no pescoço de Aquiles. Hermes possuía 18 munições restantes no cartucho de sua arma, mas conseguiu controlar sua ira e, arrependido, levou Aquiles ao hospital. Apesar de ter sofrido ferimento que lhe gerou perigo à vida, devido ao rápido atendimento médico, Aquiles sobreviveu e, como ficou livre de sequelas, retomou suas ocupações habituais em uma semana. Atualmente, Hermes, Diana e Aquiles mantêm relação de amizade. Com base na situação hipotética narrada, assinale a opção que indica, corretamente, o delito praticado por Hermes.",
           "alternativas": [
             {
@@ -3853,6 +3995,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Recursos Penais",
           "enunciado": "No dia 10 de agosto de 2023, foi publicada a decisão de rejeição da queixa-crime relativa ao crime de injúria (pena: um a seis meses de detenção), que teria sido praticado por Maria Aparecida contra Augusto. Augusto, inconformado com a sentença, procurou você, como advogado(a), para se insurgir contra a decisão de rejeição de exordial acusatória. Assinale a opção que indica, corretamente, o recurso cabível para o caso.",
           "alternativas": [
             {
@@ -3880,6 +4023,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Crimes contra a Pessoa",
           "enunciado": "Cauã e Mayara são indígenas integrados e mantêm relação íntima de afeto, sendo residentes em comunidade tradicional. Certo dia, motivado por ciúmes, Cauã agrediu Mayara, atingindo-a no rosto, fato que ocasionou uma lesão corporal leve. Sobre a orientação assumida pelo(a) advogado(a) de defesa de Mayara, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -3907,6 +4051,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Prisões e Medidas Cautelares",
           "enunciado": "Peterson teve sua prisão temporária decretada pelo prazo de trinta dias, ao ser investigado pel a prática do crime de homicídio culposo na direção de veículo automotor, disposto no Art. 302 da Lei nº 9.503/1997 (Código de Trânsito Brasileiro), cuja pena cominada é de dois a quatro anos de detenção. A decisão foi fundamentada na necessidade da coleta de provas imprescindíveis durante a investigação policial. Você foi procurado(a), como advogado(a), para atuar no melhor interesse de Peterson, no primeiro dia da sua prisão. Assinale a opção que apresenta, corretamente, o pedido cabível tendo em vista os interesses de seu cliente.",
           "alternativas": [
             {
@@ -3934,6 +4079,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Provas no Processo Penal",
           "enunciado": "André foi denunciado por ter subtraído a bolsa de Márcia, mediante rompimento de obstáculo. A subtração foi legitimamente comprovada no processo, porém, não obstante tenha o rompimento de obstáculo deixado vestígios, não foi realizada qualquer perícia, sem justificativa plausível. Finda a instrução, manifestou -se o Ministério Público pela condenação, conforme a denúncia, sem requerer qualquer diligência. Dada a palavra ao(à) advogado(a) de André, em alegações finais defensivas, este(a) deve requerer",
           "alternativas": [
             {
@@ -3961,6 +4107,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Nulidades",
           "enunciado": "Foi oferecida denúncia em face de Samuel, pelo delito de furto, que foi distribuída ao Juízo competente, tendo havido regular instrução processual. Os autos foram conclusos para sentença, porém, o Juiz titular, que presidiu a instrução, afastou -se por dois dias para participar de um curso oficial. Por isso, a Corregedoria do Tribunal designou Juiz substituto para atuar naquele Juízo. O Magistrado substituto prolatou a sentença, condenando Samuel, com base na prova oral colhida, ainda que nenhuma urgência houvesse nesse processo. Com base nas informações do enunciado, assinale a opção que indica a alegação que você, como advogado(a ) de Samuel, deve apresentar.",
           "alternativas": [
             {
@@ -3988,6 +4135,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Provas no Processo Penal",
           "enunciado": "Flávio foi preso em flagrante junto com outros três indivíduos, todos acusados pela prática do crime de roubo, disposto no Art. 157 do CP. Flávio permaneceu preso preventivamente durante o processo. Na audiência de instrução e julgamento, uma das testemunh as arroladas pela defesa afirmou que, no dia dos fatos, Flávio estava trabalhando na loja de material de construção que funcionava na frente do local onde os autores do fato estavam praticando o crime, e acabou sendo preso junto com os outros acusados. A testemunha também mencionou que a loja possui sistema de monitoramento de segurança, e que o dono da loja guardou imagens desse dia, para fornecê -las em sede policial se isso fosse demandado. O interrogatório dos réus foi regularmente realizado. Diante do fato narrado, assinale a opção que indica, corretamente, a medida jurídica que você, como advogado(a) de Flávio, deve adotar.",
           "alternativas": [
             {
@@ -4015,6 +4163,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Previdenciário",
+          "tema": "Acidente de Trabalho",
           "enunciado": "Manoel, mecânico de manutenção, após acidente durante sua atividade remunerada, recebeu benefício por incapacidade temporária durante dois anos. Antes da alta previdenciária, foi encaminhado para a reabilitação profissional, na qual se identificou a necessidade de utilização de prótese e fisioterapia, sem necessidade de transfusão de sangue ou cirurgia, em local conveniado com o INSS. Nesse contexto hipotético, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4042,6 +4191,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Previdenciário",
+          "tema": "Segurados e Filiação",
           "enunciado": "Humberto Alves, profissional liberal, desempenha a atividade de eletricista autônomo, prestando serviço a diversos clientes, todos pessoas físicas, mediante remuneração e sem relação de emprego. Sobre o enquadramento de Humberto Alves como trabalhador autônomo no RGPS, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4069,6 +4219,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Jornada e Descanso",
           "enunciado": "Guilherme, engenheiro responsável por obras de infraestrutura, trabalha para uma sociedade empresária há cinco anos. Ao longo dos últimos 4 anos sempre desfrutou de 30 dias de férias corridos. Em janeiro de 2024, ao verificar a incidência de numerosos feriados ao longo do ano, ele pretendeu fracionar suas férias. Assim sendo, procurou você, como advogado(a), para orientá -lo sobre a possibilidade de fracionar os 30 dias de férias a que tem direito. Acerca do interesse do seu cliente, assinale a opção que indica, corretamente, a orientação a ser dada.",
           "alternativas": [
             {
@@ -4096,6 +4247,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Jornada e Descanso",
           "enunciado": "Pedro é caixa em um banco comercial desde 2022, e sua jornada contratual é de 2ª a 6ª feira, das 10 às 16 horas, com intervalo de 15 minutos para refeição. Ocorre que, na prática, diante do grande volume de trabalho, Pedro trabalha de 2ª a 6ª feira , das 10 às 18 horas, com intervalo de 15 minutos. Sobre o intervalo, considerando os fatos e a previsão da CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4123,6 +4275,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Jornada e Descanso",
           "enunciado": "Eduarda estava r adiante porque ficou grávida de seu primeiro filho, um sonho que acalentou durante muitos anos. Ocorre que, em virtude de problemas de saúde, Eduarda sofreu um aborto espontâneo na 6ª semana da gravidez. Sobre a situação de Eduarda, nos termos da CLT, assi nale a afirmativa correta.",
           "alternativas": [
             {
@@ -4150,6 +4303,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Jornada e Descanso",
           "enunciado": "Giovana encontra -se em auxílio temporário por incapacidade (auxílio-doença) há 6 anos, permanecendo, basicamente, em sua residência, realizando afazeres domésticos. Não há impossibilidade de Giovana realizar os atos da vida civil de maneira geral, mas está limitada em sua capacidade laborativa. Em 2024, Giovana lembrou que, no mês anterior ao início do seu benefício previdenciário, realizou várias horas extras, que pretende reivindicar judicialmente, e para tanto o(a) procura, como advogado(a), para obter uma orientação. Considerando esses fatos e o entendimento consolidado do TST, assinale a opção que apresenta, corretamente, sua orientação.",
           "alternativas": [
             {
@@ -4177,6 +4331,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Relação de Emprego",
           "enunciado": "Você foi consulta do, na qualidade de advogado(a), por quatro mulheres trabalhadoras (Ligia, Paula, Geórgia e Sílvia), acerca de situações específicas que ocorreram no mercado de trabalho. Ligia indagou sobre um anúncio de emprego para chefe de cozinha que continha expressa referência à preferência por homens. Paula teria sido preterida em promoção, porque estava grávida de 6 meses e entraria em licença -maternidade em pouco tempo. De Geórgia, na entrevista de emprego, foi exigido, como condicionante da contratação, o atestad o de que não estaria grávida. Sílvia perguntou acerca de um anúncio de empregos exclusivos para homens, no qual havia a descrição dos serviços como sendo de transporte, armazenagem e movimentação de cargas de 30 kg, sem o auxílio de meios mecânicos. Acerca da sua resposta às quatro consultas, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4204,6 +4359,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Provas no Processo do Trabalho",
           "enunciado": "Sandra trabalhou na sociedade empresária Sorvete Saboroso Ltda. por 3 anos, como atendente de loja. Após ser dispensada em 2024, Sandra ajuizou reclamação trabalhista contra a ex -empregadora requerendo equiparação salarial com a funcionária Maria, que exercia a mesma função, mas recebia salário superior. Apresentada a defesa, os pontos controvertidos definidos foram: diferença na perfeição técnica entre as empregadas e diferença superior a quatro anos no tempo de serviço para o empregador. Considerando a distribuição estática do ônus da prova e os termos da CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4231,6 +4387,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Competência da Justiça do Trabalho",
           "enunciado": "Você é advogado(a) de uma sociedade empresária que figura como ré em quatro ações na Justiça do Trabalho. Uma ação versa sobre a dispensa de um empregado que aderiu a uma greve. Outra, sobre indenização por dano moral, em razão de suposto assédio moral praticado por um superior hierárquico de um empregado. A terceira versa sobre horas extras. E a quarta, versa exclusivamente sobre cobrança de cont ribuições previdenciárias supostamente não efetuadas pelo empregador ao longo de um contrato de trabalho de um outro empregado. Sobre a competência da Justiça do Trabalho nas quatro ações apresentadas, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4258,6 +4415,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Execução Trabalhista",
           "enunciado": "No bojo de uma execução que tramita perante a 100ª Vara do Trabalho de Porto Velho/RO, o Juiz, após conceder vista ao executado, homologou o cálculo apresentado pelo exequente e fixou a dívida em R$ 20.000,00. O executado pretende se valer do parcelamento da dívida na forma do CPC, subsidiariamente aplicado ao Processo do Trabalho. Considerando esses fatos e de acordo com a legislação em vigor, sabendo-se que não há oposição do credor, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4285,6 +4443,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Competência da Justiça do Trabalho",
           "enunciado": "Helena foi empregada de uma sociedade empresária de fevereiro de 2022 a janeiro de 2024, quando foi dispensada sob a alegação de justa causa. Ciente de que não fez absolutamente nada de errado, e considerando que sua ún ica testemunha é uma outra ex - funcionária que se encontra enferma e terá pouco tempo de vida, Helena ajuizou, em março de 2024, uma ação para produção antecipada de provas, distribuída por sorteio para a 950ª Vara do Trabalho de São Paulo. Na referida ação foi colhido o depoimento da testemunha, que pouco depois veio a falecer. Arquivada a produção antecipada de provas, Helena pretende ajuizar reclamação trabalhista para anular a justa causa aplicada, valendo-se inclusive do testemunho da finada. Sobre o fato narrado, considerando o disposto na norma de regência, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4312,6 +4471,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Execução Trabalhista",
           "enunciado": "Soraya integrava o contrato social d e uma sociedade empresária, mas se afastou dela em janeiro de 2019 e registrou sua saída perante a Junta Comercial em dezembro de 2021. Joana foi empregada da sociedade empresária em questão de abril de 2019 a setembro de 2022, tendo ajuizado reclamação trabalhista em outubro de 2023. Obteve vitória judicial e iniciou a execução em janeiro de 2025. Não tendo a sociedade empresária solvabilidade, requereu o direcionamento da execução contra os sócios atuais, sem êxito. Então, requereu que a execução fosse feita em relação à Soraya. Considerando esses fatos e o que prevê a CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4345,6 +4505,7 @@ var QuestoesSeed = (function () {
       "questoes": [
         {
           "territorio": "Ética",
+          "tema": "Exercício da Advocacia",
           "enunciado": "Os irmãos, Matilde, advogada, e Frederico, consultor de empresas, decidiram firmar sociedade para prestar serviços jurídicos e de consultoria empresarial na capital mineira. Para isso, montaram um escritório em conjunto na cidade de Belo Horizonte, MG, divulgando seus serviços por meio de panfletos e redes sociais (Instagram e Linkedin), ressaltando a natureza jurídica e empresarial das atividades como um ponto de destaque do escritório. Em relação às regras sobre a atividade privativa de advocacia e à publicidade de serviços advocatícios, conforme o Estatuto da Advocacia e da Ordem dos Advogados do Brasil, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4372,6 +4533,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Exercício da Advocacia",
           "enunciado": "Helena concluiu seu mestrado em Administração Pública e acumulou significativo conhecimento jurídico, mas não possui formação em Direito nem inscrição nos quadros da OAB. Apesar disso, ela passou a oferecer consultoria jurídica e a atuar em audiências representando clientes. André, por sua vez, era advogado regularmente inscrito na OAB, porém foi suspenso do exercício profissional por prática de infração disciplinar. Mesmo suspenso, ele continuou a realizar atos privativos da advocacia, tais como peticionar e participar de audiências. Com base nessas situações hipotéticas, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4399,6 +4561,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Incompatibilidades e Impedimentos",
           "enunciado": "Tarcísio, advogado trabalhista com mais de 20 anos de experiência, prestou concurso público para a Outorga de Delegações de Serventias Notariais e Registrais e, após aprovação, assumiu um Tabelionato de Notas e Ofício de Registro Civil em uma comarca do mesmo Estado. Ele deseja saber se poderá continuar exercendo a advocacia em causa própria e, além disso, pretende patrocinar uma ação contra a empresa pública estadual responsável pelo fornecimento de água. Sobre incompatibilidades e impedimentos, com base nas disposições do Estatuto da OAB, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4426,6 +4589,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Exercício da Advocacia",
           "enunciado": "A advogada Jéssica foi contratada pela sociedade empresária de telefonia Alfa para trabalhar 10 horas contínuas por dia, de segunda a quinta-feira, totalizando 40 horas semanais. Além disso, o contrato escrito firmado entre Jéssica e a sociedade empresária prevê que, em situações excepcionais, ela deverá trabalhar horas extras, sendo remunerada com um adicional de 50% sobre o valor da hora normal. Jéssica questiona a validade dessas condições contratuais, especialmente em relação à duração da jornada de trabalho e à remuneração das horas extras. Com base no Art. 20 do Estatuto da Advocacia e da OAB, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4453,6 +4617,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Ética e Disciplina",
           "enunciado": "O jovem Marcos foi contratado como auxiliar de escritório por renomada banca de advocacia. Autodidata e talentoso, Marcos aproveitava os momentos de folga para estudar os processos judiciais patrocinados pelo escritório e, apesar de nunca ter frequentado o curso de graduação em Direito, tornou-se relativamente conhecedor prático de muitos temas jurídicos. Com esse conhecimento, Marcos resolveu se inscrever no Exame da Ordem dos Advogados do Brasil, apresentando, para tanto, diploma falsificado de bacharel em Direito. Após a aprovação, Marcos se inscreveu como advogado na OAB, novamente fazendo uso do referido documento falso. Seis anos após esses fatos, uma denúncia anônima a respeito do ilícito ensejou a instauração do competente processo administrativo disciplinar. Considerando o enunciado e o Estatuto da Advocacia e da Ordem dos Advogados do Brasil, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4480,6 +4645,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Direitos e Prerrogativas do Advogado",
           "enunciado": "Durante muitos anos, João representou Pedro, na condição de seu advogado, em diversas causas. Recentemente, após encerrados todos os vínculos contratuais existentes entre si, Pedro passou a ser investigado pelo suposto cometimento de ilícitos tributários. Sobre esse contexto, de acordo com o Estatuto da Ordem e com o Código de Ética e Disciplina da Ordem dos Advogados do Brasil, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4507,6 +4673,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Direitos e Prerrogativas do Advogado",
           "enunciado": "Ana é advogada e acaba de dar à luz seu primeiro filho, a quem ainda amamenta. Ela foi cientificada de que a Sexta Câmara Cível deverá julgar um caso em que é uma das advogadas constituídas pelo recorrente. Sobre a hipótese, assinale a opção que indica o direito que Ana tem assegurado.",
           "alternativas": [
             {
@@ -4534,6 +4701,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Sociedade de Advogados",
           "enunciado": "Pedro é advogado regularmente inscrito no Conselho Seccional da OAB do Estado Alfa e constituiu uma Sociedade Unipessoal de Advocacia registrada e ativa na mesma unidade federativa. Recentemente, ele foi convidado pelo renomado advogado Abraão para integrar uma Sociedade de Advogados, também com sede no Estado Alfa, na qualidade de sócio. Pedro considerou a proposta promissora e cogita aceitá-la, acreditando que pode participar de ambas as sociedades, desde que evite atuar nos mesmos processos ou contra os interesses de clientes de uma delas. Sobre a decisão de Pedro, com base no Estatuto da Advocacia e da OAB, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4561,6 +4729,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Filosofia do Direito",
+          "tema": "Justiça (autores clássicos)",
           "enunciado": "Leia o fragmento a seguir. Encontrar uma forma de associação que defenda e proteja as pessoas e os bens de cada associado com toda a força comum, e pela qual cada um, unindo-se a todos, só obedece a si mesmo, permanecendo, assim, tão livre quanto antes. (Jean-Jacques Rousseau) Assinale a opção que indica a forma de associação que, segundo Rousseau, responde a esse problema.",
           "alternativas": [
             {
@@ -4588,6 +4757,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Filosofia do Direito",
+          "tema": "Hermenêutica e Interpretação",
           "enunciado": "Considere hipoteticamente que determinado Tribunal, no julgamento de três casos diversos, profere as seguintes decisões: |. Ao analisar determinada lei que diz ser “proibida a entrada de animais em estabelecimentos comerciais”, o Tribunal decide que cães-guias de pessoas com deficiência visual não estão abrangidos pela norma. Il. Interpretando lei segundo a qual “é proibido fumar em ambientes fechados”, o Tribunal considera que a proibição deve se limitar ao que está textualmente contido na norma. ll. Com base em lei que prevê o “benefício da licença- maternidade à mãe biológica”, o Tribunal defere esse benefício a uma mãe adotiva. po Assinale a opção que indica corretamente os tipos de interpretação adotados pelo Tribunal nos casos |, Il e III, respectivamente.",
           "alternativas": [
             {
@@ -4615,6 +4785,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Direitos e Garantias Fundamentais",
           "enunciado": "A Faculdade de Direito da Universidade do Estado Beta, pela primeira vez, publicou edital para o ingresso nos cursos de mestrado e doutorado, contendo sistema de cotas para graduados negros, indígenas, quilombolas e pessoas com deficiência. O edital baseia-se em lei estadual, promulgada no ano passado, que garante, pelo prazo de cinco anos, o acesso diferenciado aos programas de mestrado e doutorado. Indignado com essa regra, um graduado apresentou pedido administrativo visando à modificação do edital, com a exclusão do sistema de cotas. Para tanto, argumentou que ele viola o princípio da isonomia. Diante da polêmica, a Diretora da Faculdade consultou o corpo de advogados da Universidade. Sobre a hipótese apresentada, segundo o sistema jurídico- constitucional brasileiro, assinale a opção que indica o parecer correto que deve ser apresentado.",
           "alternativas": [
             {
@@ -4642,6 +4813,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Organização do Estado",
           "enunciado": "Romualdo, empresário do ramo de supermercados, dirige-se à Prefeitura do Município Alfa e solicita licença para instalar uma loja da sua rede em um bairro específico da cidade. O pedido é negado sob a justificativa de que já existia outro estabelecimento do mesmo ramo na região. Segundo a Prefeitura de Alfa, a concessão de licença afrontaria a Lei Complementar Municipal nº X (LC X/2024), que exige distância mínima de mil metros entre estabelecimentos que comercializem produtos semelhantes. Romualdo, então, procura você, como advogado(a), para analisar a situação com base na ordem jurídico-constitucional brasileira. Assinale a opção que apresenta, corretamente, sua análise sobre a hipótese narrada.",
           "alternativas": [
             {
@@ -4669,6 +4841,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Organização dos Poderes",
           "enunciado": "Marcos, que tem 56 anos de idade, é amigo de Joana, que já completou 58 anos de idade. Ambos, em disputas judiciais contra o Estado Alfa, tiveram reconhecidos seus respectivos direitos ao recebimento de valores em face do mencionado ente. Após os trâmites executórios, foi autorizada pelo Presidente do Tribunal de Justiça de Alfa a expedição do precatório de Marcos e, dois meses depois, pela mesma autoridade, autorizada a expedição do precatório de Joana. Ciente de que nenhum dos dois casos caracteriza débito de natureza alimentícia, Joana consultou você, como advogado(a), para saber se ela tem prioridade de recebimento por ser mais velha que Marcos. Assinale a opção que indica, corretamente, sua resposta.",
           "alternativas": [
             {
@@ -4696,6 +4869,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Organização do Estado",
           "enunciado": "Carlos Frederico, Deputado Estadual no Estado Alfa, apresentou projeto de lei que versa sobre tema que, embora considerado de grande relevância, não se enquadra no rol de matérias de competência legislativa expressa de qualquer dos entes ederativos (União, Estados, Distrito Federal e Municípios). Por essa razão, alguns dos seus colegas deputados suscitaram a possível incompetência da Assembleia Legislativa de Alfa para egislar sobre o tema. Para esclarecer a dúvida, o Procurador-Geral da Assembleia Legislativa foi chamado a se manifestar. Assinale a opção que apresenta, segundo o sistema jurídico- constitucional brasileiro, o esclarecimento prestado.",
           "alternativas": [
             {
@@ -4723,6 +4897,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Controle de Constitucionalidade",
           "enunciado": "A Lei Federal nº 1.079/1950 define os crimes de responsabilidade praticados pelo Presidente da República e traz normas regulando o respectivo processo. Há poucos meses, o Diretório Nacional do Partido Político Alfa consultou você, como advogado(a), sobre a possibilidade de ingressar com Ação Direta de Inconstitucionalidade (ADI) para impugnar alguns dispositivos da Lei nº 1.079/1950 que considerava incompatíveis com a ordem constitucional. Sobre a hipótese apresentada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4750,6 +4925,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direitos Humanos",
+          "tema": "Refugiados e Migrantes",
           "enunciado": "Mariana, que nasceu no Brasil, decidiu adquirir a nacionalidade de um país asiático. Embora este país não tivesse imposto condições para sua permanência no respectivo território ou para o exercício dos direitos civis, ela acreditava que essa decisão facilitaria sua circulação pelo continente asiático, já que tinha o propósito de explorar vários sítios montanhosos. No entanto, ao retornar ao Brasil neste mês, Mariana foi informada de que essa escolha pode resultar na perda de sua nacionalidade brasileira. Preocupada, ela consultou você, como advogado(a), para esclarecer a sua situação, explicando que nunca realizou qualquer pedido expresso para abdicar da nacionalidade brasileira. Sobre a situação de Mariana, de acordo com o sistema jurídico- constitucional brasileiro, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4777,6 +4953,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direitos Humanos",
+          "tema": "Direitos de Grupos Vulneráveis",
           "enunciado": "Na condição de advogado(a) especializado(a) na defesa de Direitos Humanos, você é procurado(a) por membros de uma comunidade de povos originários, interessados em regularizar a situação das terras por eles tradicionalmente ocupadas. A referida comunidade pretende obter esclarecimentos acerca do seu eventual direito de propriedade, bem como quanto à forma de sua utilização. Em relação ao tema, de acordo com o sistema regional americano e o ordenamento jurídico nacional, assinale a opção que apresenta, corretamente, o seu esclarecimento.",
           "alternativas": [
             {
@@ -4804,6 +4981,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direitos Humanos",
+          "tema": "Sistema Interamericano (Corte/Comissão)",
           "enunciado": "De acordo com a jurisprudência da Corte Interamericana de Direitos Humanos, em relação ao Direito à Proteção Judicial, previsto no Art. 25 do Pacto de São José da Costa Rica, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4831,6 +5009,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Eleitoral",
+          "tema": "Condutas Vedadas e Abuso de Poder",
           "enunciado": "João, prefeito do Município Alfa, no ano em que seriam realizadas eleições municipais, cedeu, de maneira gratuita, o uso de um prédio público, mais especificamente de uma escola pública, fora do horário de aulas, para que os partidos políticos pudessem promover as convenções partidárias nas quais seriam escolhidos os candidatos ao pleito. Ana, cidadã com elevado senso cívico, consultou você, como advogado(a), sobre a compatibilidade dessa medida com a legislação eleitoral. Em relação à atitude de João, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4858,6 +5037,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Eleitoral",
+          "tema": "Partidos Políticos e Financiamento",
           "enunciado": "João, que acabara de assumir a função de tesoureiro do partido político Alfa, solicitou explicações ao(à) advogado(a) do partido a respeito dos cuidados que deveria ter na aplicação dos recursos oriundos do Fundo Especial de Assistência Financeira aos Partidos Políticos (Fundo Partidário), mais especificamente em relação à existência de plena liberdade valorativa do partido político na aplicação desses recursos e à necessidade, ou não, de prestação de contas. Sobre a hipótese formulada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4885,6 +5065,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Internacional",
+          "tema": "Migração e Nacionalidade",
           "enunciado": "Hector, cidadão espanhol, chega ao Brasil, em janeiro de 2024, para passar as férias de verão em Salvador. Contudo, é proibido de ingressar no país pela Polícia Federal do Aeroporto Internacional de Salvador, porque, em janeiro de 2020, Hector foi expulso do Brasil e tal medida fora conjugada com o impedimento de reingresso por cinco anos. Sobre a hipótese apresentada, assinale a opção que indica, corretamente, a medida de retirada compulsória a ser aplicada a Hector.",
           "alternativas": [
             {
@@ -4912,6 +5093,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Internacional",
+          "tema": "Migração e Nacionalidade",
           "enunciado": "Sobre a concessão de visto, com base na Lei de Migração e na Constituição da República, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4939,6 +5121,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Financeiro",
+          "tema": "Despesa e Receita Pública",
           "enunciado": "Apesar de todas as despesas realizadas no primeiro semestre do ano pela Secretaria de Obras do Estado Alfa estarem devidamente previstas na sua lei orçamentária anual, o procedimento formal para sua realização não vinha atendendo integralmente as etapas e regras da legislação vigente, uma vez que todos os pagamentos aos fornecedores e empreiteiros estavam sendo realizados de maneira direta e antecipada ao vencedor da licitação, logo após a conclusão do edital de licitação. Diante desse cenário, à luz da Lei nº 4.320/1964, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -4966,6 +5149,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Financeiro",
+          "tema": "Lei de Responsabilidade Fiscal",
           "enunciado": "O Estado Alfa, ao final do segundo bimestre de um determinado exercício financeiro, percebeu que a realização da receita poderia não comportar o cumprimento das metas de resultado primário estabelecidas no Anexo de Metas Fiscais. Em razão disso, o Poder Executivo teve de realizar, nos trinta dias subsequentes, limitação de empenho e movimentação financeira. Diante desse cenário, assinale a opção que apresenta, corretamente, a despesa que poderia ser objeto de tal limitação de empenho.",
           "alternativas": [
             {
@@ -4993,6 +5177,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Obrigação Tributária",
           "enunciado": "Nova lei federal, ampliando o prazo de pagamento de certo tributo federal, foi publicada em 15/06/2023. Contudo, seu texto foi omisso quanto ao momento em que entraria em vigor. Diante desse cenário de omissão, assinale a opção que indica, corretamente, o momento em que tal lei tributária entrará em vigor, em todo o país.",
           "alternativas": [
             {
@@ -5020,6 +5205,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Limitações ao Poder de Tributar",
           "enunciado": "O Estado Alfa publicou, em 29/12/2024, uma nova lei ordinária, instituindo a incidência de IPVA sobre a propriedade de veículos automotores aéreos e aquáticos, com fato gerador ocorrendo no dia 1º de janeiro de cada ano. A partir do mês de janeiro de 2025, o Fisco Estadual começou a enviar aos contribuintes carnês de pagamento de IPVA incidente sobre tais veículos aéreos e aquáticos, com data de pagamento até o final de fevereiro de 2025. Acerca deste cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5047,6 +5233,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Prescrição e Decadência Tributária",
           "enunciado": "No Estado Alfa, a lei estadual do Imposto sobre a Transmissão Causa Mortis e Doações (ITCMD) determina que o lançamento deste tributo se faz por homologação via Internet. Por isso, dentro do prazo previsto em lei para comunicar o óbito à Secretaria Estadual de Fazenda, Júlia, filha e única herdeira de Maria, apresentou ao Fisco estadual a declaração correta de todos os bens que recebera a título de transmissão causa mortis de sua mãe, sendo o tributo integralmente devido ao Estado Alfa. O sistema on-line da Secretaria de Fazenda Estadual gerou a guia de pagamento do ITCMD, com vencimento em 07/03/2024. Contudo, o pagamento dessa guia não foi efetuado. Diante deste inadimplemento, assinale a opção que indica a partir de quando é contado o prazo prescricional para cobrança deste tributo.",
           "alternativas": [
             {
@@ -5074,6 +5261,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Obrigação Tributária",
           "enunciado": "Educando 100%, associação civil sem fins lucrativos, portadora de Certificado de Entidade Beneficente de Assistência Social (CEBAS), contratou a Construtora ABC Ltda. a fim de que esta realizasse a construção de um novo edifício para a entidade beneficente. Sobre o serviço de realização de obras incide o Imposto sobre Serviços (ISS), e a lei local, instituidora do tributo, estabeleceu que é obrigação da tomadora do serviço a retenção do ISS devido. Contudo, Educando 100% não reteve o ISS devido sobre a obra. A construtora prestadora do serviço também não efetuou o pagamento do ISS devido. Sobre a pretensão do Fisco de fazer a cobrança da dívida tributária, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5101,6 +5289,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Competência Tributária",
           "enunciado": "O Município Alfa, desejando aumentar sua arrecadação tributária, instituiu por lei ordinária municipal, publicada em 10/07/2025, um novo imposto sobre a concessão de autorizações para localização e funcionamento de estabelecimentos comerciais. A lei estabelece que produziria efeitos a partir de 01/01/2026. A sociedade empresária ABC Ltda. com estabelecimento comercial no Município Alfa, irresignada com a nova exação, contratou você, como advogado(a), para ajuizar ação declaratória tributária antes do início da vigência da nova lei, visando garantir que não seja cobrada quanto ao novo imposto municipal. Diante desse cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5128,6 +5317,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Atos Administrativos",
           "enunciado": "José é servidor público estadual lotado em um cargo que exerce o controle interno de determinado órgão administrativo. No exercício de suas atribuições, ele se deparou com um processo administrativo, no qual foi questionada a validade de certo ato administrativo que beneficia a sociedade empresária Calêndula, o qual apresentou vício na sua constituição, mas que está produzindo seus efeitos. Em razão disso, ele tem fundadas dúvidas acerca da necessidade de invalidar o ato administrativo e sobre as providências necessárias para tanto, dúvidas essas que levaram José a consultar a sua assessoria jurídica. À luz do disposto no Decreto-Lei nº 4.657/1942 (LINDB), com a redação conferida pela Lei nº 13.655/2018, que introduziu as disposições sobre segurança jurídica e eficiência na criação e na aplicação do direito público no ordenamento pátrio, assinale a opção que indica o esclarecimento correto prestado pela assessoria jurídica.",
           "alternativas": [
             {
@@ -5155,6 +5345,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Licitações e Contratos Administrativos",
           "enunciado": "A sociedade empresária XYZ, após o regular processo licitatório, celebrou contrato administrativo com o Estado Alfa, sem previsão de cláusula compromissória ou compromisso arbitral. Contudo, sem qualquer justificativa, a Administração Pública, por meio de uma ordem escrita, suspendeu a execução do contrato, o que já perdura por seis meses. Sendo assim, a entidade privada procurou você, para, na qualidade de advogado(a) auxiliá-la a equacionar a questão posta. Nesse cenário, considerando as disposições da Lei nº 14.133/2021 (Lei de Licitações e Contratos Administrativos), assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5182,6 +5373,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Improbidade Administrativa",
           "enunciado": "Caio, político em primeira legislatura, responde, em Juízo, por ato doloso de improbidade administrativa que teria causado prejuízo ao erário. Registre-se que os fatos apurados remontam a fevereiro de 2024. No curso da demanda, após apresentar contestação, suscitando questões preliminares, Caio foi informado de que o Ministério Público requereu a decretação de indisponibilidade de todos os seus bens, englobando, inclusive, o imóvel onde reside, tido como bem de família e adquirido licitamente. Nesse contexto, preocupado com as consequências que um potencial resultado desfavorável na ação judicial geraria na sua carreira política, Caio procurou você, como advogado(a), afirmando que estaria disposto a celebrar um acordo de não persecução cível com o Ministério Público e que possui condições financeiras de ressarcir até 80% do dano causado ao erário. Buscou, ainda, a sua orientação jurídica sobre o processo em curso. Nesse cenário, considerando as disposições da Lei nº 8.429/1992 (Lei de Improbidade Administrativa), assinale a opção que apresenta, corretamente, sua orientação.",
           "alternativas": [
             {
@@ -5209,6 +5401,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Agentes Públicos e Regime Disciplinar",
           "enunciado": "Matheus, servidor público federal estável, ocupante de cargo público no Ministério do Meio Ambiente, externou o desejo de concorrer, nas próximas eleições, ao cargo de Prefeito do Município Alfa, cidade onde nasceu. Encorajado pelos amigos, Matheus, leigo na seara jurídica, entrou em contato com você para que, na qualidade de advogado(a), o orientasse sobre o exercício do mandato de prefeito e sua condição de servidor público federal. Nesse cenário, considerando as disposições da Lei nº 8.112/1990, que dispõe sobre o regime jurídico dos servidores civis da União, das autarquias e das funções públicas federais, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5236,6 +5429,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Licitações e Contratos Administrativos",
           "enunciado": "Lucas, servidor público estatutário do Município Alfa, procurou Rodrigo, proprietário do estabelecimento comercial XYZ, especializado na manutenção de automóveis, para saber se ele tinha interesse em firmar um contrato administrativo, no valor de RS 60.000,00 (sessenta mil reais), para a prestação de serviços de manutenção de veículos automotores de propriedade do Município. Antes de prosseguir nas tratativas, Rodrigo entrou em contato com você para, na qualidade de advogado(a), prestar-lhe a adequada consultoria jurídica. Considerando as disposições da Lei nº 14.133/2021 (Lei de Licitações e Contratos Administrativos), assinale a afirmativa que apresenta, corretamente, a sua orientação.",
           "alternativas": [
             {
@@ -5263,6 +5457,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Ambiental",
+          "tema": "Responsabilidade Ambiental",
           "enunciado": "A sociedade empresária Algoz, ao realizar o tratamento de determinados produtos químicos, causou danos ambientais que comprometeram o solo de sua propriedade, sendo certo que tanto o Estado X quanto o Município Y foram omissos no dever de fiscalização. Após a poluidora mascarar os aludidos danos, a propriedade foi vendida para a sociedade empresária Crédula, que não tinha conhecimento de tais fatos. Diante da situação descrita, o Ministério Público ajuizou ação civil pública com vistas a obter a responsabilização civil em decorrência dos danos ambientais, sendo certo que incluiu no polo passivo da demanda a sociedade empresária Crédula, atual proprietária, a sociedade Algoz, que praticou a conduta lesiva ao meio ambiente, bem como o Estado X e o Município Y, pela omissão deles no dever de fiscalização. Considerando os dados apresentados, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5290,6 +5485,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Ambiental",
+          "tema": "Licenciamento Ambiental",
           "enunciado": "A sociedade empresária XYZ, com sede no Estado Alfa, pretende desenvolver atividade econômica potencialmente causadora de significativa degradação ambiental nos territórios dos Estados Alfa e Beta. Dessa forma, com o objetivo de cumprir a legislação ambiental, a entidade contratou você para, na qualidade de advogado(a), dar entrada com o requerimento de licenciamento ambiental junto ao(s) órgão(s) competente(s), auxiliando-a a obter todas as licenças ambientais necessárias. Nesse cenário, considerando as disposições da Resolução nº 237/1997 do Conselho Nacional do Meio Ambiente (Conama), que versa sobre o licenciamento ambiental, assinale a opção que apresenta, corretamente, a sua orientação.",
           "alternativas": [
             {
@@ -5317,6 +5513,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Parte Geral",
           "enunciado": "Dagoberto celebrou contrato por meio do qual se comprometeu a comprar a casa de Marina, se seu investimento em ações atingisse um rendimento acima de 10% no dia 20 daquele mês. No dia indicado por Dagoberto, restou comprovado que suas ações renderam 15%, mas ele se negou a comprar o imóvel. Em razão disso, Marina procurou você, como advogado(a), para saber como proceder frente ao caso narrado. Assinale a opção que indica a correta orientação jurídica que você prestou.",
           "alternativas": [
             {
@@ -5344,6 +5541,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Obrigações",
           "enunciado": "Mateus e Pedro adquiriram um veículo de Joana, figurando ambos como devedores solidários. Foi pactuado que o pagamento seria feito no prazo de 30 dias, contado da data da celebração do contrato. Ocorre que, dez dias após o acordo, Mateus faleceu, deixando dois herdeiros. Sobre as obrigações de cada um dos herdeiros de Mateus, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5371,6 +5569,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Responsabilidade Civil",
           "enunciado": "No último domingo, após uma partida de futebol, Ariano ofereceu carona em seu carro a João, seu fraterno amigo. Ao transitar por certa avenida em velocidade muito acima da permitida, o veículo conduzido por Ariano colidiu com um poste. João, com a colisão, sofreu graves lesões por todo corpo, tendo inclusive que amputar uma perna. A esposa de João, que está grávida, ficou extremamente abalada, encontrando-se internada em Unidade de Terapia Intensiva em um hospital público. A respeito do tema da responsabilidade civil de indenizar, com base nas súmulas do Superior Tribunal de Justiça, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5398,6 +5597,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Sucessões",
           "enunciado": "Gustavo, viúvo, é pai de Heitor e Gabriela. Gustavo tem uma relação harmoniosa com sua filha e extremamente conturbada com o filho. Por essa razão, Gustavo doou para sua filha uma casa que, ao tempo da liberalidade, correspondia a uma pequena fração de seu patrimônio. No contrato de doação, inexistiu qualquer cláusula especial. Dois anos após o referido contrato, Gustavo elaborou seu testamento, dispensando Gabriela de colacionar o bem. Com a morte de Gustavo e a abertura de seu testamento, Heitor está questionando a validade do contrato de doação e da dispensa de colação. Sobre a situação apresentada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5425,6 +5625,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Proteção de Dados/LGPD",
           "enunciado": "A Farmácia Vidar, participante de um programa de descontos vinculado à operadora de planos de saúde MedSaúde S.A., compartilhou com a operadora informações detalhadas sobre as compras de seus clientes, incluindo medicamentos adquiridos, frequência das compras e histórico de uso de fármacos. Esse compartilhamento foi realizado sem o consentimento explícito dos clientes, sob a justificativa de que a MedSaúde S.A. poderia utilizar os dados para oferecer benefícios personalizados e otimizar seus serviços de saúde. Ao tomar conhecimento da prática, Cristina, uma das clientes da farmácia, procurou você, como advogado(a) para emitir parecer sobre o caso, especialmente sobre a configuração da violação de algum direito. Diante dessa situação e com base na Lei Geral de Proteção de Dados (LGPD), assinale a opção que apresenta, corretamente, o parecer emitido.",
           "alternativas": [
             {
@@ -5452,6 +5653,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Direitos Reais",
           "enunciado": "Ruth é proprietária do Sítio Felicidade, localizado na zona rural do município de Ribeirão Corrente (SP). Há 15 anos, ela mantém canos subterrâneos de irrigação que atravessam o Sítio da Lua, de propriedade de Demétrio, para captar água de uma nascente situada dentro desse último. O uso sempre foi contínuo e sem oposição, mas invisível a olho nu, já que o sistema está instalado sob o solo. Nunca houve registro da servidão no Cartório de Registro de Imóveis, tampouco um contrato formal entre os antigos proprietários. Em novembro de 2025, Pedro, novo dono do Sítio da Lua, ao descobrir as tubulações, notificou Ruth para interromper o uso da água, alegando que a servidão não se constituiu validamente por ausência de registro. Considerando o caso concreto e as normas do Código Civil sobre a constituição e aquisição de servidões, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5479,6 +5681,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito da Criança e do Adolescente",
+          "tema": "Direitos Fundamentais da Criança e do Adolescente",
           "enunciado": "Maria e José, ambos com 45 anos, possuem um filho em comum, Paulo, que, hoje, tem 17 anos. Quando Paulo tinha 12 anos, Maria e José se divorciaram e foi estipulada judicialmente a guarda unilateral para Maria, sendo certo que José sempre usou o seu direito de convivência com o adolescente em finais de semanas alternados. Após muito esforço, Maria conseguiu angariar recursos para fazer uma viagem dentro do território nacional com Paulo. A viagem será de uma semana e não afetará o direito de visitação de José. Ocorre que o genitor se opõe à viagem, mesmo sem apresentar qualquer justificativa para isso. Preocupada, Maria procura você, como advogado(a), para que lhe preste a solução jurídica adequada. De acordo com o ECA, assinale a opção que, corretamente, indica a sua orientação.",
           "alternativas": [
             {
@@ -5506,6 +5709,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito da Criança e do Adolescente",
+          "tema": "Ato Infracional e Medidas Socioeducativas",
           "enunciado": "Marcos, 17 anos, responde a processo de apuração de ato infracional. Segundo a representação, o adolescente foi apreendido quando estava subtraindo bens de um estabelecimento comercial. Assim, foi-lhe imputada a conduta análoga ao Art. 155 do Código Penal (furto). Mariana, 40 anos, mãe de Marcos, o(a) procura, na condição de advogado(a), para fazer a defesa. Designada audiência de apresentação, estavam presentes Marcos, Mariana e as testemunhas de acusação. Tanto Marcos quanto Mariana confirmaram, perante a autoridade judiciária, que você fará a defesa técnica naquele processo. Entretanto, o Juízo verificou que não há procuração juntada aos autos. Por isso, o excluiu do feito e nomeou a Defensoria Pública para patrocinar os interesses do adolescente, contra a vontade deste e de sua genitora. Considerando o caso acima narrado, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5533,6 +5737,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Consumidor",
+          "tema": "Práticas e Contratos de Consumo",
           "enunciado": "Augusto assinou um contrato de adesão com a sociedade empresária AquaLimpa, fornecedora de água e esgoto em sua cidade, para o fornecimento de água em sua residência. Após meses de uso regular, Augusto foi surpreendido por uma cobrança inesperada no valor de R$ 2.500,00 (dois mil e quinhentos reais), sendo alegado um “ajuste de consumo retroativo”. A sociedade empresária AquaLimpa informou que o valor deveria ser pago imediatamente para evitar o corte no fornecimento de água. No entanto, Augusto verificou que o contrato não mencionava essa possibilidade de ajuste retroativo, nem qualquer explicação prévia sobre o cálculo desse valor. Diante da situação hipotética narrada e com base no Código de Defesa do Consumidor, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5560,6 +5765,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Consumidor",
+          "tema": "Responsabilidade pelo Fato/Vício",
           "enunciado": "Maria adquiriu um aquecedor elétrico de uma marca renomada. Após uma semana de uso, o aquecedor apresentou um curto- circuito, causando um incêndio que danificou parte de sua residência. Após investigações, constatou-se que o defeito era decorrente de uma falha de fabricação, já relatada por outros consumidores. Ao buscar uma solução com o fabricante, este alegou que o acidente foi causado pelo uso inadequado do produto e negou responsabilidade. Sobre o fato narrado, com base no Código de Defesa do Consumidor, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5587,6 +5793,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Recuperação Judicial e Falência",
           "enunciado": "À Assembleia de Credores, convocada para deliberação sobre o plano de recuperação judicial apresentado por Atacado Têxtil Itapemirim Ltda., compareceram os credores Afonso Fundão e Viana & Cia. Ltda. O primeiro é sócio da recuperanda e credor por empréstimo fornecido a ela; o segundo é credor por duplicatas, cujo valor e condições de pagamento não serão alterados pelo plano. Com base nessas informações e nas disposições sobre a participação e o voto nas Assembleias de Credores (Lei nº 11.101/2005), assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5614,6 +5821,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Empresário e Sociedade Empresária",
           "enunciado": "Pedro e Vitória são casados desde 2005 no regime de comunhão parcial de bens e pretendem constituir sociedade simples com seus filhos Carlos e Conceição. De acordo com as regras do Código Civil para a participação de pessoas casadas em sociedade, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5641,6 +5849,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Títulos de Crédito e Contratos Empresariais",
           "enunciado": "A sociedade empresária Brasilândia Materiais de Construção contraiu empréstimo junto ao Banco Figueirão S.A. garantido pela alienação fiduciária de seis veículos automotores. O contrato tem prazo de vigência de 36 meses e, após o decurso de 17 meses, a devedora fiduciante deixou de pagar as prestações do empréstimo, sendo a mora comprovada por carta registrada com aviso de recebimento devidamente entregue. Diante da mora no adimplemento das obrigações contratuais, assinale a opção que indica a prerrogativa que o Banco Figueirão tem, na condição de proprietário fiduciário dos veículos automotores.",
           "alternativas": [
             {
@@ -5668,6 +5877,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Nome Empresarial e Estabelecimento",
           "enunciado": "A sociedade empresária Elétrica Passa Sete Ltda., por meio de seu administrador, ajuizou tempestivamente ação renovatória de ocação não residencial referente ao imóvel onde está localizada a ilial na cidade de Varginha, MG. Na petição inicial, a autora indicou as condições oferecidas para a renovação da locação, especialmente o novo valor do aluguel proposto. Apresentada a contestação, o locador informou que recebeu proposta de terceiro para a nova locação em condições melhores do que aquelas propostas pela locatária na petição inicial, sendo o valor locativo do imóvel 12% maior do que o oferecido pela ocatária. Considerados os fatos narrados, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5695,6 +5905,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Tutelas Provisórias",
           "enunciado": "José ajuizou ação de indenização por danos materiais e morais contra Ana. Na petição inicial, José formulou requerimento de tutela provisória de urgência para que fosse determinado o bloqueio imediato de bens detidos por Ana, até o valor pleiteado por José no processo judicial, como forma de resguardar uma futura indenização para José, se forem julgados procedentes os seus pedidos de danos materiais e morais. Após realizar a admissibilidade da petição inicial, o magistrado concedeu a tutela provisória de urgência em favor de José. Nessa situação hipotética, assinale a opção que indica o recurso a ser interposto por Ana.",
           "alternativas": [
             {
@@ -5722,6 +5933,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Petição Inicial e Resposta do Réu",
           "enunciado": "Joana ajuizou ação declaratória de nulidade de negócio jurídico em face de João e Regina, alegando ter sido vítima de dolo de ambos na celebração de contrato de compra e venda de imóvel. Em sede de contestação, além de negarem os fatos alegados por Joana, João e Regina procuram você, como advogado(a), para propor reconvenção contra Joana e Marcelo, seu fiador, para cobrar valores alegadamente em atraso, referentes às parcelas do contrato de compra e venda firmado pelas partes. Sobre o caso acima, assinale a opção que apresenta, corretamente, a orientação jurídica prestada.",
           "alternativas": [
             {
@@ -5749,6 +5961,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Cumprimento de Sentença e Execução",
           "enunciado": "Lucas requereu o cumprimento de sentença de obrigação de pagar alimentos, decorrente de sentença condenatória proferida em desfavor de Leonardo, seu pai, que é servidor público, condenado ao pagamento de alimentos, no percentual de 20% de seus rendimentos líquidos. Regularmente intimado, Leonardo não pagou o débito cobrado, porém apresentou petição alegando que enfrenta dificuldades financeiras que impossibilitam o cumprimento da obrigação, requerendo ao Juízo a concessão de maior prazo para pagar a dívida. Sobre o caso apresentado, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5776,6 +5989,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Procedimentos Especiais",
           "enunciado": "Marta faleceu, deixando três filhos, cônjuge e bens a inventariar. Nenhum dos herdeiros é incapaz, há consenso sobre a partilha, e eles desejam realizar o inventário da forma mais rápida possível. Considerando os procedimentos judiciais e extrajudiciais que regem o inventário e a partilha, assinale a afirmativa que apresenta a providência a ser adotada pelos herdeiros.",
           "alternativas": [
             {
@@ -5803,6 +6017,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Cumprimento de Sentença e Execução",
           "enunciado": "Glauco ingressou com uma ação contra Alex que, após o trânsito em julgado da sentença condenatória, deu início ao cumprimento de sentença. Alex foi devidamente intimado para pagar o débito no prazo legal, mas não realizou o pagamento. Seis dias após o término do prazo para o pagamento, ao ser questionado sobre a apresentação da impugnação ao cumprimento de sentença, Alex afirmou que ainda aguardava uma intimação específica para impugnar, pois acreditava que o prazo para se manifestar só começaria a contar após essa nova intimação. Diante dessa situação, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5830,6 +6045,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Sentença e Coisa Julgada",
           "enunciado": "Joana ajuizou ação em face de Pietra, cirurgiã plástica, requerendo a sua condenação ao pagamento de danos morais e estéticos, resultantes de procedimento estético malsucedido. Ocorre que, anteriormente, em decisão transitada em julgado, fundada na mesma causa de pedir e contra a mesma profissional, um pedido idêntico de Joana foi julgado improcedente em face de Pietra, sob o fundamento de que não restou comprovada conduta negligente de Pietra, a ensejar a sua condenação. Em tal hipótese, assinale a opção que indica o fenômeno processual cabível para extinguir a ação proposta por Joana.",
           "alternativas": [
             {
@@ -5857,6 +6073,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Aplicação da Lei Penal",
           "enunciado": "Waldir, cidadão brasileiro, depois de anos de poupança, conseguiu realizar o sonho de infância e comprou um pacote de viagem para conhecer a cidade de Orlando, nos EUA. Como nunca havia viajado em avião, Waldir irritou-se com as condições precárias disponibilizadas na classe econômica da aeronave privada registrada sob bandeira brasileira e desistiu da viagem durante o voo, exigindo, aos gritos, o imediato retorno ao aeroporto de origem. Ao ser advertido pela tripulação, Waldir agrediu fisicamente o comissário de bordo, de nacionalidade brasileira, causando-lhe esão corporal grave, quando o avião já sobrevoava território estrangeiro. Sobre essa situação hipotética, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5884,6 +6101,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
           "enunciado": "Na noite em que completou 19 anos de idade, Júnior, morador do bairro Leblon, RJ, resolveu testar o Bugatti Chiron de seu pai, que é o carro mais caro do Brasil, avaliado em cerca de 10 milhões de reais. Júnior esqueceu a sua carteira de habilitação em casa e saiu com o veículo, mas, por desconhecer a extraordinária potência do motor, perdeu o controle da direção e abalroou José, morador de rua, que foi socorrido, mas teve as pernas amputadas. Diante de tal situação hipotética, com base nos princípios aplicáveis ao conflito aparente de normas penais, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5911,6 +6129,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
           "enunciado": "João é missionário, e Pedro é pastor, ambos da mesma igreja. O primeiro planejou apropriar-se do dinheiro dos dízimos que Pedro costumava guardar em uma urna em seu quarto, localizado nos fundos da igreja. Quando Pedro se ausentou durante a noite, João pulou o muro e arrombou a fechadura, mas, ao se aproximar da urna, foi tomado por um sentimento sobrenatural, orou para livrar-se dos maus pensamentos e foi embora. Sobre a ação praticada por João, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5938,6 +6157,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Aplicação da Lei Penal",
           "enunciado": "Abelardo pegou a filha de Geraldo na saída do colégio e a manteve sob seu poder durante cinco dias, liberando-a após ter sido cumprida a exigência de pagamento da quantia de R$ 100.000,00 (cem mil reais). No terceiro dia do encarceramento, entrou em vigor uma nova lei que dobrou a pena aplicável ao crime de extorsão mediante sequestro. Sobre a aplicabilidade da nova lei ao caso narrado, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5965,6 +6185,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
           "enunciado": "Em 1º de abril, dia da mentira, Maria resolveu “pregar uma peça” em Pedro, coveiro no cemitério Paz Eterna. Maria pediu a José que divulgasse nas redes sociais que ela falecera após ter sofrido um infarto. Como parte da encenação, Maria sedou-se e deitou-se em um caixão, que foi lacrado e encaminhado por José, com documentos sofisticadamente falsificados, para a sede do Paz Eterna. Sem ser avisado ou desconfiar da farsa, Pedro ficou muito triste e, após orar pela alma de Maria, cumpriu seu dever profissional, realizando a cremação e guardando as cinzas num pote de vidro, que se quebrou. Sobre o procedimento de Pedro, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -5992,6 +6213,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
           "enunciado": "Bernardo é gerente bancário e teve seu filho levado por terceiros, que lhe exigiram o pagamento de um milhão de reais para devolvê- lo com vida. Bernardo, valendo-se de sua condição de gerente de banco, foi à agência em que trabalhava e subtraiu a quantia, sendo, entretanto, flagrado quando chegava em sua casa portando o dinheiro subtraído. Sobre a situação de Bernardo no fato hipotético, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6019,6 +6241,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Nulidades",
           "enunciado": "Lucas era investigado por estupro de vulnerável, pois, de acordo com as investigações, teria mantido relações sexuais com pessoa menor de 14 anos. A partir de indícios concretos, a 12 Vara Criminal da Comarca correspondente ao local dos fatos expediu mandado de busca e apreensão de aparelhos eletrônicos de Lucas, após regular requerimento do Ministério Público. Nos dispositivos eletrônicos apreendidos foram localizados diversos arquivos, cujo conteúdo apresentava abuso sexual infantil, armazenados e compartilhados nas redes sociais, acessíveis de qualquer lugar do país e do exterior, sem se confirmar, contudo, a hipótese inicial de estupro de vulnerável. Assim, Lucas foi denunciado como incurso nas penas do Art. 241- A e do Art. 241-B, ambos do ECA (divulgação e armazenamento de conteúdo pornográfico envolvendo criança ou adolescente). A sentença foi proferida pelo Juiz de Direito da 12 Vara Criminal da Comarca, tendo sido confirmada pelo Tribunal de Justiça correspondente, e transitada em julgado, condenando Lucas a 5 anos de reclusão, em regime semiaberto. A respeito dos fatos, assinale a opção que apresenta, corretamente, a providência de Direito Processual Penal que o(a) advogado(a) deve adotar.",
           "alternativas": [
             {
@@ -6046,6 +6269,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Recursos Penais",
           "enunciado": "Arthur está cumprindo pena privativa de liberdade pela prática do crime de furto qualificado. Durante o curso da execução penal sofreu uma queda e ficou tetraplégico, atestado em laudo médico oficial. No final do ano, o Presidente da República concedeu indulto natalino via Decreto, abrangendo os casos de tetraplegia superveniente à prática do delito, desde que o crime tivesse sido praticado sem violência ou grave ameaça. Sendo assim, você, como advogado(a) de Arthur, formulou o pedido de declaração da extinção da punibilidade ao Juízo da Execução, que indeferiu o pedido, sem apresentar undamentação. Diante do caso narrado, na qualidade de advogado(a) de Arthur, você deve interpor",
           "alternativas": [
             {
@@ -6073,6 +6297,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Crimes contra a Pessoa",
           "enunciado": "Túlio abriu sua geladeira, retirou sua água com gás e, ao beber, sentiu um gosto estranho, posteriormente vindo a descobrir que se tratava de solvente. Em seguida, Túlio entrou no quarto e chamou sua esposa, Felícia, de “assassina”. Após o esclarecimento de que o solvente tinha sido colocado por equívoco na geladeira por seu filho Thor, Túlio pediu desculpas à Felícia. Alguns dias depois, Felícia contou, em uma roda informal, para a sua amiga Promotora de Justiça, que o marido a havia chamado de “assassina”. Diante de tais fatos, o Ministério Público ofereceu a denúncia por crime de injúria em desfavor de Túlio. Sobre o caso narrado, como advogado(a) de Túlio, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6100,6 +6325,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Prisões e Medidas Cautelares",
           "enunciado": "Joaquim, menor impúbere de 8 anos de idade, sofreu castigos físicos imoderados praticados por seu pai, Geraldo. Diante do fato, a mãe de Joaquim, representando-o, constituiu você como advogado(a) do menor. Assinale a opção que apresenta, corretamente, o requerimento que você, como advogado(a) de Joaquim, deve apresentar.",
           "alternativas": [
             {
@@ -6127,6 +6353,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Provas no Processo Penal",
           "enunciado": "Caim, desejando matar Abel, lhe ofereceu um pastel de camarão durante uma festa, sabendo que esse alimento lhe causaria severa alergia. Abel consumiu o pastel oferecido por Caim, além de diversos outros salgados e, em sequência, teve uma violenta crise alérgica, vindo a falecer. Acionada a polícia, os investigadores recolheram, em um mesmo invólucro, todos os alimentos da festa, os quais foram submetidos à perícia, que concluiu que “todos os alimentos periciados contêm traços de camarão em quantidade suficiente para causar a morte da vítima, da forma como ocorreu, não se podendo precisar se a contaminação de tais alimentos ocorreu durante o preparo, na cozinha, ou durante o recolhimento pela Polícia.” A necropsia revelou que o consumo de substância alergênica causou a morte de Abel. Sabe-se, ainda, que não é mais possível repetir a colheita de vestígios e a perícia dos alimentos. Assim, Caim foi denunciado pelo homicídio doloso de Abel. Como advogado de Caim, é correto afirmar que a quebra da cadeia de custódia enseja",
           "alternativas": [
             {
@@ -6154,6 +6381,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Procedimentos (comum e júri)",
           "enunciado": "Flávia foi pronunciada pela suposta prática de crime de aborto. O processo estava tramitando na cidade de Salgados, PA, e teve grande repercussão no local, havendo, inclusive, várias ameaças de populares contra a ré. A sessão de julgamento pelo júri popular já foi designada, tendo a defesa sido intimada da referida designação. Sobre a hipótese, assinale a opção que indica o modo adequado de você, como advogado(a) da ré, requerer que o julgamento ocorra em outra Comarca.",
           "alternativas": [
             {
@@ -6181,6 +6409,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Previdenciário",
+          "tema": "Segurados e Filiação",
           "enunciado": "Joana Silva, empregada doméstica, prestando serviço aos mesmos empregadores por cinco anos consecutivos, é demitida por justa causa, devido à prática de ilícito prontamente comprovado em ambiente laboral. Joana, seis meses após o desligamento, sofreu um acidente de trânsito, restando incapacitada permanentemente para qualquer atividade remunerada. Nesse contexto, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6208,6 +6437,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Previdenciário",
+          "tema": "Acidente de Trabalho",
           "enunciado": "Sílvia Lima, empregada segurada do Regime Geral da Previdência Social (RGPS), desempenha suas funções em atividades externas, mediante entregas de produtos elaborados por seu empregador. Em uma de suas entregas, logo após deixar a mercadoria e já no retorno ao seu posto de trabalho, foi atingida por um veículo em alta velocidade, que transitava em desacordo com os limites da via. Em virtude do ocorrido, Sílvia permaneceu afastada por um ano, em gozo de benefício previdenciário por incapacidade temporária, tendo se recuperado plenamente para as suas atividades. Sobre a situação de Sílvia, segundo o RGPS, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6235,6 +6465,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Relação de Emprego",
           "enunciado": "A sociedade empresária Bons Caminhos Ltda. consultou você, como advogado(a), porque pretendia contratar, em setembro de 2025, alguns aprendizes e estagiários com 18 anos de idade para que realizassem atividades na modalidade de teletrabalho. A sociedade empresária deseja saber se tal pretensão era válida. Em resposta à demanda da sociedade empresária, considerando os termos da CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6262,6 +6493,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Remuneração e Verbas Rescisórias",
           "enunciado": "Em outubro de 2023, a sociedade empresária Plantas Ornamentais Ltda. dispensou o empregado Josimar, sem justa causa, após dois anos de contrato de trabalho. A sociedade calculou as verbas resilitórias e depositou-as na conta do trabalhador em cinco dias e, no mesmo dia, fez o recolhimento da indenização de 40% sobre o FGTS. Ocorre que, por equívoco do setor de Recursos Humanos da sociedade empresária, as guias para o saque do FGTS e os formulários para o requerimento do seguro-desemprego somente foram entregues 60 dias após o término do aviso prévio. Sobre a hipótese, considerando os termos da CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6289,6 +6521,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Segurança e Saúde no Trabalho",
           "enunciado": "Jéssica trabalha em um hospital particular de Belo Horizonte, no setor de tratamento de pacientes com doenças infectocontagiosas, recebendo adicional de insalubridade em grau máximo. Em 2024, Jessica engravidou e deu ciência do fato ao seu chefe, que imediatamente a transferiu para o setor de convênios, localizado em um prédio diferente do hospital, ocupando uma confortável e arejada sala comercial na qual cinco funcionários negociam com os planos de saúde conveniados, por telefone, a tabela de valores pelos atendimentos e procedimentos, sem atendimento presencial do público externo. Sobre a situação apresentada e os termos da CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6316,6 +6549,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Jornada e Descanso",
           "enunciado": "Luana Moreira trabalha em uma sociedade empresária do setor de cosméticos das 7h às 13h15min e desfruta de 15 minutos de intervalo que ocorre das 10h às 10h15min, mas está pressionando sua chefia, aduzindo que teria direito a 1 hora, no mínimo, razão pela qual pretende receber 1 hora como extraordinária, com repercussão nas demais parcelas salariais do contrato. A sociedade empresária consultou você, como advogado(a), para saber como agir. Sobre a hipótese apresentada, de acordo com a legislação trabalhista em vigor, assinale a afirmativa que, corretamente, apresenta a sua resposta.",
           "alternativas": [
             {
@@ -6343,6 +6577,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Relação de Emprego",
           "enunciado": "Reginaldo trabalha para a sociedade empresária Móveis Modulados Ltda. desde 2021 como montador, sendo considerado um empregado exemplar. Em agosto de 2024, Reginaldo compareceu ao trabalho com uma tornozeleira eletrônica, fato que se tornou o comentário geral na sociedade empresária, pois todos especulavam o que Reginaldo teria feito de errado. A sociedade empresária, que nunca havia se deparado com tal situação, o(a) consultou, como advogado(a), para obter um parecer sobre o que deverá ocorrer com o contrato de trabalho de Reginaldo. Você verifica pelo sistema processual que a tornozeleira foi colocada de modo cautelar, pois o processo de Reginaldo ainda está no início e refere-se a vias de fato que teve com um torcedor de time adversário quando estava em um estádio, no final de semana, assistindo a uma partida de futebol. Sobre o contrato de trabalho de Reginaldo, considerando os fatos e a legislação em vigor, assinale a opção correta.",
           "alternativas": [
             {
@@ -6370,6 +6605,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Atos, Prazos e Nulidades",
           "enunciado": "João Paulo trabalhou como vendedor em uma loja de calçados de 20/02/2022 a 30/01/2023, situada próxima de sua residência, no município de Duque de Caxias, RJ. Pela proximidade, menos de 50 m de distância, João Paulo ia a pé para o serviço e não optou por receber vale-transporte. Ocorre que, ao ser dispensado, ajuizou ação trabalhista reclamando a concessão do benefício, ação que seu advogado distribuiu para o Município do Rio de Janeiro, indo para a 1002 Vara do Trabalho (VT) do Rio de Janeiro, que designou uma audiência presencial. A loja está localizada em Duque de Caxias e você, advogado(a) da loja, tem seu escritório na mesma cidade. Sobre a competência territorial e a medida processual a ser adotada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6397,6 +6633,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Atos, Prazos e Nulidades",
           "enunciado": "Lorena trabalha como tosadora de animais em um pet-shop desde 2022, recebendo um salário mínimo nacional mensalmente. Ainda com o contrato de trabalho em vigor, Lorena pediu que você, como advogado(a), ajuizasse em 2024, reclamação trabalhista postulando o pagamento de adicional noturno, pois ela trabalha até 22h30. Na petição inicial, você não requereu gratuidade de justiça, nem juntou declaração de miserabilidade ou necessidade jurídica. O pedido foi julgado totalmente improcedente, mas o Juiz concedeu, de ofício, a gratuidade de justiça. Considerando os fatos narrados, a previsão contida na CLT e o entendimento consolidado do TST, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6424,6 +6661,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Segurança e Saúde no Trabalho",
           "enunciado": "Jean ajuizou reclamação trabalhista, em 2024, contra o seu ex- empregador, requerendo o pagamento do adicional de insalubridade. Após contestada, o Juiz determinou a realização de perícia a cargo de um engenheiro do trabalho. A ré apresentou seu protesto sob a alegação de que, para tal perícia, somente um médico do trabalho poderia realizá-la. Considerando os termos da CLT e da jurisprudência consolidada do TST, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6451,6 +6689,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Dissídios Coletivos",
           "enunciado": "Um sindicato de classe dos empregados ajuizou, perante o Tribunal Regional do Trabalho competente, dissídio coletivo de natureza econômica com alcance municipal. Após ser devidamente contestado, o processo foi extinto sem a resolução do mérito, não havendo margem para a oposição de embargos de declaração. Considerando esses fatos e que você é o(a) advogado(a) do sindicato autor, assinale a opção que indica o recurso cabível e o respectivo prazo.",
           "alternativas": [
             {
@@ -6478,6 +6717,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Competência da Justiça do Trabalho",
           "enunciado": "Você foi procurado(a) por um Sindicato de Empregados que deseja ajuizar uma ação em face de outro Sindicato de Empregados, com o objetivo de discutir a legitimidade para receber as contribuições sindicais oriundas de uma determinada sociedade empresária. Sobre a hipótese, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6511,6 +6751,7 @@ var QuestoesSeed = (function () {
       "questoes": [
         {
           "territorio": "Ética",
+          "tema": "Direitos e Prerrogativas do Advogado",
           "enunciado": "Determinada operação de combate à corrupção conduzida pela Polícia Federal reuniu elementos indicativos de autoria e materialidade da prática de crime por parte de Cláudio, advogado regularmente inscrito na Ordem dos Advogados do Brasil. Com base nesses elementos, a Justiça Federal expediu mandado de busca e apreensão, específico e pormenorizado, o qual foi cumprido, na presença de representante da OAB, no endereço residencial de Cláudio, o qual também lhe servia como local de trabalho. Foram apreendidos e periciados um notebook e dois aparelhos de telefone celular, todos contendo informações sobre diversos processos de clientes patrocinados por Cláudio. A respeito da validade jurídica da diligência realizada e da utilização das informações encontradas nas mídias apreendidas, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6538,6 +6779,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Ética e Disciplina",
           "enunciado": "O advogado Antônio Carlos ajuizou, em favor de sua cliente Celina, lide manifestamente temerária em face de João. A esse respeito, à luz do Estatuto da Advocacia e da OAB, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6565,6 +6807,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Incompatibilidades e Impedimentos",
           "enunciado": "Roberto Silva, advogado e sócio fundador da sociedade de advogados Silva e Souza Advogados Associados, foi eleito para o cargo de Prefeito do Município Ômega. Embora feliz e motivado com o mandato que lhe foi confiado pela população, Roberto Silva não gostaria de se retirar da sociedade de advogados por ele fundada. Considerando o Estatuto da Advocacia e da OAB, assinale a afirmativa que descreve corretamente a situação societária e a eventual atuação de Roberto Silva como advogado após assumir o cargo de Prefeito de Ômega:",
           "alternativas": [
             {
@@ -6592,6 +6835,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Direitos e Prerrogativas do Advogado",
           "enunciado": "A advogada Nina exerce função na diretoria do Conselho Federal da OAB. Em virtude exclusivamente das funções desempenhadas na OAB, Nina toma conhecimento de certos fatos envolvendo seus colegas advogados João e Maria. Nina acaba de receber uma intimação para depor como testemunha em audiência de instrução e julgamento, referente a uma ação indenizatória, de cunho meramente patrimonial, sem envolver grave ameaça ao direito à vida e à honra, ajuizada por Maria em face de João, cujo objeto tem relação com mencionados fatos de que tomou conhecimento no exercício da citada função Considerando a situação hipotética, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6619,6 +6863,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Incompatibilidades e Impedimentos",
           "enunciado": "Roberto Gil, professor de Direito Administrativo da Universidade Federal do Estado Alfa, é casado com Maria Amélia, servidora do Ministério da Saúde há 35 anos. Maria Amélia contou a seu esposo que várias colegas do Ministério da Saúde estão ajuizando ações contra a União, em que postulam o recebimento de gratificações de atividade de combate e controle de endemias, e indagou a Roberto Gil se poderia assumir o patrocínio dessas causas como advogado. Com base no caso narrado, sobre as incompatibilidades e impedimentos ao exercício da advocacia, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6646,6 +6891,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Inscrição e Órgãos da OAB",
           "enunciado": "José Fabiano, advogado recém-inscrito na OAB, com dois anos e seis meses de exercício da profissão, decidiu se candidatar para o cargo de Conselheiro Seccional da Ordem. Durante o procedimento de verificação da regularidade de sua candidatura, observou-se que ele havia sido condenado pela prática da infração disciplinar de abandonar a causa sem justo motivo ou antes de decorridos dez dias da comunicação da renúncia, tendo-lhe sido imposta sanção de censura, sem que tenha ocorrido, até o momento da eleição, sua reabilitação. Com base nessa situação hipotética e considerando as eleições da OAB, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6673,6 +6919,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Exercício da Advocacia",
           "enunciado": "A sociedade empresária Alfa contratou o advogado João Carlos para propor ação de repetição de indébito tributário contra a Fazenda Nacional. Foi outorgado mandato específico para a referida demanda e celebrado o respectivo contrato de honorários. No decorrer da prestação dos serviços, devido ao grande conhecimento de João Carlos em outras áreas do direito, bem como à sua pronta disponibilidade, os responsáveis pela Alfa passaram a consultá-lo informalmente sobre diversos assuntos da empresa, inclusive adotando medidas e tomando decisões a partir das orientações verbais prestadas. Seis meses após o início dessas consultas, a empresa Alfa e João Carlos formalizaram outro contrato de honorários advocatícios, com efeitos prospectivos, desta feita para a prestação da atividade consultiva em curso. Acerca da atuação profissional de João Carlos durante o período anterior à formalização do contrato de honorários, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6700,6 +6947,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Direitos e Prerrogativas do Advogado",
           "enunciado": "Rita, advogada regularmente inscrita na OAB, compareceu ao Detran para providenciar a transferência de um veículo que acabara de adquirir. Instada a apresentar seu documento de identificação civil, Rita apresentou sua carteira da OAB, a qual não foi aceita pelo funcionário da repartição, que afirmou ser imprescindível a apresentação da Carteira de identidade (Registro Geral) ou da Carteira Nacional de Habilitação (CNH). Com base no enunciado, a recusa do documento emitido pela OAB foi",
           "alternativas": [
             {
@@ -6727,6 +6975,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Filosofia do Direito",
+          "tema": "Justiça (autores clássicos)",
           "enunciado": "Pois, segundo entendo, no limite do cognoscível é que se avista, a custo, à ideia do Bem; e, uma vez avistada, compreende-se que ela é para todos a causa de quanto há de justo e belo... (Platão) Em seu livro A República, Platão conta a famosa Alegoria da Caverna, ensinando a não confundir aparência (imperfeita) com essência (perfeita). Nesse sentido, é correto afirmar que, para Platão, a Justiça corresponde",
           "alternativas": [
             {
@@ -6754,6 +7003,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Filosofia do Direito",
+          "tema": "Justiça (autores clássicos)",
           "enunciado": "O governo é o exercício do poder supremo do Estado. Este poder só poderia estar ou nas mãos de um só, ou da minoria, ou da maioria das pessoas. Quando o monarca, a minoria ou a maioria não buscam, uns ou outros, senão a felicidade geral, o governo é necessariamente justo. (Aristóteles) No livro A Política, Aristóteles fala do que ele considera as formas adequadas ou justas de governo de um, de poucos e de muitos. São elas, respectivamente, monarquia, aristocracia e república. Porém, ele afirma que cada uma dessas formas de governo pode degenerar, respectivamente, para uma forma injusta. Seriam elas:",
           "alternativas": [
             {
@@ -6781,6 +7031,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Processo Legislativo",
           "enunciado": "No processo legislativo afeto ao projeto de Lei Complementar nº XXX e à proposta de Emenda Constitucional nº YYY, o Congresso Nacional aprovou a redação final de ambas. Como divulgado pela imprensa, auxiliares do Presidente da República entendiam que, tanto o projeto de Lei Complementar quanto a proposta de Emenda Constitucional melhor atenderiam aos seus objetivos se fossem suprimidos alguns dispositivos de ambos. Com essa convicção, sugeriram que o Presidente da República usasse do seu poder de veto, a fim de adequar os referidos textos aquilo que entendiam ser melhor para os interesses do país. Sobre o poder de veto do Poder Executivo, segundo o sistema jurídico constitucional brasileiro, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6808,6 +7059,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Organização dos Poderes",
           "enunciado": "O Conselho Nacional de Justiça (CNJ) recebeu expediente relacionado à atuação de João, Juiz de Direito do Estado Delta. De acordo com a narrativa, em sede cautelar, no âmbito de processo penal, João proferiu decisão judicial que violou a ordem constitucional, pois teria condenado uma pessoa sem que ela e seu advogado tivessem participado da colheita da prova. A referida manifestação solicitava, então, que o ato judicial praticado pelo magistrado fosse devidamente revisto pelo CNJ. À luz dessa narrativa, segundo a Constituição da República, assinale a opção que indica, corretamente, o entendimento a ser adotado pelo CNJ em relação à almejada revisão do ato judicial praticado.",
           "alternativas": [
             {
@@ -6835,6 +7087,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Processo Legislativo",
           "enunciado": "Algumas lideranças partidárias do Congresso Nacional têm considerado inadequadas as políticas públicas adotadas por diversos Estados, as quais, para essas lideranças, não se compatibilizavam com as iniciativas adotadas pela União. Por esta razão, informaram que pretendem propor uma emenda à Constituição da República, segundo a qual qualquer deliberação legislativa estadual pode vir a ser anulada pelo Congresso Nacional, enquanto qualquer ato emanado por governadores pode vir a ser revisto pelo Presidente da República. Sobre a hipótese, segundo a ordem jurídica vigente no Brasil, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -6862,6 +7115,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Organização do Estado",
           "enunciado": "O governador do Estado Alfa determinou, de forma deliberada, que Alfa deixasse de realizar os depósitos para pagamento de dívida fundada que possui com a União. Alertado sobre possíveis consequências jurídico-políticas passíveis de recaírem sobre o Estado Alfa, após dois anos de suspensão dos pagamentos, decidiu consultar o Procurador-Geral do Estado sobre a repercussão que tal situação poderia causar. Sobre a hipótese apresentada, segundo o sistema jurídico- constitucional brasileiro, assinale a opção que apresenta, corretamente, o parecer do Procurador-Geral do Estado.",
           "alternativas": [
             {
@@ -6889,6 +7143,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Organização do Estado",
           "enunciado": "O Presidente da Assembleia Legislativa do Estado Alfa, almejando que fosse respeitada a igualdade jurídica entre parlamentares estaduais e federais e considerando a autonomia dos distintos entes federativos, tencionava levar à votação do plenário da Casa Legislativa o projeto de lei que fixa o subsídio dos Deputados Estaduais em valor idêntico ao dos Deputados Federais. Com esse objetivo, consultou você, como procurador(a) jurídico(a) da Assembleia Legislativa, a respeito da compatibilidade do projeto de lei com a Constituição da República. Com base na situação descrita e no sistema jurídico-constitucional brasileiro de 1988, assinale a opção que apresenta, corretamente, sua resposta.",
           "alternativas": [
             {
@@ -6916,6 +7171,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Direitos e Garantias Fundamentais",
           "enunciado": "Renato Carlos, renomado pianista, foi convidado para se apresentar em um grande evento musical internacional sediado no Brasil. Ao tentar se inscrever no evento, foi informado de que era obrigatório estar inscrito em uma ordem dos músicos para poder se apresentar publicamente no país. Surpreendido com a informação, procurou você, como advogado(a), e solicitou que fosse analisada a compatibilidade da exigência com o sistema jurídico-constitucional brasileiro. Em relação à exigência, assinale a opção que indica, corretamente, a orientação dada.",
           "alternativas": [
             {
@@ -6943,6 +7199,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direitos Humanos",
+          "tema": "Direitos de Grupos Vulneráveis",
           "enunciado": "Você está participando de um debate na OAB de sua cidade sobre direitos humanos de comunidades tradicionais, quando é questionado sobre a identificação e o reconhecimento dos remanescentes das comunidades quilombolas. Assinale a opção que apresenta, corretamente, sua resposta.",
           "alternativas": [
             {
@@ -6970,6 +7227,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direitos Humanos",
+          "tema": "Refugiados e Migrantes",
           "enunciado": "Um cidadão venezuelano, que ingressou de forma irregular no país, com o propósito de regularizar sua situação no Brasil, procura você, como advogado(a), para ter sua assistência jurídica. Nesse contexto, com base nos direitos dos refugiados e migrantes, assinale a opção que apresenta, corretamente, sua orientação.",
           "alternativas": [
             {
@@ -6997,6 +7255,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Eleitoral",
+          "tema": "Propaganda Eleitoral",
           "enunciado": "O Partido Político Alfa tomou conhecimento de que Joana, candidata ao cargo de Deputada Estadual, estava veiculando propaganda eleitoral paga, na imprensa escrita, durante a sua campanha eleitoral. Como o desempenho de Joana nas pesquisas eleitorais aumentou consideravelmente, o Partido Político o consultou, na condição de advogado, em relação à licitude dessa conduta. Sobre a veiculação da propaganda realizada por Joana, assinale a opção que indica, corretamente, sua resposta.",
           "alternativas": [
             {
@@ -7024,6 +7283,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Eleitoral",
+          "tema": "Elegibilidade e Registro de Candidatura",
           "enunciado": "Pedro, com 40 anos de idade, por razões ideológicas, decidiu não mais votar nas eleições para o provimento de cargos dos Poderes Executivo e Legislativo dos distintos níveis da Federação. Após repetir esse procedimento em três eleições consecutivas, compareceu ao cartório eleitoral e solicitou uma certidão de quitação eleitoral para que pudesse requerer a emissão do seu passaporte. Para sua surpresa, foi informado que sua inscrição fora cancelada, o que, ao seu ver, o impediria de obter o passaporte. Irresignado com a situação descrita, Pedro consultou você, como advogado(a), a respeito da juridicidade desse procedimento. Assinale a opção que apresenta a informação correta.",
           "alternativas": [
             {
@@ -7051,6 +7311,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Internacional",
+          "tema": "Migração e Nacionalidade",
           "enunciado": "Você atua, como advogado(a), em um caso em que seu cliente, Luka, croata, de 65 anos de idade e 6 anos de residência fixa no Brasil, sem família no país, foi condenado, com sentença transitada em julgado, pela prática do crime de estupro no Brasil. Com base no que dispõe a Lei de Migração (Lei nº 13.445/2017), a condenação ensejará a expulsão de Luka do Brasil,",
           "alternativas": [
             {
@@ -7078,6 +7339,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Internacional",
+          "tema": "Migração e Nacionalidade",
           "enunciado": "No Brasil, quanto às formas de ingresso no país, é aplicada a política de visto por reciprocidade, de acordo com a nacionalidade do estrangeiro. O tipo de visto, previsto na Lei de Migração, depende do objetivo da viagem do solicitante ao Brasil. A Lei de Migração (Lei nº 13.445/2017) ajustou o tratamento do estrangeiro no Brasil aos preceitos constitucionais. Sobre as formas de ingresso no país, segundo a legislação pertinente, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7105,6 +7367,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Financeiro",
+          "tema": "Transparência Fiscal",
           "enunciado": "O Prefeito e a Câmara de Vereadores de Alfa, município com cem mil habitantes, situado no interior do Estado Beta, pretendem modernizar a administração pública municipal. Assim, iniciaram um programa de ampliação da transparência da gestão fiscal, que prevê a implantação de mecanismos previstos na Constituição Federal de 1988 e na Lei de Responsabilidade Fiscal, objetivando dar maior efetividade ao princípio da transparência fiscal. Sobre a hipótese formulada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7132,6 +7395,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Financeiro",
+          "tema": "Lei de Responsabilidade Fiscal",
           "enunciado": "Em certo período de apuração, a despesa total de pessoal da União alcançou o patamar de 60% da receita corrente líquida (RCL), de acordo com os critérios de cálculo estabelecidos na Lei Complementar nº 101/2000 (Lei de Responsabilidade Fiscal — LRF). Sobre o patamar alcançado, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7159,6 +7423,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Processo Tributário",
           "enunciado": "José foi citado, em janeiro de 2022, em uma ação de execução fiscal movida pela Fazenda Nacional para cobrança de Imposto sobre a Renda de Pessoa Física (IRPF), cujo débito tributário foi por ele próprio apurado na sua Declaração de Ajuste Anual entregue à Secretaria da Receita Federal do Brasil, em março de 2017 (referente ao ano base de 2016). Sem nada fazer, em março daquele ano, foi intimado da penhora de sua conta bancária. Três meses após a intimação da penhora, José finalmente encontrou a guia DARF do IRPF integralmente paga dentro do prazo, no exato valor apurado como devido naquela declaração de ajuste anual. José, então, o(a) procura para, como advogado(a), adotar a medida processual cabível nos autos daquela ação de cobrança considerada indevida. Diante desse cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7186,6 +7451,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Lançamento e Crédito Tributário",
           "enunciado": "João, pessoa com deficiência física, com base na Lei nº XXX do Estado Alfa que isenta as pessoas com tal deficiência do pagamento do Imposto sobre Propriedade de Veículo Automotor (IPVA), requereu à Secretaria da Fazenda do Estado Alfa a extensão da aplicação da norma isentiva para a Taxa Anual de Licenciamento Veicular do seu automóvel. Ele usou como argumento o fato de que aquela isenção visa resguardar o mínimo existencial e a capacidade contributiva das pessoas com deficiência. Entretanto, o pedido foi indeferido administrativamente. Irresignado, consultou você, como advogado(a), sobre a conduta a ser adotada. Diante desse cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7213,6 +7479,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Prescrição e Decadência Tributária",
           "enunciado": "A sociedade empresária ABC Ltda. teve um auto de infração lavrado contra si pelo Fisco federal, em junho de 2021, lançando de ofício valores de tributo federal não declarados, nem pagos, referentes a fatos geradores ocorridos em junho de 2017. A sociedade empresária impugnou o auto dentro do prazo, apontando a existência de vício formal, o que foi reconhecido pelo Fisco federal, que anulou tal lançamento em junho de 2022. Diante desse cenário e à luz do texto expresso do Código Tributário Nacional, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7240,6 +7507,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Impostos em Espécie",
           "enunciado": "Certa carga foi abandonada no Porto de Santos (SP) pela sociedade empresária Importação 100% Ltda. Em razão disso, passado o prazo previsto e obedecidas as formalidades da legislação tributária, foi aplicada pela Secretaria Especial da Receita Federal do Brasil (SERFB) a pena de perdimento de mercadoria importada por abandono. José, participando de leilão da SERFB, logra êxito em arrematar a carga abandonada. Sobre a arrematação de mercadorias abandonadas em leilão promovido pela SERFB, à luz do Código Tributário Nacional, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7267,6 +7535,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Limitações ao Poder de Tributar",
           "enunciado": "Uma lei municipal do Município Alfa concedia isenção do IPTU a determinado segmento econômico. Contudo, em razão de dificuldades financeiras municipais, tal isenção foi revogada por nova lei, publicada em 20/2/2024, que estabelecia a produção de seus efeitos a partir de 12/6/2024. A sociedade empresária ABC Ltda., que deixaria de ser beneficiada, questionou você, como advogado(a), para saber se tal lei revogadora não feriria as garantias tributárias constitucionais desse segmento. Diante desse cenário, assinale a opção que apresenta, corretamente, sua orientação.",
           "alternativas": [
             {
@@ -7294,6 +7563,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Intervenção do Estado na Propriedade",
           "enunciado": "O Município Alfa editou lei, aplicável após sua entrada em vigor, sem caráter retroativo, devidamente regulamentada por decreto, dispondo sobre o número máximo de pavimentos em edificações situadas em determinadas ruas à beira-mar, em bairros da cidade especificados. Cuida-se, pois, de restrição geral, que atinge um número indeterminado de particulares proprietários de imóveis, nos termos indicados pelas normas municipais. Gustavo, em decorrência da aludida determinação ter afetado sua propriedade, procurou você, como advogado(a), para ser informado sobre a modalidade de intervenção praticada pelo Estado. Assinale a opção que indica, corretamente, sua resposta.",
           "alternativas": [
             {
@@ -7321,6 +7591,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Atos Administrativos",
           "enunciado": "João Silva, servidor público federal estável, ao assumir cargo efetivo com atribuições atinentes ao controle interno da Administração, constatou que, nos últimos dez anos, foram proferidos numerosos atos administrativos que ensejaram efeitos avoráveis a destinatários de boa-fé. Esses atos continham vícios de legalidade, sendo certo que, em muitos deles, o vício era de orma. Você foi contratado(a) como advogado(a) de Pedro, particular que igura como interessado em um determinado processo administrativo analisado por João Silva. À luz do disposto na Lei nº 9.784/99, assinale a opção que, corretamente, materializa a essência da consultoria jurídica que você, como advogado(a), apresentou a seu cliente Pedro.",
           "alternativas": [
             {
@@ -7348,6 +7619,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Agentes Públicos e Regime Disciplinar",
           "enunciado": "Em decorrência de uma denúncia anônima, as autoridades competentes da União promoveram investigação e verificaram que Wagner, servidor público federal estável, cometeu infração disciplinar que também é capitulada como crime contra a Administração Pública. Em razão disso, de forma motivada, foi instaurado o respectivo processo administrativo disciplinar que, após exceder o prazo para a sua conclusão, sem prejuízo para a defesa, resultou na sua demissão. Wagner não se conforma com a mencionada penalidade, pois acredita na existência de vícios que fulminam o aludido processo administrativo disciplinar. Ainda, os fatos ocorreram seis anos antes da sua instauração, razão pela qual Wagner procurou você, como advogado(a). Você apurou que a Administração tomou conhecimento dos fatos três anos antes da instauração do processo administrativo disciplinar e que o respectivo crime estaria sujeito ao prazo prescricional de oito anos na esfera penal. Sobre a penalidade aplicada, assinale a opção que apresenta a orientação correta.",
           "alternativas": [
             {
@@ -7375,6 +7647,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Serviços Públicos e Concessões",
           "enunciado": "Diante da divulgação de uma notícia veiculando a intenção do Município Beta em formalizar uma concessão administrativa para a realização de certo serviço indivisível, que envolve a realização de obras de infraestrutura para sua materialização, os representantes da sociedade empresária Astuciosa ficaram entusiasmados em participar da respectiva licitação. Em razão disso, procuraram você, como advogada(o), para esclarecer as peculiaridades da respectiva avença. Sobre o contrato, assinale a opção que apresenta, corretamente, a orientação jurídica prestada.",
           "alternativas": [
             {
@@ -7402,6 +7675,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Licitações e Contratos Administrativos",
           "enunciado": "Após o devido procedimento licitatório, foi formalizado com a sociedade empresária Esperta determinado contrato de prestação de serviços contínuos com dedicação exclusiva de mão de obra, sendo certo que, no curso do contrato, a contratada, ou seja, a sociedade Esperta, inadimpliu com diversos encargos previdenciários e trabalhistas, decorrentes da aludida avença. Em razão disso, a Administração contratante consultou a respectiva assessoria jurídica para dirimir as dúvidas atinentes à responsabilização do Poder Público e/ou as condutas que poderiam ser adotadas na situação descrita, à luz do disposto na Lei nº 14.133/2021. Assinale a opção que apresenta a informação correta a ser prestada pela assessoria jurídica.",
           "alternativas": [
             {
@@ -7429,6 +7703,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Ambiental",
+          "tema": "Código Florestal",
           "enunciado": "Bruno pretende realizar supressão de vegetação nativa em Área de Preservação Permanente no interior de sua propriedade, a fim de viabilizar a implantação de trilhas para o desenvolvimento do ecoturismo. Com objetivo de verificar a legalidade de seu projeto, Bruno consultou você, como advogado(a). Você informou a seu cliente que, de acordo com o Código Florestal, a intervenção ou a supressão de vegetação nativa em Área de Preservação Permanente ocorrerá nas hipóteses previstas naquela Lei. Assim, sobre a implantação de trilhas para o desenvolvimento do ecoturismo, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7456,6 +7731,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Ambiental",
+          "tema": "Responsabilidade Ambiental",
           "enunciado": "A palavra piracema vem do tupi e significa saída de peixes. Trata- se de um fenômeno que ocorre com diversas espécies de peixes e constitui importante estratégia reprodutiva para garantir que o peixe complete seu ciclo de vida, dando continuidade à sua espécie. Apesar de estar ciente da importância de respeitar o período em que a legislação veda a pesca, Carlos, de forma livre e consciente, estava pescando, no período em que a pesca ainda estava proibida. Por isso, foi abordado por fiscais do meio ambiente, que encontraram em seu barco várias caixas de peixes já mortos. Após o aludido fato, Carlos procurou você, como advogado(a), para tirar dúvidas acerca das penalidades que poderiam a ele ser aplicadas e os eventuais reflexos delas decorrentes. Sobre a conduta praticada por Carlos, à luz da Lei nº 9.605/1998, assinale a opção que apresenta, corretamente, a orientação dada.",
           "alternativas": [
             {
@@ -7483,6 +7759,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Responsabilidade Civil",
           "enunciado": "Miguel Tavares vendeu um imóvel para Margarida Pinto localizado na comarca de Caxias do Sul, RS. Ficou avençado que a imissão da posse ocorreria na celebração da escritura pública, e o pagamento seria feito em 48 prestações. Após o pagamento de 38 prestações, a compradora, em virtude de desemprego, passou a não ter condições financeiras para a quitação das prestações, fato que foi imediatamente comunicado ao vendedor. Diante da inadimplência, Miguel contratou uma sociedade empresária, conferindo expressamente amplos poderes para a cobrança. A sociedade empresária entrou em contato com a compradora dezenas de vezes por dia cobrando a dívida. O teor do contato era a cobrança, tendo sido emitidas centenas de recados e mensagens por cerca de 45 dias, em horários diferentes, inclusive, pela madrugada. Além disso, a sociedade empresária publicou dezenas de comunicados em redes sociais com alcance na região de Caxias do Sul, informando a todos a inadimplência da compradora, que era marcada em todas as publicações. Diante da situação hipotética narrada, com base no ordenamento jurídico brasileiro, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7510,6 +7787,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Contratos",
           "enunciado": "Mariana e Manuela celebraram contrato escrito de locação de imóvel urbano para fim residencial, pelo prazo de 30 meses. Decorrido o prazo previsto no contrato, Manuela, locatária, permaneceu no imóvel, e Mariana, locadora, periodicamente recebe e dá quitação dos aluguéis recebidos. Sobre a situação de Mariana, passados três meses do prazo fixado no contrato, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7537,6 +7815,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Família",
           "enunciado": "Priscila e Lucas tiveram filhos muito cedo. Com 20 anos, Priscila teve Hugo, com Pedro. Com 19 anos, Lucas teve Vitória, com Larissa. Priscila e Lucas começaram a namorar quando seus filhos ainda eram bebês e se casaram tempos depois. Após vinte anos de casamento, sempre morando com os filhos, decidiram se divorciar. Durante todo esse tempo, Priscila cuidou de Vitória como se fosse mãe dela, contribuindo, inclusive, com as despesas da menina. Lucas, por sua vez, nunca teve paciência com as crianças e não desenvolveu com Hugo um relacionamento próximo, apesar de viverem na mesma casa. Os gastos específicos do menino sempre foram custeados por Priscila e por Pedro. Sobre os fatos narrados, segundo o ordenamento jurídico brasileiro, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7564,6 +7843,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Obrigações",
           "enunciado": "Ivan, André e Caio celebraram negócio jurídico pelo qual se obrigaram a entregar um veículo da marca M a Bruna. Na data avençada para o cumprimento da obrigação, Ivan deu à Bruna um carro da marca M de sua propriedade. Sobre a situação hipotética apresentada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7591,6 +7871,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Direitos Reais",
           "enunciado": "Maria, idosa de 75 anos, mãe de três filhos, decidiu contratar você, como advogado(a), para estruturar seu planejamento sucessório. A intenção de Maria era a de realizar a transferência antecipada da propriedade de um de seus imóveis (cujo valor representa 40% de seu patrimônio) para seu filho mais velho. No entanto, ela pretendia reservar para si o direito de permanecer no bem para usá-lo e explorá-lo economicamente, até a sua morte. Em razão disso, você propôs que ela fizesse uma doação com reserva de usufruto, por escritura pública, com cláusula que colocava o bem na parte disponível de seu patrimônio, seguida de um registro no Cartório de Registro de Imóveis, o que foi feito por Maria. Poucos anos depois, Maria faleceu. Diante da situação jurídica posta, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7618,6 +7899,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Direitos Reais",
           "enunciado": "Brás Cubas procurou você, como advogado(a), relatando ser possuidor e proprietário do imóvel situado à Rua Machado de Assis, nº XX, Centro, no Município Alpha, há mais de 50 anos, preservando, desde as suas origens até o presente, as mesmas características, sem que houvesse por parte da vizinhança qualquer reclamação ou denúncia, sobretudo no que tange à disposição das janelas, já que se encontram dentro dos limites legais. Segundo relato de Brás, sua vizinha, Virgília, no último mês, iniciou obra de expansão de sua casa, com abertura de uma janela no limite divisório com seu terreno e uma chaminé no telhado. Em consonância com o Código Civil brasileiro, assinale a opção que apresenta, corretamente, sua orientação sobre o caso apresentado.",
           "alternativas": [
             {
@@ -7645,6 +7927,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito da Criança e do Adolescente",
+          "tema": "Direitos Fundamentais da Criança e do Adolescente",
           "enunciado": "Roberta, 35 anos, descobriu que estava grávida e ficou muito preocupada, já que possui parcos recursos financeiros e acredita que não será uma boa mãe. Essa angústia desencadeou graves problemas que precisam ser tratados por meio de sessões com psicólogo(a). Diante da falta de recursos financeiros para custear o profissional, Roberta lhe procura para obter orientação jurídica. De acordo com o Estatuto da Criança e do Adolescente (ECA), assinale a orientação correta para o caso.",
           "alternativas": [
             {
@@ -7672,6 +7955,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Consumidor",
+          "tema": "Direitos Básicos e Informação",
           "enunciado": "A sociedade empresária Óleo Essencial de Barreto Ltda. fabrica, há cinquenta anos, o produto que originou o nome empresarial, criado pelo fundador da indústria e amplamente utilizado pelo público como item pessoal para várias utilidades, sobretudo como pós-banho. Recentemente, ao concluir uma pesquisa científica, um químico da fábrica levou ao conhecimento da diretoria o fato de que o uso do produto Óleo Essencial de Barreto pode causar queimaduras graves em um certo grupo de pessoas, caso seja associado a um novo tipo de protetor solar, cujo uso vem crescendo no país. Sobre o caso narrado, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7699,6 +7983,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Consumidor",
+          "tema": "Práticas e Contratos de Consumo",
           "enunciado": "A sociedade empresária XYZ Fábrica e Comercialização Digital S.A., por meio do site de um representante empresarial autônomo, vende os bens informáticos que fabrica. Gláucia, estudante universitária, em 23 de junho de 2024, realizou a compra na internet de um desktop e dois monitores. Os produtos seriam destinados aos seus estudos e ao estágio na modalidade home office, que começaria em 1º de julho. Até a presente data os produtos não chegaram. A sociedade empresária informou que não os possui em estoque, e a fábrica encontra-se com carência de matéria-prima. Sobre a hipótese apresentada, com base no Código de Defesa do Consumidor, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7726,6 +8011,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Empresário e Sociedade Empresária",
           "enunciado": "O Código Civil, ao tratar da caracterização do empresário, afasta desse instituto as pessoas naturais que exercem profissão intelectual, de natureza científica, literária ou artística. Todavia, O Código Civil admitiu a possibilidade de essas pessoas virem a ser reputadas empresárias e, como tal, sujeitarem-se à inscrição na Junta Comercial. Assinale a opção que apresenta a condição para que isso ocorra.",
           "alternativas": [
             {
@@ -7753,6 +8039,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Tipos Societários",
           "enunciado": "F. Beltrão, G. Carneiro e S. Moreira decidiram constituir uma sociedade do tipo simples de prazo indeterminado, que entrou em atividade na data da assinatura do contrato, levado a registro na semana seguinte, no Registro Civil de Pessoas Jurídicas. Assinale a opção que indica a hipótese de dissolução de pleno direito dessa sociedade.",
           "alternativas": [
             {
@@ -7780,6 +8067,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Propriedade Industrial",
           "enunciado": "Maura Chalé, sócia administradora da sociedade Produtora de Laticínios Santana do Manhuaçu Ltda. procura você, como advogado(a), informando que a sociedade é titular da marca de produto Chalé e deseja saber quais os direitos assegurados por lei ao titular de marca de produto. Sobre a hipótese narrada, com base na legislação, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7807,6 +8095,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Recuperação Judicial e Falência",
           "enunciado": "A sociedade empresária Drogaria Ponto dos Volantes Ltda. requereu recuperação judicial e teve deferido o processamento, sendo que ambos os eventos ocorreram no ano de 2021. Nos exercícios sociais de 2021, 2022 e 2023, a sociedade não distribuiu lucros aos sócios, embora eles tivessem sido auferidos em 2022 e 2023. O sócio minoritário Lucas Sobrado consulta você, como advogado(a), para saber sobre a legalidade da ausência de distribuição de lucros nos referidos exercícios sociais, informando que o plano de recuperação judicial foi aprovado em dezembro de 2022 e a concessão ocorreu em janeiro de 2023, mas o processo ainda não foi encerrado. Assinale a opção que apresenta, corretamente, seu parecer.",
           "alternativas": [
             {
@@ -7834,6 +8123,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Petição Inicial e Resposta do Réu",
           "enunciado": "Ana Carolina procurou você, como advogado(a), para elaborar sua defesa em demanda pelo procedimento comum movida por Eduardo perante Vara Cível com o objetivo de obter indenização em virtude de suposto inadimplemento de Ana Carolina, qual seja, ter entregado uma quantidade de soja menor do que a que fora acordada contratualmente. Nessa reunião, Ana Carolina relatou que a indenização não era devida, porque ela havia entregado a quantidade de soja prevista no contrato. Ana Carolina relatou ainda que, na realidade, Eduardo não tinha realizado o pagamento integral previsto em contrato. Sobre a demanda movida por Eduardo visando ao pagamento da quantia que lhe é devida, assinale a opção que apresenta a medida cabível que você, na condição de advogado(a) de Ana Carolina, indicou.",
           "alternativas": [
             {
@@ -7861,6 +8151,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Provas",
           "enunciado": "Neusa ajuizou ação condenatória em face de Marcelo. Em sua causa de pedir, a autora sustentou que o réu, conduzindo seu veículo de forma imprudente, avançou um sinal vermelho e colidiu contra o carro de Neusa, causando-lhe danos morais e materiais. Diante da necessidade de produção de prova oral, consistente em depoimento pessoal e prova testemunhal, o Juiz designou audiência de instrução e julgamento. As partes tempestivamente apresentaram suas testemunhas, que estavam nos respectivos veículos no momento da colisão. Neusa indicou Gabriel, seu filho de 17 anos. Por sua vez, Marcelo indicou João, seu amigo íntimo, e Regina, sua prima. Sobre o caso acima, segundo o ordenamento jurídico brasileiro, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7888,6 +8179,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Cumprimento de Sentença e Execução",
           "enunciado": "Gabriela adquiriu um pacote de viagens com a sociedade empresária VoaMais, mas não conseguiu embarcar pois, na última hora, houve o cancelamento de seu bilhete aéreo. Em conseguência, Gabriela ajuizou ação indenizatória por danos morais e materiais em face de VoaMais. Foi proferida sentença de procedência do pedido, com a concessão da tutela provisória na sentença, condenando a ré ao pagamento de R$ 30.000,00 (trinta mil reais). Inconformada, a ré interpôs recurso de apelação. Gabriela, então, procurou você, na qualidade de advogado(a), com o objetivo de receber imediatamente o valor previsto na condenação, independentemente do julgamento da apelação interposta pela ré. Assinale a opção que apresenta, corretamente, sua orientação sobre o tema.",
           "alternativas": [
             {
@@ -7915,6 +8207,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Sentença e Coisa Julgada",
           "enunciado": "João propôs ação indenizatória em face da sociedade empresária Campo Bom, em causa própria. Foi proferida sentença condenando a ré quanto ao principal e, considerando sua sucumbência mínima, ao pagamento integral de honorários advocatícios de sucumbência. Sobre os honorários advocatícios arbitrados no caso, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7942,6 +8235,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Cumprimento de Sentença e Execução",
           "enunciado": "Joana formulou requerimento de cumprimento de sentença em face de Regina. No curso de tal fase do processo, Joana obteve a penhora de um automóvel de propriedade de Regina, cujo valor de mercado é R$ 10.000,00 (dez mil reais) superior ao do montante exequendo, sendo nomeada depositária do bem. No atual momento processual, Joana deseja se tornar proprietária do automóvel de Regina. Por essa razão, requereu a adjudicação do bem ao juízo. Nesse caso, segundo o ordenamento jurídico brasileiro, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7969,6 +8263,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Competência e Partes",
           "enunciado": "Em uma tarde de domingo, voltando do shopping com seu namorado, Marisa se distraiu e colidiu contra a traseira do automóvel de Leandro. Assustada com a reação de Leandro, que saiu do carro aos gritos, Marisa foge. Leandro anotou a placa do carro e ajuizou uma ação indenizatória por danos materiais em face de Marisa, em razão dos prejuízos causados a seu automóvel. Considerando que Marisa contratou o seguro do veículo, denunciou a seguradora à lide. Acerca de tais fatos, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -7996,6 +8291,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Aplicação da Lei Penal",
           "enunciado": "Maria, brasileira e residente no Brasil, resolveu viajar para o exterior e lá praticar o delito de embriaguez ao volante, que, embora típico no Brasil, no país onde seria praticado não é tipificado. Ao retornar ao Brasil, os fatos foram noticiados às autoridades competentes. Com base na hipótese apresentada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8023,6 +8319,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Crimes contra a Dignidade Sexual",
           "enunciado": "Ana Paula é repórter esportiva de uma emissora de televisão. Ao participar de uma reportagem ao vivo na mídia televisiva, um torcedor presente ao estádio, com intenção de satisfazer sua própria lascívia, a abraça à força, beijando-a no rosto. Ana Paula sente-se afrontada em sua liberdade sexual. Em razão do fato, ela procura você, como advogado(a), para saber como proceder. Assinale a afirmativa que apresenta corretamente sua orientação.",
           "alternativas": [
             {
@@ -8050,6 +8347,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
           "enunciado": "Caio, muito atuante nas redes sociais, compartilhou vídeos e fotos pornográficos em um grupo de amigos. O material compartilhado continha imagens que teriam sido extraídas, ilegalmente, de computadores pessoais por terceiros, já tendo sido inclusive objeto de registros policiais por parte das vítimas. Uma das pessoas para as quais as imagens foram compartilhadas procura a polícia e relata a atitude de Caio. O Delegado indiciou Caio pela prática do crime descrito no Art. 218-C do CP, o qual prevê a figura penal do compartilhamento não autorizado de cena de sexo ou pornografia. Caio, surpreendido com a acusação, afirmou não ter conhecimento de que o fato por ele praticado seria criminoso. A tese defensiva correta, a partir da afirmação de Caio, é a ocorrência do erro",
           "alternativas": [
             {
@@ -8077,6 +8375,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
           "enunciado": "Alfredo, motorista da sociedade empresária Guardião Ltda., pessoa jurídica de direito privado que presta serviços de segurança, é subordinado ao gerente Marcos. No dia 10/3/2023, Marcos ordenou que Alfredo fizesse a escolta de um cliente. No trajeto de volta, Alfredo foi parado em uma blitz, ocasião em foi constatado que o veículo funcional que conduzia era proveniente de roubo. A despeito de não ter ciência do crime antecedente, até mesmo por não ser o responsável pelas compras da empregadora, Alfredo foi preso em flagrante por suposta prática do crime de receptação dolosa. Diante do exposto, assinale a opção que apresenta, corretamente, a tese de mérito que pode ser invocada em defesa de Alfredo.",
           "alternativas": [
             {
@@ -8104,6 +8403,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Concurso de Pessoas e de Crimes",
           "enunciado": "Filisteu, empresário, contratou Mateus para matar seu concorrente, Lucas, mediante pagamento antecipado de R$ 50.000,00 (cinquenta mil reais). Portando arma de fogo municiada, Mateus se pôs em campana, levando consigo seu amigo, Antônio, que nada sabia sobre os fatos. Quando Lucas saiu de casa com seu filho no colo, Mateus não teve coragem de cumprir o acordado e abandonou o local sem que Lucas o avistasse. Diante dessa situação hipotética, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8131,6 +8431,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Aplicação da Lei Penal",
           "enunciado": "Joelerson, foragido, com longa lista de antecedentes criminais, foi condenado ao cumprimento de uma pena privativa de liberdade de 24 anos de reclusão, mínima prevista para o delito que cometeu (extorsão mediante sequestro seguida de morte — Art. 159, 8 38, do Código Penal). No dia seguinte ao trânsito em julgado da condenação, entrou em vigor a Lei 4, que reduziu a pena mínima para o delito referido, fixando-a em 20 (vinte) anos de reclusão. Após intensa reação midiática, a Lei B revogou a Lei 4, restabelecendo o patamar sancionatório mínimo anteriormente previsto. No dia seguinte à entrada em vigor da Lei B, Joelerson foi capturado e iniciou o cumprimento da pena. Diante dessa situação hipotética, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8158,6 +8459,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Recursos Penais",
           "enunciado": "Antônio e Rogério praticaram, em comunhão de ações e desígnios, um ilícito penal, e ambos foram condenados. Antônio e o Ministério Público interpuseram tempestivos recursos, ao passo que Rogério perdeu o prazo de recurso, porém constatou que havia prescrição da pretensão punitiva na modalidade retroativa, o que foi sustentado por sua defesa em contrarrazões recursais. Nesse caso, considerando os efeitos dos recursos, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8185,6 +8487,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Prisões e Medidas Cautelares",
           "enunciado": "Em um inquérito policial, o Juiz decretou, de ofício, a prisão preventiva de Débora, sem que esta possuísse qualquer antecedente criminal, apontando como fundamento para a prisão a gravidade em abstrato do crime de homicídio culposo. Certo de que não houve a decretação anterior de medida cautelar diversa da prisão, assinale a opção que apresenta, corretamente, a alegação que você, como advogado(a) de Débora, deve apresentar.",
           "alternativas": [
             {
@@ -8212,6 +8515,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Prisões e Medidas Cautelares",
           "enunciado": "Amanda impetra habeas corpus em favor de Telma, que foi presa preventivamente por decisão do Juiz de Primeiro Grau, sendo acusada da prática de crime hediondo. O habeas corpus foi impetrado com o argumento de excesso de prazo. O Tribunal concedeu a ordem de habeas corpus de ofício, fundamentado na incompetência do juiz que decretou a prisão. Sobre a hipótese narrada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8239,6 +8543,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Procedimentos (comum e júri)",
           "enunciado": "Daniel foi denunciado pela prática do crime de instigação ao suicídio. Após a fase de instrução, o Juiz pronunciou o réu, afirmando ser Daniel totalmente culpado da prática do crime e que qualquer jurado teria a obrigação moral de reconhecer provada a materialidade e a autoria. Nessa hipótese, de acordo com nosso ordenamento jurídico, você, como advogado(a) de Daniel, afirma que a decisão de pronúncia é",
           "alternativas": [
             {
@@ -8266,6 +8571,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Provas no Processo Penal",
           "enunciado": "Policiais ingressaram no imóvel pertencente a Paulo, às 4 horas da manhã, em regular perseguição iniciada logo após a prática de um homicídio, a fim de prender Júnior (filho de Paulo) em flagrante delito. Ao ingressar no imóvel, os policiais capturaram Júnior e, em busca pessoal, localizaram o telefone celular do custodiado no bolso da calça. Além de prender Júnior em flagrante, a autoridade policial determinou o encaminhamento do telefone apreendido à perícia técnica, a fim de descobrir seu conteúdo. O laudo pericial indicou que nele havia conversas que confirmavam a pertinência de Júnior em associação criminosa. Assim, foi instaurado inquérito policial contra Júnior, para apurar o delito de associação criminosa. Nesse caso, assinale a opção que indica corretamente, a alegação que você, como advogado(a) de Júnior, deve apresentar.",
           "alternativas": [
             {
@@ -8293,6 +8599,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Ação Penal",
           "enunciado": "Anderson, motorista da sociedade empresária X, dirigindo o veículo da sociedade empresária fora do horário comercial e acima da velocidade permitida, atropelou Lucas. Lucas ficou internado pelo período de dois meses. Anderson foi condenado com trânsito em julgado, no âmbito criminal. Lucas propõe ação civil ex delicto de execução contra a sociedade empresária X. Sobre essa ação civil ex delicto, você, na qualidade de advogado(a) da sociedade empresária X, afirmou, corretamente, que ela é parte",
           "alternativas": [
             {
@@ -8320,6 +8627,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Previdenciário",
+          "tema": "Benefícios Previdenciários",
           "enunciado": "Jorge, segurado obrigatório do Regime Geral de Previdência Social (RGPS), reside com sua mãe, Francisca, e sua filha, Helena, que é estudante e tem 19 anos. O emprego de Jorge é a principal fonte de renda da família e o único sustento da casa. Acontece que Jorge foi acometido de uma doença e veio a falecer. Por isso, as duas dependentes de Jorge ingressam com um pedido de pensão por morte no INSS. Sobre a hipótese apresentada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8347,6 +8655,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Previdenciário",
+          "tema": "Benefícios Previdenciários",
           "enunciado": "Antônio recebe aposentadoria por incapacidade permanente e, por necessitar da assistência permanente de outra pessoa, seu benefício foi acrescido de 25%. Em relação a esse acréscimo, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8374,6 +8683,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Remuneração e Verbas Rescisórias",
           "enunciado": "Geraldo trabalha desde 2022 para uma sociedade empresária, atua na região metropolitana do Estado e recebe um salário fixo de R$ 4.000,00, sem qualquer desconto, exceto o imposto sobre a renda e o INSS. Além disso, desfruta de um pacote de benefícios que inclui auxílio-alimentação em forma de ticket, habitação num luxuoso apartamento, plano de saúde e auxílio-educação (compreendendo os valores relativos à matrícula, à mensalidade, à anuidade, aos livros e ao material didático). Geraldo consultou você, como advogado(a), para saber quais benefícios devem ter seu valor integrado à sua remuneração. Sobre a questão levantada por Geraldo, de acordo com os dados do enunciado e com o texto da CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8401,6 +8711,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Grupo Econômico e Terceirização",
           "enunciado": "Os irmãos Décio e Beatriz são empresários. Décio explora a atividade pesqueira, enquanto Beatriz tem duas lojas de calçados. Em 2023, a sociedade empresária de Décio teve uma reclamação trabalhista ajuizada por um operador de produção que inseriu, na petição inicial, a sociedade empresária de Beatriz, advogando existir grupo econômico, apenas em razão do parentesco entre Décio e Beatriz. Considerando esses fatos e o que dispõe a CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8428,6 +8739,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Relação de Emprego",
           "enunciado": "Em 2023, Denilson ajuizou reclamação trabalhista contra um supermercado alegando que lá trabalhou de 2004 a 2008 sem ter a CTPS assinada. Na reclamação, ele requereu a declaração do vínculo empregatício naquele período para fins de anotação na carteira profissional, pois precisaria desse interregno para conseguir sua aposentadoria no INSS. Em defesa, a sociedade empresária alegou prescrição, pois a ação foi ajuizada após o biênio constitucional. Considerando esses fatos e o que dispõe a CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8455,6 +8767,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Jornada e Descanso",
           "enunciado": "Leopoldo foi contratado, em 2020, por uma sociedade empresária de terceirização, como auxiliar de limpeza. Ele cumpre jornada em regime de tempo parcial de 22 horas semanais, conforme previsto e autorizado na norma coletiva da sua categoria. Após um ano de trabalho sem faltas injustificadas, é chegado o momento de Leopoldo fruir férias. Sobre a solicitação de Leopoldo, considerando o que dispõe a CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8482,6 +8795,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Jornada e Descanso",
           "enunciado": "Em sede de acordo coletivo, firmado em janeiro de 2024 e com vigência de dois anos, entre uma sociedade empresária e o sindicato da categoria profissional, constou cláusula determinando que o tempo de deslocamento dos empregados do portão até o interior da sociedade empresária, onde se situa o relógio de ponto, seria computado na jornada de trabalho. Isso porque o deslocamento é feito em transporte fornecido pela sociedade empresária e dura cerca de 20 minutos. Sobre a jornada, não consta mais nada na norma coletiva. A sociedade empresária, por liberalidade, mantém salas de recreação, biblioteca e uma capela. A utilização desses espaços antes e após o trabalho e durante os intervalos é facultada aos empregados. Em razão do ajuizamento de uma ação trabalhista por um ex- empregado, a sociedade empresária indagou a você, como advogado(a), se todos esses períodos, seja o de deslocamento, seja o tempo despendido nos espaços mencionados, deveriam integrar a jornada de trabalho. Acerca do tema, com base na CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8509,6 +8823,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Recursos Trabalhistas",
           "enunciado": "Em sede de reclamação trabalhista você advoga para a parte autora. Dos três pedidos formulados, você sagrou-se vitorioso em dois, horas extras e equiparação salarial, sucumbindo apenas no pedido de integração da habitação. Atendendo a um desejo de seu cliente, optou-se por não recorrer, tendo o prazo recursal transcorrido integralmente. A ré, por sua vez e no seu prazo, apresentou recurso pertinente e, agora, o processo encontra-se com prazo para você contrarrazoar o recurso da ré. Ocorre que seu cliente mudou de opinião, já que o processo irá se alongar por conta do recurso da ré. Diante disso, indagou-lhe se caberia alguma medida processual para que fosse reexaminada a questão relativa à integração da habitação. Com base no enunciado e no entendimento consolidado do TST, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8536,6 +8851,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Provas no Processo do Trabalho",
           "enunciado": "Em uma reclamação trabalhista requerendo a responsabilidade civil do empregador em razão de uma alegada doença profissional, o Juiz deferiu a realização de perícia, sendo que ambas as partes quesitaram e indicaram assistentes técnicos. No laudo, foi detectado que realmente houve a doença ocupacional. Com base nele, o Juiz julgou procedente o pedido. Sobre os honorários do perito e dos assistentes, considerando o entendimento consolidado do TST, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8563,6 +8879,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Atos, Prazos e Nulidades",
           "enunciado": "Foi protocolizada petição de homologação de acordo extrajudicial à 2002 Vara do Trabalho de Florianópolis. As partes envolvidas são Luísa, empregada doméstica, e José Pedro, seu ex-empregador. O valor apresentado para o acordo é de R$ 27.000,00 (vinte e sete mil reais), pagos em duas parcelas iguais e sucessivas, sendo mantidas as anotações na CTPS de Luísa. Empregada e empregador estão representados pelo mesmo advogado. Sobre esses fatos, segundo os termos da CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8590,6 +8907,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Execução Trabalhista",
           "enunciado": "Em 2024, o Juiz proferiu sentença ilíquida em reclamação trabalhista, na qual você advoga para o autor, que foi julgada procedente. O feito havia sido ajuizado no final do ano de 2022. O Juízo elaborou e tornou líquida a conta, tendo aberto um prazo para as partes se manifestarem. A parte ré silenciou-se e você apresentou sua impugnação, que não foi acolhida pelo Juiz. Ato contínuo, houve decisão homologatória da sentença de iquidação. As partes foram intimadas. A ré garantiu o juízo e apresentou embargos à execução. Você apresentou impugnação de credor e contraminuta aos embargos à execução apresentados pela ré. Diante desta circunstância, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8617,6 +8935,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Atos, Prazos e Nulidades",
           "enunciado": "As irmãs Alessandra, Antônia, Alba e Aline foram dispensadas de seus empregos em 2024, e cada qual contratou uma advogada de sua confiança para ajuizar reclamação trabalhista visando postular horas extras. Alessandra tem 58 anos de idade; Antônia, 65 anos de idade; Alba, 50 anos de idade; e Aline, 61 anos de idade. Considerando a norma de regência, assinale a opção que indica o(s) processo(s) que terá(ão) prioridade na tramitação.",
           "alternativas": [
             {
@@ -8650,6 +8969,7 @@ var QuestoesSeed = (function () {
       "questoes": [
         {
           "territorio": "Ética",
+          "tema": "Ética e Disciplina",
           "enunciado": "Paulo Afrânio foi representado ao Tribunal de Ética e Disciplina do Conselho Seccional do Estado Alfa pela prática da infração disciplinar de violar, sem justa causa, sigilo profissional. Com o recebimento da representação, o Presidente designou relator, a quem competiu instruir o processo e oferecer parecer preliminar submetido ao Tribunal de Ética e Disciplina. Por se tratar de infração leve, o relator dispensou as etapas de defesa prévia e razões finais, garantindo ao representado apenas a defesa oral. Ao final, o relator ofereceu parecer preliminar no sentido da aplicação da pena de censura, submetido ao Tribun al de Ética e Disciplina que, acolhendo a proposta, aplicou a referida sanção ao advogado Paulo Afrânio. Sobre o processo disciplinar no âmbito da OAB, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8677,6 +8997,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Sociedade de Advogados",
           "enunciado": "João Pedro, destacado aluno do último semestre do curso de Direito, logrou êxito no Exame da Ordem dos Advogados do Brasil, sendo então convidado a integrar, assim que formado, uma renomada sociedade de advogados da sua cidade. Apesar de ter ficado honrado com o convite, João Pedro está em dúvida, pois em seus estudos para o Exame da OAB verificou ser possível constituir sociedade unipessoal de advocacia, opção que lhe pareceu mais atrativa. Considerando o enunciado, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8704,6 +9025,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Honorários Advocatícios",
           "enunciado": "Roberto, advogado criminalista, foi contratado para promover a defesa de Juvenal, gestor público acusado da prática de corrupção passiva, peculato e “lavagem” ou ocultação de valores. No decorrer do processo criminal, foi decretado, pelo Juízo, o bloqueio universal do patrimônio de Juvenal, visando ao ressarcimento do suposto dano causado ao erário, o que inviabilizou o adimplemento dos honorários contratuais devidos a Roberto e o reembolso de gastos com a defesa. Sobre essa hipótese, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8731,6 +9053,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Incompatibilidades e Impedimentos",
           "enunciado": "Pedro, advogado regularmente inscrito na OAB, foi eleito Deputado Federal e deseja continuar exercendo a advocacia, patrocinando causas contra a Caixa Econômica Federal. Ele também cogita a possibilidade de concorrer ao cargo de Presidente da Câmara dos Deputados. Com base nas disposições do Estatuto da OAB, assinale a afirmativa correta sobre a possibilidade de Pedro continuar advogando.",
           "alternativas": [
             {
@@ -8758,6 +9081,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Exercício da Advocacia",
           "enunciado": "Afonso, condenado por tráfico de drogas, cumpre pena dividindo cela com Rodrigo, preso preventivamente há mais de dois anos, sem que a instrução do processo por roubo a que responde tenha sido concluída. Indignado com a situação de Rodrigo, Afonso, que não tem formação jurídica, mas sempre foi habilidoso com a escrita, decide redigir um pedido de habeas corpus em folha de caderno, à mão, em favor de seu companheiro de cela. Considerando o disposto no Estatuto da Ordem dos Advogados do Brasil (EOAB), assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8785,6 +9109,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Direitos e Prerrogativas do Advogado",
           "enunciado": "Aurélio, advogado regularmente inscrito na OAB, recebeu uma ligação urgente da família de Adalberto, seu amigo de infância, informando que este havia sido preso em flagrante, acusado da prática de homicídio. Preocupado com a situação, Aurélio dirigiu -se à Delegacia de Polícia para conversar com Adalberto e prestar -lhe assistência jurídica. No entanto, o Delegado Moisés negou o pedido de Aurélio para se comunicar pessoal e reservadamente com Adalberto, justificando a negativa pela gravidade do crime e pela ausência de procuração formal outorgada ao advogado. Sobre a hipótese narrada, com base no Estatuto da OAB, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8812,6 +9137,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Ética",
+          "tema": "Ética e Disciplina",
           "enunciado": "Antônio, advogado experiente e com extensa carteira de clientes, decidiu fazer uso de instrumentos de inteligência artificial generativa para auxiliá-lo na elaboração de peças processuais. Apesar da revisão posterior, com assessoramento de seu estagiário, dos textos produzidos pela nova tecnologia, determinado Magistrado notifica -o para prestar esclarecimentos acerca de recurso interposto de forma manifestamente incabível. Ao ler a peça, Ant ônio identifica que foram citadas doutrina e jurisprudência de forma deturpada, em situação que poderia confundir o adversário ou iludir o Juiz da causa. Sobre esse contexto, de acordo com o Estatuto da Ordem dos Advogados do Brasil, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -8839,6 +9165,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Filosofia do Direito",
+          "tema": "Positivismo Jurídico",
           "enunciado": "Entre as diferentes correntes do positivismo jurídico, a Escola da Exegese destacou -se, sobretudo, por seus estudos em torno do Código de Napoleão. O jusfilósofo Miguel Reale, em seu livro Filosofia do Direito , afirma que, segundo essa escola, a evolução do Direito somente poderia se operar por meio do processo legislativo. Assinale a opção que, de acordo com Reale no livro em referência, apresenta a tese fundamental da Escola da Exegese.",
           "alternativas": [
             {
@@ -8866,6 +9193,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Filosofia do Direito",
+          "tema": "Justiça (autores clássicos)",
           "enunciado": "Segundo Kant, em seu livro Fundamentação da Metafísica dos Costumes, cada indivíduo, como ser moral, possui uma dignidade que lhe é própria. Assinale a afirmativa que, segundo Kant, no livro em referência, mostra como a dignidade deve ser entendida.",
           "alternativas": [
             {
@@ -8893,6 +9221,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Nacionalidade e Direitos Políticos",
           "enunciado": "O Presidente da República , por ter alegadamente atuado com o intuito de beneficiar pessoas de seu círculo de amizades pessoais, é acusado de influir diretamente no resultado de uma grande licitação, cujo procedimento ocorreu em órgão do Ministério X. Enzo, francês nato e naturalizado brasileiro, com candidatura deferida para disputar a eleição para vereador no Município em que reside, resolve consultá -lo(a), como advogado(a), para saber se ele poderia ajuizar uma ação constitucional para anular a referida licitação e para preservar a intangibilidade do patrimônio público, bem como a integridade do princípio da moralidade administrativa. Analisando a narrativa à luz do sistema jurídico -constitucional, assinale a afirmativa que apresenta, corretamente, a solução para o caso em tela.",
           "alternativas": [
             {
@@ -8920,6 +9249,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Organização dos Poderes",
           "enunciado": "João, pessoa com deficiência, beneficiária de pensão alimentícia devida pelo Estado Beta, ingressou com ação judicial para receber valores atrasados. Após desfecho favorável a João, o Poder Judiciário determinou que o pagamento dos débitos alimentares em precatórios seja efetuado, de acordo com a ordem cronológica de apresentação, sem estabelecer qualquer prioridade para João. Com base na situação descrita e no sistema jurídico-constitucional brasileiro, assinale a opção que apresenta, corretamente, o esclarecimento que você, como advogado(a), daria a João.",
           "alternativas": [
             {
@@ -8947,6 +9277,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Ordem Social e Econômica",
           "enunciado": "Em razão de fenômenos climáticos que vêm ocorrendo de forma reiterada nos últimos anos, os Estados de determinada região do país vêm sofrendo grandes perdas econômicas, o que acentua o desequilíbrio socioeconômico em relação às demais regiões do país. Por haver no plano federal o entendimento de serem necessárias medidas que incentivem as atividades econômicas da região prejudicada, surgiu a proposta para que bancos estatais concedessem juros favorecidos para financiar atividades consideradas prioritárias para a região. A essa proposta se opôs o Governador do Estado Beta, que, entendendo haver inconstitucionalidade nela, solicitou aconselhamento jurídico ao seu corpo de advogados. Sobre a hipótese, segundo a perspectiva jurídico -constitucional brasileira, assinale a opção que apresenta, corretamente, a orientação recebida.",
           "alternativas": [
             {
@@ -8974,6 +9305,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Organização dos Poderes",
           "enunciado": "A Comissão Parlamentar Permanente da Câmara dos Deputados convocou um Ministro de Estado para prestar esclarecimentos sobre um episódio ocorrido em sua pasta. O Ministro consultou você, na condição de profissional designado(a) para prestar assessoria jurídica à pasta, se ele deveria mesmo ir, já que não se tratava de uma Comissão Parlamentar de Inquérito (CPI), que possuiria poderes de investigação próprios das autoridades judiciais. Com base na situação descrita e no sistema jurídico-constitucional brasileiro de 1988, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9001,6 +9333,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Direitos e Garantias Fundamentais",
           "enunciado": "Durante um violento temporal, em que as chuvas torrenciais poderiam levar ao desabamento de uma casa, os bombeiros militares ingressaram em um domicílio, sem o consentimento do morador, à noite, para socorrer as pessoas que estavam no imóvel. Posteriormente, o morador propôs ação indenizatória por danos morais em face do ente federativo ao qual os bombeiros militares estavam vinculados, argumentando que o referido ingresso fora ilícito. Sobre a hipótese narrada, com base no sistema constitucional brasileiro, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9028,6 +9361,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Constitucional",
+          "tema": "Controle de Constitucionalidade",
           "enunciado": "O Presidente da República emitiu decreto autônomo, disciplinando a organização e o funcionamento da Administração Federal. O Senador da República Joelson Cruz, Presidente do Partido Político Beta, entende que esse decreto viola a Constituição da República, além de contrariar o interesse público. Por essa razão, pretende que o seu Partido ajuíze uma ação, pela via do controle concentrado de constitucionalidade , contra o ato presidencial. Todavia, por não ter formação jurídica, procura os advogados do Partido Político Beta, a fim de que lhe instruam sobre a melhor maneira de concretizar o seu intento. Diante disso, considerando o que estabelece o sistema jurídico - constitucional brasileiro, os advogados informaram, corretamente, que o decreto autônomo",
           "alternativas": [
             {
@@ -9055,6 +9389,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direitos Humanos",
+          "tema": "Sistema Global de Proteção (ONU)",
           "enunciado": "Na condição de advogado(a), você é procurado(a) por uma Organização não Governamental que atua na defesa e proteção dos Direitos Humanos de grupos minoritários no Brasil. A entidade solicita esclarecimentos quanto aos mecanismos de que dispõe para levar ao conhecimento das instâncias competentes, no âmbito do sistema global de proteção dos Direitos Humanos, uma situação que entende violar a Convenção para a Prevenção e a Re pressão do Crime de Genocídio, com o objetivo de responsabilizar o Estado brasileiro. Nesse contexto, você deve esclarecer que, para a obtenção da finalidade pretendida, dentre os mecanismos existentes em nível global, as Organizações não Governamentais podem submeter o caso em questão diretamente à apreciação",
           "alternativas": [
             {
@@ -9082,6 +9417,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direitos Humanos",
+          "tema": "Sistema Interamericano (Corte/Comissão)",
           "enunciado": "Na condição de advogado(a), você foi procurado por um grupo de mães de crianças entre 6 e 10 anos que tentaram, sem sucesso, matricular seus filhos na rede básica de ensino. Elas alegam que já envidaram todos os esforços no âmbito administrativo, sendo-lhes sempre apresentada a justificativa da inexistência de vagas. Considerando a situação hipotética em questão, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9109,6 +9445,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Eleitoral",
+          "tema": "Ações Eleitorais",
           "enunciado": "Maria estava concorrendo ao cargo de Governadora do Estado Alfa. No decorrer da campanha, obteve prova documental e testemunhal de que Joana, sua adversária direta na disputa, praticara abuso do poder econômico. Por essa razão, solicitou a você, como advogado(a), que a representasse à Justiça Eleitoral para a abertura de investigação judicial eleitoral. Assinale a opção que indica, corretamente, a quem deve ser encaminhada a petição.",
           "alternativas": [
             {
@@ -9136,6 +9473,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Eleitoral",
+          "tema": "Ações Eleitorais",
           "enunciado": "No curso da campanha eleitoral, João, candidato ao cargo de Prefeito Municipal, doou três sacos de cimento a Pedro, sob o compromisso de que este nele votaria. Ao tomar conhecimento dos fatos, Ana, candidata ao mesmo cargo, procurou você, como advogado(a), e solicitou que fosse ajuizada a ação cabível, de modo que o registro ou o diploma de João fosse cassado. Assinale a opção que indica, corretamente, a ação cabível no caso.",
           "alternativas": [
             {
@@ -9163,6 +9501,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Internacional",
+          "tema": "Jurisdição e Competência Internacional",
           "enunciado": "Uma artista brasileira, que protagoniza filmes nos Estados Unidos, foi filmada em uma casa de festas no Brasil em estado de embriaguez e o vídeo foi postado por um portal de notícias americano. O vídeo “viralizou” e teve grande repercussão no Brasil. Com receio de prejudicar sua carreira com a exposição negativa de sua imagem, ela decidiu ajuizar uma ação no Brasil contra o portal de notícias, que tem sua sede nos Estados Unidos. Nesse cenário, com base nos limites da jurisdição nacional estabelecidos no Código de Processo Civil, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9190,6 +9529,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Internacional",
+          "tema": "Cooperação Jurídica Internacional",
           "enunciado": "A cooperação jurídica internacional é uma modalidade formal de solicitar a outro país uma medida judicial, investigativa ou administrativa para um caso concreto. Esforçando-se para facilitar a cooperação jurídica nos casos de litígios e disputas internacionais, o Brasil aderiu à Convenção da Haia sobre a Obtenção de Provas no Estrangeiro em Matéria Civil ou Comercial (Convenção da Haia sobre Provas), promulgada pelo Decreto nº 9.039, de 27 de abril de 2017. Sobre a obtenção de provas no exterior, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9217,6 +9557,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Financeiro",
+          "tema": "Lei de Responsabilidade Fiscal",
           "enunciado": "O Estado Beta, no último ano, ultrassou o limite de despesa total de pessoal, que, segundo a Lei de Responsabilidade Fiscal (LRF), é de, no máximo, 60% da Receita Corrente Líquida (RCL). Por falta de gestão responsável, apesar de os demais Poderes e órgãos autônomos terem se enquadrado dentro dos respectivos percentuais fixados como limites individuais, o Poder Executivo Estadual ainda não conseguiu alcançar a redução determinada pela própria LRF, dentro do prazo por ela estipulado, para atender ao percentual máximo de 49% da RCL, fixado como limite individual de despesas com pessoal para o Poder Executivo Estadual. Diante desse cenário, à luz da Lei de Responsabilidade Fiscal, o Poder Executivo estadual não poderá",
           "alternativas": [
             {
@@ -9244,6 +9585,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Financeiro",
+          "tema": "Orçamento Público (LOA/LDO/PPA)",
           "enunciado": "O projeto da Lei Orçamentária Anual (LOA) de determinado ente federativo, encaminhado ao Poder Legislativo pelo Poder Executivo, prevê apenas o orçamento fiscal do referido ente. Na mensagem de encaminhamento do projeto de LOA, está esclarecido que o orçamento de investimentos das empresas em que o ente, direta ou indiretamente, detenha a maioria do capital social com direito a voto, bem como o orçamento da seguridade social do ent e, será encaminhado individualmente por meio de outros projetos. Diante desse cenário, sobre esse procedimento assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9271,6 +9613,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Lançamento e Crédito Tributário",
           "enunciado": "João da Silva, profissional liberal, foi notificado pela Administração Tributária Federal, em 20 de janeiro de 2023, para prestar esclarecimentos sobre possíveis rendimentos não declarados recebidos no ano de 2019. Tais rendimentos foram identificados por meio de movimentação financeira de sua conta bancária, a partir da Lei Complementar Federal nº XXX/2022, publicada em 15 de dezembro de 2022, que alterou os critérios de fiscalização, ampliando os poderes de investigação do Fisco Federal, permitindo a este acesso aos dados financeiros bancários dos contribuintes (apenas créditos e débitos) para fins de fiscalização, lançamento tributário e cobrança de Imposto sobre a Renda. Irresignado com a notificação relativa aos fatos ocorridos vários anos atrás, João consulta seu(sua) advogado(a), que emite um sucinto parecer e uma orientação jurídica. Diante desse cenário e de acordo com o Código Tributário Nacional (CTN), assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9298,6 +9641,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Obrigação Tributária",
           "enunciado": "Um contrato de locação residencial traz cláusula expressa de que ao locatário caberá o encargo de pagar diretamente, para o Município ou a rede bancária, o IPTU incidente sobre o imóvel locado, enquanto durar o contrato de locação, devendo remeter, posteriormente, o comprovante de pagamento ao locador. Sobre a posição do locatário, à luz do Código Tributário Nacional, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9325,6 +9669,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Competência Tributária",
           "enunciado": "Visando à melhoria do serviço de iluminação pública e da segurança no Município Alfa, foi publicada lei municipal, em 20/02/2024, instituindo uma contribuição cuja arrecadação estaria vinculada ao custeio, à expansão e à melhoria do serviço de iluminação pública e de sistemas de monitoramento para a segurança e a preservação de logradouros públicos. Acerca desta lei, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9352,6 +9697,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Lançamento e Crédito Tributário",
           "enunciado": "Nova lei federal ordinária, pretendendo oferecer uma oportunidade para que os empregadores possam quitar suas dívidas de contribuição previdenciária patronal, criou um programa de parcelamento de dívidas desse tributo em até 90 (noventa) meses. Diante desse cenário, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9379,6 +9725,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Tributário",
+          "tema": "Processo Tributário",
           "enunciado": "A sociedade empresária prestadora de serviços ABC Ltda., sediada no Município Alfa, deixou de declarar ao Fisco Municipal vários serviços que prestou no território desse município. Em razão disso, um agente fiscal do ISS municipal lavrou auto de infração com multa e encargos em face da referida sociedade empresária, por não ter prestado as declarações no prazo e na forma da legislação tributária. Notificada do auto de infração para o pagamento, a sociedade empresária nem pagou nem impugnou o lançamento. Em razão do não pagamento, a Procuradoria do Município ingressou com uma ação de cobrança pelo rito comum contra a sociedade ABC Ltda., fundamentada no Código de Processo Civil. Sobre a ação de cobrança ajuizada pela Procuradoria do Município, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9406,6 +9753,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Agentes Públicos e Regime Disciplinar",
           "enunciado": "Tertuliano vem acumulando ilicitamente dois cargos públicos em autarquias federais diferentes. Ao detectar tal situação, após os devidos trâmites, a autoridade competente notificou o servidor para que ele optasse pelo cargo em que pretendia permanecer. Em decorrência da omissão de Tertuliano em realizar a aludida escolha, foi publicada a portaria atinente à instauração do processo administrativo disciplinar por acumulação ilegal de cargos. Tertuliano procurou você, como advogado(a), para saber das peculiaridades do andamento desse procedimento. Diante dessa situação hipotética, assinale a afirmativa que indica, corretamente, sua orientação.",
           "alternativas": [
             {
@@ -9433,6 +9781,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Serviços Públicos e Concessões",
           "enunciado": "O Estado Beta, após os devidos trâmites, promoveu a concessão de serviços de sua competência para a sociedade empresária Servicaos. Em decorrência do descumprimento de algumas cláusulas contratuais que estão impactando a qualidade da atividade delegada, o poder concedente editou um decreto, contendo a designação do interventor, o prazo da intervenção e os objetivos e limites da medida, a fim de assegurar a adequação na prestação do serviço, bem como o fiel cumprimento das normas contratuais, regulamentares e legais pertinentes. Em razão disso, a sociedade empresária Servicaos procura você, na condição de advogado(a), a fim de obter esclarecimentos acerca da validade e dos desdobramentos da medida adotada. Assinale a opção que apresenta o esclarecimento correto a ser prestado.",
           "alternativas": [
             {
@@ -9460,6 +9809,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Intervenção do Estado na Propriedade",
           "enunciado": "Com o intuito de promover o tombamento de dois imóveis vizinhos de inequívoco valor histórico e cultural, o Instituto do Patrimônio Histórico Nacional (Iphan), autarquia federal, no exercício de suas atribuições, promoveu a notificação dos respectivos proprietários: o Município Alfa e a senhora Maria Silva. Maria Silva acredita que terá graves prejuízos financeiros com a materialização do tombamento de ambos os imóveis, razão pela qual, logo após a notificação, procurou você, como advogado(a), para dirimir dúvidas acerca da matéria. À luz do disposto no Decreto-Lei nº 25/1937, assinale a opção que apresenta, corretamente, o esclarecimento que você deu a Maria Silva.",
           "alternativas": [
             {
@@ -9487,6 +9837,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Improbidade Administrativa",
           "enunciado": "Januário, ex-prefeito do Município Imaginário, teve conhecimento de um inquérito civil que tem por objeto avaliar condutas praticadas no exercício de seu mandato que se enquadram como atos de improbidade e que causaram prejuízo ao erário. Em razão disso, ele procurou você, na qualidade de advogada(o), para definir uma e stratégia de defesa, destacando que tem provas de que atuou de forma culposa. Considerando o fato de a conduta ter sido culposa, à luz do disposto na Lei nº 8.429/1992, com a redação conferida pela Lei nº 14.230/2021, assinale a opção que apresenta, corretamente, a orientação jurídica prestada.",
           "alternativas": [
             {
@@ -9514,6 +9865,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Administrativo",
+          "tema": "Responsabilidade Civil do Estado",
           "enunciado": "Rodrigo agrediu fisicamente seu desafeto Afonso, quando estava no exercício de suas atribuições como servidor público do Estado Alfa, em decorrência de uma desavença entre eles, no momento em que realizava atendimento ao público. Em razão dos danos sofridos, Afonso ajuizou ação de responsabilidade civil em face do mencionado ente federativo. Depois do trânsito em julgado da sentença condenatória ao pagamento da quantia indenizatória de R$ 20.000 (vinte mil reais), o Estado Alfa ajuizou ação de regresso em desfavor de Rodrigo, com vistas a obter o ressarcimento do erário. O então agente público foi citado na última segunda-feira, motivo pelo qual ele procurou você, como advogado(a), para a realização da sua defesa no respectivo processo. Assinale a opção que indica, corretamente, a orientação jurídica que você prestou e que deve constar da contestação na ação de regresso em que Rodrigo é o demandado.",
           "alternativas": [
             {
@@ -9541,6 +9893,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Ambiental",
+          "tema": "Princípios e Competência Ambiental",
           "enunciado": "Diante das numerosas tragédias climáticas registradas, ganhou força nas recentes discussões jurídicas a pauta relacionada à designada litigância climática , por meio da qual o Judiciário é instado a se manifestar para impor medidas com vistas a reduzir efeitos deletérios sobre o clima, especialmente por meio de ações civis públicas ajuizadas pelo Ministério Público. A associação Puravida, que atua na área ambiental, tem especial interesse na aludida matéria, de modo que procurou você, como advogado(a), para esclarecer dúvidas acerca do respectivo arcabouço jurídico. Com relação à atuação jurisdicional da litigância climática, assinale a afirmativa que apresenta, corretamente, seu esclarecimento.",
           "alternativas": [
             {
@@ -9568,6 +9921,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Ambiental",
+          "tema": "Licenciamento Ambiental",
           "enunciado": "A sociedade empresária XYZ, recentemente constituída, exercerá atividade econômica potencialmente causadora de degradação ambiental, tornando-se necessário o licenciamento ambiental. Os sócios da entidade verificaram, contudo, que o Município Alfa, responsável pelo licenciamento ambiental no caso concreto, não dispõe de órgão ambiental capacitado ou de conselho do meio ambiente. Logo, a entidade contratou os serviços de um(a) advogado(a) para orientá-la sobre como proceder na sequência. O patrono constatou, então, que o Estado Beta, cuja capital está no Município Alfa, e a União possuem órgãos ambientais capacitados. Nesse cenário, considerando as disposições da Lei Complementar nº 140/2011, que versa sobre a competência ambiental dos entes federativos, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9595,6 +9949,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Responsabilidade Civil",
           "enunciado": "Mário conduzia imprudentemente seu veículo quando perdeu o controle do automóvel e colidiu contra uma banca de jornais situada na calçada. João, que estava parado ao lado da banca, foi atingido e faleceu na hora do acidente. Mário permaneceu internado por cerca de dois meses antes de também falecer em decorrência dos ferimentos sofridos. Sobre as implicações do caso acima, segundo o ordenamento jurídico brasileiro, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9622,6 +9977,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Obrigações",
           "enunciado": "Cláudia comprou um apartamento e contratou o arquiteto Lúcio para elaborar o projeto de redecoração. Pelo contrato celebrado, Lúcio deverá entregar o projeto a Cláudia no prazo de 30 dias, contados da assinatura do instrumento. Em caso de mora, Lúcio fica obrigado a pagar multa diária a Cláudia. Considerando essa hipótese, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9649,6 +10005,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Proteção de Dados/LGPD",
           "enunciado": "André, pessoa física, faz a coleta de dados pessoais de seus conhecidos e os arquiva em seus cadernos pessoais. A coleta é feita para fins exclusivamente particulares e não econômicos. Sobre a aplicação da Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018) ao caso narrado, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9676,6 +10033,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Sucessões",
           "enunciado": "Paulo e Glória mantiveram união estável por 22 anos, sem que nunca tivessem celebrado pacto de convivência. Ao longo da relação, amealharam, por esforço comum, patrimônio de R$ 1.600.000 (um milhão e seiscentos mil reais). Paulo faleceu, não deixando filhos nem pais, apenas seus quatro avós e dois irmãos. Diante dos fatos hipotéticos narrados, sobre a sucessão de Paulo, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9703,6 +10061,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Responsabilidade Civil",
           "enunciado": "No edifício em que reside Carolina, há, nas janelas das salas de todos os apartamentos, jardineiras com pequenas plantas. Trata - se de elemento original do projeto arquitetônico. Na sua jardineira, Carolina colocou alguns vasos de plantas. Certo dia, caiu um vaso da jardineira de Carolina sobre o carro de Thiago, que estava estacionado na rua, e causou um pequeno amassado. Sobre o caso narrado, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9730,6 +10089,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Civil",
+          "tema": "Direitos Reais",
           "enunciado": "Fabiano e Vitória, casados pelo regime de comunhão parcial de bens, são possuidores de boa -fé de um imóvel residencial localizado no município de Quebrangulo, AL, com área de 160 m2 (cento e sessenta metros quadrados). O proprietário do imóvel é Graciliano, que se mudou para Maceió, no início do ano de 2011, nunca mais retornando à cidade. Destaca-se que Graciliano havia hipotecado o bem dias antes de sua mudança para a capital. No dia de ontem, o casal procurou você, como advogado(a), com o propósito da verificar uma possível usucapião, visto que residem no bem desde 2018. Com base no sistema jurídico brasileiro, assinale a opção que apresenta, corretamente, sua orientação.",
           "alternativas": [
             {
@@ -9757,6 +10117,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito da Criança e do Adolescente",
+          "tema": "Conselho Tutelar",
           "enunciado": "Herminda, de 50 anos, é tia materna de Júlia, de 16 anos. Após verificar que Júlia teve notas baixas no colégio, Herminda decidiu ir à porta da escola e, com o intuito de correção, ridicularizou e humilhou a adolescente na frente de seus colegas, dizendo que Júlia era desleixada, que nunca conseguiria acesso à universidade, sendo uma vergonha para a família. Os pais de Júlia tomaram conhecimento do fato e ficaram revoltados. Decidiram, então, procurar você, como advogado(a), para que indicasse a orientação jurídica adequada para sancionar o ato praticado por Herminda. Nesse caso, de acordo com o ECA, assinale a afirmativa que apresenta, corretamente, sua orientação.",
           "alternativas": [
             {
@@ -9784,6 +10145,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito da Criança e do Adolescente",
+          "tema": "Adoção e Família Substituta",
           "enunciado": "Carlos e Mário possuem união estável homoafetiva há mais de 15 anos. Ambos trabalham como médicos em prestigiado hospital e contam com vida estável e harmônica. O casal, em comum acordo, deseja adotar uma criança, e lhe fornecer todos os direitos que uma pessoa deve ter, tais como educação, saúde e lazer. Para concretizar esse sonho, Carlos e Mário procuram você, como advogado(a), para que lhes preste a assessoria jurídica adequada envolvendo o processo de adoção. Diante desse contexto, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9811,6 +10173,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Consumidor",
+          "tema": "Direitos Básicos e Informação",
           "enunciado": "A sociedade empresária Fábrica de Alimentos Épsilon Ltda. alterou a embalagem de seu principal biscoito, destinado ao público infantil. O produto foi comercializado com redução de peso sem a devida ostensividade da informação no rótulo do produto, sem diminuição proporcional no preço e inexistência de indicação acerca da quantidade de açúcar e de lactose. Uma associação de defesa do consumidor procurou você, como advo gada(o), a respeito da conduta da sociedade empresária. A respeito do dever de informação previsto no Código de Defesa do Consumidor, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9838,6 +10201,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Consumidor",
+          "tema": "Práticas e Contratos de Consumo",
           "enunciado": "Ângela Silva, com o propósito de celebrar os seus 20 anos de formada, adquiriu um pacote de viagens, na loja virtual de uma conhecida sociedade empresária de turismo. Ocorre que, seis dias após a aquisição, foi surpreendida por seus filhos com pacote de viagens semelhante. Em razão disso, contactou, imediatamente, a sociedade empresária, por meio dos canais de comunicação disponibilizados no sítio eletrônico, informando a sua desistência pela aquisição do serviço, pleiteando, portanto, o cancelamento da contratação. Após quatro dias da efetiva comunicação, Ângela recebeu resposta da agência de turismo, informando que o cancelamento era possível, porém seria cobrada uma taxa de 10% do valor total do pacote, pois, conforme a política da sociedade empresária, a desistência gratuita deve ser informada em até cinco dias da contratação. Diante do fato, você, consultado(a) como advogado(a), ofereceu, corretamente, a seguinte orientação.",
           "alternativas": [
             {
@@ -9865,6 +10229,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Nome Empresarial e Estabelecimento",
           "enunciado": "Bento de Abreu e Bernardino de Campos são os únicos sócios e fundadores da sociedade empresária Abreu & Campos Ltda. Os sócios deliberaram a transformação da sociedade de limitada para companhia e lhe pediram orientação sobre o nome empresarial. Considerando algumas das regras para a formação do nome empresarial do tipo que a sociedade adotará, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9892,6 +10257,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Tipos Societários",
           "enunciado": "Lucélia, Marília e Natividade constituíram uma sociedade empresária sem levar o documento escrito de constituição a qualquer registro. Ficou estabelecido verbalmente entre as sócias que os atos sociais seriam praticados por Marília, no interesse comum. Inadimplida uma obrigação social, o credor, ciente da existência da sociedade, demandou a sociedade e todas as sócias, responsabilizando-as solidariamente e sem benefício de ordem pela obrigação assumida por Marília. Considerados tais fatos, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9919,6 +10285,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Tipos Societários",
           "enunciado": "Uma sociedade simples que adotou um dos tipos societários previstos no Código Civil, com sede em Guarapari/ES, foi constituída por prazo determinado, até 31 de dezembro de 2023. Sobre a situação da sociedade empresária a partir de 1º de janeiro de 2024, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -9946,6 +10313,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Empresarial",
+          "tema": "Títulos de Crédito e Contratos Empresariais",
           "enunciado": "Itarana Avícola e Abatedouro S.A . celebrou contrato de alienação fiduciária de veículos automotores com o Banco Alegre S.A. O valor financiado deveria ser pago em 60 (sessenta) prestações mensais, mas, após o vencimento da 14ª (décima quarta) prestação, a fiduciante cessou o pagamento. Sobre a hipótese, assinale a opção que indica a providência assegurada por lei ao fiduciário.",
           "alternativas": [
             {
@@ -9973,6 +10341,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Competência e Partes",
           "enunciado": "Rodrigo e Thaís, após o início do namoro, assistiam a um show em uma arena lotada, com cerca de dez mil pessoas, promovido pela Alegria Produções Artísticas. Em um determinado momento, eles perceberam que o teto montado especialmente para o evento estava desabando e, em consequência, duas mil pessoas ficaram feridas, entre elas, Rodrigo e Thaís. Após a negativa da Alegria Produções Artísticas em reparar os danos causados, Rodrigo e Thaís convenceram todas as pessoas feridas no show a proporem ação, em conjunto, em face da produtora. Sobre o caso concreto, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10000,6 +10369,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Procedimentos Especiais",
           "enunciado": "Você, como advogado(a), foi procurado(a) por Joana e por Regina, cada uma pretendendo propor ação reparatória perante os Juizados Especiais Cíveis. Joana deseja ajuizar ação para cobrar o equivalente a 100 salários mínimos, ao passo que Regina pretende cobrar o correspondente a 30 salários mínimos. Sobre as ações pretendidas por Joana e Regina, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10027,6 +10397,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Sentença e Coisa Julgada",
           "enunciado": "Maria ajuizou ação em face da União, com pedido de condenação desta à entrega de remédios, por ser portadora de grave doença cardíaca. Após o regular processamento, o Juízo da Vara Federal competente proferiu sentença de procedência condenando a União a entregar o medicamento solicitado. A Fazenda Pública foi vencida e, na hipótese, foi aplicado pelo Juiz o instituto da remessa necessária, com o envio do processo ao Tribunal Regional Federal, embora a União não tenha apelado da sentença. Acerca da remessa necessária, segundo o ordenamento jurídico brasileiro, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10054,6 +10425,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Cumprimento de Sentença e Execução",
           "enunciado": "Henrique propôs ação condenatória de alimentos em face de Juliano, seu pai. A sentença julgou procedente o pedido, condenando o réu ao pagamento de R$ 5.000 (cinco mil reais) por mês. Inconformado, Juliano interpôs recurso de apelação, buscando a reforma da sentença. Após a intimação para apresentação de contrarrazões, você, como advogado(a) contratado por Henrique, deseja requerer o cumprimento provisório da sentença, com o intuito de, desde logo, receber os alimentos vincendos. Tomando o caso acima como premissa, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10081,6 +10453,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Cumprimento de Sentença e Execução",
           "enunciado": "Anacleto ajuizou ação de indenização contra a sociedade empresária de telefonia Alô, tendo sido proferida sentença de procedência do pedido, com a condenação da ré ao pagamento de indenização por danos morais e materiais, mas sem especificação dos valores. A sociedade Alô interpôs recurso de apelação, ainda pendente de julgamento, mas Anacleto deseja desde logo obter a definição do montante correspondente aos danos sofridos. Acerca da situação apresentada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10108,6 +10481,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Civil",
+          "tema": "Petição Inicial e Resposta do Réu",
           "enunciado": "João e Marina celebraram contrato de arrendamento com previsão de cláusula compromissória arbitral, na qual estipularam que qualquer disputa de natureza patrimonial decorrente do contrato seria submetida à arbitragem. Após desentendimentos acerca do cumprimento de uma das obrigações previstas em contrato, Marina resolveu ajuizar ação judicial contra João, na qual busca indenização pelos prejuízos que alega ter sofrido. Uma vez citado, João não apresentou contestação. Durante a fase instrutória, ao examinar o contrato celebrado entre as partes, o Magistrado do caso visualizou a existência de cláusula compromissória celebrada entre as partes. Considerando o caso narrado, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10135,6 +10509,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Crimes contra o Patrimônio",
           "enunciado": "Um grupo realizava uma manifestação social pacífica contra o aumento da tarifa de ônibus. A atividade era acompanhada por grande contingente de policiais militares. Rodrigo, um dos manifestantes, de forma exaltada, arremessou uma pedra em uma viatura da Polícia Militar estacionada na localidade, quebrando dolosamente o vidro do para-brisa dianteiro. A partir das informações acima trazidas, assinale a opção que indica o crime cometido por Rodrigo.",
           "alternativas": [
             {
@@ -10162,6 +10537,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Penas e Extinção da Punibilidade",
           "enunciado": "Oliver, que já fora condenado por crime culposo anteriormente e que terminara de cumprir sua pena há dois anos, cometeu o crime de lesão corporal de natureza grave, previsto no Art. 129, § 1º, do CP, cuja pena cominada é de um a cinco anos de reclusão. Ele foi condenado à pena de um ano e oito meses de reclusão, tendo sua condenação sido proferida três anos após o término do cumprimento da pena pelo crime culposo anterior. Tomando por base o delito praticado e a pena aplicada, sobre a possibilidade de Oliver ter sua pena privativa de liberdade substituída por duas penas restritivas de direitos, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10189,6 +10565,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Aplicação da Lei Penal",
           "enunciado": "Rodrigo, brasileiro, obteve bolsa de estudos para intercâmbio de seis meses em uma universidade nos Estados Unidos. Nesse período, Rodrigo começou a namorar Mary, uma jovem estadunidense. Após uma crise de ciúmes, Rodrigo matou Mary, por estrangulamento, no apartamento em que morava na Flórida. O feminicídio constitui infração penal nos Estados Unidos. No dia seguinte aos fatos, Rodrigo retornou ao Brasil. Como advogado da família da vítima, esclareça a viabilidade de aplicação da Lei Penal brasileira a Rodrigo, identificando o princípio penal correspondente.",
           "alternativas": [
             {
@@ -10216,6 +10593,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
           "enunciado": "João mora em Ipanema e, há dois anos, faz aula de futevôlei na praia do Leblon, três vezes por semana. João sempre realiza tal trajeto em sua bicicleta elétrica, da marca Bike legal, cor preta com banco de couro marrom. No mês passado, ao final do treino, João pegou uma bicicleta elétrica idêntica à sua e voltou para casa. Dias depois, João foi intimado a comparecer à Delegacia de Polícia para prestar declarações sobre um possível crime de furto, uma vez que o circuito de câmeras permitiu identificar que João havia levado a bicicleta de uma moça de nome Fernanda. No caso narrado, é correto afirmar que João agiu diante de",
           "alternativas": [
             {
@@ -10243,6 +10621,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Concurso de Pessoas e de Crimes",
           "enunciado": "Ateneu e Moisés combinaram a prática conjunta de um crime de furto. Moisés, exímio motorista, aguardou na rua com o carro já ligado e Ateneu, especialista em abertura de cofres, ingressou na residência de um famoso jogador de futebol que atuava no exterior. Ambos pensavam que a casa estava vazia, mas ao ingressar no imóvel, Ateneu se deparou com Izabel, empregada doméstica que trabalhava no local, tendo, então, sacado a arma de fogo que portava, sem a ciência de Moisés, e matado Izabel com um tiro na testa. Ateneu levou consigo joias e dinheiro. Ao tomar ciência da morte de Izabel, Moisés não quis ficar com nada. Diante de tal situação hipotética, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10270,6 +10649,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Crimes contra a Pessoa",
           "enunciado": "Após ter seu pedido de aumento salarial negado, Sara, empregada doméstica, adicionou, com intenção de matar, veneno na feijoada que preparou para Raquel, sua patroa. Raquel sentiu-se mal, sendo socorrida por terceiros e levada ao hospital, onde contraiu uma infecção. Ela veio a falecer dois meses após ser internada, pois a infecção fora agravada pela ingestão de veneno. Sobre tal situação hipotética, assinale a opção que indica, corretamente, o delito praticado por Sara.",
           "alternativas": [
             {
@@ -10297,6 +10677,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Execução Penal",
           "enunciado": "Gabriela se dirigiu a uma agência da Caixa Econômica Federal, empresa pública federal, a fim de tentar sacar benefício assistencial pago pela União a pessoas em situação de vulnerabilidade financeira, munida de documentos falsos, em nome de terceira pessoa. Gabriela foi presa em flagrante, sendo constatado que ela estava cumprindo pena em regime aberto domiciliar por condenação relativa a outro fato. Em relação à execução penal, assinale a afirmativa que define as consequências do evento narrado.",
           "alternativas": [
             {
@@ -10324,6 +10705,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Ação Penal",
           "enunciado": "Marcos foi denunciado como incurso nas penas do delito de furto simples, que consiste em um a quatro anos de reclusão. Ao apresentar resposta à acusação, a defesa se resguardou o direito de se manifestar sobre o mérito em momento oportuno. Entretanto, antes da audiência de instrução e do julgamento, você foi nomeado(a), em substituição ao advogado anterior, e percebeu que, à época da citação, já havia sido concluída a prescrição da pretensão punitiva. Assinale a opção que apresenta, corretamente, sua conduta para o caso.",
           "alternativas": [
             {
@@ -10351,6 +10733,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Recursos Penais",
           "enunciado": "Fábio foi submetido a julgamento pelo Tribunal do Júri e, ao final, condenado a uma pena de 15 anos de reclusão, em regime inicial fechado. Você, como advogado(a) de Fábio, interpôs tempestivo e cabível recurso. Assinale a opção que indica o recurso correto interposto e/ou suas características.",
           "alternativas": [
             {
@@ -10378,6 +10761,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
+          "tema": "Crimes contra a Pessoa",
           "enunciado": "Leda se candidatou a uma vaga de emprego na sociedade empresária X. Ao se apresentar, a sócia -administradora Vera afirmou que “pessoas de cor de pele escura não são compatíveis com o perfil da vaga”, impedindo, assim, que Leda prosseguisse no processo seletivo. Indignada, Leda procura você, como advogado(a), a fim de defender seus interesses. Atuando na seara criminal em defesa dos interesses de Leda, você pode",
           "alternativas": [
             {
@@ -10405,6 +10789,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Ação Penal",
           "enunciado": "Bernardo agrediu Carolina, sua ex -companheira, causando -lhe lesões corporais leves, em razão de a vítima ser mulher. O delito em questão é apenado com reclusão de dois a cinco anos. Na qualidade de advogado(a) de Carolina, cabe notar que,",
           "alternativas": [
             {
@@ -10432,6 +10817,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo Penal",
+          "tema": "Provas no Processo Penal",
           "enunciado": "Em uma audiência, o Ministério Público indicou como testemunha a psiquiatra do réu. Após a qualificação da testemunha, você, na condição de advogado(a) do réu, deve",
           "alternativas": [
             {
@@ -10459,6 +10845,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Previdenciário",
+          "tema": "Acidente de Trabalho",
           "enunciado": "Maria, empregada doméstica desde julho de 1990, no deslocamento para seu local de trabalho, sofreu um acidente em virtude de uma queda na saída do ônibus. Maria não sabe se deve procurar o sistema previdenciário desde já e se tem direito a algum benefício. Por isso, procurou você, como advogado(a). Assinale a opção que apresenta, corretamente, sua orientação.",
           "alternativas": [
             {
@@ -10486,6 +10873,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Previdenciário",
+          "tema": "Benefícios Previdenciários",
           "enunciado": "Lucas, segurado obrigatório do Regime Geral de Previdência Social (RGPS), cometeu um crime e foi recolhido à prisão em regime fechado, em 1º/1/2023, tendo contribuído previamente por 24 meses. Sobre a hipótese narrada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10513,6 +10901,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Execução Trabalhista",
           "enunciado": "Rogéria, sócia de uma sociedade empresária especializada em festas infantis, saiu fraudulentamente da empresa em 2018, transferindo formalmente suas cotas sociais a um dos empregados da sociedade empresária que não tinha condições econômicas ou solvabilidade. Rogéria, mesmo após sua saída, permaneceu com uma procuração da sociedade empresária para movimentar as contas bancárias e fazia uso regular delas com transferências para sua conta, pagamentos de empregados, fornecedores e outros compromissos. Em 2022, um dos empregados ajuizou uma reclamação trabalhista que terminou em acordo no valor de R$ 30.000 (trinta mil reais), que não foram pagos na data acertada. Não havendo condições de executar a sociedade empresária, você, como advogado(a) do exequente, requereu o incidente de desconsideração da personalidade jurídica, incluindo os sócios atuais e Rogéria. Sobre a ação interposta, considerando o que dispõe a CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10540,6 +10929,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Relação de Emprego",
           "enunciado": "Sérgio foi contratado, em 2022, por uma indústria mecânica para receber um salário mensal de R$ 3.000 (três mil reais). Ele pediu para não ter a CTPS assinada, porque estava recebendo o seguro - desemprego do emprego anterior. Também não queria ter contracheque formal para que a ex-esposa não soubesse do novo emprego, uma vez que estava devendo a pensão alimentícia e não queria que houvesse desconto judicial. A sociedade empresária cedeu aos seus argumentos e não assinou sua carteira profissional. Sobre a decisão da sociedade empresária, consi derando o que dispõe a CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10567,6 +10957,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Direito Coletivo do Trabalho",
           "enunciado": "As irmãs Margarida, Hortência e Rosa aderiram ao plano de demissão voluntária (PDV) oferecido pelos seus respectivos empregadores. No caso de Margarida, a previsão do PDV encontrava-se em acordo coletivo de trabalho; no caso de Hortência, estava previsto em convenção coletiva de trabalho; e, no caso de Rosa, em norma interna definida pelo empregador. Feitas as extinções dos contratos em 2024, sem ressalvas, as irmãs pretendem ajuizar reclamação trabalhista postulando direitos supostamente lesados ao longo do pacto laboral. Considerando a situação apresentada e os termos da CLT, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10594,6 +10985,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Trabalho",
+          "tema": "Direito Coletivo do Trabalho",
           "enunciado": "Determinada sociedade empresária firmou acordo coletivo com o sindicato dos empregados dispondo sobre banco de horas e compensação de horas extras, assim como sobre redução de intervalo. A jornada inicial de oito horas diárias, de segunda a sexta -feira, e quatro horas no sábado, perfazendo um total de 44 horas foi alterada. Pelo acordo coletivo, foi estabelecido que os empregados trabalhariam 30 minutos a mais no final do dia de segunda a quinta-feira e teriam apenas 30 minutos de intervalo, o que aumentaria o total trabalhado para nove horas diárias. Na sexta-feira o trabalho seria normal, com oito horas de jornada e intervalo de uma hora, e não haveria mais trabalho aos sábados. As horas extras excedentes seriam compensadas em até três meses com folgas ou redução da jornada diária de acordo com o banco de horas. Alguns empregados ajuizaram reclamação trabalhista questionando a alteração, alegando prejuízo por trabalharem mais, com a redução do intervalo e uma maior jornada, afirmando que isso contrariava a CLT e a CRFB. Sobre a hipótese apresentada, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10621,6 +11013,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Atos, Prazos e Nulidades",
           "enunciado": "Você, como advogado(a), foi procurado(a) por Orlando, ex - funcionário da sociedade empresária Limpeza Total Ltda ., a qual prestava serviços para uma autarquia pública federal, aduzindo que foi dispensado sem receber as verbas rescisórias. Você deseja propor uma reclamação trabalhista em face da ex - empregadora, mas tem conhecimento de que esta não possui lastro financeiro algum, apesar do valor da causa da ação, que monta o equivalente a 30 salários mínimos. Orlando, como trabalhava no Departamento de Recursos Humanos, forneceu dados e provas de que a tomadora dos serviços nunca fiscalizou o contrato, nem conferiu o adimplemento de quaisquer dos direitos trabalhistas dos empregados terceirizados. Na melhor defesa de seu cliente, assinale a afirmativa que apresenta, corretamente, o que você deverá propor.",
           "alternativas": [
             {
@@ -10648,6 +11041,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Atos, Prazos e Nulidades",
           "enunciado": "José Luiz ajuizou reclamação trabalhista em face de Lojas Internacionais Ltda., pleiteando verbas resilitórias e horas extras. No dia da audiência, apesar de regularmente notificado, José Luiz injustificadamente não compareceu. Seu advogado, presente, requereu a dispensa de custas pela gratuidade de justiça, o que foi deferido pelo Juiz, com a concordância do réu e do respectivo advogado, também presentes na audiência. Ação idêntica foi ajuizada um mês após o fato, e, de novo, José Luiz injustificadamente não compareceu, sendo que, dessa vez, uma hora após a audiência, ele compareceu à sala de audiência e disse ao Juiz e ao secretário da audiência que dormira demais, perdendo a hora, e, por isso, atrasou-se e não chegou no horário. Foi juntada certidão do fato ao processo, no qual, novamente, foi acolhido o seu requerimento de gratuidade de justiça. As duas ações anteriormente ajuizadas foram extintas sem resolução do mérito. Agora, você foi procurado por José Luiz para, como advogado(a), ajuizar outra ação idêntica. Sobre as consequências das ausências de José Luiz para o ajuizamento de outra demanda, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10675,6 +11069,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Provas no Processo do Trabalho",
           "enunciado": "Você, na qualidade de advogado(a) de Pedro, ajuizou reclamação trabalhista em face da indústria de calçados Guanabara. Pedro trabalhou para a sociedade empresária ré, entre os anos de 2018 e 2022, e afirma que não recebeu o 13º salário de 2021 e que trabalhava cerca de 10 horas por dia. Você ajuizou reclamação trabalhista, pretendendo o pagamento do 13º salário de 2021 e as horas extras. A ex-empregadora apresentou defesa, aduzindo que pagou o 13º salário, que, conforme cartões de ponto juntados, Pedro não realizava horas extras e sua jornada estava prevista em norma coletiva da categoria. Na qualidade de advogado(a) de Pedro, você impugnou os cartões de ponto argumentando que não refletiam o real horário laborado, sendo certo que os documentos mostram horários variados de início e fim da jornada. Acerca do ônus da prova que incumbirá ao seu cliente, de acordo com a CLT, e o entendimento jurisprudencial consolidado do TST, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10702,6 +11097,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Provas no Processo do Trabalho",
           "enunciado": "Em sede de reclamação trabalhista, você é advogado(a) da parte autora, um ex-empregado de uma sociedade empresária. No curso da instrução, após ser ouvida uma testemunha da ré, o advogado da parte contrária requereu a oitiva da segunda testemunha, que estava sentada dentro da sala de audiência, tendo presenciado o curso da instrução até aquele momento. Apesar da sua manifestação em sentido contrário, o Juiz deferiu a produção da prova, prosseguindo com a instrução, sendo certo que permitiu que o advogado da parte ré interrogasse diretamente a testemunha, o que causava o risco de indução de respostas. A fim de assegurar o bom curso da instrução probatória, assinale a afirmativa que apresenta a ação que você, corretamente, assumiu na defesa do interesse de seu cliente.",
           "alternativas": [
             {
@@ -10729,6 +11125,7 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Processo do Trabalho",
+          "tema": "Execução Trabalhista",
           "enunciado": "Em execução que tramita perante a 120ª Vara do Trabalho de Salvador, o executado é um ente público condenado de forma subsidiária em virtude de uma terceirização na qual foi comprovado que não houve fiscalização adequada. Contudo, o valor homologado pelo Juízo não obteve a concordância do executado, que entende estar majorado em relação à coisa julgada formada. Considerando a dinâmica da execução prevista na norma de regência, assinale a afirmativa correta.",
           "alternativas": [
             {
@@ -10772,14 +11169,21 @@ var QuestoesSeed = (function () {
       var atualizacoes = [];
       PROVAS.forEach(function (prova) {
         prova.questoes.forEach(function (q) {
-          if (!q.explicacaoCorreta) return;
           var existente = porChave[prova.provaOrigem + '::' + q.enunciado];
-          if (!existente || existente.explicacaoCorreta) return;
-          existente.explicacaoCorreta = q.explicacaoCorreta;
-          existente.explicacaoErradas = q.explicacaoErradas || '';
-          existente.pegadinha = q.pegadinha || '';
-          existente.regraMemoria = q.regraMemoria || '';
-          atualizacoes.push(DB.put('questoes', existente));
+          if (!existente) return;
+          var mudou = false;
+          if (q.explicacaoCorreta && !existente.explicacaoCorreta) {
+            existente.explicacaoCorreta = q.explicacaoCorreta;
+            existente.explicacaoErradas = q.explicacaoErradas || '';
+            existente.pegadinha = q.pegadinha || '';
+            existente.regraMemoria = q.regraMemoria || '';
+            mudou = true;
+          }
+          if (q.tema && !existente.tema) {
+            existente.tema = q.tema;
+            mudou = true;
+          }
+          if (mudou) atualizacoes.push(DB.put('questoes', existente));
         });
       });
       return Promise.all(atualizacoes);
@@ -10804,7 +11208,7 @@ var QuestoesSeed = (function () {
             id: Storage.makeId(),
             disciplinaId: disciplinaId,
             provaOrigem: prova.provaOrigem,
-            tema: '',
+            tema: q.tema || '',
             dificuldade: 'media',
             enunciado: q.enunciado,
             alternativas: q.alternativas,

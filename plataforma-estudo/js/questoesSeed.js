@@ -4,7 +4,7 @@
 // chefões por tema, XP/combo e estatística de fraquezas — não é um passo à
 // parte, é como o motor de questões já funciona pra qualquer questão.
 var QuestoesSeed = (function () {
-  var SEED_VERSION_ATUAL = 5;
+  var SEED_VERSION_ATUAL = 6;
 
   var PROVAS = [
     {
@@ -11150,6 +11150,4498 @@ var QuestoesSeed = (function () {
           "explicacaoErradas": "B e D estão erradas quanto à garantia do juízo, desnecessária para a Fazenda Pública. C está errada quanto ao prazo, que é de 30 dias, e não de 8 dias como no rito comum trabalhista (art. 884, CLT).",
           "pegadinha": "Achar que o ente público responsável subsidiariamente segue o mesmo prazo e a mesma exigência de garantia de um executado comum — a Fazenda Pública tem regras próprias.",
           "regraMemoria": "Fazenda Pública nunca garante juízo (bens públicos são impenhoráveis) e tem 30 dias para embargar, não 8."
+        }
+      ]
+    },
+    {
+      "provaOrigem": "40º Exame de Ordem Unificado",
+      "seedVersion": 6,
+      "questoes": [
+        {
+          "territorio": "Ética",
+          "tema": "Sociedade de Advogados",
+          "enunciado": "Determinada sociedade de advogados deseja se associar a advogados que não a integram para prestação de serviços e participação nos resultados. Segundo a legislação aplicável à formalização desse vínculo jurídico, assinale a opção que indica, corretamente, a conclusão dos administradores da sociedade de advogados.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O contrato de associação não pode ser pactuado em caráter geral, devendo registringir-se a causas ou trabalhos específicos, sob pena de se configurarem os requisitos legais de vínculo empregatício."
+            },
+            {
+              "letra": "B",
+              "texto": "O contrato de associação deverá ser registrado no Conselho Seccional da OAB em cuja base territorial tiver sede a sociedade de advogados."
+            },
+            {
+              "letra": "C",
+              "texto": "O contrato de associação poderá atribuir a totalidade dos riscos à sociedade de advogados, mas não exclusivamente a um advogado sócio ou associado."
+            },
+            {
+              "letra": "D",
+              "texto": "O advogado não pode, simultaneamente, celebrar contrato de associação com mais de uma sociedade de advogados com sede ou filial na mesma área territorial do respectivo Conselho Seccional."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Pelo Regulamento Geral do Estatuto da Advocacia e da OAB (art. 39), o contrato de associação entre sociedade de advogados e advogado(a) associado(a), com participação nos resultados e sem vínculo empregatício, deve ser reduzido a escrito e registrado no Conselho Seccional da OAB em cuja base territorial a sociedade tiver sede, sendo esse registro condição de regularidade do vínculo.",
+          "explicacaoErradas": "A: incorreta, pois o contrato de associação pode ser pactuado tanto em caráter geral quanto para causas específicas; a lei não exige que se restrinja a trabalhos determinados para afastar o vínculo empregatício — o que descaracteriza a relação de emprego são os elementos próprios da associação (ausência de subordinação, participação nos resultados), não a delimitação temática do contrato. C: incorreta, pois o risco do negócio não pode ser atribuído com exclusividade nem à sociedade nem ao advogado sócio ou associado; a repartição de riscos deve ser proporcional/equilibrada entre as partes, sendo vedada a atribuição integral a qualquer um dos polos. D: incorreta, pois a lei não veda que o advogado celebre simultaneamente mais de um contrato de associação com sociedades distintas sediadas na mesma base territorial, desde que observados os deveres éticos (sigilo, ausência de conflito de interesses); não há proibição geral nesse sentido.",
+          "pegadinha": "A banca explora institutos correlatos ao contrato de associação (registro, riscos, exclusividade territorial) que soam plausíveis mas não correspondem à regra literal do Regulamento Geral; o candidato precisa saber exatamente qual é a formalidade exigida (registro no Seccional da sede da sociedade) e não confundi-la com regras inexistentes sobre exclusividade de objeto ou de território.",
+          "regraMemoria": "Associação de advogados: sempre registro escrito no Seccional da sede da sociedade; risco nunca pode recair 100% sobre um único polo."
+        },
+        {
+          "territorio": "Ética",
+          "tema": "Exercício da Advocacia",
+          "enunciado": "Sebastião, advogado, celebrou contrato de mandato com o cliente Amir, para representá-lo extrajudicialmente, tendo realizado diligências em prol da resolução do imbróglio. Desde a celebração do mandato, passaram-se mais de 20 (vinte) anos, mas as atividades para as quais Amir contratou Sebastião, por sua própria natureza, se protraíram no tempo, sendo ainda necessárias a Amir. Sobre a hipótese apresentada, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O mandato extinguiu-se pelo decurso do tempo, salvo se previsto prazo diverso no respectivo instrumento."
+            },
+            {
+              "letra": "B",
+              "texto": "O mandato extinguiu-se pelo decurso do tempo, sendo vedada a previsão de prazo diverso no respectivo instrumento."
+            },
+            {
+              "letra": "C",
+              "texto": "O mandato não se extinguiu pelo decurso do tempo, salvo se foi consignado prazo no respectivo instrumento."
+            },
+            {
+              "letra": "D",
+              "texto": "O mandato não se extinguiu pelo decurso do tempo, sendo vedada a estipulação de prazo no respectivo instrumento."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O mandato não se extingue automaticamente pelo mero decurso do tempo (art. 682 do Código Civil); a extinção por \"término do prazo\" só ocorre se as partes tiverem consignado prazo certo no instrumento. Não havendo prazo estipulado e permanecendo necessário o objeto do mandato (que, por sua natureza, se protrai no tempo), o vínculo mantém-se válido e eficaz mesmo após décadas.",
+          "explicacaoErradas": "A: incorreta, pois inverte a lógica legal: afirma que o mandato se extinguiu pelo decurso do tempo (regra), ressalvando prazo diverso (exceção); na verdade, a regra é a permanência do mandato sem prazo fixado, e a exceção é a extinção quando há prazo estipulado e ele se esgota. B: incorreta por dois motivos: primeiro, afirma extinção pelo decurso do tempo, quando na hipótese não há tal extinção; segundo, afirma ser vedada a fixação de prazo diverso, quando na verdade as partes podem, sim, estipular prazo no contrato de mandato. D: incorreta porque, embora acerte que o mandato não se extinguiu, erra ao dizer que é vedada a estipulação de prazo; não há tal vedação — as partes têm liberdade para fixar prazo, e, se o fizerem, o mandato se extingue ao término dele.",
+          "pegadinha": "A pegadinha está em fazer o candidato acreditar que a mera passagem de longo período (20 anos) extingue o mandato por si só, como se houvesse uma espécie de \"prescrição\" do vínculo contratual; na verdade, o Código Civil não prevê extinção do mandato pelo simples decurso do tempo, apenas pelo término de prazo efetivamente pactuado.",
+          "regraMemoria": "Mandato sem prazo fixado nunca se extingue pelo tempo; extingue-se sempre pelo término do prazo estipulado ou pela conclusão do negócio."
+        },
+        {
+          "territorio": "Ética",
+          "tema": "Direitos e Prerrogativas do Advogado",
+          "enunciado": "Monique, advogada regularmente inscrita nos quadros da OAB, é investigada em inquérito policial por supostos crimes praticados por motivo ligado ao exercício da advocacia, tendo sido presa em flagrante, por crime da mesma espécie, em seu escritório, enquanto atendia a uma de suas clientes. Considerando as disposições do Estatuto da Advocacia, é correto afirmar que",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Monique tem direito à presença de representante da OAB para lavratura do auto de prisão em flagrante, visto que se trata de suposto crime por motivo ligado ao exercício da advocacia, sob pena de nulidade."
+            },
+            {
+              "letra": "B",
+              "texto": "não há qualquer direito ou prerrogativa conferida pela legislação no caso em tela, devendo Monique receber tratamento idêntico ao dado a outros indivíduos não advogados, em razão do princípio da igualdade."
+            },
+            {
+              "letra": "C",
+              "texto": "a presença de representante da OAB no momento da lavratura do auto de prisão em flagrante será devida ainda que não se trate de motivo ligado ao exercício da advocacia, visto que se cuida de direito conferido ao advogado em todo e qualquer crime por ele cometido."
+            },
+            {
+              "letra": "D",
+              "texto": "o representante da OAB para acompanhar a lavratura do auto de prisão em flagrante, pode ser substituído por representante da Defensoria Pública, visto que ambos podem figurar como defensores."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Nos termos do art. 7º, V, e §3º do Estatuto da Advocacia (Lei 8.906/94), o advogado preso em flagrante por motivo ligado ao exercício da profissão tem direito a que a lavratura do auto de prisão em flagrante se dê com a presença de representante da OAB; a ausência dessa presença, quando exigida, gera nulidade do ato.",
+          "explicacaoErradas": "B: incorreta, pois há sim prerrogativa expressa em lei (art. 7º, V, EAOAB) assegurando tratamento diferenciado ao advogado nessa hipótese específica, exatamente por conta da função social da advocacia; negar a prerrogativa contraria o texto legal. C: incorreta porque a prerrogativa não se estende a \"todo e qualquer crime\" cometido pelo advogado, mas apenas àqueles praticados por motivo ligado ao exercício da profissão, conforme delimita o próprio Estatuto. D: incorreta, pois a lei exige representante da própria OAB para o acompanhamento do ato, não sendo prevista substituição por representante da Defensoria Pública; trata-se de prerrogativa institucional específica da Ordem, distinta da defesa técnica que a Defensoria eventualmente possa exercer.",
+          "pegadinha": "A banca tenta fazer o candidato estender a prerrogativa a qualquer crime cometido por advogado (alternativa C) ou eliminá-la sob o argumento da isonomia (alternativa B), quando na verdade ela é específica e condicionada ao nexo entre o crime e o exercício profissional.",
+          "regraMemoria": "Advogado preso em flagrante por crime ligado à profissão sempre tem direito à presença de representante da OAB, sob pena de nulidade; fora desse nexo, nunca há essa prerrogativa especial."
+        },
+        {
+          "territorio": "Ética",
+          "tema": "Exercício da Advocacia",
+          "enunciado": "Pedro, contador com vasta experiência e sólida carreira, decide fazer uma segunda graduação, tornando-se bacharel em Direito. nos quadros da Ordem dos Advogados do Brasil, Pedro pretende continuar prestando serviços contábeis, sem prejuízo do exercício concomitante da nova atividade. Acerca da intenção de Pedro, bem como dos limites ético- normativos para a publicidade profissional da sua nova atividade, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Pedro não poderá exercer de modo concomitante as atividades de contador e advogado, pois, de acordo com o Estatuto da Advocacia e da OAB, a prestação de serviços contábeis é incompatível com o exercício simultâneo da advocacia."
+            },
+            {
+              "letra": "B",
+              "texto": "Não há óbice ético para o duplo exercício das atividades de contador e advogado, podendo Pedro se valer da divulgação conjunta dos serviços oferecidos, desde que não seja por meio de inscrições em muros, paredes, veículos, elevadores ou em qualquer espaço público."
+            },
+            {
+              "letra": "C",
+              "texto": "Embora não haja incompatibilidade para o exercício concomitante das duas atividades, não será permitido a Pedro divulgar sua nova profissão de modo conjunto com a de contador."
+            },
+            {
+              "letra": "D",
+              "texto": "Pedro poderá fazer uso de mala direta, distribuição de panfletos ou formas assemelhadas de publicidade, visando a captação de clientela para a sua nova atividade, mas não poderá mencionar, nessa publicidade, os serviços de contabilidade."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Não há, no Estatuto da Advocacia, incompatibilidade entre o exercício da contabilidade e da advocacia (a contabilidade não consta do rol de atividades incompatíveis do art. 28 da Lei 8.906/94). Porém, as normas éticas de publicidade profissional (Código de Ética e Disciplina e Provimento sobre publicidade) vedam a divulgação conjunta da advocacia com outra atividade profissional, para preservar a independência e a natureza não mercantilista da profissão.",
+          "explicacaoErradas": "A: incorreta, pois a atividade de contador não está listada entre as incompatibilidades do art. 28 do EAOAB (que abrange, por exemplo, cargos com poder de polícia, direção de instituições financeiras, atividades policiais); logo, o exercício simultâneo é permitido. B: incorreta, pois o problema não está no meio de divulgação (muros, veículos etc.), mas na própria vedação de anunciar a advocacia em conjunto com outra atividade profissional, qualquer que seja o veículo utilizado. D: incorreta, pois mala direta, panfletos e formas assemelhadas de publicidade para captação de clientela são, em si, modalidades vedadas pelas normas éticas de publicidade da advocacia, independentemente de mencionarem ou não a atividade de contabilidade.",
+          "pegadinha": "A banca tenta levar o candidato a associar a proibição à existência de incompatibilidade profissional (que não existe) ou a condicioná-la ao meio/local de divulgação, quando a vedação real é mais simples e específica: não se pode divulgar a advocacia conjuntamente com outra profissão.",
+          "regraMemoria": "Advocacia com outra profissão: pode exercer junto, nunca pode anunciar junto."
+        },
+        {
+          "territorio": "Ética",
+          "tema": "Inscrição e Órgãos da OAB",
+          "enunciado": "Formalizou-se, no Tribunal Regional Eleitoral do Estado Alfa, a vacância de um dos cargos de juiz eleitoral, reservado constitucionalmente à classe de advogados. De igual modo, no Tribunal Regional Federal da Enésima Região, sediado na capital do mesmo Estado Alfa, com jurisdição nos Estados Alfa, Beta e Gama, foi também formalizada a vacância de um cargo de juiz federal do Tribunal Regional Federal, destinado à advocacia nos termos da Constituição Federal (quinto constitucional). Nesse hipotético cenário, que demandará a produção de duas listas de membros da advocacia para o futuro preenchimento dos cargos, assinale a afirmativa que descreve corretamente as competências dos órgãos da OAB.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A lista para o preenchimento do cargo no TRE do Estado Alfa ficará sob a incumbência do Conselho Seccional da OAB do respectivo Estado, competindo ao Conselho Federal da OAB elaborar a lista para o preenchimento do cargo no TRF da Enésima Região."
+            },
+            {
+              "letra": "B",
+              "texto": "A lista para o preenchimento do cargo no TRE do Estado Alfa ficará sob a incumbência do Conselho Seccional da OAB do respectivo Estado, competindo aos Conselhos Seccionais da OAB dos Estados Alfa, Beta e Gama a elaboração conjunta da lista para o preenchimento do cargo no TRF da Enésima Região."
+            },
+            {
+              "letra": "C",
+              "texto": "Uma vez que tanto a Justiça Eleitoral quanto a Justiça Federal pertencem ao Poder Judiciário da União, competirá ao Conselho Federal da OAB a elaboração das duas listas."
+            },
+            {
+              "letra": "D",
+              "texto": "Uma vez que tanto o TRE do Estado Alfa quanto a sede do TRF da Enésima Região estão situados no Estado Alfa, competirá ao Conselho Seccional da OAB desse Estado a elaboração das duas listas."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Compete ao Conselho Seccional da OAB elaborar a lista sêxtupla para o quinto constitucional de tribunais cuja jurisdição se limita a um único Estado (como o TRE, cuja competência é estadual); já para tribunais com jurisdição que abrange mais de um Estado (como o TRF de região composta por vários Estados), a elaboração da lista compete ao Conselho Federal da OAB, nos termos do Estatuto da Advocacia (art. 54, EAOAB, e Regulamento Geral).",
+          "explicacaoErradas": "B: incorreta, pois, para o TRF cuja jurisdição abrange mais de um Estado, a competência não é dos Conselhos Seccionais em conjunto, mas exclusivamente do Conselho Federal da OAB — não existe elaboração \"conjunta\" pelas seccionais nesse caso. C: incorreta, pois o critério legal não é a natureza federal do órgão judicial, mas a abrangência territorial de sua jurisdição; o TRE, embora integre a Justiça Eleitoral (ramo da Justiça da União), tem jurisdição circunscrita a um único Estado, o que atrai a competência do Conselho Seccional, e não do Conselho Federal. D: incorreta, pois o critério relevante não é a localização física da sede dos tribunais, mas a extensão territorial da jurisdição de cada um; o fato de ambos os tribunais estarem sediados no mesmo Estado é irrelevante para definir a competência da OAB.",
+          "pegadinha": "A banca tenta induzir o candidato a usar critérios equivocados — natureza federal do órgão ou localização da sede — quando o critério legal correto é a abrangência territorial da jurisdição do tribunal (um Estado = Seccional; mais de um Estado = Conselho Federal).",
+          "regraMemoria": "Tribunal com jurisdição em um só Estado, lista sempre do Seccional; tribunal com jurisdição em mais de um Estado, lista sempre do Conselho Federal."
+        },
+        {
+          "territorio": "Ética",
+          "tema": "Incompatibilidades e Impedimentos",
+          "enunciado": "Valmir, bacharel em Direito, aprovado no Exame da Ordem dos Advogados do Brasil, ocupa o cargo público de agente de Polícia Civil do Estado Alfa. Movido por sentimento altruísta, Valmir requer sua inscrição na OAB, pois pretende, nos momentos de folga da atividade policial, exercer a advocacia de forma gratuita, eventual e voluntária, em favor de instituições sociais sem fins econômicos que não disponham de recursos para a contratação de profissional. À luz dessas informações, e considerada a legislação vigente, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Valmir poderá exercer regularmente a advocacia, inclusive pro bono."
+            },
+            {
+              "letra": "B",
+              "texto": "Valmir não poderá exercer a advocacia remunerada, pois ocupa cargo incompatível, mas poderá exercer a advocacia pro bono."
+            },
+            {
+              "letra": "C",
+              "texto": "Valmir não poderá exercer a advocacia, mesmo pro bono, uma vez que o cargo público que ocupa atrai o regime da incompatibilidade."
+            },
+            {
+              "letra": "D",
+              "texto": "A condição de servidor público atrai o regime do impedimento, razão pela qual Valmir não poderá exercer a advocacia contra a Fazenda Pública que o remunera. Observado esse impedimento, não haverá óbice para o exercício da advocacia pro bono."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A ocupação de cargo vinculado a atividade policial atrai o regime da incompatibilidade (art. 28, V, do Estatuto da Advocacia), que é absoluto: impede totalmente o exercício da advocacia, inclusive de forma gratuita, eventual ou voluntária, independentemente de remuneração ou da causa patrocinada, dada a incompatibilidade estrutural entre a função policial e a independência da advocacia.",
+          "explicacaoErradas": "A: incorreta, pois a condição de agente de Polícia Civil configura incompatibilidade, vedando totalmente o exercício da advocacia, inclusive pro bono; não se trata de mera restrição parcial. B: incorreta, pois a vedação não se limita à advocacia remunerada; a incompatibilidade abrange qualquer forma de exercício da advocacia, remunerada ou não, justamente por afetar a própria capacidade postulatória do agente, não apenas a percepção de honorários. D: incorreta, pois confunde incompatibilidade com impedimento; impedimento (art. 30, EAOAB) é restrição parcial (p. ex., não advogar contra a entidade que remunera o servidor), enquanto a atividade policial gera incompatibilidade (art. 28, V), que é vedação total e não comporta a exceção de advocacia pro bono.",
+          "pegadinha": "A banca explora a confusão entre os regimes de impedimento (restrição parcial, permite advocacia fora da vedação específica) e incompatibilidade (vedação total e absoluta), tentando convencer o candidato de que a boa intenção (advocacia gratuita e humanitária) afastaria a proibição legal, quando não afasta.",
+          "regraMemoria": "Incompatibilidade sempre proíbe tudo, mesmo pro bono; impedimento nunca proíbe tudo, só a situação específica de conflito."
+        },
+        {
+          "territorio": "Ética",
+          "tema": "Direitos e Prerrogativas do Advogado",
+          "enunciado": "Mariângela, advogada trabalhista, foi intimada pelo juízo da Vara do Trabalho de sua cidade para comparecer à audiência una, designada para 16h15 de determinado dia. Por estar amamentando sua filha Manuela, recém-nascida, Mariângela protocolou petição nos autos do respectivo processo, requerendo preferência na ordem das audiências, mediante comprovação da sua condição. O juiz, contudo, indeferiu o pedido, com o argumento de que a causa é copatrocinada por uma segunda advogada, conforme procuração constante dos autos, a qual poderia participar do ato. A respeito da hipótese narrada, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Diante da constatação de que há duas advogadas constituídas pela parte, e à míngua de previsão legal, a condição de lactante de Mariângela não é suficiente para o deferimento do pedido de preferência."
+            },
+            {
+              "letra": "B",
+              "texto": "Conquanto inexista previsão legal para o pedido formulado por Mariângela, o juiz deveria ter deferido o pleito com base na práxis judiciária e no princípio da razoabilidade."
+            },
+            {
+              "letra": "C",
+              "texto": "Apenas se Mariângela comprovasse ser a única patrona da causa, haveria previsão legal para que o pedido de preferência fosse atendido."
+            },
+            {
+              "letra": "D",
+              "texto": "Mariângela tem o direito de preferência assegurado em lei, independentemente de haver outra advogada constituída nos autos."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O art. 7º-A, IV, do Estatuto da Advocacia assegura à advogada gestante, lactante, adotante ou que deu à luz preferência na ordem das audiências e sustentações orais, mediante comprovação da condição, sendo essa prerrogativa pessoal e incondicionada à existência de outro(a) advogado(a) constituído(a) nos autos.",
+          "explicacaoErradas": "A: incorreta, pois há previsão legal expressa (art. 7º-A, IV, EAOAB) para o pedido de preferência, e a existência de copatrocínio não é condição nem óbice ao exercício dessa prerrogativa pessoal da advogada lactante. B: incorreta, pois parte de premissa falsa (inexistência de previsão legal); a prerrogativa está expressamente positivada no Estatuto da Advocacia, não decorrendo de mera práxis ou razoabilidade. C: incorreta, pois condiciona indevidamente o exercício da prerrogativa à exclusividade do patrocínio da causa; a lei não impõe tal condição, bastando a comprovação da condição de lactante.",
+          "pegadinha": "A banca tenta fazer o candidato acreditar que a existência de outra advogada constituída nos autos supre a necessidade de preferência, transformando um direito pessoal e incondicionado da advogada lactante em um direito condicionado à falta de substituto processual — o que a lei não exige.",
+          "regraMemoria": "Preferência da advogada lactante é sempre pessoal e incondicionada; existência de outro(a) advogado(a) nos autos nunca a afasta."
+        },
+        {
+          "territorio": "Ética",
+          "tema": "Ética e Disciplina",
+          "enunciado": "Antônio Oliveira, advogado, cometeu infração disciplinar no exercício de suas funções, submetendo-se a processo disciplinar perante o Tribunal de Ética e Disciplina do Conselho Seccional competente. Antônio contratou o advogado Pedro para defendê-lo no âmbito do processo disciplinar. No que diz respeito à instauração, instrução e tramitação do processo disciplinar instaurado em face de Antônio, assinale a afirmativa correta que deverá ser observada por Pedro, no exercício da defesa técnica.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O processo disciplinar poderá ser instruído por subseção ou por relatores do próprio Conselho Seccional."
+            },
+            {
+              "letra": "B",
+              "texto": "Antônio não poderá ser suspenso preventivamente sem oitiva prévia, mesmo que não atenda às notificações de comparecimento."
+            },
+            {
+              "letra": "C",
+              "texto": "O processo disciplinar não poderá ser instaurado de ofício, sob pena de violação do princípio acusatório."
+            },
+            {
+              "letra": "D",
+              "texto": "Oferecida a defesa prévia, o relator do processo disciplinar poderá decidir pelo arquivamento liminar da representação."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O processo disciplinar pode ser instruído por subseção da OAB ou por relator (ou comissão) designado pelo próprio Conselho Seccional, conforme disciplina o Regulamento Geral do Estatuto da Advocacia sobre o rito do processo disciplinar, que admite descentralização da instrução dentro da estrutura da OAB.",
+          "explicacaoErradas": "B: incorreta, pois a suspensão preventiva pode ser decretada sem oitiva prévia justamente quando o representado, devidamente notificado, deixa de atender às notificações de comparecimento; a regra geral de oitiva prévia comporta essa exceção. C: incorreta, pois o processo disciplinar pode, sim, ser instaurado de ofício pela autoridade competente (Presidente do Conselho ou do Tribunal de Ética), e não apenas mediante representação de terceiro; a instauração de ofício não viola o sistema acusatório na disciplina da advocacia. D: incorreta, pois o arquivamento liminar é ato praticado antes da instauração do processo, no exame preliminar da representação manifestamente improcedente; uma vez oferecida defesa prévia (processo já instaurado e com citação regular), não cabe mais arquivamento liminar pelo relator, devendo o feito seguir para julgamento do órgão colegiado.",
+          "pegadinha": "A banca testa se o candidato confunde as fases do processo disciplinar, atribuindo poderes de arquivamento liminar a uma etapa (pós-defesa prévia) em que eles já não existem, e negando exceções reais às regras gerais de oitiva prévia e de instauração de ofício.",
+          "regraMemoria": "Arquivamento liminar sempre antes da instauração; depois da defesa prévia, o processo sempre segue para julgamento colegiado."
+        },
+        {
+          "territorio": "Filosofia do Direito",
+          "tema": "Justiça (autores clássicos)",
+          "enunciado": "“Portanto, a moralidade, e a humanidade enquanto capaz de moralidade, são as únicas coisas que têm dignidade.” Immanuel Kant O artigo primeiro da Constituição Federal de 1988 determina que a dignidade da pessoa humana é fundamento da República. Filósofos e juristas há muito debatem o tema da dignidade. Sobre o tema, assinale a opção que apresenta a posição de Immanuel Kant, em seu livro Fundamentação da Metafísica dos Costumes.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Aquele que pode participar dos destinos políticos da cidade é quem possui e exerce sua dignidade."
+            },
+            {
+              "letra": "B",
+              "texto": "Quando algo está acima de todo preço e, portanto, não permite equivalente, então ele tem dignidade."
+            },
+            {
+              "letra": "C",
+              "texto": "O amor à lei e à pátria conformam as bases da dignidade na vida social e política."
+            },
+            {
+              "letra": "D",
+              "texto": "A dignidade ocorre quando alguém possui elevada estima por si mesmo, mantendo seu amor próprio."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Em \"Fundamentação da Metafísica dos Costumes\", Kant afirma que as coisas têm preço ou dignidade: o que tem preço admite equivalente (algo que o substitua); o que está acima de todo preço, não admitindo equivalente, tem dignidade — atributo que, para Kant, pertence à moralidade e aos seres racionais enquanto capazes de moralidade (autonomia da vontade).",
+          "explicacaoErradas": "A: incorreta, pois descreve uma concepção republicana/clássica de dignidade vinculada à participação política (mais próxima de autores como Cícero ou da tradição republicana romana), e não à filosofia moral kantiana, que funda a dignidade na autonomia racional, não na cidadania política. C: incorreta, pois remete a uma noção cívico-patriótica de virtude (amor à lei e à pátria como base da vida social), estranha ao arcabouço conceitual de Kant na obra citada, que trata de moralidade e imperativo categórico, não de patriotismo. D: incorreta, pois Kant não funda a dignidade no amor próprio ou na autoestima (inclinação subjetiva), que ele trata como elemento heterônomo e não moral; a dignidade kantiana decorre da capacidade racional de agir por dever, e não de sentimentos de autoestima.",
+          "pegadinha": "A banca insere formulações que soam filosoficamente plausíveis (participação política, patriotismo, autoestima) para desviar o candidato da fórmula específica e literal de Kant sobre preço/equivalente versus dignidade/ausência de equivalente.",
+          "regraMemoria": "Para Kant, o que tem preço sempre admite equivalente; o que tem dignidade nunca admite equivalente."
+        },
+        {
+          "territorio": "Filosofia do Direito",
+          "tema": "Positivismo Jurídico",
+          "enunciado": "Uma norma jurídica não vale porque tem um determinado conteúdo... (Hans Kelsen) O que faz uma norma jurídica ser válida é tema central para a teoria e a Filosofia do Direito. Segundo o Normativismo Jurídico de Hans Kelsen, conforme apresentado em seu livro Teoria Pura do Direito, a validade da norma jurídica recai logicamente sobre uma categoria que é o ponto de partida do processo de criação do direito positivo. Assinale a opção que apresenta essa categoria.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O legislador democrático."
+            },
+            {
+              "letra": "B",
+              "texto": "A soberania popular."
+            },
+            {
+              "letra": "C",
+              "texto": "A norma fundamental pressuposta."
+            },
+            {
+              "letra": "D",
+              "texto": "O direito das gentes."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Na Teoria Pura do Direito, Kelsen sustenta que a validade de toda norma jurídica deriva, em cadeia hierárquica, de uma norma hipotética fundamental (Grundnorm), pressuposta logicamente como fundamento último de validade de todo o ordenamento, e não de seu conteúdo material.",
+          "explicacaoErradas": "A: incorreta, pois o \"legislador democrático\" é uma figura política/empírica, e a teoria pura de Kelsen busca justamente isolar o fundamento de validade jurídica de fatores políticos ou sociológicos concretos. B: incorreta, pelo mesmo motivo: soberania popular é categoria política, estranha à cadeia lógico-normativa que fundamenta a validade jurídica no normativismo kelseniano. D: incorreta, pois \"direito das gentes\" (direito internacional) não é a categoria a que Kelsen se refere como ponto de partida da validade do direito positivo interno nessa formulação; trata-se de outro debate (o da relação entre ordens jurídicas), não do fundamento lógico de validade tratado na pergunta.",
+          "pegadinha": "A banca insere categorias políticas e institucionais (legislador, soberania popular) que parecem candidatas razoáveis a \"fundamento da validade\", mas Kelsen deliberadamente afasta qualquer base sociológica ou política, elegendo uma categoria lógico-jurídica pressuposta: a norma fundamental.",
+          "regraMemoria": "Em Kelsen, validade da norma sempre remete a outra norma superior, até a norma fundamental pressuposta — nunca a fatos sociais ou políticos."
+        },
+        {
+          "territorio": "Direito Constitucional",
+          "tema": "Controle de Constitucionalidade",
+          "enunciado": "O Supremo Tribunal Federal (STF), por dois terços de seus membros, aprovou de ofício, no último mês, a Súmula Vinculante XXX, que versa sobre matéria tributária. O deputado federal João da Silva mostrou-se preocupado com a referida Súmula, pois tramita no Congresso Nacional projeto de lei complementar cujo teor conflita fortemente com o da Súmula Vinculante XXX. Por desconhecer as consequências que a referida Súmula acarretará ao processo legislativo em andamento, João busca auxílio de sua assessoria jurídica. Sobre as consequências da Súmula Vinculante aprovada pelo STF, assinale a opção que apresenta, corretamente, a orientação recebida.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Ela vincula unicamente os órgãos do Poder Judiciário, não atingindo os demais poderes, em respeito à separação de poderes."
+            },
+            {
+              "letra": "B",
+              "texto": "Ela não alcança o poder legiferante do Congresso Nacional, que segue mantendo intacta sua função originária de criação do Direito."
+            },
+            {
+              "letra": "C",
+              "texto": "Ela tem mera função diretiva e de orientação aos demais poderes, sem, no entanto, ter caráter impositivo para qualquer deles, incluindo o Poder Legislativo."
+            },
+            {
+              "letra": "D",
+              "texto": "Ela terá efeito vinculante em relação a todos os poderes, em todas as esferas, inclusive no que se refere ao poder de legislar dos entes federativos."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A súmula vinculante, por força do art. 103-A da Constituição Federal, produz efeito vinculante em relação aos demais órgãos do Poder Judiciário e à administração pública direta e indireta, nas esferas federal, estadual e municipal — mas não alcança o Poder Legislativo em sua função típica de legislar, que pode editar lei em sentido diverso do conteúdo sumulado, preservando sua função constitucional de criação do Direito.",
+          "explicacaoErradas": "A: incorreta, pois é incompleta: a súmula vinculante não se limita a vincular órgãos do Judiciário, alcançando também a administração pública direta e indireta em todas as esferas federativas. C: incorreta, pois nega o efeito vinculante em relação ao Judiciário e à Administração Pública, quando a própria natureza da súmula vinculante (o termo \"vinculante\") pressupõe eficácia obrigatória para esses destinatários, não mera orientação. D: incorreta, pois estende indevidamente o efeito vinculante à função legislativa do Congresso Nacional e dos entes federativos, o que contraria o entendimento consolidado de que o Legislativo mantém liberdade para legislar de modo diverso do conteúdo da súmula.",
+          "pegadinha": "A banca tenta fazer o candidato acreditar que \"vinculante\" significa vincular todos os Poderes em todas as funções, inclusive a função legiferante do Congresso — mas a jurisprudência e a doutrina reconhecem que o Legislativo não está impedido de editar lei em sentido contrário ao teor da súmula.",
+          "regraMemoria": "Súmula vinculante sempre vincula Judiciário e Administração Pública; nunca vincula a função de legislar do Poder Legislativo."
+        },
+        {
+          "territorio": "Direito Constitucional",
+          "tema": "Ordem Social e Econômica",
+          "enunciado": "Em uma cidade situada no município Gama, José Silva sofreu grave acidente ao ser atropelado por um caminhão. Com lesões pelo corpo, ele foi conduzido ao hospital municipal situado na cidade e, ao passar pelo setor de identificação, alegou não possuir consigo qualquer documento. Na dúvida sobre se José poderia ter acesso aos serviços de saúde do SUS (Sistema Único de Saúde), a direção do hospital consultou a Procuradoria do Município. Sobre o caso apresentado, em consonância com o sistema jurídico- constitucional brasileiro, assinale a afirmativa que apresenta a resposta correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Para fazer jus aos serviços de saúde ofertados pelo SUS, José deve comprovar a condição de contribuinte do sistema previdenciário brasileiro."
+            },
+            {
+              "letra": "B",
+              "texto": "Para fazer jus aos serviços de saúde ofertados pelo SUS, José deve comprovar, formalmente, a condição de trabalhador."
+            },
+            {
+              "letra": "C",
+              "texto": "Os serviços de saúde ofertados pelo SUS somente são disponibilizados para os brasileiros natos ou naturalizados."
+            },
+            {
+              "letra": "D",
+              "texto": "O atendimento pelo SUS deve ser realizado, independentemente de José possuir nacionalidade brasileira, ser trabalhador ou contribuir com a Previdência Social."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Nos termos do art. 196 da Constituição Federal, a saúde é direito de todos e dever do Estado, garantido mediante acesso universal e igualitário às ações e serviços do SUS, independentemente de nacionalidade, condição de trabalhador ou contribuição previdenciária — o princípio da universalidade rege o sistema.",
+          "explicacaoErradas": "A: incorreta, pois o acesso ao SUS não está condicionado à condição de contribuinte da Previdência Social; essa vinculação existia no modelo pré-1988 (previdenciário), superado pelo princípio da universalidade da saúde pública. B: incorreta, pelo mesmo fundamento: não se exige comprovação de condição de trabalhador para acesso aos serviços de saúde do SUS, que é universal. C: incorreta, pois o SUS atende toda pessoa que necessite, brasileira ou estrangeira, não havendo restrição de acesso por nacionalidade.",
+          "pegadinha": "A banca simula exigências que existiam em sistemas de saúde vinculados à previdência social (pré-CF/88) para testar se o candidato sabe que a Constituição de 1988 rompeu esse modelo, estabelecendo a saúde como direito universal e desvinculado de contribuição ou nacionalidade.",
+          "regraMemoria": "SUS sempre atende a todos, independentemente de nacionalidade, trabalho ou contribuição; nunca exige comprovação de vínculo previdenciário."
+        },
+        {
+          "territorio": "Direito Constitucional",
+          "tema": "Organização dos Poderes",
+          "enunciado": "Depois da ocorrência de calamidade de grandes proporções, em razão de enchentes causadas por chuvas cuja intensidade foi classificada como “sem precedentes”, o Presidente da República vislumbra a possível necessidade de decretação de estado de defesa para combater o quadro caótico no qual se encontram quatro estados de uma determinada região do país. Depois de visitar o local, ele tem dúvidas acerca do prazo de duração da medida e, por isso, submete a proposta à apreciação de sua assessoria jurídica. Assinale a afirmativa que, em consonância com o sistema jurídico- constitucional brasileiro, deve ser adotada",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O Presidente da República tem poder discricionário para definir o prazo de duração, desde que haja aprovação prévia do Congresso Nacional."
+            },
+            {
+              "letra": "B",
+              "texto": "O tempo de duração não será superior a 30 (trinta) dias, podendo ser prorrogado uma vez, por igual período, se persistirem as razões que justificaram a sua decretação."
+            },
+            {
+              "letra": "C",
+              "texto": "O tempo para a superação da crise que deu origem à decretação pelo Presidente da República não pode ultrapassar uma sessão legislativa."
+            },
+            {
+              "letra": "D",
+              "texto": "O tempo de duração será definido discricionariamente, em respeito ao princípio da separação de poderes, pelo Congresso Nacional."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Nos termos do art. 136, §2º, da Constituição Federal, o estado de defesa não pode ter duração superior a 30 dias, admitida uma única prorrogação por igual período, caso persistam as razões que motivaram sua decretação — trata-se de limite temporal expresso e não sujeito a discricionariedade ilimitada.",
+          "explicacaoErradas": "A: incorreta, pois o estado de defesa não depende de aprovação prévia do Congresso Nacional para ser decretado (o controle congressual é posterior, mediante submissão do decreto em até 24 horas); além disso, o prazo não é discricionário, mas limitado constitucionalmente a 30 dias, prorrogáveis uma vez. C: incorreta, pois não existe critério de duração vinculado a \"uma sessão legislativa\"; o limite constitucional é objetivo e expresso em dias (30 dias, prorrogáveis por mais 30). D: incorreta, pois o prazo de duração não é definido discricionariamente pelo Congresso Nacional; a Constituição já fixa o limite máximo, cabendo ao Congresso apenas aprovar ou não a medida e sua eventual prorrogação, dentro desses parâmetros já definidos.",
+          "pegadinha": "A banca tenta fazer o candidato acreditar que o prazo do estado de defesa é aberto à discricionariedade do Presidente ou do Congresso, quando na verdade a Constituição já fixa numericamente o limite (30 dias + uma prorrogação de 30 dias).",
+          "regraMemoria": "Estado de defesa sempre 30 dias, prorrogável uma vez por mais 30; nunca prazo discricionário do Presidente ou do Congresso."
+        },
+        {
+          "territorio": "Direito Constitucional",
+          "tema": "Processo Legislativo",
+          "enunciado": "O Presidente da República almeja apresentar ao Poder Legislativo um projeto de lei sobre cidadania, além de obter rapidamente a sua aprovação. Com isso, quer cumprir uma promessa realizada durante sua campanha eleitoral. Por essa razão, consulta o Advogado-Geral da União para saber qual é a correta orientação constitucional a ser observada para a concretização do seu objetivo. Com base na situação hipotética narrada e no sistema jurídico- constitucional brasileiro, assinale a opção que indica, corretamente, a resposta apresentada pelo Advogado-Geral da União.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Edição de medida provisória, para que a iniciativa pudesse produzir efeitos rapidamente, devendo-se lembrar ainda que, por essa via, imediatamente ficaria trancada a pauta do Congresso Nacional para deliberar sobre outra matéria."
+            },
+            {
+              "letra": "B",
+              "texto": "Apresentação de projeto de lei na Câmara dos Deputados com pedido de urgência, sendo que, por essa via, cada Casa do Congresso Nacional, sucessivamente, tem até 45 (quarenta e cinco) dias para deliberar sobre a proposta, sob o risco de sobrestamento das demais deliberações."
+            },
+            {
+              "letra": "C",
+              "texto": "Solicitação à base de apoio do Executivo no âmbito do Congresso Nacional para que inicie o processo legislativo de uma Emenda Constitucional, pois, só assim, ele poderia solicitar urgência para a deliberação da proposta nas Casas Legislativas."
+            },
+            {
+              "letra": "D",
+              "texto": "Requerimento, ao Congresso Nacional, de delegação para elaboração de lei delegada, pois, assim, ele não teria emendas ao seu projeto e, imediatamente, a lei produziria seus efeitos."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A via constitucionalmente adequada é a apresentação de projeto de lei ordinária com pedido de urgência (art. 64, §§1º e 2º, CF), hipótese em que cada Casa do Congresso Nacional tem até 45 dias, sucessivamente, para deliberar, sob pena de sobrestamento das demais deliberações legislativas (trancamento de pauta), com exceção das matérias com prazo constitucional determinado.",
+          "explicacaoErradas": "A: incorreta, pois medida provisória sobre matéria de cidadania é constitucionalmente vedada (art. 62, §1º, I, \"a\", CF, que proíbe MP sobre nacionalidade, cidadania, direitos políticos, partidos políticos e direito eleitoral); além disso, o trancamento de pauta por MP não é imediato, ocorrendo apenas após 45 dias sem votação. C: incorreta, pois emenda constitucional é instrumento inadequado e desnecessário para uma simples lei sobre cidadania, exigindo quórum qualificado e dois turnos de votação em cada Casa, o que tornaria o processo mais lento, não mais rápido, além de não ser o instrumento correto para o objetivo (edição de lei, não alteração do texto constitucional). D: incorreta, pois lei delegada também é vedada para matéria de cidadania (art. 68, §1º, I, CF exclui da delegação legislativa matérias relativas a direitos individuais, políticos e outros expressamente listados, entre eles nacionalidade e cidadania); logo, o Congresso não poderia delegar essa matéria ao Presidente.",
+          "pegadinha": "A banca oferece alternativas com instrumentos legislativos \"rápidos\" (MP, lei delegada) que parecem atender ao desejo presidencial de celeridade, mas que são expressamente vedados pela Constituição justamente para a matéria de cidadania — o candidato precisa lembrar dessas vedações específicas dos arts. 62 e 68 da CF.",
+          "regraMemoria": "Cidadania, nacionalidade e direitos políticos nunca podem ser tratados por medida provisória ou lei delegada; urgência constitucional (art. 64 CF) sempre é o caminho para acelerar lei ordinária."
+        },
+        {
+          "territorio": "Direito Constitucional",
+          "tema": "Organização do Estado",
+          "enunciado": "Determinada associação nacional, que congrega oficiais do registro e notários, foi surpreendida com a publicação da Lei Federal X, que mudou a destinação dos emolumentos cartorários, de modo que uma parte dos valores arrecadados passaria a ser destinada a políticas públicas do governo federal na área de educação. Considerando a iminente perda de arrecadação, a associação procura você, na qualidade de advogado(a), para saber da constitucionalidade da Lei Federal X. Com base na hipótese narrada e no sistema jurídico-constitucional brasileiro, assinale a opção que apresenta, corretamente, o seu parecer.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Não há inconstitucionalidade na Lei Federal X, pois os emolumentos cartorários, por serem recursos públicos, devem ter a destinação que lhe é atribuída em lei."
+            },
+            {
+              "letra": "B",
+              "texto": "A Lei Federal X é inconstitucional, pois vincula a destinação dos emolumentos cartorários a finalidade diversa daquela prevista na ordem constitucional."
+            },
+            {
+              "letra": "C",
+              "texto": "A Lei Federal X é coerente com o sistema constitucional, pois mudou a destinação dos emolumentos cartorários apenas no âmbito da União."
+            },
+            {
+              "letra": "D",
+              "texto": "Os emolumentos cartorários devem ser direcionados ao custeio da seguridade social, logo, a Lei Federal X afronta a ordem constitucional."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Nos termos do art. 98, §2º, da Constituição Federal (incluído pela EC 45/2004), as custas e emolumentos serão destinados exclusivamente ao custeio dos serviços afetos às atividades específicas da Justiça, de modo que lei que desvie parte da arrecadação dos emolumentos cartorários para outra finalidade (como políticas públicas de educação) viola essa destinação constitucionalmente vinculada, sendo inconstitucional.",
+          "explicacaoErradas": "A: incorreta, pois, embora emolumentos sejam receita pública, sua destinação não é de livre disposição do legislador ordinário: a Constituição vincula expressamente seu uso ao custeio de atividades específicas da Justiça, o que a Lei Federal X descumpre. C: incorreta, pois a vinculação constitucional da destinação dos emolumentos não é afastada pelo fato de a mudança ocorrer apenas \"no âmbito da União\"; a exigência do art. 98, §2º, CF aplica-se a toda arrecadação de emolumentos, independentemente do ente federativo beneficiado pelo desvio. D: incorreta, pois os emolumentos cartorários não têm destinação constitucional vinculada à seguridade social, mas sim ao custeio das atividades específicas da Justiça (art. 98, §2º, CF); o fundamento da inconstitucionalidade não é esse.",
+          "pegadinha": "A banca tenta fazer o candidato acreditar que a mera natureza pública dos recursos autoriza qualquer destinação legal, ou que restringir a mudança \"à União\" sanaria o vício, escondendo a existência de uma vinculação constitucional expressa e específica (art. 98, §2º) que qualquer lei deve respeitar.",
+          "regraMemoria": "Emolumentos cartorários sempre custeiam atividades da Justiça; nunca podem ser desviados para outra política pública, ainda que federal."
+        },
+        {
+          "territorio": "Direito Constitucional",
+          "tema": "Controle de Constitucionalidade",
+          "enunciado": "Uma Proposta de Emenda à Constituição (PEC) é apresentada por um grupo de deputados federais, conforme autoriza a ordem constitucional, cujo objeto é a alteração do Art. 60, § 4º, inciso II, da CRFB/88, que passaria a ter a seguinte redação: o voto direto, aberto, universal e periódico. Depois de apertada aprovação nas comissões competentes, os autores da proposta solicitaram ao Presidente da Câmara dos Deputados que colocasse a referida PEC na pauta do plenário da Casa Legislativa, o que foi atendido. Paralelamente, outro grupo de parlamentares, ao perceber que, pela movimentação política, a PEC possivelmente seria aprovada, procura uma ação jurídica para impedir tal votação pelo plenário da Casa. A respeito da ação jurídica capaz de impedir tal votação pelo plenário da Casa, segundo o sistema brasileiro de controle de constitucionalidade, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Em razão da afronta à cláusula pétrea do voto secreto, qualquer legitimado a deflagar o controle concentrado de constitucionalidade pode ajuizar uma Ação Direta de Inconstitucionalidade (ADI) perante o Supremo Tribunal Federal."
+            },
+            {
+              "letra": "B",
+              "texto": "Com se está perante matéria interna corporis do Congresso Nacional, que só pode ser apreciada no âmbito do Poder Legislativo, a referida PEC, enquanto não for promulgada e se transformar em ato normativo existente e eficaz, não pode ser objeto de nenhum tipo de controle pelo Poder Judiciário."
+            },
+            {
+              "letra": "C",
+              "texto": "Por afronta a preceito fundamental, um legitimado pode ajuizar Arguição de Descumprimento de Preceito Fundamental (ADPF) perante o Supremo Tribunal Federal, nos termos da Constituição da República."
+            },
+            {
+              "letra": "D",
+              "texto": "Em razão da inobservância das limitações constitucionais materiais ao poder de emendar a Constituição, qualquer deputado federal tem legitimidade ativa para impetrar mandado de segurança perante o Supremo Tribunal Federal."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A jurisprudência do STF admite que qualquer parlamentar (deputado federal ou senador) impetre mandado de segurança para impedir a deliberação, no plenário de sua Casa, de proposta de emenda constitucional que viole limitação material ao poder de emendar (cláusula pétrea), com fundamento no seu direito líquido e certo a um devido processo legislativo constitucional — trata-se de exceção reconhecida à regra de que atos interna corporis não se sujeitam a controle judicial.",
+          "explicacaoErradas": "A: incorreta, pois o controle concentrado de constitucionalidade (ADI) pressupõe a existência de ato normativo já promulgado e em vigor; uma PEC em tramitação, ainda não votada nem promulgada, não é objeto idôneo de ADI. B: incorreta, pois, embora se trate de matéria interna corporis em regra imune a controle judicial, o STF reconhece exceção justamente quando há violação a limitação material ao poder de reforma constitucional (cláusula pétrea), autorizando controle judicial preventivo mediante mandado de segurança impetrado por parlamentar. C: incorreta, pois a ADPF, tal como a ADI, pressupõe existência de ato do poder público já praticado e lesivo a preceito fundamental, não sendo cabível para impedir a votação de uma proposta ainda em tramitação legislativa; ademais, não é qualquer legitimado, mas apenas os expressamente listados na Lei 9.882/99, que pode propô-la.",
+          "pegadinha": "A banca tenta induzir o candidato a escolher instrumentos de controle abstrato (ADI, ADPF) que pressupõem ato normativo já existente, quando a situação é de controle preventivo do processo legislativo em curso, cuja via processual própria e consolidada pela jurisprudência do STF é o mandado de segurança impetrado por parlamentar.",
+          "regraMemoria": "PEC tendente a abolir cláusula pétrea nunca pode ser impedida por ADI/ADPF (ato ainda não existe); o instrumento sempre é mandado de segurança de parlamentar contra o processo legislativo."
+        },
+        {
+          "territorio": "Direitos Humanos",
+          "tema": "Tratados Internacionais de Direitos Humanos",
+          "enunciado": "Os conflitos armados, infelizmente, são uma realidade que afeta diferentes países. As quatro Convenções de Genebra de 1949 conformam a base do Direito Internacional Humanitário. Em comum às quatro Convenções está o Art. 3º que, entre outros dispositivos, determina o tratamento humano para todos os indivíduos em poder do inimigo, sem nenhuma distinção adversa. Proíbe, especialmente, os assassinatos, as mutilações, as torturas e os tratamentos cruéis, humilhantes e degradantes, a tomada de reféns e os julgamentos parciais. Sobre esse artigo, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Abrange também as situações de conflito armado sem caráter internacional e que surjam no território de um Estado-parte da Convenção."
+            },
+            {
+              "letra": "B",
+              "texto": "Determina a obrigatoriedade de cessar-fogo, no caso de início de uma rodada de negociações para a busca de solução não armada do conflito."
+            },
+            {
+              "letra": "C",
+              "texto": "Atribui ao Conselho de Segurança da ONU a competência para julgar a legitimidade da guerra e as eventuais sanções a serem impostas às partes do conflito"
+            },
+            {
+              "letra": "D",
+              "texto": "Prevê a instituição de um tribunal específico para o julgamento de acusados de terem cometido crimes de guerra pela Assembleia-Geral das Nações Unidas."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O art. 3º comum às quatro Convenções de Genebra de 1949 aplica-se especificamente a conflitos armados sem caráter internacional (conflitos internos), que ocorram no território de um dos Estados-parte, estabelecendo garantias mínimas de tratamento humano a todos que não participem ou tenham deixado de participar das hostilidades.",
+          "explicacaoErradas": "B: incorreta, pois o art. 3º comum não impõe qualquer obrigatoriedade de cessar-fogo em razão do início de negociações; trata de garantias humanitárias mínimas durante o conflito, não da cessação das hostilidades. C: incorreta, pois o artigo não trata de competência do Conselho de Segurança da ONU para julgar a legitimidade da guerra ou impor sanções; esse não é seu objeto. D: incorreta, pois o artigo não prevê a criação de tribunal específico para crimes de guerra pela Assembleia-Geral das Nações Unidas; tribunais penais internacionais ad hoc (como os de ex-Iugoslávia e Ruanda) foram criados por resoluções do Conselho de Segurança, em contextos distintos, e não pelo art. 3º comum.",
+          "pegadinha": "A banca insere atribuições de órgãos da ONU (Conselho de Segurança, Assembleia-Geral) e obrigações de cessar-fogo que não constam do texto do art. 3º comum, testando se o candidato conhece o real objeto do dispositivo: a extensão de garantias humanitárias mínimas a conflitos armados não internacionais.",
+          "regraMemoria": "Art. 3º comum das Convenções de Genebra sempre se aplica a conflitos armados internos; nunca trata de competências de órgãos da ONU."
+        },
+        {
+          "territorio": "Direitos Humanos",
+          "tema": "Direitos de Grupos Vulneráveis",
+          "enunciado": "STJ transfere à Justiça Federal apuração da morte de líderes de trabalhadores rurais em Rondônia A pedido da Procuradoria-Geral da República (PGR), a Terceira Seção do Superior Tribunal de Justiça (STJ) determinou a transferência, para a Justiça Federal, de seis inquéritos relativos a crimes de homicídio praticados contra líderes de trabalhadores rurais e outras pessoas que denunciaram grilagem de terras e exploração ilegal de madeira em Rondônia. Notícias do STJ – 25/08/2023 A notícia acima, informada no site do STJ, diz respeito a um instituto exclusivo para a proteção dos Direitos Humanos previsto na Constituição Federal/88. Assinale a opção que o indica.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Arguição de Descumprimento de Preceito Fundamental."
+            },
+            {
+              "letra": "B",
+              "texto": "Incidente de Deslocamento de Competência."
+            },
+            {
+              "letra": "C",
+              "texto": "Tese com Repercussão Geral."
+            },
+            {
+              "letra": "D",
+              "texto": "Ação Popular."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Trata-se do Incidente de Deslocamento de Competência (IDC), previsto no art. 109, §5º, da Constituição Federal (incluído pela EC 45/2004), pelo qual o Procurador-Geral da República pode suscitar, perante o Superior Tribunal de Justiça, o deslocamento de competência para a Justiça Federal em casos de grave violação de direitos humanos, com o objetivo de assegurar o cumprimento de obrigações internacionais assumidas pelo Brasil.",
+          "explicacaoErradas": "A: incorreta, pois a Arguição de Descumprimento de Preceito Fundamental é instrumento de controle concentrado de constitucionalidade perante o STF, sem relação com o deslocamento de inquéritos da Justiça Estadual para a Federal. C: incorreta, pois tese com repercussão geral é instituto de filtro recursal ligado à admissibilidade de recurso extraordinário perante o STF, sem qualquer relação com deslocamento de competência para apuração de crimes. D: incorreta, pois ação popular é instrumento de controle de atos lesivos ao patrimônio público, à moralidade administrativa, ao meio ambiente ou ao patrimônio histórico-cultural, ajuizável por cidadão, sem relação com o caso narrado.",
+          "pegadinha": "A banca explora institutos de proteção a direitos fundamentais e de organização judiciária que soam correlatos (ADPF, repercussão geral, ação popular), mas nenhum deles é o instituto criado especificamente para federalizar a apuração de graves violações de direitos humanos — apenas o IDC cumpre esse papel.",
+          "regraMemoria": "Grave violação de direitos humanos com pedido do PGR ao STJ é sempre Incidente de Deslocamento de Competência; nunca ADPF, repercussão geral ou ação popular."
+        },
+        {
+          "territorio": "Direito Eleitoral",
+          "tema": "Propaganda Eleitoral",
+          "enunciado": "Entre os correligionários do partido político Alfa estavam dois dos pré-candidatos considerados favoritos na eleição para governador do Estado Beta. Como somente um deles poderia ser escolhido por Alfa para concorrer ao referido cargo eletivo, houve grande interesse dos meios de comunicação social na cobertura das prévias partidárias. Em relação às emissoras de rádio e televisão, à luz dos balizamentos legais existentes, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A lei obsta a cobertura das prévias partidárias."
+            },
+            {
+              "letra": "B",
+              "texto": "Elas podem realizar, ao vivo ou não, a plena cobertura das prévias partidárias, não sendo permitida qualquer censura."
+            },
+            {
+              "letra": "C",
+              "texto": "Somente é permitida a transmissão de imagens ao vivo, de modo a evitar o risco de trucagem."
+            },
+            {
+              "letra": "D",
+              "texto": "As transmissões por emissoras de rádio e televisão das prévias partidárias, ao vivo, são vedadas."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A legislação eleitoral (Lei 9.504/97) veda a transmissão ao vivo, por emissoras de rádio e televisão, das prévias partidárias, permitindo apenas cobertura jornalística não realizada em tempo real, de modo a evitar que a divulgação em tempo real funcione como propaganda eleitoral antecipada ou favoreça indevidamente um dos pré-candidatos.",
+          "explicacaoErradas": "A: incorreta, pois a lei não impede toda e qualquer cobertura das prévias partidárias pela imprensa, apenas restringe a modalidade de transmissão ao vivo pelas emissoras de rádio e TV. B: incorreta, pois afirma que a cobertura pode ser feita \"ao vivo ou não\", sem qualquer restrição, quando na verdade a transmissão em tempo real (ao vivo) é expressamente vedada. C: incorreta, pois inverte a regra: a lei não restringe a cobertura apenas a imagens ao vivo; ao contrário, veda justamente a transmissão ao vivo, permitindo a cobertura jornalística gravada/editada.",
+          "pegadinha": "A banca inverte a lógica da vedação legal, apresentando alternativas que ora liberam totalmente a transmissão ao vivo, ora a tornam a única forma permitida, testando se o candidato sabe que a regra real é exatamente o oposto: proíbe-se o \"ao vivo\", permite-se a cobertura não realizada em tempo real.",
+          "regraMemoria": "Prévias partidárias na TV e no rádio nunca podem ser transmitidas ao vivo; a cobertura jornalística sempre pode ser feita, desde que não em tempo real."
+        },
+        {
+          "territorio": "Direito Eleitoral",
+          "tema": "Partidos Políticos e Financiamento",
+          "enunciado": "João, candidato ao cargo eletivo de prefeito municipal, logrou ser eleito. No entanto, por ser muito desorganizado, não conseguiu localizar os documentos necessários para a prestação de contas à Justiça Eleitoral, o que resultou na não apresentação dessas contas. Sobre as consequências da omissão de João, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A impossibilidade de ser diplomado."
+            },
+            {
+              "letra": "B",
+              "texto": "A sua diplomação com reservas."
+            },
+            {
+              "letra": "C",
+              "texto": "O pagamento de multa, não havendo óbice à diplomação, ato independente."
+            },
+            {
+              "letra": "D",
+              "texto": "A necessidade de firmar compromisso, previamente à diplomação, comprometendo-se a apresentar as contas."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A não apresentação das contas de campanha à Justiça Eleitoral (distinta da mera desaprovação de contas efetivamente prestadas) constitui óbice à diplomação do candidato eleito, pois impede que a Justiça Eleitoral exerça o controle de lisura do processo eleitoral e do financiamento da campanha, sendo tratada de forma mais severa do que a simples rejeição de contas apresentadas.",
+          "explicacaoErradas": "B: incorreta, pois não existe a figura de \"diplomação com reservas\" na legislação eleitoral; a consequência prevista é a própria impossibilidade de diplomação, sem meio-termo. C: incorreta, pois a regra de que a desaprovação das contas não impede a diplomação e apenas gera consequências como multa ou comunicação a outros órgãos aplica-se à hipótese de contas efetivamente apresentadas e julgadas desaprovadas — situação distinta da simples omissão (não apresentação), que é tratada de forma mais gravosa. D: incorreta, pois não há previsão legal de compromisso formal prévio à diplomação como alternativa à apresentação de contas; a exigência legal é a efetiva prestação de contas, sob pena de óbice à diplomação.",
+          "pegadinha": "A banca explora a diferença entre \"desaprovação de contas apresentadas\" (que não impede a diplomação, gerando apenas consequências acessórias) e \"não apresentação das contas\" (omissão total, que impede a diplomação); o candidato desatento tende a aplicar a regra mais branda da desaprovação ao caso de omissão total, que é tratado de forma mais severa.",
+          "regraMemoria": "Contas apresentadas e desaprovadas nunca impedem a diplomação; contas não apresentadas sempre impedem a diplomação."
+        },
+        {
+          "territorio": "Direito Internacional",
+          "tema": "Jurisdição e Competência Internacional",
+          "enunciado": "Uma sociedade empresária colombiana celebrou, na Inglaterra, com uma sociedade alemã, um contrato para a entrega de 500 (quinhentas) sacas de café tipo arábica no Porto de Santos, Brasil, sem cláusula de eleição de foro exclusivo. Durante o transporte, houve um acidente com a embarcação, que acarretou o perecimento da mercadoria. Você, como advogado(a), é procurado(a) para ajuizar a presente ação. De acordo com o direito internacional privado brasileiro, assinale a opção que indica a autoridade judiciária competente para processar e julgar eventual demanda entre as contratantes.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A autoridade judiciária inglesa, única e exclusivamente."
+            },
+            {
+              "letra": "B",
+              "texto": "A autoridade judiciária colombiana, concorrentemente."
+            },
+            {
+              "letra": "C",
+              "texto": "A autoridade judiciária alemã, única e exclusivamente."
+            },
+            {
+              "letra": "D",
+              "texto": "A autoridade judiciária brasileira, concorrentemente."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta. O contrato previa a entrega das sacas de café no Porto de Santos, Brasil, ou seja, a obrigação deveria ser cumprida no Brasil. Pelo art. 21, II, do CPC, é competente a autoridade judiciária brasileira quando, no Brasil, tiver de ser cumprida a obrigação. Trata-se de hipótese de competência internacional concorrente (e não exclusiva), pois não está entre os casos de competência exclusiva do art. 23 do CPC (imóveis situados no Brasil, sucessão de bens aqui situados, divórcio consensual etc.). Como não havia cláusula de eleição de foro exclusivo afastando a jurisdição brasileira, e o local de cumprimento da obrigação é o Brasil, a autoridade judiciária brasileira é competente, concorrentemente com eventuais outras jurisdições.",
+          "explicacaoErradas": "A) Errada: a Inglaterra foi apenas o local de celebração do contrato, elemento de conexão irrelevante para fixar competência internacional segundo o CPC brasileiro, e, de todo modo, nenhuma jurisdição estrangeira teria competência 'única e exclusiva' aqui. B) Errada: a nacionalidade/domicílio de uma das partes (sociedade colombiana) não é critério de fixação de competência internacional concorrente do juiz brasileiro; o critério relevante é o local de cumprimento da obrigação, que é o Brasil, não a Colômbia. C) Errada: pelo mesmo motivo da alternativa A, a Alemanha (sede de uma das contratantes) não tem qualquer conexão com o critério legal de competência (local de cumprimento da obrigação), e tampouco haveria competência 'exclusiva' de jurisdição estrangeira nesse caso.",
+          "pegadinha": "A banca tenta desviar o foco para elementos de conexão irrelevantes (nacionalidade das empresas, local de celebração do contrato na Inglaterra) e para a ausência de cláusula de eleição de foro, como se essa ausência impedisse a jurisdição brasileira. Na verdade, o critério decisivo do direito processual internacional brasileiro é o lugar de cumprimento da obrigação (art. 21, II, CPC), que aqui é o Brasil (Porto de Santos), e a competência resultante é sempre concorrente, nunca exclusiva, salvo nas hipóteses taxativas do art. 23 do CPC.",
+          "regraMemoria": "Obrigação a ser cumprida no Brasil = juiz brasileiro sempre competente, mas apenas concorrentemente; exclusividade da jurisdição brasileira só nos casos taxativos do art. 23 do CPC (imóvel no Brasil, sucessão de bens aqui situados etc.)."
+        },
+        {
+          "territorio": "Direito Internacional",
+          "tema": "Direito Internacional Privado (LINDB)",
+          "enunciado": "A Fundação de Juristas Moçambique–Brasil, associação privada de fim de interesse coletivo, constituiu-se na década de 1990, na cidade de Maputo, capital de Moçambique, e pretende abrir filial no Brasil. Você, advogado(a) especializado em Direito Internacional, é procurado pela Fundação para avaliar a pretensão do caso em tela. Sobre a hipótese apresentada, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A Fundação não poderá ter filial no Brasil, salvo se houver prévia decisão da justiça brasileira autorizativa."
+            },
+            {
+              "letra": "B",
+              "texto": "A Fundação não poderá ter filial no Brasil, antes da aprovação dos atos constitutivos pelo governo brasileiro, ficando a filial sujeita à lei brasileira."
+            },
+            {
+              "letra": "C",
+              "texto": "A Fundação não poderá ter filial no Brasil, salvo se houver prévia autorização legislativa do Congresso Nacional."
+            },
+            {
+              "letra": "D",
+              "texto": "A Fundação não poderá ter filial no Brasil, antes da aprovação dos atos constitutivos pelo governo moçambicano, ficando a filial sujeita à lei moçambicana."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta, com base no art. 11, §1º, da LINDB: as organizações destinadas a fins de interesse coletivo (sociedades e fundações) constituídas no exterior não poderão ter filiais, agências ou estabelecimentos no Brasil antes de aprovados os atos constitutivos pelo Governo brasileiro, ficando a filial sujeita à lei brasileira. Assim, a Fundação moçambicana somente poderá funcionar no Brasil após essa aprovação administrativa pelo Poder Executivo brasileiro, e a filial se submeterá ao ordenamento jurídico brasileiro, não ao moçambicano.",
+          "explicacaoErradas": "A) Errada: a exigência legal não é de prévia decisão judicial autorizativa; é aprovação administrativa dos atos constitutivos pelo Governo (Poder Executivo) brasileiro, não pelo Poder Judiciário. C) Errada: não se exige autorização legislativa do Congresso Nacional; a competência para aprovar os atos constitutivos é do Governo brasileiro (Executivo), não do Legislativo. D) Errada: inverte completamente a regra do art. 11, §1º, LINDB — a aprovação deve ser do Governo brasileiro (não do moçambicano) e a filial fica sujeita à lei brasileira (não à lei de Moçambique).",
+          "pegadinha": "A banca varia o agente competente para aprovar a instalação (Judiciário, Congresso Nacional, governo estrangeiro) e a lei aplicável à filial (brasileira x moçambicana), tentando confundir o candidato quanto ao exato teor do art. 11, §1º, da LINDB, que exige aprovação pelo Governo brasileiro e sujeição à lei brasileira.",
+          "regraMemoria": "Fundação/sociedade estrangeira só abre filial no Brasil após aprovação dos atos constitutivos pelo GOVERNO BRASILEIRO (Executivo) — nunca pelo Judiciário, nunca pelo Congresso — e a filial fica sempre sujeita à LEI BRASILEIRA (art. 11, §1º, LINDB)."
+        },
+        {
+          "territorio": "Direito Financeiro",
+          "tema": "Orçamento Público (LOA/LDO/PPA)",
+          "enunciado": "O Presidente da República se quedou inerte quanto à elaboração e ao envio do projeto de Lei Orçamentária Anual (LOA) da União para aprovação do Congresso Nacional no prazo estabelecido pela CRFB/88. O Presidente do Congresso Nacional, então, assumiu a responsabilidade de elaboração de um novo projeto de LOA e de envio para tramitação e aprovação de ambas as Casas do Congresso Nacional. Nesse caso, é correto afirmar que:",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Caso aprovada, a referida LOA será inconstitucional por vício de iniciativa, já que é de competência privativa do Presidente da República sua elaboração e seu envio ao Congresso Nacional, não podendo o Presidente do Congresso Nacional realizar tal elaboração nem mesmo em caráter excepcional."
+            },
+            {
+              "letra": "B",
+              "texto": "Comprovada a inércia do Presidente da República, admite-se, de forma subsidiária, que a iniciativa do referido projeto de LOA seja exercida por pessoa diversa, a exemplo do Presidente do Congresso Nacional."
+            },
+            {
+              "letra": "C",
+              "texto": "Quando o Presidente da República deixa de apresentar o projeto de LOA da União no prazo legal, a CRFB/88 prevê a possibilidade de o Poder Judiciário, o Ministério Público, a Defensoria Pública e o Poder Legislativo apresentarem, autonomamente, seus respectivos projetos de orçamentos para tramitação no Congresso Nacional."
+            },
+            {
+              "letra": "D",
+              "texto": "A referida LOA somente não será inconstitucional, por vício de iniciativa, caso sua aprovação se dê pelo processo legislativo de aprovação de lei complementar, uma vez que, por se tratar de hipótese excepcional, a Constituição Federal de 1988 prevê um maior rigor para sua aprovação."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta. A elaboração e o envio do projeto de lei orçamentária anual (LOA) é competência privativa do Chefe do Poder Executivo (art. 84, XXIII, c/c art. 165 da CRFB/88). Trata-se de iniciativa reservada, de modo que nenhum outro órgão ou Poder — nem mesmo o Presidente do Congresso Nacional, e nem mesmo diante da inércia do Presidente da República — pode substituir-se a ele na apresentação do projeto. Caso isso ocorra e a lei venha a ser aprovada, ela padecerá de vício de iniciativa e será inconstitucional, mesmo em caráter excepcional.",
+          "explicacaoErradas": "B) Errada: não existe previsão constitucional de iniciativa subsidiária para as leis orçamentárias; a competência é privativa e insuscetível de ser exercida por 'pessoa diversa' do Presidente da República, mesmo diante de comprovada inércia. C) Errada: a CRFB/88 não autoriza que Judiciário, Ministério Público, Defensoria Pública e Legislativo apresentem projetos de orçamento autônomos e concorrentes em caso de inércia do Executivo; esses órgãos participam do processo orçamentário enviando suas propostas setoriais para incorporação ao projeto único do Executivo, mas não podem substituí-lo na iniciativa da LOA. D) Errada: o vício de iniciativa é relativo a quem pode dar início ao processo legislativo, não ao rito de aprovação; submeter o projeto a um processo mais rigoroso (como o de lei complementar) não sana a usurpação de competência privativa de iniciativa, e a LOA, de todo modo, não segue o rito de lei complementar.",
+          "pegadinha": "A banca insinua que a inércia do Presidente da República autorizaria uma solução 'de bom senso' — a assunção da iniciativa por outro Poder (Congresso) ou a adoção de um rito legislativo mais solene (lei complementar) para 'compensar' a irregularidade. Mas a iniciativa das leis orçamentárias é privativa do Chefe do Executivo de forma absoluta, e nem a inércia nem o rigor procedimental afastam o vício de iniciativa.",
+          "regraMemoria": "Leis orçamentárias (PPA, LDO, LOA): iniciativa é SEMPRE privativa do Chefe do Poder Executivo; NUNCA pode ser suprida por outro Poder, nem mesmo diante de inércia, e nenhum rito legislativo mais rigoroso sana esse vício."
+        },
+        {
+          "territorio": "Direito Financeiro",
+          "tema": "Transparência Fiscal",
+          "enunciado": "A Escolinha do Gol, entidade privada sem fins lucrativos, que realiza sua função social de fomento ao esporte no Município Alfa, Estado Beta, entre os anos de 2020 a 2022, recebeu diretamente da União a quantia de R$ 100.000,00 (cem mil reais) para financiar seu programa beneficente de ensino e treinamento de futebol para crianças carentes da localidade. Pedro, administrador da instituição e técnico de futebol da escolinha, recebeu, em janeiro de 2023, uma notificação do Tribunal de Contas da União (TCU) intimando a instituição a prestar contas dos recursos recebidos no prazo de 30 (trinta) dias, sob pena da imediata devolução, acrescida de juros, correção monetária e multa. Tendo Pedro aplicado 100% dos recursos recebidos nas atividades da escolinha, contrata você, como advogado, para orientá-lo sobre a notificação Diante desse cenário, assinale a opção que apresenta sua orientação.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Por não se tratar de uma entidade pública, e sim de uma instituição privada, não se submete à fiscalização e ao controle de qualquer Tribunal de Contas."
+            },
+            {
+              "letra": "B",
+              "texto": "Não pode o TCU fiscalizar e controlar tais repasses, cabendo apenas ao Tribunal de Contas do Estado Beta, por ser o Município Alfa destinatário e efetivo usuário de tais recursos repassados."
+            },
+            {
+              "letra": "C",
+              "texto": "É devida a prestação de contas de qualquer pessoa física ou jurídica, pública ou privada que receba e utilize dinheiro público."
+            },
+            {
+              "letra": "D",
+              "texto": "Apenas deverão prestar contas dos recursos públicos recebidos aqueles que os aplicarem em atividade diversa da originalmente estabelecida ou que não os tenham aplicado integralmente."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta, com fundamento no art. 70, parágrafo único, da CRFB/88: 'Prestará contas qualquer pessoa física ou jurídica, pública ou privada, que utilize, arrecade, guarde, gerencie ou administre dinheiros, bens e valores públicos ou pelos quais a União responda, ou que, em nome desta, assuma obrigações de natureza pecuniária.' Como a Escolinha do Gol recebeu diretamente recursos federais para financiar seu programa, está sujeita à fiscalização do TCU e ao dever de prestar contas, independentemente de ser entidade privada.",
+          "explicacaoErradas": "A) Errada: entidades privadas que recebem e administram dinheiro público federal se submetem sim ao controle do Tribunal de Contas competente (no caso, o TCU, por se tratar de verba da União), nos termos do art. 70, parágrafo único, da CRFB/88. B) Errada: a competência fiscalizatória é definida pela origem do recurso (federal, da União), e não pelo local ou pelo ente que efetivamente utiliza a verba; como os recursos vieram da União, a fiscalização compete ao TCU, não ao Tribunal de Contas do Estado Beta. D) Errada: o dever de prestar contas é regra geral e incondicionada, exigível de qualquer gestor de dinheiro público, independentemente de ter aplicado (bem ou mal) os recursos na finalidade original; não há isenção do dever de prestação de contas para quem aplicou corretamente a verba.",
+          "pegadinha": "A banca tenta induzir o candidato a pensar que (i) só entes públicos prestam contas, (ii) a competência fiscalizatória segue o local/destinatário de fato do recurso (Município/Estado) e não sua origem, ou (iii) só quem desvia a finalidade da verba tem o dever de prestar contas. Todas essas ideias contrariam o texto expresso e amplo do art. 70, parágrafo único, da CRFB/88.",
+          "regraMemoria": "Quem administra dinheiro público — pessoa física ou jurídica, pública ou privada, tenha aplicado bem ou mal os recursos — SEMPRE presta contas; a origem do recurso (federal, estadual ou municipal) é que define qual Tribunal de Contas fiscaliza."
+        },
+        {
+          "territorio": "Direito Tributário",
+          "tema": "Limitações ao Poder de Tributar",
+          "enunciado": "A sociedade empresária Books & Books Ltda., verificando a queda na receita de venda de livros impressos e o fechamento de inúmeras outras livrarias locais, decide alterar seu negócio para importação e comercialização no mercado interno de livros eletrônicos acompanhados dos respectivos aparelhos exclusivamente leitores. Diante desse cenário, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A importação de tais livros eletrônicos e seus respectivos aparelhos leitores por Books & Books Ltda. fica imune da incidência do Imposto de Importação."
+            },
+            {
+              "letra": "B",
+              "texto": "A comercialização no mercado interno de tais livros eletrônicos por Books & Books Ltda. é imune da incidência de Imposto sobre Circulação de Mercadorias, mas não é imune da incidência deste tributo estadual na comercialização de seus respectivos aparelhos leitores."
+            },
+            {
+              "letra": "C",
+              "texto": "Embora tais livros eletrônicos e seus respectivos aparelhos leitores importados e comercializados no mercado interno por Books & Books Ltda. sejam equiparados a livros, o Imposto de Importação e o Imposto sobre Circulação de Mercadorias, por serem tributos indiretos, não podem ser alcançados por essa imunidade."
+            },
+            {
+              "letra": "D",
+              "texto": "Os livros eletrônicos e seus respectivos aparelhos leitores importados e comercializados por Books & Books Ltda. não podem ser equiparados a livros, razão pela qual não incide qualquer imunidade sobre a importação ou a comercialização deles no mercado interno."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta. O STF (RE 330.817 e RE 595.676, ambos com repercussão geral) fixou a tese de que a imunidade tributária de livros, jornais, periódicos e do papel destinado à sua impressão (art. 150, VI, 'd', CRFB/88) alcança os livros eletrônicos (e-books) e os suportes exclusivamente utilizados para fixá-los, como os aparelhos leitores de livros eletrônicos (e-readers). Essa imunidade abrange os impostos incidentes tanto na importação quanto na comercialização, de modo que a importação desses livros eletrônicos e de seus aparelhos leitores exclusivos por Books & Books Ltda. é imune ao Imposto de Importação.",
+          "explicacaoErradas": "B) Errada: a imunidade também alcança o ICMS incidente sobre a comercialização dos aparelhos leitores exclusivamente dedicados à leitura de livros eletrônicos, e não apenas sobre os e-books propriamente ditos. C) Errada: a imunidade de livros alcança tanto impostos diretos quanto indiretos (como ICMS e II), não havendo essa distinção nas teses do STF; a imunidade objetiva do art. 150, VI, 'd', não se restringe a determinada classificação econômica de tributo. D) Errada: e-books e seus aparelhos leitores exclusivos são, sim, equiparados a livros para fins de imunidade, conforme pacífica jurisprudência do STF, contrariando a premissa da alternativa.",
+          "pegadinha": "A pegadinha está em não distinguir 'aparelho leitor exclusivo' (dedicado apenas à leitura de e-books, como um Kindle) de aparelho multifuncional (tablet, smartphone), este sim excluído da imunidade pelo STF. Como o enunciado especifica 'aparelhos exclusivamente leitores', a imunidade se aplica integralmente, e a banca tenta fazer o candidato negar a imunidade por acreditar, equivocadamente, que ela se restringe ao conteúdo digital e não alcança o hardware dedicado.",
+          "regraMemoria": "Livro, jornal, periódico e papel: sempre imunes de impostos. E-book e leitor EXCLUSIVO (tipo Kindle): imunes também. Tablet ou smartphone multifuncional: NUNCA imune."
+        },
+        {
+          "territorio": "Direito Tributário",
+          "tema": "Limitações ao Poder de Tributar",
+          "enunciado": "Para conter a escalada de preços dos combustíveis que vem afetando a economia nacional, a equipe econômica do governo federal estuda a possibilidade de conceder, mediante lei complementar editada exclusivamente para tal fim, uma isenção temporária de um ano sobre todos os tributos federais e estaduais incidentes sobre os combustíveis (petróleo e derivados), atendendo aos requisitos das leis orçamentárias. Diante desse cenário, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A concessão de tal isenção, mediante lei complementar, de caráter nacional, exclusivamente para este fim é admitida pela Constituição Federal."
+            },
+            {
+              "letra": "B",
+              "texto": "Sendo tal benefício fiscal apenas temporário, pode ser excepcionalmente admitido por ter, como causa, uma situação extraordinária de interesse nacional."
+            },
+            {
+              "letra": "C",
+              "texto": "Tal lei afronta a Constituição Federal ao atingir tributos de competência estadual."
+            },
+            {
+              "letra": "D",
+              "texto": "A competência tributária é privativa da Agência Nacional de Petróleo (ANP) quanto à tributação de combustíveis, e tal lei acaba por violá-la."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta. O art. 151, III, da CRFB/88 veda à União instituir isenções de tributos da competência dos Estados, do Distrito Federal ou dos Municípios (vedação às chamadas 'isenções heterônomas'). Assim, uma lei complementar federal que pretenda isentar tributos estaduais (mesmo que incidentes sobre combustíveis) viola diretamente essa vedação constitucional, sendo inconstitucional independentemente do caráter temporário do benefício ou da natureza da lei utilizada.",
+          "explicacaoErradas": "A) Errada: a concessão dessa isenção não é admitida pela Constituição Federal, justamente por violar a vedação às isenções heterônomas do art. 151, III. B) Errada: não existe exceção genérica de 'situação extraordinária de interesse nacional' que autorize a União a isentar tributos estaduais por lei complementar; a única hipótese específica de atuação da União sobre o ICMS-combustíveis se dá por convênio no âmbito do CONFAZ (art. 155, §2º, XII, 'g', e §4º, IV, CRFB/88), não por lei complementar federal isentando unilateralmente. D) Errada: a competência tributária sobre combustíveis pertence aos entes federativos (União, Estados) conforme a repartição constitucional de competências; a ANP é agência reguladora do setor, sem qualquer competência tributária privativa.",
+          "pegadinha": "A banca menciona 'lei complementar' e 'situação extraordinária de interesse nacional' como se fossem elementos que legitimassem uma exceção à regra geral, em analogia equivocada ao regime do ICMS monofásico sobre combustíveis (que de fato admite tratamento diferenciado, mas via convênio no CONFAZ entre os próprios Estados, jamais por lei federal isentando). A vedação à isenção heterônoma do art. 151, III, CRFB/88 não comporta essa exceção genérica.",
+          "regraMemoria": "A União NUNCA pode isentar tributo estadual ou municipal (vedação à isenção heterônoma, art. 151, III, CRFB/88) — cada ente só isenta os próprios tributos, salvo os casos excepcionais expressamente previstos na própria Constituição."
+        },
+        {
+          "territorio": "Direito Tributário",
+          "tema": "Impostos em Espécie",
+          "enunciado": "João e José decidem constituir uma sociedade empresária, denominada Informática ABC Ltda., especializada na prestação de serviços na área de informática. João integralizou 50% do capital social da sociedade com dinheiro, e José integralizou os seus 50% com um imóvel de sua propriedade localizado no Município Alfa, a ser utilizado como sede da empresa. Dois anos depois do início das atividades da sociedade empresária, José recebe uma notificação da Secretaria de Fazenda do Município Alfa, por falta de pagamento do Imposto sobre a Transmissão de Bens Imóveis (ITBI), devido no ato da integralização do capital social da empresa, por ser ele, segundo a legislação local, o contribuinte deste imposto. Diante desse cenário, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "José é responsável solidário pelo recolhimento do ITBI incidente sobre essa transmissão."
+            },
+            {
+              "letra": "B",
+              "texto": "As empresas do setor de informática, por expressa disposição de lei complementar nacional, estão isentas do pagamento de ITBI."
+            },
+            {
+              "letra": "C",
+              "texto": "É devida a cobrança do ITBI, uma vez que houve a transmissão da propriedade do imóvel de José para a empresa Informática ABC Ltda. no ato da integralização do capital social."
+            },
+            {
+              "letra": "D",
+              "texto": "O ITBI não incide sobre a transmissão de bens incorporados ao patrimônio de Informática ABC Ltda., em realização de capital."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta, com fundamento no art. 156, §2º, I, da CRFB/88: o ITBI não incide sobre a transmissão de bens ou direitos incorporados ao patrimônio de pessoa jurídica em realização de capital, salvo se a atividade preponderante do adquirente for a compra e venda desses bens ou direitos, locação de bens imóveis ou arrendamento mercantil. Como a atividade preponderante de Informática ABC Ltda. é a prestação de serviços de informática (e não atividade imobiliária), incide a imunidade tributária, e não há ITBI devido pela integralização do imóvel de José ao capital social.",
+          "explicacaoErradas": "A) Errada: pressupõe que o ITBI seria devido, mas na verdade não há incidência do imposto nesse caso (é hipótese de imunidade constitucional), de modo que não há falar em responsabilidade solidária de José pelo recolhimento de tributo inexistente. B) Errada: não existe isenção de ITBI 'para empresas do setor de informática' prevista em lei complementar nacional; a não incidência decorre da imunidade constitucional específica para bens incorporados ao patrimônio de PJ em realização de capital, condicionada apenas à atividade preponderante do adquirente, e não ao ramo de atuação da empresa. C) Errada: a cobrança do ITBI não é devida, precisamente porque a integralização de imóvel ao capital social é imune por expressa disposição constitucional (art. 156, §2º, I), desde que — como no caso — a atividade preponderante do adquirente não seja imobiliária.",
+          "pegadinha": "A pegadinha é fazer o candidato aplicar a regra geral (toda transmissão onerosa de bem imóvel gera incidência de ITBI) sem atentar para a exceção constitucional específica da integralização de capital social, que é imune, ressalvada apenas a hipótese de atividade preponderantemente imobiliária do adquirente — o que não é o caso de uma empresa de informática.",
+          "regraMemoria": "Imóvel usado para integralizar capital social: imune de ITBI, SALVO se a atividade preponderante do adquirente for compra e venda de imóveis, locação de imóveis ou arrendamento mercantil (art. 156, §2º, I, CRFB/88)."
+        },
+        {
+          "territorio": "Direito Tributário",
+          "tema": "Competência Tributária",
+          "enunciado": "Determinado país declarou guerra ao Brasil. Para fazer frente aos gastos com o esforço de guerra, a União resolveu criar, por lei federal ordinária, um imposto extraordinário de guerra, com a mesma hipótese de incidência do Imposto sobre a Transmissão Causa Mortis e Doações. A alíquota fixada pela lei federal era de 1% sobre o valor da doação ou do montante transmitido causa mortis. Sobre esse imposto extraordinário, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Não pode ser criado, pois viola a competência tributária dos Estados e do Distrito Federal."
+            },
+            {
+              "letra": "B",
+              "texto": "Como apresenta hipótese de incidência idêntica à do imposto estadual, somente poderia ser criado por lei complementar."
+            },
+            {
+              "letra": "C",
+              "texto": "Configura hipótese de bitributação ilegal, razão pela qual não poderia ser admitido."
+            },
+            {
+              "letra": "D",
+              "texto": "É válido, mas deve ser suprimido, gradativamente, cessadas as causas de sua criação."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta. O imposto extraordinário de guerra (IEG) está previsto no art. 154, II, da CRFB/88: na iminência ou no caso de guerra externa, a União pode instituir impostos extraordinários, compreendidos ou não em sua competência tributária, os quais serão suprimidos, gradativamente, cessadas as causas de sua criação. Assim, o imposto criado, mesmo tendo a mesma hipótese de incidência do ITCMD (imposto estadual), é válido, mas deve ser gradativamente suprimido quando cessar o estado de guerra.",
+          "explicacaoErradas": "A) Errada: o art. 154, II, expressamente autoriza a União a instituir o IEG mesmo sobre hipóteses de incidência compreendidas na competência de outros entes (inclusive Estados e DF), não havendo violação de competência tributária alheia nessa hipótese excepcional. B) Errada: diferentemente do imposto residual (art. 154, I, que exige lei complementar), o imposto extraordinário de guerra pode ser instituído por lei ordinária, não havendo exigência de lei complementar mesmo quando reproduz hipótese de incidência de imposto estadual. C) Errada: a coincidência de hipótese de incidência com imposto estadual configura hipótese de bitributação expressamente autorizada pela própria Constituição no art. 154, II, não se tratando de bitributação ilegal ou vedada.",
+          "pegadinha": "A banca tenta fazer o candidato confundir o imposto extraordinário de guerra (art. 154, II — lei ordinária, pode repetir fato gerador de qualquer imposto, inclusive estadual, é temporário) com o imposto residual (art. 154, I — exige lei complementar, fato gerador e base de cálculo novos, não pode coincidir com os já existentes). Por isso, tenta induzir à falsa conclusão de que seria necessária lei complementar ou que haveria invasão inconstitucional de competência estadual.",
+          "regraMemoria": "Imposto extraordinário de guerra: instituído por LEI ORDINÁRIA, pode repetir fato gerador de qualquer imposto (mesmo estadual/municipal), é temporário e deve ser suprimido gradativamente ao cessarem as causas da guerra."
+        },
+        {
+          "territorio": "Direito Tributário",
+          "tema": "Competência Tributária",
+          "enunciado": "O Município Alfa pretende firmar convênio com a União para fiscalizar e arrecadar diretamente o Imposto sobre a Propriedade Territorial Rural (ITR) dos imóveis rurais situados em seu território. Acerca dessa pretensão municipal, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Tal convênio, caso firmado, configura um exemplo de transferência de competência tributária plena da União para o Município."
+            },
+            {
+              "letra": "B",
+              "texto": "Caso firme tal convênio, o Município Alfa terá direito a ficar com 100% do ITR arrecadado referente aos imóveis rurais situados em seu território."
+            },
+            {
+              "letra": "C",
+              "texto": "Tal convênio é legalmente vedado por configurar delegação de capacidade tributária ativa."
+            },
+            {
+              "letra": "D",
+              "texto": "O Município Alfa pode receber delegação para arrecadar o tributo, mas sua fiscalização é privativa de agentes da Administração Tributária Federal."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta. O art. 153, §4º, III, da CRFB/88, combinado com a Lei nº 11.250/2005, permite que os Municípios optem por fiscalizar e cobrar o ITR, mediante convênio com a União, sem que isso implique redução do imposto. Nesse caso, o Município que assume essa atribuição fica com 100% do produto da arrecadação do ITR referente aos imóveis rurais situados em seu território (em vez dos 50% que normalmente lhe seriam repartidos pelo art. 158, II, CRFB/88).",
+          "explicacaoErradas": "A) Errada: o convênio não transfere a competência tributária (que é o poder de instituir o tributo, indelegável nos termos do art. 7º do CTN), mas apenas delega a capacidade tributária ativa (fiscalização e arrecadação), que permanece sob a titularidade da União quanto à instituição do imposto. C) Errada: a delegação da capacidade tributária ativa por convênio é expressamente autorizada pelo art. 7º do CTN e pelo art. 153, §4º, III, CRFB/88, não sendo, portanto, vedada. D) Errada: o convênio pode abranger tanto a arrecadação quanto a fiscalização do ITR pelo próprio Município, não havendo reserva de exclusividade da fiscalização a agentes da Administração Tributária Federal quando o Município firma o convênio para esse fim.",
+          "pegadinha": "A banca explora a confusão comum entre competência tributária (instituir o tributo — sempre indelegável, art. 7º do CTN) e capacidade tributária ativa (arrecadar e fiscalizar — delegável por convênio), além de ocultar o benefício concreto que a lei confere ao Município que assume essa atribuição: ficar com 100% do produto arrecadado, em vez da partilha padrão de 50%.",
+          "regraMemoria": "Competência tributária (instituir o tributo): NUNCA se delega. Capacidade tributária ativa (arrecadar/fiscalizar): pode ser delegada por convênio — no caso do ITR ao Município, este fica com 100% do arrecadado."
+        },
+        {
+          "territorio": "Direito Administrativo",
+          "tema": "Agentes Públicos e Regime Disciplinar",
+          "enunciado": "Marcelo, servidor público federal estável, aposentou-se por invalidez. Meses depois, uma junta médica oficial declarou insubsistentes os motivos de sua aposentadoria. Consoante a Lei nº 8.112/90, que dispõe sobre o regime jurídico dos servidores públicos civis da União, o retorno de Marcelo à atividade, por meio de provimento de cargo público derivado por reingresso, se dará pela",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "reintegração, que se dará no cargo anteriormente ocupado ou no cargo resultante de sua transformação. Na hipótese de o cargo ter sido extinto, Marcelo ficará em disponibilidade."
+            },
+            {
+              "letra": "B",
+              "texto": "recondução, que ocorrerá no mesmo cargo de origem e, encontrando-se provido o cargo, Marcelo será aproveitado em outro."
+            },
+            {
+              "letra": "C",
+              "texto": "reversão, que se fará no mesmo cargo ou no cargo resultante de sua transformação e, encontrando-se provido o cargo, Marcelo exercerá suas atribuições como excedente, até a ocorrência de vaga."
+            },
+            {
+              "letra": "D",
+              "texto": "readaptação, que se realizará em cargo de atribuições afins ao cargo originário de Marcelo, respeitada a habilitação exigida, o nível de escolaridade e a equivalência de vencimento."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta, conforme o art. 25 da Lei nº 8.112/90: reversão é o retorno à atividade de servidor aposentado por invalidez, quando junta médica oficial declara insubsistentes os motivos da aposentadoria. A reversão se fará no mesmo cargo ou no cargo resultante de sua transformação e, encontrando-se provido o cargo, o servidor exercerá suas atribuições como excedente, até a ocorrência de vaga (art. 25, §2º, Lei 8.112/90). É exatamente a situação de Marcelo.",
+          "explicacaoErradas": "A) Errada: reintegração (art. 28, Lei 8.112/90) é o retorno do servidor estável demitido, quando invalidada a demissão por decisão administrativa ou judicial, com ressarcimento de todas as vantagens; Marcelo não foi demitido, foi aposentado por invalidez, hipótese diversa. B) Errada: recondução (art. 29, Lei 8.112/90) é o retorno do servidor estável ao cargo anteriormente ocupado, decorrente de inabilitação em estágio probatório relativo a outro cargo, ou de reintegração do anterior ocupante; não se aplica ao caso de aposentadoria por invalidez cujos motivos foram declarados insubsistentes. D) Errada: readaptação (art. 24, Lei 8.112/90) é a investidura do servidor em cargo de atribuições compatíveis com limitação sofrida em sua capacidade física ou mental, e não o retorno de aposentado cuja aposentadoria se tornou insubsistente.",
+          "pegadinha": "A banca aposta na confusão entre os quatro institutos de provimento derivado por reingresso (reversão, reintegração, recondução e readaptação), todos ligados a 'retorno ao serviço público' em situações parecidas. A pegadinha típica é o candidato associar 'reintegração' (termo mais familiar) ao caso, quando o instituto correto para aposentado por invalidez cujos motivos se tornaram insubsistentes é a reversão.",
+          "regraMemoria": "REVERSÃO = aposentado por invalidez que se recupera volta ao cargo (excedente se estiver provido). REINTEGRAÇÃO = demitido ilegalmente volta com tudo. RECONDUÇÃO = reprovado em estágio probatório de outro cargo volta ao cargo antigo."
+        },
+        {
+          "territorio": "Direito Administrativo",
+          "tema": "Improbidade Administrativa",
+          "enunciado": "O Ministério Público Federal ajuizou ação buscando a responsabilização judicial da Sociedade Empresária Delta pela prática de atos lesivos à Administração Pública que atentaram contra o patrimônio público nacional. Na inicial, imputa-se à citada pessoa jurídica a prática de atos que dificultaram atividade de fiscalização de órgãos públicos federais e intervieram na atuação desses órgãos, inclusive no âmbito de órgãos de fiscalização do sistema financeiro nacional. A diretoria da Sociedade Empresária Delta, preocupada com eventual possibilidade de sanção judicial de dissolução compulsória da pessoa jurídica, contratou você como advogado(a) especializado na matéria. Diante das circunstâncias do caso concreto e com base na Lei Anticorrupção (Lei nº 12.846/2013), sobre a dissolução compulsória da pessoa jurídica assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Não é sanção prevista pela prática de atos lesivos à Administração Pública, mas pode ser aplicada em eventual ação de improbidade administrativa"
+            },
+            {
+              "letra": "B",
+              "texto": "É medida extrema que somente pode ser decretada pelo Supremo Tribunal Federal, quando houver risco concreto de comprometimento do sistema financeiro nacional ou da soberania nacional."
+            },
+            {
+              "letra": "C",
+              "texto": "Não existe no ordenamento jurídico brasileiro, em razão da função social da sociedade empresária e da livre concorrência, e a sanção máxima aplicável seria a suspensão ou interdição parcial de suas atividades."
+            },
+            {
+              "letra": "D",
+              "texto": "É determinada quando for comprovado que a personalidade jurídica foi utilizada de forma habitual para facilitar ou promover a prática de atos ilícitos, ou foi constituída para ocultar ou dissimular interesses ilícitos ou a identidade dos beneficiários dos atos praticados."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta, conforme o art. 19, §1º, da Lei nº 12.846/2013 (Lei Anticorrupção): a dissolução compulsória da pessoa jurídica será determinada quando comprovado que a personalidade jurídica foi utilizada de forma habitual para facilitar ou promover a prática de atos ilícitos, ou que foi constituída para ocultar ou dissimular interesses ilícitos ou a identidade dos beneficiários dos atos praticados. Trata-se de sanção judicial, aplicada em ação de responsabilização proposta pelas entidades lesadas ou pelo Ministério Público, e não de sanção administrativa.",
+          "explicacaoErradas": "A) Errada: a dissolução compulsória está sim expressamente prevista na Lei Anticorrupção (art. 19, §1º) como sanção judicial decorrente da própria lei, não sendo hipótese exclusiva da ação de improbidade administrativa (Lei nº 8.429/92, que possui sanções distintas). B) Errada: a competência para decretar a dissolução compulsória não é privativa do STF; a ação de responsabilização judicial tramita no juízo competente conforme as regras processuais ordinárias, sem essa exclusividade constitucional. C) Errada: a dissolução compulsória existe expressamente no ordenamento jurídico brasileiro (art. 19, §1º, Lei 12.846/2013); a suspensão ou interdição parcial de atividades é sanção diversa (prevista no mesmo art. 19), e não a 'sanção máxima' que exclui a dissolução.",
+          "pegadinha": "A banca tenta confundir as sanções administrativas do art. 6º da Lei 12.846/2013 (multa e publicação da decisão condenatória), que de fato não incluem a dissolução, com as sanções judiciais do art. 19 (perdimento de bens, suspensão/interdição, proibição de receber benefícios e dissolução compulsória), aplicáveis em ação judicial proposta pelas pessoas jurídicas lesadas, e não com exclusividade pelo STF.",
+          "regraMemoria": "Dissolução compulsória (Lei Anticorrupção) é sanção JUDICIAL (não administrativa), cabível quando a PJ é usada como 'casca' para ilícitos ou para ocultar beneficiários — nunca sanção do art. 6º, nunca de competência exclusiva do STF."
+        },
+        {
+          "territorio": "Direito Administrativo",
+          "tema": "Agentes Públicos e Regime Disciplinar",
+          "enunciado": "Vicente, servidor público federal estável, praticou conduta que corresponde a crime, na forma da legislação penal, e se enquadra como falta funcional grave, passível de demissão. Ao tomar conhecimento de tal situação, a Administração determinou a instauração de processo administrativo disciplinar, com a designação da Comissão processante, composta por três servidores ocupantes de cargos efetivos, sendo certo que um deles, Alípio, ainda não alcançou a estabilidade. Paralelamente, o Juízo criminal competente recebeu denúncia em desfavor de Vicente em razão dos mesmos fatos. Considerando os dados apresentados, Vicente procurou você, como advogado(a), para esclarecer dúvidas acerca da mencionada situação. Assinale a opção que apresenta a orientação jurídica que, corretamente, você prestou.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O processo administrativo disciplinar em face de Vicente não poderia ser instaurado, na medida em que a sua responsabilização deve se restringir à esfera criminal."
+            },
+            {
+              "letra": "B",
+              "texto": "A nomeação de Alípio para compor a comissão processante do processo administrativo disciplinar não é válida."
+            },
+            {
+              "letra": "C",
+              "texto": "O recebimento da denúncia em desfavor de Vicente suspende a apuração levada a efeito em sede de processo administrativo disciplinar."
+            },
+            {
+              "letra": "D",
+              "texto": "Eventual sentença absolutória na ação penal deverá repercutir em demissão de Vicente, ainda que fundada na ausência de provas."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta. Nos termos do art. 149 da Lei nº 8.112/90, a comissão processante do processo administrativo disciplinar deve ser composta por três servidores estáveis. Como Alípio ainda não alcançou a estabilidade, sua nomeação para compor a comissão é inválida, viciando a composição do órgão processante.",
+          "explicacaoErradas": "A) Errada: o processo administrativo disciplinar pode e deve ser instaurado independentemente da apuração criminal, em razão do princípio da independência das instâncias (art. 125, Lei 8.112/90); a responsabilização de Vicente não se restringe à esfera penal. C) Errada: o mero recebimento da denúncia criminal não suspende a apuração administrativa; as instâncias penal e administrativa correm de forma independente, e apenas a decisão penal que reconhece a inexistência do fato ou a negativa de autoria repercute na esfera administrativa (art. 126, Lei 8.112/90). D) Errada: nem toda absolvição penal repercute na esfera administrativa; a absolvição fundada em ausência ou insuficiência de provas não vincula a Administração e não impede a aplicação de sanção disciplinar, ao contrário do que ocorre com a absolvição por negativa de autoria ou inexistência do fato.",
+          "pegadinha": "O foco central da questão é o vício de composição da comissão (Alípio, servidor não estável, não pode integrá-la — art. 149, Lei 8.112/90), mas a banca insere três alternativas que testam, paralelamente, a independência das instâncias penal e administrativa, tentando levar o candidato a acreditar em uma comunicabilidade automática que a lei não prevê.",
+          "regraMemoria": "Comissão do PAD: SEMPRE 3 servidores ESTÁVEIS (art. 149, Lei 8.112/90) — um só não estável já invalida a nomeação. Instâncias penal e administrativa são INDEPENDENTES; só a absolvição por negativa de autoria ou inexistência do fato repercute na esfera administrativa, jamais a absolvição por falta de provas."
+        },
+        {
+          "territorio": "Direito Administrativo",
+          "tema": "Serviços Públicos e Concessões",
+          "enunciado": "A sociedade empresária Sabiá tomou conhecimento de um edital de licitação elaborado pelo Município Alfa para promover a permissão de determinado serviço público de competência local, razão pela qual procura sua assessoria jurídica, a fim de dirimir algumas dúvidas acerca da mencionada modalidade de delegação. Acerca das peculiaridades da permissão de serviços públicos, à luz do disposto na CRFB/88 e na Lei nº 8.987/95, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A modalidade licitatória deverá ser necessariamente aquela designada como diálogo competitivo"
+            },
+            {
+              "letra": "B",
+              "texto": "Não é necessária a realização de licitação para a formalização da delegação pretendida pelo Município Alfa."
+            },
+            {
+              "letra": "C",
+              "texto": "É necessária a constituição de uma sociedade de propósito específico para a formalização do respectivo contrato."
+            },
+            {
+              "letra": "D",
+              "texto": "A delegação pretendida poderá ser realizada para pessoa física ou jurídica que demonstre capacidade para a prestação do serviço por sua conta e risco."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta, conforme o art. 2º, IV, da Lei nº 8.987/95: permissão de serviço público é a delegação, a título precário, mediante licitação, da prestação de serviços públicos, feita pelo poder concedente à pessoa física ou jurídica que demonstre capacidade para seu desempenho, por sua conta e risco. Diferentemente da concessão (que só pode ser outorgada a pessoa jurídica ou consórcio de empresas), a permissão pode ser outorgada também a pessoa física.",
+          "explicacaoErradas": "A) Errada: não há exigência legal de que a licitação para permissão de serviço público seja necessariamente na modalidade diálogo competitivo (modalidade restrita a hipóteses específicas de inovação técnica/tecnológica na Lei 14.133/2021); a Lei 8.987/95 não impõe modalidade licitatória obrigatória específica para a permissão. B) Errada: a licitação é sempre exigida tanto para concessão quanto para permissão de serviços públicos, por força do art. 175 da CRFB/88 e do art. 2º, IV, da Lei 8.987/95, não sendo dispensável nesse caso. C) Errada: a constituição de sociedade de propósito específico é exigência facultativa (art. 20, Lei 8.987/95) e vinculada tipicamente ao contrato de concessão, não sendo requisito para a formalização de contrato de permissão de serviço público.",
+          "pegadinha": "A pegadinha central é a diferença pouco lembrada entre concessão (somente pessoa jurídica ou consórcio de empresas) e permissão (pessoa física OU jurídica), somada à tentativa de fazer o candidato acreditar que a licitação seria dispensável ou que exigiria modalidade/instrumento específicos (diálogo competitivo, SPE) próprios de outras figuras contratuais.",
+          "regraMemoria": "Concessão: só pessoa jurídica ou consórcio de empresas, sempre com licitação. Permissão: pessoa física OU jurídica, contrato de adesão, por conta e risco do permissionário, também sempre com licitação prévia."
+        },
+        {
+          "territorio": "Direito Administrativo",
+          "tema": "Agentes Públicos e Regime Disciplinar",
+          "enunciado": "Jamile, após aprovação em concurso público, foi investida em cargo efetivo na Secretaria de Administração do Estado Alfa, no qual alcançou a estabilidade. No entanto, o mencionado ente federativo decidiu reformular o seu quadro de pessoal, de modo que, após o devido processo legislativo, fez publicar a Lei XYX que extinguiu a carreira e, consequentemente, o cargo efetivo ocupado por Jamile, e, em razão disso, ato contínuo, promoveu sua exoneração. Diante dessa situação hipotética, à luz das disposições constitucionais acerca dos servidores públicos, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Jamile não pode ser afetada pela alteração legislativa em comento, pois possui o direito adquirido de permanecer no cargo para o qual foi aprovada em concurso."
+            },
+            {
+              "letra": "B",
+              "texto": "O Estado Alfa deve promover o aproveitamento de Jamile em outro cargo, ainda que com atribuições e remuneração distintas daquele para o qual ela fora aprovada em concurso."
+            },
+            {
+              "letra": "C",
+              "texto": "A exoneração de Jamile revela-se adequada e pertinente, diante da extinção da carreira e do cargo efetivo que ocupava pela Lei XYZ."
+            },
+            {
+              "letra": "D",
+              "texto": "Jamile, em razão da extinção do cargo, deve ficar em disponibilidade, com remuneração proporcional ao tempo de serviço, até o seu adequado aproveitamento em outro cargo."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta, com base no art. 41, §3º, da CRFB/88: extinto o cargo ou declarada sua desnecessidade, o servidor estável ficará em disponibilidade, com remuneração proporcional ao tempo de serviço, até seu adequado aproveitamento em outro cargo. Como Jamile é servidora estável e seu cargo foi extinto por lei, ela tem direito à disponibilidade remunerada, e não pode ser diretamente exonerada.",
+          "explicacaoErradas": "A) Errada: a estabilidade não confere direito adquirido a permanecer indefinidamente no mesmo cargo diante de sua extinção por lei; a garantia constitucional, nesse caso, é a disponibilidade remunerada, não a intocabilidade do cargo. B) Errada: o aproveitamento em outro cargo não é imediato nem automático; a CRFB/88 prevê, primeiro, a disponibilidade remunerada proporcional ao tempo de serviço, até que ocorra o adequado aproveitamento, e não uma recolocação instantânea em cargo de atribuições e remuneração distintas. C) Errada: a exoneração não é a medida constitucionalmente adequada para o servidor estável cujo cargo foi extinto; a CRFB/88 determina a disponibilidade remunerada, e não a exoneração direta.",
+          "pegadinha": "A banca tenta fazer parecer lógica e natural a exoneração como consequência direta da extinção do cargo, escondendo a garantia constitucional específica do servidor estável (disponibilidade remunerada proporcional ao tempo de serviço, até o aproveitamento em outro cargo), prevista no art. 41, §3º, da CRFB/88.",
+          "regraMemoria": "Cargo extinto + servidor ESTÁVEL = disponibilidade remunerada proporcional ao tempo de serviço, NUNCA exoneração direta, até o adequado aproveitamento em outro cargo (art. 41, §3º, CRFB/88)."
+        },
+        {
+          "territorio": "Direito Ambiental",
+          "tema": "Licenciamento Ambiental",
+          "enunciado": "A sociedade empresária Gama requereu licença ambiental para empreender um aterro sanitário. O processo de licenciamento ambiental tramita no órgão licenciador competente. No curso do procedimento, observadas as cautelas legais necessárias, o licenciador deferiu licença na fase inicial do planejamento do empreendimento, aprovando sua localização e concepção, atestando a viabilidade ambiental e estabelecendo os requisitos básicos e condicionantes a serem atendidos nas próximas fases de sua implementação. Registre-se que tal licença foi deferida isoladamente, diante da natureza, das características e da fase do empreendimento. O caso em tela, de acordo com a Resolução CONAMA nº 237/1997, trata de licença",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "prévia, que será sucedida, na próxima etapa do licenciamento, pela licença de instalação, que autorizará a instalação do empreendimento de acordo com as especificações constantes dos planos, programas e projetos aprovados."
+            },
+            {
+              "letra": "B",
+              "texto": "de instalação, que será sucedida, na próxima etapa do licenciamento, pela licença de operação, que autorizará a operação da atividade ou do empreendimento, após a verificação do efetivo cumprimento do que consta das licenças anteriores, com as medidas de controle ambiental e os condicionantes determinados para a operação."
+            },
+            {
+              "letra": "C",
+              "texto": "de funcionamento, que foi precedida pela licença ambiental simplificada, que autorizará o início dos estudos ambientais, em especial, a elaboração do estudo prévio de impacto ambiental e seu correlato relatório de impacto ambiental."
+            },
+            {
+              "letra": "D",
+              "texto": "de operação, que foi precedida pela licença de instalação, que autorizará a execução das medidas mitigatórias previstas no estudo de impacto ambiental e a instalação do empreendimento de acordo com as especificações constantes dos planos, programas e projetos aprovados."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta. Conforme o art. 8º, I, da Resolução CONAMA nº 237/97, a Licença Prévia (LP) é concedida na fase preliminar do planejamento do empreendimento, aprovando sua localização e concepção, atestando a viabilidade ambiental e estabelecendo os requisitos básicos e condicionantes a serem atendidos nas próximas fases de sua implementação — exatamente a descrição do enunciado. A LP é sucedida pela Licença de Instalação (LI), que autoriza a instalação do empreendimento de acordo com as especificações constantes dos planos, programas e projetos aprovados.",
+          "explicacaoErradas": "B) Errada: descreve corretamente a sequência LI → LO, mas atribui à situação do enunciado (fase inicial do planejamento) a natureza de LI, quando na verdade se trata de LP, a primeira das três licenças. C) Errada: 'licença de funcionamento' e 'licença ambiental simplificada' não são as denominações previstas na Resolução CONAMA nº 237/97, que estabelece o trinômio LP, LI e LO; tais expressões não correspondem ao sistema legal de licenciamento trifásico. D) Errada: descreve a LO precedida pela LI, mas o enunciado trata da fase inicial do empreendimento (aprovação de localização e concepção), que corresponde à LP, e não à fase final de operação.",
+          "pegadinha": "A pegadinha está em confundir as três fases do licenciamento (LP → LI → LO) e não perceber que a descrição do enunciado — 'fase inicial do planejamento... aprovando localização e concepção, atestando viabilidade ambiental' — corresponde exatamente à definição legal de Licença Prévia (art. 8º, I, Res. CONAMA 237/97), levando o candidato a marcar LI ou LO por associação apressada com as demais alternativas.",
+          "regraMemoria": "LP aprova ONDE e COMO (localização e concepção). LI autoriza CONSTRUIR/instalar. LO autoriza FUNCIONAR/operar. A ordem é sempre: LP → LI → LO."
+        },
+        {
+          "territorio": "Direito Ambiental",
+          "tema": "Espaços Territoriais Protegidos",
+          "enunciado": "Município Alfa criou regularmente uma Unidade de Conservação (UC), por meio de decreto do Prefeito. Três anos depois, mediante a realização de novos estudos técnicos e de consulta pública, o chefe do Executivo municipal se convenceu de que deveria reduzir os limites geográficos da Unidade de Conservação. Sabendo que o Prefeito está prestes a assinar novo decreto promovendo a supressão e a desafetação de uma parte dessa Unidade de Conservação, um grupo de ambientalistas procurou você como advogado(a). Nesse contexto, assinale a opção que apresenta, corretamente, sua orientação acerca do novo decreto.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O decreto em questão não pode ser considerado válido, pois quaisquer alterações na UC devem ser precedidas de autorização dos órgãos ambientais estadual e federal."
+            },
+            {
+              "letra": "B",
+              "texto": "Não há qualquer mácula no aludido decreto, uma vez que foram realizados novos estudos técnicos e consulta pública, que são imprescindíveis para quaisquer alterações na UC."
+            },
+            {
+              "letra": "C",
+              "texto": "É inviável a alteração pretendida por decreto, haja vista que a desafetação ou redução dos limites de uma Unidade de Conservação só pode ser feita mediante lei específica."
+            },
+            {
+              "letra": "D",
+              "texto": "O decreto em análise está em consonância com o ordenamento jurídico, na medida em que, se a criação da UC se deu por tal via, sua redução pode ser realizada pelo mesmo instrumento normativo."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta. O art. 225, §1º, III, da CRFB/88 e o art. 22, §7º, da Lei nº 9.985/2000 (SNUC) exigem lei específica para a desafetação ou redução dos limites de uma unidade de conservação, independentemente do instrumento normativo utilizado para sua criação. Assim, mesmo que a UC tenha sido criada por decreto do Prefeito, sua redução ou desafetação exige a edição de lei específica, não podendo ser feita por simples decreto.",
+          "explicacaoErradas": "A) Errada: a exigência constitucional e legal não é de autorização prévia dos órgãos ambientais estadual e federal, mas sim de lei específica editada pelo ente competente; a alternativa aponta um requisito equivocado. B) Errada: embora estudos técnicos e consulta pública sejam de fato exigidos para a criação (e recomendáveis para alterações) de UC, isso não supre a exigência constitucional de lei específica para a redução ou desafetação, de modo que o decreto, ainda que precedido desses estudos, permanece inválido para esse fim. D) Errada: não se aplica aqui o princípio do paralelismo das formas; a CRFB/88 (art. 225, §1º, III) e o SNUC (art. 22, §7º) estabelecem regra mais rigorosa e específica, exigindo lei para a redução/supressão, ainda que a criação tenha ocorrido por decreto.",
+          "pegadinha": "A pegadinha central é o candidato aplicar intuitivamente o princípio do paralelismo das formas ('se foi criada por decreto, pode ser desfeita por decreto'), ignorando que a própria Constituição e o SNUC estabelecem uma exceção expressa e mais rigorosa: redução, desafetação ou supressão de UC exigem sempre lei específica, mesmo que a criação tenha se dado por ato infralegal.",
+          "regraMemoria": "Unidade de Conservação pode ser CRIADA por decreto, mas só pode ser REDUZIDA, DESAFETADA ou SUPRIMIDA por LEI ESPECÍFICA — nunca pelo mesmo decreto que a criou (art. 225, §1º, III, CRFB/88)."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Família",
+          "enunciado": "Mariana e Lucas estão casados há mais de 10 anos em regime da comunhão parcial de bens. Recentemente, Mariana descobriu que Lucas vem mantendo uma relação extraconjugal com uma vizinha. A descoberta abalou profundamente o casamento, e Mariana pediu o divórcio. Considerando a quebra do dever de fidelidade, Mariana alega que Lucas perdeu o direito sobre todos os bens do casal, ou seja, ela entende que, apesar do regime de comunhão parcial de bens, o patrimônio construído ao longo do casamento não deverá ser partilhado. Sobre a hipótese apresentada, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O adultério traduz-se em violação do dever de recíproca fidelidade no casamento. Assim, em razão da traição de Lucas, Mariana tem direito à indenização correspondente a parte dos bens do casal."
+            },
+            {
+              "letra": "B",
+              "texto": "A discussão de culpa e culpados para o divórcio não é mais necessária e, por isso, a divisão de bens deve seguir as regras do regime escolhido no casamento."
+            },
+            {
+              "letra": "C",
+              "texto": "O adultério é uma das mais graves infrações dos deveres conjugais e tem, como consequência, a perda do direito à meação."
+            },
+            {
+              "letra": "D",
+              "texto": "O adultério não interfere na partilha de bens do casal, mas tão somente no convívio do pai adúltero com os filhos menores de idade."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta. Desde a Emenda Constitucional nº 66/2010, que extinguiu a separação judicial como requisito para o divórcio e eliminou a exigência de prazos e da discussão de culpa, o divórcio é direito potestativo, incondicionado a qualquer causa. Consequentemente, a partilha de bens segue estritamente as regras do regime patrimonial escolhido pelo casal (no caso, comunhão parcial de bens), independentemente de culpa ou de eventual infidelidade de um dos cônjuges.",
+          "explicacaoErradas": "A) Errada: não há previsão de indenização em bens em favor do cônjuge traído como consequência automática do adultério; a partilha segue as regras objetivas do regime de bens, e eventual pretensão indenizatória por dano moral, quando cabível, é questão autônoma e pessoal, não se convertendo em partilha adicional de patrimônio. C) Errada: o adultério não acarreta a perda do direito à meação; a meação decorre exclusivamente das regras do regime de bens adotado, sem relação com a causa do fim do casamento. D) Errada: embora acerte ao afirmar que o adultério não interfere na partilha, erra ao vincular automaticamente a infidelidade à limitação do convívio do genitor com os filhos, o que depende de análise do melhor interesse da criança e não decorre automaticamente da traição conjugal.",
+          "pegadinha": "A pegadinha explora a crença popular ultrapassada de que 'quem trai perde os bens'. Com a EC 66/2010, a discussão de culpa deixou de ser relevante para o divórcio e para a partilha de bens, que segue exclusivamente as regras do regime patrimonial escolhido, independentemente de causas subjetivas como o adultério.",
+          "regraMemoria": "Após a EC 66/2010: divórcio SEM discussão de culpa. Partilha de bens SEMPRE segue o regime patrimonial escolhido, NUNCA é afetada por adultério ou por culpa de qualquer cônjuge."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Parte Geral",
+          "enunciado": "Joaquim estava jantando com sua família em um restaurante, quando percebeu que sua filha tinha iniciado um quadro alérgico, apresentando dificuldades respiratórias, que a colocavam em grave risco de morte. Em frente ao restaurante, havia uma clínica médica, onde buscaram atendimento. O médico de plantão, aproveitando-se da situação de urgência, exigiu pagamento antecipado de valor exorbitante – muito acima do cobrado regularmente por ele ou pelo mercado para esse tipo de atendimento. Joaquim, em desespero, anuiu com o pagamento desproporcional. Entretanto, depois do susto, consultou você, como advogado(a). Após inteirar-se do caso, você afirmou ao seu cliente que o negócio jurídico celebrado entre ele e o médico padecia de um defeito. Assinale a opção que o indica.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Dolo, com prazo decadencial de seis meses."
+            },
+            {
+              "letra": "B",
+              "texto": "Lesão, com prazo decadencial de dois anos."
+            },
+            {
+              "letra": "C",
+              "texto": "Estado de perigo, com prazo decadencial de quatro anos."
+            },
+            {
+              "letra": "D",
+              "texto": "Estado de necessidade, sem prazo decadencial."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta. Configura-se o estado de perigo (art. 156 do Código Civil) quando alguém, premido da necessidade de salvar-se ou a pessoa de sua família de grave dano CONHECIDO PELA OUTRA PARTE, assume obrigação excessivamente onerosa. No caso, o médico sabia da urgência médica da filha de Joaquim e se aproveitou dessa situação para cobrar valor exorbitante — é exatamente a hipótese de estado de perigo. O prazo decadencial para pleitear a anulação é de 4 anos, contados da realização do negócio jurídico, nos termos do art. 178, II, do Código Civil.",
+          "explicacaoErradas": "A) Errada: o dolo tem prazo decadencial de 4 anos, e não de 6 meses (art. 178 CC); além disso, o caso não configura dolo, pois não houve indução a erro por artifício malicioso, e sim aproveitamento consciente de situação de perigo alheia já existente. B) Errada: a lesão (art. 157 CC) caracteriza-se pela desproporção manifesta entre as prestações decorrente de premente necessidade ou inexperiência, sem exigir que a outra parte tenha conhecimento de um grave risco de vida; no caso, o elemento decisivo — conhecimento do médico sobre o risco à vida da filha — é próprio do estado de perigo, não da lesão; além disso, o prazo decadencial da lesão também é de 4 anos, e não de 2 anos. D) Errada: 'estado de necessidade' não é uma categoria de defeito do negócio jurídico prevista no Código Civil (arts. 138 a 165); trata-se de instituto de excludente de ilicitude na responsabilidade civil (art. 188, II, CC) e no direito penal, não sendo aplicável como vício contratual, tampouco havendo prazo decadencial pertinente ao caso.",
+          "pegadinha": "A pegadinha é confundir estado de perigo com lesão (ambos envolvem prestação desproporcional) e com 'estado de necessidade' (termo emprestado de outra área do Direito, que soa semelhante mas não é vício do negócio jurídico). O elemento decisivo para diferenciar estado de perigo de lesão é o conhecimento da outra parte sobre o grave risco vivido pela vítima, presente apenas no estado de perigo.",
+          "regraMemoria": "Estado de perigo = a outra parte SABE do risco de vida e se aproveita para impor prestação excessiva. Lesão = desproporção por necessidade/inexperiência, SEM exigir que a contraparte saiba do perigo. Ambos com prazo decadencial de 4 anos — 'estado de necessidade' não é vício do negócio jurídico."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Contratos",
+          "enunciado": "André, mediante contrato escrito, comprou o carro de passeio de seu vizinho, Bernardo. Duas semanas depois, enquanto André o conduzia por uma das principais avenidas da cidade, o veículo quebrou, por causa de um defeito não aparente na mangueira do radiador. Para pretender indenização por perdas e danos em desfavor de Bernardo pelo ocorrido, André deve provar",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "a existência de cláusula expressa no contrato de garantia contra vícios ocultos."
+            },
+            {
+              "letra": "B",
+              "texto": "a preexistência do defeito, mesmo que desconhecido por Bernardo."
+            },
+            {
+              "letra": "C",
+              "texto": "a preexistência do defeito e que Bernardo tinha conhecimento dele."
+            },
+            {
+              "letra": "D",
+              "texto": "a preexistência do defeito, que Bernardo tinha conhecimento dele e a existência de cláusula no contrato de garantia contra vícios ocultos."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta. A garantia contra vícios redibitórios decorre de lei (arts. 441 a 446 do CC), independentemente de previsão contratual expressa, e basta a preexistência do defeito oculto para que o adquirente possa pleitear a redibição do contrato ou o abatimento do preço. Contudo, para pleitear especificamente PERDAS E DANOS (indenização), o art. 443 do CC exige, adicionalmente, que se comprove que o alienante tinha conhecimento do vício ou defeito da coisa; se não o conhecia, o alienante restituirá apenas o valor recebido acrescido das despesas do contrato, sem indenização por perdas e danos.",
+          "explicacaoErradas": "A) Errada: a garantia legal contra vícios ocultos independe de cláusula contratual expressa, decorrendo diretamente da lei (arts. 441 e seguintes do CC). B) Errada: provar apenas a preexistência do defeito, ainda que desconhecido por Bernardo, permite a André pleitear a redibição ou o abatimento do preço (e a mera restituição do valor com despesas), mas não é suficiente para obter indenização por perdas e danos, que exige a prova adicional do conhecimento do vício pelo alienante (art. 443 CC). D) Errada: não é necessária cláusula contratual expressa de garantia, pois a responsabilidade por vício redibitório é de natureza legal, dispensando previsão contratual específica.",
+          "pegadinha": "A pegadinha reside em não distinguir a ação redibitória/estimatória simples (basta provar a preexistência do vício, independentemente da boa ou má-fé do vendedor) da pretensão específica de indenização por PERDAS E DANOS, que a lei condiciona à prova de que o alienante conhecia o defeito (art. 443 CC). Como o enunciado pede exatamente 'indenização por perdas e danos', o ônus probatório é mais amplo do que o exigido para a simples redibição.",
+          "regraMemoria": "Vício oculto: vendedor que NÃO sabia = só devolve o preço mais despesas. Vendedor que SABIA = perdas e danos completas (art. 443 CC). Para pedir indenização por perdas e danos, é preciso provar que ele sabia do defeito."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Família",
+          "enunciado": "Joana trabalhou por 15 anos como empregada doméstica na residência de Alzira, um imóvel de 60 metros quadrados, herdado de seu falecido pai. Durante todo esse período, Joana percebeu salários mensais, tal como acordado, porém nunca recebeu as verbas referentes às férias e ao décimo terceiro salário, bem como nunca teve as contribuições previdenciárias devidamente recolhidas. Depois da rescisão contratual, Joana promoveu a ação trabalhista, visando receber as verbas devidas e não pagas, tendo seus direitos reconhecidos por sentença transitada em julgado. Não obstante, o pagamento das verbas não foi realizado e, fato seguinte, foi promovida a execução, momento em que Joana, representada por seu advogado, diante do não pagamento e da inexistência de outros bens, requereu a penhora do imóvel residencial de Alzira. Ante a hipótese narrada, considerando que o imóvel residencial de Alzira é o único que ela possui, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O imóvel é impenhorável, mas os bens móveis que o guarnecem são penhoráveis, independentemente do valor dos mesmos."
+            },
+            {
+              "letra": "B",
+              "texto": "O imóvel é impenhorável, bem como são impenhoráveis os móveis que guarnecem a casa, exceto as obras de arte e os adornos suntuosos."
+            },
+            {
+              "letra": "C",
+              "texto": "O imóvel na execução promovida por Joana é, em qualquer hipótese, penhorável."
+            },
+            {
+              "letra": "D",
+              "texto": "O imóvel, na execução promovida por Joana, é penhorável, desde que comprovada a má-fé da devedora."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta. Nos termos dos arts. 1º e 2º da Lei nº 8.009/90, o imóvel residencial próprio da entidade familiar é impenhorável, assim como os móveis que o guarnecem, ressalvados apenas as obras de arte e os adornos suntuosos (que permanecem penhoráveis). A exceção que antes existia para créditos trabalhistas de empregados domésticos (antigo art. 3º, I, da Lei 8.009/90) foi expressamente revogada pela Lei nº 13.144/2015, de modo que, atualmente, mesmo dívida trabalhista de empregada doméstica não autoriza a penhora do único imóvel residencial do devedor.",
+          "explicacaoErradas": "A) Errada: os bens móveis que guarnecem a residência também são, em regra, impenhoráveis (art. 1º, parágrafo único, Lei 8.009/90), sendo penhoráveis apenas as obras de arte e os adornos suntuosos, e não 'independentemente do valor' como afirma a alternativa. C) Errada: o imóvel não é penhorável 'em qualquer hipótese'; é protegido pela impenhorabilidade do bem de família, com as exceções taxativas do art. 3º da Lei 8.009/90, nenhuma das quais se aplica ao caso (a exceção de crédito trabalhista doméstico foi revogada). D) Errada: a impenhorabilidade do bem de família é regra objetiva, que não depende da comprovação de má-fé do devedor; a proteção legal se aplica independentemente da boa ou má-fé de Alzira.",
+          "pegadinha": "A pegadinha clássica é lembrar da antiga exceção do art. 3º, I, da Lei 8.009/90, que permitia a penhora do bem de família para satisfazer crédito de trabalhador da própria residência (empregado doméstico) e suas contribuições previdenciárias. Essa exceção foi revogada pela Lei nº 13.144/2015, de modo que hoje o imóvel único permanece impenhorável mesmo diante de dívida trabalhista doméstica reconhecida judicialmente.",
+          "regraMemoria": "Bem de família: imóvel + móveis que o guarnecem são impenhoráveis, exceto obras de arte e adornos suntuosos. Desde a Lei 13.144/2015, dívida trabalhista de empregado doméstico NÃO é mais exceção — o imóvel único continua impenhorável."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Direitos Reais",
+          "enunciado": "Antônio, locatário de um imóvel residencial, verificou uma enorme infiltração atrás dos armários da cozinha. Com a finalidade de evitar maior deterioração do imóvel, Antônio realizou a obra a fim de reparar o dano e conservar o bem. Aproveitando a presença do empreiteiro em sua casa, reformou todos os armários dos quartos, para incluir portas de espelho e puxadores em cobre com o único objetivo de deixá-los mais sofisticados, pois os anteriores estavam em perfeito estado. Aproveitou também a oportunidade para incluir um grande aquário embutido na parede da sala. Diante da situação narrada, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Por não ser proprietário do bem, as obras realizadas por Antônio não podem ser consideradas como benfeitorias."
+            },
+            {
+              "letra": "B",
+              "texto": "As obras realizadas por Antônio são classificadas como benfeitorias úteis, pois facilitam o uso do bem."
+            },
+            {
+              "letra": "C",
+              "texto": "O reparo na cozinha é uma benfeitoria necessária, porque conserva e evita que a coisa se deteriore, e a reforma dos armários e do aquário são benfeitorias voluptuárias, pois trata- se de mero deleite."
+            },
+            {
+              "letra": "D",
+              "texto": "A reforma dos armários dos quartos e o aquário da sala valorizam o bem, sendo consideradas como benfeitorias úteis, diferente do reparo na cozinha que, por força da gravidade, classifica-se como benfeitoria necessária."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta porque aplica com precisão a classificação legal das benfeitorias (art. 96 do Código Civil). O reparo da infiltração na cozinha é benfeitoria necessária, pois tem por finalidade conservar o bem e evitar sua deterioração (art. 96, §3º, CC). Já a reforma dos armários dos quartos (que já estavam em perfeito estado, sendo trocados apenas por sofisticação) e o aquário embutido na sala são benfeitorias voluptuárias, pois configuram mero deleite ou recreio, não aumentando nem facilitando o uso habitual do bem, ainda que agreguem valor estético (art. 96, §1º, CC).",
+          "explicacaoErradas": "A alternativa A está errada porque a lei não exige a condição de proprietário para a caracterização de benfeitoria; qualquer possuidor, inclusive o locatário, pode realizar benfeitorias na coisa (art. 96 CC), com efeitos próprios quanto a indenização e retenção. A alternativa B está errada porque classifica como úteis (que aumentam ou facilitam o uso do bem) obras que, pela própria narrativa do enunciado, tinham finalidade meramente estética e de luxo (armários que já estavam em perfeito estado e aquário decorativo), o que as caracteriza como voluptuárias, não úteis. A alternativa D está errada porque inverte as categorias, tratando como úteis obras de mero deleite (armários e aquário) e atribui ao reparo necessário uma justificativa equivocada (\"por força da gravidade\"), quando o critério legal correto para a benfeitoria necessária é a finalidade de conservação/prevenção de deterioração, não a causa física do problema.",
+          "pegadinha": "A banca tenta induzir o candidato a confundir 'benfeitoria útil' com qualquer melhoria que valorize ou deixe o bem mais bonito, ignorando que o critério legal é a FINALIDADE da obra (conservar x facilitar o uso habitual x mero deleite), e não o valor agregado ao imóvel. Também insinua, na alternativa A, que só o proprietário poderia realizar benfeitorias, o que é falso.",
+          "regraMemoria": "Necessária conserva, útil facilita, voluptuária enfeita - e qualquer possuidor, não só o dono, pode fazer benfeitoria."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Família",
+          "enunciado": "Vitória e Rodrigo foram casados, em regime de comunhão parcial de bens, e são pais de Mariana. Quando Mariana atingiu 16 (dezesseis) anos, os pais divorciaram-se, passando a residir em lares distintos e a compartilhar a guarda de Mariana. Mariana passou a residir com o pai. A respeito do dever de educação de Mariana, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Caberá a Vitória e a Rodrigo, já que o dever de educação inserido nos deveres e direitos dos pais com relação aos filhos, no exercício do poder familiar, independe da situação conjugal de ambos."
+            },
+            {
+              "letra": "B",
+              "texto": "Com o divórcio, o dever de educação passa a ser somente do pai, com quem Mariana reside, sendo impossível fisicamente Vitória colaborar nesse sentido, dada a distância física de Mariana."
+            },
+            {
+              "letra": "C",
+              "texto": "Com o divórcio, caberá este dever somente ao pai, Rodrigo, pois, em que pese a guarda compartilhada, Mariana reside com ele."
+            },
+            {
+              "letra": "D",
+              "texto": "A guarda e a convivência determinam a quem caberá o dever de educar o filho, de modo que, nesse caso, o dever de educação passa a ser somente do pai."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta porque o dever de educação integra o poder familiar (art. 1.634 CC e art. 22 do ECA), que é exercido conjuntamente por ambos os genitores e não se altera pela separação ou pelo divórcio dos pais. O art. 1.579 do CC é expresso ao dispor que o divórcio não modifica os direitos e deveres dos pais em relação aos filhos. A guarda compartilhada, ademais, reforça exatamente essa corresponsabilidade de ambos os pais nas decisões relativas à vida do filho, incluindo a educação.",
+          "explicacaoErradas": "A alternativa B está errada porque a distância física entre mãe e filha não exime Vitória do dever de educação, que pode ser exercido de diversas formas (decisões conjuntas sobre escola, acompanhamento, contato, custeio), sem depender da coabitação. A alternativa C está errada pelo mesmo fundamento: a residência da filha com o pai (fixação do local de convívio) não retira da mãe o poder familiar nem o dever de educação, que persiste mesmo diante da guarda compartilhada. A alternativa D está errada porque confunde guarda/convivência (que regulam onde e com quem o filho reside e o tempo de contato) com poder familiar (conjunto de deveres, entre eles o de educar, que pertence a ambos os pais salvo destituição judicial).",
+          "pegadinha": "A banca associa 'residir com o pai' e 'guarda compartilhada' à falsa ideia de que apenas o genitor que detém a guarda física teria o dever de educação, confundindo guarda (local de convivência) com poder familiar (conjunto de deveres que independe do estado civil e da residência dos pais).",
+          "regraMemoria": "Poder familiar não se divorcia - o dever de educar é dos dois pais, morem juntos ou não, casados ou não."
+        },
+        {
+          "territorio": "Direito da Criança e do Adolescente",
+          "tema": "Adoção e Família Substituta",
+          "enunciado": "Rafael e Marta se casaram. Rafael tem dois filhos do relacionamento anterior, ambas crianças com idade inferior a 5 anos. A genitora das crianças teve decretada a perda do poder familiar em processo regular, com trânsito em julgado. Marta, então, em processo igualmente regular, adota os filhos de Rafael, passando em julgado também a decisão que lhe conferiu a maternidade. Marta e Rafael não conseguem manter um relacionamento saudável em razão do comportamento agressivo de Rafael, e, por isso, depois de alguns anos, eles se divorciam. No curso do processo, Marta demonstrou a impossibilidade da guarda compartilhada e obteve, judicialmente, a fixação da guarda unilateral das crianças, com direito a convívio semanal deferido a Rafael. Indignado, Rafael procura sua orientação como advogado(a), sob o argumento de que a adoção deve ser desfeita ou, ao menos, considerada sua paternidade biológica para fins de guarda. Sobre o caso, assinale a afirmativa que apresenta, corretamente, sua orientação.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A guarda unilateral do adotante é inadmitida em casos de adoção, devendo ser pretendida a revisão da decisão para fixação da guarda compartilhada."
+            },
+            {
+              "letra": "B",
+              "texto": "A adoção deve ser anulada judicialmente em caso de divórcio, pois este significa a quebra do vínculo que deu origem à filiação por adoção retornando a guarda, bem como todo o poder familiar, ao genitor biológico."
+            },
+            {
+              "letra": "C",
+              "texto": "Ainda que a adoção seja indissolúvel, o vínculo biológico deve, de fato, ter precedência sobre a filiação originada pela adoção para fins de definição da guarda."
+            },
+            {
+              "letra": "D",
+              "texto": "A adoção atribui a condição plena de filho ao adotado e de mãe à adotante, sendo completamente irrelevante essa origem da filiação como elemento influenciador do modelo de guarda."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta porque a adoção atribui ao adotado a condição plena de filho, com os mesmos direitos e deveres, inclusive sucessórios, desligando-o de qualquer vínculo com os pais e parentes biológicos, salvo os impedimentos matrimoniais (art. 41 do ECA c/c art. 1.626 do CC). É medida irrevogável. Assim, a origem da filiação (biológica ou adotiva) é absolutamente irrelevante para a definição do modelo de guarda, que se pauta pelo melhor interesse da criança, e não pela genética dos envolvidos.",
+          "explicacaoErradas": "A alternativa A está errada porque não existe vedação legal à guarda unilateral em favor do adotante; a adoção equipara totalmente o adotado a filho, de modo que as regras gerais de fixação de guarda (compartilhada como regra, unilateral quando comprovadamente inviável) aplicam-se sem qualquer restrição decorrente da filiação ser adotiva. A alternativa B está errada porque a adoção é irrevogável (art. 39, §1º, do ECA) e não se desfaz pelo divórcio dos adotantes; o vínculo com a genitora biológica já havia sido extinto pela destituição do poder familiar com trânsito em julgado, não havendo qualquer 'retorno' automático de poder familiar ao genitor biológico. A alternativa C está errada porque não existe hierarquia entre filiação biológica e filiação adotiva para fins de guarda; a adoção confere paternidade/maternidade plena e extingue definitivamente o vínculo jurídico anterior, que não pode ser 'recuperado' para justificar precedência na guarda.",
+          "pegadinha": "A banca explora o apelo emocional do argumento do pai biológico (que busca 'desfazer' a adoção ou dar prevalência ao vínculo genético após o divórcio) para induzir o candidato a admitir alguma reversibilidade da adoção ou precedência do vínculo biológico - ambas ideias juridicamente equivocadas, pois a adoção é irrevogável e rompe definitivamente o vínculo anterior.",
+          "regraMemoria": "Adoção é para sempre - filho por adoção é filho pleno, sem volta ao vínculo biológico e sem hierarquia de origem na definição da guarda."
+        },
+        {
+          "territorio": "Direito da Criança e do Adolescente",
+          "tema": "Ato Infracional e Medidas Socioeducativas",
+          "enunciado": "Rafael, de 16 anos, foi apreendido após invadir uma loja de cosméticos e, mediante o emprego de arma de fogo, subtrair os pertences do caixa. Devidamente processado, o juízo da infância aplicou a medida de semiliberdade ao adolescente, tendo ocorrido o trânsito em julgado. Depois de dois meses de cumprimento da medida, Laura, mãe de Rafael, procura você, como advogado(a), buscando sua orientação acerca da possibilidade de o adolescente realizar atividades externas, considerando que foi inaugurado estabelecimento que oferece diversos cursos profissionalizantes em local próximo à unidade socioeducativa. Sobre o caso narrado, levando em conta o Estatuto da Criança e do Adolescente, assinale a orientação que, corretamente, você deu a Laura.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "No regime de semiliberdade é possível realizar atividades externas, desde que haja autorização do juízo competente para a execução da medida socioeducativa."
+            },
+            {
+              "letra": "B",
+              "texto": "A semiliberdade só admite atividades externas após um ano de cumprimento da medida. Dessa forma, por ora, Rafael não poderá ser incluído no curso profissionalizante almejado."
+            },
+            {
+              "letra": "C",
+              "texto": "É possível que Rafael realize atividades externas, independentemente de autorização judicial."
+            },
+            {
+              "letra": "D",
+              "texto": "Durante a semiliberdade é inviável a realização de atividades externas, pois elas são cabíveis apenas nas medidas socioeducativas de liberdade assistida e de prestação de serviços à comunidade."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta porque, no regime de semiliberdade, a realização de atividades externas (trabalho, escola, cursos profissionalizantes) é admitida independentemente de autorização judicial (art. 120, §2º, do ECA), sendo, inclusive, obrigatória a escolarização e a profissionalização do adolescente nesse regime. Diferentemente da internação, em que saídas dependem de autorização judicial, a semiliberdade já pressupõe, por sua própria natureza, o contato regular do adolescente com o meio aberto.",
+          "explicacaoErradas": "A alternativa A está errada porque exige autorização judicial para atividade externa na semiliberdade, requisito que a lei não impõe para esse regime - essa exigência é característica da internação, não da semiliberdade. A alternativa B está errada porque não existe carência legal de um ano de cumprimento da medida para que o adolescente possa realizar atividades externas na semiliberdade; a atividade externa é regra desde o início da medida, não uma concessão futura. A alternativa D está errada porque atividades externas não são exclusivas da liberdade assistida e da prestação de serviços à comunidade; são inerentes também à semiliberdade, que permite ao adolescente frequentar escola e cursos profissionalizantes fora da unidade.",
+          "pegadinha": "A banca tenta confundir o regime de semiliberdade com o de internação (este sim condicionado a autorização judicial para saídas), induzindo o candidato a 'importar' essa exigência para a semiliberdade, que é medida menos gravosa e já pressupõe, como regra, o contato do adolescente com o meio aberto.",
+          "regraMemoria": "Semiliberdade já é liberdade - atividade externa é regra, sem precisar de autorização do juiz; só a internação depende de autorização judicial para saídas."
+        },
+        {
+          "territorio": "Direito do Consumidor",
+          "tema": "Práticas e Contratos de Consumo",
+          "enunciado": "Carlos, um consumidor, celebrou um contrato de adesão para aquisição de um pacote turístico. Ao ler atentamente o contrato, Carlos identificou uma cláusula que determinava que ele não poderia requerer indenização à empresa em caso de eventuais prejuízos decorrentes de cancelamentos por causas naturais. Preocupado, Carlos procura você, como advogado(a), para buscar amparo legal e entender a validade da cláusula em questão. Diante disso, assinale a afirmativa que apresenta, corretamente, sua orientação.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A cláusula é válida, porque o Art. 51 do CDC possui um rol exemplificativo de cláusulas abusivas, e essa cláusula específica não está listada entre as proibidas."
+            },
+            {
+              "letra": "B",
+              "texto": "A cláusula é inválida, porque o Art. 51 do CDC possui um rol taxativo de cláusulas abusivas, e essa cláusula não está listada entre as permitidas."
+            },
+            {
+              "letra": "C",
+              "texto": "A cláusula é válida, porque o Art. 51 do CDC, que possui um rol de cláusulas abusivas, não se aplica aos contratos de adesão."
+            },
+            {
+              "letra": "D",
+              "texto": "A cláusula é inválida, porque o Art. 51 do CDC apresenta um rol exemplificativo de cláusulas abusivas, permitindo a anulação das cláusulas que se mostrem abusivas, mesmo que não listadas."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta porque o rol do art. 51 do CDC é exemplificativo (numerus apertus), tanto pela expressão 'entre outras' constante do caput quanto pela cláusula geral do inciso XV (violação de princípios como boa-fé e equidade). Assim, mesmo que a cláusula específica de exclusão de indenização por causas naturais não esteja literalmente listada, ela pode ser reconhecida como abusiva e, portanto, nula de pleno direito, por gerar desvantagem exagerada ao consumidor e violar a boa-fé objetiva.",
+          "explicacaoErradas": "A alternativa A está errada porque, embora reconheça corretamente que o rol é exemplificativo, conclui de forma equivocada que a cláusula seria válida por não constar da lista - o raciocínio correto é o oposto: mesmo não listada, a cláusula pode ser abusiva e, portanto, inválida. A alternativa B está errada porque parte de premissa falsa: o rol do art. 51 do CDC não é taxativo, é exemplificativo. A alternativa C está errada porque o art. 51 do CDC aplica-se justamente aos contratos de adesão, sendo esse o dispositivo típico de controle de cláusulas abusivas nessa espécie contratual, e não havendo qualquer exclusão dos contratos de adesão de sua incidência.",
+          "pegadinha": "A banca constrói duas alternativas com premissa errada (rol taxativo, ou inaplicável a contratos de adesão) e uma com a premissa certa (rol exemplificativo) mas conclusão errada (cláusula válida), exigindo do candidato que acerte tanto a natureza do rol quanto a consequência lógica correta.",
+          "regraMemoria": "Art. 51 do CDC é 'rol de exemplo', não é lista fechada - cláusula abusiva é nula mesmo que não esteja listada."
+        },
+        {
+          "territorio": "Direito do Consumidor",
+          "tema": "Direitos Básicos e Informação",
+          "enunciado": "Você, como advogado(a), foi procurado(a) pela senhora Magda para orientá-la quanto às dificuldades de atendimento de suas demandas no Serviço de Atendimento ao Consumidor (SAC) da operadora do plano de saúde a que ela aderiu a partir do mês de novembro de 2022. A consulente narrou a você que não consegue contato telefônico com o SAC nos finais de semana, pois o atendimento se encerra às 22h de sexta-feira e só é retomado a partir de 6h de segunda-feira e não há outro canal de atendimento no período indicado para o registro de demandas. Por fim, durante o tempo de espera para atendimento, a operadora veicula várias mensagens de caráter informativo sobre os procedimentos para fruição de direitos dos clientes e acesso à rede referenciada e mensagens publicitárias de seus patrocinadores. Com base na narrativa e nas determinações legais para atendimento de demandas no SAC, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Os fatos narrados pela consulente não constituem infração, podendo ser interrompido o atendimento em certos horários; é possível veicular mensagens informativas antes do atendimento, vedadas as mensagens publicitárias de seus patrocinadores."
+            },
+            {
+              "letra": "B",
+              "texto": "A operadora do plano de saúde pode interromper o atendimento ao consumidor em horários previamente determinados e divulgados, bem como apenas pode veicular mensagens de caráter informativo e publicitárias de seus próprios produtos e serviços."
+            },
+            {
+              "letra": "C",
+              "texto": "É defeso à operadora do plano de saúde interromper o atendimento ao consumidor, mas está autorizada a veicular mensagens informativas desde que tratem dos direitos e deveres dos consumidores."
+            },
+            {
+              "letra": "D",
+              "texto": "Os fatos narrados pela consulente revelam que a operadora do plano de saúde não cometeu infração administrativa, pois não é obrigatório disponibilizar outros canais de acesso ao SAC além do atendimento telefônico, sendo possível veicular mensagens antes do atendimento."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta porque a regulamentação do SAC (Decreto 6.523/2008 e normas específicas da ANS para planos de saúde) exige atendimento ininterrupto, 24 horas por dia, 7 dias por semana, sendo vedada a interrupção do serviço em finais de semana ou feriados. Durante o tempo de espera, é permitida apenas a veiculação de mensagens de caráter informativo relacionadas aos direitos e deveres do consumidor e aos procedimentos de acesso aos serviços, sendo vedada a propaganda comercial ou publicitária nesse período.",
+          "explicacaoErradas": "A alternativa A está errada porque afirma não haver infração na interrupção do atendimento, quando, na verdade, o funcionamento deve ser ininterrupto; acerta apenas quanto à vedação das mensagens publicitárias de patrocinadores. A alternativa B está errada porque autoriza tanto a interrupção do atendimento quanto a veiculação de mensagens publicitárias (ainda que de produtos próprios), duas condutas vedadas pela regulamentação setorial. A alternativa D está errada porque afirma que não houve infração e que não seria obrigatória a disponibilização de canal alternativo, quando a própria interrupção do atendimento telefônico sem alternativa nos finais de semana já configura descumprimento da exigência de atendimento contínuo.",
+          "pegadinha": "A banca explora a crença de que o SAC funcionaria como uma central comercial comum, com horário restrito, e insere a veiculação de mensagens publicitárias como permitida, quando a regulamentação da saúde suplementar exige SAC 24 horas por dia, todos os dias da semana, e proíbe propaganda durante a espera, permitindo apenas conteúdo informativo sobre direitos e deveres do consumidor.",
+          "regraMemoria": "SAC de plano de saúde nunca dorme (24h por 7 dias) e, na espera, só informa direitos - nunca faz propaganda."
+        },
+        {
+          "territorio": "Direito Empresarial",
+          "tema": "Recuperação Judicial e Falência",
+          "enunciado": "O juiz da falência da sociedade empresária Refrigeração Abaíra Ltda. determinou que o administrador judicial ficasse responsável pela guarda dos bens arrecadados. O administrador judicial, entretanto, apresentou justificativas que o impossibilitavam de assumir tal encargo. Foi proposto ao juiz que os bens situados fora do estabelecimento da falida ficassem sob a guarda do Sr. Belmonte, conhecido empresário na Comarca, e sob a responsabilidade do administrador judicial. Para os bens situados dentro do estabelecimento, inclusive o próprio imóvel, propôs o administrador judicial que a Sra. América Dourada, ex- administradora da sociedade e representante da falida no processo, fosse nomeada depositária dos bens. Sobre a proposta do administrador judicial, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "É ilícita, porque é uma atribuição legal e personalíssima do administrador judicial ter os bens arrecadados do falido sob sua guarda."
+            },
+            {
+              "letra": "B",
+              "texto": "Deve ser acatada, pois é permitido que os bens arrecadados fiquem sob a guarda da pessoa por ele escolhida e sob sua responsabilidade, podendo também qualquer dos representantes do falido ser nomeado depositário dos bens."
+            },
+            {
+              "letra": "C",
+              "texto": "Deve ser rejeitada, ante a vedação legal que o falido ou qualquer de seus representantes seja nomeado depositário de quaisquer bens."
+            },
+            {
+              "letra": "D",
+              "texto": "Deve ser aceita somente se os depositários indicados – Sr. Belmonte e Sra. América Dourada – prestarem caução antes de serem imitidos na posse dos bens."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta porque a Lei 11.101/2005 permite que o administrador judicial, quando impossibilitado de exercer pessoalmente a guarda dos bens arrecadados, confie-a a terceiro de sua escolha, permanecendo, contudo, responsável por essa guarda. Além disso, a lei falimentar autoriza expressamente que o próprio falido ou qualquer de seus representantes seja nomeado depositário dos bens arrecadados, solução que viabiliza a preservação do patrimônio e reduz custos ao processo falimentar.",
+          "explicacaoErradas": "A alternativa A está errada porque a guarda dos bens arrecadados não é atribuição personalíssima e indelegável do administrador judicial; a lei expressamente permite a delegação a terceiro, sob a responsabilidade do administrador. A alternativa C está errada porque não há vedação legal a que o falido ou seus representantes sejam nomeados depositários dos bens; ao contrário, a lei permite expressamente essa nomeação. A alternativa D está errada porque a nomeação dos depositários não está condicionada, na lei, à prestação de caução antes da imissão na posse dos bens; essa exigência não integra o regime legal de guarda de bens na falência.",
+          "pegadinha": "A banca insinua que a guarda dos bens arrecadados seria função indelegável do administrador judicial (por ser cargo de confiança do juízo), tentando levar o candidato a rejeitar tanto a delegação a terceiro quanto a nomeação do próprio falido ou de seu representante como depositário - quando a lei expressamente autoriza ambas as soluções.",
+          "regraMemoria": "Na falência, o administrador pode delegar a guarda dos bens a terceiro, e até o falido ou seu representante pode ser depositário - a responsabilidade do administrador permanece, mas a guarda física pode ser de outrem."
+        },
+        {
+          "territorio": "Direito Empresarial",
+          "tema": "Propriedade Industrial",
+          "enunciado": "Os cientistas Pio Alves e Cardoso Moreira desenvolveram dois produtos que reúnem os requisitos de patenteabilidade e reivindicaram a autoria perante o Instituto Nacional da Propriedade Industrial (INPI). O primeiro recebeu registro de patente na categoria de invenção e, o segundo, a patente na categoria de modelo de utilidade. Assinale a opção que indica o privilégio de exploração que as patentes assegurarão aos autores.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Temporário, para ambos."
+            },
+            {
+              "letra": "B",
+              "texto": "Vitacílio, para ambos."
+            },
+            {
+              "letra": "C",
+              "texto": "Perpétuo, até a terceira geração de descedentes dos autores."
+            },
+            {
+              "letra": "D",
+              "texto": "Temporário, para Pio Alves, autor da invenção, e vitalício para Cardoso Moreira, autor do modelo de utilidade."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta porque tanto a patente de invenção quanto a de modelo de utilidade conferem ao titular um privilégio de exploração sempre temporário, nos termos do art. 40 da Lei 9.279/1996: 20 (vinte) anos para a invenção e 15 (quinze) anos para o modelo de utilidade, contados da data do depósito do pedido. Findo esse prazo, a criação cai em domínio público, podendo ser livremente explorada por terceiros.",
+          "explicacaoErradas": "A alternativa B está errada porque não existe privilégio vitalício em matéria de patentes; o prazo de exploração é sempre determinado (temporário), diferentemente do que ocorre, por exemplo, com certos direitos da personalidade. A alternativa C está errada porque não há privilégio perpétuo nem transmissão do monopólio de exploração por gerações de descendentes; a patente tem prazo certo e definido em lei. A alternativa D está errada porque cria uma distinção inexistente na legislação: tanto a patente de invenção quanto a de modelo de utilidade têm prazos temporários (apenas com durações diferentes - 20 e 15 anos), não havendo qualquer hipótese de privilégio vitalício para nenhuma delas.",
+          "pegadinha": "A banca tenta induzir o candidato a associar o 'modelo de utilidade' a um regime mais brando ou perene por se tratar de criação tida como 'menor' em relação à invenção, sugerindo prazo vitalício - mas a única diferença legal entre as duas modalidades está na duração do prazo de proteção (20 x 15 anos), sendo ambas necessariamente temporárias.",
+          "regraMemoria": "Toda patente tem prazo de validade - invenção 20 anos, modelo de utilidade 15 anos, nunca vitalícia, nunca perpétua."
+        },
+        {
+          "territorio": "Direito Empresarial",
+          "tema": "Tipos Societários",
+          "enunciado": "Quatro pessoas naturais constituíram uma sociedade para exploração de prestação de serviços de entrega domiciliar, mas não se preocuparam em arquivar o documento particular de constituição em qualquer registro. Considerando a situação dessa sociedade e as disposições aplicáveis, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Ela se rege pelas normas da sociedade em comum e, subsidiariamente, no que forem compatíveis, pelas normas da sociedade simples."
+            },
+            {
+              "letra": "B",
+              "texto": "Ela se rege pelas normas da sociedade em conta de participação e, subsidiariamente e no que forem compatíveis, pelas normas das sociedades por ações."
+            },
+            {
+              "letra": "C",
+              "texto": "Ela se rege pelas normas da sociedade simples e, subsidiariamente e no que forem compatíveis, pelas normas da sociedade cooperativa."
+            },
+            {
+              "letra": "D",
+              "texto": "Ela se rege pelas normas da companhia e, subsidiariamente e no que forem compatíveis, pelas normas da sociedade limitada."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta porque a sociedade cujos atos constitutivos não foram arquivados no registro próprio é classificada como sociedade em comum (art. 986 do Código Civil), sendo regida pelas normas próprias dos arts. 986 a 990 do CC e, subsidiariamente, no que forem compatíveis, pelas normas da sociedade simples, que constitui o regime geral e residual do Código Civil para as sociedades personificadas de pessoas.",
+          "explicacaoErradas": "A alternativa B está errada porque a sociedade em conta de participação é figura distinta, com sócio ostensivo e sócio participante, regida por regras próprias (arts. 991 a 996 do CC), não se confundindo com a sociedade em comum decorrente da simples ausência de registro. A alternativa C está errada porque, embora acerte o regime principal (sociedade simples), erra a norma subsidiária: não há remissão legal à sociedade cooperativa nesse contexto. A alternativa D está errada porque a sociedade em comum não se rege pelas normas de companhia (sociedade anônima), regime absolutamente incompatível com uma sociedade não personificada e sem registro.",
+          "pegadinha": "A banca insere nomes de sociedades 'parecidas' (conta de participação, cooperativa, companhia) para confundir com o regime supletivo correto, que é simplesmente a aplicação, no que compatível, das normas da sociedade simples à sociedade em comum.",
+          "regraMemoria": "Sociedade sem registro é sociedade em comum, e sociedade em comum sempre toma emprestadas as regras da sociedade simples."
+        },
+        {
+          "territorio": "Direito Empresarial",
+          "tema": "Nome Empresarial e Estabelecimento",
+          "enunciado": "A partir de 2022, a possibilidade de o local de exercício da atividade empresarial ser virtual passou a ser reconhecido no Código Civil. A respeito desse tema, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Se o empresário ou a sociedade empresária exercer a empresa em local virtual, tal local é denominado pelo Código Civil de “estabelecimento virtual”, com o mesmo significado jurídico de estabelecimento."
+            },
+            {
+              "letra": "B",
+              "texto": "Ao contrário do local físico de exercício da empresa, se ele for virtual, a fixação do horário de funcionamento competirá ao Município, observada a regra geral de qualquer horário ou dia da semana, inclusive feriados."
+            },
+            {
+              "letra": "C",
+              "texto": "Quando o local em que se exerce a atividade empresarial for virtual, o endereço informado para fins de registro poderá ser, conforme o caso, o endereço do empresário individual ou o de um dos sócios da sociedade empresária."
+            },
+            {
+              "letra": "D",
+              "texto": "A escolha do local virtual de exercício da empresa impõe ao empresário ou ao administrador da sociedade empresária o dever de comunicar sua alteração à Junta Comercial nos 15 (quinze) dias seguintes."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta porque o art. 1.142, §3º, do Código Civil (incluído pela Lei 14.195/2021) prevê que, quando o local de exercício da atividade empresarial for virtual, considera-se, para fins de endereço a ser informado no registro, o endereço do empresário individual ou o de um dos sócios da sociedade empresária, conforme o caso.",
+          "explicacaoErradas": "A alternativa A está errada porque o Código Civil não denomina o local virtual como 'estabelecimento virtual' com o mesmo significado jurídico de estabelecimento empresarial clássico (art. 1.142 CC); a lei apenas disciplina a possibilidade de a sede ser virtual para fins de endereçamento e registro, sem equipará-la ao conceito tradicional de estabelecimento físico. A alternativa B está errada porque não há na lei competência municipal para fixação de horário de funcionamento de sede virtual nem regra legal de funcionamento ininterrupto nesse sentido; essa questão está ligada ao estabelecimento físico e ao poder de polícia municipal, não ao regime criado para a sede virtual. A alternativa D está errada porque não existe na lei prazo específico de 15 dias para comunicar à Junta Comercial alteração de endereço virtual; trata-se de exigência inventada, sem correspondência com o texto legal.",
+          "pegadinha": "A banca cria regras específicas plausíveis (nome técnico 'estabelecimento virtual', prazo de 15 dias, competência municipal para horário) que soam coerentes mas não constam da lei - a única novidade real e testável é a regra do endereço de registro (empresário individual ou sócio) para a sede virtual.",
+          "regraMemoria": "Sede virtual usa o endereço de pessoa física (empresário individual ou sócio) para fins de registro - a lei não criou o conceito de 'estabelecimento virtual' equiparado a estabelecimento."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Recursos",
+          "enunciado": "Felipe propôs ação de reparação de danos contra Gustavo fundada em responsabilidade extracontratual, em razão de Felipe ter sido atacado pelo cachorro de Gustavo, enquanto transitava pela rua perto de sua casa. Em primeira instância, os pedidos formulados por Felipe em sua petição inicial foram julgados totalmente procedentes. Depois da publicação da sentença de procedência, Gustavo interpôs apelação para buscar a reforma integral da sentença. Simultaneamente, Felipe opôs embargos de declaração contra a sentença para obter a majoração dos honorários de sucumbência, considerando que não foi fixado o percentual mínimo previsto no Art. 85, § 2º, do Código de Processo Civil. Sobre essa situação hipotética, assinale a afirmativa que apresenta, corretamente, a conduta que você, como advogado(a) do embargado, deverá adotar.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Apresentar nova apelação após o julgamento dos embargos de declaração opostos por Felipe, independentemente do resultado do julgamento dos embargos de declaração."
+            },
+            {
+              "letra": "B",
+              "texto": "Complementar ou alterar as razões de apelação, se houver o acolhimento dos embargos de declaração opostos por Felipe."
+            },
+            {
+              "letra": "C",
+              "texto": "Ratificar as razões de sua apelação após o julgamento dos embargos opostos por Felipe, sob pena de não conhecimento do recurso de apelação."
+            },
+            {
+              "letra": "D",
+              "texto": "Apresentar nova apelação após o julgamento dos embargos de declaração opostos por Felipe se os os embargos de declaração forem acolhidos."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta porque, havendo acolhimento dos embargos de declaração opostos por Felipe com efeito modificativo ou integrativo sobre ponto relevante para o recurso já interposto (a fixação do percentual mínimo de honorários do art. 85, §2º, CPC), o embargado que já havia apelado deverá complementar ou alterar as razões de sua apelação para tratar da nova questão decidida (art. 1.024, §4º, do CPC), sem necessidade de interposição de recurso autônomo.",
+          "explicacaoErradas": "A alternativa A está errada porque não é necessária nova apelação 'independentemente do resultado' dos embargos; somente havendo acolhimento com modificação relevante é que há necessidade de manifestação, e ainda assim por complementação das razões já apresentadas. A alternativa C está errada porque a exigência de 'ratificação sob pena de não conhecimento' não corresponde à sistemática do art. 1.024, §4º, do CPC, que prevê a complementação ou alteração das razões, não a ratificação obrigatória sob pena de inadmissibilidade do recurso. A alternativa D está errada porque fala em interpor 'nova apelação', quando o correto é complementar ou alterar as razões já apresentadas na apelação existente, sem substituí-la por recurso novo e autônomo.",
+          "pegadinha": "A banca explora a diferença entre 'interpor nova apelação' (incorreto) e 'complementar/alterar as razões da apelação já interposta' (correto) - o candidato precisa saber que a apelação já protocolada não é substituída, apenas suas razões podem ser ajustadas em razão do resultado do julgamento dos embargos de declaração.",
+          "regraMemoria": "Embargos de declaração acolhidos depois da apelação já interposta? Complementa as razões, nunca apela de novo."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Recursos",
+          "enunciado": "Leonardo adquiriu uma televisão na Loja Francesa pelo valor de R$ 12.000,00 (doze mil reais), quantia que seria paga por meio de cartão de crédito em 12 (doze) parcelas de R$ 1.000,00. Ocorre que, após o pagamento da 6ª (sexta) parcela, a Loja Francesa passou a cobrar R$ 2.000,00 (dois mil reais) de Leonardo nas 6 (seis) parcelas restantes. Por ter constatado a cobrança indevida somente depois de realizar o pagamento integral, Leonardo ajuizou ação pelo procedimento comum em face da Loja Francesa para ser ressarcido em dobro pelo valor indevidamente cobrado na forma do Art. 42, parágrafo único, do Código de Defesa do Consumidor. Depois da contestação e regular instrução, o Juízo da Vara Cível competente proferiu sentença julgando procedente o pedido de Leonardo, com a consequente condenação da Loja Francesa ao pagamento de R$12.000,00, acrescido de correção monetária e juros legais. Ato contínuo, a Loja Francesa interpôs recurso de apelação, que foi desprovido pelo Tribunal de Justiça. Em seguida, a Loja Francesa interpôs recurso especial, porém intempestivamente. Como existiam inúmeros recursos sobre a admissibilidade da devolução em dobro em caso de cobrança indevida contra o consumidor, com fundamento no Art. 42, parágrafo único, do Código de Defesa do Consumidor, essa controvérsia jurídica foi afetada para o rito do julgamento dos recursos repetitivos e implicou o sobrestamento do recurso especial da Loja Francesa. Ato contínuo, Leonardo requereu que o recurso especial da Loja Francesa não fosse sobrestado, uma vez que era intempestivo. Embora intempestivo o recurso, o referido requerimento foi indeferido. Na condição de advogado(a) de Leonardo, assinale a opção que indica o recurso cabível para alterar essa decisão.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Não será possível interpor qualquer recurso, pois é irrecorrível a decisão que indefere o requerimento de exclusão de sobrestamento do recurso especial impactado pelo procedimento dos recursos especiais repetitivos."
+            },
+            {
+              "letra": "B",
+              "texto": "Reclamação, pois é irrecorrível a decisão que indefere o requerimento de exclusão de sobrestamento do recurso especial impactado pelo procedimento dos recursos especiais repetitivos."
+            },
+            {
+              "letra": "C",
+              "texto": "Ação rescisória, pois é irrecorrível a decisão que indefere o requerimento de exclusão de sobrestamento do recurso especial impactado pelo procedimento dos recursos especiais repetitivos."
+            },
+            {
+              "letra": "D",
+              "texto": "Agravo interno, pois esse é o recurso cabível contra a decisão que indefere o requerimento de exclusão de sobrestamento do recurso especial impactado pelo procedimento dos recursos especiais repetitivos."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta porque a decisão que indefere o pedido de exclusão do sobrestamento de recurso especial afetado ao rito dos repetitivos é decisão monocrática (proferida pelo relator ou pelo presidente/vice-presidente do tribunal), sendo cabível o agravo interno para submeter a questão ao órgão colegiado (art. 1.021 do CPC, aplicável ao sistema de julgamento de recursos repetitivos).",
+          "explicacaoErradas": "A alternativa A está errada porque afirma ser irrecorrível a decisão, quando, na verdade, há recurso cabível (agravo interno) contra a decisão monocrática de indeferimento do pedido de exclusão do sobrestamento. A alternativa B está errada porque a reclamação não é o instrumento adequado para impugnar decisão que comporta recurso próprio (agravo interno); a reclamação serve para preservar competência ou garantir autoridade de decisão do tribunal, não para substituir recurso cabível. A alternativa C está errada porque a ação rescisória serve para desconstituir decisão de mérito transitada em julgado, sendo incompatível com a natureza interlocutória e imediatamente recorrível da decisão sobre sobrestamento.",
+          "pegadinha": "A banca insiste, em três das quatro alternativas, na premissa falsa de que a decisão seria irrecorrível, para induzir o candidato a buscar sucedâneos recursais (reclamação, ação rescisória) em vez de reconhecer o recurso ordinário cabível contra decisão monocrática: o agravo interno.",
+          "regraMemoria": "Decisão monocrática de relator sobre sobrestamento de recurso repetitivo? Sempre cabe agravo interno para o colegiado."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Cumprimento de Sentença e Execução",
+          "enunciado": "O engenheiro civil José Carlos Silva trabalha em Aracaju/SE. Ele realizou a reforma da casa de Luzia, no valor de R$ 15.000,00 (quinze mil reais). O serviço foi devidamente prestado, sem qualquer reclamação por eventuais falhas por parte de Luzia. Contudo, Luzia não efetuou o pagamento no prazo estipulado. José Carlos procurou Luzia para resolver o pagamento da dívida sem buscar o Poder Judiciário e, após diversas tratativas, Luzia assinou um documento particular em que reconhece a dívida de R$ 15.000,00 (quinze mil reais).  O referido instrumento também foi assinado por duas testemunhas. Porém, no prazo estipulado para cumprimento da obrigação, Luzia não efetuou o pagamento e José Carlos ajuizou uma execução de título extrajudicial em face de Luzia. Depois da citação e da ausência do pagamento de Luzia, José Carlos pede ao Juiz que Luzia indique bens sujeitos à penhora, sob pena de multa, pois caso não indique, sua conduta poderá ser considerada atentatória à dignidade da justiça. Sobre o requerimento de José Carlos, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "José Carlos não poderá efetuar esse requerimento, pois não é possível o arbitramento de multa caso Luzia não indique bens sujeitos à penhora."
+            },
+            {
+              "letra": "B",
+              "texto": "José Carlos poderá efetuar esse requerimento, sendo considerada atentatória à dignidade da justiça conduta comissiva ou omissiva da executada que intimada, não indica ao juiz quais são e onde estão os bens sujeitos à penhora e os respectivos valores, nem exibe prova de sua propriedade e, se for o caso, a certidão negativa de ônus."
+            },
+            {
+              "letra": "C",
+              "texto": "José Carlos poderá efetuar esse requerimento, sendo possível o arbitramento de multa superior a 30% do valor atualizado da execução, mas não poderá ocorrer nenhuma outra sanção de natureza processual ou material em face da executada"
+            },
+            {
+              "letra": "D",
+              "texto": "José Carlos não poderá efetuar esse requerimento, pois é sua obrigação indicar os bens possíveis de penhora de Luzia."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta porque, nos termos do art. 774, V, do CPC, considera-se atentatória à dignidade da justiça a conduta comissiva ou omissiva do executado que, intimado, não indica ao juízo quais são e onde estão os bens sujeitos à penhora e seus respectivos valores, nem exibe prova de sua propriedade e, se for o caso, certidão negativa de ônus, sujeitando-se à multa de até 20% (vinte por cento) do valor atualizado do débito em execução, conforme o parágrafo único do mesmo artigo.",
+          "explicacaoErradas": "A alternativa A está errada porque é sim possível o arbitramento de multa por ato atentatório à dignidade da justiça quando o executado, regularmente intimado, não indica bens penhoráveis, conforme expressamente previsto no art. 774, V, do CPC. A alternativa C está errada porque a multa por ato atentatório à dignidade da justiça é de até 20% (vinte por cento) do valor atualizado do débito, e não superior a 30%; além disso, a lei não exclui a aplicação de outras sanções processuais ou materiais cabíveis. A alternativa D está errada porque não é obrigação do exequente indicar os bens do executado; ao contrário, é o executado, uma vez intimado, quem tem o dever legal de indicar seus próprios bens penhoráveis, sob as sanções previstas em lei.",
+          "pegadinha": "A banca altera o percentual correto da multa (até 20%) para 'superior a 30%' em uma das alternativas e, em outra, inverte o ônus de indicação dos bens (sugerindo que caberia ao credor indicar os bens do devedor), testando o conhecimento literal do art. 774 do CPC.",
+          "regraMemoria": "Executado intimado que não indica bens penhoráveis sofre multa de até 20% - o dever de indicar bens é sempre do devedor, nunca do credor."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Petição Inicial e Resposta do Réu",
+          "enunciado": "Júlio, advogado ainda inexperiente, preocupado com a possibilidade de perder o prazo para oferecer contestação em favor de Roberta, sua cliente que está viajando, indaga a você se ele deve esperar o retorno de Roberta, que esqueceu de fornecer procuração. Diante desse cenário, assinale a afirmativa que, corretamente, apresenta sua orientação.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Júlio pode oferecer contestação, independentemente de procuração, desde que junte o instrumento aos autos no prazo de 15 dias, a fim de evitar preclusão."
+            },
+            {
+              "letra": "B",
+              "texto": "Júlio pode oferecer contestação, independentemente de instrumento de mandato, apenas se a parte contrária concordar."
+            },
+            {
+              "letra": "C",
+              "texto": "Júlio deve aguardar o retorno de Roberta, tendo em vista que o advogado não será admitido a postular em juízo sem procuração."
+            },
+            {
+              "letra": "D",
+              "texto": "Júlio, caso os direitos tratados em juízo sejam disponíveis, pode oferecer contestação mesmo que desacompanhada de procuração e, caso os mencionados direitos estejam indisponíveis, ele deve aguardar o retorno de Roberta, tendo em vista que, nesse caso, o advogado não será admitido a postular em juízo sem procuração."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta porque o art. 104 do CPC autoriza o advogado a praticar atos considerados urgentes (como oferecer contestação para evitar preclusão ou revelia) mesmo sem procuração nos autos, desde que se obrigue a juntar o instrumento de mandato no prazo de 15 (quinze) dias, prorrogável por igual período mediante despacho do juiz.",
+          "explicacaoErradas": "A alternativa B está errada porque a possibilidade de atuação sem procuração em atos urgentes não depende da concordância da parte contrária; é prerrogativa prevista em lei, condicionada apenas à posterior juntada do instrumento de mandato no prazo legal. A alternativa C está errada porque contraria expressamente o art. 104 do CPC, que autoriza a atuação sem procuração justamente nos casos de urgência, mediante compromisso de regularização documental em até 15 dias. A alternativa D está errada porque cria uma distinção entre direitos disponíveis e indisponíveis que não existe no art. 104 do CPC para a prática de atos urgentes sem procuração; a regra vale independentemente da natureza do direito discutido em juízo.",
+          "pegadinha": "A banca tenta induzir o candidato a crer que a atuação sem procuração dependeria da aquiescência da parte contrária, ou da natureza (disponível/indisponível) do direito em discussão, quando, na verdade, o art. 104 do CPC autoriza a atuação em caráter de urgência de forma geral, exigindo apenas a regularização documental em até 15 dias.",
+          "regraMemoria": "Ato urgente sem procuração? Pode, mas junta o instrumento em 15 dias (prorrogáveis por mais 15) - a regra vale sempre, seja qual for a natureza do direito discutido."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Recursos",
+          "enunciado": "Na qualidade de servidor público estadual, Marcos ajuizou ação pelo procedimento comum contra o Estado de Minas Gerais, buscando obter o pagamento de determinada verba remuneratória que lhe teria sido suprimida de forma administrativa, em contrariedade ao que dispõe a lei. Depois da citação do Estado de Minas Gerais e do regular curso do feito, o juiz responsável pela tramitação da ação julgou procedente o pedido formulado por Marcos, condenando o ente estatal ao pagamento da verba remuneratória. Na sequência, o cartório da serventia do juízo procedeu à intimação eletrônica das partes acerca da sentença, visto tratar-se de processo eletrônico. Sobre a situação hipotética descrita, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O prazo de que disporá o Estado de Minas Gerais para a interposição de eventual recurso de apelação será de 15 (quinze) dias úteis, contados do dia útil seguinte à consulta ao teor da intimação ou ao término do prazo para que a consulta se dê, dado que a intimação da sentença ocorreu de forma eletrônica, não devendo o prazo ser contado em dobro."
+            },
+            {
+              "letra": "B",
+              "texto": "O Estado de Minas Gerais poderá alegar a nulidade da intimação, visto não ser lícita a utilização de meio eletrônico para a comunicação de atos processuais, sendo imprescindível a intimação pessoal do ente estatal, que somente se pode dar por carga ou remessa dos autos."
+            },
+            {
+              "letra": "C",
+              "texto": "Caso o Estado de Minas Gerais tivesse interposto apelação antes de intimado eletronicamente da sentença, o recurso haveria de ser considerado intempestivo, por ter sido apresentado antes do termo inicial do prazo."
+            },
+            {
+              "letra": "D",
+              "texto": "Caso vislumbre omissão, contradição, obscuridade ou erro material na sentença, o Estado de Minas Gerais poderá opor embargos de declaração, no prazo de 10 (dez) dias úteis, considerando, como início do prazo, o dia útil seguinte à consulta ao teor da intimação ou ao término do prazo para que a consulta se dê, dado que gozará de prazo em dobro para todas as suas manifestações processuais."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta porque o prazo para oposição de embargos de declaração é de 5 (cinco) dias úteis (art. 1.023 do CPC), sendo aplicável à Fazenda Pública o benefício do prazo em dobro para todas as suas manifestações processuais (art. 183 do CPC), resultando em 10 (dez) dias úteis, contados, no processo eletrônico, a partir do dia útil seguinte à consulta ao teor da intimação ou ao término do prazo legal para que a consulta se dê (art. 5º, §3º, da Lei 11.419/2006).",
+          "explicacaoErradas": "A alternativa A está errada porque nega expressamente a contagem em dobro do prazo de apelação da Fazenda Pública, quando, por força do art. 183 do CPC, esse prazo é sempre contado em dobro (resultando em 30 dias úteis, e não 15). A alternativa B está errada porque é plenamente lícita a intimação por meio eletrônico dos entes públicos em processo eletrônico, nos termos da Lei 11.419/2006, não sendo necessária intimação pessoal por carga ou remessa dos autos nesse contexto. A alternativa C está errada porque, no processo eletrônico, recurso apresentado antes do termo inicial formal do prazo (antes da consulta ou do fim do prazo para consulta) não é considerado intempestivo por prematuridade; a lei e a jurisprudência admitem a tempestividade de recurso interposto antes da abertura formal do prazo.",
+          "pegadinha": "A banca varia o prazo correto (5 dias para embargos de declaração) sem aplicar o dobro devido à Fazenda Pública, colocando 15 dias na apelação sem dobro em uma alternativa, e insinua, em outra, que recurso apresentado 'antes do termo inicial' do prazo seria intempestivo - quando, na verdade, o CPC e a jurisprudência admitem a tempestividade do recurso prematuro.",
+          "regraMemoria": "Fazenda Pública sempre em dobro: embargos de declaração de 5 vira 10, apelação de 15 vira 30 - e recurso apresentado antes do prazo abrir não é intempestivo."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Tutelas Provisórias",
+          "enunciado": "Aline recebeu uma proposta de investimento de Gizé Ltda., instituição que atua no mercado financeiro, que lhe garantiria um retorno fixo mensal de 10% ao mês sobre o capital investido. Crendo tratar-se de um ótimo negócio, Aline transferiu R$ 500.000,00 (quinhentos mil reais) para a conta da Gizé Ltda., que passou a lhe apresentar extratos mensais, apontando um suposto crescimento do capital. Entretanto, alguns meses depois, foi divulgado em um importante veículo de comunicação que a Gizé Ltda. estava sendo investigada pela prática de pirâmide financeira. Muito nervosa, Aline tentou contato telefônico com a instituição, sem sucesso. Depois de inúmeros e-mails, Aline decidiu ir ao estabelecimento onde funcionava a Gizé Ltda., mas encontrou o imóvel abandonado. Constatando tratar-se de um golpe, Aline, por meio de advogado(a), decidiu ajuizar pedido de tutela cautelar em caráter antecedente, com o objetivo de efetivar o arresto de R$ 500.000,00 (quinhentos mil reais), antes de formular o pedido principal, de rescisão do contrato, com devolução do valor depositado, cobrança dos rendimentos contratados e indenização pelos danos morais sofridos. Sobre essa modalidade de tutela provisória, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Sendo deferida a tutela cautelar antecedente requerida por Aline, ela deverá ser efetivada no prazo de 60 (sessenta) dias, sob pena de perda da eficácia da tutela cautelar concedida."
+            },
+            {
+              "letra": "B",
+              "texto": "Sendo efetivada a tutela cautelar antecedente requerida por Aline, o pedido principal deverá ser formulado no prazo de 15 (quinze) dias, sob pena de perda da eficácia da tutela cautelar concedida."
+            },
+            {
+              "letra": "C",
+              "texto": "Se o pedido principal formulado por Aline for julgado improcedente, haverá a perda da eficácia da tutela cautelar concedida."
+            },
+            {
+              "letra": "D",
+              "texto": "Se houver a perda da eficácia da tutela cautelar antecedente, tal pedido poderá ser renovado posteriormente, com base nos mesmos fundamentos."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta porque, nos termos do art. 309, III, do CPC, cessa a eficácia da tutela cautelar concedida em caráter antecedente se o juiz julgar improcedente o pedido principal formulado pelo autor, hipótese que se aplica diretamente ao caso, já que Aline formulou pedido principal de rescisão contratual, devolução de valores e indenização após a efetivação do arresto cautelar.",
+          "explicacaoErradas": "A alternativa A está errada porque o prazo para efetivação da tutela cautelar concedida em caráter antecedente é de 30 (trinta) dias, e não 60 dias, sob pena de perda de eficácia (art. 309, II, do CPC). A alternativa B está errada porque o prazo para formular o pedido principal após a efetivação da tutela cautelar antecedente é de 30 (trinta) dias, e não 15 dias (art. 308, caput, do CPC). A alternativa D está errada porque, cessada a eficácia da tutela cautelar por qualquer das hipóteses do art. 309 do CPC, a lei veda expressamente a renovação do pedido com base nos MESMOS fundamentos, exigindo fundamento novo para que a parte possa renová-lo (art. 309, parágrafo único, do CPC).",
+          "pegadinha": "A banca troca os prazos corretos (30 dias para efetivação da cautelar e 30 dias para formular o pedido principal) por prazos incorretos (60 e 15 dias) em duas alternativas, e em outra afirma que a renovação do pedido cautelar seria possível com os mesmos fundamentos, quando a lei exige fundamento novo.",
+          "regraMemoria": "Na cautelar antecedente, tudo é 30 dias (efetivar em 30, formular o pedido principal em 30) - e se cessar a eficácia, só renova com fundamento NOVO, nunca repetindo o mesmo."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
+          "enunciado": "Arthur resolveu furtar os cabos de eletricidade da linha férrea de sua cidade, a fim de revender o cobre, clandestinamente. Contudo, após iniciar o corte para retirar os fios de cobre, foi surpreendido pelo trem, que o atropelou, vindo a sofrer a amputação dos membros inferiores. Arthur foi denunciado como incurso nas penas do delito de furto. Sobre o caso, assinale a afirmativa que apresenta a linha de defesa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Deve ser reconhecida a tentativa, com a correspondente diminuição da pena, já que o delito não chegou a se consumar."
+            },
+            {
+              "letra": "B",
+              "texto": "Pode ser reduzida a pena diante do arrependimento posterior, uma vez que, em razão do fato, Arthur perdeu os dois membros inferiores."
+            },
+            {
+              "letra": "C",
+              "texto": "Arthur deve ser absolvido, pois está-se diante de crime impossível, por absoluta ineficácia do meio."
+            },
+            {
+              "letra": "D",
+              "texto": "Arthur pode ser beneficiado com o perdão judicial, diante do sofrimento que lhe foi imposto pelas consequências do delito."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta porque Arthur iniciou os atos de execução do furto (o corte dos cabos para subtraí-los), mas não consumou o crime, já que não chegou a obter a posse mansa e pacífica dos cabos, interrompendo-se a execução por circunstância alheia à sua vontade (o atropelamento pelo trem). Configura-se, portanto, a tentativa (art. 14, II, do CP), com a pena reduzida de um a dois terços, conforme o parágrafo único do mesmo artigo.",
+          "explicacaoErradas": "A alternativa B está errada porque o arrependimento posterior (art. 16 do CP) pressupõe reparação voluntária do dano ou restituição da coisa, realizada pelo próprio agente, antes do recebimento da denúncia, em crimes cometidos sem violência ou grave ameaça à pessoa; no caso, não houve qualquer reparação de dano por parte de Arthur, e o instituto nada tem a ver com a lesão sofrida pelo próprio agente. A alternativa C está errada porque o crime impossível (art. 17 do CP) exige ineficácia absoluta do meio empregado ou impropriedade absoluta do objeto, tornando a consumação impossível desde o início da execução; no caso, o meio empregado (corte dos cabos) era plenamente idôneo para a subtração, tendo o resultado sido apenas interrompido por evento imprevisto e superveniente (o trem). A alternativa D está errada porque o perdão judicial é instituto previsto em lei apenas para hipóteses específicas (como o homicídio culposo com graves consequências para o próprio agente, art. 121, §5º, do CP), não havendo previsão legal de perdão judicial para o crime de furto em razão de lesões sofridas pelo próprio autor durante a execução do delito.",
+          "pegadinha": "A banca explora o sofrimento físico do próprio agente (amputação das pernas) para sugerir institutos de benevolência (perdão judicial, arrependimento posterior) ou a inexistência de crime (crime impossível), desviando o foco do que realmente importa: o delito não se consumou por circunstância alheia à vontade do agente, o que caracteriza simples tentativa.",
+          "regraMemoria": "Começou a execução e não completou por acaso alheio à sua vontade = tentativa - o sofrimento do próprio autor não gera perdão judicial nem afasta a existência do crime."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
+          "enunciado": "Júlio desferiu um tapa no rosto de Jacinto, que foi projetado contra um poste em que havia um fio de alta tensão exposto, algo que não foi visto nem poderia ser imaginado por Júlio, pois já era noite e havia pouca iluminação. Jacinto recebeu uma forte descarga elétrica, que foi causa suficiente de sua morte. Sobre a responsabilidade de Júlio pelo resultado morte, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Júlio deve responder pelo homicídio doloso de Jacinto, tendo em vista que o resultado morte não teria ocorrido se não fosse a agressão dolosa."
+            },
+            {
+              "letra": "B",
+              "texto": "A descarga elétrica é uma concausa superveniente relativamente independente que, por si só, produziu o resultado morte, devendo Júlio responder por lesão corporal."
+            },
+            {
+              "letra": "C",
+              "texto": "Júlio agiu com dolo no delito antecedente e culpa no consequente, devendo responder por delito preterdoloso de lesão corporal seguida de morte."
+            },
+            {
+              "letra": "D",
+              "texto": "A descarga elétrica pode ser imputada a Júlio, ante a violação objetiva de um dever de cuidado, devendo Júlio ser responsabilizado por homicídio culposo."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta porque a descarga elétrica constitui concausa superveniente relativamente independente da conduta de Júlio, que, por si só, produziu o resultado morte (a causa efetiva do óbito foi a eletrocução, e não o tapa em si). Nos termos do art. 13, §1º, do Código Penal, quando sobrevém causa relativamente independente que por si só produz o resultado, exclui-se a imputação deste ao agente, que responde apenas pelos atos até então praticados - no caso, a lesão corporal decorrente do tapa.",
+          "explicacaoErradas": "A alternativa A está errada porque, embora a teoria da equivalência dos antecedentes causais (conditio sine qua non, art. 13, caput, do CP) leve à conclusão de que 'sem a agressão a morte não teria ocorrido', essa regra é expressamente excepcionada pelo §1º do mesmo artigo quando sobrevém causa relativamente independente e, por si só, suficiente para produzir o resultado. A alternativa C está errada porque não há preterdolo no caso, já que esse instituto pressupõe que o resultado mais grave (morte) seja imputável ao agente dentro do mesmo nexo causal iniciado por sua conduta (como na lesão corporal seguida de morte); aqui, a concausa superveniente relativamente independente rompe justamente essa imputação do resultado morte a Júlio, inclusive a título de culpa. A alternativa D está errada porque não há violação de dever de cuidado apto a configurar homicídio culposo; a descarga elétrica era evento imprevisível para Júlio à noite e com pouca iluminação, e a própria concausa superveniente relativamente independente exclui a imputação do resultado morte a ele, seja a título doloso, seja a título culposo.",
+          "pegadinha": "A banca oferece três alternativas que, de formas diferentes, tentam imputar o resultado morte a Júlio (dolo, culpa ou preterdolo), testando se o candidato conhece a exceção do art. 13, §1º, do CP - quando uma causa superveniente relativamente independente é, por si só, suficiente para produzir o resultado, rompe-se o nexo causal quanto a esse resultado específico.",
+          "regraMemoria": "Concausa superveniente que, por si só, mata rompe o nexo causal - o agente responde apenas pelo que já havia feito antes dela surgir, nunca pelo resultado morte."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Crimes contra o Patrimônio",
+          "enunciado": "Joaquim dirigia-se a uma agência bancária para sacar o valor de sua aposentadoria. Todavia, às 10h, ao se aproximar do estabelecimento, foi abordado por Gilson que, com emprego de arma de fogo, ordenou que Joaquim entrasse em seu carro. Em seguida, Gilson conduziu o veículo até um motel e, mediante ameaça de morte, exigiu que a vítima transferisse valores para a conta bancária de Gilson, por meio de operações via PIX e TED, sendo certo que houve restrição da liberdade da vítima por tempo relevante, condição necessária para obtenção da vantagem de R$ 12.000,00 (doze mil reais) efetivamente auferida em desfavor de Joaquim, após o que Gilson liberou a vítima. Diante do cenário descrito, assinale a opção que indica o(s) crime(s) praticados por Gilson.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Roubo circunstanciado pelo emprego de arma de fogo."
+            },
+            {
+              "letra": "B",
+              "texto": "Extorsão mediante sequestro."
+            },
+            {
+              "letra": "C",
+              "texto": "Sequestro ou cárcere privado."
+            },
+            {
+              "letra": "D",
+              "texto": "Extorsão mediante restrição da liberdade da vítima."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta porque se trata do crime de extorsão qualificada pela restrição da liberdade da vítima (art. 158, §3º, do CP - conhecido como 'sequestro relâmpago'), já que a privação de liberdade foi utilizada como MEIO para constranger a própria vítima, mediante grave ameaça (emprego de arma de fogo), a realizar as transferências bancárias (PIX e TED) em favor de Gilson, sendo a vítima quem, sob coação, efetivamente movimenta os valores.",
+          "explicacaoErradas": "A alternativa A está errada porque não se trata de roubo: no roubo há subtração da coisa mediante violência ou grave ameaça, praticada por ato do próprio agente sobre bem já existente em poder da vítima; no caso, há constrangimento para que a própria vítima realize as transferências, comportamento típico de extorsão, e não de subtração. A alternativa B está errada porque a extorsão mediante sequestro (art. 159 do CP) pressupõe a privação de liberdade da vítima como forma de obter resgate pago por terceiro (geralmente familiares) como condição da libertação; no caso, a vantagem foi obtida diretamente da própria vítima mediante transferências bancárias, sem qualquer resgate pago por terceiro, o que afasta essa figura típica. A alternativa C está errada porque o sequestro ou cárcere privado (art. 148 do CP) é absorvido pela extorsão quando a privação de liberdade constitui apenas o meio empregado para obter a vantagem econômica (princípio da consunção), não configurando delito autônomo em concurso.",
+          "pegadinha": "A banca aposta na confusão entre 'extorsão mediante sequestro' (que pressupõe resgate pago por terceiro para a libertação) e 'extorsão mediante restrição de liberdade/sequestro relâmpago' (em que a própria vítima, sob constrangimento, realiza o pagamento enquanto tem sua liberdade restrita) - a diferença essencial está em quem paga e em como a liberdade é usada como instrumento coercitivo direto sobre a vítima.",
+          "regraMemoria": "Se a própria vítima paga sob ameaça enquanto está com a liberdade restrita, é extorsão com restrição de liberdade (art. 158, §3º); se é terceiro quem paga resgate pela libertação, é extorsão mediante sequestro (art. 159)."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Crimes contra a Pessoa",
+          "enunciado": "Paulo é investigado em um Inquérito Policial pelos crimes de ameaça e lesão corporal em face de sua esposa, Maria. Ao longo da investigação, foi decretada medida protetiva de afastamento de 1.000m em relação à vítima. Posteriormente, movido por ciúmes em razão de uma mensagem de Maria a um amigo, Paulo foi ao encontro dela com o intuito de questioná-la sobre o fato, violando a medida protetiva da qual já havia sido regularmente intimado. Tendo em vista o que preconiza a Lei nº 11.340/2006, está correto afirmar que Paulo",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "praticou um crime de ação penal pública incondicionada."
+            },
+            {
+              "letra": "B",
+              "texto": "está incurso nas penas de um crime inafiançável."
+            },
+            {
+              "letra": "C",
+              "texto": "cometeu uma contravenção penal que comporta o oferecimento de proposta de suspensão condicional do processo."
+            },
+            {
+              "letra": "D",
+              "texto": "pode ser submetido a um decreto de prisão preventiva em seu desfavor, mas não cometeu crime."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta porque o descumprimento de medida protetiva de urgência configura o crime específico previsto no art. 24-A da Lei 11.340/2006 (incluído pela Lei 13.641/2018), com pena de detenção de 3 (três) meses a 2 (dois) anos, sendo crime de ação penal pública incondicionada, conforme expressamente estabelece o §3º do referido artigo.",
+          "explicacaoErradas": "A alternativa B está errada porque o crime do art. 24-A não é classificado como inafiançável; trata-se de crime em regra afiançável, sendo que a fiança, quando cabível, somente pode ser concedida pela autoridade judicial (§2º do art. 24-A), o que é diferente de dizer que o crime é inafiançável. A alternativa C está errada porque o descumprimento de medida protetiva é crime (e não contravenção penal), tipificado no art. 24-A da Lei 11.340/2006, sendo vedada, ademais, a aplicação de institutos despenalizadores da Lei 9.099/95 (como a suspensão condicional do processo) aos crimes praticados no âmbito da violência doméstica, por força do art. 41 da própria Lei Maria da Penha. A alternativa D está errada porque a conduta narrada configura crime autônomo (art. 24-A da Lei 11.340/2006); embora a situação também possa ensejar prisão preventiva, a alternativa erra ao afirmar que não houve crime.",
+          "pegadinha": "A banca tenta fazer o candidato pensar que o descumprimento de medida protetiva seria apenas uma 'falta' que autoriza prisão preventiva (sem tipificação penal própria) ou uma contravenção sujeita a benefícios despenalizadores, ignorando que a Lei 13.641/2018 criou tipo penal específico (art. 24-A), com ação penal pública incondicionada, vedados os benefícios da Lei 9.099/95.",
+          "regraMemoria": "Descumprir medida protetiva da Lei Maria da Penha é crime específico (art. 24-A), sempre de ação penal pública incondicionada, sem os benefícios da Lei 9.099/95."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Crimes contra a Administração Pública",
+          "enunciado": "Antônio, funcionário público, foi designado como servidor responsável por conduzir a licitação de um Hospital Público que desejava adquirir 100.000 (cem mil) doses de um determinado medicamento. Patrícia, funcionária da sociedade empresária Medicante Ltda., descobre o contato de Antônio e, de seu celular pessoal, manda um áudio no qual se oferece para dividir sua comissão com o funcionário público caso a sua empresa fosse a vencedora. O valor da comissão de Patrícia era de R$50.000,00 (cinquenta mil reais), em caso de vitória na licitação. Antônio, indignado com a proposta de Patrícia, encaminha os fatos aos seus superiores que enviam Notícia de Crime à autoridade policial com atribuição para investigar os fatos. Tomando por base o fato de não ter havido o pagamento do valor oferecido, assinale a opção que indica o crime pelo qual Patrícia poderá ser responsabilizada.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Corrupção passiva tentada, na medida em que o crime é material, sendo necessário o efetivo pagamento da vantagem indevida para o crime ser consumado."
+            },
+            {
+              "letra": "B",
+              "texto": "Corrupção passiva consumada, na medida em que o crime é formal, bastando o oferecimento da vantagem ilícita ao servidor público para a sua consumação."
+            },
+            {
+              "letra": "C",
+              "texto": "Corrupção ativa tentada, na medida em que o crime é material, sendo necessário o efetivo pagamento da vantagem indevida para o crime ser consumado."
+            },
+            {
+              "letra": "D",
+              "texto": "Corrupção ativa consumada, na medida em que o crime é formal, bastando o oferecimento da vantagem ilícita ao servidor público para a sua consumação."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Patrícia, particular, ofereceu vantagem indevida (comissão de R$50.000,00) a Antônio, funcionário público, para que este a favorecesse na licitação. Essa conduta se amolda ao Art. 333 do CP (corrupção ativa): \"oferecer ou prometer vantagem indevida a funcionário público, para determiná-lo a praticar, omitir ou retardar ato de ofício\". Trata-se de crime formal (de consumação antecipada): consuma-se com o simples oferecimento ou promessa, sendo irrelevante que o funcionário aceite ou que o pagamento se efetive. Como Antônio recusou a proposta, o delito de Patrícia está consumado desde o oferecimento, não havendo que se falar em tentativa.",
+          "explicacaoErradas": "A) Errada porque atribui a Patrícia o crime de corrupção passiva tentada — mas corrupção passiva (Art. 317 CP) só pode ser praticada pelo funcionário público (sujeito ativo próprio), nunca pelo particular que oferece a vantagem; além disso, o crime (seja ativo, seja passivo) é formal, não material, dispensando o efetivo pagamento. B) Errada pelo mesmo motivo: corrupção passiva exige que o próprio funcionário solicite, receba ou aceite a promessa; Antônio recusou a proposta, de modo que sequer há corrupção passiva a discutir (nem tentada nem consumada) por parte dele. C) Errada porque, embora acertadamente enquadre Patrícia em corrupção ativa, erra ao classificá-la como crime material e como tentativa — o crime é formal e já se consumou com o mero oferecimento, não dependendo do pagamento efetivo.",
+          "pegadinha": "A banca explora duas confusões simultâneas: (i) trocar o sujeito ativo dos crimes — corrupção ativa é do particular que oferece, corrupção passiva é do funcionário público que solicita/aceita/recebe; e (ii) fazer o candidato acreditar que, por não ter havido o pagamento, o crime restou apenas tentado, ignorando que ambos os delitos são formais, consumando-se com a mera oferta/solicitação.",
+          "regraMemoria": "Corrupção ativa é sempre de quem oferece (o particular); corrupção passiva é sempre de quem solicita/recebe (o funcionário) — e ambas são crimes formais, consumando-se com o simples oferecimento ou solicitação, nunca dependendo do efetivo pagamento."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Crimes contra a Pessoa",
+          "enunciado": "O médico João dos Santos, durante a realização de uma cirurgia na perna de um paciente, cometeu um erro que acabou provocando a necessária amputação do membro do paciente. A pena cominada à lesão corporal culposa é de dois meses a um ano, à lesão corporal grave é de um a cinco anos e à lesão corporal gravíssima, de dois a oito anos. Sobre a atuação do médico João Santos, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Ele cometeu o crime de lesão corporal culposa, devendo sua conduta ser julgada perante o Juizado Especial Criminal, o que, pela pena abstratamente cominada, torna aplicáveis, em tese, as medidas despenalizadoras da Lei nº 9.099/95."
+            },
+            {
+              "letra": "B",
+              "texto": "Ele, apesar de não ter atuado com dolo, cometeu o crime de lesão corporal gravíssima em razão da perda de membro do paciente, não fazendo jus a nenhuma das medidas despenalizadoras da Lei nº 9.099/95, devendo o caso ser julgado perante a Vara Criminal."
+            },
+            {
+              "letra": "C",
+              "texto": "Ele, apesar de não ter atuado com dolo, cometeu o crime de lesão corporal grave em razão da inutilização do membro e, apesar de ser julgado perante a Vara Criminal, fará jus à suspensão condicional do processo, medida despenalizadora prevista na Lei nº 9.099/95."
+            },
+            {
+              "letra": "D",
+              "texto": "Ele cometeu o crime de lesão corporal gravíssima em razão da perda de membro do paciente, apesar de não ter atuado com dolo, e, em função da pena cominada ao delito, fará jus à suspensão condicional do processo, medida despenalizadora prevista na Lei nº 9.099/95."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O médico agiu com culpa (erro médico), não com dolo. O CP, no Art. 129, prevê a lesão corporal culposa em parágrafo próprio (§6º), com pena única de detenção de 2 meses a 1 ano, independentemente da gravidade do resultado produzido (a amputação do membro não altera essa classificação, pois as qualificadoras de lesão grave — §1º — e gravíssima — §2º — pressupõem dolo quanto ao resultado agravador, o que aqui inexiste). Sendo a pena máxima de 1 ano, trata-se de infração de menor potencial ofensivo, sujeita ao rito da Lei nº 9.099/95 (JECRIM), com cabimento, em tese, de composição civil, transação penal e demais medidas despenalizadoras.",
+          "explicacaoErradas": "B) Errada porque as qualificadoras de lesão corporal gravíssima (perda de membro, sentido ou função, art. 129 §2º) somente incidem na modalidade dolosa; não existe \"lesão corporal gravíssima culposa\" com pena de 2 a 8 anos — a culpa tem pena única e fixa no §6º. C) Mesmo erro: a qualificadora de lesão grave (art. 129 §1º) também pressupõe dolo quanto ao resultado; na culpa não há essa gradação. D) Repete o erro de enquadrar como gravíssima e, ainda, erra ao afirmar cabimento de suspensão condicional do processo para essa hipótese, pois, mesmo se fosse lesão gravíssima (dolosa), a pena mínima de 2 anos inviabilizaria a suspensão condicional do processo (que exige pena mínima igual ou inferior a 1 ano, art. 89 da Lei 9.099/95).",
+          "pegadinha": "O enunciado informa expressamente as penas da lesão grave e da gravíssima, induzindo o candidato a classificar a conduta pela gravidade do resultado (perda do membro = lesão gravíssima). A armadilha é ignorar que essas qualificadoras graduadas pela gravidade do resultado só existem na forma dolosa da lesão corporal; na forma culposa (erro médico), há uma única pena, fixa, independentemente do tamanho do dano causado.",
+          "regraMemoria": "Lesão corporal culposa é sempre lesão corporal culposa, com pena única (2 meses a 1 ano) — nunca se transforma em grave ou gravíssima, pois essas qualificadoras graduadas pelo resultado só existem na modalidade dolosa."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Ação Penal",
+          "enunciado": "Luís Vicente, secretário de fazenda do Município Alfa, foi ofendido por Iório, secretário de fazenda do Estado Beta, que, durante discurso na tribuna da Câmara dos Vereadores, afirmou que “Luís Vicente comete peculato, desviando recursos do caixa municipal em proveito próprio e de seus familiares!” Luís Vicente procurou você, como advogado(a), para que você o oriente sobre a medida cabível para responsabilizar Iório pela ofensa à sua honra. Nesse contexto, é correto afirmar que Luís Vicente",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "só pode ajuizar uma queixa-crime em face de Iório, pois o delito contra a honra desafia ação penal privada."
+            },
+            {
+              "letra": "B",
+              "texto": "pode oferecer representação contra Iório ao Ministério Público, pois sua qualidade de servidor público impõe a ação penal pública na defesa de sua honra."
+            },
+            {
+              "letra": "C",
+              "texto": "pode optar entre ajuizar queixa-crime em face de Iório ou oferecer representação ao Ministério Público."
+            },
+            {
+              "letra": "D",
+              "texto": "não pode fazer nada a respeito, diante da imunidade material de Iório, pela sua qualidade de ocupante de cargo político."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Luís Vicente é funcionário público (secretário de fazenda municipal) e foi ofendido em razão do exercício de suas funções (acusação de peculato no exercício do cargo). Nessa hipótese específica, incide a Súmula 714 do STF: \"é concorrente a legitimidade do ofendido, mediante queixa, e do Ministério Público, condicionada à representação do ofendido, para a ação penal por crime contra a honra de servidor público em razão do exercício de suas funções\". Assim, Luís Vicente pode escolher entre ajuizar queixa-crime (ação penal privada) ou oferecer representação ao MP (ação penal pública condicionada), sendo as duas vias igualmente disponíveis.",
+          "explicacaoErradas": "A) Errada porque ignora a exceção da Súmula 714 STF: quando a honra ofendida é a de servidor público em razão de suas funções, a legitimidade não é exclusivamente privada, sendo concorrente com o MP. B) Errada porque também trata a legitimidade como exclusiva (agora da via pública), quando na verdade ela é concorrente — a vítima pode optar pela queixa-crime em vez da representação. D) Errada em dois pontos: primeiro, Iório não é detentor de imunidade parlamentar, pois não é vereador (é secretário de fazenda estadual, cargo de natureza política mas sem mandato eletivo e sem a garantia de inviolabilidade do art. 29, VIII, da CF, restrita aos vereadores no exercício do mandato); segundo, mesmo que houvesse alguma prerrogativa, ela não afastaria toda e qualquer responsabilização penal.",
+          "pegadinha": "A pegadinha está em fazer o candidato aplicar a regra geral (crime contra a honra = ação penal privada, por queixa) sem atentar para a exceção sumulada quando a vítima é agente público ofendido no exercício da função, hipótese em que a legitimidade passa a ser concorrente. Soma-se a isso a tentativa de confundir a imunidade parlamentar material (exclusiva de detentores de mandato eletivo, como vereadores, no exercício do mandato) com a situação de um secretário de governo, que não goza dessa prerrogativa.",
+          "regraMemoria": "Crime contra a honra de funcionário público em razão do exercício da função gera legitimidade concorrente (queixa OU representação) — Súmula 714 do STF; fora dessa hipótese, a regra geral continua sendo a ação penal privada."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Prisões e Medidas Cautelares",
+          "enunciado": "Vanessa, primária e sem antecedentes, grávida de seis meses, foi presa em flagrante no aeroporto no momento em que embarcava com destino à Espanha de posse de 10kg de substância entorpecente (cocaína). Vanessa foi autuada pela prática do crime de tráfico internacional de drogas (Art. 33, caput, c/c. Art. 40, inciso I, ambos da Lei nº 11.343/06). Sobre a possibilidade de prisão domiciliar em favor de Vanessa, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A quantidade de drogas apreendida e a transnacionalidade do delito obstam a concessão de prisão domiciliar."
+            },
+            {
+              "letra": "B",
+              "texto": "O pedido de prisão domiciliar é injustificável, tendo em vista que Vanessa ainda está no sexto mês de gestação."
+            },
+            {
+              "letra": "C",
+              "texto": "A natureza não violenta do delito imputado e a gestação de Vanessa autorizam a concessão de prisão domiciliar."
+            },
+            {
+              "letra": "D",
+              "texto": "Apenas se houver comprovação de gravidez de risco haverá previsão legal que justifique a concessão de prisão domiciliar."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O Art. 318, IV, do CPP autoriza a substituição da prisão preventiva por domiciliar quando a presa for gestante, e o STF, no julgamento do HC Coletivo 143.641, consolidou que essa substituição deve ser concedida como regra às mulheres presas gestantes ou com filhos, salvo em situações excepcionalíssimas devidamente fundamentadas, sendo o critério legal relevante a ausência de violência ou grave ameaça contra pessoa no crime imputado — e não a gravidade abstrata da pena ou a quantidade de droga apreendida. O tráfico de drogas, ainda que internacional e em grande quantidade, não é, por definição típica, crime cometido com violência ou grave ameaça contra pessoa, de modo que, somado ao estado gestacional, autoriza a concessão da prisão domiciliar.",
+          "explicacaoErradas": "A) Errada porque a quantidade de droga e a transnacionalidade do delito não constituem, por si sós, óbice legal à prisão domiciliar; o critério decisivo é a natureza não violenta do crime. B) Errada porque inverte a lógica da norma: a gestação, ainda que no sexto mês, é justamente o fundamento que autoriza (e não obsta) o pedido de prisão domiciliar. D) Errada porque nem o Art. 318 do CPP nem o entendimento do STF exigem a comprovação de \"gravidez de risco\"; basta a condição de gestante para ensejar a substituição, dispensando-se prova de complicação gestacional específica.",
+          "pegadinha": "A banca tenta induzir o candidato a associar gravidade do crime (grande quantidade de droga, caráter internacional do tráfico) à impossibilidade de concessão do benefício, quando o critério legal e jurisprudencial correto é a ausência de violência ou grave ameaça contra pessoa no delito imputado, não a quantidade da substância ou o alcance transnacional da conduta.",
+          "regraMemoria": "Gestante presa preventivamente tem direito à prisão domiciliar sempre que o crime imputado não envolver violência ou grave ameaça contra pessoa — a gravidade da pena ou a quantidade da droga jamais afastam, por si só, esse direito."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Execução Penal",
+          "enunciado": "Juliano foi definitivamente condenado à pena de 8 (oito) anos de reclusão, em regime inicial fechado. Após 2 (dois) anos de cumprimento da pena, foi detectado que Juliano passou a ter uma doença mental grave, tornando-o inteiramente incapaz de compreender o caráter ilícito dos fatos pelos quais havia sido condenado. Neste caso, como advogado(a) de Juliano, você deverá",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "postular ao Juiz da Execução Penal a conversão da pena em medida de segurança."
+            },
+            {
+              "letra": "B",
+              "texto": "ajuizar uma ação de revisão criminal, postulando a substituição da pena privativa de liberdade por medida de segurança."
+            },
+            {
+              "letra": "C",
+              "texto": "suscitar incidente de insanidade mental do acusado, a fim de apurar a integridade mental de Juliano ao tempo da ação criminosa."
+            },
+            {
+              "letra": "D",
+              "texto": "solicitar que Juliano seja colocado em prisão-albergue domiciliar, como medida substitutiva do encarceramento."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O Art. 183 da Lei de Execução Penal (LEP) prevê que, sobrevindo doença mental ou perturbação da saúde mental durante a execução da pena privativa de liberdade, o Juiz da Execução poderá determinar a substituição da pena por medida de segurança. Como a doença mental de Juliano surgiu após o trânsito em julgado da condenação, já no curso do cumprimento da pena, o instituto cabível é justamente essa conversão, postulada perante o Juízo da Execução Penal.",
+          "explicacaoErradas": "B) Errada porque a revisão criminal (Arts. 621 e seguintes do CPP) destina-se a desconstituir sentença condenatória eivada de vício (erro judiciário, prova falsa, lei posterior mais benéfica etc.), e não a situações supervenientes ao trânsito em julgado, como a doença mental surgida durante a execução — a condenação de Juliano foi correta ao seu tempo, não havendo vício a rever. C) Errada porque o incidente de insanidade mental (Arts. 149 a 154 do CPP) serve para apurar a capacidade de entendimento do acusado à época do fato, na fase de conhecimento do processo criminal, e não após já ter havido condenação definitiva em execução. D) Errada porque a prisão-albergue domiciliar é medida relacionada ao regime aberto ou a hipóteses específicas do Art. 117 da LEP (idoso, doença grave, gestante etc.), não sendo o instrumento legal correto para tratar de doença mental superveniente que afeta a compreensão do caráter ilícito do fato, situação para a qual a lei prevê especificamente a conversão em medida de segurança.",
+          "pegadinha": "A pegadinha reside em confundir institutos semelhantes na aparência, mas distintos na finalidade e no momento processual: o incidente de insanidade mental (fase de conhecimento, sobre a imputabilidade à época do crime) e a revisão criminal (correção de vício na sentença já transitada) não se aplicam a fato superveniente ao trânsito em julgado; o instrumento correto, específico para a execução penal, é a conversão da pena em medida de segurança do Art. 183 da LEP.",
+          "regraMemoria": "Doença mental que surge DEPOIS do trânsito em julgado, já na execução da pena, resolve-se sempre pela conversão em medida de segurança (Art. 183 da LEP); doença mental à ÉPOCA do fato, ainda no processo, resolve-se pelo incidente de insanidade mental."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Nulidades",
+          "enunciado": "Roberto Jorge, após regular pronúncia, foi levado a Júri, ocasião em que foi mantido algemado durante toda a sessão de julgamento, com a justificativa de ser pessoa de índole perigosa, já que responde à acusação por crime doloso contra a vida. A defesa técnica impugnou, sem sucesso, a determinação do Juízo. O Ministério Público, em plenário, postulou a condenação do acusado, asseverando que sua periculosidade fica comprovada pela necessidade do uso de algemas durante o julgamento. Roberto Jorge foi condenado pelo Conselho de Sentença, tendo sido aplicada pena privativa de liberdade de 15 (quinze) anos de reclusão. Você, como advogado(a) de Roberto Jorge, interpôs apelação criminal. Assinale a afirmativa que apresenta, corretamente, o objetivo da sua demanda.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Postular a reforma da sentença, com a absolvição do acusado, pois este foi prejudicado no julgamento em razão do uso artbitrário de algemas."
+            },
+            {
+              "letra": "B",
+              "texto": "Arguir a nulidade posterior à pronúncia, em razão da manutenção do réu algemado, sem necessidade concreta, e da referência a este fato pelo órgão do Ministério Público."
+            },
+            {
+              "letra": "C",
+              "texto": "Arguir a nulidade da sessão de julgamento, em razão da manutenção do réu algemado; a manifestação do Ministério Público, contudo, não é vedada pela lei processual."
+            },
+            {
+              "letra": "D",
+              "texto": "Postular a redução das penas aplicadas pelo Juiz-Presidente, pois o uso de algemas e sua menção como argumento de autoridade não caracterizam nenhuma nulidade."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A Súmula Vinculante 11 do STF exige que o uso de algemas seja justificado por escrito, ante casos de resistência, fundado receio de fuga ou perigo à integridade física própria ou alheia, sob pena de nulidade do ato processual. Aqui, o réu foi mantido algemado por mera presunção de periculosidade decorrente da acusação, sem justificativa concreta, e o próprio Ministério Público usou esse fato como argumento de autoridade em plenário para obter a condenação — o que contamina a paridade de armas e o devido processo legal no júri. Por isso, o objetivo correto da apelação é arguir a nulidade da sessão de julgamento (posterior à pronúncia), tanto pela manutenção indevida das algemas quanto pela indevida referência do MP a esse fato perante os jurados.",
+          "explicacaoErradas": "A) Errada porque o vício relativo ao uso indevido de algemas gera nulidade do julgamento (para que ocorra novo júri), e não a absolvição direta do acusado — o mérito da causa é de competência soberana do Conselho de Sentença, não podendo o Tribunal substituir esse julgamento por uma absolvição. C) Errada porque, embora corretamente aponte a nulidade pelo uso indevido das algemas, erra ao afirmar que a manifestação do Ministério Público sobre o fato não é vedada — na verdade, usar o uso de algemas como argumento de autoridade perante os jurados agrava a nulidade, sendo prática vedada. D) Errada porque nega qualquer nulidade, contrariando frontalmente a Súmula Vinculante 11 e a jurisprudência sobre a indevida exploração do fato pela acusação.",
+          "pegadinha": "A banca tenta levar o candidato a pedir a absolvição direta (solução de mérito, que só compete ao Conselho de Sentença, respeitada a soberania dos veredictos) ou a admitir a regularidade do uso das algemas e da fala do MP, quando o correto é reconhecer a nulidade processual do julgamento (que implica a realização de novo júri), tanto pelo uso irregular das algemas quanto pela exploração indevida desse fato pela acusação em plenário.",
+          "regraMemoria": "Algemas sem justificativa fundamentada por escrito, mais menção do MP a esse fato como argumento de autoridade no Júri, geram sempre nulidade do julgamento (Súmula Vinculante 11) — nunca absolvição direta, pois o mérito pertence à soberania do Conselho de Sentença."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Provas no Processo Penal",
+          "enunciado": "Depois do recebimento de denúncia anônima, a delegacia iniciou a verificação preliminar de informações e colheu indícios de que Juca desenvolvia atividades ilícitas de telecomunicações (pena: detenção, 2 a 4 anos). A fim de melhor apurar os fatos, foi instaurado inquérito policial e o delegado de polícia representou pela interceptação das comunicações telefônicas de Juca, o que foi deferido pelo Juiz. A fim de anular as provas colhidas a partir da interceptação telefônica, você, na condição de advogado(a) de defesa de Juca, deve alegar que",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "não é cabível a interceptação quando o ilícito apurado for punível com pena de detenção."
+            },
+            {
+              "letra": "B",
+              "texto": "a pena mínima de 2 (dois) anos não autoriza o deferimento de interceptação."
+            },
+            {
+              "letra": "C",
+              "texto": "o delegado de polícia não é legitimado a representar pela interceptação telefônica."
+            },
+            {
+              "letra": "D",
+              "texto": "a ausência de contraditório, antes do deferimento da interceptação, é causa de nulidade."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O Art. 2º, III, da Lei nº 9.296/96 veda expressamente a interceptação telefônica quando o fato investigado constituir infração penal punida, no máximo, com pena de detenção. Como o crime de atividades clandestinas de telecomunicações tem pena de detenção, a interceptação era, desde o início, legalmente incabível, independentemente da gravidade concreta do fato ou do quantum da pena mínima — o critério legal é a espécie de pena cominada (reclusão x detenção), e não sua duração.",
+          "explicacaoErradas": "B) Errada porque o critério da Lei 9.296/96 não é a pena mínima cominada (dois anos, no caso), mas sim a espécie da pena — somente reclusão admite interceptação; a duração da pena mínima é irrelevante para essa vedação. C) Errada porque o delegado de polícia tem legitimidade expressa para representar pela interceptação telefônica na fase de inquérito, conforme o Art. 3º da Lei 9.296/96. D) Errada porque a interceptação telefônica é medida cautelar sigilosa por natureza, decretada sem contraditório prévio (inaudita altera parte), sob pena de frustrar sua finalidade investigativa; o contraditório, quando cabível, é diferido para momento posterior.",
+          "pegadinha": "A banca insere o dado da \"pena mínima de 2 anos\" para induzir o candidato a acreditar que o critério legal de admissibilidade da interceptação é o quantum da pena mínima cominada, quando, na verdade, a Lei 9.296/96 veda a interceptação com base exclusivamente na espécie de pena (detenção), pouco importando sua duração.",
+          "regraMemoria": "Interceptação telefônica só é cabível para crimes punidos com reclusão; sendo a pena de detenção, a interceptação é sempre vedada, qualquer que seja o seu quantum mínimo ou máximo."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Recursos Penais",
+          "enunciado": "Suelen ajuizou queixa-crime contra Bolívar, pela prática do crime de exercício arbitrário das próprias razões praticado sem violência ou grave ameaça, previsto no Art. 345, caput e parágrafo único, do CP, cuja pena cominada é de detenção de quinze dias a um mês, ou multa. A queixa-crime foi ajuizada perante o Juízo competente, que, após todo o trâmite preliminar, sendo infrutífero qualquer tipo de solução negociada, já na audiência de instrução e julgamento, rejeitou a queixa. Diante do caso narrado, como advogado(a) de Suelen, assinale a opção que indica o recurso que deve ser interposto.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Recurso em Sentido Estrito, interposto na Vara Criminal. As razões podem ser apresentadas diretamente no Tribunal."
+            },
+            {
+              "letra": "B",
+              "texto": "Apelação, a ser interposta no Juizado Especial Criminal, já acompanhada de razões recursais dirigidas à Turma Recursal."
+            },
+            {
+              "letra": "C",
+              "texto": "Apelação, a ser interposta na Vara Criminal. As razões podem ser apresentadas diretamente na Turma Recursal."
+            },
+            {
+              "letra": "D",
+              "texto": "Recurso em Sentido Estrito, interposto no Juizado Especial Criminal, acompanhado de razões recursais dirigidas à Turma Recursal."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O crime de exercício arbitrário das próprias razões sem violência (Art. 345, caput, CP) tem pena de detenção de quinze dias a um mês, ou multa, caracterizando infração de menor potencial ofensivo (pena máxima não superior a 2 anos), sujeita ao rito sumaríssimo da Lei nº 9.099/95 (JECRIM). Nesse rito, o recurso cabível contra a sentença (inclusive a que rejeita a queixa-crime) é a apelação, prevista no Art. 82 da Lei 9.099/95, interposta no prazo de 10 dias perante o próprio Juizado Especial Criminal, já acompanhada das razões recursais (que, no procedimento sumaríssimo, integram a própria petição do recurso), sendo o julgamento realizado pela Turma Recursal.",
+          "explicacaoErradas": "A) Errada porque o Recurso em Sentido Estrito (Art. 581 do CPP) é o recurso próprio do procedimento comum ordinário perante a Vara Criminal, não se aplicando às infrações de menor potencial ofensivo, que seguem o rito sumaríssimo da Lei 9.099/95, cujo recurso típico é a apelação. C) Errada porque, apesar de acertar a espécie recursal (apelação), erra o foro de interposição (deveria ser o Juizado Especial Criminal, não a Vara Criminal comum) e erra ao admitir a apresentação posterior das razões diretamente na Turma Recursal — no rito sumaríssimo, a apelação já deve vir instruída com as razões desde a interposição. D) Errada porque, apesar de acertar o local (Juizado Especial Criminal) e a exigência de razões já na petição, erra a espécie recursal, que deveria ser apelação, e não Recurso em Sentido Estrito.",
+          "pegadinha": "A pegadinha está em levar o candidato a aplicar a lógica do procedimento comum (RESE contra rejeição de queixa/denúncia, art. 581, I, CPP), ignorando que a infração narrada é de menor potencial ofensivo e, portanto, tramita sob o rito sumaríssimo da Lei 9.099/95, cujo recurso cabível é sempre a apelação, já instruída com razões, interposta no próprio Juizado.",
+          "regraMemoria": "No JECRIM (Lei 9.099/95), o recurso contra a sentença é sempre apelação — interposta com razões já na petição, perante o próprio Juizado, e julgada pela Turma Recursal — nunca Recurso em Sentido Estrito."
+        },
+        {
+          "territorio": "Direito Previdenciário",
+          "tema": "Acidente de Trabalho",
+          "enunciado": "José, mecânico, contando com 12 (doze) meses de contribuição para a Previdência Social, sofreu acidente de trabalho, tornando- se tetraplégico. Em razão do acidente, ficou completamente incapacitado para o trabalho. Diante dessas condições, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "José não terá direito à aposentadoria por incapacidade permanente, uma vez que não cumpriu a carência mínima de 24 (vinte e quatro) meses de contribuição."
+            },
+            {
+              "letra": "B",
+              "texto": "José, necessitando da assistência permanente de outra pessoa, terá acrescido o valor da sua aposentadoria por incapacidade permanente em até 50% (cinquenta por cento)."
+            },
+            {
+              "letra": "C",
+              "texto": "José, caso se recupere e volte a trabalhar voluntariamente, terá sua aposentadoria cancelada automaticamente, a partir da data do retorno."
+            },
+            {
+              "letra": "D",
+              "texto": "José, sendo portador de doença ou lesão ao filiar-se ao Regime Geral de Previdência Social, não terá direito à aposentadoria por incapacidade permanente, ainda que a incapacidade sobrevenha, após a filiação, por motivo de progressão ou agravamento dessa doença ou lesão."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O Art. 46 da Lei nº 8.213/91 estabelece que o aposentado por incapacidade permanente (antiga aposentadoria por invalidez) que retornar voluntariamente à atividade terá sua aposentadoria automaticamente cancelada a partir da data do retorno, independentemente de qualquer procedimento administrativo prévio de cessação — é exatamente o caso de José, se ele se recuperar e voltar a trabalhar por sua própria vontade.",
+          "explicacaoErradas": "A) Errada porque o Art. 26, II, da Lei 8.213/91 dispensa a carência para a aposentadoria por incapacidade permanente decorrente de acidente de qualquer natureza ou causa, inclusive de trabalho — José, com 12 meses de contribuição e acidente de trabalho, não precisa cumprir os 24 meses de carência. B) Errada quanto ao percentual: o Art. 45 da Lei 8.213/91 prevê acréscimo fixo de 25% (e não \"até 50%\") para quem necessita de assistência permanente de outra pessoa (grande invalidez). D) Errada porque o Art. 42, §2º, da Lei 8.213/91 estabelece justamente o contrário: a doença ou lesão preexistente à filiação só afasta o direito ao benefício quando a incapacidade decorre diretamente dela sem agravamento; se a incapacidade sobrevier por progressão ou agravamento da doença ou lesão preexistente, o direito ao benefício é assegurado.",
+          "pegadinha": "A banca tenta induzir o candidato a (i) acreditar que toda aposentadoria por incapacidade exige carência mínima de 24 meses, esquecendo a dispensa legal para acidentes de qualquer natureza, e (ii) confundir o percentual fixo de 25% da grande invalidez com um teto de \"até 50%\", número que não corresponde à lei.",
+          "regraMemoria": "Acidente de qualquer natureza sempre dispensa carência para aposentadoria por incapacidade permanente; o retorno voluntário ao trabalho sempre cancela automaticamente essa aposentadoria (Art. 46, Lei 8.213/91); e o acréscimo por grande invalidez é sempre fixo em 25%, nunca variável ou maior."
+        },
+        {
+          "territorio": "Direito Previdenciário",
+          "tema": "Benefícios Previdenciários",
+          "enunciado": "Manoel é segurado de baixa renda, tendo sido recolhido à prisão, em regime fechado, no dia 01/01/2022. Antes da prisão, ele recolheu 12 contribuições mensais à Previdência Social e tem, como único dependente, o filho Maurício, de 19 anos. Diante destas considerações, sobre o auxílio-reclusão assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Maurício não faz jus ao benefício do auxílio-reclusão, uma vez que seu pai, Manoel, não cumpriu a carência de 24 (vinte e quatro) meses."
+            },
+            {
+              "letra": "B",
+              "texto": "Maurício, apesar de Manoel cumprir a carência exigida, não faz jus ao benefício do auxílio-reclusão por possuir mais de 18 (dezoito) anos."
+            },
+            {
+              "letra": "C",
+              "texto": "Caso Manoel venha a exercer atividade, ainda que em regime fechado, haverá a perda do direito ao recebimento do auxílio- reclusão para seu dependente."
+            },
+            {
+              "letra": "D",
+              "texto": "O requerimento de Manoel solicitando o auxílio-reclusão deve ser instruído com a certidão de nascimento do dependente, sem a necessidade de certidão sobre o seu recolhimento à prisão."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Desde a Lei nº 13.846/2019, o Art. 25, IV, da Lei 8.213/91 passou a exigir carência de 24 (vinte e quatro) contribuições mensais para a concessão do auxílio-reclusão. Como Manoel recolheu apenas 12 contribuições antes de ser preso, não cumpriu essa carência legal, de modo que seu dependente Maurício não faz jus ao benefício, independentemente de Manoel ser segurado de baixa renda.",
+          "explicacaoErradas": "B) Errada porque, para fins previdenciários, o filho dependente perde essa qualidade apenas ao completar 21 anos (Art. 16, §2º, da Lei 8.213/91), salvo inválido ou com deficiência — Maurício, com 19 anos, ainda seria dependente elegível se a carência tivesse sido cumprida; o limite de \"18 anos\" mencionado na alternativa está incorreto. C) Errada porque o mero exercício de atividade pelo segurado ainda mantido em regime fechado não implica, por si só e automaticamente, a perda do benefício de seus dependentes — a cessação do auxílio-reclusão está vinculada, sobretudo, à soltura, transferência para regime semiaberto/aberto ou óbito do segurado, e a condição de baixa renda é aferida no momento do recolhimento à prisão. D) Errada porque o requerimento do auxílio-reclusão exige a comprovação do efetivo recolhimento à prisão (certidão carcerária), documento indispensável e periodicamente renovável, não bastando a certidão de nascimento do dependente.",
+          "pegadinha": "A pegadinha está em o candidato aplicar a regra antiga do auxílio-reclusão (que antes da reforma de 2019 não exigia carência específica), ignorando que a Lei 13.846/2019 passou a exigir expressamente 24 contribuições mensais de carência — carência que Manoel, com apenas 12 contribuições, não cumpriu.",
+          "regraMemoria": "Desde a Lei 13.846/2019, o auxílio-reclusão exige sempre carência de 24 contribuições mensais — sem essa carência cumprida, não há direito ao benefício, mesmo sendo o segurado de baixa renda."
+        },
+        {
+          "territorio": "Direito do Trabalho",
+          "tema": "Direito Coletivo do Trabalho",
+          "enunciado": "Os sindicatos de classe de uma determinada categoria elaboraram uma convenção coletiva normatizando o pagamento do adicional de penosidade. A norma previa vigência de 2 (dois) anos, com término em outubro de 2023. Considerando esses fatos e o que dispõe a CLT, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Mesmo com a vigência encerrada, os trabalhadores que recebiam o adicional possuem direito adquirido, e o pagamento deve prosseguir."
+            },
+            {
+              "letra": "B",
+              "texto": "Ao término da vigência da norma coletiva, caso ela não seja renovada, os trabalhadores perderão o direito ao adicional."
+            },
+            {
+              "letra": "C",
+              "texto": "Os trabalhadores que já recebiam o adicional continuarão com o direito se isso for homologado pelo Ministério do Trabalho."
+            },
+            {
+              "letra": "D",
+              "texto": "A vantagem se incorpora ao contrato de trabalho dos empregados ativos, e os admitidos posteriormente ao dies ad quem da norma coletiva não a receberão."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O Art. 614, §3º, da CLT (com redação dada pela Lei 13.467/2017) veda expressamente a ultratividade das normas coletivas, dispondo que não é permitida duração de convenção ou acordo coletivo superior a dois anos e que é vedada a ultratividade. Assim, encerrada a vigência da convenção coletiva (outubro de 2023) sem renovação, o adicional de penosidade nela previsto deixa de ser devido, pois não há incorporação definitiva ao contrato individual nem sobrevivência da norma além do prazo pactuado.",
+          "explicacaoErradas": "A) Errada porque não há direito adquirido a vantagem prevista em norma coletiva já extinta — a vedação à ultratividade (Art. 614, §3º, CLT) afasta exatamente essa ideia de perpetuação automática do benefício. C) Errada porque a validade e a eficácia das convenções coletivas não dependem de homologação pelo Ministério do Trabalho, e ainda que houvesse, isso não teria o condão de estender a vigência da norma além do prazo nela fixado. D) Errada porque fala em incorporação definitiva da vantagem ao contrato de trabalho dos empregados ativos — o que contraria frontalmente a vedação legal à ultratividade das normas coletivas; a vantagem não se incorpora ao patrimônio jurídico do empregado além do período de vigência da norma.",
+          "pegadinha": "O examinador explora a jurisprudência e a teoria antigas sobre a \"ultratividade\" e a \"incorporação\" de cláusulas normativas ao contrato individual (aderência limitada por revogação), que vigoravam antes da reforma trabalhista, tentando fazer o candidato ignorar que, desde 2017, o Art. 614, §3º, da CLT veda expressamente qualquer ultratividade das normas coletivas.",
+          "regraMemoria": "Norma coletiva tem sempre vigência limitada e nunca ultratividade (Art. 614, §3º, CLT) — vencido o prazo sem renovação, extinguem-se automaticamente os direitos nela previstos."
+        },
+        {
+          "territorio": "Direito do Trabalho",
+          "tema": "Remuneração e Verbas Rescisórias",
+          "enunciado": "Alexandre, Reginaldo e Maurício eram empregados da mesma sociedade empresária, mas em períodos distintos. Alexandre pediu demissão após 2 (dois) anos de trabalho, pois já estava cansado de trabalhar para o mesmo empregador e já era idoso contando com 71 (setenta e um) anos de idade. Reginaldo se aposentou após 3 (três) anos, pois já contava com idade e tempo de serviço anterior, apesar de ter 62 (sessenta e dois) anos. Maurício foi dispensado sem justa causa, após quatro meses, mesmo sendo jovem e contando com 25 (vinte e cinco) anos de idade. Os três consultaram você, como advogado(a), acerca da possibilidade de levantamento imediato dos valores depositados a título de FGTS dos contratos terminados. Observando a legislação em vigor e adstrito aos dados do enunciado, assinale a afirmativa que apresenta, corretamente, sua orientação.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Os três poderão receber, imediatamente, os valores do FGTS."
+            },
+            {
+              "letra": "B",
+              "texto": "Alexandre e Maurício não poderão receber os valores imediatamente, pois um pediu demissão e o outro teve contrato inferior a seis meses."
+            },
+            {
+              "letra": "C",
+              "texto": "Apenas Alexandre não poderá movimentar sua conta vinculada e receber os valores imediatamente."
+            },
+            {
+              "letra": "D",
+              "texto": "Apenas Maurício, por haver sido dispensado sem justa causa, tem direito ao recebimento imediato do FGTS."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Os três trabalhadores podem movimentar imediatamente suas contas vinculadas do FGTS. Reginaldo pode sacar por força da aposentadoria concedida pela Previdência Social (Art. 20, III, da Lei 8.036/90). Maurício pode sacar por ter sido dispensado sem justa causa (Art. 20, I, da Lei 8.036/90), hipótese que não exige tempo mínimo de contrato (diferentemente do seguro-desemprego). Já Alexandre, mesmo tendo pedido demissão — hipótese que, isoladamente, não autoriza o saque —, pode movimentar a conta em razão de ter 71 anos de idade, pois o Art. 20, VIII, da Lei 8.036/90 autoriza a movimentação da conta vinculada ao trabalhador que tiver idade igual ou superior a 70 anos, independentemente do motivo da rescisão contratual.",
+          "explicacaoErradas": "B) Errada porque desconsidera a exceção etária do Art. 20, VIII, da Lei 8.036/90 aplicável a Alexandre (70 anos ou mais), e também porque não há prazo mínimo de contrato exigido para o saque do FGTS em caso de dispensa sem justa causa (essa exigência de tempo mínimo aplica-se ao seguro-desemprego, não ao saque da conta vinculada). C) Errada pelo mesmo motivo relativo a Alexandre, ignorando a exceção etária que lhe garante o saque mesmo tendo pedido demissão. D) Errada porque nega o direito de Reginaldo, que pode sacar em razão da aposentadoria (hipótese expressamente prevista em lei), e também de Alexandre, pela exceção etária.",
+          "pegadinha": "A banca explora a regra geral, amplamente conhecida, de que o pedido de demissão não autoriza o saque do FGTS, escondendo a exceção legal específica para o trabalhador com 70 anos ou mais (Art. 20, VIII, Lei 8.036/90), que autoriza o saque independentemente do motivo do desligamento. Também testa se o candidato confunde o requisito de tempo mínimo de contrato do seguro-desemprego com a ausência desse requisito para o saque do FGTS por dispensa sem justa causa.",
+          "regraMemoria": "Trabalhador com 70 anos ou mais pode sempre sacar o FGTS, qualquer que seja o motivo da rescisão contratual — inclusive pedido de demissão —, pois a idade avançada supera a causa do desligamento."
+        },
+        {
+          "territorio": "Direito do Trabalho",
+          "tema": "Relação de Emprego",
+          "enunciado": "Reinaldo, trabalhador rural, atua na Fazenda Boa Esperança como tratorista desde 1990. Em janeiro de 2021, o empregador de Reinaldo o dispensou sem justa causa, sendo que o ex-empregado ajuizou reclamação trabalhista em novembro de 2023. Sobre a situação apresentada, nos termos da Constituição Federal, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A prescrição para o trabalhador rural só tem início após uma prestação de contas, que não foi feita, razão pela qual não existe prescrição total."
+            },
+            {
+              "letra": "B",
+              "texto": "Como forma de proteção especial ao empregado rural, a lei garante que a ação possa ser proposta em até 5 (cinco) anos da extinção do contrato."
+            },
+            {
+              "letra": "C",
+              "texto": "Caso o reclamado suscite em defesa a prescrição extintiva, o juiz deverá acolhê-la."
+            },
+            {
+              "letra": "D",
+              "texto": "Somente se as verbas da extinção forem quitadas no sindicato de classe rural é que a prescrição bimestral terá início."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Desde a Emenda Constitucional nº 28/2000, o prazo prescricional trabalhista do empregado rural foi unificado ao do trabalhador urbano, nos termos do Art. 7º, XXIX, da CF/88: prescrição quinquenal (5 anos) durante a vigência do contrato, observado o limite de até 2 anos após a extinção do contrato para o ajuizamento da ação (prescrição total). Reinaldo foi dispensado em janeiro de 2021 e só ajuizou a ação em novembro de 2023, ultrapassando o biênio de 2 anos contado da extinção do contrato — logo, se o réu suscitar a prescrição extintiva em sua defesa, o juiz deverá reconhecê-la e acolhê-la, extinguindo a pretensão.",
+          "explicacaoErradas": "A) Errada porque a regra da \"prestação de contas\" como marco inicial da prescrição rural é anterior à EC 28/2000 e já não vigora — desde então, aplica-se a regra geral do Art. 7º, XXIX, CF, com prazo bienal contado da extinção do contrato. B) Errada porque não existe mais prazo de 5 anos contados da extinção do contrato como regra de proteção especial ao rurícola — o prazo de 5 anos aplica-se às parcelas vencidas durante o contrato, ao passo que o prazo para ajuizar a ação após a extinção contratual é de 2 anos, sob pena de prescrição total. D) Errada porque não existe \"prescrição bimestral\" condicionada à quitação das verbas rescisórias perante o sindicato de classe rural — regra que já não vigora desde a unificação constitucional dos prazos prescricionais.",
+          "pegadinha": "A pegadinha reside em fazer o candidato lembrar de regras específicas antigas de proteção ao trabalhador rural (imprescritibilidade na constância do contrato, prestação de contas, prescrição bimestral vinculada à quitação sindical), todas superadas pela EC 28/2000, que unificou definitivamente o regime prescricional rural ao urbano.",
+          "regraMemoria": "Desde a EC 28/2000, a prescrição trabalhista do rurícola é idêntica à do urbano: 5 anos durante o contrato, até o limite de 2 anos após sua extinção — nunca mais imprescritível ou sujeita a regras especiais."
+        },
+        {
+          "territorio": "Direito do Trabalho",
+          "tema": "Relação de Emprego",
+          "enunciado": "Em 2024, uma companhia imobiliária contratou Olívia como estagiária. Olívia foi designada para trabalhar em regime de teletrabalho (trabalho em domicílio, home office) na confecção de planilhas de locatários inadimplentes, que, em seguida, são enviadas ao setor jurídico da sociedade empresária. Considerando os fatos e o que dispõe a CLT, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O regime de teletrabalho é incompatível com o estágio, por frustrar o seu objetivo principal que é a vivência prática das rotinas."
+            },
+            {
+              "letra": "B",
+              "texto": "Havendo autorização prévia do Juiz do Trabalho, é possível, em caráter excepcional, o regime de teletrabalho no estágio."
+            },
+            {
+              "letra": "C",
+              "texto": "Somente se estivesse na cota de estagiário com deficiência, ela poderia trabalhar em regime de teletrabalho."
+            },
+            {
+              "letra": "D",
+              "texto": "Se for conveniente para as partes, o regime de teletrabalho pode ser adotado nos contratos de estágio."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A legislação do estágio (Lei nº 11.788/2008, com as alterações que passaram a regular expressamente o teletrabalho no estágio) autoriza a adoção do regime de teletrabalho (home office) nos contratos de estágio sempre que for conveniente para as partes e compatível com as atividades previstas no termo de compromisso, desde que asseguradas a supervisão e a orientação adequadas pela parte concedente, não havendo incompatibilidade automática entre o estágio e o trabalho remoto.",
+          "explicacaoErradas": "A) Errada porque a legislação não trata o teletrabalho como incompatível com o estágio; a vivência prática das rotinas pode ser assegurada mesmo à distância, mediante supervisão adequada, sobretudo em atividades administrativas como a confecção de planilhas descrita no caso. B) Errada porque não há exigência de autorização judicial prévia para a adoção do teletrabalho no estágio; trata-se de decisão das próprias partes (instituição de ensino, parte concedente e estagiário), sem necessidade de intervenção do Poder Judiciário. C) Errada porque a possibilidade de teletrabalho no estágio não está restrita aos estagiários com deficiência (cota de PcD); qualquer estagiário pode estagiar nesse regime, desde que atendidos os requisitos legais de compatibilidade e supervisão.",
+          "pegadinha": "A banca explora a ideia intuitiva de que o estágio pressupõe necessariamente presença física para proporcionar a \"vivência prática das rotinas de trabalho\", levando o candidato a supor incompatibilidade absoluta, restrição a hipóteses excepcionais (deficiência) ou necessidade de autorização judicial — quando, na realidade, a lei permite o teletrabalho no estágio como opção ordinária, à conveniência das partes.",
+          "regraMemoria": "O regime de teletrabalho pode sempre ser adotado no estágio, bastando conveniência das partes e compatibilidade com as atividades — não exige deficiência do estagiário nem autorização judicial."
+        },
+        {
+          "territorio": "Direito do Trabalho",
+          "tema": "Grupo Econômico e Terceirização",
+          "enunciado": "A empresa de trabalho temporário Sempre Alerta Ltda. terceirizará o serviço de limpeza da sociedade empresária Extintores Infalíveis Ltda., nela alocando 10 (dez) auxiliares de limpeza que se revezarão em turnos de 12 x 36 horas. No contrato apresentado, que vigora a partir de janeiro de 2024, por 180 dias, e é regido pela Lei nº 6.019/74, existe cláusula de reserva que proíbe a contratação de qualquer auxiliar pela empresa tomadora ao fim do prazo em que ele tenha sido colocado à sua disposição. Considerando os fatos e a norma de regência, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A cláusula de reserva é válida, se ambas as partes a aceitarem."
+            },
+            {
+              "letra": "B",
+              "texto": "Para a validade da cláusula de reserva, é necessária a chancela do sindicato de classe dos empregadores."
+            },
+            {
+              "letra": "C",
+              "texto": "A inserção da cláusula de reserva é possível, desde que prevista em acordo coletivo de trabalho."
+            },
+            {
+              "letra": "D",
+              "texto": "A cláusula de reserva é nula de pleno direito."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A Lei nº 6.019/74 veda expressamente a inserção, em contrato de prestação de serviços (inclusive de trabalho temporário), de cláusula de reserva de mão de obra que proíba a contratação do trabalhador terceirizado/temporário pela empresa tomadora ao término do contrato. Trata-se de vedação de ordem pública, cogente, de modo que qualquer cláusula desse tipo é nula de pleno direito, não produzindo efeitos jurídicos independentemente da vontade das partes contratantes.",
+          "explicacaoErradas": "A) Errada porque a validade da cláusula de reserva não depende da aceitação das partes — trata-se de vedação legal absoluta e indisponível, que não pode ser afastada por acordo de vontades entre a empresa de trabalho temporário e a tomadora. B) Errada porque não existe previsão legal de \"chancela sindical\" capaz de convalidar cláusula de reserva; a nulidade decorre diretamente da lei, sendo insanável por manifestação sindical. C) Errada porque nem mesmo por acordo coletivo de trabalho é possível inserir validamente cláusula de reserva, pois a norma que a veda é de ordem pública e não comporta flexibilização pela negociação coletiva nesse ponto específico.",
+          "pegadinha": "A pegadinha está em induzir o candidato a pensar que, no Direito do Trabalho, a autonomia da vontade (bilateral) ou a negociação coletiva (autonomia privada coletiva) sempre podem flexibilizar cláusulas contratuais, ignorando que a vedação à cláusula de reserva é norma de ordem pública, insuscetível de disposição em contrário por qualquer das vias mencionadas.",
+          "regraMemoria": "Cláusula de reserva de mão de obra em contrato de trabalho temporário/terceirização é sempre nula de pleno direito — jamais pode ser validada por acordo bilateral, chancela sindical ou negociação coletiva."
+        },
+        {
+          "territorio": "Processo do Trabalho",
+          "tema": "Execução Trabalhista",
+          "enunciado": "Você advoga para o empregado, credor em uma reclamação trabalhista cuja decisão transitou em julgado. A liquidação de sentença foi promovida e, após manifestações das partes, foi homologado o cálculo da parte ré. Você continua entendendo que há erro nos cálculos homologados e pretende continuar a discutir a matéria. Diante disso, assinale a opção que apresenta a medida a ser adotada no interesse do seu cliente.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Deverá ser apresentado embargos à execução no prazo de cinco dias independentemente da garantia da execução ou da penhora."
+            },
+            {
+              "letra": "B",
+              "texto": "Não cabe qualquer medida, uma vez que se operou a preclusão, pois já houve manifestação sobre a conta de liquidação."
+            },
+            {
+              "letra": "C",
+              "texto": "Na sua manifestação, a ser feita em dez dias após a garantia do juízo, não há restrição de matéria, podendo ser discutido não só os cálculos, mas também a sentença de conhecimento."
+            },
+            {
+              "letra": "D",
+              "texto": "Após a garantia da execução ou penhorados os bens, você poderá apresentar impugnação à sentença de liquidação em cinco dias."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Após a reforma trabalhista (Lei 13.467/2017), o Art. 884, §3º, da CLT passou a exigir que a impugnação à sentença de liquidação — cabível tanto ao exequente quanto ao executado que discordem dos cálculos homologados — somente possa ser apresentada depois de garantida a execução ou penhorados os bens, no prazo de 5 (cinco) dias. Assim, mesmo representando o credor (exequente), você só poderá impugnar o cálculo homologado após a garantia do juízo, no referido prazo de cinco dias, não podendo fazê-lo livremente antes disso.",
+          "explicacaoErradas": "A) Errada porque menciona embargos à execução independentemente de garantia — mas embargos à execução são medida típica do executado (devedor), e mesmo a impugnação da sentença de liquidação (que é o instrumento correto para o credor) atualmente exige a prévia garantia da execução ou penhora de bens, não podendo ser apresentada sem esse pressuposto. B) Errada porque afirma não caber nenhuma medida, quando a lei prevê expressamente a impugnação à sentença de liquidação, ainda que sujeita ao pressuposto da garantia do juízo. C) Errada porque erra o prazo (não são dez dias, mas cinco) e porque amplia indevidamente o objeto da impugnação para incluir a sentença de conhecimento — a impugnação à liquidação restringe-se aos valores e cálculos apurados, não podendo reabrir discussão sobre o mérito já coberto pela coisa julgada.",
+          "pegadinha": "A banca explora a mudança trazida pela reforma trabalhista de 2017, que unificou o tratamento processual entre exequente e executado quanto à impugnação da sentença de liquidação: ambos agora dependem da garantia da execução (ou penhora) como pressuposto, no mesmo prazo de cinco dias — diferentemente da sistemática anterior, em que o exequente podia impugnar sem tal exigência.",
+          "regraMemoria": "Depois da reforma trabalhista, tanto exequente quanto executado só podem impugnar a sentença de liquidação depois de garantida a execução ou penhorados os bens, sempre no prazo de cinco dias — nunca antes disso."
+        },
+        {
+          "territorio": "Processo do Trabalho",
+          "tema": "Competência da Justiça do Trabalho",
+          "enunciado": "Jeferson trabalhou em São Paulo de 2018 a 2023, quando foi dispensado sem justa causa e voltou para sua cidade de origem, Fortaleza/CE. Entendendo ter realizado sobrejornada sem receber, Jeferson contratou um advogado na sua cidade que ajuizou reclamação trabalhista distribuída a uma das Varas de Fortaleza/CE requerendo o pagamento de horas extras. A ex-empregadora foi citada para a audiência, que ocorrerá em quatro meses, mas pretende deslocar o feito para São Paulo, pois foi o único local da prestação de serviços e onde o autor foi contratado. Para tanto, a ex-empregadora o(a) contratou como advogado(a). Na qualidade de advogado(a) da sociedade empresária, considerando os fatos e o que dispõe a CLT, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A sociedade empresária poderá apresentar a exceção de incompetência territorial até a audiência."
+            },
+            {
+              "letra": "B",
+              "texto": "A sociedade empresária deve apresentar a exceção de incompetência territorial em até dez dias corridos, contados da citação."
+            },
+            {
+              "letra": "C",
+              "texto": "A sociedade empresária deverá apresentar a exceção de incompetência territorial em cinco dias úteis, contados da citação."
+            },
+            {
+              "letra": "D",
+              "texto": "Não se poderá apresentar exceção de incompetência territorial, porque a ação pode ser ajuizada no domicílio do autor, ainda que não coincida com o local da prestação dos serviços."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O Art. 800 da CLT (com redação dada pela Lei 13.467/2017) estabelece o prazo de 5 (cinco) dias, contados da notificação/citação, para a apresentação da exceção de incompetência territorial. Além disso, desde a reforma trabalhista, o Art. 775 da CLT determina que os prazos processuais trabalhistas sejam contados em dias úteis. Assim, a sociedade empresária deve apresentar a exceção de incompetência territorial no prazo de 5 dias úteis, contados da citação, arguindo que o local da prestação de serviços e da contratação (São Paulo) é o foro competente, e não o domicílio atual do autor (Fortaleza/CE).",
+          "explicacaoErradas": "A) Errada porque a lei fixa prazo específico e peremptório de 5 dias para a exceção de incompetência territorial, e não um prazo genérico \"até a audiência\". B) Errada tanto no quantum do prazo (o correto é 5 dias, não 10) quanto na forma de contagem (dias úteis, e não dias corridos, desde a reforma trabalhista). D) Errada porque a regra geral de competência territorial trabalhista (Art. 651 da CLT) é o local da prestação dos serviços (ou, em algumas hipóteses específicas, da contratação), e não o domicílio do autor; sendo cabível, portanto, a exceção de incompetência territorial para deslocar o feito a São Paulo.",
+          "pegadinha": "A banca testa a atualização do candidato quanto à mudança na contagem de prazos trabalhistas (de dias corridos para dias úteis, Art. 775 CLT, pós-reforma de 2017) e o prazo exato — e frequentemente confundido com o do CPC — de 5 dias para a exceção de incompetência territorial (Art. 800 CLT).",
+          "regraMemoria": "Prazos processuais trabalhistas contam-se sempre em dias úteis (Art. 775, CLT); a exceção de incompetência territorial deve ser apresentada em 5 dias úteis contados da citação (Art. 800, CLT)."
+        },
+        {
+          "territorio": "Processo do Trabalho",
+          "tema": "Provas no Processo do Trabalho",
+          "enunciado": "Em determinada reclamação trabalhista, com a presença das partes e dos advogados, ocorreu a 1ª audiência apenas para a tentativa de conciliação, que não teve sucesso. Então, o juiz recebeu a defesa e deferiu as provas testemunhais e os depoimentos pessoais recíprocos, sob pena de confissão, designando a data da instrução. Chegado o dia da audiência de instrução, as partes foram apregoadas e nenhuma delas estava presente, não havendo qualquer justificativa para as ausências. Assinale a opção que indica o que deve ocorrer com esse processo.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O juiz deverá designar nova audiência."
+            },
+            {
+              "letra": "B",
+              "texto": "O juiz deve aplicar a confissão somente em desfavor do autor."
+            },
+            {
+              "letra": "C",
+              "texto": "O magistrado julgará de acordo com a distribuição do ônus da prova."
+            },
+            {
+              "letra": "D",
+              "texto": "O processo será arquivado."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Quando ambas as partes faltam, sem justificativa, à audiência de instrução em que estava cominada a confissão ficta recíproca (para autor e réu), as presunções de confissão se anulam mutuamente, pois não é possível presumir verdadeiros, ao mesmo tempo, fatos contraditórios alegados por ambas as partes ausentes. Nessa hipótese, o magistrado deve julgar a lide com base no conjunto probatório já produzido nos autos, aplicando as regras de distribuição do ônus da prova (Art. 818 da CLT c/c Art. 373 do CPC), e não presumir confissão em desfavor de qualquer das partes.",
+          "explicacaoErradas": "A) Errada porque a ausência injustificada de ambas as partes à audiência de instrução, já com defesa apresentada e provas deferidas, não implica novo adiamento automático — o processo deve prosseguir para julgamento com base no que já consta dos autos. B) Errada porque a cominação de confissão recíproca vale para ambas as partes; não há razão jurídica para aplicá-la apenas contra o autor quando ambos faltaram e ambos estavam sujeitos à mesma pena processual. D) Errada porque a hipótese de arquivamento do processo por ausência da parte (Art. 844 da CLT) aplica-se à ausência do reclamante à audiência inicial (una), sem justificativa, e não à ausência de ambas as partes já na fase de instrução, com a defesa já apresentada.",
+          "pegadinha": "A banca tenta fazer o candidato aplicar mecanicamente a cominação de confissão a apenas uma das partes, ou confundir a hipótese com o arquivamento do processo por ausência do reclamante à audiência inaugural (regra do Art. 844 CLT), ignorando que, faltando ambas as partes na fase de instrução já iniciada, as confissões recíprocas se neutralizam e o julgamento se dá pela distribuição do ônus da prova.",
+          "regraMemoria": "Faltando ambas as partes à audiência de instrução com confissão ficta recíproca cominada, as confissões se anulam mutuamente e o juiz julga pela distribuição do ônus da prova — nunca arquiva o processo nesse estágio."
+        },
+        {
+          "territorio": "Processo do Trabalho",
+          "tema": "Recursos Trabalhistas",
+          "enunciado": "Você é advogado de um trabalhador em sede de reclamação trabalhista. Em que pese o direito de seu cliente ser constitucionalmente assegurado, pois se trata de férias não gozadas um ano após o período aquisitivo, que tampouco foram indenizadas, a sentença de primeiro grau considerou o pedido improcedente. Do mesmo modo o recurso pertinente contra essa decisão também teve o provimento negado. Diante disso, considerando a decisão contrária ao dispositivo constitucional, você interpôs o recurso cabível, que não foi admitido sob a alegação de que não preenchia os pressupostos para tanto. Diante disso, assinale a afirmativa que apresenta, corretamente, a medida a ser adotada no interesse do seu cliente, sendo certo que as decisões não contêm nenhum vício de dúvida, omissão, obscuridade ou contradição.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Recurso de Revista."
+            },
+            {
+              "letra": "B",
+              "texto": "Agravo de Instrumento."
+            },
+            {
+              "letra": "C",
+              "texto": "Recurso Extraordinário."
+            },
+            {
+              "letra": "D",
+              "texto": "Agravo de Petição."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Diante de decisão de segundo grau que julgou o recurso ordinário e violou dispositivo constitucional, o recurso próprio cabível ao TST é o Recurso de Revista (Art. 896 da CLT), que já foi interposto e não teve seguimento admitido pelo juízo a quo. Contra a decisão que nega seguimento (trancamento) ao Recurso de Revista, o instrumento processual cabível é o Agravo de Instrumento (Art. 897, alínea \"b\", da CLT), destinado justamente a destrancar o recurso denegado e levá-lo à apreciação do TST.",
+          "explicacaoErradas": "A) Errada porque o Recurso de Revista já foi interposto (é precisamente o recurso mencionado no enunciado que não teve seguimento admitido); não se interpõe novamente o mesmo recurso, mas se busca destrancá-lo por outra via. C) Errada porque o Recurso Extraordinário ao STF somente é cabível após esgotadas as vias recursais ordinárias e extraordinárias trabalhistas (inclusive apreciação pelo TST); como o Recurso de Revista sequer foi conhecido, ainda não se esgotou a instância trabalhista, sendo prematuro o RE. D) Errada porque o Agravo de Petição (Art. 897, alínea \"a\", da CLT) é o recurso cabível na fase de execução trabalhista, e não na fase de conhecimento, que é o estágio processual do caso narrado.",
+          "pegadinha": "A banca tenta confundir o candidato entre recursos de nomes semelhantes cabíveis em fases distintas: Agravo de Instrumento (destranca recurso denegado, fase de conhecimento) versus Agravo de Petição (execução), além de insinuar precipitadamente a via do Recurso Extraordinário antes de esgotadas as instâncias trabalhistas ordinárias.",
+          "regraMemoria": "Recurso de Revista (ou Ordinário) que teve seguimento negado destranca-se sempre por Agravo de Instrumento; Agravo de Petição é exclusivo da fase de execução, nunca da fase de conhecimento."
+        },
+        {
+          "territorio": "Processo do Trabalho",
+          "tema": "Atos, Prazos e Nulidades",
+          "enunciado": "Em sede de reclamação trabalhista na qual você advoga para o empregado, foi celebrado acordo entre as partes ainda na fase de conhecimento, antes da prolação da sentença. Na petição de lavra conjunta entre os advogados das partes nada constou acerca das custas processuais. Seu cliente é beneficiário da gratuidade de justiça, conforme decisão constante do processo desde o início. Sobre as custas processuais, considerando o silêncio das partes e havendo acordo, segundo o texto da CLT, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "As custas deverão incidir em 2% sobre o valor do acordo e serão divididas em frações iguais pelas partes, sendo que, no caso de seu cliente, não haverá o pagamento por força da gratuidade de justiça."
+            },
+            {
+              "letra": "B",
+              "texto": "As custas deverão incidir em 10% sobre o valor do acordo e serão integralmente recolhidas pela parte ré."
+            },
+            {
+              "letra": "C",
+              "texto": "As custas deverão incidir em 2% sobre o valor do acordo e ficarão integralmente sob responsabilidade da parte autora que, na hipótese, está dispensada do recolhimento por força da gratuidade de justiça."
+            },
+            {
+              "letra": "D",
+              "texto": "As custas deverão incidir em 5% sobre o valor da causa, já que não houve prolação de sentença, e serão rateadas igualmente pelas partes, dispensado o autor do recolhimento pela gratuidade de justiça."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Nos termos do Art. 789, inciso III, da CLT, havendo acordo ou transação antes de proferida a sentença de conhecimento, as custas processuais incidem à base de 2% sobre o valor do respectivo acordo. Silenciando as partes sobre a responsabilidade pelo pagamento, a regra supletiva é o rateio em partes iguais entre os litigantes, sendo que, no caso, por ser o autor beneficiário da gratuidade de justiça (já deferida desde o início do processo), ele fica dispensado do pagamento de sua fração das custas.",
+          "explicacaoErradas": "B) Errada tanto no percentual (o correto é 2%, e não 10%, sobre o valor do acordo) quanto na atribuição integral à parte ré — a regra supletiva, no silêncio das partes, é o rateio igualitário entre reclamante e reclamada. C) Errada porque atribui as custas integralmente à parte autora — o padrão legal, na omissão das partes, é a divisão em partes iguais entre autor e réu, e não a imposição exclusiva a uma delas. D) Errada tanto no percentual (5% não é o índice legal aplicável) quanto na base de cálculo (deve incidir sobre o valor do acordo, e não sobre o valor da causa, quando há transação antes da sentença).",
+          "pegadinha": "A banca explora o percentual e a base de cálculo corretos das custas em caso de acordo antes da sentença (2% sobre o valor do acordo, e não da causa), bem como a regra supletiva de rateio igualitário entre as partes quando o instrumento de acordo é omisso, combinada com a manutenção do benefício da gratuidade de justiça mesmo diante da transação.",
+          "regraMemoria": "Acordo celebrado antes da sentença de conhecimento, silente sobre custas: sempre 2% sobre o valor do acordo, rateado em partes iguais entre as partes — o beneficiário da justiça gratuita fica sempre dispensado de sua fração."
+        }
+      ]
+    },
+    {
+      "provaOrigem": "38º Exame de Ordem Unificado",
+      "seedVersion": 6,
+      "questoes": [
+        {
+          "territorio": "Ética",
+          "tema": "Exercício da Advocacia",
+          "enunciado": "Uma sociedade de advogados decidiu patrocinar a realização de um evento, sob o formato de um congresso, em certo hotel de lazer do tipo “resort”, que conta com área de conferências, com o explícito fim de publicidade de suas atividades profissionais. Considerando a forma de publicidade escolhida, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Não é autorizada, independetemente de quem seja o público convidado para o evento, tendo em vista o local escolhido. Todavia, se o congresso fosse realizado em local diverso do hotel selecionado, seria admitido o seu patrocínio como meio de publicidade."
+            },
+            {
+              "letra": "B",
+              "texto": "É admitida, desde que os participantes sejam apenas integrantes da sociedade de advogados, funcionários ou clientes."
+            },
+            {
+              "letra": "C",
+              "texto": "É autorizada, sendo admitida a participação de clientes da sociedade de advogados e de interessados do meio jurídico."
+            },
+            {
+              "letra": "D",
+              "texto": "não é autorizada, independetemente de quem seja o público convidado para o evento, ou do local onde realizado."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Alternativa C. O patrocínio de eventos técnicos, científicos ou culturais relacionados ao Direito é modalidade de publicidade autorizada pelo Código de Ética e Disciplina e pelo Provimento 205/2021 do CFOAB, ainda que realizado em local de lazer (como um \"resort\"), desde que a divulgação seja voltada ao público técnico-profissional: advogados, clientes da sociedade e demais interessados do meio jurídico, sem configurar captação de clientela ou mercantilização da advocacia. O que legitima a publicidade não é o local do evento, mas a natureza técnico-profissional do conteúdo e a delimitação do público-alvo.",
+          "explicacaoErradas": "A) Erra ao afirmar que o local (resort) torna a publicidade vedada de forma absoluta; o critério legal não é o local do evento, mas a natureza profissional/técnica do conteúdo e do público, de modo que a mudança de endereço não é o fator decisivo. B) Restringe indevidamente o público autorizado apenas a integrantes da sociedade, funcionários e clientes, excluindo os \"interessados do meio jurídico\" (advogados de outras bancas, estudantes de Direito, operadores do sistema de justiça), que também podem participar sem descaracterizar a publicidade lícita. D) Nega de forma absoluta a possibilidade de patrocínio, desconsiderando que a norma deontológica expressamente admite esse tipo de publicidade profissional quando técnico-científica e destinada ao público adequado.",
+          "pegadinha": "A banca associa \"resort\"/hotel de lazer a mercantilização da advocacia, insinuando que o ambiente turístico descaracterizaria o evento como técnico-profissional; a armadilha é o candidato fixar-se no local do evento em vez de analisar a natureza do conteúdo e o público-alvo, que são os critérios realmente relevantes.",
+          "regraMemoria": "Publicidade de sociedade de advogados: o que importa é o CONTEÚDO técnico e o PÚBLICO (advogados, clientes, interessados do meio jurídico), nunca o local do evento — resort não contamina, mercantilização é que contamina."
+        },
+        {
+          "territorio": "Ética",
+          "tema": "Direitos e Prerrogativas do Advogado",
+          "enunciado": "A medida cautelar de busca e apreensão a ser cumprida no escritório do advogado José foi regularmente deferida, por Juízo competente. Considerou o magistrado que havia nos autos indícios de autoria e materialidade da prática de crime por José, juntamente com um cliente seu, de nome Oswaldo. Quanto à situação hipotética narrada, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "É dever do representante da OAB presente ao ato, durante o cumprimento do mandado de busca e apreensão, impedir que documentos referentes a outros processos em face de Oswaldo, não relacionados ao objeto da investigação que ensejou a cautelar, sejam retirados do escritório, exceto se o volume ou natureza dos objetos impedirem o resguardo do sigilo através da cadeia de custódia."
+            },
+            {
+              "letra": "B",
+              "texto": "A análise dos documentos apreendidos deve ser feita mediante comunicação prévia ao Conselho Federal da OAB, com antecedência mínima e impreterível de 48 horas."
+            },
+            {
+              "letra": "C",
+              "texto": "Caso seja essencial à sua defesa no processo criminal, é admitido que José efetue colaboração premiada em face de Oswaldo, desde que haja confirmação das imputações por outros meios de prova."
+            },
+            {
+              "letra": "D",
+              "texto": "É direito de José estar presente na ocasião designada para análise do conteúdo dos documentos apreendidos, quando do cumprimento do mandado de busca e apreensão."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Alternativa D. O Estatuto da Advocacia (art. 7º, §§6º-A a 6º-C, da Lei 8.906/94) assegura ao advogado investigado o direito de acompanhar pessoalmente a diligência de busca e apreensão realizada em seu escritório, incluindo o momento de exame do conteúdo dos documentos e mídias apreendidos, exatamente para resguardar o sigilo profissional em relação a clientes estranhos à investigação. Trata-se de garantia ligada à inviolabilidade do local de trabalho do advogado e ao sigilo profissional, e não apenas de uma faculdade do representante da OAB.",
+          "explicacaoErradas": "A) Inverte a lógica de proteção: a regra protege os documentos de OUTROS clientes ou de outros processos não relacionados ao objeto da investigação, vedando sua retirada, sem a exceção fabricada de \"volume ou natureza que impeça o resguardo do sigilo\" — essa mitigação não existe na disciplina legal, que é peremptória quanto à vedação. B) Erra o órgão (não é o Conselho Federal, mas o Conselho Seccional da OAB que atua no acompanhamento da diligência) e cria um prazo de 48 horas sem correspondência com a disciplina legal do tema. C) Descontextualiza a colaboração premiada (Lei 12.850/2013): ainda que a corroboração por outras provas seja de fato exigida para colaborações em geral, é vedado ao advogado valer-se de informações obtidas em razão do exercício da profissão para incriminar o próprio cliente, por violar o dever de sigilo profissional (art. 34, VII, EAOAB, e Código de Ética), tornando a conduta antiética e não simplesmente \"admitida\".",
+          "pegadinha": "A banca cria três distratores tecnicamente \"quase corretos\" (mistura de competências e prazos fabricados) para desviar da resposta mais simples e direta, que é a garantia processual explícita do advogado de acompanhar o exame dos documentos apreendidos.",
+          "regraMemoria": "Busca e apreensão no escritório de advogado: acompanhamento da OAB + direito do advogado de acompanhar o exame do material apreendido, sempre; documentos de clientes ALHEIOS à investigação não saem do escritório, sem exceções de \"volume\"."
+        },
+        {
+          "territorio": "Ética",
+          "tema": "Exercício da Advocacia",
+          "enunciado": "O advogado Luís Santos, regularmente inscrito na OAB, está em início de carreira. Luís presta serviços jurídicos a determinada instituição social sem fins econômicos, consistentes em patrocinar seus interesses em demanda judicial em curso. Sobre a atuação de Luís, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Não poderá ser considerada advocacia pro bono a atuação gratuita de Luís como advogado das pessoas naturais, hipossuficientes econômicas, beneficiárias da instituição social."
+            },
+            {
+              "letra": "B",
+              "texto": "É ilícito que Luís preste gratuitamente tais serviços jurídicos, se o objetivo é valer-se de sua atuação como instrumento de publicidade da sua atividade profissional."
+            },
+            {
+              "letra": "C",
+              "texto": "A atuação gratuita de Luís, ainda que não seja eventual, na defesa em Juízo da mencionada instituição social, pode ser considerada advocacia pro bono."
+            },
+            {
+              "letra": "D",
+              "texto": "É admitida a prestação por Luís, sob a forma de advocacia pro bono voluntária, de serviços jurídicos para uma instituição social cobrando preços simbólicos, haja vista a ausência de fins econômicos."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Alternativa B. O Provimento 166/2015 do CFOAB veda expressamente que a advocacia pro bono seja utilizada como instrumento de publicidade ou captação de clientela; a gratuidade deve ser genuína e desinteressada, sob pena de configurar infração ética (mercantilização da profissão), ainda que a atuação em si beneficie uma instituição social sem fins econômicos.",
+          "explicacaoErradas": "A) Contraria a própria definição do Provimento 166/2015, que expressamente admite a advocacia pro bono a favor de pessoas naturais hipossuficientes quando patrocinadas em razão de vínculo com a instituição social beneficiária. C) A advocacia pro bono pressupõe caráter eventual e não sistemático/permanente; atuação constante e não eventual desnatura o instituto. D) A pro bono deve ser inteiramente gratuita; a cobrança de \"preços simbólicos\" já descaracteriza a gratuidade exigida pela norma, ainda que o valor seja baixo.",
+          "pegadinha": "A pegadinha está em fazer o candidato acreditar que qualquer atuação gratuita e desinteressada em prol de instituição social configura pro bono, escondendo os requisitos negativos do instituto: proibição de uso publicitário, necessidade de eventualidade e vedação a qualquer cobrança, ainda que simbólica.",
+          "regraMemoria": "Pro bono é sempre gratuito, eventual e sem qualquer propósito publicitário — nunca vira instrumento de marketing, nunca é cobrado (nem \"simbolicamente\"), nunca é permanente/sistemático."
+        },
+        {
+          "territorio": "Ética",
+          "tema": "Direitos e Prerrogativas do Advogado",
+          "enunciado": "Maria, advogada regularmente inscrita na OAB, encontra-se gestante. Em razão de sua condição, Maria tem direitos específicos previstos no Estatuto da Advocacia e da OAB. Assinale a opção que apresenta, corretamente um desses direitos.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Durante a gravidez, ela terá direito a uma vaga garantida nas garagens dos fóruns de todos os tribunais."
+            },
+            {
+              "letra": "B",
+              "texto": "Durante a gravidez ela terá preferência na realização das audiências a serem realizadas no dia, independentemente de comprovação de sua condição."
+            },
+            {
+              "letra": "C",
+              "texto": "Após dar à luz, ela terá direito à suspensão dos prazos processuais por 60 (sessenta) dias, contados a partir da data do parto, se for a única patrona da causa."
+            },
+            {
+              "letra": "D",
+              "texto": "Após dar à luz, ela terá preferência na ordem das sustentações orais, mediante comprovação de sua condição, pelo período de 90 (noventa) dias, contados a partir da data do parto."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Alternativa A. O Estatuto da Advocacia (art. 7º, com a redação dada pela Lei nº 14.365/2022) assegura à advogada gestante, durante a gravidez, direitos específicos, entre eles a reserva de vaga em estacionamento (garagem) dos fóruns e tribunais, independentemente do tribunal ou instância, justamente para facilitar o exercício profissional nesse período.",
+          "explicacaoErradas": "B) A preferência na realização de audiências durante a gravidez não é automática/incondicional: a lei exige a comprovação da condição de gestante para o exercício do direito, e não dispensa tal comprovação como afirma a alternativa. C) O prazo de suspensão dos prazos processuais após o parto, quando a advogada for a única patrona da causa, é de 30 (trinta) dias, e não de 60 dias como indicado. D) A preferência na ordem das sustentações orais após o parto, mediante comprovação, também é de 30 (trinta) dias, e não de 90 dias.",
+          "pegadinha": "A banca insere números plausíveis, porém incorretos (60 e 90 dias), para confundir com o prazo real de 30 dias, e ainda omite em uma das alternativas a exigência de comprovação da condição, testando se o candidato memorizou os requisitos e prazos exatos da norma recente sobre os direitos da advogada gestante.",
+          "regraMemoria": "Advogada gestante: vaga de garagem garantida durante a gravidez; após o parto, 30 dias para suspensão de prazos (se única patrona) e 30 dias de preferência em sustentações orais (mediante comprovação) — sempre 30, nunca 60 ou 90."
+        },
+        {
+          "territorio": "Ética",
+          "tema": "Inscrição e Órgãos da OAB",
+          "enunciado": "Lucas, estagiário de Direito, descobre que Patrícia, advogada que o supervisiona, teve sua inscrição na OAB cancelada. Na intenção de auxiliar Patrícia a restabelecer o exercício da advocacia, Lucas passa a estudar a legislação que disciplina o tema. Sobre o cancelamento da inscrição, Lucas concluiu, corretamente, que",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "deve ter motivo justificado, caso seja solicitada pelo profissional."
+            },
+            {
+              "letra": "B",
+              "texto": "a aplicação de penalidade de exclusão impossibilita um novo pedido de inscrição."
+            },
+            {
+              "letra": "C",
+              "texto": "deve ser promovido, de ofício, pelo conselho competente, caso decorra do exercício de atividade incompatível com a advocacia."
+            },
+            {
+              "letra": "D",
+              "texto": "será restaurado o número cancelado, caso seja feito um novo pedido de inscrição."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Alternativa C. Nos termos do art. 11 da Lei 8.906/94, cancela-se de ofício a inscrição do profissional que passar a exercer, em caráter definitivo, atividade incompatível com a advocacia, competindo ao Conselho Seccional promover o cancelamento independentemente de provocação do interessado, resguardada a ampla defesa.",
+          "explicacaoErradas": "A) O cancelamento requerido pelo próprio profissional (art. 11, I) independe de motivação/fundamentação, ao contrário do que afirma a alternativa. B) A penalidade de exclusão não impede, de forma absoluta e perpétua, novo pedido de inscrição, pois o Estatuto admite reabilitação do punido decorrido determinado prazo, mediante comprovação de bom comportamento. D) Após o cancelamento, o profissional que pretenda voltar a advogar deve submeter-se a novo processo de inscrição, obedecendo à sequência normal de distribuição de número, não havendo garantia de restauração automática do número anterior.",
+          "pegadinha": "A banca explora a diferença entre cancelamento a pedido do interessado (que dispensa motivação) e a impressão de que cancelamentos em geral sempre exigiriam justificativa formal, além de sugerir uma \"recuperação automática\" de número de inscrição que a lei não garante.",
+          "regraMemoria": "Cancelamento a pedido do próprio advogado NÃO precisa de motivo; cancelamento por atividade incompatível DEFINITIVA é sempre de ofício; exclusão não é \"pena de morte profissional eterna\" — cabe reabilitação."
+        },
+        {
+          "territorio": "Ética",
+          "tema": "Honorários Advocatícios",
+          "enunciado": "Teresa Silva, advogada atuante na área criminal, tem como clientes Luiz, acusado de tráfico ilícito de drogas, e Roberto, acusado de crimes contra o sistema financeiro nacional. Após serem proferidas decisões judiciais que determinam o bloqueio universal dos patrimônios de Luiz e Roberto, Teresa se indaga a respeito dos meios disponíveis para obter os valores necessários ao reembolso de gastos com a defesa e ao recebimento de honorários desses clientes. Sobre esse assunto, é correto concluir que",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "garantir-se-á a Teresa a liberação de 20% (vinte por cento) dos bens bloqueados de Luiz para o fim de reembolso de gastos com a defesa, vedado o recebimento de honorários."
+            },
+            {
+              "letra": "B",
+              "texto": "garantir-se-á a Teresa a liberação de 20% (vinte por cento) dos bens bloqueados de Roberto para o fim de reembolso de gastos com a defesa e o recebimento de honorários."
+            },
+            {
+              "letra": "C",
+              "texto": "Teresa poderá optar pela venda de bens de Luiz em hasta pública para o reembolso de gastos com a defesa."
+            },
+            {
+              "letra": "D",
+              "texto": "Teresa não poderá realizar a adjudicação de bens de Roberto para a satisfação dos honorários devidos."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Alternativa B. O regime legal aplicável ao bloqueio de bens em crimes contra o sistema financeiro nacional autoriza a liberação de até 20% dos bens bloqueados do acusado para custear tanto o reembolso de despesas com a defesa técnica quanto o pagamento de honorários advocatícios contratados, o que se aplica ao caso de Roberto.",
+          "explicacaoErradas": "A) Aplica ao caso de Luiz (tráfico de drogas) uma regra e um percentual que, na forma descrita (20%, com vedação a honorários), não corresponde ao regime legal cabível a essa espécie de delito, misturando indevidamente institutos de searas distintas. C) A alienação de bens bloqueados/sequestrados em hasta pública não é opção discricionária da advogada da parte; depende de decisão judicial fundamentada (alienação antecipada), não podendo Teresa \"optar\" unilateralmente por essa via. D) A afirmação categórica de impossibilidade de adjudicação desconsidera que medidas de satisfação de honorários sobre bens constritos dependem de autorização judicial específica, não sendo uma vedação absoluta e automática como sugerido.",
+          "pegadinha": "A banca troca os nomes/crimes entre as alternativas A e B (mesma redação, mesmo percentual de 20%, mas aplicado ora a Luiz — tráfico —, ora a Roberto — crimes contra o sistema financeiro), exigindo que o candidato saiba a qual regime legal específico se aplica a liberação de 20% incluindo honorários.",
+          "regraMemoria": "Liberação de 20% dos bens bloqueados para defesa e honorários é regra do regime de crimes contra o sistema financeiro nacional — não se estende automaticamente ao tráfico de drogas; venda e adjudicação de bens constritos sempre dependem de decisão judicial, nunca de escolha unilateral do advogado."
+        },
+        {
+          "territorio": "Ética",
+          "tema": "Inscrição e Órgãos da OAB",
+          "enunciado": "O advogado Alex encontra-se licenciado junto à OAB. Assinale a opção que, corretamente, apresenta uma causa para o licenciamento de Alex.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O requerimento de licenciamento, independentemente de motivação, formulado por Alex."
+            },
+            {
+              "letra": "B",
+              "texto": "O fato de Alex passar a sofrer de doença física incurável."
+            },
+            {
+              "letra": "C",
+              "texto": "O exercício por Alex, de forma definitiva, de atividade incompatível com a advocacia."
+            },
+            {
+              "letra": "D",
+              "texto": "O fato de Alex passar a sofrer de doença mental curável."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Alternativa D. Nos termos do art. 12 da Lei 8.906/94, o advogado fica licenciado quando acometido de doença mental considerada curável, hipótese de impedimento temporário e reversível para o exercício profissional, que justifica o licenciamento (afastamento temporário) e não o cancelamento da inscrição.",
+          "explicacaoErradas": "A) O licenciamento a pedido do próprio advogado, ao contrário do cancelamento a pedido (art. 11, I), exige motivo justificado perante o Conselho Seccional, não sendo, portanto, \"independente de motivação\" como afirma a alternativa. B) Doença física incurável configura impedimento permanente/definitivo, hipótese que leva ao cancelamento da inscrição (perda de requisito para o exercício da advocacia), e não ao licenciamento, que pressupõe situação temporária e reversível. C) O exercício definitivo de atividade incompatível com a advocacia é causa de cancelamento da inscrição (art. 11, IV), não de licenciamento, que se reserva às situações de incompatibilidade transitória.",
+          "pegadinha": "A banca faz o candidato confundir licenciamento (situação temporária e reversível) com cancelamento (situação definitiva/permanente), trocando \"curável\" por \"incurável\" e \"transitório\" por \"definitivo\" nas alternativas, exigindo atenção exata aos adjetivos usados em cada opção.",
+          "regraMemoria": "Licenciamento é sempre TEMPORÁRIO/reversível (doença curável, incompatibilidade transitória, pedido justificado); o que é DEFINITIVO (doença incurável, incompatibilidade permanente) gera CANCELAMENTO, nunca licenciamento."
+        },
+        {
+          "territorio": "Ética",
+          "tema": "Ética e Disciplina",
+          "enunciado": "Marcelo, advogado, é acusado de usar atestado médico falso para libertar seu cliente da prisão. O fato alcança grande repercussão, a ponto de um jornal local publicar matéria em que afirma que Marcelo deve ser suspenso preventivamente pela OAB, até que se conclua a apuração disciplinar da conduta. Sobre esse tema, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Cabe ao Tribunal de Ética e Disciplina do Conselho Seccional perante o qual a infração tenha ocorrido, suspendê-lo preventivamente."
+            },
+            {
+              "letra": "B",
+              "texto": "A suspensão preventiva pressupõe a demonstração de que o fato tenha gerado repercussão prejudicial à dignidade da advocacia."
+            },
+            {
+              "letra": "C",
+              "texto": "Antes de aplicada a suspensão preventiva, o acusado deve ser ouvido em sessão especial, salvo se não for possível notificá-lo para comparecer."
+            },
+            {
+              "letra": "D",
+              "texto": "Caso aplicada a suspensão preventiva, o processo disciplinar deve ser concluído no prazo máximo de sessenta dias."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Alternativa B. A suspensão preventiva do exercício profissional, medida cautelar disciplinar de natureza excepcional, pressupõe a comprovação de que o fato atribuído ao advogado tenha gerado repercussão prejudicial à dignidade da advocacia e da OAB, não bastando a mera notícia do fato ou sua repercussão midiática genérica.",
+          "explicacaoErradas": "A) Atribui a competência de forma imprecisa; a decisão sobre a suspensão preventiva não é do Tribunal de Ética e Disciplina isoladamente, mas depende de deliberação qualificada do órgão colegiado competente do Conselho Seccional, resguardado o quórum e o rito próprios da medida excepcional. C) Cria uma exigência de oitiva prévia em sessão especial como condição sine qua non que não constitui pressuposto de validade da medida cautelar, cuja urgência é incompatível com a submissão prévia a esse rito ordinário. D) Fixa prazo de conclusão do processo disciplinar (60 dias) sem correspondência com o regime legal da medida, que tem contornos e prazos próprios distintos dos indicados.",
+          "pegadinha": "A banca insere detalhes procedimentais (órgão competente, oitiva prévia, prazo de conclusão) plausíveis mas incorretos para desviar o candidato do requisito material central da suspensão preventiva, que é a repercussão prejudicial à dignidade da advocacia.",
+          "regraMemoria": "Suspensão preventiva do advogado exige sempre repercussão prejudicial à dignidade da advocacia e da OAB — é o requisito substancial que a banca tenta esconder atrás de detalhes procedimentais."
+        },
+        {
+          "territorio": "Filosofia do Direito",
+          "tema": "Teorias Contemporâneas do Direito",
+          "enunciado": "“Mas a disciplina traz consigo uma maneira específica de punir, e que é apenas um modelo reduzido do tribunal. O que pertence à penalidade disciplinar é a inobservância, tudo o que está inadequado à regra, tudo que se afasta dela, os desvios.” Michael Foucault Foucault, em seu livro Vigiar e Punir, fala do poder disciplinar que recai sobre os corpos dos indivíduos e, também, dos castigos disciplinares que resultam de uma lei, um programa ou um regulamento. Assinale a opção que, segundo o autor da obra de referência, apresenta a função do castigo disciplinar.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Reduzir os desvios, funcionando, portanto, como algo essencialmente corretivo."
+            },
+            {
+              "letra": "B",
+              "texto": "Coibir a ocorrência de crime, de modo a evitar a ocorrência de atos ilícitos."
+            },
+            {
+              "letra": "C",
+              "texto": "Expiar a culpa de ter se afastado da norma, de forma a produzir arrependimento."
+            },
+            {
+              "letra": "D",
+              "texto": "Indenizar a vítima da conduta indisciplinada, como forma de reparação de um dano."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Alternativa A. Para Foucault, em \"Vigiar e Punir\", o castigo disciplinar tem função essencialmente corretiva: busca reduzir os desvios em relação à norma (tudo o que se afasta dela), funcionando de modo gradual, comparativo e hierarquizante, e não como retribuição, expiação ou reparação.",
+          "explicacaoErradas": "B) Confunde a lógica disciplinar (correção de desvios em relação a uma norma/regulamento interno) com a lógica penal de prevenção geral/especial de crimes, categoria distinta na obra do autor. C) Atribui ao castigo disciplinar uma finalidade de expiação/arrependimento, típica de concepções morais-religiosas da punição, expressamente contrastadas por Foucault com a lógica disciplinar moderna, que é técnica e corretiva, não expiatória. D) Introduz uma lógica reparatória/indenizatória (própria da responsabilidade civil), estranha à disciplina descrita por Foucault, que não pressupõe \"vítima\" a ser indenizada, mas sim uma norma a ser restaurada.",
+          "pegadinha": "A banca mistura categorias de punição (penal, moral-religiosa, civil) semelhantes ao vocabulário comum sobre \"punir\", tentando fazer o candidato associar castigo disciplinar a prevenção de crime ou a reparação de dano, quando o texto de Foucault aponta a função corretiva como central.",
+          "regraMemoria": "Para Foucault, castigo disciplinar = função corretiva (reduzir desvios); nunca é sobre crime, culpa/expiação ou indenização — é sobre reconduzir o indivíduo à norma."
+        },
+        {
+          "territorio": "Filosofia do Direito",
+          "tema": "Positivismo Jurídico",
+          "enunciado": "Há muitos tipos diferentes de relação entre o direito e a moral e a relação entre eles não pode ser isolada com proveito para efeitos de estudo. Em vez disso, é importante distinguir algumas das muitas coisas diferentes que podem querer dizer-se através da afirmação ou negação de que o direito e a moral estão relacionados. Herbert Hart Herbert Hart, em seu livro O Conceito de Direito, comenta sobre a influência da moral sobre o Direito, afirmando que nenhum positivista poderá negar que a estabilidade dos sistemas jurídicos depende, em parte, da correspondência com a moral. Assinale a opção que, segundo o autor no livro em referência, mostra como essa influência da moral sobre o direito pode ocorrer.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Pode se dar por meio da legislação ou por intermédio do processo judicial. Pode ocorrer que, em alguns sistemas, os critérios últimos de validade incorporem explicitamente princípios de justiça ou valores morais substantivos."
+            },
+            {
+              "letra": "B",
+              "texto": "Por intermédio da religião, sobretudo naqueles estados que, mesmo tendo a forma laica, admitem a influência das autoridades religiosas sobre o funcionamento das instituições."
+            },
+            {
+              "letra": "C",
+              "texto": "Ocorre por meio do pensamento científico. O desenvolvimento da ciência aponta possibilidades que exigem uma base moral que normatize os padrões de conduta em relação ao que seria aceitável ou não naquela sociedade."
+            },
+            {
+              "letra": "D",
+              "texto": "A influência da moral sobre o direito acontece por força da própria natureza das coisas. São padrões de certo e errado que surgem naturalmente e em um determinado momento histórico são incorporados ao direito positivo de forma espontânea e automática."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Alternativa A. Segundo Hart, em \"O Conceito de Direito\", a influência da moral sobre o direito pode se dar por via legislativa (o legislador incorpora valores morais ao editar normas) ou por via judicial (o juiz aplica princípios de justiça ou padrões morais ao decidir), podendo os próprios critérios últimos de validade jurídica (regra de reconhecimento) incorporar explicitamente princípios de justiça ou valores morais substantivos.",
+          "explicacaoErradas": "B) Não corresponde à tese de Hart, que não atribui à religião o mecanismo pelo qual a moral influencia o direito; trata-se de distrator estranho ao positivismo jurídico hartiano. C) Também estranha à obra: Hart não descreve a influência da moral sobre o direito como decorrente do desenvolvimento científico, mas dos processos legislativo e judicial. D) Contraria o positivismo de Hart ao sugerir uma incorporação \"espontânea e automática\" da moral ao direito por força da \"natureza das coisas\", ideia mais próxima do jusnaturalismo que Hart rejeita; para Hart, a incorporação de padrões morais depende de mecanismos institucionais identificáveis.",
+          "pegadinha": "A banca insere alternativas com veneno jusnaturalista (\"natureza das coisas\", incorporação \"automática\") para confundir com a tese hartiana, que é rigorosamente institucional: a moral só influencia o direito através de canais reconhecíveis pelo sistema jurídico (legislação e processo judicial).",
+          "regraMemoria": "Para Hart, moral só vira direito por canal institucional identificável — legislação ou decisão judicial — nunca de forma automática/espontânea pela \"natureza das coisas\"."
+        },
+        {
+          "territorio": "Direito Constitucional",
+          "tema": "Organização dos Poderes",
+          "enunciado": "O Presidente da República Federativa do Brasil, após ouvir os Conselhos da República e de Defesa Nacional, decretou estado de defesa em parte da Região Centro-Oeste do país, que fora atingida por calamidade natural de grandes proporções. O Congresso Nacional, 12 horas após a veiculação do decreto presidencial, tomou ciência da justificativa que levou o Presidente a decretar o estado de defesa. Sobre a hipótese, segundo o sistema jurídico-constitucional brasileiro, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O procedimento apresenta uma inconstitucionalidade formal, pois a decretação do estado de defesa exige aprovação prévia das razões do ato pelo Congresso Nacional."
+            },
+            {
+              "letra": "B",
+              "texto": "O decreto presidencial encontra-se formalmente correto, pois, diferentemente do estado de sítio, o estado de defesa dispensa qualquer manifestação, prévia ou a posteriori, do Congresso Nacional."
+            },
+            {
+              "letra": "C",
+              "texto": "O ato de decretação somente poderia passar a vigorar na região apontada após prévia normatização por meio de decreto legislativo elaborado exclusivamente pelo Congresso Nacional."
+            },
+            {
+              "letra": "D",
+              "texto": "O procedimento utilizado pelo Presidente da República converge com aquele que é constitucionalmente exigido, já que a decretação do estado de defesa não exige aprovação prévia do Congresso Nacional."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Alternativa D. O estado de defesa (CF, art. 136) é decretado pelo Presidente da República após ouvir o Conselho da República e o Conselho de Defesa Nacional (órgãos meramente consultivos), tendo eficácia imediata; somente depois, no prazo de 24 horas, o ato deve ser submetido ao Congresso Nacional, que decidirá por maioria absoluta, não havendo exigência de aprovação prévia (diferentemente do estado de sítio, que depende de autorização prévia do Congresso, art. 137).",
+          "explicacaoErradas": "A) Erra ao exigir aprovação PRÉVIA do Congresso Nacional como requisito de validade do estado de defesa; essa exigência aplica-se ao estado de sítio, não ao estado de defesa. B) Erra ao afirmar que o estado de defesa dispensa qualquer manifestação do Congresso; há manifestação a posteriori obrigatória (submissão em 24 horas e deliberação por maioria absoluta), apenas não é prévia. C) Fabrica uma exigência de \"prévia normatização por decreto legislativo\" que não existe no procedimento constitucional do estado de defesa, cujo ato decretório presidencial já produz efeitos imediatos.",
+          "pegadinha": "A banca explora a distinção entre estado de defesa (controle congressual a posteriori) e estado de sítio (controle prévio), tentando fazer o candidato aplicar ao estado de defesa a exigência de autorização prévia do Congresso que só existe para o estado de sítio.",
+          "regraMemoria": "Estado de defesa: Presidente decreta e Congresso controla DEPOIS (24h, maioria absoluta); estado de sítio: Congresso autoriza ANTES. Nunca inverta essa ordem."
+        },
+        {
+          "territorio": "Direito Constitucional",
+          "tema": "Organização do Estado",
+          "enunciado": "Com grande adesão da população, o prefeito do Município Delta, situado no Estado-membro Alfa, declarou a independência do território municipal, criando um novo país. Assustado com a rapidez do processo, o Presidente da República, após ouvir o Conselho de Defesa Nacional, sem perda de tempo, decidiu decretar a intervenção federal no Município. Ato contínuo, submeteu o decreto ao Congresso Nacional, que o aprovou, também de forma célere, por unanimidade. Sobre o decreto interventivo federal, segundo o sistema jurídico- constitucional brasileiro, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A Constituição da República de 1988 veda, de forma cabal, o direito de secessão, sendo o decreto constitucional."
+            },
+            {
+              "letra": "B",
+              "texto": "O ato de insurreição traz consigo grave comprometimento à ordem pública, o que aponta para a constitucionalidade do decreto."
+            },
+            {
+              "letra": "C",
+              "texto": "Como Delta está situado em um Estado-membro, não há previsão constitucional para a decretação de intervenção federal."
+            },
+            {
+              "letra": "D",
+              "texto": "O fato de a decisão presidencial não ter sido antecedida de requisição pelo Supremo Tribunal Federal indica a invalidade do decreto."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Alternativa C. A Constituição prevê intervenção federal apenas nos Estados, no Distrito Federal (art. 34) e em Municípios situados em Território Federal (art. 35, caput); não há previsão constitucional de intervenção federal (da União) diretamente em Município situado no território de um Estado-membro — nesse caso, eventual intervenção no Município compete ao próprio Estado (art. 35), e não à União, o que torna o decreto presidencial desprovido de base constitucional.",
+          "explicacaoErradas": "A) Embora a vedação à secessão seja de fato absoluta na ordem constitucional, esse dado não legitima automaticamente a intervenção FEDERAL no Município, pois o instrumento cabível para conter o ato seria a intervenção ESTADUAL (do Estado Alfa sobre Delta), não a intervenção da União. B) A gravidade do fato (grave comprometimento à ordem pública) não supre a ausência de competência constitucional da União para intervir em Município integrante de Estado-membro; gravidade não gera competência onde a Constituição não a prevê. D) A ausência de requisição do STF é irrelevante no caso, pois essa hipótese de intervenção (art. 34, IV, e art. 36, II) refere-se a situação distinta (garantia do livre exercício dos Poderes, mediante requisição do Poder coacto); o vício real do decreto é a falta de competência da União para intervir em Município estadual, não a ausência dessa requisição específica.",
+          "pegadinha": "A banca tenta desviar o foco para a gravidade do ato secessionista (que de fato é inconstitucional) e para requisitos formais de outras hipóteses de intervenção (requisição do STF), escondendo o verdadeiro vício: a Constituição simplesmente não autoriza a União a intervir em Município integrante de Estado, hipótese reservada à intervenção estadual.",
+          "regraMemoria": "União só intervém em Município se ele estiver em Território Federal; Município dentro de Estado só sofre intervenção ESTADUAL, nunca federal — competência não se supre por gravidade do fato."
+        },
+        {
+          "territorio": "Direito Constitucional",
+          "tema": "Ordem Social e Econômica",
+          "enunciado": "Preocupado com a qualidade da educação básica ofertada pela rede de ensino municipal do Município Teta, o prefeito da cidade pretende apresentar projeto de lei à Câmara Municipal, no qual uma série de melhorias está prevista. No entanto, ciente da ausência de recursos orçamentários e financeiros para efetivar o que está previsto no projeto, o Prefeito levantou a hipótese de criar uma taxa de serviço, que seria paga por aqueles que viessem a se utilizar dos serviços municipais de educação básica (ensinos fundamental e médio) em seus estabelecimentos oficiais. Antes de enviar o projeto de lei, o Prefeito consultou sua assessoria sobre a conformidade constitucional do projeto, sendo- lhe corretamente informado que a cobrança da referida taxa",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "caracterizaria efetiva violação à ordem constitucional, posto ser o acesso gratuito à educação básica um direito subjetivo de todos."
+            },
+            {
+              "letra": "B",
+              "texto": "poderia ser exigida, contanto que o valor cobrado como contraprestação pelo serviço de educação não afrontasse o princípio da proporcionalidade."
+            },
+            {
+              "letra": "C",
+              "texto": "apenas poderia ser exigida daqueles que não conseguissem comprovar, nos termos legalmente estabelecidos, a hipossuficiência econômica."
+            },
+            {
+              "letra": "D",
+              "texto": "poderia ser exigida dos estudantes do ensino médio, mas não dos estudantes do ensino fundamental, aos quais a ordem constitucional assegura a gratuidade."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Alternativa A. A Constituição assegura a gratuidade do ensino público na educação básica (CF, art. 206, IV, e art. 208, I e §1º), consagrando-a como direito público subjetivo de todos, de modo que a cobrança de qualquer taxa pelo serviço público de educação básica, em estabelecimentos oficiais, viola frontalmente a ordem constitucional, independentemente da existência de contrapartida proporcional ou da condição econômica do usuário.",
+          "explicacaoErradas": "B) A gratuidade da educação básica pública é regra absoluta e não comporta relativização por critério de proporcionalidade do valor cobrado; qualquer cobrança, ainda que módica, já é inconstitucional. C) A gratuidade não é condicionada à comprovação de hipossuficiência econômica; trata-se de direito universal, de todos, independentemente da situação financeira do estudante. D) Não há distinção constitucional entre ensino fundamental e ensino médio quanto à gratuidade; ambos integram a educação básica obrigatória e gratuita assegurada pela Constituição (art. 208, I, com redação da EC 59/2009).",
+          "pegadinha": "A banca tenta fazer o candidato aceitar \"meio-termos\" (proporcionalidade do valor, condição econômica do aluno, distinção entre fundamental e médio) como formas válidas de cobrança, quando a gratuidade da educação básica pública é regra absoluta e universal, sem exceções desse tipo.",
+          "regraMemoria": "Educação básica pública é sempre gratuita para todos — nunca admite taxa, \"proporcional\" ou não, nem distinção entre fundamental e médio, nem condicionamento a hipossuficiência."
+        },
+        {
+          "territorio": "Direito Constitucional",
+          "tema": "Direitos e Garantias Fundamentais",
+          "enunciado": "A Lei nº YYY do Município Alfa revogou o adicional por tempo de serviços (ATS), abolindo-o por inteiro com efeitos retroativos absolutos. Além disso, estabeleceu as regras para que os servidores não só deixassem de receber o referido adicional, como também para que devolvessem todas as quantias por eles recebidas a título de ATS. A medida foi justificada sob o argumento de que haveria significativa economia das despesas públicas e, por isso, seria possível o aumento nos investimentos em saúde e em educação. Os servidores, por sua vez, alegaram clara violação ao direito adquirido e ao ato jurídico perfeito em relação à determinação de devolução dos valores já recebidos. Sobre a questão em discussão, segundo o sistema jurídico- constitucional, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A Lei nº YYY apresenta indiscutível interesse público, portanto, a retroatividade absoluta é válida, encontrando-se de acordo com o que determina o sistema jurídico-constitucional."
+            },
+            {
+              "letra": "B",
+              "texto": "A garantia ao direito adquirido não se aplica às normas municipais, que podem, por razões econômicas, produzir efeitos retroativos."
+            },
+            {
+              "letra": "C",
+              "texto": "A retroatividade absoluta da Lei nº YYY fere o texto constitucional, pois afeta situações já constituídas e exauridas em momento pretérito."
+            },
+            {
+              "letra": "D",
+              "texto": "O direito adquirido, por determinação constitucional expressa, pode ser desconsiderado nas situações em que o seu reconhecimento inviabilize políticas públicas nas áreas de educação e saúde."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Alternativa C. A retroatividade absoluta (ou máxima) de lei que atinge fatos pretéritos já consumados/exauridos (situações jurídicas já constituídas, com pagamentos já recebidos sob a égide da lei então vigente) viola a garantia constitucional do direito adquirido e do ato jurídico perfeito (CF, art. 5º, XXXVI), sendo inconstitucional a determinação de devolução de valores já percebidos regularmente no passado.",
+          "explicacaoErradas": "A) O interesse público ou a alegada economia de despesas não têm o condão de legitimar retroatividade absoluta que atinja direito adquirido e ato jurídico perfeito, garantias que operam justamente como limite ao legislador, inclusive em nome de razões de política pública. B) A garantia do art. 5º, XXXVI, da CF é aplicável a todos os entes federativos (União, Estados, DF e Municípios), não havendo exceção para normas municipais. D) Não existe previsão constitucional expressa que autorize desconsiderar o direito adquirido em nome da viabilização de políticas públicas de saúde e educação; trata-se de fabricação de exceção inexistente no texto constitucional.",
+          "pegadinha": "A banca tenta seduzir o candidato com a \"boa causa\" (mais recursos para saúde e educação) para justificar a retroatividade absoluta, escondendo que nenhuma finalidade, por mais nobre, autoriza a violação de direito adquirido e ato jurídico perfeito já consumados no passado.",
+          "regraMemoria": "Direito adquirido e ato jurídico perfeito são intocáveis por qualquer ente federativo e por qualquer finalidade (mesmo \"nobre\") quando o fato já se exauriu no passado — retroatividade absoluta é sempre inconstitucional."
+        },
+        {
+          "territorio": "Direito Constitucional",
+          "tema": "Controle de Constitucionalidade",
+          "enunciado": "O Procurador-Geral da República, preocupado com o grande número de decisões judiciais divergentes, em âmbito nacional, referentes à possível inconstitucionalidade da Lei Federal nº XX/2021, ajuizou, perante o Supremo Tribunal Federal (STF), uma Ação Declaratória de Constitucionalidade (ADC) visando a elidir a controvérsia judicial. Em março de 2022, no julgamento do mérito, o STF decidiu pela improcedência da ADC referente à Lei Federal nº XX/2021. No entanto, você, na qualidade de advogado(a) de uma determinada causa, deparou-se com a seguinte situação: em desfavor do seu cliente, o Tribunal Regional Federal (TRF) competente, mantendo decisão proferida pelo Juiz Federal responsável pelo caso, deu aplicação à Lei Federal nº XX/21 que já fora objeto de ADC, apreciada pelo STF em março de 2022. Diante de tal contexto, assinale a opção que apresenta a medida judicial a ser utilizada para preservar, de forma eficiente e célere, o interesse do seu cliente na causa.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Formular representação ao Procurador-Geral da República, para que seja deflagrado um novo processo objetivo perante o STF para retirar a Lei Federal nº XX/21 do mundo jurídico."
+            },
+            {
+              "letra": "B",
+              "texto": "Interpor recurso especial perante o STF, com fundamento em violação de dispositivo constitucional."
+            },
+            {
+              "letra": "C",
+              "texto": "Ajuizar reclamação perante o STF em relação à decisão proferida pelo TRF."
+            },
+            {
+              "letra": "D",
+              "texto": "Formular representação ao Conselho Nacional de Justiça (CNJ), para que seja deflagrado um processo administrativo disciplinar contra os magistrados do TRF."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Alternativa C. Como a ADC foi julgada improcedente (declarando a inconstitucionalidade da lei, com eficácia erga omnes e efeito vinculante — CF, art. 102, §2º), a decisão do TRF que aplicou a lei já afastada pelo STF contraria decisão do próprio Supremo em controle concentrado, autorizando o ajuizamento de reclamação constitucional (CF, art. 102, I, \"l\"; art. 988 do CPC) para preservar a autoridade da decisão do STF, sendo essa a via mais célere e eficaz para o caso concreto.",
+          "explicacaoErradas": "A) Formular nova representação ao PGR para deflagrar novo processo objetivo é desnecessário e ineficiente, pois já existe decisão vinculante do STF sobre a mesma lei; o remédio processual cabível e direto é a reclamação, não um novo processo abstrato. B) Recurso especial é dirigido ao STJ, e não ao STF, além de a matéria constitucional (violação a dispositivo da Constituição) desafiar recurso extraordinário, não recurso especial — há erro de nomenclatura e de órgão competente. D) A representação ao CNJ visa à responsabilização disciplinar dos magistrados, não à reforma ou anulação da decisão judicial que contraria o precedente vinculante do STF, não sendo instrumento apto a tutelar de forma célere o interesse concreto do cliente na causa.",
+          "pegadinha": "A banca insere institutos \"parecidos\" mas equivocados (recurso especial em vez de reclamação, CNJ em vez do STF, novo processo objetivo em vez de reclamação), testando se o candidato identifica a reclamação constitucional como via específica para garantir a autoridade das decisões do STF em controle concentrado.",
+          "regraMemoria": "Decisão contrária a ADI/ADC/ADPF julgada pelo STF (efeito vinculante) sempre desafia reclamação constitucional ao STF — nunca recurso especial (isso é do STJ), nem representação ao CNJ ou PGR."
+        },
+        {
+          "territorio": "Direito Constitucional",
+          "tema": "Organização dos Poderes",
+          "enunciado": "José foi eleito deputado estadual por determinado Estado da Federação. Uma semana após a sua posse e fora do recinto da Assembleia Legislativa do seu respectivo Estado, o deputado encontra João, candidato não eleito e seu principal opositor durante a campanha eleitoral, vindo a agredi-lo, causando-lhe lesões corporais gravíssimas, cuja persecução em juízo é iniciada mediante denúncia oferecida pelo Ministério Público. Diante de tal contexto, levando em consideração as imunidades do parlamentar estadual, de acordo com o Direito Constitucional brasileiro, assinale a opção correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Em relação à imunidade formal de processo, recebida a denúncia oferecida contra o deputado estadual José, por crime cometido após a posse, a Casa legislativa a que pertence o parlamentar denunciado poderá apenas sustar a tramitação da ação penal."
+            },
+            {
+              "letra": "B",
+              "texto": "Por gozar da mesma imunidade material (inviolabilidade parlamentar) de deputados federais e senadores, o deputado estadual José não poderá ser responsabilizado por qualquer tipo de crime praticado durante o seu mandato eletivo."
+            },
+            {
+              "letra": "C",
+              "texto": "Em relação à imunidade formal de processo, o deputado estadual José está sujeito a julgamento judicial pelo crime comum cometido, desde que a análise da denúncia oferecida contra ele seja autorizada pela respectiva casa legislativa."
+            },
+            {
+              "letra": "D",
+              "texto": "Por não possuir as mesmas imunidades formais de deputados federais e senadores, mas apenas a imunidade material relativa aos atos praticados em razão do seu mandato, o deputado estadual José será julgado pelo crime comum cometido, não sendo possível que seja sustada a tramitação da ação penal."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Alternativa A. Por simetria (CF, art. 27, §1º), o deputado estadual goza de imunidade formal (processual) semelhante à dos parlamentares federais: recebida a denúncia por crime comum praticado após a diplomação/posse, sem relação com o exercício do mandato, a Casa legislativa a que pertence o parlamentar, por iniciativa de partido político nela representado e mediante voto da maioria de seus membros, pode apenas SUSTAR a tramitação da ação penal enquanto durar o mandato — não impedir o recebimento da denúncia, que ocorre normalmente pelo órgão judicial competente.",
+          "explicacaoErradas": "B) Generaliza indevidamente a imunidade material (inviolabilidade), que protege apenas manifestações de opinião, palavra e voto relacionadas ao exercício do mandato, não abrangendo crimes comuns como lesão corporal cometida em briga pessoal, sem qualquer nexo com a atividade parlamentar. C) Inverte a sistemática pós-EC 35/2001: não há mais exigência de autorização prévia da Casa legislativa para o recebimento e processamento da denúncia por crime comum; a atuação da Casa é posterior e limitada à possibilidade de sustar a ação já em curso. D) Erra ao negar ao deputado estadual as imunidades formais equivalentes às de deputados federais e senadores; a CF assegura tais imunidades por simetria (no que couber), incluindo a possibilidade de sustação da ação penal.",
+          "pegadinha": "A banca explora a reforma trazida pela EC 35/2001, que aboliu a exigência de autorização prévia para processar parlamentar por crime comum, substituindo-a por um mecanismo de sustação posterior e facultativo — o candidato que não atualizou esse ponto tende a marcar a alternativa que exige \"autorização prévia\" da Casa legislativa.",
+          "regraMemoria": "Pós-EC 35/2001: denúncia por crime comum contra parlamentar é recebida direto pelo Judiciário; a Casa legislativa só pode SUSTAR depois, nunca autorizar antes — e imunidade material só protege manifestação ligada ao mandato, não qualquer crime."
+        },
+        {
+          "territorio": "Direitos Humanos",
+          "tema": "Sistema Interamericano (Corte/Comissão)",
+          "enunciado": "Numa acirrada disputa eleitoral pelo governo municipal de sua cidade, o prefeito atual e candidato à reeleição, divulgou, por meio do site da Prefeitura, informações inexatas e ofensivas contra o candidato da oposição. Esse candidato o(a) procurou, por saber de sua atuação como advogado(a) em defesa dos Direitos Humanos, e disse que, amparado na Convenção Americana sobre Direitos Humanos, queria o direito de resposta na rádio local. Sobre a hipótese narrada, cabe a você esclarecer que a Convenção assegura",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "plenamente o direito à resposta, que deve ocorrer no órgão de difusão da escolha do ofendido."
+            },
+            {
+              "letra": "B",
+              "texto": "o direito de resposta e determina que ele aconteça no órgão de difusão que tenha a capacidade de alcançar o maior número de pessoas."
+            },
+            {
+              "letra": "C",
+              "texto": "o direito à resposta e determina que ela deve ser feita no mesmo órgão de difusão em que ocorreu a divulgação das informações inexatas e ofensivas."
+            },
+            {
+              "letra": "D",
+              "texto": "o direito de resposta, mas estabelece como condição a apreciação judicial e o encerramento da lide em última instância."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Alternativa C. O art. 14.1 da Convenção Americana sobre Direitos Humanos assegura o direito de retificação ou resposta a quem for atingido por informações inexatas ou ofensivas divulgadas em seu prejuízo por meio de difusão legalmente regulamentado, determinando expressamente que a resposta seja feita pelo MESMO órgão de difusão que veiculou a informação, e não por outro veículo à escolha do ofendido.",
+          "explicacaoErradas": "A) Erra ao atribuir ao ofendido a escolha livre do veículo de resposta; o texto convencional exige que a resposta seja dada pelo mesmo órgão que praticou a divulgação ofensiva. B) Fabrica um critério de \"maior alcance\" do veículo de difusão que não consta do art. 14.1 da Convenção, que exige apenas identidade entre o veículo ofensor e o veículo retificador. D) Cria uma condição de esgotamento de instância judicial que não é prevista no dispositivo convencional como pressuposto para o exercício do direito de resposta.",
+          "pegadinha": "A banca cria alternativas plausíveis (escolha do ofendido, maior alcance de público, condicionamento a decisão judicial definitiva) para desviar do texto literal da Convenção, que é preciso: a resposta deve se dar no MESMO órgão de difusão da ofensa.",
+          "regraMemoria": "Direito de resposta na CADH: sempre no MESMO veículo que praticou a ofensa — nunca em veículo à escolha do ofendido ou de maior alcance, e nunca condicionado a trânsito em julgado."
+        },
+        {
+          "territorio": "Direitos Humanos",
+          "tema": "Sistema Interamericano (Corte/Comissão)",
+          "enunciado": "Considere a hipótese de ter sido decretado Estado de Emergência no país, implicando a suspensão de garantias judiciais, como o habeas corpus. Argumentando a favor desse Decreto, o Governo alega que a própria Convenção Americana de Direitos Humanos prevê, em seu Art. 27, a suspensão de garantias. Como advogada(o) que atua na defesa dos Direitos Humanos, de acordo com as importantes Opiniões Consultivas OC-08/87 e OC- 09/87 da Corte Interamericana de Direitos Humanos, você deve esclarecer que",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "uma vez que tais garantias judiciais não estejam previstas entre os direitos ressalvados expressamente no Art. 27.2 da Convenção, elas podem ser suspensas."
+            },
+            {
+              "letra": "B",
+              "texto": "pode haver a suspensão de tais garantias, inclusive do habeas corpus em situações de estado de emergência, como o Estado de Defesa, desde que isso seja decidido pelo Poder Executivo e confirmado pelo Poder Judiciário."
+            },
+            {
+              "letra": "C",
+              "texto": "as garantias judiciais, como o habeas corpus, não podem ser canceladas ou descontinuadas, pois visam à proteção dos direitos essenciais que, segundo o art. 27.2 da Convenção, não podem ser suspensos."
+            },
+            {
+              "letra": "D",
+              "texto": "em situações de emergência, como o Estado de Defesa, tendo em vista a proteção da soberania nacional, pode haver a suspensão de alguns direitos e garantias, dentre eles o direito ao habeas corpus."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Alternativa C. Segundo as Opiniões Consultivas OC-8/87 e OC-9/87 da Corte Interamericana de Direitos Humanos, as garantias judiciais indispensáveis à proteção de direitos que o art. 27.2 da CADH declara insuscetíveis de suspensão (como o direito à vida e à integridade pessoal) também não podem ser suspensas, mesmo em estados de exceção, porque são instrumentais à tutela desses direitos essenciais — e o habeas corpus é justamente uma dessas garantias judiciais indispensáveis, ainda que não conste literalmente nomeado no rol do art. 27.2.",
+          "explicacaoErradas": "A) Erra ao concluir que a ausência de menção literal ao habeas corpus no rol do art. 27.2 permitiria sua suspensão; as Opiniões Consultivas interpretaram a cláusula final do art. 27.2 (\"nem das garantias judiciais indispensáveis para a proteção de tais direitos\") justamente para incluir o habeas corpus e o amparo entre as garantias não suspensíveis. B) Fabrica um procedimento de \"confirmação pelo Judiciário\" que não legitima a suspensão de garantia judicial essencial; a suspensão do habeas corpus é vedada independentemente de quem decida sua adoção. D) Contraria diretamente a jurisprudência consultiva da Corte, que afirma a impossibilidade de suspensão do habeas corpus mesmo em situações de emergência que envolvam soberania nacional.",
+          "pegadinha": "A banca explora a leitura literal e isolada do art. 27.2 da Convenção (que não cita expressamente \"habeas corpus\") para induzir o candidato a concluir que a garantia poderia ser suspensa; a armadilha está em ignorar a interpretação extensiva consolidada pelas Opiniões Consultivas OC-8/87 e OC-9/87, que vinculam o habeas corpus à proteção de direitos absolutamente intangíveis.",
+          "regraMemoria": "Habeas corpus NUNCA pode ser suspenso, mesmo em estado de exceção — mesmo não estando nomeado literalmente no art. 27.2 da CADH, ele é garantia judicial indispensável à proteção dos direitos intangíveis (OC-8/87 e OC-9/87)."
+        },
+        {
+          "territorio": "Direito Eleitoral",
+          "tema": "Partidos Políticos e Financiamento",
+          "enunciado": "No ano anterior à realização de eleições para cargos eletivos federais e estaduais, os dirigentes dos partidos políticos Alfa e Gama iniciaram tratativas para se aliançarem, tanto nas eleições majoritárias como nas proporcionais, mas havia dúvida em relação ao modelo a ser utilizado. Após consultarem a legislação de regência, concluíram corretamente que deveriam formar",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "coligação, que se extinguirá ao fim do prazo para o ajuizamento da ação de impugnação de mandato eletivo."
+            },
+            {
+              "letra": "B",
+              "texto": "gestão colegiada, somente utilizada nas eleições proporcionais, que deve perdurar até o fim do prazo do mandato eletivo obtido."
+            },
+            {
+              "letra": "C",
+              "texto": "ajuntamento partidário, que se extinguirá após a diplomação dos eleitos."
+            },
+            {
+              "letra": "D",
+              "texto": "federação, sendo que os partidos devem permanecer filiados por no mínimo quatro anos, contados da data do respectivo ingresso."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Alternativa D. Desde a vedação constitucional às coligações partidárias em eleições proporcionais (EC 97/2017, alterando o art. 17, §1º, da CF), partidos que desejam atuar de forma conjunta tanto nas eleições majoritárias quanto nas proporcionais devem constituir federação de partidos (Lei 9.096/95, art. 11-A, incluído pela Lei 14.208/2021), com o requisito de permanência mínima dos partidos federados por 4 (quatro) anos, contados do respectivo ingresso/registro.",
+          "explicacaoErradas": "A) A coligação não é mais admitida para eleições proporcionais desde a EC 97/2017, e sua eventual utilização (restrita às majoritárias) não se extingue no fim do prazo para ajuizamento de AIME, mas segue disciplina própria de existência limitada ao pleito e à prestação de contas. B) \"Gestão colegiada\" não é instituto do Direito Eleitoral brasileiro; trata-se de expressão fabricada como distrator. C) \"Ajuntamento partidário\" também não corresponde a nenhum instituto legal existente; é outro distrator sem correspondência normativa.",
+          "pegadinha": "A banca insere dois institutos inexistentes (\"gestão colegiada\" e \"ajuntamento partidário\") ao lado da coligação (que soa familiar, mas está hoje vedada para proporcionais) para testar se o candidato conhece a criação relativamente recente da federação partidária como via legítima de atuação conjunta em ambos os tipos de eleição.",
+          "regraMemoria": "Desde a EC 97/2017, coligação não existe mais para eleições proporcionais — quem quer atuar junto em majoritárias E proporcionais forma FEDERAÇÃO (mínimo 4 anos de permanência), não coligação."
+        },
+        {
+          "territorio": "Direito Eleitoral",
+          "tema": "Partidos Políticos e Financiamento",
+          "enunciado": "Helena, filiada ao partido político Beta e candidata ao cargo de governadora do Estado Alfa, consultou seu advogado a respeito da composição dos gastos de campanha, mais especificamente se o pagamento de honorários em razão da prestação de serviços advocatícios, no curso e em razão da campanha eleitoral, teria essa natureza jurídica. A assessoria respondeu, corretamente, que os referidos honorários",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "estão incluídos no limite de gastos de campanha, sendo tidos como despesas eleitorais."
+            },
+            {
+              "letra": "B",
+              "texto": "são considerados gastos eleitorais e não estão incluídos no limite de gastos de campanha."
+            },
+            {
+              "letra": "C",
+              "texto": "pela sua essência alimentar, não têm correlação com os gastos eleitorais, o que afasta a possibilidade de serem enquadrados em qualquer limitador de despesas."
+            },
+            {
+              "letra": "D",
+              "texto": "podem ser considerados gastos eleitorais, caso o candidato assim os declare, e estão incluídos no limite de gastos de campanha."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Alternativa B. Os honorários advocatícios pagos em razão de serviços prestados no curso e em função da campanha eleitoral são considerados gastos eleitorais (Lei 9.504/97, art. 26), mas, por disciplina específica da legislação eleitoral, não integram o limite (teto) de gastos de campanha do candidato, recebendo tratamento diferenciado exatamente por sua natureza de despesa com assessoria jurídica indispensável à defesa dos interesses do candidato no processo eleitoral.",
+          "explicacaoErradas": "A) Erra ao incluir tais honorários no limite de gastos de campanha, quando a legislação eleitoral os exclui expressamente desse teto, ainda que os qualifique como despesa eleitoral. C) Erra ao afastar por completo a natureza de gasto eleitoral dos honorários sob o argumento de sua \"essência alimentar\"; a lei os qualifica como gasto eleitoral, apenas os excetuando do limite quantitativo de gastos, e não da classificação como tal. D) Erra ao tornar facultativa/declaratória a classificação dos honorários como gasto eleitoral (dependente de \"declaração\" do candidato) e ao incluí-los no limite de gastos, quando a lei já os define objetivamente como gasto eleitoral excluído do teto.",
+          "pegadinha": "A banca explora a diferença sutil entre \"ser gasto eleitoral\" e \"estar incluído no limite de gastos de campanha\" — são coisas diferentes; o candidato tende a supor que toda despesa eleitoral entra automaticamente no teto de gastos, quando a lei prevê exceções específicas, como a dos honorários advocatícios.",
+          "regraMemoria": "Honorários advocatícios de campanha SÃO gasto eleitoral, mas NÃO entram no limite/teto de gastos de campanha — classificação e limite são coisas distintas."
+        },
+        {
+          "territorio": "Direito Internacional",
+          "tema": "Direito Internacional Privado (LINDB)",
+          "enunciado": "O cidadão francês Pierre Renoir, residente e domiciliado em Portugal, foi casado com uma espanhola, com quem teve dois filhos nascidos na Alemanha. Pierre faleceu em 2022 e deixou como herança um apartamento no Brasil, onde viveu durante a fase universitária. Nesta hipótese, à sucessão do bem será aplicada a lei",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "francesa."
+            },
+            {
+              "letra": "B",
+              "texto": "portuguesa."
+            },
+            {
+              "letra": "C",
+              "texto": "brasileira."
+            },
+            {
+              "letra": "D",
+              "texto": "alemã."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Nos termos do art. 10 da Lei de Introdução às Normas do Direito Brasileiro (LINDB), a sucessão por morte obedece à lei do país em que era domiciliado o defunto, qualquer que seja a natureza e a situação dos bens. Como Pierre Renoir era residente e domiciliado em Portugal no momento do óbito, a lei portuguesa rege a sucessão do apartamento situado no Brasil, não havendo, no caso, cônjuge ou filhos brasileiros que atraíssem a incidência da lei mais favorável prevista no art. 5º, XXXI, da CF/88.",
+          "explicacaoErradas": "A: incorreta porque o critério de conexão adotado pela LINDB para sucessão é o domicílio do falecido, e não a sua nacionalidade (francesa) - o Brasil não adota o critério da nacionalidade como regra geral em matéria sucessória. B (não se aplica, é a correta). C: incorreta porque o local de situação do bem (locus rei sitae) não é o critério legal para reger a sucessão no direito brasileiro; o fato de o imóvel estar no Brasil e Pierre ter estudado aqui é irrelevante para a lei sucessória aplicável. D: incorreta porque a nacionalidade alemã dos filhos (por terem nascido lá) não tem qualquer relevância para a definição da lei sucessória, que se pauta pelo domicílio do autor da herança, não pela nacionalidade dos herdeiros.",
+          "pegadinha": "O enunciado acumula propositalmente vários elementos de conexão possíveis (nacionalidade francesa do falecido, local do bem e da formação universitária no Brasil, nacionalidade alemã dos filhos) para desviar o candidato do único critério legal correto: o domicílio do falecido, que era em Portugal.",
+          "regraMemoria": "Sucessão por morte segue sempre a lei do domicílio do falecido (art. 10, LINDB) - nunca a lei da nacionalidade, nunca a lei do local do bem."
+        },
+        {
+          "territorio": "Direito Internacional",
+          "tema": "Migração e Nacionalidade",
+          "enunciado": "Um brasileiro teve seu pedido de visto de trabalho negado por uma representação consular de um Estado estrangeiro. Inconformado, consultou você, como advogado (a), para a adoção das providências cabíveis no Brasil. Após a avaliação do caso, você concluiu que",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "nenhuma medida judicial é cabível."
+            },
+            {
+              "letra": "B",
+              "texto": "deve ser proposto mandado de segurança perante a Justiça Federal."
+            },
+            {
+              "letra": "C",
+              "texto": "cabe reclamação trabalhista perante a Justiça do Trabalho."
+            },
+            {
+              "letra": "D",
+              "texto": "deve ser proposta ação condenatória por obrigação de fazer, perante o Tribunal de Justiça competente."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A concessão ou negativa de visto por representação consular estrangeira é ato de soberania do Estado estrangeiro, praticado no exercício de seu ius imperii, e por isso está imune à jurisdição brasileira. Não existe ato de autoridade pública brasileira a ser impugnado, de modo que nenhuma medida judicial é cabível no Brasil para reverter a decisão consular estrangeira.",
+          "explicacaoErradas": "B: o mandado de segurança pressupõe ato de autoridade pública brasileira (art. 1º da Lei 12.016/09); como o ato impugnado foi praticado por autoridade consular de Estado estrangeiro, não há autoridade coatora sujeita à jurisdição nacional, o que torna o writ incabível. C: não há relação de emprego nem controvérsia trabalhista a decidir - trata-se de ato de admissão de estrangeiro em outro território, matéria de direito público internacional alheia à competência da Justiça do Trabalho. D: pela mesma razão de imunidade de jurisdição sobre atos de soberania estrangeira, não cabe ação condenatória por obrigação de fazer perante o Tribunal de Justiça, que tampouco teria jurisdição sobre ato praticado por autoridade estrangeira no exercício de sua soberania.",
+          "pegadinha": "A banca induz o candidato a pensar em remédios processuais típicos contra atos administrativos (mandado de segurança) ou em competências setoriais (Justiça do Trabalho, Tribunal de Justiça), fazendo-o esquecer que o ato de concessão de visto é manifestação de soberania de Estado estrangeiro, insuscetível de controle pelo Judiciário brasileiro.",
+          "regraMemoria": "Ato de soberania de Estado estrangeiro (como a concessão ou negativa de visto) nunca se submete ao Judiciário brasileiro - é imune à jurisdição nacional."
+        },
+        {
+          "territorio": "Direito Financeiro",
+          "tema": "Orçamento Público (LOA/LDO/PPA)",
+          "enunciado": "O Presidente da República está elaborando projeto de lei que estabelece, de forma regionalizada, as diretrizes, objetivos e metas da Administração Pública federal para as despesas de capital e outras delas decorrentes e para as relativas aos programas de duração continuada. Diante desse cenário, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A matéria tratada em tal projeto de lei objetiva instituir a Lei de Diretrizes Orçamentárias, a qual deve ser aprovada por quórum de maioria simples no Congresso Nacional."
+            },
+            {
+              "letra": "B",
+              "texto": "Tal projeto versa sobre a Lei de Diretrizes Orçamentárias e se submete à reserva de lei complementar."
+            },
+            {
+              "letra": "C",
+              "texto": "Embora institua o Plano Plurianual, tal projeto de lei necessita ser aprovado por quórum de maioria absoluta no Congresso Nacional."
+            },
+            {
+              "letra": "D",
+              "texto": "Trata-se de projeto de lei que institui o Plano Plurianual, a ser veiculado por meio de lei ordinária."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O projeto que estabelece, de forma regionalizada, diretrizes, objetivos e metas da Administração para despesas de capital e para os programas de duração continuada é, por definição constitucional (art. 165, §1º, CF/88), o Plano Plurianual (PPA). O PPA é veiculado por lei ordinária, aprovada por maioria simples, cabendo à lei complementar apenas dispor sobre o processo de elaboração e as regras gerais de vigência dos instrumentos orçamentários (art. 165, §9º, CF/88), não sobre o próprio conteúdo do PPA.",
+          "explicacaoErradas": "A: confunde o instituto - o projeto descreve o PPA, não a Lei de Diretrizes Orçamentárias (LDO), embora a conclusão sobre o quórum de maioria simples esteja correta, o instituto identificado está errado. B: erra tanto ao identificar o projeto como LDO (na verdade é PPA) quanto ao afirmar reserva de lei complementar - PPA e LDO são leis ordinárias, sujeitando-se a lei complementar apenas as normas gerais sobre o processo orçamentário. C: identifica corretamente o PPA, mas erra ao exigir quórum de maioria absoluta - o PPA é aprovado por lei ordinária, com maioria simples.",
+          "pegadinha": "O enunciado usa expressão muito próxima da redação do art. 165, §1º, CF (que define o PPA), mas a presença dos termos 'diretrizes' e 'metas' pode levar o candidato a confundi-lo com a LDO; além disso, a banca testa se o candidato sabe que nenhum desses instrumentos orçamentários exige lei complementar ou maioria absoluta.",
+          "regraMemoria": "PPA e LDO são sempre leis ordinárias (maioria simples); só as normas gerais do processo orçamentário exigem lei complementar (art. 165, §9º, CF) - PPA nunca exige maioria absoluta."
+        },
+        {
+          "territorio": "Direito Financeiro",
+          "tema": "Precatórios",
+          "enunciado": "João ganhou uma ação movida em face do Estado Gama, na qual este foi condenado a pagar o equivalente a 30 salários mínimos a título de danos morais pelo uso indevido de sua imagem em uma publicidade institucional do governo estadual. A ação transitou em julgado em 15 de julho de 2022. Seu advogado verifica que não há legislação específica estadual acerca de prazos e limites de valores sobre pagamentos pela Fazenda Pública em caso de condenação judicial. Diante desse cenário, e à luz da Constituição Federal de 1988, João receberá o valor a que tem direito",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "por meio de precatório alimentar, que tem prioridade em relação aos demais, dentro do próprio ano do trânsito em julgado."
+            },
+            {
+              "letra": "B",
+              "texto": "por meio de Requisição de Pequeno Valor (RPV)."
+            },
+            {
+              "letra": "C",
+              "texto": "por meio de precatório comum, a ser pago no ano seguinte ao do trânsito em julgado da condenação judicial."
+            },
+            {
+              "letra": "D",
+              "texto": "em dinheiro, no prazo máximo de 15 (quinze) dias contados da intimação da Fazenda Pública do trânsito em julgado da ação, através de transferência bancária entre a instituição financeira que administra o tesouro estadual e o banco em que João tem sua conta."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Na ausência de lei estadual própria fixando valores de pequeno valor, aplica-se o critério supletivo do art. 87 do ADCT: até 40 salários mínimos para a Fazenda dos Estados e do Distrito Federal. Como a condenação foi de 30 salários mínimos - valor inferior ao teto supletivo de 40 salários mínimos aplicável aos Estados -, o pagamento deve ser feito por Requisição de Pequeno Valor (RPV), dispensando o regime de precatório.",
+          "explicacaoErradas": "A: incorreta porque, estando o valor dentro do teto de pequeno valor (40 salários mínimos para Estados), não há necessidade de expedição de precatório (nem alimentar, nem comum); além disso, mesmo o precatório alimentar segue a ordem cronológica e orçamento do exercício seguinte, não sendo pago 'dentro do próprio ano do trânsito em julgado'. C: incorreta pela mesma razão - o valor está dentro do limite de pequeno valor supletivo do Estado, de modo que não se exige a via do precatório comum. D: incorreta porque o pagamento por RPV segue o rito e os prazos próprios da legislação processual (em regra, dois meses contados da entrega da requisição), e não um prazo de 15 dias com transferência bancária direta como descrito.",
+          "pegadinha": "O valor da condenação (30 salários mínimos) coincide com o teto supletivo aplicável aos Municípios (30 salários mínimos, ADCT, art. 87, II), induzindo o candidato a concluir - erroneamente - que ultrapassaria o limite de pequeno valor do Estado devedor; mas o teto correto para Estados, na falta de lei própria, é de 40 salários mínimos (ADCT, art. 87, I), dentro do qual a condenação se enquadra.",
+          "regraMemoria": "Sem lei própria do ente: teto supletivo de pequeno valor é 40 salários mínimos para Estados/DF e 30 salários mínimos para Municípios (ADCT, art. 87) - dentro do teto, sempre RPV, nunca precatório."
+        },
+        {
+          "territorio": "Direito Tributário",
+          "tema": "Lançamento e Crédito Tributário",
+          "enunciado": "A Sociedade Empresária Aguardente 100% Ltda., fabricante de bebidas destiladas, por meio de sua advogada Sophia, protocolou perante a Secretaria Especial da Receita Federal do Brasil, ainda dentro do prazo legal para pagamento, consulta referente à necessidade de recolhimento de Imposto sobre Produtos Industrializados (IPI) acerca de operação específica por ela desempenhada. Escoado o prazo original para pagamento e ainda não decidida a consulta, à luz do Código Tributário Nacional (CTN) assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Aguardente 100% Ltda. poderá ter cobrados contra si juros de mora que correm mesmo na pendência da consulta tributária."
+            },
+            {
+              "letra": "B",
+              "texto": "Por ocasião da decisão final da consulta, o Fisco federal poderá impor multa tributária caso a solução de consulta seja contrária aos interesses de Aguardente 100% Ltda."
+            },
+            {
+              "letra": "C",
+              "texto": "A obrigação tributária a ser cumprida por Aguardente 100% Ltda., por ter sido objeto de consulta, não poderá ser acrescida de juros de mora e nem poderá ser imposta multa tributária à empresa."
+            },
+            {
+              "letra": "D",
+              "texto": "Podem ser aplicadas contra Aguardente 100% Ltda. medidas de garantia previstas no CTN ou em lei tributária na pendência da consulta tributária."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Nos termos do art. 161, §2º, do CTN, a consulta formulada tempestivamente pelo contribuinte, dentro do prazo legal para pagamento do tributo, impede, enquanto pendente de resposta, a fluência de juros de mora, bem como a imposição de penalidades (multa), já que a exigibilidade do crédito tributário fica suspensa (art. 151, III, CTN) até a decisão da consulta.",
+          "explicacaoErradas": "A: incorreta porque, sendo a consulta tempestiva, os juros de mora não correm enquanto ela estiver pendente de decisão (art. 161, §2º, CTN). B: incorreta porque a consulta tempestiva impede a aplicação de multa relativa ao período de sua pendência, ainda que a solução seja desfavorável ao consulente. D: incorreta porque, estando suspensa a exigibilidade do crédito tributário em razão da consulta pendente (art. 151, III, CTN), não podem ser adotadas medidas de cobrança ou de garantia contra o contribuinte nesse período.",
+          "pegadinha": "A banca cria uma falsa dicotomia, sugerindo que a consulta tempestiva afastaria apenas os juros de mora, mas permitiria a aplicação de multa ou de medidas de garantia - quando, na verdade, a suspensão da exigibilidade do crédito durante a consulta tempestiva impede simultaneamente juros, multa e qualquer medida de cobrança.",
+          "regraMemoria": "Consulta tributária tempestiva suspende a exigibilidade do crédito: nunca corre juro de mora, nunca há multa, nunca há medida de garantia ou cobrança enquanto ela estiver pendente (arts. 151, III, e 161, §2º, CTN)."
+        },
+        {
+          "territorio": "Direito Tributário",
+          "tema": "Limitações ao Poder de Tributar",
+          "enunciado": "A Sociedade Empresária ABC Ltda. adquiriu no exterior um lote de dez mil unidades de um determinado perfume francês. Antes da chegada das mercadorias ao porto, foi publicado no Diário Oficial da União, em 20/04/2023, um decreto editado pelo Poder Executivo Federal majorando imediatamente a alíquota do Imposto sobre a Importação de perfumes de 20% para 30%, prevendo expressamente sua vigência e produção de efeitos a partir da data de sua publicação. Em 30/04/2023, as mercadorias finalmente chegam ao porto no Brasil, devendo agora a empresa realizar o desembaraço aduaneiro. Preocupada com possível prejuízo decorrente do aumento inesperado do custo da mercadoria devido à elevação do imposto de importação, a sociedade empresária procura você, como advogado(a), indagando sobre a validade daquele decreto. Diante deste cenário, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A elevação desta alíquota por decreto violou o princípio da legalidade tributária."
+            },
+            {
+              "letra": "B",
+              "texto": "O prazo previsto para produção de efeitos da elevação de alíquota violou o princípio da anterioridade tributária nonagesimal."
+            },
+            {
+              "letra": "C",
+              "texto": "Embora tal imposto seja classificado como extrafiscal, deve obediência ao princípio da anterioridade tributária anual."
+            },
+            {
+              "letra": "D",
+              "texto": "A majoração dessa alíquota e a sua produção de efeitos imediata são válidas."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O Imposto de Importação (II) é expressamente ressalvado, pela própria Constituição, tanto do princípio da legalidade tributária estrita quanto das anterioridades anual e nonagesimal (art. 153, §1º, e art. 150, §1º, CF/88), justamente por sua função extrafiscal de regulação do comércio exterior. Assim, o Poder Executivo pode majorar a alíquota do II por decreto, com efeitos imediatos, respeitados apenas os limites e condições fixados em lei. Como o fato gerador do II ocorre no momento do registro da declaração de importação/desembaraço aduaneiro (30/04), já sob a vigência do novo percentual (fixado em 20/04), a majoração e sua eficácia imediata são plenamente válidas.",
+          "explicacaoErradas": "A: incorreta porque o II é uma das exceções constitucionais expressas ao princípio da legalidade tributária estrita, podendo ter suas alíquotas alteradas por ato do Poder Executivo (decreto), dentro dos limites legais. B: incorreta porque o II também é exceção expressa à anterioridade nonagesimal (art. 150, §1º, CF), de modo que pode produzir efeitos imediatos a partir da publicação do decreto. C: incorreta porque, justamente por ser extrafiscal, o II é exceção também à anterioridade anual, não estando a ela sujeito.",
+          "pegadinha": "O examinador tenta levar o candidato a aplicar as garantias gerais do contribuinte (legalidade estrita e as duas anterioridades) sem lembrar que o II figura no rol clássico de exceções constitucionais (junto com IE, IPI e IOF), podendo ser majorado por decreto e produzir efeitos imediatos.",
+          "regraMemoria": "II, IE, IPI e IOF: sempre exceção à legalidade estrita (alíquota por decreto) e às duas anterioridades (anual e nonagesimal) - eficácia sempre imediata."
+        },
+        {
+          "territorio": "Direito Tributário",
+          "tema": "Limitações ao Poder de Tributar",
+          "enunciado": "Em dezembro de 2022, um decreto do prefeito do Município Alfa atualizou o valor do Imposto Predial e Territorial Urbano (IPTU), a contar de 1º de janeiro de 2023, atendo-se à aplicação de índice oficial de atualização monetária. Além disso, neste mesmo decreto, acompanhado da estimativa de impacto orçamentário e financeiro, estabeleceu-se, também a contar de 1º de janeiro de 2023, a isenção do IPTU para os imóveis localizados no Centro da cidade que fossem destinados exclusivamente para moradia, visando a diversificar a ocupação naquele local e dar efetividade ao princípio da função social da propriedade. Diante deste cenário, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Tal decreto poderia ser usado apenas para atualizar o valor do IPTU."
+            },
+            {
+              "letra": "B",
+              "texto": "A concessão de tal isenção, por ter base na função social da propriedade, poderia ser feita por meio de decreto."
+            },
+            {
+              "letra": "C",
+              "texto": "Embora possa ser usado tanto para a atualização deste valor do IPTU como para a concessão deste tipo de isenção, tal decreto violou o princípio da anterioridade tributária nonagesimal."
+            },
+            {
+              "letra": "D",
+              "texto": "Este decreto não é instrumento normativo hábil seja para a atualização deste valor do IPTU, seja para a concessão deste tipo de isenção."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A atualização do valor venal do IPTU, quando restrita à aplicação de índice oficial de correção monetária, pode ser feita por decreto, sem violar a legalidade tributária, conforme a Súmula 160 do STJ ('É defeso ao Município atualizar o IPTU, mediante decreto, em percentual superior ao índice oficial de correção monetária'). Já a isenção tributária, mesmo fundada na função social da propriedade, exige lei específica, por força da reserva legal do art. 150, §6º, CF/88, não podendo ser veiculada por decreto. Logo, o decreto só poderia validamente ser usado para a atualização, não para a isenção.",
+          "explicacaoErradas": "B: incorreta porque toda isenção tributária depende de lei específica (art. 150, §6º, CF), sendo irrelevante que o motivo invocado seja a função social da propriedade - decreto jamais pode conceder isenção. C: incorreta porque o decreto não pode validamente instituir a isenção (só a lei específica pode), e a mera atualização monetária pelo índice oficial não configura majoração de tributo, não se sujeitando à anterioridade nonagesimal. D: incorreta porque o decreto é, sim, instrumento hábil para a atualização monetária do IPTU pelo índice oficial (Súmula 160, STJ), ainda que seja inábil para conceder a isenção.",
+          "pegadinha": "A banca mistura dois regimes jurídicos distintos - atualização monetária (que pode ser feita por decreto, dentro do índice oficial) e isenção tributária (que exige sempre lei específica) - testando se o candidato separa corretamente os dois institutos em vez de tratar o decreto como 'tudo ou nada'.",
+          "regraMemoria": "Atualização do IPTU pelo índice oficial pode ser por decreto (Súmula 160, STJ); isenção tributária nunca pode ser por decreto - sempre exige lei específica (art. 150, §6º, CF)."
+        },
+        {
+          "territorio": "Direito Tributário",
+          "tema": "Limitações ao Poder de Tributar",
+          "enunciado": "O Estado Alfa alterou, por meio de lei, a contribuição social para custeio do regime próprio de previdência social, cobrada dos seus servidores ativos, dos aposentados e dos pensionistas. José e Márcio são servidores públicos do mesmo órgão estadual, ganhando cada um, respectivamente, a remuneração mensal de 15 mil reais e 10 mil reais. José, ao notar que a alíquota incidente sobre sua remuneração era de 16,5%, ao passo que para Márcio a alíquota era de 14,5%, ficou indignado e, em relação a essa situação diferenciada, resolve contratar você, como advogado(a), para um eventual questionamento judicial. A respeito da posição de José, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Nenhum tributo incidente sobre a renda ou proventos poderá ter alíquotas progressivas, sob pena de violar a capacidade contributiva."
+            },
+            {
+              "letra": "B",
+              "texto": "É vedada a adoção de alíquotas progressivas para esta espécie de contribuição social, em respeito ao princípio da capacidade contributiva."
+            },
+            {
+              "letra": "C",
+              "texto": "A progressividade tributária deve ser obrigatoriamente adotada para todos os tributos estaduais, nos termos da CRFB/88, garantindo-se efetividade ao princípio da capacidade contributiva."
+            },
+            {
+              "letra": "D",
+              "texto": "Esta espécie de contribuição social poderá ter alíquotas progressivas de acordo com o valor da base de contribuição."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A Constituição Federal, após a EC 103/2019, passou a admitir expressamente que a contribuição para o regime próprio de previdência social (RPPS) tenha alíquotas progressivas de acordo com o valor da base de contribuição, como instrumento de efetivação (e não violação) da capacidade contributiva. Assim, é legítima a cobrança de alíquotas diferenciadas (16,5% e 14,5%) conforme a remuneração de cada servidor.",
+          "explicacaoErradas": "A: incorreta ao generalizar que nenhum tributo sobre renda pode ter alíquotas progressivas - o próprio Imposto de Renda é constitucionalmente progressivo (art. 153, §2º, I, CF), e a contribuição previdenciária do RPPS também pode sê-lo. B: incorreta porque não há vedação à progressividade dessa contribuição; ao contrário, a CF autoriza expressamente essa técnica para o RPPS. C: incorreta porque a progressividade não é regra obrigatória e universal para todos os tributos estaduais - ela só se aplica onde a Constituição expressamente a prevê (como no caso do IPTU, ITCMD e da contribuição previdenciária do RPPS), não sendo uma imposição genérica.",
+          "pegadinha": "O examinador explora a intuição de que 'tratamento diferenciado' entre contribuintes viola a isonomia/capacidade contributiva, quando na verdade a progressividade conforme a base de contribuição é expressamente autorizada para a contribuição do RPPS pela EC 103/2019, sendo instrumento de justiça fiscal, não sua violação.",
+          "regraMemoria": "Contribuição do regime próprio de previdência pode ter alíquotas progressivas conforme a base de contribuição (EC 103/2019) - progressividade não é regra vedada, é exceção constitucional expressamente autorizada."
+        },
+        {
+          "territorio": "Direito Tributário",
+          "tema": "Obrigação Tributária",
+          "enunciado": "O Governador do Estado Alfa, diante da grande quantidade de bicicletas elétricas circulando em seu território, e visando aumentar a arrecadação, oficiou à sua Secretaria da Fazenda para adotar alguma forma de cobrança quanto a tais veículos. Esta, por sua vez, orientou seus fiscais a cobrar o Imposto sobre Propriedade de Veículos Automotores (IPVA), aplicando a incidência deste imposto, por analogia, às bicicletas elétricas, ainda que não classificadas como veículos automotores propriamente ditos pela legislação de trânsito pertinente. O sindicato dos lojistas do setor o(a) consulta, como advogado(a), a respeito desta incidência. Diante desse cenário, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "É válida a exigência deste imposto, uma vez que as bicicletas elétricas se enquadram no conceito de veículo automotor por analogia."
+            },
+            {
+              "letra": "B",
+              "texto": "Está dentro da competência estadual a tributação sobre a propriedade de bicicletas elétricas."
+            },
+            {
+              "letra": "C",
+              "texto": "Tal tributação por analogia envolvendo bicicletas elétricas é vedada no ordenamento jurídico nacional."
+            },
+            {
+              "letra": "D",
+              "texto": "A exigência deste imposto sobre bicicletas elétricas dependeria da edição de um decreto, cuja competência é privativa do Governador."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O emprego de analogia não pode resultar na exigência de tributo não previsto em lei, por vedação expressa do art. 108, §1º, do CTN. Como a bicicleta elétrica não se enquadra no conceito legal de veículo automotor (fato gerador do IPVA), a tentativa de tributá-la por analogia é vedada pelo ordenamento jurídico, independentemente de qualquer ato administrativo ou decreto que se pretenda editar.",
+          "explicacaoErradas": "A: incorreta porque não é válido enquadrar a bicicleta elétrica no conceito de veículo automotor por analogia - o fato gerador do IPVA exige tipicidade fechada, e a analogia não pode criar ou ampliar hipótese de incidência tributária. B: incorreta porque, embora o IPVA seja de competência estadual em geral, isso não autoriza sua cobrança sobre um bem que não se enquadra no fato gerador legalmente previsto (veículo automotor); a competência tributária não supre a ausência de subsunção ao tipo legal. D: incorreta porque o problema não é a falta de um decreto do Governador - nenhum ato infralegal poderia sanar a vedação de analogia para exigir tributo, e a instituição/majoração de tributo por decreto também violaria a legalidade tributária estrita.",
+          "pegadinha": "A banca sugere que bastaria um ato normativo do Poder Executivo (decreto) para 'regularizar' a cobrança, desviando o candidato do verdadeiro obstáculo jurídico: a vedação absoluta ao uso de analogia para exigir tributo não previsto em lei (art. 108, §1º, CTN), pois a bicicleta elétrica não é veículo automotor.",
+          "regraMemoria": "Analogia nunca pode ser usada para exigir tributo não previsto em lei (art. 108, §1º, CTN) - o fato gerador exige sempre tipicidade fechada."
+        },
+        {
+          "territorio": "Direito Administrativo",
+          "tema": "Licitações e Contratos Administrativos",
+          "enunciado": "O pequeno Município Alfa, situado no interior do Estado Beta, enfrenta grave problema de abastecimento de água potável, pois não há fornecimento de água encanada para determinada região da cidade, por dificuldades técnicas. Visando à resolução para a questão juntamente com a iniciativa privada, o Município Alfa pretende, mediante licitação, contratar objeto que envolva inovação tecnológica ou técnica, sendo imprescindível a adaptação de soluções disponíveis no mercado. Atualmente, verifica-se a impossibilidade de as especificações técnicas serem definidas com precisão suficiente pela Administração, razão pela qual é preciso o prévio debate com o setor privado, para se definirem e se identificarem os meios e as alternativas que possam satisfazer as necessidades da administração municipal. Ao tomar conhecimento de que o Município Alfa pretende realizar licitação nas condições narradas, com o intuito de desenvolver uma ou mais alternativas capazes de atender às suas necessidades da forma mais adequada, dada a complexidade da questão local de abastecimento de água, a sociedade empresária Delta se interessou em participar do certame. Como advogado(a) da sociedade empresária, você informou à diretoria que, de acordo com a nova Lei de Licitações (Lei nº 14.133/21), a modalidade de licitação mais adequada diante da realidade fática descrita, é o(a)",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "concorrência, que é mais abrangente, seja do ponto de vista do valor do contrato, seja por contemplar variados objetos."
+            },
+            {
+              "letra": "B",
+              "texto": "leilão, em que serão admitidos como licitantes todos os interessados que preencherem os requisitos objetivos estabelecidos."
+            },
+            {
+              "letra": "C",
+              "texto": "concurso, no qual o poder público municipal não poderá revelar a outros licitantes as soluções técnicas propostas por um concorrente."
+            },
+            {
+              "letra": "D",
+              "texto": "diálogo competitivo, em que os licitantes devem apresentar proposta final após o encerramento dos diálogos."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O diálogo competitivo (art. 6º, XLII, e art. 32 da Lei nº 14.133/21) é a modalidade licitatória própria para contratações que envolvam inovação tecnológica ou técnica, quando a Administração não consegue definir com precisão as especificações técnicas necessárias e precisa de debate prévio com o setor privado para identificar as soluções que melhor atendam à sua necessidade - exatamente a hipótese descrita no enunciado (abastecimento de água com necessidade de solução inovadora e adaptação de tecnologias de mercado). Ao final dos diálogos, os licitantes apresentam proposta final.",
+          "explicacaoErradas": "A: incorreta porque a concorrência, embora abrangente quanto a valores e objetos, não é a modalidade vocacionada para debate prévio e desenvolvimento colaborativo de soluções técnicas inovadoras - essa função é do diálogo competitivo. B: incorreta porque o leilão destina-se à alienação de bens (móveis inservíveis, penhorados ou legalmente apreendidos, ou imóveis), não à contratação de solução para prestação de serviço público, hipótese estranha ao caso. C: incorreta porque o concurso destina-se à escolha de trabalho técnico, científico ou artístico mediante instituição de prêmio ou remuneração ao vencedor, finalidade distinta da contratação de obra/solução para resolver o problema de abastecimento de água descrito.",
+          "pegadinha": "O enunciado é redigido com termos muito próximos da definição legal do diálogo competitivo, mas a menção a 'solução técnica' e à necessidade de sigilo entre concorrentes pode levar o candidato a associar o caso ao concurso, ou a escolher a concorrência por parecer a modalidade 'mais genérica e segura'.",
+          "regraMemoria": "Diálogo competitivo: sempre que a Administração precisa de solução inovadora e não consegue definir sozinha as especificações técnicas - função exclusiva dessa modalidade (Lei 14.133/21, art. 32)."
+        },
+        {
+          "territorio": "Direito Administrativo",
+          "tema": "Intervenção do Estado na Propriedade",
+          "enunciado": "O Município Alfa, observadas as cautelas legais, instituiu servidão administrativa sobre o imóvel de propriedade de Gabriel, com a finalidade de instalar postes e fios de energia elétrica, com escopo de regularizar o serviço de iluminação pública na localidade. Diante das circunstâncias do caso concreto, em especial pelo grande espaço cuja utilização é necessária para manutenção dos equipamentos instalados, verifica-se, de forma incontroversa, que Gabriel sofreu efetivo dano no direito de propriedade. Para melhor compreender o regime jurídico próprio dessa modalidade de intervenção do Estado na propriedade e ficar ciente de seus direitos e obrigações, em especial em matéria de indenização, Gabriel contratou você, como advogado(a). No caso em tela, atento às normas de regência, você orientou seu cliente no sentido de que a servidão administrativa instituída pelo Município Alfa,",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "enseja o pagamento de indenização, se houver dano comprovado."
+            },
+            {
+              "letra": "B",
+              "texto": "ocorre com prazo determinado, podendo ser prorrogado mediante prévia indenização."
+            },
+            {
+              "letra": "C",
+              "texto": "ostenta natureza de direito pessoal da Administração Pública, que prescinde de registro no Cartório de Registro de Imóveis, e ocorre mediante indenização em títulos da dívida pública."
+            },
+            {
+              "letra": "D",
+              "texto": "tem por pressuposto a necessidade ou utilidade pública, ou por interesse social, e deve ocorrer mediante justa e prévia indenização em dinheiro."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A servidão administrativa é direito real público que grava a propriedade privada em favor de serviço público (aqui, a rede de energia elétrica para iluminação pública), gerando dever de indenizar apenas quando houver dano efetivamente comprovado ao proprietário - diferentemente da desapropriação, que sempre exige indenização prévia. Como no caso concreto restou incontroverso o dano sofrido por Gabriel, é devida a indenização correspondente a esse prejuízo comprovado.",
+          "explicacaoErradas": "B: incorreta porque a servidão administrativa tem caráter de permanência (dura enquanto persistir a necessidade do serviço público), não sendo instituída com prazo determinado nem sujeita a prorrogação mediante indenização prévia. C: incorreta porque a servidão tem natureza de direito real (e não pessoal) sobre coisa alheia, sujeitando-se a registro no Cartório de Registro de Imóveis para produzir efeitos perante terceiros; além disso, a indenização (quando devida) corresponde ao dano efetivo, em dinheiro, e não em títulos da dívida pública (regime este próprio de certas desapropriações). D: incorreta porque descreve o regime da desapropriação (pressuposto de necessidade/utilidade pública ou interesse social, com justa e prévia indenização em dinheiro), que não se confunde com a servidão administrativa, cuja indenização é condicionada à existência de dano comprovado e não é necessariamente prévia.",
+          "pegadinha": "A banca insere na alternativa D a redação típica da desapropriação (justa e prévia indenização em dinheiro) para fazer o candidato confundir os dois institutos de intervenção do Estado na propriedade, quando a servidão administrativa tem regime de indenização distinto - condicionado à comprovação de dano, e não prévio.",
+          "regraMemoria": "Servidão administrativa só indeniza se houver dano comprovado; desapropriação sempre indeniza previamente em dinheiro - nunca confunda os dois institutos."
+        },
+        {
+          "territorio": "Direito Administrativo",
+          "tema": "Controle da Administração",
+          "enunciado": "Ariquemes é servidor público federal e vem cumprindo diligentemente com as obrigações estabelecidas em lei para obter sua progressão funcional e assim aumentar sua remuneração. Os critérios para tanto estão estabelecidos em lei, são de caráter objetivo, mediante pontuação a ser adquirida pelo servidor, sendo certo que o provimento derivado em questão é ato vinculado. O mencionado servidor acredita ter cumprido todos os requisitos estabelecidos na aludida lei, mas foi surpreendido com o indeferimento de sua progressão, sob o fundamento de que não alcançou a pontuação necessária. Em razão disso, com fulcro na Lei nº 12.527/11, Ariquemes pleiteou acesso às informações que levaram a tal conclusão da Administração, que considera flagrantemente equivocada. Contudo, o fornecimento dos dados foi negado sob o fundamento de que não há interesse público na respectiva divulgação. Diante dessa situação hipotética, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O preenchimento dos requisitos previstos em lei não confere a Ariquemes o direito subjetivo à progressão almejada."
+            },
+            {
+              "letra": "B",
+              "texto": "As informações pleiteadas constituem atos internos da Administração e, portanto, são informação reservada, protegida por sigilo."
+            },
+            {
+              "letra": "C",
+              "texto": "O fornecimento dos dados pessoais pretendido por Ariquemes submete-se à discricionariedade da Administração, que atuou nos limites da lei."
+            },
+            {
+              "letra": "D",
+              "texto": "Ariquemes tem direito ao acesso a tais dados, considerando que este direito compreende as atividades exercidas pelos órgãos, inclusive as relativas a sua organização e serviços."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A Lei de Acesso à Informação (Lei nº 12.527/11) estabelece a publicidade como regra e o sigilo como exceção (arts. 3º e 5º), garantindo o direito de acesso a informações relativas à organização, funcionamento e atividades exercidas pelos órgãos públicos, o que inclui os critérios e dados que fundamentaram o indeferimento da progressão funcional de Ariquemes. Não havendo hipótese legal de sigilo aplicável, ele tem direito a acessar as informações que embasaram a decisão administrativa.",
+          "explicacaoErradas": "A: incorreta porque, sendo o provimento derivado (progressão) ato vinculado a critérios objetivos previstos em lei, o preenchimento desses requisitos confere ao servidor direito subjetivo à progressão, não havendo margem de discricionariedade da Administração para negá-la se os critérios estiverem cumpridos. B: incorreta porque não se trata de informação sigilosa por natureza - dados sobre pontuação e critérios de avaliação de servidor não se enquadram nas hipóteses legais taxativas de sigilo previstas na LAI. C: incorreta porque o fornecimento dessas informações não está sujeito à discricionariedade administrativa; a publicidade é a regra geral, e o sigilo só pode ser invocado nas hipóteses legalmente previstas, inexistentes no caso.",
+          "pegadinha": "A Administração tenta justificar a negativa alegando 'ausência de interesse público na divulgação', invertendo a lógica da LAI: não cabe à Administração exigir que o cidadão demonstre interesse público para ter acesso à informação; cabe a ela justificar o sigilo com base em hipótese legal específica, o que não ocorreu.",
+          "regraMemoria": "Na LAI, publicidade é sempre a regra e sigilo é sempre exceção prevista em lei - a Administração nunca pode negar acesso alegando simples 'falta de interesse público'."
+        },
+        {
+          "territorio": "Direito Administrativo",
+          "tema": "Improbidade Administrativa",
+          "enunciado": "No ano corrente, o Ministério Público ajuizou duas ações por improbidade administrativa distintas, uma em desfavor de Carlos, prefeito do Município Alfa, e, outra, em desfavor de Bruno, servidor do Município Beta. Ambas as ações buscavam a aplicação de penalidade pela prática de atos de improbidade que violam princípios da Administração Pública, com a descrição objetiva dos fatos exigida em lei e apontando a lesividade relevante ao bem jurídico tutelado. A primeira tem fundamento na negativa, pelo próprio prefeito, de publicidade aos atos oficiais, que não estavam protegidos por sigilo. A segunda ação foi proposta porque Bruno nomeou sua esposa para cargo administrativo em comissão a ele subordinado, no qual ela vinha laborando com afinco. Diante dessa situação hipotética, considerando a atual redação da Lei nº 8.429/92, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Revela-se pertinente o ajuizamento de ambas as ações, sendo imprescindível, em cada caso, a demonstração de dolo, bem como de que a conduta funcional de cada agente público tinha o fim de obter proveito ou benefício indevido para si ou para outra pessoa ou entidade."
+            },
+            {
+              "letra": "B",
+              "texto": "A ação ajuizada em desfavor de Carlos é pertinente, mas aquela em desfavor de Bruno não, considerando que, apesar de o nepotismo ser vedado pelo ordenamento, não há previsão no sentido de que sua prática caracteriza ato de improbidade administrativa."
+            },
+            {
+              "letra": "C",
+              "texto": "Apenas é pertinente a ação ajuizada em desfavor de Bruno, na medida em que a negativa de publicidade aos atos oficiais por Carlos não constitui uma ilegalidade passível de caracterizar ato de improbidade administrativa."
+            },
+            {
+              "letra": "D",
+              "texto": "Ambas as ações são despropositadas, pois, além da lesividade relevante ao bem jurídico tutelado, é imprescindível o reconhecimento de danos ao erário para a caracterização da improbidade administrativa, o que não ocorreu em nenhum dos casos."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Após a reforma promovida pela Lei nº 14.230/21, todas as modalidades de improbidade administrativa (enriquecimento ilícito, dano ao erário e atentado a princípios) passaram a exigir dolo específico, consistente na finalidade de obter proveito ou benefício indevido para si ou para outrem (ou de causar dano). Tanto a negativa de publicidade a atos oficiais não sigilosos por Carlos (atentado ao princípio da publicidade) quanto o nepotismo praticado por Bruno (nomeação da esposa para cargo em comissão subordinado a ele) configuram atos de improbidade que atentam contra princípios da Administração Pública, desde que demonstrado esse dolo específico em ambos os casos.",
+          "explicacaoErradas": "B: incorreta porque o nepotismo é expressamente vedado e caracteriza ato de improbidade que atenta contra os princípios da Administração Pública, havendo previsão normativa e entendimento consolidado (inclusive na linha da Súmula Vinculante 13 do STF) nesse sentido - não é correto afirmar que 'não há previsão'. C: incorreta porque a negativa de publicidade a atos oficiais não protegidos por sigilo é conduta expressamente tipificada como ato de improbidade que viola princípios da Administração, sendo, portanto, pertinente também a ação contra Carlos. D: incorreta porque a exigência de efetivo dano ao erário é própria apenas da modalidade do art. 10 da Lei 8.429/92 (atos que causam prejuízo ao erário), não se aplicando às modalidades de enriquecimento ilícito (art. 9º) e de violação a princípios (art. 11), que dispensam a comprovação de dano patrimonial.",
+          "pegadinha": "A banca testa se o candidato sabe que, após a Lei 14.230/21, passou-se a exigir dolo específico (finalidade de obter vantagem indevida) mesmo para os atos de improbidade que apenas violam princípios, e explora a confusão entre as três modalidades da Lei 8.429/92 quanto à exigência (ou não) de dano ao erário - que só é elemento do art. 10.",
+          "regraMemoria": "Depois da Lei 14.230/21: toda improbidade exige dolo específico com fim de obter vantagem indevida; só o art. 10 (dano ao erário) exige prejuízo efetivo - nunca os arts. 9º e 11."
+        },
+        {
+          "territorio": "Direito Administrativo",
+          "tema": "Poderes Administrativos",
+          "enunciado": "Josias e Januário são servidores públicos federais de alta hierarquia e estavam conversando sobre os problemas inerentes ao exercício de suas atribuições. Enquanto Josias está extremamente exacerbado de trabalho e precisa delegar algumas de suas atribuições, para não comprometer o funcionamento da atividade administrativa, Januário entende ser necessário avocar competência atribuída a órgão hierarquicamente inferior, por questões excepcionais que são de extrema relevância para o interesse público. Considerando as circunstâncias narradas, em consonância com a Lei nº 9.784/99, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Josias poderá delegar verbalmente parcela de sua competência, considerando que esta é renunciável por servidor de alta hierarquia."
+            },
+            {
+              "letra": "B",
+              "texto": "Eventual delegação de competência por parte de Josias não poderá ser revogada após a sua formalização."
+            },
+            {
+              "letra": "C",
+              "texto": "A delegação de competência por Josias só pode ser realizada para órgão que lhe seja hierarquicamente inferior."
+            },
+            {
+              "letra": "D",
+              "texto": "A avocação temporária de competência por Januário será permitida em caráter excepcional e por motivos relevantes devidamente justificados."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Nos termos da Lei nº 9.784/99 (arts. 12 a 15), a avocação temporária de competência atribuída a órgão hierarquicamente inferior é admitida em caráter excepcional e por motivos relevantes devidamente justificados - exatamente a situação de Januário, que pretende avocar competência por questões excepcionais de extrema relevância para o interesse público.",
+          "explicacaoErradas": "A: incorreta porque a delegação deve ser formalizada por ato próprio, publicado no meio oficial (não verbalmente), e porque a competência administrativa não é 'renunciável' pelo agente - a delegação transfere apenas o exercício, não a titularidade da competência, que permanece indisponível. B: incorreta porque o ato de delegação é revogável a qualquer tempo pela autoridade delegante, conforme a própria Lei 9.784/99. C: incorreta porque a delegação pode ser feita inclusive para órgãos ou autoridades que não lhe sejam hierarquicamente subordinados, quando conveniente em razão de circunstâncias técnicas, sociais, econômicas, jurídicas ou territoriais, não se restringindo à hierarquia direta.",
+          "pegadinha": "A banca tenta fazer o candidato acreditar que a delegação só é possível dentro da hierarquia e que, uma vez formalizada, é irrevogável ou fruto de 'renúncia' de competência - invertendo as regras da Lei 9.784/99, que autoriza delegação mesmo sem subordinação e sempre permite sua revogação.",
+          "regraMemoria": "Delegação pode ocorrer mesmo sem subordinação hierárquica e é sempre revogável; avocação é sempre excepcional, temporária e motivada (Lei 9.784/99, arts. 12 a 15)."
+        },
+        {
+          "territorio": "Direito Ambiental",
+          "tema": "Licenciamento Ambiental",
+          "enunciado": "O condomínio residencial Alfa Orquídeas é constituído por diversos blocos, com médio núcleo populacional, e está localizado em zona urbana do Município Beta, situado no Estado Gama. Diante da inexistência de rede canalizada para distribuição e abastecimento de água potável na localidade, desde a recente construção do condomínio, os condôminos fazem uso de caminhões pipas. Seja pelo alto custo, seja pela escassez dos caminhões pipas, os condôminos aprovaram, por unanimidade em assembleia, que o condomínio iria proceder à construção de um poço semiartesiano, para extração de água de um aquífero subterrâneo existente no local, para fins de consumo final. Sabe- se que o citado aquífero não é de domínio da União, que não tem qualquer tipo de interesse na questão. Para agir dentro da legalidade, antes da construção do poço, o síndico do condomínio residencial Alfa Orquídeas deve requerer",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "licença ambiental ao Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (Ibama)."
+            },
+            {
+              "letra": "B",
+              "texto": "licença ambiental ao órgão ambiental do Município Beta."
+            },
+            {
+              "letra": "C",
+              "texto": "licença de uso de recursos hídricos ao Município Beta."
+            },
+            {
+              "letra": "D",
+              "texto": "outorga de uso de recursos hídricos ao Estado Gama."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "As águas subterrâneas (como o aquífero em questão) são bens de domínio dos Estados, e não da União nem dos Municípios, por força do art. 26 da CF/88. Assim, para extrair água de aquífero subterrâneo para consumo final, o síndico deve requerer outorga de uso de recursos hídricos ao Estado Gama, órgão gestor titular do domínio da água, conforme exige a Lei nº 9.433/97 (Política Nacional de Recursos Hídricos, art. 12), instrumento distinto e específico para o uso da água, diverso do licenciamento ambiental.",
+          "explicacaoErradas": "A: incorreta porque o Ibama (órgão federal) só teria atribuição se houvesse interesse ou bem da União envolvido, o que expressamente não ocorre no caso, já que o aquífero não é de domínio federal. B: incorreta porque confunde licenciamento ambiental (instrumento de controle de impacto ambiental de atividades/empreendimentos) com outorga de uso de recursos hídricos (instrumento específico da Lei 9.433/97 para captação de água), sendo institutos distintos; ademais, o Município não é o titular do domínio da água subterrânea. C: incorreta porque o instituto correto se chama outorga (não 'licença') de uso de recursos hídricos, e a competência para concedê-la, no caso, é do Estado (titular do domínio da água subterrânea, art. 26, CF), e não do Município.",
+          "pegadinha": "A banca mistura licenciamento ambiental (que pode até ser de competência municipal para certos empreendimentos, conforme a LC 140/2011) com a outorga de uso de recursos hídricos (regida pela titularidade do domínio da água), testando se o candidato sabe diferenciar os dois regimes e identificar corretamente que águas subterrâneas são sempre bens estaduais, nunca municipais.",
+          "regraMemoria": "Águas subterrâneas são sempre bens dos Estados (nunca dos Municípios) - art. 26, CF; seu uso depende de outorga, nunca de licença ambiental."
+        },
+        {
+          "territorio": "Direito Ambiental",
+          "tema": "Princípios e Competência Ambiental",
+          "enunciado": "Tramita na Câmara do Município Alfa projeto de lei que dispõe sobre proteção ao meio ambiente no âmbito de seu território, observado o interesse local. Sabe-se que o projeto de lei está harmônico com a disciplina legislativa estadual e federal atualmente vigente. No caso em tela, em matéria de competência legislativa ambiental, de acordo com a CRFB/88, é correto afirmar que o projeto de lei, em tese,",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "ofende a Carta Magna, porque compete à União legislar privativamente sobre proteção ao meio ambiente, observadas as premissas constitucionais."
+            },
+            {
+              "letra": "B",
+              "texto": "é incompatível com a Carta Magna, porque compete à União, aos Estados e ao Distrito Federal legislar privativamente sobre proteção ao meio ambiente."
+            },
+            {
+              "letra": "C",
+              "texto": "não viola a Carta Magna, porque o Município possui competência suplementar à da União e à dos Estados para legislar sobre proteção ao meio ambiente, no limite do seu interesse local e desde que tal regramento seja harmônico com a disciplina estabelecida pelos demais entes federados."
+            },
+            {
+              "letra": "D",
+              "texto": "não afronta a Carta Magna, porque o Município possui competência concorrente e não suplementar com a União e os Estados para legislar sobre proteção ao meio ambiente, de maneira que pode dispor de forma diversa e menos protetiva ao ambiente do que a disciplina estadual."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Compete à União, aos Estados e ao Distrito Federal legislar concorrentemente sobre proteção do meio ambiente (art. 24, VI, CF/88), cabendo aos Municípios competência suplementar para legislar sobre assuntos de interesse local (art. 30, I e II, CF/88), desde que em harmonia com a disciplina federal e estadual já existente. Como o projeto municipal está de acordo com a legislação estadual e federal vigentes e trata de interesse local, ele não viola a Constituição.",
+          "explicacaoErradas": "A: incorreta porque a proteção ao meio ambiente não é matéria de competência privativa da União - é matéria de competência concorrente entre União, Estados e DF, além de comportar competência suplementar municipal. B: incorreta porque a competência sobre proteção ambiental não é privativa de União/Estados/DF, mas concorrente entre eles, havendo espaço constitucional para a atuação suplementar do Município. D: incorreta porque o Município não possui competência concorrente (essa é exclusiva de União, Estados e DF), mas sim competência suplementar, e essa competência jamais permite disciplina menos protetiva do meio ambiente do que a estabelecida pelos demais entes - deve sempre haver harmonia e, no mínimo, o mesmo nível de proteção.",
+          "pegadinha": "O examinador tenta confundir a competência 'concorrente' do art. 24 CF (exclusiva de União/Estados/DF) com a competência 'suplementar' do Município (art. 30, II, CF), além de insinuar que o Município poderia legislar de forma menos protetiva, quando na verdade a atuação municipal deve sempre respeitar e não reduzir o nível de proteção ambiental estabelecido pelos demais entes.",
+          "regraMemoria": "Município nunca tem competência concorrente (essa é só de União/Estados/DF) - tem competência suplementar, sempre no interesse local e sempre em harmonia (nunca menos protetiva) com a norma federal/estadual."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Família",
+          "enunciado": "Robson, advogado de sucesso e bem-sucedido profissionalmente, foi preso e condenado, com sentença transitada em julgado, pelo crime de homicídio, iniciando o cumprimento de sua pena no regime fechado. Ele é pai de Raquel, 17 anos, fruto de sua união com Rose e ambos compartilham a guarda da filha. Rose e Robson divorciaram-se e, em ação própria, foi fixado o dever de Robson prover alimentos para Raquel. A respeito dos efeitos da prisão de Robson sobre o dever de alimentos, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Afasta-se a obrigação de prestar alimentos de Robson considerando que a mãe de Raquel, Rose, ainda está viva."
+            },
+            {
+              "letra": "B",
+              "texto": "A prisão de Robson suspende o dever de prestar alimentos, que volta a produzir seus efeitos imediatamente após o cumprimento integral da pena."
+            },
+            {
+              "letra": "C",
+              "texto": "Robson poderá cessar a prestação de alimentos, independente de interpelação judicial, assim que Raquel alcançar a maioridade, o que acontecerá muito em breve."
+            },
+            {
+              "letra": "D",
+              "texto": "O fato de Robson estar preso não afasta sua obrigação alimentar."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A obrigação alimentar tem natureza personalíssima e decorre do vínculo de parentesco e da necessidade do alimentado, não sendo afastada pela prisão do alimentante. A jurisprudência entende que o encarceramento, por si só, não extingue nem suspende automaticamente o dever de prestar alimentos, podendo, no máximo, ensejar pedido de revisão do valor da pensão em razão de eventual redução da capacidade financeira do devedor, mas não a exoneração automática da obrigação.",
+          "explicacaoErradas": "A: incorreta porque o dever de alimentos do pai não é afastado pelo fato de a mãe estar viva - ambos os genitores respondem pelo sustento do filho, cada qual na proporção de suas possibilidades, sem que a existência do outro genitor exonere automaticamente qualquer deles. B: incorreta porque não há suspensão automática do dever de alimentos em razão da prisão - a obrigação persiste durante o cumprimento da pena, sujeita, no máximo, a eventual revisão de valor, mas nunca suspensão automática seguida de 'retomada' após a soltura. C: incorreta porque, segundo a Súmula 358 do STJ, a exoneração do dever de alimentos em razão da maioridade civil do alimentado não é automática, dependendo de decisão judicial após contraditório, ainda que fundada apenas no implemento da maioridade.",
+          "pegadinha": "O enunciado insere dois 'ganchos' de aparente exoneração automática (a mãe ainda viva e a proximidade da maioridade de Raquel) para induzir o candidato a marcar as alternativas A ou C, mas nenhuma dessas hipóteses configura exoneração automática do dever alimentar, tampouco a prisão do alimentante.",
+          "regraMemoria": "Prisão do alimentante nunca extingue ou suspende automaticamente o dever de alimentos; maioridade também nunca exonera automaticamente - sempre depende de decisão judicial (Súmula 358, STJ)."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Sucessões",
+          "enunciado": "Maria Cristina era casada com Roberto, falecido no início de 2022, sem deixar testamento, sob o regime de separação convencional de bens. O casal sempre viveu em um imóvel de propriedade de Roberto com seus dois filhos, Alcino e Valério, que não moram mais com os pais. Roberto deixou, além do referido imóvel residencial, alguns investimentos e outro imóvel, de natureza comercial. Sobre o direito real de habitação do cônjuge sobrevivente, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Maria Cristina é titular do direito real de habitação, sem prejuízo de sua participação na herança de Roberto."
+            },
+            {
+              "letra": "B",
+              "texto": "Maria Cristina não é titular do direito real de habitação, uma vez que existe mais de um imóvel a inventariar dentre os bens que compõem a herança de Roberto."
+            },
+            {
+              "letra": "C",
+              "texto": "Maria Cristina receberá seu quinhão da herança, mas só tem o direito de permanecer morando no imóvel em que vivia com Roberto, caso Alcino e Valério autorizem."
+            },
+            {
+              "letra": "D",
+              "texto": "Maria não é titular do direito real de habitação, pois esse não se aplica aos casamentos sob a vigência do regime de separação convencional de bens."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Nos termos do art. 1.831 do Código Civil, o cônjuge sobrevivente tem direito real de habitação relativo ao imóvel destinado à residência da família, desde que seja o único imóvel RESIDENCIAL a inventariar, independentemente do regime de bens do casamento (inclusive na separação convencional) e sem prejuízo de sua participação na herança. Como o único imóvel residencial do casal era aquele em que viviam, Maria Cristina é titular do direito real de habitação, cumulativamente com seu quinhão hereditário.",
+          "explicacaoErradas": "B: incorreta porque o requisito legal é a existência de um único imóvel de natureza RESIDENCIAL a inventariar, e não de um único imóvel de qualquer natureza - o imóvel comercial não afasta o direito real de habitação sobre o imóvel residencial. C: incorreta porque o direito real de habitação decorre diretamente da lei (art. 1.831, CC), sendo automático e não dependendo de autorização dos demais herdeiros (Alcino e Valério) para sua fruição. D: incorreta porque o direito real de habitação do cônjuge sobrevivente se aplica independentemente do regime de bens adotado no casamento, inclusive na separação convencional de bens.",
+          "pegadinha": "A banca menciona a existência de 'investimentos e outro imóvel, de natureza comercial' para induzir o candidato a pensar que há 'mais de um imóvel a inventariar' e que isso afastaria o direito real de habitação, ignorando que o requisito legal exige apenas um único imóvel de natureza RESIDENCIAL, não qualquer bem imóvel.",
+          "regraMemoria": "Direito real de habitação do cônjuge sobrevivente exige só um imóvel RESIDENCIAL no acervo (outros bens não contam), independe do regime de bens, é automático e não prejudica a participação na herança (art. 1.831, CC)."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Parte Geral",
+          "enunciado": "Joana, conhecida durante toda a sua vida em sua cidade natal pelo prenome Giovanna, começa a enfrentar uma série de embaraços e constrangimentos ao ser chamada em órgãos públicos por seu prenome registral, constante de seus documentos de identificação civil. Diante disso, Joana, de 19 anos de idade, consulta você, como advogado (a), buscando descobrir a viabilidade jurídica de alterar o seu prenome e os eventuais requisitos jurídicos que deveriam ser observados caso seja possível a mudança. Sobre a pretensão de Joana, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Poderá alterar seu prenome para Giovanna, bastando realizar solicitação, por escrito e fundamentada, diante do oficial do Registro Civil, dependendo, no entanto, de sentença judicial."
+            },
+            {
+              "letra": "B",
+              "texto": "Não poderá alterar seu prenome para Giovanna, pois vigora no Direito Brasileiro o princípio da imutabilidade do nome."
+            },
+            {
+              "letra": "C",
+              "texto": "Poderá alterar seu prenome para Giovanna, mediante requerimento pessoal e imotivadamente, independentemente de decisão judicial."
+            },
+            {
+              "letra": "D",
+              "texto": "Não poderá alterar seu prenome registral, mas poderá incluir o nome Giovanna, por ser este apelido público e notório."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O art. 56 da Lei de Registros Públicos (Lei nº 6.015/73, com a redação dada pela Lei nº 14.382/22) permite que, no primeiro ano após atingir a maioridade civil, a pessoa altere seu prenome de forma pessoal e imotivada, mediante requerimento diretamente ao ofício de Registro Civil, independentemente de decisão judicial, desde que preservados os apelidos de família. Como Joana tem 19 anos e está dentro desse prazo, pode alterar seu prenome para Giovanna administrativamente, sem necessidade de processo judicial e sem precisar apresentar motivação.",
+          "explicacaoErradas": "A: incorreta porque, dentro do prazo legal de um ano após a maioridade, a alteração é feita diretamente no cartório, sem depender de sentença judicial. B: incorreta porque o princípio da imutabilidade absoluta do prenome não mais vigora de forma rígida no direito brasileiro - a legislação (art. 56 e seguintes da LRP) prevê diversas hipóteses de alteração administrativa e judicial do nome. D: incorreta porque, dentro do prazo legal, é possível a efetiva substituição do prenome registral (não apenas a inclusão de apelido notório, que é hipótese distinta prevista no art. 58 da LRP).",
+          "pegadinha": "A banca explora a crença ultrapassada de que toda alteração de nome depende necessariamente de processo judicial, ignorando a inovação legislativa que permite a alteração administrativa direta, imotivada, dentro do prazo de um ano após a maioridade civil.",
+          "regraMemoria": "No primeiro ano após a maioridade, o prenome pode ser alterado direto no cartório, por requerimento pessoal e imotivado - nunca precisa de juiz nesse prazo (art. 56, Lei 6.015/73)."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Direitos Reais",
+          "enunciado": "Antônio é proprietário de um prédio que não tem acesso à via pública. De um lado, Antônio tem Ricardo como vizinho, cuja propriedade alcança a via pública. Do outro lado, Antônio tem Luíza como vizinha, cuja propriedade também alcança a via pública. Todavia, no caso do imóvel de Luíza, o caminho até a via pública é menos natural e mais difícil. Ricardo e Luíza recusaram- se a oferecer voluntariamente a passagem. Diante disso, Antônio pode exigir",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "tanto a passagem de Ricardo quanto a de Luiza, a seu critério, mas só precisará pagar indenização cabal se escolher Luiza."
+            },
+            {
+              "letra": "B",
+              "texto": "tanto a passagem de Ricardo quanto a de Luiza, a seu critério, e deverá pagar indenização cabal a quem escolher."
+            },
+            {
+              "letra": "C",
+              "texto": "que Ricardo lhe dê a passagem, sem que seja obrigado a pagar qualquer indenização a ele."
+            },
+            {
+              "letra": "D",
+              "texto": "que Ricardo lhe dê a passagem, mediante pagamento de indenização cabal."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Nos termos do art. 1.285 do Código Civil, o proprietário de imóvel encravado (sem acesso à via pública) tem direito à passagem forçada, mas essa passagem deve ser exigida do vizinho cujo terreno oferece o caminho mais natural e menos oneroso até a via pública - no caso, o de Ricardo -, sempre mediante pagamento de indenização cabal ao vizinho onerado.",
+          "explicacaoErradas": "A e B: incorretas porque a lei não confere ao proprietário do imóvel encravado a livre escolha entre os vizinhos confinantes com a via pública; a passagem forçada deve recair sobre aquele cujo acesso é mais natural e menos gravoso (no caso, Ricardo), não sendo faculdade discricionária de Antônio. C: incorreta porque a passagem forçada, ainda que recaia sobre o vizinho de acesso mais natural, sempre exige o pagamento de indenização cabal ao proprietário onerado (art. 1.285, CC), não sendo gratuita.",
+          "pegadinha": "O enunciado apresenta dois vizinhos com acesso à via pública para induzir o candidato a crer que há liberdade de escolha do proprietário do imóvel encravado (alternativas A e B), quando a lei determina que a passagem forçada deve recair sobre o caminho objetivamente mais natural e menos oneroso, sempre mediante indenização.",
+          "regraMemoria": "Passagem forçada nunca é escolha livre do proprietário encravado - recai sempre sobre o vizinho de acesso mais natural, e sempre mediante indenização cabal (art. 1.285, CC)."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Obrigações",
+          "enunciado": "Os irmãos Eduardo e Letícia herdaram um apartamento de sua mãe. Concluído o inventário, decidiram vender o apartamento ao casal Pedro e Mariana. Para tanto, as partes celebraram contrato de compra e venda. Pedro e Mariana se obrigaram, solidariamente, a pagar o preço pactuado (R$ 600.000,00) no prazo de trinta dias. Não foi avençada cláusula de solidariedade ativa. Alcançado o prazo contratual, Pedro e Mariana não pagaram o preço. Tendo em vista a situação hipotética apresentada, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Eduardo, sozinho, tem direito de cobrar a integralidade do preço pactuado, R$ 600.000,00, de Mariana, sozinha."
+            },
+            {
+              "letra": "B",
+              "texto": "Letícia, sozinha, tem direito de cobrar apenas a metade do preço pactuado, R$ 300.000,00, de Pedro, sozinho."
+            },
+            {
+              "letra": "C",
+              "texto": "Letícia, sozinha, tem direito de cobrar apenas um quarto do preço pactuado, R$ 150.000,00, de Mariana, sozinha."
+            },
+            {
+              "letra": "D",
+              "texto": "Eduardo e Letícia não podem pleitear sozinhos o pagamento do preço, ainda que parcial."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta. A solidariedade passiva foi expressamente pactuada entre os devedores (Pedro e Mariana), de modo que cada um deles responde pela integralidade da dívida em relação a cada credor. Contudo, como não houve avença de solidariedade ativa entre os credores (Eduardo e Letícia), eles são credores apenas de suas respectivas cotas (art. 257 e 265 do CC, que exigem que a solidariedade resulte da lei ou da vontade das partes, não se presumindo). Na ausência de estipulação em contrário, presume-se que as partes têm quinhões iguais (art. 257, in fine, por analogia à regra das obrigações divisíveis). Assim, Letícia só tem direito a exigir sua parte no crédito (metade de R$ 600.000,00 = R$ 300.000,00), mas, por força da solidariedade passiva, pode exigir esse valor de qualquer um dos devedores solidários, isoladamente — no caso, de Pedro sozinho.",
+          "explicacaoErradas": "A) Erra ao afirmar que Eduardo, sozinho, pode cobrar a integralidade do preço (R$ 600.000,00): como não há solidariedade ativa entre os credores, nenhum deles pode cobrar mais do que sua própria cota-parte no crédito. C) Erra ao dividir o crédito por quatro (1/4 = R$ 150.000,00): a divisão correta se dá entre os credores (dois), e não entre o número total de partes envolvidas no negócio (credores e devedores somados). D) Erra ao dizer que Eduardo e Letícia não podem pleitear nada sozinhos: cada credor, isoladamente, pode cobrar sua própria quota do crédito, ainda que não possa cobrar o crédito todo.",
+          "pegadinha": "A banca explora a diferença entre solidariedade passiva (dos devedores, efetivamente pactuada) e solidariedade ativa (dos credores, inexistente no caso), induzindo o candidato a: (i) presumir solidariedade ativa só porque há solidariedade passiva no mesmo contrato; ou (ii) fracionar o crédito entre as quatro partes do negócio, e não apenas entre os dois credores.",
+          "regraMemoria": "Solidariedade nunca se presume: sem cláusula de solidariedade ativa, cada credor só cobra sua própria cota — mas pode cobrá-la inteira de qualquer devedor solidário."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Contratos",
+          "enunciado": "Renata alugou um imóvel a Tadeu. Como garantia das obrigações de Tadeu, Luzia e Humberto prestaram fiança a Renata. Tadeu descumpriu suas obrigações contratuais, deixando de pagar as contraprestações ajustadas. Diante desse quadro hipotético, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Não havendo limitação contratual, Renata poderá cobrar de Luzia, sozinha, todos os acessórios da dívida principal, inclusive as despesas judiciais, desde a citação dos fiadores."
+            },
+            {
+              "letra": "B",
+              "texto": "Caso sejam demandados, Luzia e Humberto não têm direito de exigir que sejam primeiro executados os bens de Tadeu, pois, salvo disposição expressa em sentido contrário, não há benefício de ordem na fiança."
+            },
+            {
+              "letra": "C",
+              "texto": "Luzia e Humberto não respondem solidariamente pelas obrigações decorrentes do contrato de fiança, a não ser que haja disposição expressa."
+            },
+            {
+              "letra": "D",
+              "texto": "A fiança constitui contrato informal, entre Renata e os fiadores (Luzia e Humberto), e poderia ter sido celebrada ainda que contrariamente à vontade de Tadeu. Ademais, não admite interpretação extensiva."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta e reproduz o art. 822 do Código Civil: 'Não sendo limitada, a fiança compreenderá todas as obrigações acessórias, inclusive as despesas judiciais, desde a citação do fiador.' Como não foi pactuada limitação, Renata pode cobrar de Luzia, isoladamente, todos os acessórios da dívida principal (juros, multa, despesas judiciais), contados desde a citação dos fiadores no processo.",
+          "explicacaoErradas": "B) Inverte a regra legal: o benefício de ordem (art. 827 CC) existe por padrão em favor do fiador, permitindo-lhe exigir que primeiro sejam executados os bens do devedor principal; ele só deixa de existir se houver renúncia expressa do fiador, e não 'salvo disposição em contrário' como se fosse a regra geral já ser a ausência do benefício. C) Também inverte a regra: havendo pluralidade de fiadores no mesmo débito, a solidariedade entre eles é a regra (art. 829 CC), presente desde que não reservado expressamente o benefício de divisão — logo, Luzia e Humberto respondem solidariamente, salvo se tivessem reservado a divisão, e não o contrário. D) Erra ao chamar a fiança de 'contrato informal': a fiança é contrato solene, que deve ser celebrado por escrito (art. 819 CC), sendo essa mesma norma que veda a interpretação extensiva; é verdade que pode ser pactuada contra a vontade do afiançado (art. 820 CC), mas a alternativa erra ao afirmar sua informalidade.",
+          "pegadinha": "A questão testa, em uma única tacada, três regras de default da fiança (benefício de ordem, solidariedade entre cofiadores e forma escrita), invertendo cada uma delas nas alternativas erradas para verificar se o candidato realmente sabe qual é a regra supletiva e qual é a exceção que depende de cláusula expressa.",
+          "regraMemoria": "Fiança: sempre por escrito, com benefício de ordem salvo renúncia expressa, solidária entre cofiadores salvo reserva expressa de divisão, e abrange os acessórios da dívida desde a citação do fiador."
+        },
+        {
+          "territorio": "Direito da Criança e do Adolescente",
+          "tema": "Ato Infracional e Medidas Socioeducativas",
+          "enunciado": "Pedro, adolescente de quinze anos, foi apreendido pela prática de ato infracional análogo ao crime de roubo. Realizados todos os procedimentos legais cabíveis, o juízo determinou cautelarmente que fosse recolhido à internação em instituição dedicada ao cumprimento de medida socioeducativa dessa natureza. Ocorre que não havia vaga na entidade de internação da comarca, pelo que Pedro foi recolhido a uma repartição policial, em seção isolada dos adultos e com instalações apropriadas, lá restando internado cautelarmente há vinte dias, aguardando o surgimento de vaga no estabelecimento dedicado. Com base nos fatos acima, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A internação jamais poderá ser realizada em repartição policial, nem mesmo cautelarmente, mesmo que seja impossível a transferência imediata."
+            },
+            {
+              "letra": "B",
+              "texto": "É admissível a intenação cautelar em estabelecimento policial ou prisional quando da situação exposta no enunciado, por prazo indeterminado, até que seja encontrada vaga em entidade apropriada."
+            },
+            {
+              "letra": "C",
+              "texto": "A manutenção de Pedro na repartição policial, por mais de cinco dias, é ilegal, comportando habeas corpus para fazer cessar tal estado de ilicitude."
+            },
+            {
+              "letra": "D",
+              "texto": "A internação em estabelecimento prisional é admisível quando neste local puderem ser desenvolvidas as atividades pedagógicas próprias dessa medida socioeducativa."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta. O ECA (art. 185, §2º) permite, excepcionalmente, que o adolescente aguarde vaga em entidade de internação dentro de repartição policial, desde que em seção isolada dos adultos e em instalações adequadas, mas fixa prazo máximo de 5 (cinco) dias para essa permanência. Ultrapassado esse prazo — como ocorreu no caso, em que Pedro permanece há vinte dias —, a manutenção se torna ilegal, configurando constrangimento ilegal sanável por habeas corpus.",
+          "explicacaoErradas": "A) Erra ao afirmar que a internação em repartição policial é vedada em qualquer hipótese: a lei a admite, provisoriamente, justamente na situação de ausência de vaga descrita no enunciado, respeitados o isolamento dos adultos e o prazo máximo. B) Erra ao dizer que a permanência pode se estender por prazo indeterminado até o surgimento de vaga: existe prazo máximo legal de 5 dias, sendo ilegal a permanência além dele, independentemente de haver ou não vaga disponível. D) Confunde repartição policial com estabelecimento prisional: o ECA veda, em qualquer hipótese e sem exceção, o cumprimento de medida socioeducativa em estabelecimento prisional, ainda que ali pudessem, em tese, ser desenvolvidas atividades pedagógicas — a exceção temporária do art. 185, §2º refere-se apenas à repartição policial isolada, nunca ao presídio.",
+          "pegadinha": "A banca mistura dois conceitos que parecem sinônimos mas têm tratamento oposto: repartição policial (admitida por até 5 dias, em caráter excepcionalíssimo) e estabelecimento prisional (jamais admitido para adolescente). Além disso, tenta fazer o candidato acreditar que a ausência de vaga justifica prazo indeterminado.",
+          "regraMemoria": "Adolescente pode aguardar vaga em repartição policial isolada por, no máximo, 5 dias — nunca em estabelecimento prisional e nunca por prazo indeterminado."
+        },
+        {
+          "territorio": "Direito da Criança e do Adolescente",
+          "tema": "Direitos Fundamentais da Criança e do Adolescente",
+          "enunciado": "A mãe de Joaquim, criança com necessidades especiais, requereu acompanhamento por professor especializado em atendimento de pessoas com deficiência à escola-creche pública municipal em que o filho estuda. A escola-creche, no entanto, alegou carência de tais profissionais, porque o custo muito alto impedia que a municipalidade os contratasse. Ao consultar você, como advogado(a), a genitora recebeu a seguinte orientação.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A criança tem direito à educação, não se inserindo nesse plexo, porém, o direito individual e específico de acompanhamento especializado."
+            },
+            {
+              "letra": "B",
+              "texto": "Joaquim deve ter acesso à educação com metodologia especial, não significando, porém, que seja mandatória a presença de profissional especial."
+            },
+            {
+              "letra": "C",
+              "texto": "A atenção especial por profissional especializado é devida a Joaquim, não sendo oponível a dificuldade orçamentária declarada pela municipalidade."
+            },
+            {
+              "letra": "D",
+              "texto": "O ensino especializado é devido nas condições em que a entidade for capaz, não sendo obrigatória a presença de profissional especificamente capacitado, em razão da aplicabilidade da reserva do possível."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta. O direito da criança com deficiência ao atendimento educacional especializado é garantido constitucionalmente (art. 208, III, CF) e pelo ECA (art. 54, III) e pelo Estatuto da Pessoa com Deficiência, compondo o núcleo do direito fundamental à educação, com prioridade absoluta (art. 227 CF). A jurisprudência (STJ e STF) é firme no sentido de que, tratando-se de direito fundamental de criança, notadamente o mínimo existencial, a alegação de dificuldade orçamentária ('reserva do possível') não pode ser oposta ao Poder Público para negar o atendimento especializado devido.",
+          "explicacaoErradas": "A) Erra ao negar que exista direito individual e específico ao acompanhamento especializado: esse direito é reconhecido como prestação exigível judicialmente, e não mera diretriz programática. B) Erra ao afastar a obrigatoriedade da presença de profissional especializado: a metodologia especial, por si só, não substitui a necessidade de acompanhamento por profissional habilitado quando este for indispensável ao pleno acesso à educação. D) Erra ao admitir a aplicação da reserva do possível para limitar o ensino especializado às condições financeiras da entidade: essa tese é exatamente a que a jurisprudência rejeita quando está em jogo o mínimo existencial de criança com deficiência.",
+          "pegadinha": "A pegadinha está em fazer a 'reserva do possível' parecer uma defesa administrativa legítima e razoável (alegação de custo elevado), quando, na verdade, os tribunais superiores não a admitem como excludente frente a direitos fundamentais de crianças, sobretudo as com deficiência, que gozam de prioridade absoluta.",
+          "regraMemoria": "Direito de criança com deficiência a professor especializado é direito subjetivo exigível — reserva do possível nunca pode ser oposta ao mínimo existencial infantil."
+        },
+        {
+          "territorio": "Direito do Consumidor",
+          "tema": "Responsabilidade pelo Fato/Vício",
+          "enunciado": "Diego ofereceu papinha industrializada para seu filho que apresentou sintomas de diarreia e vômito algumas horas depois. Ao observar a data de validade do produto, identificou que estava vencida. O produto havia sido adquirido naquela manhã na padaria vizinha e, ao retornar ao local, observou que os demais potinhos de papinha disponíveis na prateleira estavam com a data de validade adequada para o consumo. Indagando o comerciante, Diego foi informado de que os produtos estavam na mesma caixa lacrada enviada pelo fabricante naquela manhã e alegou que também foi vítima de tal erro do fabricante. Embora se conformasse e lamentasse a infelicidade de ter adquirido justamente o pote com data vencida, Diego procurou você como advogado (a) para saber se alguma providência jurídica poderia ser tomada. Diante desses fatos, assinale a opção correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O comerciante não responde pelo evento danoso na medida em que também foi prejudicado ao receber do fabricante o produto com a data de validade expirada."
+            },
+            {
+              "letra": "B",
+              "texto": "Cuida-se de vício da segurança do produto, respondendo o comerciante objetivamente por ter disponibilizado o produto para venda, podendo ainda o fabricante ser responsabilizado, não podendo alegar culpa de terceiro."
+            },
+            {
+              "letra": "C",
+              "texto": "Incide excludente de responsabilidade do fabricante e do comerciante por culpa da vítima que não observou o prazo de validade antes de consumir o produto."
+            },
+            {
+              "letra": "D",
+              "texto": "Cuida-se de responsabilidade objetiva do fabricante do produto, recaindo sobre o comerciante a responsabilidade subsidiária."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta. Trata-se de vício de segurança do produto (fato do produto), que causou dano à saúde do consumidor. O comerciante responde objetivamente porque, nos termos do art. 13, III, do CDC, é responsável quando não conserva adequadamente produtos perecíveis, hipótese em que se insere a venda de produto com prazo de validade vencido. O fabricante também pode ser responsabilizado objetivamente (art. 12, CDC), não lhe sendo lícito invocar como excludente a 'culpa de terceiro' representada pelo próprio comerciante, integrante da cadeia de fornecimento.",
+          "explicacaoErradas": "A) Erra ao isentar o comerciante sob o argumento de que ele também foi 'vítima': a lei lhe impõe o dever de fiscalizar a validade de produtos perecíveis antes de expô-los à venda, respondendo objetivamente por essa falha, independentemente de o produto ter chegado já vencido do fabricante. C) Erra ao alegar culpa exclusiva da vítima: Diego não tinha como identificar o vício, já que o produto estava lacrado na caixa original do fabricante, não havendo qualquer conduta negligente do consumidor apta a excluir a responsabilidade. D) Erra ao classificar a responsabilidade do comerciante como meramente subsidiária: no caso de produto perecível vencido, a responsabilidade do comerciante é objetiva e direta (art. 13, III, CDC), não subsidiária à do fabricante.",
+          "pegadinha": "A banca tenta convencer o candidato de que o fato de o comerciante ter recebido o lote já vencido, lacrado pelo fabricante, configuraria excludente por fato de terceiro — mas o CDC atribui ao comerciante o dever autônomo de fiscalizar prazos de validade de produtos perecíveis, tornando-o responsável direto por essa falha.",
+          "regraMemoria": "Comerciante que vende produto perecível vencido responde objetivamente (art. 13, III, CDC) — receber o lote lacrado do fabricante não é excludente de responsabilidade."
+        },
+        {
+          "territorio": "Direito do Consumidor",
+          "tema": "Práticas e Contratos de Consumo",
+          "enunciado": "Carlos foi internado para tratamento de saúde. Apresentava estado grave, sendo seus familiares informados sobre a limitação do tempo de internação. Junto à assinatura dos documentos de internação, o hospital exigiu dos familiares um depósito caução para assegurar a internação do paciente, caso extrapolado o dia-limite custeado pelo plano de saúde, o que fizeram prontamente. Os familiares de Carlos procuraram você, como advogado(a), informando o ocorrido e que, de fato, o contrato do seguro-saúde apresentava essa cláusula limitadora. Assinale a opção que apresenta a orientação correta dada para o caso.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A cláusula contratual que limita, no tempo, a internação hospitalar do segurado, é abusiva."
+            },
+            {
+              "letra": "B",
+              "texto": "O fato de o hospital ter exigido a prestação da caução não configura conduta abusiva, apesar da evidente vulnerabilidade, por força do princípio do equilíbrio contratual."
+            },
+            {
+              "letra": "C",
+              "texto": "A cláusula contratual que limita o tempo de internação não se mostra abusiva, por ter sido redigida de forma clara e compreensível."
+            },
+            {
+              "letra": "D",
+              "texto": "A cláusula contratual que limita o tempo de internação, embora abusiva, não é nula e, sim, anulável, por se tratar de contrato de adesão celebrado em situação de lesão ao consumidor."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta, em conformidade com a Súmula 302 do STJ: 'É abusiva a cláusula contratual de plano de saúde que limita no tempo a internação hospitalar do segurado.' Trata-se de entendimento pacífico, fundado na proteção da dignidade do consumidor em situação de vulnerabilidade e na função social do contrato de plano de saúde.",
+          "explicacaoErradas": "B) Erra ao validar a exigência de caução sob o pretexto de 'equilíbrio contratual': a exigência de caução para assegurar a continuidade de tratamento de saúde é conduta abusiva, sobretudo diante da vulnerabilidade do consumidor em situação de urgência. C) Erra ao afirmar que a clareza redacional afasta a abusividade: clareza de redação (dever de informação, art. 46 CDC) não convalida cláusula cujo conteúdo é abusivo; são planos de análise distintos. D) Erra ao classificar a cláusula como anulável: cláusulas abusivas em relações de consumo são nulas de pleno direito (art. 51, caput, CDC), e não meramente anuláveis.",
+          "pegadinha": "A banca tenta fazer o candidato aceitar que uma cláusula 'clara e compreensível' (C) ou 'proporcional' (B) deixaria de ser abusiva, e tenta rebaixar a nulidade para simples anulabilidade (D) — mas a abusividade em relação de consumo gera nulidade absoluta, independentemente da clareza redacional.",
+          "regraMemoria": "Súmula 302 STJ: cláusula que limita o tempo de internação é sempre abusiva e nula de pleno direito, mesmo redigida com clareza."
+        },
+        {
+          "territorio": "Direito Empresarial",
+          "tema": "Nome Empresarial e Estabelecimento",
+          "enunciado": "Marco Araripe pretende iniciar uma empresa em nome próprio e mediante responsabilidade ilimitada pelas obrigações. Antes de realizar sua inscrição na Junta Comercial, Marco Araripe precisa indicar o nome que adotará para o exercício de empresa. Consoante a determinação contida no Código Civil quanto à formação de firma individual, ela deve ser constituída",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "pelo nome do empresário, completo ou abreviado, aditando- lhe, se quiser, designação mais precisa da sua pessoa ou do gênero de atividade."
+            },
+            {
+              "letra": "B",
+              "texto": "pelo nome de fantasia livremente escolhido, aditando-lhe, se quiser, designação do gênero de atividade."
+            },
+            {
+              "letra": "C",
+              "texto": "pelo nome abreviado do empresário ou pelo nome de fantasia, aditando-lhe, se quiser, designação mais precisa da sua pessoa."
+            },
+            {
+              "letra": "D",
+              "texto": "em duas partes: a primeira, o nome completo do empresário e, a segunda, o nome de fantasia, sendo vedada a indicação do gênero de atividade."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta e reproduz o art. 1.156 do Código Civil: 'O empresário opera sob firma constituída por seu nome, completo ou abreviado, aditando-lhe, se quiser, designação mais precisa da sua pessoa ou do gênero de atividade.' A firma individual deve, portanto, necessariamente ser composta pelo nome civil do empresário, podendo agregar elemento de fantasia ou indicação do ramo de atividade apenas como complemento facultativo.",
+          "explicacaoErradas": "B) Erra ao permitir nome de fantasia 'livremente escolhido' como base da firma: a firma individual deve partir sempre do nome civil do empresário, não podendo ser substituída por elemento de fantasia. C) Erra pela mesma razão, ao admitir 'nome abreviado do empresário ou nome de fantasia' como alternativas equivalentes: a lei não oferece essa alternatividade, exigindo sempre o nome civil (completo ou abreviado). D) Erra ao exigir estrutura obrigatória em duas partes com nome de fantasia e ao vedar a indicação do gênero de atividade: a lei permite, facultativamente, indicar o gênero de atividade, e não exige nome de fantasia.",
+          "pegadinha": "A pegadinha está em confundir a firma individual (sempre composta pelo nome civil do empresário) com a denominação social das sociedades empresárias (que pode conter elemento de fantasia), levando o candidato a acreditar que também o empresário individual poderia adotar nome fantasia livre.",
+          "regraMemoria": "Firma individual é sempre o nome civil do empresário (completo ou abreviado), com gênero de atividade opcional — nunca nome de fantasia."
+        },
+        {
+          "territorio": "Direito Empresarial",
+          "tema": "Títulos de Crédito e Contratos Empresariais",
+          "enunciado": "Para honrar um empréstimo que lhe foi concedido, o empresário Ruy Barbosa subscreveu nota promissória em favor de Medeiros Neto, com vencimento para o dia 30 de março de 2023. O primeiro endossante transferiu o título em preto para Wagner Desidério e proibiu novo endosso. Considerando o efeito legal da cláusula de proibição de novo endosso, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "para o endossante Medeiros Neto, a cláusula de proibição de novo endosso tem efeito de cessão de crédito perante o endossatário direto e de endosso perante os endossatários posteriores."
+            },
+            {
+              "letra": "B",
+              "texto": "Wagner Desidério não poderá realizar novo endosso no título sob pena de desoneração de responsabilidade cambial dos coobrigados."
+            },
+            {
+              "letra": "C",
+              "texto": "a cláusula de proibição de novo endosso é nula, tal qual a de endosso parcial, por restringir a responsabilidade cambiária do endossante a seu endossatário imediato."
+            },
+            {
+              "letra": "D",
+              "texto": "Medeiros Neto, embora coobrigado, não responde pelo pagamento da nota promissória perante os endossatários posteriores a Wagner Desidério."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta. Nos termos do art. 15 da Lei Uniforme de Genebra (aplicável à nota promissória por remissão), o endossante pode proibir novo endosso; nesse caso, ele não garante o pagamento às pessoas a quem o título vier a ser posteriormente endossado. Assim, Medeiros Neto, muito embora coobrigado cambiário perante Wagner Desidério (seu endossatário direto), fica exonerado da responsabilidade cambial perante endossatários posteriores a Wagner, que porventura recebam o título por novo endosso.",
+          "explicacaoErradas": "A) Inverte o efeito da cláusula: a proibição de novo endosso não converte a relação com o endossatário direto em cessão de crédito nem produz efeito de endosso pleno em relação aos posteriores; ao contrário, o efeito da cláusula é exonerar o endossante justamente perante os endossatários posteriores ao seu endossatário imediato, mantendo-se a responsabilidade cambiária normal com este último. B) Erra ao dizer que Wagner não poderá mais endossar o título: a proibição imposta por um endossante (diferente da cláusula 'não à ordem' aposta pelo próprio sacador) não retira a circulabilidade cambial do título — Wagner pode endossá-lo normalmente; apenas Medeiros Neto deixa de garantir o pagamento a quem receber esse novo endosso. C) Erra ao equiparar a cláusula de proibição de novo endosso ao endosso parcial: este sim é nulo (art. 12 da LUG), mas a cláusula de proibição de novo endosso é expressamente autorizada em lei (art. 15 da LUG), não sendo nula.",
+          "pegadinha": "A banca explora a confusão entre a cláusula 'não à ordem' aposta pelo sacador (que retira a natureza cambiária da circulação subsequente, tornando-a cessão civil) e a cláusula de proibição de novo endosso aposta por um simples endossante (que apenas restringe a responsabilidade cambiária deste último endossante, sem impedir a circulação do título por novo endosso).",
+          "regraMemoria": "Endossante que proíbe novo endosso só se exonera perante os endossatários posteriores ao seu endossatário direto — a proibição não impede a circulação do título nem o torna nulo."
+        },
+        {
+          "territorio": "Direito Empresarial",
+          "tema": "Tipos Societários",
+          "enunciado": "Cambira e Mallet adquiriram 1 (uma) quota da sociedade limitada Imbaú Ensino Superior Ltda. no valor de R$ 250.000,00 (duzentos e cinquenta mil reais), sendo, portanto, condôminos desta quota. Considerando a situação de copropriedade da quota, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Cambira não poderá ceder sua parte ideal no condomínio a outro sócio ou a terceiro em razão da indivisibilidade da quota em relação à sociedade."
+            },
+            {
+              "letra": "B",
+              "texto": "Cambira e Mallet respondem solidariamente perante a sociedade pelas prestações necessárias à integralização da quota."
+            },
+            {
+              "letra": "C",
+              "texto": "Os direitos inerentes à quota poderão ser exercidos separadamente por cada condômino, não se aplicando a indivisilidade da quota neste caso."
+            },
+            {
+              "letra": "D",
+              "texto": "Cambira poderá ceder sua parte ideal tanto para outro sócio quanto para terceiro independente de audiência dos demais sócios, ainda que omisso o contrato."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta, conforme o art. 1.056, §2º, do Código Civil: 'Sem prejuízo do disposto no art. 1.052, os condôminos de quota indivisa respondem solidariamente pelas prestações necessárias à sua integralização.' Assim, tanto Cambira quanto Mallet respondem solidariamente perante a sociedade Imbaú Ensino Superior Ltda. pela integralização do valor da quota (R$ 250.000,00).",
+          "explicacaoErradas": "A) Erra ao proibir a cessão da parte ideal: a indivisibilidade recai sobre o exercício dos direitos inerentes à quota perante a sociedade (que exige representante único, art. 1.056, §1º, CC), e não sobre a possibilidade de o condômino ceder sua parte ideal no condomínio, que segue as regras normais de cessão de quotas (art. 1.057, CC). C) Erra ao afirmar que os direitos da quota podem ser exercidos separadamente por cada condômino: é exatamente o oposto — o art. 1.056, §1º, exige que os direitos inerentes à quota em condomínio sejam exercidos apenas pelo condômino representante (ou pelo inventariante, em caso de sócio falecido). D) Erra ao dispensar qualquer anuência dos demais sócios para cessão a terceiro estranho quando omisso o contrato: nesse caso, aplica-se a regra geral do art. 1.057, CC, segundo a qual a cessão a estranhos, se omisso o contrato, depende de não haver oposição de titulares de mais de um quarto do capital social.",
+          "pegadinha": "A banca confunde a indivisibilidade do exercício dos direitos da quota perante a sociedade (que exige representação unificada) com a suposta impossibilidade de ceder a parte ideal no condomínio, que é perfeitamente cessível segundo as regras gerais de cessão de quotas.",
+          "regraMemoria": "Quota em condomínio: os direitos só podem ser exercidos por um representante único, mas a integralização é sempre solidária entre os condôminos."
+        },
+        {
+          "territorio": "Direito Empresarial",
+          "tema": "Empresário e Sociedade Empresária",
+          "enunciado": "Ainda que o Registro Público de Empresas Mercantis, a cargo das Juntas Comerciais, não possa examinar o mérito dos atos dos empresários, sociedades empresárias e cooperativas, limitando-se sua análise aos requisitos formais, existe proibição de arquivamento de documentos em razão de expressa disposição legal. Assinale a opção que indica o documento que incorre na proibição legal de arquivamento.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Os atos de empresas mercantis com nome idêntico a outro já existente."
+            },
+            {
+              "letra": "B",
+              "texto": "A prorrogação do contrato social depois de findo o prazo nele fixado."
+            },
+            {
+              "letra": "C",
+              "texto": "A alteração contratual, por deliberação majoritária do capital social, quando não houver cláusula restritiva."
+            },
+            {
+              "letra": "D",
+              "texto": "Os atos constitutivos de empresas mercantis que não designarem o nome do liquidante e a forma de liquidação."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta. O art. 35 da Lei nº 8.934/94 veda, de forma peremptória e incondicionada, o arquivamento de atos de empresas mercantis cujo nome seja idêntico a outro já existente no mesmo registro (após a reforma da Lei nº 14.195/2021, a vedação ficou restrita à identidade do nome empresarial, não mais abrangendo mera semelhança, que passou a ser questionável por recurso administrativo ao Drei).",
+          "explicacaoErradas": "B) A prorrogação do contrato social após o término do prazo, embora historicamente tratada com reservas pelo registro mercantil, comporta situações de regularização (por exemplo, deliberação e protocolo do pedido ainda dentro do prazo, ou reconhecimento da prorrogação tácita quando a sociedade continua a operar sem oposição dos sócios), não constituindo vedação absoluta e incondicionada como a do nome idêntico. C) Inverte a condição legal: a vedação de arquivamento da alteração contratual por deliberação majoritária ocorre justamente quando HÁ cláusula restritiva no contrato exigindo quórum qualificado ou unanimidade — se não há cláusula restritiva, a deliberação por maioria do capital social é plenamente válida e arquivável (art. 1.076, CC), não incidindo vedação alguma. D) Não corresponde a nenhuma hipótese do rol legal do art. 35: a ausência de indicação de liquidante e da forma de liquidação não é elencada como causa de vedação de arquivamento, sendo alternativa fabricada para confundir o candidato.",
+          "pegadinha": "A pegadinha está em, propositalmente, inverter a condição da alternativa C (que descreve exatamente a situação permitida — ausência de cláusula restritiva — como se fosse a vedada) e em criar, na alternativa D, uma hipótese de vedação inexistente na lei, testando se o candidato realmente conhece o texto do art. 35 e não apenas memoriza vagamente 'restrições ao arquivamento'.",
+          "regraMemoria": "Nome empresarial idêntico a outro já existente nunca pode ser arquivado — alteração por maioria só é vedada quando o contrato exigir quórum qualificado (cláusula restritiva) e essa exigência for descumprida."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Cumprimento de Sentença e Execução",
+          "enunciado": "Joaquim celebrou com a concessionária Fast Car Ltda. contrato de compra e venda de veículo, com força de título executivo, em que restou prevista a entrega do automóvel, com indicação de seu valor (R$ 50.000,00), trinta dias após a avença. Não cumprido o contrato, Joaquim ajuizou execução para a entrega de coisa certa em face da referida loja. Citada, a ré não satisfez a obrigação, tendo a ordem de busca e apreensão restado infrutífera, uma vez que o bem não foi encontrado. Na qualidade de advogado(a) de Joaquim indique a providência a ser adotada para que Joaquim seja ressarcido dos danos sofridos.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Propor ação de conhecimento para que a ré seja condenada ao pagamento da indenização pelos danos sofridos, na medida em que a ação proposta foi unicamente de execução para entrega de coisa certa."
+            },
+            {
+              "letra": "B",
+              "texto": "Pleitear, no mesmo processo, o recebimento tanto do valor da coisa como de perdas e danos, apurando-se em liquidação os prejuízos."
+            },
+            {
+              "letra": "C",
+              "texto": "Pleitear, no mesmo processo, o recebimento apenas do valor da coisa, sujeitando-se ao arbitramento judicial."
+            },
+            {
+              "letra": "D",
+              "texto": "Ajuizar outra execução, agora por quantia certa, uma vez que possui título executivo extrajudicial."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta. Na execução para entrega de coisa certa, frustrada a busca e apreensão, o próprio credor pode requerer, no mesmo processo executivo, a conversão em perdas e danos, cumulando o valor da coisa com os prejuízos decorrentes do inadimplemento, a serem apurados em fase de liquidação (arts. 806 a 813 e 816 do CPC), sem necessidade de nova ação.",
+          "explicacaoErradas": "A) Erra ao exigir ação de conhecimento autônoma: a conversão em perdas e danos ocorre incidentalmente na própria execução para entrega de coisa certa, dispensando nova demanda cognitiva. C) Erra ao restringir o pedido apenas ao valor da coisa: a lei permite cumular o valor da coisa com as perdas e danos decorrentes da mora/inadimplemento, e não apenas um ou outro isoladamente. D) Erra ao exigir o ajuizamento de nova execução por quantia certa: não há necessidade de nova ação executiva, bastando o requerimento de conversão dentro do mesmo processo já em curso.",
+          "pegadinha": "A banca tenta induzir o candidato a pensar que, por se tratar de título executivo (que fundamentou uma execução de entrega de coisa), qualquer pretensão de indenização por perdas e danos exigiria nova ação (de conhecimento ou de execução por quantia certa), quando na verdade a lei processual prevê a simples conversão dentro do mesmo processo.",
+          "regraMemoria": "Busca e apreensão infrutífera na execução de entregar coisa certa: a conversão em perdas e danos (valor da coisa + prejuízos) ocorre no MESMO processo, sem necessidade de nova ação."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Recursos",
+          "enunciado": "Rafael ajuizou ação de despejo em face de Luiz, sob o fundamento de que Luiz não teria pago o aluguel do imóvel de sua propriedade nos últimos meses. Em primeira instância, foi proferida sentença que julgou improcedentes os pedidos formulados na petição inicial. Rafael, então, interpôs apelação, a qual foi desprovida pelo tribunal. Posteriormente, Rafael interpôs recurso extraordinário contra o acórdão, alegando violação a uma série de dispositivos constitucionais. Examinando o recurso extraordinário, a vice-presidência do tribunal negou-lhe seguimento, sob o fundamento de que o Supremo Tribunal Federal já havia reconhecido a inexistência de repercussão geral da questão constitucional discutida no referido recurso. Diante do caso narrado, assinale a opção que indica a medida judicial a ser adotada por Rafael.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "interposição de agravo em recurso extraordinário, para que o Supremo Tribunal Federal examine se o recurso extraordinário preenche ou não seus requisitos de admissibilidade."
+            },
+            {
+              "letra": "B",
+              "texto": "interposição de recurso extraordinário, para que o Supremo Tribunal Federal reexamine a existência de repercussão geral da questão constitucional discutida no recurso."
+            },
+            {
+              "letra": "C",
+              "texto": "interposição de agravo interno, no intuito de demonstrar a distinção entre a questão constitucional discutida no recurso extraordinário e a discutida no recurso no qual o Supremo Tribunal Federal não reconheceu a existência de repercussão geral."
+            },
+            {
+              "letra": "D",
+              "texto": "ajuizamento de reclamação constitucional, tendo em vista que apenas a presidência do tribunal de segunda instância tem competência para examinar o preenchimento dos requisitos de admissibilidade do recurso extraordinário."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A alternativa C está correta. Quando a vice-presidência (ou presidência) do tribunal de origem nega seguimento ao recurso extraordinário com fundamento em precedente do STF que já reconheceu a ausência de repercussão geral da matéria, o recurso cabível não é o agravo em recurso extraordinário do art. 1.042 do CPC (que é expressamente afastado nessa hipótese, conforme seu parágrafo único), mas sim o agravo interno, dirigido ao próprio tribunal de origem, no qual a parte deve demonstrar a distinção ('distinguishing') entre a questão constitucional discutida no seu recurso e aquela sobre a qual o STF já se manifestou pela ausência de repercussão geral (art. 1.030, §2º, CPC).",
+          "explicacaoErradas": "A) Erra ao indicar o agravo em recurso extraordinário: esse recurso é cabível para impugnar a inadmissão do RE por outros fundamentos, mas o próprio art. 1.042, parágrafo único, do CPC exclui expressamente seu cabimento quando a inadmissão se funda em entendimento já firmado em repercussão geral. B) Erra ao propor novo recurso extraordinário para o STF reexaminar a repercussão geral: o reexame, nessa hipótese, compete ao próprio tribunal de origem por meio de agravo interno, e não ao STF diretamente por novo RE. D) Erra ao indicar reclamação constitucional: esse instrumento não é o adequado para a situação descrita, que possui via recursal própria (agravo interno), nem é correto afirmar que apenas a presidência (e não a vice-presidência) teria competência para o juízo de admissibilidade.",
+          "pegadinha": "A pegadinha reside exatamente na exceção do art. 1.042, parágrafo único, do CPC: em regra, cabe agravo (art. 1.042) contra decisão que nega seguimento a RE/REsp, mas essa regra geral não se aplica quando o fundamento é a aplicação de entendimento já firmado em repercussão geral — hipótese em que o recurso correto passa a ser o agravo interno.",
+          "regraMemoria": "Negativa de seguimento ao RE por falta de repercussão geral já reconhecida pelo STF = sempre agravo interno (nunca agravo em RE), para demonstrar distinção do caso concreto."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Petição Inicial e Resposta do Réu",
+          "enunciado": "Luíza ajuizou ação de cobrança contra Ricardo. Em sua petição inicial, informou que não possui interesse na realização de audiência de conciliação ou mediação. Ricardo, por sua vez, apresentou manifestação informando que possui interesse na realização da audiência de conciliação ou mediação. Diante do interesse formalizado pelo réu, o juiz competente da causa designou data e local para a realização da audiência. Considerando o caso narrado, Luiza",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "não precisa comparecer à audiência de conciliação ou mediação, tendo em vista que já manifestou desinteresse em sua realização na petição inicial."
+            },
+            {
+              "letra": "B",
+              "texto": "não deve comparecer à audiência de conciliação ou mediação, sob pena de o seu comparecimento representar anuência tácita em compor, obrigando-a a firmar acordo com Ricardo."
+            },
+            {
+              "letra": "C",
+              "texto": "deve comparecer à audiência de conciliação ou mediação, sob pena de ter seu processo extinto sem resolução do mérito, por falta de interesse processual."
+            },
+            {
+              "letra": "D",
+              "texto": "deve comparecer à audiência de conciliação ou mediação, e, caso de forma injustificada não compareça, será sancionada com multa, tendo em vista que sua ausência será considerada ato atentatório à dignidade da justiça."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta. Nos termos do art. 334, §4º, I, do CPC, a audiência de conciliação ou mediação só é dispensada quando AMBAS as partes manifestarem desinteresse em sua realização. Como Ricardo, réu, manifestou interesse na audiência, ela deve ser realizada, sendo obrigatório o comparecimento de Luíza. Nos termos do art. 334, §8º, do CPC, o não comparecimento injustificado de qualquer das partes é considerado ato atentatório à dignidade da justiça, sancionado com multa de até 2% da vantagem econômica pretendida ou do valor da causa.",
+          "explicacaoErradas": "A) Erra ao dizer que Luíza não precisa comparecer apenas porque manifestou desinteresse na petição inicial: a dispensa da audiência exige o desinteresse de ambas as partes, e não apenas do autor. B) Erra ao afirmar que o comparecimento representaria anuência tácita em firmar acordo: o comparecimento à audiência não obriga ninguém a transigir, apenas a participar da tentativa de composição. C) Erra ao cominar extinção do processo sem resolução do mérito por falta de interesse processual: essa não é a consequência prevista em lei para a ausência à audiência de conciliação; a sanção específica é a multa por ato atentatório à dignidade da justiça.",
+          "pegadinha": "A banca explora a ideia de que bastaria o autor manifestar desinteresse na petição inicial para dispensar a audiência, omitindo que a dispensa depende do desinteresse de ambas as partes — bastando o réu manifestar interesse para que a audiência se torne obrigatória para todos.",
+          "regraMemoria": "Audiência de conciliação só é dispensada se autor E réu manifestarem desinteresse; a ausência injustificada de qualquer um deles gera multa por ato atentatório à dignidade da justiça."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Provas",
+          "enunciado": "Arthur e Felipe trabalham juntos na Transportadora Esporte S/A, que realiza campeonatos mensais de futebol entre suas diversas equipes. No último torneio, houve um grande desentendimento, durante o qual Felipe dirigiu numerosas ofensas contra Arthur. Indignado, Arthur ajuizou ação indenizatória em face de Felipe, por meio da qual busca a compensação pelos danos morais decorrentes das ofensas proferidas na presença dos demais colegas de trabalho. Para comprovar a sua versão dos fatos, Arthur requereu o depoimento pessoal de Felipe, que foi deferido pelo juízo de primeiro grau, que o intimou pessoalmente, advertindo-o das consequências legais. Comparecendo à audiência de instrução e julgamento, o réu se recusou a depor, embora intimado pessoalmente e advertido das eventuais consequências legais. Nesse contexto, considerando as normas processuais em vigor, o advogado de Arthur deve requerer",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "a aplicação de multa de até 2% (dois por cento) da vantagem econômica pretendida ou do valor da causa ao réu, uma vez que a recusa caracteriza prática de ato atentatório à dignidade da justiça."
+            },
+            {
+              "letra": "B",
+              "texto": "o regular prosseguimento do feito, sem a imposição de penalidade específica ao réu, que só poderia ser penalizado caso não tivesse comparecido à audiência de instrução e julgamento."
+            },
+            {
+              "letra": "C",
+              "texto": "a condenação do réu por litigância de má-fé, com o pagamento de multa de até 10% (dez por cento) do valor corrigido da causa."
+            },
+            {
+              "letra": "D",
+              "texto": "a aplicação da pena de confesso ao réu, diante de sua recusa a depor."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta. O art. 385, §1º, do CPC estabelece que, se a parte, sem motivo justificado, deixar de comparecer para prestar depoimento pessoal ou, comparecendo, se recusar a depor, o juiz lhe aplicará a pena de confissão. Felipe, intimado pessoalmente e advertido das consequências, recusou-se a depor mesmo comparecendo à audiência, de modo que a consequência processual específica é a aplicação da pena de confesso quanto à matéria de fato sobre a qual deveria depor.",
+          "explicacaoErradas": "A) Erra ao indicar a multa de até 2% da vantagem econômica ou do valor da causa: essa sanção é destinada a outras hipóteses de ato atentatório à dignidade da justiça (como a ausência injustificada à audiência de conciliação), não sendo a consequência legal específica da recusa a depor. B) Erra ao afirmar que não há penalidade específica: existe sim consequência processual expressa e específica, que é a pena de confissão. C) Erra ao indicar litigância de má-fé com multa de até 10% do valor da causa: essa sanção pressupõe conduta específica tipificada no art. 80 do CPC, distinta da mera recusa a depor, que tem consequência própria (pena de confesso).",
+          "pegadinha": "A banca aproveita a existência de diversas sanções processuais parecidas (multa por ato atentatório à dignidade da justiça, litigância de má-fé, pena de confissão) para testar se o candidato sabe identificar qual delas incide especificamente na hipótese de recusa da parte, intimada pessoalmente e advertida, a prestar depoimento pessoal.",
+          "regraMemoria": "Recusa da parte a depor, após intimação pessoal com cominação, gera SEMPRE pena de confissão (art. 385, §1º, CPC) — não multa, nem litigância de má-fé."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Cumprimento de Sentença e Execução",
+          "enunciado": "Tatiana ingressou com ação de alimentos em face do seu ex- marido José, pleiteando pensão alimentícia no valor mensal de R$ 5.000,00 (cinco mil reais), e gratuidade de justiça que lhe foi concedida. No processo restou comprovado que José estava desempregado e com grave enfermidade, não tendo a possibilidade de prestar alimentos. Dessa forma, o pedido de alimentos foi julgado improcedente, sendo Tatiana condenada em honorários de sucumbência equivalentes a 10% sobre o valor da causa. Contudo, por ser beneficiária da gratuidade de justiça, a exigibilidade dos honorários de sucumbência ficou suspensa. Dois anos após o trânsito em julgado da sentença, Tatiana ganhou sorteio lotérico e recebeu um prêmio milionário. Sabendo da atual situação de Tatiana, o advogado de José a procurou para cobrar os honorários de sucumbência fixados na ação de alimentos. Considerando o caso narrado, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O advogado de José poderá cobrar os honorários de sucumbência se, no prazo de 5 anos após o trânsito em julgado da sentença, demonstrar que deixou de existir a situação de insuficiência de recursos que justificou a concessão de gratuidade de justiça para Tatiana."
+            },
+            {
+              "letra": "B",
+              "texto": "Uma vez concedida a gratuidade de justiça, essa não poderá ser revista, razão pela qual o advogado de José não poderá cobrar os honorários de sucumbência."
+            },
+            {
+              "letra": "C",
+              "texto": "Após o trânsito em julgado da sentença não é possível cobrar honorários de sucumbência, ficando o advogado de José impedido de cobrar tal verba."
+            },
+            {
+              "letra": "D",
+              "texto": "O advogado de José poderá cobrar os honorários de sucumbência se, no prazo de 1 ano após o trânsito em julgado da sentença, demonstrar que deixou de existir a situação de insuficiência de recursos que justificou a concessão de gratuidade de justiça para Tatiana."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta, conforme o art. 98, §3º, do CPC: as obrigações decorrentes da sucumbência do beneficiário da gratuidade de justiça ficam sob condição suspensiva de exigibilidade e só podem ser executadas se, dentro dos 5 (cinco) anos subsequentes ao trânsito em julgado da decisão que as certificou, o credor demonstrar que deixou de existir a situação de insuficiência de recursos que justificou a concessão do benefício. Passado esse prazo sem tal demonstração, as obrigações se extinguem.",
+          "explicacaoErradas": "B) Erra ao afirmar que a gratuidade de justiça, uma vez concedida, é imutável: ela pode ser revista a qualquer tempo, inclusive após o trânsito em julgado, mediante demonstração de alteração da situação econômica do beneficiário, respeitado o prazo legal. C) Erra ao dizer que, após o trânsito em julgado, é impossível cobrar honorários: a cobrança é possível dentro do prazo de 5 anos, mediante a demonstração referida. D) Erra quanto ao prazo, indicando 1 ano em vez dos 5 anos previstos em lei.",
+          "pegadinha": "A pegadinha está em trocar o prazo correto (5 anos, art. 98, §3º, CPC) por prazos mais 'familiares' de outros institutos processuais (1 ano, 2 anos), ou em fazer parecer que a gratuidade e seus efeitos são definitivos e imutáveis após o trânsito em julgado.",
+          "regraMemoria": "Honorários sob gratuidade de justiça: exigibilidade fica suspensa por 5 anos — depois disso, extinguem-se definitivamente (art. 98, §3º, CPC)."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Procedimentos Especiais",
+          "enunciado": "Humberto, em conjunto com seus amigos Paulo e Maria, eram os únicos sócios da Sociedade Incorporadora Ltda. Com o falecimento de Humberto e considerando que nenhum de seus sucessores integrava o quadro societário da Sociedade Incorporadora Ltda., seu espólio ajuizou ação de dissolução parcial da referida sociedade, requerendo a citação apenas de Paulo e Maria. Devidamente citados, Paulo e Maria concordaram com o pedido formulado na ação, pelo que o juiz proferiu sentença decretando a dissolução parcial da sociedade em relação ao espólio de Humberto e condenando Paulo e Maria ao pagamento de honorários advocatícios de sucumbência. Na sentença, o juiz relegou a apuração de haveres da sociedade para a fase subsequente e imediata de liquidação. Diante da situação hipotética acima descrita, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A sentença proferida pelo juiz está contaminada por vício de nulidade, tendo em vista que a Sociedade Incorporadora Ltda. não foi citada para integrar a lide, concordando com o pedido ou contestando a ação."
+            },
+            {
+              "letra": "B",
+              "texto": "Paulo e Maria poderão interpor recurso de apelação contra a sentença, sob o argumento de que, não tendo eles se oposto ao pedido de dissolução parcial da sociedade, descaberia ao juiz condená-los ao pagamento de honorários advocatícios de sucumbência."
+            },
+            {
+              "letra": "C",
+              "texto": "Ainda que não realizada a partilha dos bens de Humberto, seu espólio não possui legitimidade para ajuizar a ação, pois a legitimidade para requerer a dissolução parcial da Sociedade Incorporadora Ltda. é apenas dos sócios resmanescentes, Paulo e Maria."
+            },
+            {
+              "letra": "D",
+              "texto": "O juiz não poderia ter determinado a apuração de haveres na fase subsequente e imediata de liquidação, visto ser necessário para a referida a apuração o ajuizamento de ação autônoma, distinta da ação de dissolução parcial de sociedade."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta. Na ação de dissolução parcial de sociedade em que os réus (sócios remanescentes) concordam integralmente com o pedido — reconhecendo, na prática, um direito que já decorria automaticamente do falecimento do sócio, sem oferecer qualquer resistência —, é defensável, em sede de apelação, o argumento de que não seria cabível a condenação em honorários de sucumbência, já que não houve litígio genuíno a ensejar a sucumbência propriamente dita.",
+          "explicacaoErradas": "A) Erra ao apontar nulidade por falta de citação da própria sociedade: quando a ação de dissolução parcial é movida em face de todos os demais sócios remanescentes (aqui, a totalidade dos sócios além do falecido), a jurisprudência admite a dispensa da citação da sociedade, cuja vontade se identifica com a manifestação unânime desses sócios. C) Erra ao negar legitimidade ao espólio: enquanto não realizada a partilha dos bens do sócio falecido, o espólio tem legitimidade para requerer a dissolução parcial e a apuração de haveres relativos à participação societária do falecido. D) Erra ao exigir ação autônoma para apuração de haveres: a própria ação de dissolução parcial de sociedade já comporta, nos mesmos autos, fase subsequente de liquidação/apuração de haveres, sem necessidade de processo distinto.",
+          "pegadinha": "A banca tenta induzir o candidato a enxergar nulidade em toda ausência de citação formal da sociedade (quando ela é dispensável se citados todos os sócios remanescentes) e a acreditar que a apuração de haveres sempre demandaria ação própria, quando na verdade é fase do mesmo processo.",
+          "regraMemoria": "Dissolução parcial de sociedade: citação da sociedade é dispensável se citados todos os sócios remanescentes; a apuração de haveres corre no MESMO processo, em fase de liquidação."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Crimes contra a Pessoa",
+          "enunciado": "Bruno, 20 anos, residente no Rio de Janeiro/RJ, conduzia seu veículo de madrugada com destino à cidade de São Paulo/SP. Bruno dirigia dentro da velocidade permitida, portando sua carteira de habilitação e seu veículo apresentava condições adequadas de tráfego. Em determinado momento, André, 21 anos, que conduzia uma motocicleta alcoolizado, na outra mão, entrou na faixa na qual trafegava Bruno, violando a regra legal de mudança de faixa de rolamento. Bruno não conseguiu frear o veículo e evitar o contato. O veículo e a motocicleta chocaram-se lateralmente. Na sequência, André caiu da moto e esbarrou num fio de alta tensão que estava rompido de um poste na estrada. Bruno, assustado com o ocorrido, acelerou seu veículo, em retirada. Após 1 km, avistou um posto policial, mas acometido por forte emoção, optou por não parar para comunicar o fato. André permaneceu em coma por uma semana e depois veio a óbito. O laudo de necropsia constatou que a causa mortis fora determinada por eletrocussão, em razão do contato com o fio de alta tensão. Pelas razões expostas, analise penalmente as condutas praticadas por Bruno e assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Deverá ser penalmente responsabilizado por omissão de socorro (Art. 304 do CTB), tendo em vista que o resultado morte foi determinado por culpa exclusiva da vítima."
+            },
+            {
+              "letra": "B",
+              "texto": "Ele não praticou crime algum, porque a presença de concausa independente afasta a imputação de homicídio culposo, assim como a violenta emoção afasta a tipicidade do crime de omissão de socorro."
+            },
+            {
+              "letra": "C",
+              "texto": "Deverá ser penalmente responsabilizado por homicídio culposo na condução de veículo, com a incidência da causa de aumento de omissão de socorro."
+            },
+            {
+              "letra": "D",
+              "texto": "Bruno deverá ser penalmente responsabilizado por homicídio culposo na condução de veículo e omissão de socorro, em concurso material."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A alternativa A está correta. A causa da morte de André foi o contato com o fio de alta tensão rompido — uma concausa superveniente relativamente independente que, por si só, produziu o resultado morte (art. 13, §1º, do CP), o que exclui a imputação do resultado mais grave (homicídio) à conduta anterior de Bruno, que sequer agiu com culpa na colisão, causada exclusivamente pela manobra ilegal e embriagada de André. Persiste, porém, a responsabilidade de Bruno pelo crime de omissão de socorro (art. 304 do Código de Trânsito Brasileiro), já que ele se envolveu no acidente e fugiu sem prestar ou providenciar socorro à vítima, dever que independe de quem tenha dado causa ao acidente.",
+          "explicacaoErradas": "B) Erra ao afirmar que Bruno não praticou crime algum: subsiste o crime de omissão de socorro, cujo dever de agir surge do simples envolvimento no acidente, independentemente de culpa na colisão; a 'violenta emoção' não é causa legal de exclusão da tipicidade desse delito. C) Erra ao imputar homicídio culposo com causa de aumento por omissão de socorro: a concausa superveniente relativamente independente que, por si só, produziu a morte exclui a imputação do resultado morte a Bruno, de modo que não há falar em homicídio culposo. D) Erra pela mesma razão, ao imputar concurso material entre homicídio culposo e omissão de socorro: não há homicídio culposo a imputar, apenas o crime autônomo de omissão de socorro.",
+          "pegadinha": "A banca tenta fazer o candidato imputar o resultado morte a Bruno só porque ele estava envolvido no acidente e fugiu do local, ignorando que a concausa superveinente relativamente independente (eletrocussão) rompe o nexo causal quanto ao resultado morte, ao mesmo tempo em que tenta sugerir que a fuga por 'forte emoção' excluiria também o crime de omissão de socorro, o que não ocorre.",
+          "regraMemoria": "Concausa superveniente relativamente independente que por si só produz o resultado exclui a imputação do resultado mais grave — mas nunca apaga o dever de socorro de quem se envolveu no acidente."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Penas e Extinção da Punibilidade",
+          "enunciado": "Luís Alberto, primário, foi condenado a uma pena de oito meses de detenção, em regime inicial aberto, por ter agredido sua companheira, causando-lhe lesões corporais. Na qualidade de advogado(a) de Luís Alberto, assinale a opção que apresenta o benefício de natureza penal que pode, neste momento processual, ser pleiteado em favor do seu assistido.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Aplicação de pena restritiva de direito, consistente em prestação de serviços à comunidade."
+            },
+            {
+              "letra": "B",
+              "texto": "Suspensão condicional da pena, pelo período de dois anos."
+            },
+            {
+              "letra": "C",
+              "texto": "Suspensão condicional do processo, pelo período de dois anos."
+            },
+            {
+              "letra": "D",
+              "texto": "Substituição da pena privativa de liberdade por multa."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta. Estando já proferida sentença condenatória (8 meses de detenção, regime aberto, réu primário), o benefício cabível nesse momento processual é a suspensão condicional da pena (sursis), prevista no art. 77 do Código Penal, cabível para penas privativas de liberdade não superiores a 2 anos, aplicada por prazo de 2 a 4 anos (art. 78, CP) — no caso, pelo período mínimo de dois anos.",
+          "explicacaoErradas": "A) Erra ao indicar substituição por pena restritiva de direitos (prestação de serviços à comunidade): o art. 44, I, do CP veda a substituição quando o crime for cometido com violência ou grave ameaça à pessoa, como é o caso da lesão corporal em violência doméstica. C) Erra ao indicar suspensão condicional do processo: além de esse instituto ser cabível apenas antes da sentença (e não já havendo condenação, como no caso), a Súmula 536 do STJ veda expressamente sua aplicação, tal como a transação penal, aos delitos sujeitos ao rito da Lei Maria da Penha. D) Erra ao indicar substituição da pena privativa de liberdade por multa: além da vedação do art. 44, I, do CP (crime violento), o art. 17 da Lei nº 11.340/2006 veda expressamente a substituição de pena que implique pagamento isolado de multa em casos de violência doméstica.",
+          "pegadinha": "A pegadinha está em oferecer institutos despenalizadores da Lei 9.099/95 (transação penal, sursis processual) e a substituição por restritiva de direitos ou multa como se fossem sempre cabíveis, quando a Lei Maria da Penha e o próprio Código Penal vedam expressamente essas alternativas em crimes de violência doméstica cometidos com violência à pessoa, restando disponível apenas a suspensão condicional da pena (sursis), instituto do Código Penal não alcançado por essas vedações.",
+          "regraMemoria": "Violência doméstica: nunca cabem transação penal, sursis processual, cesta básica ou multa isolada — mas cabe sursis da pena (art. 77, CP) se presentes os requisitos legais."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
+          "enunciado": "Alan é bombeiro civil e, atendendo a uma ocorrência, foi retirar um suposto animal selvagem de um condomínio residencial. Lá chegando, deparou-se com um aparente filhote de onça, o qual foi recolhido por Alan, que deveria levar o animal ao Centro de Triagem, distante do local onde encontrado (e que seria o procedimento adequado). Porém, Alan teve a iniciativa de deixar o felino em uma área de mata próxima ao condomínio, onde imaginava ser o habitat natural do animal, e, assim, poupar seu tempo. Carmen, residente no referido condomínio, ao chegar em casa, percebeu que seu gato Bengal (raça caracterizada por ser muito similar a uma onça) está desaparecido. Ao saber do ocorrido, percebeu que seu gato foi confundido com um filhote de onça e, por isso, foi levado por Alan e deixado na área de mata. Assim, Carmen procurou a Delegacia de Polícia e relatou o ocorrido. Neste caso, como advogado de Alan, é correto afirmar, sobre a conduta de seu assistido, que houve erro",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "de tipo permissivo, uma vez que Alan pensava agir sob estrito cumprimento de dever legal, e por isso, sua conduta é lícita, abarcada por excludente de ilicitude."
+            },
+            {
+              "letra": "B",
+              "texto": "de tipo inescusável, pois Alan efetivamente se confundiu sobre a espécie do animal, mas deixou de adotar as cautelas devidas, excluindo-se apenas o dolo."
+            },
+            {
+              "letra": "C",
+              "texto": "de tipo escusável, pois Alan efetivamente não conhecia a espécie do animal apreendido, tendo adotado todas as cautelas que lhe eram exigidas na situação, de forma a excluir o dolo e a culpa."
+            },
+            {
+              "letra": "D",
+              "texto": "de proibição, tendo em vista que Alan não conhecia a espécie de animal doméstico, afastando-se a culpabilidade da sua conduta."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A alternativa B está correta. Trata-se de erro de tipo (Alan se enganou quanto a um elemento do tipo penal: a natureza doméstica, e não selvagem, do animal), e esse erro é inescusável (evitável), pois Alan deixou de adotar as cautelas devidas ao optar por abandonar o animal na mata em vez de encaminhá-lo ao Centro de Triagem, procedimento que confirmaria a espécie e evitaria o engano. Sendo inescusável, o erro de tipo exclui apenas o dolo (art. 20, caput, CP), podendo subsistir eventual responsabilização a título de culpa, se houver previsão da modalidade culposa para o delito em questão.",
+          "explicacaoErradas": "A) Erra ao classificar o caso como erro de tipo permissivo (descriminante putativa sobre pressupostos fáticos de causa de justificação): Alan não se equivocou sobre os fatos que autorizariam uma excludente de ilicitude (ele realmente estava exercendo sua atividade de resgate), mas sim sobre um elemento constitutivo do próprio tipo penal (a espécie do animal), o que caracteriza erro de tipo comum, e não erro de tipo permissivo. C) Erra ao classificar o erro como escusável, capaz de excluir dolo e culpa: Alan não adotou as cautelas exigíveis (deveria ter levado o animal ao Centro de Triagem em vez de abandoná-lo por conta própria), de modo que o erro era evitável (inescusável), subsistindo a culpa. D) Erra ao falar em erro de proibição: esse instituto pressupõe desconhecimento da ilicitude da conduta, e não engano sobre um dado fático (a espécie do animal), que é justamente a hipótese de erro de tipo.",
+          "pegadinha": "A banca explora a distinção fina entre erro de tipo (sobre elemento do tipo penal), erro de tipo permissivo (sobre pressupostos fáticos de excludente de ilicitude) e erro de proibição (sobre a ilicitude da conduta), além da distinção entre erro escusável (exclui dolo e culpa) e inescusável (exclui só o dolo), testando se o candidato percebe que a falta de cautela de Alan (abandonar o animal em vez de levá-lo ao órgão competente) torna o erro evitável.",
+          "regraMemoria": "Erro de tipo inescusável (evitável com o cuidado devido) só exclui o dolo — a responsabilidade por culpa permanece se o tipo culposo existir."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Aplicação da Lei Penal",
+          "enunciado": "Após rigorosa fiscalização, uma empresa provedora de Internet verificou que sua rede de wifi com senha bloqueada estava sendo indevidamente utilizada por um grupo de pessoas. Após notícia de fato formulada pela empresa, a Delegacia de Polícia instaurou Inquérito, tendo o Delegado Titular proferido relatório final pelo indiciamento dos envolvidos pelo crime de furto, na figura do Art. 155, § 3º, do Código Penal: “Equipara-se à coisa móvel a energia elétrica ou qualquer outra que tenha valor econômico”. Diante do caso descrito, é correto afirmar que o indiciamento pelo crime de furto é:",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "inadmissível, tendo em vista que no Direito Penal não cabe analogia in malam partem."
+            },
+            {
+              "letra": "B",
+              "texto": "admissível, tendo em vista que no Direito Penal cabe analogia in bonam partem."
+            },
+            {
+              "letra": "C",
+              "texto": "inadmissível, pois a conduta dos investigados constitui fato atípico, tendo em vista a incidência do Princípio da Legalidade Estrita."
+            },
+            {
+              "letra": "D",
+              "texto": "admissível, pois se trata de hipótese de interpretação analógica, cabível no Direito Penal."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A alternativa D está correta. O art. 155, §3º, do CP, ao equiparar a coisa móvel 'a energia elétrica ou qualquer outra que tenha valor econômico', utiliza uma fórmula casuística seguida de fórmula genérica que o próprio legislador previu, permitindo ao intérprete estender o conceito a hipóteses semelhantes com valor econômico, como o sinal de internet (wifi). Essa técnica é a interpretação analógica, expressamente admitida no Direito Penal, inclusive quando desfavorável ao réu, por não se confundir com a analogia (que pressupõe lacuna legislativa a ser integrada pelo juiz).",
+          "explicacaoErradas": "A) Erra ao classificar a hipótese como analogia in malam partem vedada: não há lacuna a ser preenchida por analogia, pois o próprio texto legal já contempla expressamente a extensão do conceito por meio da fórmula genérica, o que caracteriza interpretação analógica, e não analogia. B) Erra ao falar em analogia in bonam partem: além de não se tratar de analogia (mas de interpretação analógica), a extensão do conceito de coisa móvel para abranger o sinal de internet furtado não beneficia o réu, não podendo ser chamada de 'in bonam partem'. C) Erra ao alegar atipicidade por violação à legalidade estrita: não há violação à legalidade, pois o próprio tipo penal prevê expressamente essa extensão mediante fórmula casuística-genérica.",
+          "pegadinha": "A pegadinha está em confundir analogia (proibida in malam partem, por criar norma para preencher lacuna legislativa) com interpretação analógica (técnica legítima de interpretação de dispositivo que já contém fórmula casuística seguida de fórmula genérica prevista pelo próprio legislador, admitida mesmo que prejudicial ao réu).",
+          "regraMemoria": "Interpretação analógica ('energia elétrica ou qualquer outra de valor econômico') é sempre admitida, mesmo contra o réu — diferente da analogia, que é proibida in malam partem."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Penas e Extinção da Punibilidade",
+          "enunciado": "Francisco, funcionário público concursado de uma autarquia federal, recebeu de seu órgão de atuação um notebook funcional, tendo assinado o livro de carga referente ao objeto e assumido o compromisso de zelar pelo bem da administração. Durante suas férias, Francisco viaja para uma pousada no interior do estado de São Paulo e leva o computador na mochila, uma vez que tinha o costume de assistir séries através do aparelho. Durante sua estadia na pousada, Francisco leva o notebook para a piscina e o coloca na mesa onde deixara seus demais pertences. Após se ausentar por cerca de 40 minutos para jogar uma partida de futebol, retorna para a piscina e constata que o notebook fora furtado. Desesperado, procura a administração do local que após analisar as câmeras de segurança não consegue identificar quem teria subtraído o computador. Diante dos fatos, o órgão funcional ao qual Francisco era vinculado instaura procedimento administrativo e, ato contínuo, encaminha pedido de instauração de Inquérito na Polícia Federal que culmina no oferecimento de denúncia por parte do Ministério Público Federal pela prática do crime de peculato culposo. Francisco procura a repartição pública e se oferece para pagar o valor referente ao notebook, o que é aceito, sendo certo que o ressarcimento ao erário se deu antes do julgamento da ação penal. Diante dos fatos narrados, é correto afirmar que Francisco",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "terá direito à redução de metade da pena pelo fato de o ressarcimento ter sido feito após o recebimento da denúncia."
+            },
+            {
+              "letra": "B",
+              "texto": "terá direito à extinção da punibilidade pelo fato de o ressarcimento ter sido feito antes da sentença irrecorrível."
+            },
+            {
+              "letra": "C",
+              "texto": "não terá direito à atenuante referente à reparação do dano, prevista no Art. 65, inciso III, alínea b, do CP, na medida em que esta exige a reparação do dano antes do recebimento da denúncia."
+            },
+            {
+              "letra": "D",
+              "texto": "poderá ser beneficiado pelo arrependimento posterior, previsto no Art. 16 do Código Penal em razão de ter reparado o dano antes da sentença."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O caso trata de peculato culposo (Art. 312, §3º, do CP), que tem regra própria e específica de reparação do dano, distinta da atenuante genérica e do arrependimento posterior: se o funcionário público ressarcir o dano causado ao erário ANTES da sentença irrecorrível, fica extinta a punibilidade; se o ressarcimento ocorrer DEPOIS da sentença irrecorrível, a pena é reduzida à metade. Como Francisco ressarciu o valor do notebook antes do julgamento (trânsito em julgado) da ação penal, ele tem direito à extinção da punibilidade, nos termos do Art. 312, §3º, do CP.",
+          "explicacaoErradas": "(A) está errada porque inverte o momento da reparação: a redução de metade da pena (e não a extinção da punibilidade) só se aplica quando o ressarcimento ocorre APÓS a sentença irrecorrível, e não simplesmente 'após o recebimento da denúncia' — o marco relevante para a redução da pena é a sentença irrecorrível, não a denúncia. (C) está errada porque descreve mal o requisito da atenuante genérica do Art. 65, III, 'b', do CP: essa atenuante exige reparação do dano 'antes do julgamento' (e não antes do recebimento da denúncia); além disso, no peculato culposo aplica-se a regra especial do Art. 312, §3º, que é mais benéfica e afasta a necessidade de discutir a atenuante genérica. (D) está errada porque o arrependimento posterior (Art. 16 do CP) exige reparação do dano ou restituição da coisa até o recebimento da denúncia ou queixa (e não até a sentença), e é instituto de aplicação geral que cede lugar à regra especial do peculato culposo, mais favorável ao réu.",
+          "pegadinha": "A banca aposta na confusão entre três institutos parecidos, mas com prazos diferentes: a regra especial do peculato culposo (Art. 312, §3º — reparação até a sentença irrecorrível extingue a punibilidade), o arrependimento posterior (Art. 16 — reparação até o recebimento da denúncia) e a atenuante genérica de reparação do dano (Art. 65, III, 'b' — reparação até o julgamento). Quem não souber os marcos temporais de cada um erra a questão.",
+          "regraMemoria": "Peculato CULPOSO: ressarciu ANTES da sentença irrecorrível = extingue a punibilidade; ressarciu DEPOIS = reduz a pena pela metade (Art. 312, §3º, CP) — regra especial que afasta o arrependimento posterior e a atenuante genérica."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Crimes contra a Pessoa",
+          "enunciado": "Maria, adolescente de 13 anos, procura seu tio Roberto e informa que está grávida, mas que não deseja ter o filho, motivo pelo qual pede sua ajuda para interromper a gravidez. Roberto, diante da solicitação de sua sobrinha, resolve ajudá-la e realiza a manobra abortiva, vindo a causar a morte do feto, chegando Maria a expelir o produto da concepção de seu corpo. Acerca da responsabilização penal de Roberto e Maria, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Maria responderá pelo ato infracional análogo ao crime de aborto praticado pela gestante e Roberto será responsabilizado como partícipe do crime de aborto praticado pela gestante, previsto no Art. 124 do CP."
+            },
+            {
+              "letra": "B",
+              "texto": "Maria não será responsabilizada penalmente e Roberto responderá pelo crime de aborto sem o consentimento da gestante, previsto no Art. 125 do CP."
+            },
+            {
+              "letra": "C",
+              "texto": "Maria será responsabilizada por ato infracional análogo ao crime de aborto praticado pela gestante e Roberto será responsabilizado pelo crime de aborto com o consentimento da gestante, previsto no Art. 126 do CP."
+            },
+            {
+              "letra": "D",
+              "texto": "Maria não será responsabilizada penalmente e Roberto será responsabilizado pelo crime de aborto com o consentimento da gestante, previsto no Art. 126 do CP."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Maria tem 13 anos, ou seja, é menor de 14 anos. Por analogia ao entendimento consolidado sobre a presunção de vulnerabilidade nos crimes contra a dignidade sexual (em que o consentimento do menor de 14 anos é considerado juridicamente inválido/irrelevante), o 'consentimento' de Maria para a realização do aborto por Roberto não produz efeitos jurídicos. Assim, o crime praticado por Roberto se enquadra no Art. 125 do CP — aborto provocado por terceiro SEM o consentimento (válido) da gestante —, que tem pena mais grave, e não no Art. 126 (aborto com consentimento). Como não há consentimento juridicamente válido, Maria figura como vítima, e não como corré, não sendo responsabilizada penalmente.",
+          "explicacaoErradas": "(A) está errada porque trata Maria como se tivesse praticado ato infracional análogo ao Art. 124 (autoaborto/aborto consentido) e Roberto como partícipe desse crime; isso pressupõe consentimento válido de Maria, o que não ocorre dada sua idade (menor de 14 anos), sendo Roberto autor do crime do Art. 125, e não partícipe do Art. 124. (C) está errada porque enquadra a conduta de Roberto no Art. 126 (aborto COM consentimento da gestante) e ainda responsabiliza Maria; ambos os pontos estão equivocados, pois o consentimento dela é inválido (afastando o Art. 126) e ela não comete crime algum. (D) acerta que Maria não é responsabilizada, mas erra ao enquadrar Roberto no Art. 126 (com consentimento) em vez do Art. 125 (sem consentimento válido), que é o tipo penal correto diante da invalidade do consentimento de menor de 14 anos.",
+          "pegadinha": "A banca tenta induzir o candidato a raciocinar de forma literal: como Maria 'pediu' e 'consentiu' com o aborto, o crime seria o do Art. 126 (aborto com consentimento). A pegadinha é que, sendo Maria menor de 14 anos, seu consentimento não tem validade jurídica — por analogia à vulnerabilidade sexual —, de modo que o crime de Roberto é, na verdade, o do Art. 125 (sem consentimento válido), mais grave, e Maria não responde por nada.",
+          "regraMemoria": "Consentimento de MENOR DE 14 ANOS para o próprio aborto é sempre juridicamente inválido: o terceiro que provoca o aborto responde sempre pelo Art. 125 do CP (sem consentimento), nunca pelo Art. 126 (com consentimento)."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Ação Penal",
+          "enunciado": "Luciane ajuizou na Vara Criminal da Comarca de Romã (ES) uma ação penal privada contra Jorge (guarda municipal daquele município) por crime de injúria (Art. 140, caput, do CP). Antes de oferecer a queixa-crime, Luciane propôs uma ação cível de indenização contra Jorge e não conseguiu citá-lo pessoalmente em sua residência, sita no próprio Município de Romã (ES), tendo em vista que o oficial de justiça certificou que esteve em duas oportunidades na casa de Jorge e não o localizou. Luciane foi informada por vizinhos que Jorge estava temporariamente residindo com sua mãe na cidade vizinha de Oeiras (ES), onde ela já havia passado um final de semana. Em se tratando de infração penal de menor potencial ofensivo, você, como advogado(a) da querelante, deverá, na ação penal privada, requerer a citação de Jorge",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "por intermédio do seu chefe de serviço, em razão de Jorge ser guarda municipal, expedindo-se ofício ao comandante da Guarda Municipal."
+            },
+            {
+              "letra": "B",
+              "texto": "por hora certa, haja vista que Jorge estava se ocultando para não ser encontrado."
+            },
+            {
+              "letra": "C",
+              "texto": "por carta precatória, visto que Jorge está residindo temporariamente fora da jurisdição do juiz processante, considerando que a querelante tinha conhecimento do endereço da mãe do querelado na Comarca de Oeiras (ES)."
+            },
+            {
+              "letra": "D",
+              "texto": "por correspondência com aviso de recebimento em mão própria, considerando que a querelante tinha conhecimento do endereço da mãe do querelado na Comarca de Oeiras (ES)."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Como Jorge passou a residir temporariamente na casa de sua mãe, em outra comarca (Oeiras/ES), e Luciane conhecia esse endereço certo e sabido, a citação deve ser feita por CARTA PRECATÓRIA, dirigida ao juízo da comarca onde o querelado se encontra (Art. 353 e seguintes do CPP, combinados com a regra geral de que a citação de réu presente, mas fora da jurisdição do juiz processante, se dá por precatória). Não se trata de ocultação dolosa nem de ausência do paradeiro, mas de mudança temporária para local certo e conhecido, o que afasta as citações especiais (hora certa e por intermédio de chefia de repartição) e impõe a carta precatória.",
+          "explicacaoErradas": "(A) está errada porque a citação por intermédio do chefe de serviço/repartição (Art. 358 do CPP) destina-se ao funcionário público ausente por MOTIVO DE SERVIÇO (férias, licença, missão oficial); no caso, Jorge está morando temporariamente com a mãe por razões pessoais, sem qualquer relação com suas funções de guarda municipal, de modo que essa modalidade não se aplica. (B) está errada porque a citação por hora certa (Art. 362 do CPP) pressupõe indícios de que o réu está se OCULTANDO deliberadamente para não ser citado; no caso, não há ocultação — Jorge simplesmente está residindo, de forma conhecida, na casa da mãe em outra comarca, o que afasta essa modalidade especial. (D) está errada porque não existe, no sistema do CPP, citação por correspondência com aviso de recebimento em mão própria para réu com endereço certo em outra comarca; essa forma não está prevista para o caso, sendo a carta precatória o instrumento correto.",
+          "pegadinha": "A banca insere elementos que sugerem, à primeira vista, a citação por hora certa (o oficial não localizou Jorge em duas visitas) e a citação por intermédio de chefia (por ele ser funcionário público/guarda municipal), mas a pegadinha está em perceber que não há ocultação dolosa (há apenas mudança temporária de comarca, com endereço certo e conhecido) e que a ausência de Jorge não decorre de suas funções — por isso a única citação cabível é a carta precatória.",
+          "regraMemoria": "Réu com endereço certo e sabido fora da comarca = carta precatória; réu se OCULTANDO deliberadamente = citação por hora certa; funcionário público ausente POR MOTIVO DE SERVIÇO = citação por intermédio do chefe da repartição."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Ação Penal",
+          "enunciado": "Arthur e sua esposa Aline, residentes no Distrito Federal, decidem viajar em um cruzeiro, partindo de Fortaleza com destino à cidade do Rio de Janeiro e fazendo uma parada em Recife. Durante passagem pela costa pernambucana, em alto-mar, o casal tem uma discussão e Arthur agride Aline, vindo a ser contido por seguranças do navio e retirado logo na primeira parada. Aline sofreu lesão que a incapacitou para suas atividades habituais por mais de trinta dias, mas que não deixou sequela ou debilidade permanente. Assinale a opção que indica a autoridade judiciária competente para processar Arthur.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O Juizado Especial Federal da cidade do Rio de Janeiro."
+            },
+            {
+              "letra": "B",
+              "texto": "O Juizado Especial de Violência Doméstica e Familiar contra a Mulher do Distrito Federal."
+            },
+            {
+              "letra": "C",
+              "texto": "O Juízo Federal de Recife."
+            },
+            {
+              "letra": "D",
+              "texto": "A Vara Criminal da Comarca de Fortaleza."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O crime foi cometido a bordo de embarcação em alto-mar, na costa pernambucana, o que atrai a competência da Justiça Federal, nos termos do Art. 109, IX, da CF ('crimes cometidos a bordo de navios ou aeronaves'). Quanto ao foro, aplica-se a regra do Art. 89 do CPP: os crimes praticados em embarcação são processados e julgados pela Justiça do primeiro porto brasileiro em que a embarcação tocar depois do fato. Como o navio, após o crime, atracou primeiramente em Recife, a competência é do Juízo Federal de Recife.",
+          "explicacaoErradas": "(A) está errada porque o Juizado Especial Federal do Rio de Janeiro (porto de destino final) não é o foro competente segundo o Art. 89 do CPP, que aponta o PRIMEIRO porto tocado após o crime; além disso, a lesão corporal que incapacitou a vítima por mais de 30 dias (Art. 129, §1º, I, do CP) não é infração de menor potencial ofensivo, o que também afasta o Juizado Especial. (B) está errada porque, embora se trate de violência doméstica, o crime foi cometido em alto-mar a bordo de embarcação, o que fixa a competência na Justiça FEDERAL (e no local do primeiro porto tocado), e não no domicílio das vítimas no Distrito Federal. (D) está errada porque Fortaleza foi apenas o porto de PARTIDA do cruzeiro, e a regra do Art. 89 do CPP determina a competência do primeiro porto tocado APÓS o crime (Recife), e não do porto de origem, além de a competência ser federal e não estadual.",
+          "pegadinha": "A menção à violência doméstica (agressão contra a esposa) tenta induzir o candidato a pensar automaticamente no Juizado de Violência Doméstica do domicílio do casal (DF). A pegadinha está em perceber que, por ter sido cometido a bordo de navio em alto-mar, o crime atrai competência FEDERAL, e que o foro correto não é o de origem, nem o de destino, nem o domicílio das vítimas, mas sim o do primeiro porto brasileiro tocado pela embarcação após o crime.",
+          "regraMemoria": "Crime cometido a bordo de embarcação em alto-mar = competência da Justiça Federal (Art. 109, IX, CF), processado no PRIMEIRO porto brasileiro tocado após o crime (Art. 89, CPP) — nunca no porto de origem, de destino ou no domicílio das partes."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Provas no Processo Penal",
+          "enunciado": "João dirigia seu veículo, um Porsche Cayenne ano 2015, por uma rodovia quando, em abordagem de rotina, foi parado pela Polícia Militar. João exibiu sua carteira nacional de habilitação e o certificado de registro e licenciamento de veículo (CRLV) do ano corrente. Após consulta ao sistema, o que é feito rotineiramente em abordagens na estrada, a Polícia Militar constatou que o CRLV era falso e o veículo era produto de roubo. João admitiu que pagou cerca de R$ 35.000,00 (trinta e cinco mil reais) pelo veículo, avaliado em R$ 400.000,00, mas que não sabia que o veículo havia sido roubado, exibindo o respectivo recibo. Sabe-se que a pena do crime de receptação é de 1 a 4 anos e multa; e que a pena do crime de uso de documento público falso é de 2 a 6 anos e multa. Considerando a situação hipotética acima, assinale a opção que contém as regras processuais penais corretamente aplicáveis ao caso.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A circunstância de o acusado ter adquirido o bem por preço muito inferior ao valor de mercado configura indício da prática de receptação."
+            },
+            {
+              "letra": "B",
+              "texto": "O delito de receptação, por expressa disposição legal, impõe a inversão do ônus da prova à defesa, cabendo a esta produzir a prova no sentido do desconhecimento da origem ilícita do bem."
+            },
+            {
+              "letra": "C",
+              "texto": "A comprovação da materialidade do delito de uso de documento materialmente falso prescinde de produção de prova pericial."
+            },
+            {
+              "letra": "D",
+              "texto": "O processo deve ser desmembrado, pois é cabível suspensão condicional do processo à receptação, devendo o feito prosseguir em relação ao uso de documento falso."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "É pacífico na jurisprudência que a aquisição de um bem por preço muito inferior ao seu valor de mercado constitui um INDÍCIO (elemento de prova circunstancial) da prática do crime de receptação, a ser valorado em conjunto com as demais provas dos autos — seja para configurar a receptação dolosa (Art. 180, caput, do CP), seja, ao menos, a receptação culposa (Art. 180, §3º, do CP), quando as circunstâncias deveriam ter alertado o adquirente para a origem duvidosa do bem.",
+          "explicacaoErradas": "(B) está errada porque não existe, no crime de receptação, qualquer disposição legal expressa que inverta o ônus da prova em desfavor da defesa; o ônus de provar o dolo (ou, ao menos, a culpa) do agente é da acusação, conforme a regra geral do sistema processual penal (Art. 156 do CPP), cabendo à defesa apenas apresentar contraprova. (C) está errada porque a comprovação da materialidade de falsificação MATERIAL de documento exige, em regra, prova pericial (exame documentoscópico/grafotécnico), tratando-se de crime que deixa vestígios (delicta facti permanentis), nos termos do Art. 158 do CPP; a alternativa afirma exatamente o contrário do que é exigido. (D) está errada porque, havendo concurso material de crimes (receptação, pena mínima de 1 ano, e uso de documento falso, pena mínima de 2 anos), a Súmula 243 do STJ determina que se somem as penas mínimas dos delitos para aferir o cabimento da suspensão condicional do processo; como a soma (3 anos) ultrapassa o limite de 1 ano da Lei 9.099/95, o benefício não é cabível para nenhum dos crimes, não havendo que se falar em desmembramento do feito.",
+          "pegadinha": "A banca explora três crenças equivocadas comuns: (i) que haveria inversão legal do ônus da prova na receptação (não há); (ii) que a perícia seria dispensável para provar falsidade documental material (é exigida, salvo exceções); e (iii) que bastaria isolar o crime de receptação (pena mínima de 1 ano) para conceder a suspensão condicional do processo, ignorando a Súmula 243 do STJ sobre soma das penas mínimas em concurso material.",
+          "regraMemoria": "Preço muito abaixo do mercado = indício de receptação (nunca inversão do ônus da prova); falsidade documental material sempre exige perícia; em concurso material de crimes somam-se as penas mínimas para aferir a suspensão condicional do processo (Súmula 243, STJ)."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Prisões e Medidas Cautelares",
+          "enunciado": "Margot adquiriu de Cesar, de boa-fé e a título oneroso, um imóvel, mas não levou o instrumento ao Registro de Imóveis competente. Por isso, quando Cesar foi acusado de prática de crimes em uma ação penal, vindo a sofrer sequestro de todos os seus bens imóveis, foi incluído na ordem de sequestro o imóvel adquirido por Margot. Nessa situação hipotética, como advogado de Margot, assinale a opção que, de acordo com as disposições do Código de Processo Penal, melhor defenda os interesses da sua assistida.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Por não ser parte no processo penal, Margot não pode opor embargos ao sequestro, devendo efetuar pedido de reconsideração."
+            },
+            {
+              "letra": "B",
+              "texto": "Margot pode opor embargos ao sequestro, alegando que a aquisição ocorreu a título oneroso e de boa-fé."
+            },
+            {
+              "letra": "C",
+              "texto": "Por não ser parte no processo penal originário, Margot deve impetrar mandado de segurança em face da decisão que determinou o sequestro."
+            },
+            {
+              "letra": "D",
+              "texto": "Margot pode opor embargos ao sequestro, alegando que os bens não foram adquiridos com os proventos da infração penal."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O Art. 130, II, do CPP prevê expressamente que o sequestro poderá ser embargado pelo TERCEIRO a quem os bens tiverem sido transferidos a título ONEROSO, sob o fundamento de que os adquiriu de BOA-FÉ. Como Margot adquiriu o imóvel de Cesar de boa-fé e a título oneroso, ela pode opor embargos ao sequestro com exatamente esse fundamento, ainda que não tenha registrado o título no Registro de Imóveis (a ausência de registro não impede a defesa possessória/patrimonial por embargos de terceiro no processo penal).",
+          "explicacaoErradas": "(A) está errada porque o CPP admite expressamente que terceiros, mesmo não sendo parte no processo penal, oponham embargos ao sequestro (Art. 130, II), não havendo necessidade de mero pedido de reconsideração. (C) está errada porque, havendo instrumento processual próprio e específico previsto no CPP (os embargos de terceiro ao sequestro), não é adequado nem necessário o manejo de mandado de segurança, que é instrumento subsidiário, cabível apenas na ausência de recurso ou meio processual específico. (D) está errada porque inverte os fundamentos dos dois tipos de embargos previstos no Art. 130 do CPP: alegar que os bens 'não foram adquiridos com os proventos da infração' é o fundamento reservado ao PRÓPRIO ACUSADO (inciso I), e não ao terceiro adquirente, cujo fundamento correto é a boa-fé e a onerosidade da aquisição (inciso II).",
+          "pegadinha": "A pegadinha está em confundir os dois fundamentos distintos de embargos ao sequestro do Art. 130 do CPP: o do ACUSADO (inciso I — bens não vieram da infração) e o do TERCEIRO adquirente de boa-fé (inciso II — aquisição onerosa e de boa-fé). A banca coloca na alternativa D o fundamento correto para o acusado, mas atribuído erroneamente ao terceiro (Margot), tentando confundir o candidato.",
+          "regraMemoria": "Embargos ao sequestro: o ACUSADO alega que os bens NÃO vêm do crime (Art. 130, I, CPP); o TERCEIRO adquirente alega boa-fé + título ONEROSO (Art. 130, II, CPP) — nunca troque os fundamentos entre um e outro."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Provas no Processo Penal",
+          "enunciado": "A Polícia Civil ingressou na residência de Gustavo com o objetivo de cumprir mandado de prisão em desfavor de seu filho, Mariano, o qual era acusado de tráfico de drogas. A ordem de prisão foi expedida pelo Juiz de Direito da Comarca. Durante o cumprimento do mandado de prisão, a Polícia pegou o telefone celular de Gustavo, desbloqueado, que estava sobre uma mesa da residência e, sem sua autorização, passou a verificar seu conteúdo, constatando material de pornografia infantil, armazenado e compartilhado via aplicativo de troca de mensagens instantâneas, acessível pela internet a partir de qualquer país. Diante disso, a Polícia imediatamente realizou a prisão em flagrante de Gustavo. Sobre o meio de obtenção da prova extraída do celular de Gustavo, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "É nula, e a nulidade decorre do fato de ser a pornografia infantil na internet crime de competência federal, de forma que somente a Polícia Federal poderia realizar a prisão em flagrante."
+            },
+            {
+              "letra": "B",
+              "texto": "É válida, pois foi um encontro fortuito de provas, uma vez que os policiais tinham autorização legal para ingresso no domicílio de Gustavo e Mariano."
+            },
+            {
+              "letra": "C",
+              "texto": "É ilícita, pois o cumprimento de mandado de prisão não compreende a autorização para busca em residência ou para o acesso a dados telemáticos, o que demandaria ordem judicial específica."
+            },
+            {
+              "letra": "D",
+              "texto": "É anulável, porque somente com um mandado de busca e apreensão se poderia livremente acessar o conteúdo de comunicações telemáticas, ainda que diversos fossem o objeto ou o destinatário do mandado, podendo a autoridade judiciária, entretanto, ratificar a diligência."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O mandado de prisão autoriza APENAS a prisão da pessoa nele indicada (Mariano); ele não abrange, por si só, a realização de busca domiciliar ampla, tampouco o acesso a dados telemáticos/conteúdo de aparelho celular de terceiro (Gustavo, que sequer era o alvo da ordem). O acesso ao conteúdo do celular, protegido pela intimidade e pelo sigilo de dados (Art. 5º, X, XI e XII, da CF), demandaria mandado judicial específico (de busca e apreensão e/ou de quebra de sigilo de dados), inexistente no caso. Por isso, a prova obtida é ilícita.",
+          "explicacaoErradas": "(A) está errada porque a validade da prisão em flagrante não depende de a autoridade policial que a efetuou ser competente para o PROCESSAMENTO do crime; a fixação de competência (federal/estadual) para julgar o delito é questão distinta da validade da prisão em flagrante, que qualquer autoridade policial pode realizar. (B) está errada porque o instituto do encontro fortuito de provas (serendipidade) só se aplica quando a diligência original é lícita e autorizada; como o mandado de prisão não abrangia busca domiciliar nem acesso a dados telemáticos, não havia uma diligência lícita da qual algo pudesse surgir 'fortuitamente' — o próprio acesso ao celular já era ilegal desde o início. (D) está errada porque não existe a possibilidade de 'ratificação' judicial posterior que convalide uma busca e apreensão de dados telemáticos realizada sem autorização judicial prévia; a prova obtida sem a ordem específica é ilícita (nula), e não meramente anulável e sanável.",
+          "pegadinha": "A pegadinha explora o instituto do encontro fortuito de provas, tentando fazer o candidato acreditar que, por os policiais estarem legalmente dentro da casa (cumprindo mandado de prisão), qualquer achado subsequente seria válido. O erro está em ignorar que o mandado de prisão não autoriza busca em bens de terceiros nem acesso a dados telemáticos, faltando a diligência lícita de base da qual a serendipidade dependeria.",
+          "regraMemoria": "Mandado de PRISÃO autoriza SÓ a prisão — nunca busca domiciliar ampla ou acesso a dados/celular de terceiros, que sempre exigem mandado judicial específico; sem ele, a prova é ilícita, não apenas anulável."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Inquérito Policial e Investigação",
+          "enunciado": "Flávia foi acompanhada por você, na qualidade de advogado(a), à presença da Autoridade Policial, para noticiar a prática dos crimes de apropriação indébita e fraude processual supostamente praticados por seu ex-marido, descrevendo a prática do crime, fornecendo os dados qualificativos completos do suposto autor do fato, apresentando rol de testemunhas e anexando documentação pertinente à materialidade delitiva e de indícios de autoria. O Delegado de Polícia Civil, após cinco dias da confecção do registro da ocorrência, sem que tenha sido praticado nenhum ato para a verificação da procedência das informações, despachou nos autos do Inquérito Policial pelo indeferimento da instauração do Inquérito Policial e determinou a suspensão do procedimento. Nesse caso, você deve",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "requerer a remessa dos autos ao Ministério Público para que se manifeste, uma vez que o Delegado de Polícia não possui poderes para arquivar o procedimento."
+            },
+            {
+              "letra": "B",
+              "texto": "requerer a remessa dos autos ao Juízo para que se manifeste, uma vez que o Delegado de Polícia não possui poderes para arquivar o procedimento."
+            },
+            {
+              "letra": "C",
+              "texto": "apresentar recurso para a Chefia de Polícia para que se manifeste sobre o indeferimento da instauração do Inquérito Policial."
+            },
+            {
+              "letra": "D",
+              "texto": "apresentar recurso ao Ministério Público para que se manifeste sobre o indeferimento da instauração do Inquérito Policial."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O Art. 5º, §2º, do CPP prevê que, do despacho da autoridade policial que indeferir o requerimento de abertura de inquérito policial, cabe recurso para o CHEFE DE POLÍCIA (autoridade superior hierárquica do Delegado). Como o Delegado indeferiu a instauração do inquérito diante de notícia-crime formalizada com todos os elementos de autoria e materialidade, a medida cabível é justamente esse recurso administrativo hierárquico.",
+          "explicacaoErradas": "(A) está errada porque a remessa ao Ministério Público não é o instrumento previsto pelo CPP para essa fase específica; essa remessa (Art. 28 do CPP) é cabível quando há ARQUIVAMENTO de inquérito JÁ instaurado, hipótese distinta do simples INDEFERIMENTO de sua instauração. (B) está errada porque não há previsão de remessa ao Juízo nessa fase pré-processual, já que a instauração (ou não) do inquérito é ato de polícia judiciária, sujeito a controle hierárquico administrativo, e não jurisdicional direto. (D) está errada porque inverte o órgão destinatário: o recurso contra o indeferimento da instauração do inquérito não é dirigido ao Ministério Público, e sim ao Chefe de Polícia, nos termos do Art. 5º, §2º, do CPP.",
+          "pegadinha": "A pegadinha explora a confusão entre duas fases distintas do inquérito policial: o INDEFERIMENTO da instauração (quando a notícia-crime sequer é formalizada em inquérito) e o ARQUIVAMENTO de inquérito JÁ instaurado. Muitos candidatos, lembrando do princípio da obrigatoriedade da ação penal, automaticamente pensam em enviar os autos ao Ministério Público (regra do Art. 28 CPP, aplicável ao arquivamento), esquecendo que, na fase de simples indeferimento da abertura, o recurso cabível é hierárquico, dirigido ao Chefe de Polícia.",
+          "regraMemoria": "Indeferimento da INSTAURAÇÃO do inquérito = recurso ao Chefe de Polícia (Art. 5º, §2º, CPP); arquivamento de inquérito JÁ instaurado = remessa ao Ministério Público (Art. 28, CPP) — nunca confunda as duas fases."
+        },
+        {
+          "territorio": "Direito Previdenciário",
+          "tema": "Benefícios Previdenciários",
+          "enunciado": "Maria, empregada doméstica, deu à luz um menino. No mês em que seu filho nasceu, foram contabilizadas sete contribuições mensais feitas por ela para o Regime Geral de Previdência Social. Em relação ao salário-maternidade solicitado por Maria, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Ela tem direito, pois a concessão desse benefício para as empregadas domésticas independe de carência."
+            },
+            {
+              "letra": "B",
+              "texto": "Ela terá direito, desde que contribua por mais três meses para o Regime Geral de Previdência Social."
+            },
+            {
+              "letra": "C",
+              "texto": "Ela não tem direito, já que não cumpriu o período de carência para a concessão do benefício."
+            },
+            {
+              "letra": "D",
+              "texto": "Ela não tem direito, pois as empregadas domésticas não podem gozar desse benefício."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "O salário-maternidade devido à segurada empregada — inclusive à empregada doméstica — independe de carência, nos termos do Art. 26, VI, c/c Art. 25, III, da Lei 8.213/91. Diferentemente das seguradas contribuinte individual, facultativa e especial (que precisam cumprir carência de 10 contribuições mensais), a empregada doméstica tem direito ao benefício desde o início do vínculo, independentemente do número de contribuições recolhidas.",
+          "explicacaoErradas": "(B) está errada porque não existe exigência de que a empregada doméstica complete mais três meses de contribuição para ter direito ao salário-maternidade; essa regra de carência aplica-se a outras categorias de seguradas (contribuinte individual, facultativa e especial), e não à empregada, avulsa ou doméstica. (C) está errada pelo mesmo motivo: não há período de carência a ser cumprido pela empregada doméstica para esse benefício específico, de modo que a premissa da alternativa (falta de carência) é inaplicável ao caso. (D) está errada porque as empregadas domésticas têm direito pleno ao salário-maternidade, sendo seguradas obrigatórias do RGPS com os mesmos direitos previdenciários essenciais das demais empregadas, não havendo qualquer vedação legal ao gozo do benefício.",
+          "pegadinha": "A banca tenta induzir o candidato a aplicar automaticamente a regra geral de carência de 10 contribuições (válida para contribuintes individuais, facultativos e segurados especiais) também à empregada doméstica, ignorando que a lei dispensa expressamente a carência para as seguradas empregada, avulsa e doméstica no caso do salário-maternidade.",
+          "regraMemoria": "Salário-maternidade para EMPREGADA, DOMÉSTICA e AVULSA = SEMPRE sem carência; para CONTRIBUINTE INDIVIDUAL, FACULTATIVA e SEGURADA ESPECIAL = SEMPRE com carência de 10 contribuições."
+        },
+        {
+          "territorio": "Direito Previdenciário",
+          "tema": "Segurados e Filiação",
+          "enunciado": "Manoel, empresário do segmento de alimentação, desempenha suas atividades como sócio administrador de sua sociedade empresária, a qual desenvolve suas atividades em mais de uma cidade, recebendo seu pro-labore regularmente. Além da condição de empresário, Manoel também é engajado em diversas ações voluntárias em prol de pessoas carentes. Diante dessa realidade, sobre os direitos previdenciários de Manoel assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Devido à atividade beneficente de Manoel, ele poderá verter contribuições ao Regime Geral de Previdência Social na condição de facultativo, além de seus aportes como empresário."
+            },
+            {
+              "letra": "B",
+              "texto": "Na condição de empresário administrador de sua sociedade empresária, Manoel é segurado obrigatório do Regime Geral de Previdência Social, como contribuinte individual."
+            },
+            {
+              "letra": "C",
+              "texto": "Manoel, na condição de administrador de sua sociedade, não poderá aposentar-se por invalidez, tendo em vista a prestação ser restrita a segurados empregados, somente."
+            },
+            {
+              "letra": "D",
+              "texto": "Manoel, caso encerre suas atividades profissionais, não poderá manter recolhimentos ao Regime Geral de Previdência Social, haja vista a perda da qualidade de segurado."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Nos termos do Art. 11, V, da Lei 8.213/91, o sócio administrador de sociedade empresária, que recebe pro-labore, é segurado OBRIGATÓRIO do Regime Geral de Previdência Social na categoria de CONTRIBUINTE INDIVIDUAL. Trata-se de filiação compulsória decorrente do próprio exercício da atividade remunerada, e não de opção do segurado.",
+          "explicacaoErradas": "(A) está errada porque a filiação como segurado FACULTATIVO pressupõe a ausência de atividade remunerada que enquadre a pessoa como segurado obrigatório; como Manoel já é segurado obrigatório na condição de contribuinte individual (por ser sócio administrador remunerado), ele não pode, cumulativamente, filiar-se também como facultativo em razão de sua atividade voluntária/beneficente. (C) está errada porque a aposentadoria por invalidez (hoje aposentadoria por incapacidade permanente) é benefício devido a todos os segurados do RGPS, incluindo os contribuintes individuais, e não é restrita aos empregados. (D) está errada porque, mesmo encerrando a atividade empresarial, o segurado mantém a qualidade de segurado durante o chamado 'período de graça' (Art. 15 da Lei 8.213/91) e pode, inclusive, continuar recolhendo contribuições ao RGPS na condição de segurado facultativo após a cessação da atividade obrigatória, não havendo vedação legal a isso.",
+          "pegadinha": "A menção ao engajamento de Manoel em ações voluntárias tenta sugerir que ele poderia se filiar como segurado facultativo cumulativamente à sua condição de empresário, mas a pegadinha é que a filiação facultativa é reservada a quem NÃO exerce atividade remunerada de filiação obrigatória — o que não é o caso de Manoel, já enquadrado como contribuinte individual obrigatório.",
+          "regraMemoria": "Sócio administrador com pro-labore = SEMPRE segurado obrigatório como contribuinte individual; nunca pode se filiar como facultativo cumulativamente, pois o facultativo é só para quem NÃO exerce atividade remunerada de filiação obrigatória."
+        },
+        {
+          "territorio": "Direito do Trabalho",
+          "tema": "Relação de Emprego",
+          "enunciado": "Francisco é caseiro desde 2019 em uma chácara localizada em área urbana, cujo proprietário aluga o imóvel por temporada por meio de um site especializado neste tipo de negociação. Francisco tem a incumbência de manter limpa a casa, receber os locatários e atender às eventuais necessidades deles no tocante ao conforto e à segurança. Além disso, de 2ª feira a sábado, Francisco faz a manutenção geral do local, independentemente de estar locado, para que a aparência esteja sempre impecável e, assim, os hóspedes recomendem a estadia na chácara a outros candidatos. Diante desta situação e das normas de regência, assinale a opção que indica a categoria profissional de Francisco.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Trabalhador intermitente."
+            },
+            {
+              "letra": "B",
+              "texto": "Empregado doméstico."
+            },
+            {
+              "letra": "C",
+              "texto": "Empregado rural."
+            },
+            {
+              "letra": "D",
+              "texto": "Empregado comum."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A qualificação de empregado DOMÉSTICO (Lei Complementar 150/2015) exige que a atividade prestada tenha FINALIDADE NÃO LUCRATIVA, no âmbito residencial da pessoa física ou da família. No caso, a chácara é explorada economicamente, sendo alugada por temporada por meio de plataforma especializada — atividade nitidamente comercial/lucrativa. Isso descaracteriza tanto o vínculo doméstico (falta finalidade não lucrativa) quanto o rural (o imóvel está em área urbana e a atividade não é agropecuária) e o intermitente (Francisco trabalha de forma contínua e regular, de segunda a sábado). Assim, Francisco é empregado COMUM, regido pela CLT em sua integralidade.",
+          "explicacaoErradas": "(A) está errada porque o trabalho intermitente pressupõe alternância de períodos de prestação de serviço e de inatividade, com convocação específica (Art. 443, §3º, da CLT); Francisco trabalha de forma contínua e regular (segunda a sábado), o que é incompatível com a intermitência. (B) está errada porque falta o requisito essencial da finalidade NÃO LUCRATIVA da atividade exercida no imóvel, já que a chácara é destinada à locação por temporada como negócio (via plataforma especializada), descaracterizando o vínculo doméstico. (C) está errada porque a chácara está localizada em área URBANA e a atividade de Francisco não envolve exploração agrícola, pecuária, agroindustrial ou extrativista, requisitos do trabalhador rural (Lei 5.889/73).",
+          "pegadinha": "A banca tenta induzir o candidato a marcar 'empregado doméstico' apenas porque o local é uma 'chácara' e as tarefas (limpeza, zeladoria, recepção) soam domésticas; a pegadinha está em perceber que o requisito determinante da categoria doméstica é a AUSÊNCIA de finalidade lucrativa, que não se verifica aqui, pois o imóvel é explorado comercialmente como hospedagem por temporada.",
+          "regraMemoria": "Empregado doméstico = SEMPRE sem finalidade lucrativa, no âmbito residencial da família; havendo exploração ECONÔMICA do imóvel (aluguel, hospedagem, comércio), o vínculo é sempre de empregado COMUM (CLT geral), nunca doméstico."
+        },
+        {
+          "territorio": "Direito do Trabalho",
+          "tema": "Relação de Emprego",
+          "enunciado": "Sílvio Luiz foi convidado pelo seu empregador para ocupar interinamente o cargo de supervisor administrativo; sendo certo que, em caso de vacância do cargo, este seria preenchido por Sílvio Luiz. Diante desta situação, você foi consultado, como advogado(a) do empregado, para saber acerca dos seus direitos na hipótese. Sobre o caso apresentado, de acordo com o texto em vigor da CLT e a jurisprudência consolidada do TST, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Caso não haja a vacância e cessada a interinidade do cargo, Sílvio Luiz terá que ser desligado da empresa por motivo econômico, o que afasta o pagamento da multa de 40%, pois a alteração contratual de reversão será ilícita e autorizada a dispensa na hipótese por justo motivo."
+            },
+            {
+              "letra": "B",
+              "texto": "Sílvio Luiz, no caso de vacância definitiva do cargo, passará a ocupá-lo e terá necessariamente direito ao salário do seu antecessor."
+            },
+            {
+              "letra": "C",
+              "texto": "Sendo a hipótese de férias do efetivo supervisor administrativo que ensejou o trabalho interino de Sílvio Luiz no cargo, este último não faz jus ao mesmo salário do substituído no período."
+            },
+            {
+              "letra": "D",
+              "texto": "Considerando que o exercício do cargo será interino, não havendo a vacância posterior, Sílvio Luiz terá garantido o retorno ao seu cargo anterior e a contagem de tempo de serviço no cargo ocupado temporariamente."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A Súmula 159 do TST disciplina exatamente essa hipótese: (I) enquanto perdurar a substituição não eventual (inclusive em razão de férias), o substituto tem direito ao salário do substituído; (II) uma vez vago o cargo em definitivo, o empregado que passa a ocupá-lo NÃO tem direito automático ao salário do antecessor. Como no caso não houve vacância definitiva (a interinidade cessou e Sílvio Luiz retornou), a solução correta é a garantia de retorno ao cargo efetivo anterior, com a contagem regular do tempo de serviço prestado no período em que ocupou interinamente o cargo de supervisor.",
+          "explicacaoErradas": "(A) está errada porque não há qualquer previsão legal de que a simples cessação da interinidade (sem vacância) obrigue o desligamento do empregado por 'motivo econômico' com afastamento da multa de 40% do FGTS; a reversão ao cargo efetivo anterior não configura alteração contratual ilícita nem justa causa para dispensa. (B) está errada porque contraria o item II da Súmula 159 do TST: a vacância DEFINITIVA do cargo não gera, por si só, direito automático ao salário do antecessor. (C) está errada porque contraria o item I da Súmula 159 do TST: MESMO quando a substituição decorre de férias do titular efetivo, o substituto tem direito ao salário do substituído durante todo o período da substituição.",
+          "pegadinha": "A pegadinha está nas alternativas B e C, que invertem exatamente os dois enunciados da Súmula 159 do TST: fazem parecer que a vacância definitiva SEMPRE garante o salário do antecessor (é o contrário) e que a substituição por férias NÃO garante o salário do substituído (na verdade garante, enquanto durar a substituição).",
+          "regraMemoria": "Súmula 159 do TST: DURANTE a substituição (mesmo por férias) = direito ao salário do substituído; APÓS a vacância DEFINITIVA = NÃO há direito automático ao salário do antecessor."
+        },
+        {
+          "territorio": "Direito do Trabalho",
+          "tema": "Remuneração e Verbas Rescisórias",
+          "enunciado": "Anne é diretora não-empregada de uma grande multinacional. Ela tem contraprestação pecuniária elevada e algumas vantagens pelo cargo que ocupa como, por exemplo, veículo com motorista e o aluguel de uma espaçosa residência. Na útima assembleia, no entanto, Anne levou a debate sua pretensão de receber mensalmente FGTS em conta vinculada. Sobre a pretensão de Anne, de acordo com a lei de regência, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A pretensão é inviável, porque Anne não tem o contrato regido pela CLT e, assim, não pode ter FGTS."
+            },
+            {
+              "letra": "B",
+              "texto": "Se a sociedade empresária desejar, poderá equiparar, para fins de FGTS, o diretor não-empregado aos demais trabalhadores."
+            },
+            {
+              "letra": "C",
+              "texto": "A Lei permite atender ao pedido, mas Anne terá creditada metade do percentual do FGTS de um empregado regular."
+            },
+            {
+              "letra": "D",
+              "texto": "Para ter direito ao FGTS, Anne terá que renunciar ao cargo que ocupa e passar a ser diretora empregada."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O Art. 16 da Lei 8.036/90 permite que a sociedade empresária, a seu critério (faculdade, e não obrigação), equipare o diretor não-empregado aos demais trabalhadores para fins de recolhimento do FGTS em conta vinculada. Trata-se, portanto, de opção da empresa, e não de direito automático do diretor, tampouco de proibição absoluta.",
+          "explicacaoErradas": "(A) está errada porque a ausência de contrato regido pela CLT não torna a pretensão de Anne inviável de forma absoluta: a própria Lei 8.036/90 prevê expressamente a possibilidade de equiparação do diretor não-empregado para fins de FGTS, desde que a empresa assim decida. (C) está errada porque não existe na lei qualquer previsão de que o diretor não-empregado equiparado receba apenas 'metade' do percentual de FGTS devido a um empregado regular; caso a empresa opte pela equiparação, o percentual aplicável é o mesmo dos demais trabalhadores (8% sobre a remuneração). (D) está errada porque a lei não exige que o diretor não-empregado renuncie ao cargo e se torne diretor empregado para ter FGTS; a equiparação prevista no Art. 16 da Lei 8.036/90 opera justamente para o diretor que permanece na condição de não-empregado.",
+          "pegadinha": "A pegadinha explora a ideia intuitiva de que só quem tem contrato de trabalho regido pela CLT teria direito ao FGTS, ignorando a possibilidade de equiparação facultativa prevista no Art. 16 da Lei 8.036/90 para o diretor não-empregado, que depende exclusivamente da vontade da empresa (e não é automática nem proibida).",
+          "regraMemoria": "Diretor não-empregado pode ter FGTS por equiparação (Art. 16, Lei 8.036/90), mas isso é sempre FACULDADE da empresa, nunca direito automático nem obrigação legal."
+        },
+        {
+          "territorio": "Direito do Trabalho",
+          "tema": "Remuneração e Verbas Rescisórias",
+          "enunciado": "Vladimir, formado em Educação Física, 28 anos de idade, era instrutor em uma academia de ginástica há 1 ano, com a CTPS devidamente assinada. Ao ser comunicado pelo empregador de sua dispensa sem justa causa, com aviso prévio que deveria ser trabalhado, Vladimir foi tomado de intensa emoção e teve um ataque cardíaco fulminante, vindo a óbito. De acordo com a situação retratada e a norma de regência, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A sociedade empresária será condenada pelo acidente do trabalho sofrido, mas não haverá indenização pela extinção do contrato porque o aviso prévio não foi cumprido."
+            },
+            {
+              "letra": "B",
+              "texto": "As verbas devidas serão pagas, em quotas iguais, aos dependentes de Vladimir habilitados perante a Previdência Social e, na falta, aos sucessores previstos na lei civil."
+            },
+            {
+              "letra": "C",
+              "texto": "Não haverá responsabilidade civil do empregador por se tratar de caso fortuito e a Lei determina, no caso de morte suspeita, a consignação em pagamento dos valores devidos."
+            },
+            {
+              "letra": "D",
+              "texto": "A morte do empregado extingue o contrato de trabalho e a indenização a ser paga será a metade do que é devido pela dispensa sem justa causa."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Nos termos da Lei 6.858/80, os valores devidos pelo empregador ao empregado, não recebidos em vida por este, serão pagos, em quotas iguais, aos dependentes habilitados perante a Previdência Social e, na falta destes, aos sucessores previstos na lei civil, independentemente de inventário ou arrolamento. Como a dispensa sem justa causa já havia sido comunicada a Vladimir antes de seu falecimento (ainda que durante o cumprimento do aviso prévio), as verbas rescisórias correspondentes já integravam seu patrimônio jurídico, sendo devidas aos seus dependentes/sucessores segundo essa regra específica.",
+          "explicacaoErradas": "(A) está errada porque o fato de o aviso prévio não ter sido efetivamente cumprido (em razão do falecimento) não afasta o direito às verbas decorrentes da dispensa sem justa causa já comunicada, incluindo o aviso prévio indenizado e demais parcelas rescisórias; a alternativa nega indevidamente esse direito. (C) está errada porque não existe previsão legal de 'consignação em pagamento' por 'morte suspeita', nem a responsabilidade pelo pagamento das verbas rescisórias já devidas depende de se discutir responsabilidade civil por acidente de trabalho — a dispensa sem justa causa, por si só, já gera o direito às verbas normais. (D) está errada porque não há qualquer regra que reduza à metade a indenização decorrente da dispensa sem justa causa em razão do falecimento do empregado; as verbas são devidas integralmente aos dependentes/sucessores.",
+          "pegadinha": "A pegadinha explora a ideia de que, como o aviso prévio 'não foi cumprido' por causa da morte, ou como a morte teria causa 'natural' (ataque cardíaco) e não diretamente ligada ao trabalho, as verbas da dispensa sem justa causa deixariam de ser devidas ou seriam reduzidas. Mas, tendo a dispensa já sido comunicada antes do óbito, o direito às verbas já se incorporara ao patrimônio do empregado, sendo pago integralmente aos dependentes/sucessores nos termos da Lei 6.858/80.",
+          "regraMemoria": "Verbas trabalhistas não recebidas em vida pelo empregado falecido = pagas em quotas iguais aos dependentes habilitados na Previdência Social e, na falta destes, aos sucessores da lei civil, independentemente de inventário (Lei 6.858/80)."
+        },
+        {
+          "territorio": "Direito do Trabalho",
+          "tema": "Jornada e Descanso",
+          "enunciado": "Você advoga para uma rede de farmácias e recebeu uma petição inicial de reclamação trabalhista para elaborar defesa acerca de pedido de tempo despendido com troca de uniforme. No caso, alega o autor que levava cerca de 20 minutos para vestir o uniforme, composto por calça social comum, camisa social simples e sapato comum, só podendo registrar o ponto já uniformizado. Afirma, ainda, que levava o uniforme diariamente para casa para higienizá-lo, podendo chegar às dependências do empregador já uniformizado. Sobre a hipótese apresentada, observadas as normas da CLT, assinale a opção que você apresentaria em defesa de sua cliente.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O tempo despendido para a troca de uniforme sempre será computado na duração do trabalho, pois o empregado já se encontra nas dependências do empregador. Já o tempo despendido na higienização não deve ser computado."
+            },
+            {
+              "letra": "B",
+              "texto": "Inexistindo obrigatoriedade de troca de uniforme nas dependências do empregador, o tempo despendido não é computado na jornada de trabalho. Tampouco deve ser computado o tempo de higienização."
+            },
+            {
+              "letra": "C",
+              "texto": "O tempo despendido na troca de uniforme, assim como o gasto na higienização do mesmo, são computados na jornada de trabalho, pois estão relacionados diretamente com a função desempenhada e a obrigatoriedade de trabalhar com o uniforme."
+            },
+            {
+              "letra": "D",
+              "texto": "O tempo despendido na higienização do uniforme deverá ser computado na duração do trabalho, pois reduz o intervalo mínimo entre duas jornadas. Já a troca de uniforme comum não deve ser computado, porque não há obrigatoriedade de troca na empresa."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O Art. 4º, §2º, II, da CLT (introduzido pela Reforma Trabalhista) estabelece que não é considerado tempo à disposição do empregador o período gasto com a troca de uniforme, QUANDO NÃO HOUVER OBRIGATORIEDADE de realizar essa troca nas dependências da empresa. Como o uniforme era composto de peças comuns (calça e camisa sociais, sapato comum) e o próprio empregado podia chegar ao trabalho já uniformizado (higienizando o uniforme em casa), não havia obrigatoriedade de troca no local, de modo que nem o tempo de troca, nem o de higienização, são computados na jornada de trabalho.",
+          "explicacaoErradas": "(A) está errada porque afirma que o tempo de troca de uniforme 'sempre' será computado apenas pelo fato de o empregado já estar nas dependências do empregador; isso contraria expressamente o Art. 4º, §2º, II, da CLT, que exclui esse tempo quando não há obrigatoriedade de troca no local. (C) está errada porque condiciona o cômputo do tempo à mera relação com a função e à obrigatoriedade de trabalhar uniformizado, mas ignora que a lei exige, especificamente, a obrigatoriedade de TROCA NAS DEPENDÊNCIAS do empregador (requisito ausente no caso, já que o empregado podia chegar pronto de casa). (D) está errada porque cria uma distinção sem amparo legal entre o tempo de higienização (que seria computado) e o de troca (que não seria); não havendo obrigatoriedade de troca no local, nenhum dos dois tempos é computado.",
+          "pegadinha": "A pegadinha está no fato de o autor 'só poder registrar o ponto já uniformizado', o que sugere, à primeira vista, obrigatoriedade de troca no local; mas o requisito legal correto é a obrigatoriedade de troca NAS DEPENDÊNCIAS do empregador — como o uniforme é comum e o empregado tinha a opção de chegar já vestido e higienizar em casa, essa obrigatoriedade não existe, afastando o cômputo de ambos os tempos.",
+          "regraMemoria": "Troca de uniforme só conta como jornada de trabalho quando há obrigatoriedade de trocar NAS DEPENDÊNCIAS do empregador (Art. 4º, §2º, II, CLT); sem essa obrigatoriedade, nem a troca nem a higienização são computadas."
+        },
+        {
+          "territorio": "Processo do Trabalho",
+          "tema": "Execução Trabalhista",
+          "enunciado": "Tomás teve o pedido de sua reclamação trabalhista julgado procedente em parte. Com o trânsito em julgado, adveio a fase executória e o juiz lhe conferiu prazo para apresentar os cálculos atualizados, o que foi feito. Desse cálculo, a executada foi intimada a se manifestar, mas quedou-se inerte. Em seguida, após ratificação pelo calculista da Vara, o juiz homologou o cálculo de Tomás e citou o executado para pagamento. O executado apresentou guia de depósito do valor homologado e, 5 dias após, ajuizou embargos à execução, questionando os cálculos homologados, entendendo que estavam majorados. Diante da situação retratada e da previsão da CLT, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Os embargos não serão apreciados porque intempestivos, já que o prazo é de 3 dias úteis."
+            },
+            {
+              "letra": "B",
+              "texto": "Cabíveis embargos à execução no prazo de até 5 dias úteis após a garantia do juízo, daí, o mérito dele será apreciado."
+            },
+            {
+              "letra": "C",
+              "texto": "Há preclusão porque a empresa silenciou acerca dos cálculos, logo o mérito dos embargos não será apreciado."
+            },
+            {
+              "letra": "D",
+              "texto": "Os embargos são tempestivos, não há preclusão mas faltou realizar o preparo com acréscimo de 30%, daí o mérito não será apreciado."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Embora os embargos à execução tenham sido apresentados dentro do prazo legal de 5 dias úteis contados da garantia do juízo (Art. 884 da CLT), ocorreu PRECLUSÃO quanto à discussão do valor dos cálculos, já que a executada, regularmente intimada para se manifestar sobre a conta homologada, permaneceu inerte (silenciou). Diante disso, embora tempestivos, os embargos não podem ter seu MÉRITO apreciado quanto à impugnação dos cálculos, por já ter se operado a preclusão na fase de elaboração da conta.",
+          "explicacaoErradas": "(A) está errada porque o prazo para embargos à execução na Justiça do Trabalho é de 5 (cinco) dias úteis, e não de 3 dias, contados da garantia do juízo (Art. 884 da CLT); os embargos, portanto, não são intempestivos apenas pelo decurso de 5 dias. (B) está errada porque, embora os embargos sejam de fato tempestivos (dentro do prazo de 5 dias), seu mérito não poderá ser apreciado, em razão da preclusão gerada pelo silêncio anterior da executada quanto aos cálculos já homologados. (D) está errada porque não existe, na execução trabalhista, exigência de 'preparo com acréscimo de 30%' como condição para o conhecimento dos embargos à execução; trata-se de exigência inexistente no ordenamento processual do trabalho.",
+          "pegadinha": "A pegadinha desvia o foco para a TEMPESTIVIDADE dos embargos (que de fato foram apresentados dentro do prazo de 5 dias úteis após a garantia do juízo), quando o verdadeiro obstáculo ao exame do mérito é a PRECLUSÃO decorrente do silêncio anterior da parte executada, quando intimada para se manifestar sobre os cálculos.",
+          "regraMemoria": "Embargos à execução trabalhista: prazo de 5 dias úteis após a garantia do juízo; se a parte silenciou quando intimada sobre os cálculos, ocorre preclusão e o MÉRITO dos embargos não pode ser reapreciado, ainda que tempestivos."
+        },
+        {
+          "territorio": "Processo do Trabalho",
+          "tema": "Atos, Prazos e Nulidades",
+          "enunciado": "Pedro Arnaldo ajuizou reclamação trabalhista em face da ex-empregadora. No dia da audiência, rejeitada a possibilidade de acordo, o feito foi contestado. A parte ré, porém, requereu o adiamento em razão da ausência de uma testemunha, que estava intimada regularmente. Na audiência seguinte Pedro Arnaldo, sem qualquer justificativa, não compareceu. Diante disso, nos termos da CLT e do entendimento jurisprudencial consolidado do TST, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A ausência do reclamante, quando adiada a instrução após contestada a ação em audiência, não importa arquivamento do processo."
+            },
+            {
+              "letra": "B",
+              "texto": "A ausência do reclamante importará no arquivamento do feito na hipótese."
+            },
+            {
+              "letra": "C",
+              "texto": "O feito deverá ser novamente adiado para o comparecimento do reclamante, que não deu causa ao adiamento anterior."
+            },
+            {
+              "letra": "D",
+              "texto": "Ausente o interesse de agir, o feito deverá ser extinto sem resolução do mérito."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "A regra de arquivamento do processo por ausência injustificada do reclamante (Art. 844, §2º, da CLT) aplica-se à audiência INICIAL, antes de contestada a ação. Uma vez contestada a demanda em audiência anterior — como ocorreu no caso, em que a instrução foi apenas adiada por ausência de testemunha da ré —, a ausência do reclamante em audiência de PROSSEGUIMENTO/instrução não mais acarreta o arquivamento do feito, que já está angularizado e deve prosseguir com base nos elementos disponíveis nos autos.",
+          "explicacaoErradas": "(B) está errada porque, tendo a ação já sido contestada em audiência anterior, a ausência do reclamante na audiência de prosseguimento não gera mais o arquivamento do processo, ao contrário do que ocorreria se a ausência fosse na audiência inicial, antes da contestação. (C) está errada porque não há exigência de novo adiamento da audiência simplesmente em razão da ausência do reclamante nessa fase; o processo prossegue seu curso normal, sem necessidade de reagendamento por esse motivo. (D) está errada porque não se trata de hipótese de ausência de interesse de agir apta a extinguir o processo sem resolução do mérito; a ausência do autor em audiência de prosseguimento, após já contestada a ação, não tem esse efeito extintivo.",
+          "pegadinha": "A pegadinha induz o candidato a aplicar automaticamente a regra geral do Art. 844, §2º, da CLT (ausência do reclamante gera arquivamento), sem perceber que essa consequência é restrita à audiência ANTERIOR à contestação. Uma vez contestada a ação (processo já angularizado), a ausência do autor em audiência subsequente não mais acarreta arquivamento.",
+          "regraMemoria": "Arquivamento por ausência do reclamante só ocorre na audiência ANTES da contestação; uma vez contestada a ação, a ausência do autor em audiência posterior nunca mais gera arquivamento."
+        },
+        {
+          "territorio": "Processo do Trabalho",
+          "tema": "Atos, Prazos e Nulidades",
+          "enunciado": "Leonardo Pereira e Panificação Pão Fresquinho Ltda. decidiram, amigavelmente, encerrar a relação de emprego mantida entre eles. Porém, as verbas rescisórias não eram incontroversas, uma vez que discutiam diferenças de horas extras e reflexos; trabalho em feriados e reflexos; intervalo para alimentação e descanso; além de adicional de insalubridade. Sendo assim, após muito conversarem, chegaram a um bom termo. Contudo, para segurança jurídica de ambos, gostariam que a avença fosse chancelada pela Justiça do Trabalho. Para isso, de acordo com o texto da CLT em vigor, as partes deverão",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "fazer uso do jus postulandi e ajuizar uma reclamação trabalhista do empregado em face do empregador com todos os pedidos, e, no dia designado para a audiência, deverão comparecer e celebrar o acordo."
+            },
+            {
+              "letra": "B",
+              "texto": "fazer uso do jus postulandi e dar entrada no processo de homologação de transação extrajudicial em petição conjunta e aguardar a homologação do juiz."
+            },
+            {
+              "letra": "C",
+              "texto": "estar representadas por advogados independentes que darão entrada em petição conjunta do processo de homologação de transação extrajudicial."
+            },
+            {
+              "letra": "D",
+              "texto": "estar representadas por advogado, que poderá ser comum a ambas, e darão entrada em petição conjunta do processo de homologação de transação extrajudicial."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O procedimento de homologação de transação extrajudicial trabalhista (Arts. 855-B a 855-E da CLT) exige que as partes estejam representadas por advogado, sendo expressamente VEDADA a representação por advogado COMUM às duas partes (Art. 855-B, §1º, da CLT). Assim, Leonardo e a Panificação devem estar representados por advogados distintos e independentes, que apresentarão petição conjunta requerendo a homologação judicial do acordo.",
+          "explicacaoErradas": "(A) está errada porque, embora seja tecnicamente possível ajuizar reclamação trabalhista com jus postulandi e celebrar acordo em audiência, esse não é o procedimento adequado para o que as partes desejam (homologação de transação extrajudicial), instituto próprio que exige representação por advogado, sendo incompatível com o jus postulandi. (B) está errada pelo mesmo motivo: o processo de homologação de transação extrajudicial exige representação por advogado (vedado apenas que seja o mesmo para ambas as partes), sendo incompatível com o uso do jus postulandi. (D) está errada porque contraria frontalmente o Art. 855-B, §1º, da CLT, que veda expressamente a representação das partes por advogado COMUM nesse procedimento específico.",
+          "pegadinha": "A pegadinha está na vedação específica e pouco lembrada do Art. 855-B, §1º, da CLT: diferentemente de outras transações extrajudiciais em outros ramos do Direito, na homologação de transação extrajudicial trabalhista NÃO se admite advogado comum às partes, sendo obrigatória a representação por advogados distintos.",
+          "regraMemoria": "Homologação de transação extrajudicial trabalhista (Art. 855-B, CLT): SEMPRE exige advogado para cada parte, NUNCA advogado comum às duas partes."
+        },
+        {
+          "territorio": "Processo do Trabalho",
+          "tema": "Dissídios Coletivos",
+          "enunciado": "Depois de fracassar a tentativa pacífica de negociação para realizar uma convenção coletiva de âmbito municipal, o sindicato dos empregados ajuizou dissídio coletivo que, depois de regularmente processado nos moldes da Lei, recebeu sua sentença normativa. Ocorre que o sindicato dos empregadores não concorda com algumas das cláusulas fixadas, e pretende recorrer da decisão. Diante da situação retratada e dos termos da CLT, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Caberá recurso ordinário para o TST."
+            },
+            {
+              "letra": "B",
+              "texto": "Por se tratar de sentença normativa, é irrecorrível."
+            },
+            {
+              "letra": "C",
+              "texto": "Caberá recurso de revista para o TST."
+            },
+            {
+              "letra": "D",
+              "texto": "Caberá recurso ordinário para o TRT."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Os dissídios coletivos de âmbito municipal são processados e julgados originariamente pelo Tribunal Regional do Trabalho (TRT). Da sentença normativa proferida pelo TRT em dissídio coletivo cabe RECURSO ORDINÁRIO para o Tribunal Superior do Trabalho (TST), nos termos do Art. 895, 'b', da CLT.",
+          "explicacaoErradas": "(B) está errada porque a sentença normativa proferida em dissídio coletivo NÃO é irrecorrível; a própria CLT prevê expressamente o recurso ordinário cabível contra ela. (C) está errada porque o recurso de revista é o instrumento cabível para impugnar acórdãos do TRT em dissídios INDIVIDUAIS, e não em dissídios coletivos, cujo recurso próprio é o ordinário. (D) está errada porque o recurso ordinário deve ser dirigido ao TST (órgão ad quem, competente para revisar a decisão), e não novamente ao TRT, que já é o órgão que proferiu a sentença normativa (juízo a quo).",
+          "pegadinha": "A pegadinha explora a confusão entre os recursos cabíveis em dissídios coletivos e individuais, levando o candidato a pensar em recurso de revista (próprio de dissídios individuais) ou a recorrer, por engano, para o próprio TRT que já decidiu o caso.",
+          "regraMemoria": "Sentença normativa em dissídio coletivo julgado pelo TRT = sempre cabe recurso ORDINÁRIO para o TST (Art. 895, 'b', CLT), nunca recurso de revista."
+        },
+        {
+          "territorio": "Processo do Trabalho",
+          "tema": "Atos, Prazos e Nulidades",
+          "enunciado": "Você advoga para um ex-empregado, em sede de reclamação trabalhista em face de uma sociedade empresária, e também em face dos sócios desta. O curso processual vem sendo bastante conturbado. A parte ré deduziu fatos manifesta e notoriamente inverídicos em juízo; ela vem utilizando meios e modos de retardar o desfecho processual, arrolando testemunhas que não são localizadas, requerendo a substituição de testemunhas e provocando adiamentos desnecessários de audiências, no intuito de suscitar eventual futura nulidade. Seu cliente perguntou se as condutas poderiam ensejar o requerimento e consequente condenação em litigância de má-fé, em razão de considerar que tais condutas representam procedimento contrário à boa ordem processual. Nesse sentido, de acordo com o texto da CLT, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Não é vedado a parte promover incidentes processuais sem fundamento, com intuito de retardar o andamento processual, já que o amplo direito de defesa é assegurado constitucionalmente."
+            },
+            {
+              "letra": "B",
+              "texto": "Os valores da multa de litigância de má-fé sempre incidem sobre o valor da causa, ainda que irrisório o valor, pois existem as demais reparações previstas na lei."
+            },
+            {
+              "letra": "C",
+              "texto": "Não constitui conduta passível de litigância de má-fé a parte formular alegações em sede de contestação contrárias a texto expresso de lei, pois cabe ao juiz rechaçar a alegação."
+            },
+            {
+              "letra": "D",
+              "texto": "As condutas ensejam litigância de má-fé e têm previsão legal, sendo passíveis de multa superior a 1% e inferior a 10% sobre o valor corrigido da causa, entre outras penalidades."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "As condutas descritas (deduzir fatos manifestamente inverídicos, retardar o desfecho processual, provocar incidentes infundados e adiamentos desnecessários) configuram litigância de má-fé, expressamente tipificadas no Art. 793-B da CLT. A sanção correspondente, prevista no Art. 793-C da CLT, é multa SUPERIOR a 1% e INFERIOR a 10% do valor corrigido da causa, além de eventual indenização à parte contrária pelos prejuízos sofridos, honorários advocatícios e despesas processuais.",
+          "explicacaoErradas": "(A) está errada porque o Art. 793-B, VI, da CLT tipifica expressamente como litigância de má-fé a conduta de 'provocar incidente manifestamente infundado', sendo, portanto, vedada e passível de sanção, e não amparada pelo simples exercício do direito de defesa. (B) está errada porque a multa não incide SEMPRE de forma automática sobre o valor da causa: o Art. 793-C, §2º, da CLT prevê regra especial para quando o valor da causa for irrisório ou inestimável, hipótese em que a multa pode ser fixada em até 10 vezes o valor do salário-mínimo regional, e não necessariamente como percentual do valor da causa. (C) está errada porque o Art. 793-B, I, da CLT tipifica expressamente como má-fé 'deduzir pretensão ou defesa contra texto expresso de lei ou fato incontroverso', sendo essa conduta sancionável independentemente de o juiz poder rechaçar a alegação no mérito.",
+          "pegadinha": "A alternativa B parece correta ao mencionar a multa sobre o valor da causa, mas ignora a regra especial do Art. 793-C, §2º, da CLT para causas de valor irrisório ou inestimável, quando a multa é fixada com base em salários-mínimos regionais, e não necessariamente como percentual do valor da causa.",
+          "regraMemoria": "Litigância de má-fé trabalhista (Arts. 793-B e 793-C da CLT): multa sempre entre 1% e 10% do valor da causa; se a causa for irrisória ou inestimável, a multa pode chegar a até 10 salários-mínimos regionais — nunca ignore essa exceção."
         }
       ]
     }

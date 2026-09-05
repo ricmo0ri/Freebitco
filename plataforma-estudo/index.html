@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OAB — A Ascensão do Advogado</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="app">
+
+  <header class="topbar">
+    <div class="topbar-row">
+      <h1>⚖️ Ascensão do Advogado</h1>
+      <div class="streak-badge" id="streak-badge" aria-live="polite">Sequência: 0 dias</div>
+    </div>
+    <div class="perfil-row" aria-live="polite">
+      <div class="nivel-badge">
+        <svg class="nivel-ring" viewBox="0 0 40 40" aria-hidden="true">
+          <circle class="nivel-ring-track" cx="20" cy="20" r="17"></circle>
+          <circle class="nivel-ring-fill" id="nivel-ring-fill" cx="20" cy="20" r="17"></circle>
+        </svg>
+        <span class="nivel-numero" id="nivel-numero">1</span>
+      </div>
+      <span id="perfil-nivel" class="perfil-nivel">Bacharel Perdido</span>
+      <div class="xp-bar"><div class="xp-bar-fill" id="perfil-xp-bar-fill"></div></div>
+      <span id="perfil-xp-label" class="perfil-xp-label">0 / 100 XP</span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- MISSÃO (timer + território + questões + relatório) -->
+    <section id="view-missao" class="view" data-view="missao">
+      <h2 class="view-title">Escolha sua missão</h2>
+
+      <div id="revisao-inteligente-card" class="revisao-card" hidden>
+        <p class="revisao-titulo" id="revisao-titulo">📚 Você precisa revisar</p>
+        <ul id="revisao-lista" class="revisao-lista"></ul>
+        <button id="revisao-agora-btn" class="btn btn-primary" hidden></button>
+      </div>
+
+      <div class="duration-picker" role="group" aria-label="Duração da missão">
+        <button class="duration-btn" data-minutes="3">⚡ 3 min</button>
+        <button class="duration-btn" data-minutes="10">⚔️ 10 min</button>
+        <button class="duration-btn" data-minutes="25">🛡️ 25 min</button>
+        <button class="duration-btn" data-minutes="50">🔥 50 min</button>
+        <button class="duration-btn" data-minutes="90">💀 90 min</button>
+      </div>
+
+      <div class="timer-display">
+        <svg class="timer-ring" viewBox="0 0 200 200" aria-hidden="true">
+          <circle class="timer-ring-track" cx="100" cy="100" r="90"></circle>
+          <circle class="timer-ring-fill" id="timer-ring-fill" cx="100" cy="100" r="90"></circle>
+        </svg>
+        <span id="timer-clock" class="timer-clock-text" aria-live="polite">25:00</span>
+      </div>
+      <p id="timer-message" class="timer-message" aria-live="polite"></p>
+      <div class="timer-controls">
+        <button id="timer-start" class="btn btn-primary">Iniciar cronômetro</button>
+        <button id="timer-pause" class="btn btn-secondary" hidden>Pausar</button>
+        <button id="timer-reset" class="btn btn-ghost">Reiniciar</button>
+      </div>
+      <button id="timer-mute" class="mute-toggle" aria-pressed="false">Som: ligado</button>
+
+      <button id="modo-preguica-btn" class="btn btn-preguica">🧨 Não quero estudar</button>
+
+      <div id="missao-picker">
+        <p class="meta-diaria-widget" id="meta-diaria-mini"></p>
+        <div id="continuar-missao-box" class="continuar-missao-box" hidden>
+          <button id="continuar-missao-btn" class="btn btn-primary"></button>
+        </div>
+        <h3 class="section-subtitle">Escolha um território</h3>
+        <button id="missao-aleatorio-btn" class="btn btn-primary missao-aleatorio-btn">🎲 Missão aleatória (prioriza fraquezas)</button>
+        <ul id="missao-territorios-list" class="simple-list territorios-list"></ul>
+      </div>
+
+      <div id="missao-battle" class="card-panel" hidden>
+        <p class="hint-text" id="missao-progresso"></p>
+        <div class="missao-progress-bar"><div class="missao-progress-fill" id="missao-progress-fill"></div></div>
+        <p class="combo-badge" id="missao-combo" hidden></p>
+        <div class="flashcard">
+          <p class="flashcard-label" id="missao-origem"></p>
+          <p class="caso-absurdo" id="missao-caso" hidden></p>
+          <p class="flashcard-text" id="missao-enunciado"></p>
+          <div id="missao-alternativas" class="alternativas-list"></div>
+          <p class="hint-text atalhos-hint">⌨️ Atalhos: 1-4 escolhe · Enter confirma/avança</p>
+          <div class="questao-acoes">
+            <button id="missao-confirmar" class="btn btn-primary" disabled>Confirmar resposta</button>
+            <button id="missao-pular" class="btn btn-ghost">Pular (revisar depois)</button>
+          </div>
+          <p id="missao-feedback" class="questao-feedback" hidden></p>
+          <div id="missao-metodo" class="metodo-feedback" hidden></div>
+          <button id="missao-proxima" class="btn btn-secondary" hidden>Próxima questão</button>
+        </div>
+        <button id="missao-encerrar" class="btn btn-ghost">Encerrar missão agora</button>
+      </div>
+
+      <div id="missao-preguica-panel" class="card-panel" hidden>
+        <div class="flashcard">
+          <p class="flashcard-label" id="preguica-origem"></p>
+          <p class="caso-absurdo" id="preguica-caso" hidden></p>
+          <p class="flashcard-text" id="preguica-enunciado"></p>
+          <div id="preguica-alternativas" class="alternativas-list"></div>
+          <p class="hint-text atalhos-hint">⌨️ Atalhos: 1-4 escolhe · Enter confirma/avança</p>
+          <div class="questao-acoes">
+            <button id="preguica-confirmar" class="btn btn-primary" disabled>Confirmar resposta</button>
+            <button id="preguica-pular" class="btn btn-ghost">Pular</button>
+          </div>
+          <p id="preguica-feedback" class="questao-feedback" hidden></p>
+          <div id="preguica-metodo" class="metodo-feedback" hidden></div>
+          <div id="preguica-continuar" class="rate-buttons" hidden>
+            <button id="preguica-sim" class="btn btn-primary">Encarar mais uma</button>
+            <button id="preguica-nao" class="btn btn-ghost">Foi bom por hoje</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="missao-relatorio" class="card-panel" hidden>
+        <h3>🏁 Relatório da missão</h3>
+        <ul class="relatorio-list" id="relatorio-conteudo"></ul>
+        <button id="relatorio-nova-missao" class="btn btn-primary">Nova missão</button>
+      </div>
+    </section>
+
+    <!-- TERRITÓRIO (DISCIPLINAS: FLASHCARDS + QUESTÕES + CHEFÃO) -->
+    <section id="view-estudo" class="view" data-view="estudo">
+
+      <div id="disciplinas-list-view">
+        <h2 class="view-title">Territórios</h2>
+
+        <form id="disciplina-form" class="inline-form">
+          <label for="disciplina-input" class="visually-hidden">Novo território</label>
+          <input id="disciplina-input" type="text" placeholder="Novo território/disciplina..." required>
+          <button type="submit" class="btn btn-primary">Adicionar</button>
+        </form>
+
+        <ul id="disciplinas-list" class="simple-list"></ul>
+
+        <button id="abrir-importar-prova-btn" class="btn btn-ghost">📥 Importar prova em PDF</button>
+      </div>
+
+      <div id="importar-prova-view" hidden>
+        <button id="importar-prova-voltar" class="btn btn-ghost back-btn">&larr; Territórios</button>
+        <h2 class="view-title">📥 Importar prova em PDF</h2>
+        <p class="hint-text">
+          Funciona com PDFs de prova com texto selecionável (não escaneados). A extração é automática, mas
+          a classificação por disciplina não é — você escolhe o território de cada questão na revisão abaixo.
+        </p>
+
+        <form id="importar-form" class="import-panel">
+          <label for="importar-prova-input">PDF da prova</label>
+          <input id="importar-prova-input" type="file" accept="application/pdf">
+          <label for="importar-gabarito-input">PDF do gabarito</label>
+          <input id="importar-gabarito-input" type="file" accept="application/pdf">
+          <label for="importar-tipo-input">Tipo/cor da prova (detectado automaticamente, pode ajustar)</label>
+          <input id="importar-tipo-input" type="text" placeholder="1">
+          <button type="button" id="importar-processar-btn" class="btn btn-primary">Processar PDFs</button>
+        </form>
+
+        <p id="importar-status" class="hint-text"></p>
+
+        <div id="importar-revisao" class="import-panel" hidden>
+          <label for="importar-prova-origem">Prova de origem (aplicada a todas)</label>
+          <input id="importar-prova-origem" type="text">
+          <h3>Revise antes de importar</h3>
+          <p class="hint-text">Desmarque o que não quiser importar, e escolha o território de cada questão.</p>
+          <ul id="importar-revisao-lista" class="simple-list import-lista"></ul>
+          <button id="importar-confirmar-btn" class="btn btn-primary">Importar questões selecionadas</button>
+        </div>
+      </div>
+
+      <div id="disciplina-detail-view" hidden>
+        <button id="back-to-disciplinas" class="btn btn-ghost back-btn">&larr; Territórios</button>
+        <h2 class="view-title" id="disciplina-detail-title">Território</h2>
+
+        <div class="subtab-bar" role="tablist">
+          <button class="subtab-btn active" data-subtab="flashcards">Flashcards</button>
+          <button class="subtab-btn" data-subtab="questoes">Questões</button>
+          <button class="subtab-btn" data-subtab="chefao">👹 Chefão</button>
+          <button class="subtab-btn" data-subtab="doutrina">📖 Doutrina</button>
+        </div>
+
+        <!-- Subview: Flashcards -->
+        <div id="subview-flashcards" class="subview active">
+          <div class="card-panel" id="review-panel">
+            <p id="cards-empty" class="empty-state">Nenhum cartão para revisar agora.</p>
+            <div id="review-card" class="flashcard" hidden>
+              <p class="flashcard-label" id="flashcard-label">Pergunta</p>
+              <p class="flashcard-text" id="flashcard-front"></p>
+              <p class="flashcard-text flashcard-back" id="flashcard-back" hidden></p>
+              <button id="reveal-btn" class="btn btn-primary">Mostrar resposta</button>
+              <div class="rate-buttons" id="rate-buttons" hidden>
+                <button class="btn rate-dificil" data-quality="dificil">Difícil</button>
+                <button class="btn rate-medio" data-quality="medio">Médio</button>
+                <button class="btn rate-facil" data-quality="facil">Fácil</button>
+              </div>
+            </div>
+          </div>
+
+          <details class="add-card-form">
+            <summary>Adicionar novo cartão</summary>
+            <form id="card-form">
+              <label for="card-front">Pergunta / frente</label>
+              <textarea id="card-front" required rows="2"></textarea>
+              <label for="card-back">Resposta / verso</label>
+              <textarea id="card-back" required rows="2"></textarea>
+              <button type="submit" class="btn btn-primary">Adicionar cartão</button>
+            </form>
+          </details>
+
+          <div class="card-list-section">
+            <h3>Todos os cartões (<span id="card-total">0</span>)</h3>
+            <ul id="card-list" class="simple-list"></ul>
+          </div>
+        </div>
+
+        <!-- Subview: Questões (múltipla escolha) -->
+        <div id="subview-questoes" class="subview">
+          <div class="card-panel" id="questao-panel">
+            <p id="questoes-empty" class="empty-state">Nenhuma questão cadastrada nesta disciplina ainda.</p>
+            <div id="questao-card" class="flashcard" hidden>
+              <p class="flashcard-label" id="questao-origem">Questão</p>
+              <p class="caso-absurdo" id="questao-caso" hidden></p>
+              <p class="flashcard-text" id="questao-enunciado"></p>
+              <div id="questao-alternativas" class="alternativas-list"></div>
+              <button id="questao-confirmar" class="btn btn-primary" disabled>Confirmar resposta</button>
+              <p id="questao-feedback" class="questao-feedback" hidden></p>
+              <div id="questao-metodo" class="metodo-feedback" hidden></div>
+              <button id="questao-proxima" class="btn btn-secondary" hidden>Próxima questão</button>
+            </div>
+          </div>
+
+          <details class="add-card-form">
+            <summary>Adicionar nova questão</summary>
+            <form id="questao-form">
+              <label for="questao-tema">Tema/assunto (opcional, ativa o chefão)</label>
+              <input id="questao-tema" type="text" placeholder="Ex: Controle de Constitucionalidade">
+              <label for="questao-dificuldade">Dificuldade</label>
+              <select id="questao-dificuldade">
+                <option value="facil">Fácil</option>
+                <option value="media" selected>Média</option>
+                <option value="dificil">Difícil (vale mais XP)</option>
+              </select>
+              <label for="questao-prova">Prova de origem (opcional)</label>
+              <input id="questao-prova" type="text" placeholder="Ex: XXXIX Exame de Ordem - 2024.1">
+              <label for="questao-enunciado-input">Enunciado</label>
+              <textarea id="questao-enunciado-input" required rows="3"></textarea>
+              <div id="alternativas-inputs" class="alternativas-inputs"></div>
+              <button type="button" id="add-alternativa-btn" class="btn btn-ghost">+ Alternativa</button>
+              <p class="hint-text">Marque com o botão à esquerda qual alternativa é a correta.</p>
+
+              <details class="nested-details">
+                <summary>Método da questão (opcional, mas recomendado)</summary>
+                <label for="questao-explicacao">Por que a correta está certa</label>
+                <textarea id="questao-explicacao" rows="2"></textarea>
+                <label for="questao-explicacao-erradas">Por que as outras alternativas estão erradas</label>
+                <textarea id="questao-explicacao-erradas" rows="3"></textarea>
+                <label for="questao-pegadinha">Qual é a pegadinha</label>
+                <textarea id="questao-pegadinha" rows="2"></textarea>
+                <label for="questao-regra">Regra de memória</label>
+                <input id="questao-regra" type="text" placeholder="Uma frase curta para não esquecer">
+                <label for="questao-caso-input">Caso absurdo (opcional, para gravar o conceito)</label>
+                <textarea id="questao-caso-input" rows="2"></textarea>
+              </details>
+
+              <button type="submit" class="btn btn-primary">Adicionar questão</button>
+            </form>
+          </details>
+
+          <div class="card-list-section">
+            <h3>Todas as questões (<span id="questoes-total">0</span>)</h3>
+            <ul id="questoes-list" class="simple-list"></ul>
+          </div>
+        </div>
+
+        <!-- Subview: Chefão -->
+        <div id="subview-chefao" class="subview">
+          <div id="chefao-list-wrap">
+            <p class="hint-text">Cada tema com questões vira um chefão. Vença acertando 5 questões dele — errar não te faz perder progresso, só adia a vitória.</p>
+            <ul id="chefao-list" class="simple-list"></ul>
+          </div>
+          <div id="chefao-battle" class="card-panel" hidden>
+            <button id="chefao-voltar" class="btn btn-ghost back-btn">&larr; Chefões</button>
+            <p class="hint-text" id="chefao-progresso"></p>
+            <div class="flashcard">
+              <p class="flashcard-label" id="chefao-origem"></p>
+              <p class="caso-absurdo" id="chefao-caso" hidden></p>
+              <p class="flashcard-text" id="chefao-enunciado"></p>
+              <div id="chefao-alternativas" class="alternativas-list"></div>
+              <button id="chefao-confirmar" class="btn btn-primary" disabled>Confirmar resposta</button>
+              <p id="chefao-feedback" class="questao-feedback" hidden></p>
+              <div id="chefao-metodo" class="metodo-feedback" hidden></div>
+              <button id="chefao-proximo" class="btn btn-secondary" hidden>Próximo golpe</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subview: Doutrina -->
+        <div id="subview-doutrina" class="subview">
+          <div id="doutrina-list-view">
+            <p id="doutrina-empty" class="empty-state">Nenhuma doutrina cadastrada ainda nesta disciplina.</p>
+            <div id="doutrina-list"></div>
+
+            <details class="add-card-form">
+              <summary>Adicionar doutrina</summary>
+              <form id="doutrina-form">
+                <label for="doutrina-titulo">Título</label>
+                <input id="doutrina-titulo" type="text" placeholder="Ex: Controle de Constitucionalidade" required>
+                <label for="doutrina-tema">Tema/assunto (opcional)</label>
+                <input id="doutrina-tema" type="text" placeholder="Ex: Constitucional">
+                <label for="doutrina-conteudo">Resumo</label>
+                <textarea id="doutrina-conteudo" rows="6" required></textarea>
+                <p class="hint-text">Resumos curtos e diretos funcionam melhor do que textos longos.</p>
+                <button type="submit" class="btn btn-primary">Salvar doutrina</button>
+              </form>
+            </details>
+
+            <button id="abrir-importar-doutrina-btn" class="btn btn-ghost">📥 Importar doutrina em PDF</button>
+          </div>
+
+          <div id="importar-doutrina-view" hidden>
+            <button id="importar-doutrina-voltar" class="btn btn-ghost back-btn">&larr; Doutrina</button>
+            <h3>📥 Importar doutrina em PDF</h3>
+            <p class="hint-text">
+              Funciona com apostilas em PDF com texto selecionável (não escaneadas). A divisão em tópicos é
+              automática — revise os títulos e o conteúdo abaixo antes de salvar.
+            </p>
+
+            <form id="importar-doutrina-form" class="import-panel">
+              <label for="importar-doutrina-input">PDF da apostila</label>
+              <input id="importar-doutrina-input" type="file" accept="application/pdf">
+              <button type="button" id="importar-doutrina-processar-btn" class="btn btn-primary">Processar PDF</button>
+            </form>
+
+            <p id="importar-doutrina-status" class="hint-text"></p>
+
+            <div id="importar-doutrina-revisao" class="import-panel" hidden>
+              <h3>Revise antes de importar</h3>
+              <p class="hint-text">Desmarque o que não quiser importar. Os títulos são editáveis.</p>
+              <ul id="importar-doutrina-revisao-lista" class="simple-list import-lista"></ul>
+              <button id="importar-doutrina-confirmar-btn" class="btn btn-primary">Importar selecionados</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- TAREFAS -->
+    <section id="view-tarefas" class="view" data-view="tarefas">
+      <h2 class="view-title">Tarefas de hoje</h2>
+
+      <form id="task-form" class="inline-form">
+        <label for="task-input" class="visually-hidden">Nova tarefa</label>
+        <input id="task-input" type="text" placeholder="Adicionar tarefa..." required>
+        <button type="submit" class="btn btn-primary">Adicionar</button>
+      </form>
+
+      <div id="next-task-box" class="next-task-box" hidden>
+        <p class="next-task-label">Próxima tarefa</p>
+        <p id="next-task-text" class="next-task-text"></p>
+      </div>
+
+      <ul id="task-list" class="simple-list task-list"></ul>
+
+      <button id="clear-done-btn" class="btn btn-ghost">Limpar concluídas</button>
+    </section>
+
+    <!-- PERFIL / PROGRESSO -->
+    <section id="view-progresso" class="view" data-view="progresso">
+      <h2 class="view-title">Seu progresso</h2>
+
+      <div class="desempenho-hero">
+        <p class="desempenho-titulo">Seu desempenho</p>
+        <div class="desempenho-linhas">
+          <p><span class="desempenho-valor" id="desempenho-questoes">0</span> questões respondidas</p>
+          <p><span class="desempenho-valor" id="desempenho-acerto">0%</span> de aproveitamento</p>
+          <p><span class="desempenho-valor" id="desempenho-tempo">0min</span> estudados</p>
+        </div>
+      </div>
+
+      <div class="prefs-row">
+        <button id="low-stim-toggle" class="btn btn-ghost" aria-pressed="false">🌫️ Modo baixo estímulo: desligado</button>
+        <button id="som-conquistas-toggle" class="btn btn-ghost" aria-pressed="true">🔔 Sons de conquista: ligado</button>
+
+        <div class="tema-picker">
+          <span class="tema-label">Tema</span>
+          <div class="tema-opcoes" role="group" aria-label="Tema visual">
+            <button class="tema-btn" data-tema="sistema">Sistema</button>
+            <button class="tema-btn" data-tema="light">Claro</button>
+            <button class="tema-btn" data-tema="dark">Escuro</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="meta-diaria-card">
+        <p class="meta-diaria-titulo">🎯 Meta diária de questões</p>
+        <p class="meta-diaria-progresso" id="meta-diaria-progresso">0 / 10 hoje</p>
+        <div class="missao-progress-bar"><div class="missao-progress-fill" id="meta-diaria-fill"></div></div>
+        <div class="meta-diaria-editor">
+          <label for="meta-diaria-input">Mudar meta:</label>
+          <input type="number" id="meta-diaria-input" min="1" max="200" step="1">
+          <button id="meta-diaria-salvar" class="btn btn-ghost">Salvar</button>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-value" id="stat-sessions">0</span>
+          <span class="stat-label">Sessões de foco</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="stat-minutes">0</span>
+          <span class="stat-label">Minutos focados</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="stat-tasks">0</span>
+          <span class="stat-label">Tarefas concluídas</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="stat-cards">0</span>
+          <span class="stat-label">Cartões revisados</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="stat-questoes">0</span>
+          <span class="stat-label">Questões respondidas</span>
+        </div>
+      </div>
+
+      <div class="streak-panel">
+        <p>Sequência atual: <strong id="streak-current">0</strong> dias</p>
+        <p>Melhor sequência: <strong id="streak-best">0</strong> dias</p>
+        <p class="hint-text">🌙 Se você ficar um dia sem estudar, seu progresso continua igual. É só retomar.</p>
+      </div>
+
+      <h3>🗺️ Seu mapa da OAB</h3>
+      <ul id="mapa-oab-lista" class="mapa-oab-lista"></ul>
+
+      <h3>📈 Evolução da taxa de acerto</h3>
+      <div class="week-chart" id="acerto-chart" aria-hidden="true"></div>
+
+      <h3>Atividade dos últimos 7 dias</h3>
+      <div class="week-chart" id="week-chart" aria-hidden="true"></div>
+    </section>
+
+  </main>
+
+  <div id="bemestar-overlay" class="bemestar-overlay" hidden>
+    <div class="bemestar-card">
+      <div class="bemestar-breath" aria-hidden="true"></div>
+      <h3 id="bemestar-titulo"></h3>
+      <p id="bemestar-mensagem"></p>
+      <div class="bemestar-acoes">
+        <button id="bemestar-acao-principal" class="btn btn-primary"></button>
+        <button id="bemestar-acao-secundaria" class="btn btn-ghost"></button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="tabbar" id="tabbar">
+    <button class="tab-btn active" data-view="missao" aria-pressed="true">🎮 Missão</button>
+    <button class="tab-btn" data-view="estudo" aria-pressed="false">🗺️ Território</button>
+    <button class="tab-btn" data-view="tarefas" aria-pressed="false">Tarefas</button>
+    <button class="tab-btn" data-view="progresso" aria-pressed="false">🏅 Perfil</button>
+  </nav>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/db.js"></script>
+<script src="js/questoesSeed.js"></script>
+<script src="js/perfil.js"></script>
+<script src="js/fraquezas.js"></script>
+<script src="js/revisao.js"></script>
+<script src="js/questaoCard.js"></script>
+<script src="js/bemestar.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/missao.js"></script>
+<script src="js/flashcards.js"></script>
+<script src="js/questoes.js"></script>
+<script src="js/chefoes.js"></script>
+<script src="js/doutrina.js"></script>
+<script src="js/vendor/pdf.min.js"></script>
+<script src="js/importarProva.js"></script>
+<script src="js/importarDoutrina.js"></script>
+<script src="js/disciplinas.js"></script>
+<script src="js/tasks.js"></script>
+<script src="js/progress.js"></script>
+<script src="js/preferencias.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

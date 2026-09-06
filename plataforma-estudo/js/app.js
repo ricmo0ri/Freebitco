@@ -83,6 +83,7 @@ var App = (function () {
     Timer.init();
     Flashcards.init();
     Questoes.init();
+    LeiSeca.init();
     Chefoes.init();
     Doutrina.init();
     ImportarProva.init();
@@ -95,7 +96,7 @@ var App = (function () {
     if (window.Bemestar) Bemestar.iniciarVigiaHiperfoco();
 
     Disciplinas.init().then(function () {
-      return QuestoesSeed.seedar();
+      return Promise.all([QuestoesSeed.seedar(), LeiSecaSeed.seedar()]);
     }).then(function () {
       if (window.Missao) Missao.renderTerritorios();
     });

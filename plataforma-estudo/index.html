@@ -179,6 +179,7 @@
           <button class="subtab-btn" data-subtab="questoes">Questões</button>
           <button class="subtab-btn" data-subtab="chefao">👹 Chefão</button>
           <button class="subtab-btn" data-subtab="doutrina">📖 Doutrina</button>
+          <button class="subtab-btn" data-subtab="leiseca">📜 Lei Seca</button>
         </div>
 
         <!-- Subview: Flashcards -->
@@ -343,6 +344,29 @@
             </div>
           </div>
         </div>
+
+        <!-- Subview: Lei Seca -->
+        <div id="subview-leiseca" class="subview">
+          <p class="hint-text">
+            Qual das redações abaixo é o texto literal do dispositivo? A banca costuma trocar uma palavra, um prazo
+            ou um "e" por "ou" — treinar isso separa quem decorou de quem só entendeu o assunto.
+          </p>
+          <p class="hint-text" id="leiseca-progresso"></p>
+          <div class="card-panel" id="leiseca-panel">
+            <p id="leiseca-empty" class="empty-state">Nenhum dispositivo de lei seca cadastrado ainda para este território.</p>
+            <div id="leiseca-card" class="flashcard" hidden>
+              <p class="flashcard-label" id="leiseca-origem"></p>
+              <p class="caso-absurdo" id="leiseca-caso" hidden></p>
+              <p class="flashcard-text" id="leiseca-enunciado"></p>
+              <div id="leiseca-alternativas" class="alternativas-list"></div>
+              <p class="hint-text atalhos-hint">⌨️ Atalhos: 1-3 escolhe · Enter confirma/avança</p>
+              <button id="leiseca-confirmar" class="btn btn-primary" disabled>Confirmar resposta</button>
+              <p id="leiseca-feedback" class="questao-feedback" hidden></p>
+              <div id="leiseca-metodo" class="metodo-feedback" hidden></div>
+              <button id="leiseca-proxima" class="btn btn-secondary" hidden>Próximo dispositivo</button>
+            </div>
+          </div>
+        </div>
       </div>
 
     </section>
@@ -475,6 +499,7 @@
 <script src="js/storage.js"></script>
 <script src="js/db.js"></script>
 <script src="js/questoesSeed.js"></script>
+<script src="js/leiSecaSeed.js"></script>
 <script src="js/perfil.js"></script>
 <script src="js/fraquezas.js"></script>
 <script src="js/revisao.js"></script>
@@ -484,6 +509,7 @@
 <script src="js/missao.js"></script>
 <script src="js/flashcards.js"></script>
 <script src="js/questoes.js"></script>
+<script src="js/leiSeca.js"></script>
 <script src="js/chefoes.js"></script>
 <script src="js/doutrina.js"></script>
 <script src="js/vendor/pdf.min.js"></script>

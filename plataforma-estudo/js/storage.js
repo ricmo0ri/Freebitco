@@ -12,13 +12,15 @@ var Storage = (function () {
     chefoesDerrotados: 'estudoTdah.chefoesDerrotados',
     territoriosSeedVersion: 'estudoTdah.territoriosSeedVersion',
     questoesSeedVersion: 'estudoTdah.questoesSeedVersion',
+    leiSecaSeedVersion: 'estudoTdah.leiSecaSeedVersion',
     lowStim: 'estudoTdah.lowStim',
     tema: 'estudoTdah.tema',
     metaDiariaQuestoes: 'estudoTdah.metaDiariaQuestoes',
     revisarDepois: 'estudoTdah.revisarDepois',
     ultimaMissao: 'estudoTdah.ultimaMissao',
     somConquistas: 'estudoTdah.somConquistas',
-    temasDominados: 'estudoTdah.temasDominados'
+    temasDominados: 'estudoTdah.temasDominados',
+    leiSecaRespostas: 'estudoTdah.leiSecaRespostas'
   };
 
   function read(key, fallback) {
@@ -101,6 +103,7 @@ var Storage = (function () {
     var sessions = read(KEYS.sessions, []);
     var reviews = read(KEYS.cardReviews, []);
     var questaoRespostas = read(KEYS.questaoRespostas, []);
+    var leiSecaRespostas = read(KEYS.leiSecaRespostas, []);
     var tasks = read(KEYS.tasks, []);
 
     var countByDay = {};
@@ -110,6 +113,7 @@ var Storage = (function () {
     sessions.forEach(function (s) { bump(s.date); });
     reviews.forEach(function (r) { bump(r.date); });
     questaoRespostas.forEach(function (r) { bump(r.date); });
+    leiSecaRespostas.forEach(function (r) { bump(r.date); });
     tasks.forEach(function (t) { if (t.done && t.completedAt) bump(t.completedAt); });
 
     var result = [];

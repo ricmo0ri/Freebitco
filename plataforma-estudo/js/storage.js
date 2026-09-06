@@ -17,7 +17,8 @@ var Storage = (function () {
     metaDiariaQuestoes: 'estudoTdah.metaDiariaQuestoes',
     revisarDepois: 'estudoTdah.revisarDepois',
     ultimaMissao: 'estudoTdah.ultimaMissao',
-    somConquistas: 'estudoTdah.somConquistas'
+    somConquistas: 'estudoTdah.somConquistas',
+    temasDominados: 'estudoTdah.temasDominados'
   };
 
   function read(key, fallback) {

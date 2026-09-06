@@ -59,12 +59,15 @@ var Missao = (function () {
   }
 
   function registrarResposta(questao, acertou, resultado) {
+    var tema = questao.tema || 'Geral';
+    var statusAntes = window.Fraquezas ? Fraquezas.getStatusDoTema(questao.disciplinaId, tema) : null;
+
     var respostas = Storage.read(Storage.KEYS.questaoRespostas, []);
     respostas.push({
       date: Storage.todayStr(),
       questaoId: questao.id,
       disciplinaId: questao.disciplinaId,
-      tema: questao.tema || 'Geral',
+      tema: tema,
       dificuldade: questao.dificuldade || 'media',
       acertou: acertou,
       xp: resultado.xp,
@@ -75,6 +78,38 @@ var Missao = (function () {
     if (resultado.xp > 0) Perfil.addXp(resultado.xp);
     if (window.Progress) Progress.refresh();
     if (window.App) App.refreshStreakBadge();
+
+    if (acertou && window.Fraquezas) {
+      var jaEraDominado = statusAntes && statusAntes.status === 'dominado';
+      var statusDepois = Fraquezas.getStatusDoTema(questao.disciplinaId, tema);
+      if (statusDepois && statusDepois.status === 'dominado' && !jaEraDominado) {
+        celebrarDominio(questao.disciplinaId, tema);
+      }
+    }
+  }
+
+  // Comemora a primeira vez que um assunto (disciplina+tema) atinge o status
+  // "Dominado" — toca um som distinto e mostra um toast, uma única vez por
+  // assunto (guardado em Storage.KEYS.temasDominados) para não repetir a
+  // cada acerto seguinte já dominado.
+  function celebrarDominio(disciplinaId, tema) {
+    var chave = disciplinaId + '::' + tema;
+    var celebrados = Storage.read(Storage.KEYS.temasDominados, []);
+    if (celebrados.indexOf(chave) !== -1) return;
+    celebrados.push(chave);
+    Storage.write(Storage.KEYS.temasDominados, celebrados);
+
+    if (window.Bemestar) Bemestar.tocarDominio();
+
+    DB.getAll('disciplinas').then(function (disciplinas) {
+      var d = disciplinas.find(function (x) { return x.id === disciplinaId; });
+      var nomeTerritorio = d ? (d.territorio || d.nome) : '';
+      var temSubtema = tema && tema !== 'Geral';
+      var mensagem = temSubtema
+        ? 'Você dominou: ' + tema + (nomeTerritorio ? ' (' + nomeTerritorio + ')' : '') + '!'
+        : 'Você dominou: ' + (nomeTerritorio || 'este assunto') + '!';
+      if (window.Bemestar) Bemestar.mostrarToastConquista(mensagem);
+    });
   }
 
   // ---------- renderização do território picker ----------

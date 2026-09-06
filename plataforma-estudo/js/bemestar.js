@@ -39,6 +39,30 @@ var Bemestar = (function () {
     tocarTom([659, 880, 1175]);
   }
 
+  function tocarDominio() {
+    tocarTom([523, 659, 784, 1047]);
+  }
+
+  // ---------- toast de domínio de assunto ----------
+
+  var toastTimer = null;
+
+  function mostrarToastConquista(mensagem) {
+    if (!els.toast) return;
+    els.toastMensagem.textContent = mensagem;
+    els.toast.hidden = false;
+    // reinicia a animação de entrada mesmo se o toast já estiver visível
+    els.toast.classList.remove('toast-entrando');
+    void els.toast.offsetWidth;
+    els.toast.classList.add('toast-entrando');
+
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      els.toast.hidden = true;
+      toastTimer = null;
+    }, 4500);
+  }
+
   // ---------- overlay genérico ----------
 
   function fecharOverlay() {
@@ -126,6 +150,8 @@ var Bemestar = (function () {
     els.mensagem = document.getElementById('bemestar-mensagem');
     els.acaoPrincipal = document.getElementById('bemestar-acao-principal');
     els.acaoSecundaria = document.getElementById('bemestar-acao-secundaria');
+    els.toast = document.getElementById('conquista-toast');
+    els.toastMensagem = document.getElementById('conquista-toast-mensagem');
   }
 
   return {
@@ -134,6 +160,8 @@ var Bemestar = (function () {
     mostrarPausaGuiada: mostrarPausaGuiada,
     iniciarVigiaHiperfoco: iniciarVigiaHiperfoco,
     tocarConquista: tocarConquista,
-    tocarConquistaGrande: tocarConquistaGrande
+    tocarConquistaGrande: tocarConquistaGrande,
+    tocarDominio: tocarDominio,
+    mostrarToastConquista: mostrarToastConquista
   };
 })();

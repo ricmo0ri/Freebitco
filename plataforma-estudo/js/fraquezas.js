@@ -61,6 +61,16 @@ var Fraquezas = (function () {
     return resultado;
   }
 
+  // Status de um único assunto (disciplina+tema), usado para detectar o
+  // momento exato em que ele passa a "Dominado" logo após uma resposta.
+  function getStatusDoTema(disciplinaId, tema) {
+    var grupos = agruparRespostas();
+    var grupo = grupos[disciplinaId + '::' + (tema || 'Geral')];
+    if (!grupo) return null;
+    var info = classificar(grupo.respostas);
+    return Object.assign({ tema: grupo.tema, disciplinaId: disciplinaId }, info, STATUS_META[info.status]);
+  }
+
   function getTemasFracos(limit) {
     var grupos = agruparRespostas();
     var resultado = [];
@@ -112,6 +122,7 @@ var Fraquezas = (function () {
   return {
     STATUS_META: STATUS_META,
     getStatusPorTema: getStatusPorTema,
+    getStatusDoTema: getStatusDoTema,
     getTemasFracos: getTemasFracos,
     getResumoGeral: getResumoGeral,
     getMapaTerritorios: getMapaTerritorios

@@ -32,8 +32,21 @@ var DB = (function () {
           leiSecaStore.createIndex('disciplinaId', 'disciplinaId');
         }
       };
-      req.onsuccess = function (evt) { resolve(evt.target.result); };
+      req.onsuccess = function (evt) {
+        var db = evt.target.result;
+        // Se outra aba/janela deste app tentar abrir uma versão mais nova
+        // do banco depois, fecha esta conexão de bom grado — sem isso, essa
+        // aba antiga ficaria seguindo aberta e bloquearia a outra pra sempre.
+        db.onversionchange = function () { db.close(); };
+        resolve(db);
+      };
       req.onerror = function (evt) { reject(evt.target.error); };
+      req.onblocked = function () {
+        // Só acontece se outra aba/janela deste mesmo app já estiver aberta
+        // com uma versão mais antiga do banco — sem essa outra aba fechar,
+        // esta ficaria travada esperando pra sempre, sem nenhum erro visível.
+        alert('Este app está aberto em outra aba ou janela com uma versão mais antiga. Feche todas as outras abas deste app e recarregue esta página.');
+      };
     });
     return dbPromise;
   }

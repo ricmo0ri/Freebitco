@@ -3,7 +3,7 @@
 // pensado como a primeira parada antes de encarar questões e lei seca,
 // pra quem precisa de uma porta de entrada mais leve no assunto.
 var ResumoFacilSeed = (function () {
-  var SEED_VERSION_ATUAL = 1;
+  var SEED_VERSION_ATUAL = 2;
 
   var RESUMOS = [
   {
@@ -890,6 +890,39 @@ var ResumoFacilSeed = (function () {
   }
 ];
 
+  // Atualiza resumoSimples/exemplo de itens já inseridos anteriormente,
+  // quando o texto foi reescrito depois da inserção inicial (ex.: pedido de
+  // deixar o resumo "mais explicativo"). Casa pela chave disciplinaId+subtema,
+  // já que o id gravado no banco é aleatório e não rastreia de volta pra
+  // entrada correspondente em RESUMOS.
+  function atualizarConteudoResumo(idPorNome) {
+    return DB.getAll('resumoFacil').then(function (existentes) {
+      var porChave = {};
+      existentes.forEach(function (r) {
+        porChave[r.disciplinaId + '::' + r.subtema] = r;
+      });
+
+      var atualizacoes = [];
+      RESUMOS.forEach(function (r) {
+        var disciplinaId = idPorNome[r.territorio];
+        if (!disciplinaId) return;
+        var existente = porChave[disciplinaId + '::' + r.subtema];
+        if (!existente) return;
+        var mudou = false;
+        if (r.resumoSimples && existente.resumoSimples !== r.resumoSimples) {
+          existente.resumoSimples = r.resumoSimples;
+          mudou = true;
+        }
+        if (r.exemplo && existente.exemplo !== r.exemplo) {
+          existente.exemplo = r.exemplo;
+          mudou = true;
+        }
+        if (mudou) atualizacoes.push(DB.put('resumoFacil', existente));
+      });
+      return Promise.all(atualizacoes);
+    });
+  }
+
   function seedar() {
     var versaoAplicada = Storage.read(Storage.KEYS.resumoFacilSeedVersion, 0);
     if (versaoAplicada >= SEED_VERSION_ATUAL) return Promise.resolve();
@@ -913,6 +946,8 @@ var ResumoFacilSeed = (function () {
       });
 
       return Promise.all(pendentes).then(function () {
+        return atualizarConteudoResumo(idPorNome);
+      }).then(function () {
         Storage.write(Storage.KEYS.resumoFacilSeedVersion, SEED_VERSION_ATUAL);
       });
     });

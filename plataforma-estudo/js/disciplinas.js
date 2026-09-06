@@ -215,6 +215,7 @@ var Disciplinas = (function () {
     Chefoes.setDisciplina(disciplina.id);
     Doutrina.setDisciplina(disciplina.id);
     if (window.LeiSeca) LeiSeca.setDisciplina(disciplina.id);
+    if (window.ResumoFacil) ResumoFacil.setDisciplina(disciplina.id);
     showSubtab('flashcards');
   }
 
@@ -234,6 +235,7 @@ var Disciplinas = (function () {
     els.subviewChefao.classList.toggle('active', name === 'chefao');
     els.subviewDoutrina.classList.toggle('active', name === 'doutrina');
     els.subviewLeiSeca.classList.toggle('active', name === 'leiseca');
+    els.subviewResumoFacil.classList.toggle('active', name === 'resumofacil');
   }
 
   function init() {
@@ -250,6 +252,7 @@ var Disciplinas = (function () {
     els.subviewChefao = document.getElementById('subview-chefao');
     els.subviewDoutrina = document.getElementById('subview-doutrina');
     els.subviewLeiSeca = document.getElementById('subview-leiseca');
+    els.subviewResumoFacil = document.getElementById('subview-resumofacil');
 
     els.form.addEventListener('submit', function (evt) {
       evt.preventDefault();

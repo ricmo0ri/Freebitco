@@ -788,6 +788,46 @@ button:hover > .icon-medalha {
   font-size: 0.85rem;
 }
 
+/* Resumo Fácil */
+.resumo-facil-item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent2);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.resumo-facil-item:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.resumo-facil-item summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--ink);
+}
+.resumo-facil-texto {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink);
+  white-space: pre-wrap;
+  margin: 10px 0;
+}
+.resumo-facil-exemplo {
+  background: var(--accent2-wash);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0;
+}
+
+body.low-stim .resumo-facil-item:hover {
+  transform: none;
+  box-shadow: var(--shadow-sm);
+}
+
 /* Importar prova em PDF */
 .import-panel {
   background: var(--surface);

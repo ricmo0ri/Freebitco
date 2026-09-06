@@ -13,6 +13,7 @@ var Storage = (function () {
     territoriosSeedVersion: 'estudoTdah.territoriosSeedVersion',
     questoesSeedVersion: 'estudoTdah.questoesSeedVersion',
     leiSecaSeedVersion: 'estudoTdah.leiSecaSeedVersion',
+    resumoFacilSeedVersion: 'estudoTdah.resumoFacilSeedVersion',
     lowStim: 'estudoTdah.lowStim',
     tema: 'estudoTdah.tema',
     metaDiariaQuestoes: 'estudoTdah.metaDiariaQuestoes',

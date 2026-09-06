@@ -180,6 +180,7 @@
           <button class="subtab-btn" data-subtab="chefao">👹 Chefão</button>
           <button class="subtab-btn" data-subtab="doutrina">📖 Doutrina</button>
           <button class="subtab-btn" data-subtab="leiseca">📜 Lei Seca</button>
+          <button class="subtab-btn" data-subtab="resumofacil">🧠 Resumo Fácil</button>
         </div>
 
         <!-- Subview: Flashcards -->
@@ -367,6 +368,16 @@
             </div>
           </div>
         </div>
+
+        <!-- Subview: Resumo Fácil -->
+        <div id="subview-resumofacil" class="subview">
+          <p class="hint-text">
+            Antes de encarar questões e lei seca, um resumo bem simples de cada assunto — como se alguém estivesse
+            te explicando do zero, com um exemplo fácil de lembrar.
+          </p>
+          <p id="resumo-facil-empty" class="empty-state">Nenhum resumo fácil cadastrado ainda para este território.</p>
+          <div id="resumo-facil-list"></div>
+        </div>
       </div>
 
     </section>
@@ -500,6 +511,7 @@
 <script src="js/db.js"></script>
 <script src="js/questoesSeed.js"></script>
 <script src="js/leiSecaSeed.js"></script>
+<script src="js/resumoFacilSeed.js"></script>
 <script src="js/perfil.js"></script>
 <script src="js/fraquezas.js"></script>
 <script src="js/revisao.js"></script>
@@ -510,6 +522,7 @@
 <script src="js/flashcards.js"></script>
 <script src="js/questoes.js"></script>
 <script src="js/leiSeca.js"></script>
+<script src="js/resumoFacil.js"></script>
 <script src="js/chefoes.js"></script>
 <script src="js/doutrina.js"></script>
 <script src="js/vendor/pdf.min.js"></script>

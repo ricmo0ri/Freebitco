@@ -4,7 +4,7 @@
 // chefões por tema, XP/combo e estatística de fraquezas — não é um passo à
 // parte, é como o motor de questões já funciona pra qualquer questão.
 var QuestoesSeed = (function () {
-  var SEED_VERSION_ATUAL = 7;
+  var SEED_VERSION_ATUAL = 8;
 
   var PROVAS = [
     {
@@ -18902,6 +18902,1244 @@ var QuestoesSeed = (function () {
           "explicacaoErradas": "A alternativa A está errada porque a lei prevê expressamente a modalidade omissiva do crime ('inclusive por omissão'), não sendo verdade que não existe crime ambiental omissivo. A B erra porque a responsabilização da pessoa jurídica (empreendedor) não exclui a responsabilidade penal da pessoa física que efetivamente praticou a conduta criminosa — ambas podem responder. A D erra porque a lei não prevê diminuição de pena pelo simples fato de o autor material ser o técnico contratado, e sim aumento de pena quando há dano significativo, como ocorreu no caso.",
           "pegadinha": "A armadilha é achar que crime ambiental omissivo não existe, ou que só o empreendedor (pessoa jurídica) responde — a lei prevê expressamente a omissão como conduta criminosa e não afasta a responsabilidade pessoal de quem efetivamente elaborou o estudo enganoso.",
           "regraMemoria": "EIA falso ou enganoso, mesmo por omissão, é crime — e a pena aumenta se causar dano significativo."
+        }
+      ]
+    },
+    {
+      "provaOrigem": "39º Exame de Ordem Unificado (questões 37 a 80)",
+      "seedVersion": 8,
+      "questoes": [
+        {
+          "territorio": "Direito Civil",
+          "tema": "Família",
+          "enunciado": "Júlio Cesar e Thayane foram casados por 8 anos e tiveram 2 filhos. Como a separação foi amigável, o casal achou melhor não realizar qualquer medida judicial, acordando verbalmente o valor da pensão alimentícia que seria paga em benefício dos menores, bem como o esquema de convivência parental. Entretanto, 3 anos após a separação, Thayane resolveu reajustar o valor da pensão alimentícia. O que não foi aceito por Júlio Cesar. Como não conseguiram alcançar um acordo, já que Júlio Cesar não pagou os valores solicitados, Thayane decidiu suspender o contato do pai com os filhos. Sem poder ter contato com os filhos, Júlio Cesar procura você, como advogado(a), a fim de receber sua orientação. Assinale a opção que indica, corretamente, sua orientação.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A medida adotada por Thayane está correta, pois a mãe tem autonomia para suspender o contato do pai que não cumpre com seus deveres de prestar alimentos, resguardando, dessa forma, a proteção necessária ao desenvolvimento biopsíquico dos menores."
+            },
+            {
+              "letra": "B",
+              "texto": "Thayane pode impedir o contato de Júlio Cesar com o filho já que, após a separação, o exercício da autoridade familiar é exclusivo da mãe, que tem o dever de garantir os direitos das crianças e dos adolescentes."
+            },
+            {
+              "letra": "C",
+              "texto": "Thayane não pode impedir a convivência de Júlio Cesar com os filhos em razão do não pagamento de pensão alimentícia nos valores que foram pleiteados, pois independentemente das questões pendentes com relação aos alimentos, a convivência dos filhos com os pais é um direito fundamental."
+            },
+            {
+              "letra": "D",
+              "texto": "Thayane não pode impedir o contato de Júlio Cesar com os filhos, já que, tanto os alimentos, quando a guarda e convivência parental jamais foram regularizadas judicialmente, limitando-se o casal a um acordo verbal."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A convivência familiar é direito fundamental da criança e do adolescente (art. 227 da CF e ECA), autônomo em relação à obrigação alimentar. Alimentos e convivência são deveres e direitos independentes: o descumprimento de um não autoriza retaliação sobre o outro. Por isso Thayane não pode usar a convivência dos filhos com o pai como moeda de troca para pressionar o pagamento de pensão.",
+          "explicacaoErradas": "A alternativa A erra porque nenhum dos genitores tem autonomia para suspender unilateralmente a convivência como sanção por inadimplemento de alimentos — essa é uma medida que, se cabível, depende de decisão judicial fundada no interesse da criança, não em represália. A alternativa B erra porque, após a separação, a autoridade parental (antigo pátrio poder) continua sendo exercida por ambos os pais, e não se torna exclusiva da mãe. A alternativa D erra porque a ausência de regularização judicial da guarda e dos alimentos não retira do pai o direito de convívio com os filhos, que existe independentemente de formalização em juízo.",
+          "pegadinha": "A pegadinha é achar que o não pagamento da pensão dá à mãe o direito de 'punir' o pai cortando o contato com os filhos — a questão testa se você separa bem as duas obrigações (alimentos x convivência).",
+          "regraMemoria": "Alimentos e convivência são obrigações independentes: falta de pagar pensão nunca autoriza cortar visita."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Contratos",
+          "enunciado": "Marcelo alugou um cavalo do haras Galopante para, com ele, disputar a corrida no dia 15, comprometendo-se a devolvê-lo no dia seguinte à corrida (dia 16). Entretanto, Marcelo se afeiçoou pelo animal e não o devolveu no prazo estipulado, usando-o para passeios em sua fazenda. O haras, com isso, deixou de alugar o animal para outro jóquei que pretendia correr com ele no dia 18 e já o havia reservado. Para completar, no dia 20, em um dos passeios com Marcelo, o cavalo se assustou com uma cobra e sofreu uma queda. No acidente, fraturou a perna e teve que ser sacrificado. Diante disso, assinale a opção que indica os prejuízos que o haras Galopante pode exigir de Marcelo devido à falta do cavalo.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Deve ser incluído o aluguel que deixou de receber do outro jóquei, porque Marcelo ficou liberado da responsabilidade pela impossibilidade da prestação a partir do dia 20, eis que decorrente de caso fortuito."
+            },
+            {
+              "letra": "B",
+              "texto": "Devem ser excluídos tanto o aluguel que receberia do outro jóquei, por se tratar de dano hipotético, como o equivalente do animal, pois Marcelo ficou liberado da responsabilidade pela impossibilidade da prestação a partir do dia 20, eis que decorrente de caso fortuito."
+            },
+            {
+              "letra": "C",
+              "texto": "Deve ser incluído o equivalente pecuniário do cavalo, tendo em vista a responsabilidade de Marcelo pela impossibilidade da prestação enquanto estava em mora, mas excluído o aluguel que receberia do outro jóquei, por se tratar de dano hipotético."
+            },
+            {
+              "letra": "D",
+              "texto": "Devem ser incluídos tanto o aluguel que deixou de receber do outro jóquei como o equivalente pecuniário do cavalo, tendo em vista a responsabilidade de Marcelo pela impossibilidade da prestação, enquanto estava em mora."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Marcelo estava em mora desde o dia 17, pois deveria ter devolvido o cavalo no dia 16. O Código Civil estabelece que o devedor em mora responde pela impossibilidade da prestação mesmo quando ela decorre de caso fortuito ocorrido durante o atraso, salvo se provar que o dano ocorreria de qualquer forma mesmo com a devolução tempestiva — o que não é o caso aqui. Por isso Marcelo deve tanto o valor do cavalo quanto o aluguel perdido, que não é hipotético, já havia um jóquei com reserva concreta para o dia 18.",
+          "explicacaoErradas": "A alternativa A erra ao dizer que Marcelo ficou liberado da responsabilidade pelo caso fortuito — quem está em mora não se beneficia dessa exclusão, salvo prova de que o dano ocorreria de qualquer modo. A alternativa B erra pelo mesmo motivo quanto à liberação da responsabilidade, e também erra ao chamar de 'hipotético' o aluguel perdido, quando na verdade havia uma reserva concreta e comprovável de outro jóquei. A alternativa C acerta quanto ao cavalo, mas erra ao excluir o aluguel perdido sob o rótulo de dano hipotético — não é hipotético, é lucro cessante certo e demonstrável.",
+          "pegadinha": "A pegadinha é achar que, por o acidente ter sido fortuito (a cobra assustar o cavalo), Marcelo estaria automaticamente livre da responsabilidade — mas ele estava em mora, e mora afasta a excludente de caso fortuito.",
+          "regraMemoria": "Devedor em mora responde pelo caso fortuito também: quem atrasa a devolução, paga a conta se a coisa se perder depois."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Responsabilidade Civil",
+          "enunciado": "Luan, conduzindo seu automóvel em velocidade acima da permitida, colidiu violentamente contra o veículo em que estavam Felipe, com 10 anos de idade, e seus pais, Paulo, com 45 anos de idade, e Juliana, com 38 anos. Em razão do acidente, Felipe sofreu ferimentos graves, só recebendo alta hospitalar após seis meses. Paulo e Juliana faleceram no acidente. Pedro, tio de Felipe, foi nomeado seu tutor, função que exerceu até a maioridade de Felipe. Ao completar 18 anos de idade, Felipe ajuizou ação indenizatória em face de Luan, buscando reparação pelos danos morais sofridos em razão do acidente, bem como o ressarcimento de despesas médicas. A respeito do caso acima narrado, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A pretensão ressarcitória de Felipe não está prescrita, eis que exercida no prazo quinquenal, cujo termo inicial é a data em que Felipe alcançou a maioridade civil."
+            },
+            {
+              "letra": "B",
+              "texto": "A pretensão de Felipe não está prescrita, pois o termo inicial do prazo trienal é a data em que Felipe completou 16 anos."
+            },
+            {
+              "letra": "C",
+              "texto": "Luan e Felipe poderão convencionar que o prazo prescricional aplicável à pretensão de Luan é de dez anos."
+            },
+            {
+              "letra": "D",
+              "texto": "É vedado a Luan renunciar à eventual prescrição que lhe beneficie."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A pretensão de reparação civil prescreve em três anos. Contra os absolutamente incapazes — hoje, apenas os menores de 16 anos — a prescrição sequer começa a correr. Assim, enquanto Felipe tinha menos de 16 anos, o prazo estava paralisado; ele só começou a fluir quando Felipe completou 16 anos (passando à incapacidade relativa). Ajuizada a ação aos 18 anos, ainda não haviam se passado os três anos, logo não há prescrição.",
+          "explicacaoErradas": "A alternativa A erra tanto no prazo (não é quinquenal, é trienal para reparação civil) quanto no termo inicial (não é a maioridade, é a data em que Felipe deixou de ser absolutamente incapaz, aos 16 anos). A alternativa C erra porque os prazos de prescrição são normas de ordem pública e não podem ser alterados por convenção das partes. A alternativa D erra porque a renúncia à prescrição é permitida, desde que feita depois de consumado o prazo prescricional e sem prejuízo de terceiros — o que é vedado é renunciar antes de a prescrição se completar.",
+          "pegadinha": "A pegadinha é confundir a data da maioridade (18 anos) com o marco que reinicia a contagem da prescrição — o que importa é a saída da incapacidade absoluta, que ocorre aos 16 anos, não aos 18.",
+          "regraMemoria": "Prescrição não corre contra menor de 16; o relógio dos 3 anos da reparação civil só começa a contar quando ele completa 16."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Obrigações",
+          "enunciado": "Ana comprou de Miguel um carro usado, por R$ 60.000,00, e combinou de fazer o pagamento à vista, por PIX. Ocorre que, na hora de digitar a chave PIX de Miguel – seu número de celular –, Ana errou um dígito, e acabou enviando o pagamento, por coincidência, para uma pessoa chamada José Miguel. Ao receber o comprovante, Miguel alertou a compradora para o equívoco. Ana, então, entrou imediatamente em contato com José Miguel por telefone, pedindo a restituição do valor transferido. Em seguida, encaminhou notificação extrajudicial, requerendo a restituição do valor. José Miguel, todavia, esquivou-se de fazê-lo, o que levou Ana a procurar você, como advogado, para orientá-la sobre o problema. Sobre a orientação dada, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O fato narrado configura doação de Ana a José Miguel, que ela somente poderia discutir por meio da ação anulatória, provando algum dos defeitos dos negócios jurídicos."
+            },
+            {
+              "letra": "B",
+              "texto": "Em eventual ação de Ana contra José Miguel, provando a autora o erro no pagamento, deve o réu ser condenado a restituir à autora apenas a quantia nominal indevidamente recebida."
+            },
+            {
+              "letra": "C",
+              "texto": "Em eventual ação de Ana contra José Miguel, provando a autora o erro no pagamento, deve o réu ser condenado a restituir à autora a quantia indevidamente recebida, com acréscimos da mora, desde a data do fato, cabendo a ele, todavia, eventuais rendimentos que tenha auferido por ter investido o montante."
+            },
+            {
+              "letra": "D",
+              "texto": "Em eventual ação de Ana contra José Miguel, provando a autora o erro no pagamento, deve o réu ser condenado a restituir a quantia indevidamente recebida, com os acréscimos da mora, desde a data do fato, bem como eventuais rendimentos que José Miguel tenha auferido por ter investido o montante, vez que se considera possuidor de má-fé."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Trata-se de pagamento indevido (erro no destinatário do PIX), que gera para o recebedor o dever de restituir. Como José Miguel foi avisado do erro e mesmo assim se recusou a devolver o dinheiro, ele passa a ser possuidor de má-fé quanto ao valor recebido, respondendo não só pela quantia com correção e juros de mora desde o fato, mas também pelos frutos e rendimentos que eventualmente tenha auferido investindo o dinheiro que sabia não lhe pertencer.",
+          "explicacaoErradas": "A alternativa A erra porque não há qualquer intenção de doar (animus donandi); o pagamento foi decorrente de erro material, e o instrumento cabível é a ação de repetição do indébito, não a ação anulatória por vício de vontade. A alternativa B erra ao limitar a restituição à quantia nominal, sem juros e correção, quando o réu está em mora desde que se recusou a devolver. A alternativa C erra ao deixar os rendimentos com José Miguel: uma vez caracterizada a má-fé (ele sabia do erro e não devolveu), os frutos/rendimentos pertencem a quem tem direito à restituição, não a quem os produziu de má-fé.",
+          "pegadinha": "A pegadinha é achar que, por não ter sido José Miguel quem causou o erro, ele estaria isento de consequências mais severas — mas a notificação do erro e a recusa em devolver transformam sua posse em posse de má-fé, agravando sua responsabilidade.",
+          "regraMemoria": "Recebeu por engano e foi avisado? Vira possuidor de má-fé: devolve tudo, com juros e com o que rendeu."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Parte Geral",
+          "enunciado": "Devido às consequências da pandemia, Gabriel Cervantes teve graves problemas financeiros e profissionais, levando ao consumo de álcool de forma excessiva diariamente, sendo considerado pelos médicos como ébrio habitual. Rosa Torres, sua esposa, desesperada com a condição do marido e pela situação financeira da família, procura você, como advogado(a), desejando saber a respeito da possibilidade de curatela. Informa a esposa que o casal tem dois filhos absolutamente incapazes e os pais do marido encontram-se vivos. Comunica ainda que o casal não se encontra separado. Sobre a hipótese, segundo o sistema jurídico brasileiro, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O alcoolismo por si só não conduz à curatela, devendo a esposa demonstrar a prodigalidade do marido."
+            },
+            {
+              "letra": "B",
+              "texto": "Em eventual curatela, os pais terão prioridade no exercício em relação à esposa, que só poderá ser designada curadora na desistência dos pais."
+            },
+            {
+              "letra": "C",
+              "texto": "A autoridade do curador estende-se à pessoa e aos bens dos filhos do curatelado, enquanto não houver a maioridade ou a emancipação."
+            },
+            {
+              "letra": "D",
+              "texto": "A interdição do ébrio habitual só o privará de, sem curador, emprestar, transigir, dar quitação, alienar ou hipotecar seu patrimônio, podendo praticar livremente os demais atos da vida civil."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O Código Civil prevê que a autoridade do curador se estende à pessoa e aos bens dos filhos menores ou incapazes do curatelado, enquanto durar essa condição, cessando com a maioridade ou emancipação. Como o casal tem filhos absolutamente incapazes, Gabriel, mesmo sob curatela, teria a autoridade sobre eles exercida por seu curador, até que atinjam a maioridade ou sejam emancipados.",
+          "explicacaoErradas": "A alternativa A erra porque o ébrio habitual está expressamente sujeito à curatela pelo próprio vício em si, sem necessidade de comprovar prodigalidade (que é causa distinta de curatela). A alternativa B inverte a ordem legal: o cônjuge não separado judicialmente ou de fato é, por lei, o curador natural do outro, tendo prioridade sobre os pais, e não o contrário. A alternativa D erra porque essa lista restrita de atos vedados é a que a lei associa especificamente à interdição do pródigo; a extensão da curatela do ébrio habitual é fixada pelo juiz conforme as necessidades da pessoa, não segue automaticamente esse rol fechado.",
+          "pegadinha": "A pegadinha é misturar os regimes de curatela do pródigo com o do ébrio habitual, e também inverter a ordem de prioridade entre cônjuge e pais na função de curador.",
+          "regraMemoria": "Cônjuge não separado é curador de direito, na frente dos pais; e a curatela do pai/mãe também 'puxa' os filhos incapazes até a maioridade."
+        },
+        {
+          "territorio": "Direito Civil",
+          "tema": "Direitos Reais",
+          "enunciado": "Vítor contraiu empréstimo perante uma instituição bancária e ofereceu, como garantia da dívida, a hipoteca sobre um bem imóvel dele. Considerando essa situação hipotética, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Vítor poderá alienar o imóvel hipotecado, salvo se o contrato de empréstimo vedar a alienação, cláusula que é considerada válida."
+            },
+            {
+              "letra": "B",
+              "texto": "Vítor poderá alienar o imóvel hipotecado, mas a alienação implicará o vencimento automático do empréstimo, independentemente de previsão no contrato."
+            },
+            {
+              "letra": "C",
+              "texto": "Vítor não poderá alienar o imóvel hipotecado, porque isso resultaria em conduta contrária à boa-fé objetiva."
+            },
+            {
+              "letra": "D",
+              "texto": "Caso Vítor realize melhoramentos no imóvel após a constituição da hipoteca, eles integrarão a garantia real em prol da instituição bancária."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A hipoteca abrange todas as acessões, melhoramentos e construções feitos no imóvel após sua constituição, de modo que qualquer benfeitoria ou melhoramento realizado por Vítor passa a integrar automaticamente a garantia real em favor do banco credor.",
+          "explicacaoErradas": "A alternativa A erra porque é nula a cláusula que proíbe o proprietário de alienar o imóvel hipotecado — o devedor hipotecante sempre pode vender o bem, já que a garantia segue o imóvel (direito de sequela) independentemente de quem seja o dono. A alternativa B erra porque o vencimento antecipado da dívida em razão da alienação não é automático por lei: só ocorre se houver cláusula expressa nesse sentido no contrato. A alternativa C erra porque não há vedação à alienação do bem hipotecado; a proteção do credor se dá pelo direito de sequela sobre a garantia, e não pela impossibilidade de venda.",
+          "pegadinha": "A pegadinha é achar que hipoteca trava a venda do imóvel — na verdade o devedor pode vender livremente, sendo nula qualquer cláusula que proíba isso; o que muda é apenas o destino da garantia, que segue o bem.",
+          "regraMemoria": "Hipoteca não impede vender o imóvel (cláusula proibindo é nula), mas tudo que for construído nele depois vira garantia também."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Competência e Partes",
+          "enunciado": "Carlos e Joana, pais da criança Paula, estão dissolvendo sua união estável, ainda sem judicialização, detendo Joana a guarda de fato de Paula enquanto não regularizados os regimes de visitação ou compartilhamento da guarda. Por razões profissionais, Carlos mudou-se para o município contíguo ao da residência de Joana e Paula. Ocorre que Carlos, estando insatisfeito com algumas decisões de Joana sobre a vida da criança, e não mais conseguindo ajustar amistosamente tais questões, precipitou o ajuizamento do processo para regulamentação da guarda e pensionamento, no Juízo da comarca em que está residindo. Joana procura você, como advogado(a), para representá-la, reclamando de ter de se defender em outra cidade. Com base no enunciado acima, sobre a questão da competência, assinale a orientação que você, corretamente, daria à Joana.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O juízo de residência de Carlos é tão competente quanto o da residência de Joana, eis que apenas quando da definição da guarda – que é o que se pretende – a competência passa a ser do foro do guardião judicialmente definido."
+            },
+            {
+              "letra": "B",
+              "texto": "A competência para este processo de regulamentação de guarda e pensão incumbe ao Juízo da comarca de residência de Paula, e não de Carlos, pois a guarda de fato já basta para tal fixação."
+            },
+            {
+              "letra": "C",
+              "texto": "A competência será sempre definida em razão daquele que primeiro postular judicialmente a regulamentação da guarda."
+            },
+            {
+              "letra": "D",
+              "texto": "A guarda é irrelevante para fins de determinação da competência, devendo o feito ser processado em razão do melhor interesse da criança, seja qual for o foro inicialmente escolhido."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A competência para ações relativas a guarda e pensionamento de criança é fixada pelo domicílio de quem detém a guarda de fato do menor, no interesse da própria criança — e não pelo domicílio de quem ajuizou a ação. Como Joana já detinha a guarda de fato de Paula, o foro competente é o de sua comarca (onde a criança reside), e não o de Carlos.",
+          "explicacaoErradas": "A alternativa A erra ao equiparar os dois foros como igualmente competentes; a guarda de fato já define a competência mesmo antes de qualquer decisão judicial sobre guarda. A alternativa C erra porque o critério não é quem ajuizou primeiro (prevenção), mas sim o domicílio de quem detém a guarda de fato/a criança, que é regra específica e prevalece sobre a prevenção territorial comum. A alternativa D erra ao dizer que a guarda é irrelevante — é justamente o critério legal usado para fixar a competência nesses casos.",
+          "pegadinha": "A pegadinha é achar que, por Carlos ter ajuizado a ação primeiro no seu próprio foro, a competência já estaria fixada por prevenção — mas em ações envolvendo guarda de criança, o domicílio do guardião de fato prevalece sobre quem chegou primeiro ao Judiciário.",
+          "regraMemoria": "Quem tem a guarda de fato da criança 'puxa' o foro competente — não importa quem entrou com a ação primeiro."
+        },
+        {
+          "territorio": "Direito da Criança e do Adolescente",
+          "tema": "Adoção e Família Substituta",
+          "enunciado": "Eduardo adotou Bernardo, criança de dois anos, regularmente e de forma unilateral, tornando-se seu pai. Quando Bernardo completou três anos, Eduardo, infelizmente, faleceu vítima de um infarto. Eduardo não deixou parentes conhecidos. Maria, a mãe biológica de Bernardo, sempre se arrependeu de tê-lo enviado à adoção. Sabendo do ocorrido e ciente de que não há o restabelecimento do vínculo de poder familiar, pelo fato de ter ocorrido a morte do adotante, Maria o procura, como advogado(a), para buscar uma solução que permita que Bernardo volte a ser seu filho. Assinale a opção que apresenta a solução proposta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A mãe biológica, infelizmente, não tem ao seu alcance qualquer medida para restabelecer o vínculo de parentalidade com Bernardo."
+            },
+            {
+              "letra": "B",
+              "texto": "A mãe biológica deverá se candidatar à adoção de Bernardo, da mesma forma e pelos mesmos procedimentos que qualquer outro candidato."
+            },
+            {
+              "letra": "C",
+              "texto": "A mãe biológica não poderá se candidatar à readoção de seu filho biológico, pois a dissolução do vínculo familiar é perene."
+            },
+            {
+              "letra": "D",
+              "texto": "A inexistência de parentes do adotante falecido causa a excepcional restauração do vínculo familiar com a mãe biológica, fugindo à regra geral."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A morte do adotante não restabelece o poder familiar dos pais biológicos — a adoção é medida irrevogável. Mas nada impede que a mãe biológica se habilite como candidata à adoção de Bernardo, seguindo o mesmo cadastro e os mesmos procedimentos exigidos de qualquer outro pretendente, sem que sua condição de mãe biológica lhe dê preferência automática.",
+          "explicacaoErradas": "A alternativa A erra porque existe sim uma via disponível a Maria: candidatar-se à adoção como qualquer interessado. A alternativa C erra porque não há vedação legal a que a mãe biológica se candidate a adotar seu filho biológico já adotado por terceiro; ela concorre normalmente ao processo de habilitação. A alternativa D erra porque a lei é clara: nem a morte do adotante, nem a ausência de outros parentes dele, restabelece automaticamente o poder familiar da família biológica — a irrevogabilidade da adoção não comporta essa exceção.",
+          "pegadinha": "A pegadinha é achar que a ausência de parentes do adotante falecido criaria uma exceção que devolveria a criança automaticamente à mãe biológica — a adoção é irrevogável independentemente disso.",
+          "regraMemoria": "Adoção é para sempre: morte do adotante não devolve o filho aos pais biológicos, que só podem tentar adotar de novo como qualquer candidato."
+        },
+        {
+          "territorio": "Direito do Consumidor",
+          "tema": "Direitos Básicos e Informação",
+          "enunciado": "Adônis procurou você, como advogado(a), queixando-se de lhe ter sido negado crédito. Informou que a recusa se baseou em pontuação baixa atribuída por meio do uso do método para avaliação do risco de concessão de crédito, conhecido como sistema \"escore de crédito\". Disse que o método foi aplicado sem o seu consentimento prévio, bem como explicou que não foram prestados esclarecimentos a respeito das fontes dos dados considerados nem das informações pessoais valoradas. A respeito desse assunto, à luz das disposições do Código de Defesa do Consumidor sobre banco de dados e cadastro de consumidores, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A realização de qualquer avaliação de risco para a concessão de crédito, com o objetivo de criar sistema de escore de consumidor, deve ser sempre precedida do consentimento do interessado no prazo de 5 (cinco) dias úteis."
+            },
+            {
+              "letra": "B",
+              "texto": "A indicação ao consumidor das fontes dos dados considerados pelo fornecedor para o cálculo do escore de crédito fica dispensada."
+            },
+            {
+              "letra": "C",
+              "texto": "O consentimento prévio do consumidor consultado é desnecessário, mas a ele deve ser garantido o acesso às informações pessoais valoradas e às fontes dos dados considerados no cálculo do escore de crédito."
+            },
+            {
+              "letra": "D",
+              "texto": "As informações pessoais valoradas são de autonomia do fornecedor e não precisam ser conhecidas pelo consumidor, pois são confidenciais."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A disciplina legal do sistema de 'escore de crédito' (credit scoring) dispensa o consentimento prévio do consumidor para a consulta, diferentemente de outras hipóteses de cadastro. Em contrapartida, assegura-se ao consumidor consultado o direito de acesso às informações pessoais utilizadas para compor sua pontuação e às fontes dos dados considerados, em respeito à transparência e ao direito à informação.",
+          "explicacaoErradas": "A alternativa A erra ao exigir consentimento prévio como condição geral para o escore de crédito — essa modalidade específica de avaliação de risco não depende de consentimento prévio do consumidor. A alternativa B erra porque a indicação das fontes dos dados não é dispensada, é justamente um direito assegurado ao consumidor. A alternativa D erra pelo mesmo motivo: as informações pessoais valoradas não são confidenciais em relação ao próprio titular, que tem direito de acesso a elas.",
+          "pegadinha": "A pegadinha é achar que, por não haver exigência de consentimento prévio, o consumidor ficaria também sem direito de saber como e com quais dados sua pontuação foi calculada — são coisas distintas: dispensa-se o consentimento, mas não a transparência.",
+          "regraMemoria": "Escore de crédito não precisa de sua autorização prévia, mas você sempre tem direito de saber quais dados e fontes formaram sua nota."
+        },
+        {
+          "territorio": "Direito do Consumidor",
+          "tema": "Responsabilidade pelo Fato/Vício",
+          "enunciado": "Em viagem realizada do Rio de Janeiro para os Estados Unidos, em janeiro de 2023, Luan e Vanessa tiveram uma de suas malas extraviada, tendo sofrido um prejuízo quantificado em cerca de R$ 15.000,00 (quinze mil reais). Acionada, a empresa aérea alegou que sua responsabilidade estava limitada ao teto previsto na Convenção de Varsóvia e que o Código de Defesa do Consumidor (CDC) não era aplicável à hipótese, por se tratar de transporte internacional. Considerando a jurisprudência predominante no Supremo Tribunal Federal, no que toca ao tema das indenizações por danos materiais decorrentes de extravio de bagagens de viajantes no transporte aéreo, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O CDC é sempre aplicável, independentemente de se tratar de um voo internacional ou doméstico, não sendo possível qualquer tratado ou convenção internacional limitar o valor das indenizações cabíveis, pois tal fato configuraria violação à soberania nacional."
+            },
+            {
+              "letra": "B",
+              "texto": "Nos voos internacionais prevalecem integralmente as limitações contidas em normativas internacionais, como a Convenção de Varsóvia e a Convenção de Montreal, enquanto nos voos domésticos aplica-se unicamente o CDC, não sendo aplicáveis as limitações contidas naquelas convenções."
+            },
+            {
+              "letra": "C",
+              "texto": "Em se tratando de contrato de transporte aéreo, aplicam-se as limitações contidas nas convenções internacionais tanto aos voos domésticos quanto aos internacionais."
+            },
+            {
+              "letra": "D",
+              "texto": "As limitações contidas na Convenção de Varsóvia e na Convenção de Montreal somente são aplicáveis quando explicitadas no contrato assinado pelo consumidor, em obediência ao dever de informação exigido pelo CDC."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O STF, com repercussão geral, fixou entendimento de que as normas e tratados internacionais que limitam a responsabilidade das transportadoras aéreas — como as Convenções de Varsóvia e de Montreal — prevalecem sobre o CDC especificamente quanto aos danos materiais decorrentes de extravio de bagagem em voos internacionais, com fundamento no art. 178 da Constituição Federal. Já nos voos domésticos, por não estarem sujeitos a essas convenções internacionais, aplica-se integralmente o CDC, sem as limitações indenizatórias.",
+          "explicacaoErradas": "A alternativa A erra ao afirmar que o CDC sempre prevalece sem qualquer limitação, o que contraria exatamente o entendimento do STF para voos internacionais. A alternativa C erra ao estender as limitações das convenções internacionais também aos voos domésticos, quando essas convenções regulam apenas o transporte aéreo internacional. A alternativa D erra ao condicionar a aplicação das convenções a estarem expressamente citadas no contrato — elas se aplicam por força do próprio tratado internacional, independentemente de constarem do contrato.",
+          "pegadinha": "A pegadinha é generalizar a regra: a limitação das convenções internacionais vale só para voos internacionais; em voo doméstico o CDC vale sem limitação alguma.",
+          "regraMemoria": "Voo internacional: vale o teto da convenção (Varsóvia/Montreal) para dano material da bagagem. Voo doméstico: vale o CDC sem teto."
+        },
+        {
+          "territorio": "Direito Empresarial",
+          "tema": "Recuperação Judicial e Falência",
+          "enunciado": "Pedreira Anitápolis Ltda. está passando por sérias dificuldades de fluxo de caixa a curto e médio prazo e não está conseguindo crédito no mercado financeiro para honrar seus compromissos urgentes, em especial com credores trabalhistas e por acidentes de trabalho. A sociedade empresária pretende elaborar um plano de recuperação extrajudicial para apresentar a seus credores e negociar com eles sua aprovação. Sobre a pretensão de submeter créditos trabalhistas e por acidentes de trabalho aos efeitos da recuperação extrajudicial, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Os créditos de natureza trabalhista e por acidentes de trabalho podem ser incluídos no plano de recuperação extrajudicial, mas, para a homologação, é necessária prévia negociação coletiva com o sindicato da respectiva categoria funcional."
+            },
+            {
+              "letra": "B",
+              "texto": "Os créditos de natureza trabalhista e por acidentes de trabalho, à semelhança do que ocorre com os créditos de natureza tributária, não podem ser incluídos no plano de recuperação extrajudicial, por não se sujeitarem aos efeitos da recuperação extrajudicial."
+            },
+            {
+              "letra": "C",
+              "texto": "Os créditos decorrentes de acidentes de trabalho, no limite máximo de 150 (cento e cinquenta) salários mínimos por empregado, podem ser incluídos no plano de recuperação extrajudicial, mas os créditos de natureza trabalhista não se sujeitam aos efeitos da recuperação extrajudicial."
+            },
+            {
+              "letra": "D",
+              "texto": "Os créditos de natureza trabalhista podem ser incluídos no plano de recuperação extrajudicial, mediante negociação coletiva prévia com o sindicato da respectiva categoria funcional, mas os créditos decorrentes de acidentes de trabalho não se sujeitam aos efeitos da recuperação extrajudicial."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Desde a reforma da Lei de Recuperação e Falências, tanto os créditos trabalhistas quanto os decorrentes de acidente de trabalho podem ser incluídos no plano de recuperação extrajudicial, mas isso exige, como condição para a homologação, que a negociação com esses credores seja feita coletivamente, com participação do sindicato da categoria profissional, preservando a proteção que o direito do trabalho confere a esses créditos.",
+          "explicacaoErradas": "A alternativa B erra ao equiparar créditos trabalhistas/de acidente de trabalho aos créditos tributários — estes sim continuam fora do alcance da recuperação extrajudicial, mas os trabalhistas passaram a poder ser incluídos desde que observada a negociação coletiva. As alternativas C e D erram ao excluir, cada uma, um dos dois tipos de crédito (acidente de trabalho ou trabalhista) da possibilidade de inclusão — a lei trata ambos da mesma forma, exigindo a mesma negociação coletiva sindical para os dois.",
+          "pegadinha": "A pegadinha é confundir a vedação que existe para créditos tributários com os créditos trabalhistas — estes podem entrar no plano extrajudicial, desde que haja negociação coletiva prévia com o sindicato.",
+          "regraMemoria": "Trabalhista e acidente de trabalho podem entrar na extrajudicial, mas só com o sindicato negociando junto; tributário nunca entra."
+        },
+        {
+          "territorio": "Direito Empresarial",
+          "tema": "Empresário e Sociedade Empresária",
+          "enunciado": "O empresário individual Valério Pavão deseja alterar a forma de exercício da sociedade empresária, passando a admitir como sócios Jerônimo e Atílio, e mantendo a mesma atividade e localização de seu estabelecimento. Sobre a mudança pretendida, assinale a opção que apresenta as ações que Valério Pavão deverá executar.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Dissolver sua empresa individual e, após o encerramento da liquidação, constituir uma sociedade com os sócios Jerônimo e Atílio."
+            },
+            {
+              "letra": "B",
+              "texto": "Solicitar ao Registro Público de Empresas Mercantis a transformação de seu registro de empresário para registro de sociedade empresária."
+            },
+            {
+              "letra": "C",
+              "texto": "Solicitar ao Registro Público de Empresas Mercantis o enquadramento de sua empresa como microempresa para, em seguida, requerer a transformação do registro para sociedade empresária."
+            },
+            {
+              "letra": "D",
+              "texto": "Dissolver sua empresa individual e, no curso da liquidação e após o levantamento do balanço patrimonial, constituir uma sociedade com os sócios Jerônimo e Atílio."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O Registro Público de Empresas Mercantis admite a transformação direta do registro de empresário individual para registro de sociedade empresária, sem necessidade de dissolver e liquidar o negócio para depois constituir uma nova pessoa jurídica — basta requerer administrativamente essa transformação de tipo de registro, preservando a continuidade da atividade.",
+          "explicacaoErradas": "As alternativas A e D erram porque exigem, sem necessidade, a dissolução e liquidação da empresa individual antes de constituir a nova sociedade — trâmite mais custoso e demorado que a lei não exige para esse tipo de mudança. A alternativa C erra ao inserir uma etapa intermediária de enquadramento como microempresa que não é pressuposto nem necessária para a transformação de registro pretendida.",
+          "pegadinha": "A pegadinha é achar que para virar sociedade é preciso 'fechar' a empresa individual primeiro — na prática, existe procedimento administrativo de transformação direta do registro, sem dissolução.",
+          "regraMemoria": "Empresário virando sociedade não precisa fechar e reabrir: é só pedir a transformação do registro na Junta Comercial."
+        },
+        {
+          "territorio": "Direito Empresarial",
+          "tema": "Tipos Societários",
+          "enunciado": "Quatro professores, que dão aulas particulares, decidiram constituir uma sociedade simples e chamaram para integrar a sociedade Belfort Pereira, empresário individual, inscrito na Junta Comercial do Estado do Rio de Janeiro, sob a condição dele investir na sociedade como sócio minoritário. Sobre as condições para o enquadramento de uma sociedade simples como microempresa, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "É lícito o enquadramento como microempresa apenas em razão da participação do sócio Belfort Pereira no capital ser minoritária."
+            },
+            {
+              "letra": "B",
+              "texto": "O enquadramento como microempresa é exclusivo para as sociedades empresárias, de modo que a sociedade simples está impedida."
+            },
+            {
+              "letra": "C",
+              "texto": "É facultado o enquadramento como microempresa porque todos os sócios são pessoas naturais, independentemente da condição de empresário de um deles."
+            },
+            {
+              "letra": "D",
+              "texto": "É vedada a participação de pessoa física inscrita como empresário no capital de uma sociedade enquadrada como microempresa."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O Estatuto Nacional da Microempresa e da Empresa de Pequeno Porte veda expressamente o enquadramento no regime quando figura no quadro societário pessoa física já inscrita como empresário individual, independentemente do percentual de participação que ela detenha. Como Belfort Pereira já é empresário individual registrado, sua entrada como sócio, ainda que minoritário, impede o enquadramento da sociedade como microempresa.",
+          "explicacaoErradas": "A alternativa A erra porque a vedação legal não é afastada pelo fato de a participação ser minoritária — o impedimento decorre da condição de empresário individual do sócio, não do tamanho de sua participação. A alternativa B erra porque o regime de microempresa não é exclusivo de sociedades empresárias; sociedades simples também podem se enquadrar, desde que atendidos os demais requisitos legais. A alternativa C erra ao ignorar que a lei trata de forma diferenciada a pessoa física que já é empresário individual registrado, tratando-a de modo distinto de um simples sócio pessoa natural sem essa qualificação.",
+          "pegadinha": "A pegadinha é focar no fato de todos serem 'pessoas físicas' e esquecer que a lei distingue a pessoa física comum da pessoa física já registrada como empresário individual, que tem impedimento específico.",
+          "regraMemoria": "Sócio que já é empresário individual registrado barra o enquadramento da sociedade como microempresa, não importa se é sócio minoritário."
+        },
+        {
+          "territorio": "Direito Empresarial",
+          "tema": "Títulos de Crédito e Contratos Empresariais",
+          "enunciado": "Pastifício Ponte Serrada S/A celebrou contrato de comissão com Eloi Mendes para aquisição de cereais. O negócio foi efetuado pelo comissário conforme as instruções recebidas, mas a vendedora, Cerealista Campos Novos Ltda., ficou inadimplente na entrega do produto. Considerando-se que o contrato de comissão celebrado entre Pastifício Ponte Serrada S/A e Eloi Mendes não contém cláusula del credere, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O comissário não responde perante o comitente pelo inadimplemento do vendedor Cerealista Campos Novos Ltda., devendo o segundo suportar os prejuízos advindos."
+            },
+            {
+              "letra": "B",
+              "texto": "Tanto o comissário quanto o vendedor Cerealista Campos Novos Ltda. respondem solidariamente perante o comitente pelos prejuízos advindos."
+            },
+            {
+              "letra": "C",
+              "texto": "Apenas o comissário responde perante o comitente pelos prejuízos advindos do inadimplemento do vendedor Cerealista Campos Novos Ltda."
+            },
+            {
+              "letra": "D",
+              "texto": "O comissário e o vendedor Cerealista Campos Novos Ltda. respondem solidariamente perante o comitente pelos prejuízos advindos, mas o primeiro apenas em caráter subsidiário."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Na comissão mercantil, o comissário fica diretamente obrigado perante os terceiros com quem contrata, mas não garante, por si só, a solvência ou o cumprimento das obrigações desses terceiros perante o comitente. Essa garantia de solvência só existe quando há cláusula del credere expressamente pactuada, o que não é o caso. Portanto, o prejuízo decorrente do inadimplemento da vendedora deve ser suportado pelo próprio comitente (Pastifício Ponte Serrada S/A), e não pelo comissário, que agiu conforme as instruções recebidas.",
+          "explicacaoErradas": "As alternativas B e D erram ao estabelecer solidariedade entre comissário e vendedor perante o comitente — essa solidariedade/garantia de solvência só surge com a cláusula del credere, ausente no caso. A alternativa C erra ao atribuir a responsabilidade exclusivamente ao comissário, quando na verdade, sem del credere e tendo ele seguido as instruções recebidas, ele não responde pelo inadimplemento de terceiro.",
+          "pegadinha": "A pegadinha é achar que o comissário sempre garante o negócio que celebra em nome do comitente — essa garantia de solvência do terceiro só existe se houver cláusula del credere expressa, que aqui não existe.",
+          "regraMemoria": "Sem del credere, comissário não garante a solvência do terceiro: quem perde com o calote é o comitente."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Cumprimento de Sentença e Execução",
+          "enunciado": "Em determinada demanda judicial cível é proferida sentença de procedência do pedido autoral, com a condenação da sociedade empresária ré ao pagamento de determinado valor a título de reparação por dano material. Com o trânsito em julgado, o autor inicia a fase de cumprimento de sentença e, após alguns meses e diversas tentativas, sem sucesso, de penhora de bens do réu, apresenta requerimento de instauração do incidente de desconsideração da personalidade jurídica. Você, na condição de advogado(a), é procurado(a) pelo réu, buscando saber sobre o incidente em questão. Assinale a opção que apresenta, corretamente, sua orientação.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O referido incidente não é cabível no procedimento comum, sendo restrito ao âmbito da execução fiscal de débitos tributários."
+            },
+            {
+              "letra": "B",
+              "texto": "A instauração do mencionado incidente suspende o processo e sua resolução se dá por decisão interlocutória."
+            },
+            {
+              "letra": "C",
+              "texto": "O incidente apontado não é cabível na fase de cumprimento de sentença, por não haver título judicial formado em relação aos sócios cujo patrimônio se busca atingir."
+            },
+            {
+              "letra": "D",
+              "texto": "Instaurado o incidente no caso concreto, os sócios da sociedade ré devem ser intimados para exercício de seu direito de defesa."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "O CPC estabelece que a instauração do incidente de desconsideração da personalidade jurídica suspende o processo, exceto na hipótese em que o pedido já é formulado na petição inicial contra o próprio sócio ou pessoa jurídica. A decisão que resolve o incidente tem natureza de decisão interlocutória, e não de sentença, já que não põe fim à fase processual, apenas resolve uma questão incidental.",
+          "explicacaoErradas": "A alternativa A erra porque o incidente é cabível em todas as fases do processo de conhecimento, no cumprimento de sentença e também na execução de título extrajudicial, não sendo restrito à execução fiscal. A alternativa C erra porque é justamente na fase de cumprimento de sentença que o incidente costuma ser utilizado, para estender os efeitos de um título já formado contra a sociedade ao patrimônio dos sócios, quando presentes os requisitos legais. A alternativa D erra no termo: a lei prevê a citação dos sócios ou da pessoa jurídica para se manifestarem e requererem provas, e não mera intimação — a citação reflete a inclusão deles como partes no incidente, com direito de defesa pleno.",
+          "pegadinha": "A pegadinha é confundir citação com intimação, e também achar que o incidente exigiria um título judicial prévio contra os sócios — é exatamente o incidente que serve para estender os efeitos do título já existente contra a sociedade até o patrimônio pessoal deles.",
+          "regraMemoria": "IDPJ: suspende o processo, sócio é citado (não intimado), e a decisão final é interlocutória, não sentença."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Tutelas Provisórias",
+          "enunciado": "Ademir Leone, servidor público aposentado, atualmente obtém sua maior fonte de renda por meio da compra e venda de ações da bolsa de valores brasileira, tendo em vista a perda do poder econômico de sua aposentadoria. Certo dia, ao tentar comprar ações na bolsa de valores, recebe a notificação de que seu nome havia sido inscrito nos órgãos de proteção ao crédito em razão do inadimplemento das parcelas de um empréstimo firmado com o Banco Prata, e por isso a transação não poderia ser completada, bem como soube que suas ações foram bloqueadas. Incrédulo com tal situação, pois nunca contratou com tal banco, além de temer pelo sustento de sua família, Ademir procurou você, como advogado(a), para saber a possibilidade de limpar seu nome o quanto antes, ajuizando ação judicial, mas sem precisar esperar o fim do processo. Assinale a afirmativa que apresenta, corretamente, a orientação que atende à pretensão do seu cliente,",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Não existe essa possibilidade no direito brasileiro, o qual pauta-se no contraditório e na ampla defesa, respeitando o devido processo legal, seguindo todas as fases processuais, para que, somente ao final, seja dada uma decisão justa e equânime."
+            },
+            {
+              "letra": "B",
+              "texto": "É possível que seja concedida a tutela de urgência, sendo desnecessária a demonstração de elementos que evidenciem a probabilidade do direito e o perigo de dano ou o risco ao resultado útil do processo."
+            },
+            {
+              "letra": "C",
+              "texto": "Existe a possibilidade de que seja concedida a tutela de evidência, desde que demonstrado o perigo de dano ou o risco ao resultado útil do processo."
+            },
+            {
+              "letra": "D",
+              "texto": "Há a possibilidade de que seja concedida a tutela de urgência, pois existem elementos que evidenciam a probabilidade do direito e o perigo de dano ou o risco ao resultado útil do processo."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O CPC autoriza a concessão de tutela de urgência sempre que houver elementos que evidenciem a probabilidade do direito e o perigo de dano ou risco ao resultado útil do processo. No caso, a probabilidade do direito está no fato de Ademir nunca ter contratado com o banco, e o perigo de dano está na impossibilidade de negociar suas ações e no risco ao sustento de sua família — justificando a antecipação dos efeitos da tutela sem esperar o fim do processo.",
+          "explicacaoErradas": "A alternativa A erra ao negar a existência de tutelas provisórias no ordenamento brasileiro — elas existem exatamente para situações urgentes como essa, sem violar o devido processo legal, que continua sendo observado ao longo do processo. A alternativa B erra ao dispensar os requisitos legais da tutela de urgência, que são expressamente exigidos pelo CPC (probabilidade do direito e perigo de dano). A alternativa C erra porque confunde os institutos: a tutela de evidência é justamente aquela que dispensa a demonstração de perigo de dano — o caso descrito, por ter urgência evidente, pede tutela de urgência, não de evidência.",
+          "pegadinha": "A pegadinha é trocar tutela de urgência por tutela de evidência — a de evidência dispensa o perigo de dano, mas o caso claramente apresenta urgência (bloqueio de ativos e risco ao sustento da família), pedindo o instituto certo.",
+          "regraMemoria": "Tem urgência e perigo de dano? Tutela de urgência. Tutela de evidência é a que dispensa justamente esse perigo."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Petição Inicial e Resposta do Réu",
+          "enunciado": "Martina ajuizou ação pelo procedimento comum contra Marcela visando à indenização milionária, oportunidade na qual informou na petição inicial que não tinha interesse na audiência de conciliação. Após analisar a petição inicial, o MM. Juízo da 100ª Vara Cível da Comarca de Florianópolis/SC determinou a citação de Marcela para comparecer em audiência de conciliação, na forma do Art. 334 do Código de Processo Civil e, eventualmente, apresentar contestação na forma do Art. 335 do mesmo diploma legislativo. Após tomar conhecimento da ação indenizatória de Martina, Marcela apresentou petição concordando com o pedido de cancelamento da audiência de conciliação e se reservando o direito de apresentar contestação no prazo legal. Considerando que foram prestadas todas as informações e apresentados todos os documentos necessários para a elaboração da contestação, a ser apresentada no prazo de 15 dias, assinale a opção que indica o momento em que se inicia a contagem desse prazo.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Da juntada nos autos do aviso de recebimento positivo do seu mandado de citação pelos correios."
+            },
+            {
+              "letra": "B",
+              "texto": "Da publicação da decisão do MM. Juízo da 100ª Vara Cível da Comarca de Florianópolis/SC que cancelar a audiência de conciliação agendada no despacho citatório."
+            },
+            {
+              "letra": "C",
+              "texto": "Do ato de protocolar o pedido de cancelamento da audiência de conciliação formulado por Marcela."
+            },
+            {
+              "letra": "D",
+              "texto": "A audiência de conciliação, uma vez que o Código de Processo Civil obriga a realização desse ato processual, o qual não poderá ser cancelado por despacho do MM. Juízo da 100ª Vara Cível da Comarca de Florianópolis/SC."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O CPC prevê que, quando ambas as partes manifestam expressamente desinteresse na composição consensual, a audiência de conciliação é cancelada, e o prazo de contestação passa a fluir do protocolo do pedido de cancelamento apresentado pelo réu. Como Martina já havia manifestado desinteresse na petição inicial e Marcela também manifestou o mesmo desinteresse em sua petição, o termo inicial do prazo de contestação é justamente esse protocolo feito por Marcela.",
+          "explicacaoErradas": "A alternativa A erra porque a regra da juntada do aviso de recebimento é aplicável a citações em que não há audiência de conciliação designada, o que não é o caso, já que havia previsão de audiência que veio a ser cancelada por manifestação das partes. A alternativa B erra porque o termo inicial não depende de decisão judicial homologando o cancelamento, mas do próprio ato de protocolo do pedido pelo réu. A alternativa D erra porque a audiência de conciliação não é absolutamente obrigatória: a lei permite seu cancelamento quando ambas as partes manifestam desinteresse na composição consensual.",
+          "pegadinha": "A pegadinha é buscar a regra geral de contagem (juntada do AR de citação), esquecendo que existe regra específica para quando ambas as partes dispensam a audiência de conciliação: conta-se do protocolo do pedido de cancelamento do réu.",
+          "regraMemoria": "Se as duas partes dispensam a conciliação, o prazo de contestação conta do protocolo do pedido de cancelamento feito pelo réu."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Procedimentos Especiais",
+          "enunciado": "Samuel ajuizou ação de exigir contas contra Maria, requerendo sua citação para que as preste ou ofereça contestação, no prazo de 15 (quinze) dias úteis. Em sua petição inicial, Samuel alegou que, por força de contrato de mandato, teria confiado a administração de recursos próprios a Maria, que, no entanto, não prestou regularmente contas de forma extrajudicial, conforme entre si acordado. Em que pese Maria tenha oferecido contestação à ação, o juiz julgou procedente o pedido, condenando Maria a prestar as contas, no prazo de 15 (quinze) dias úteis. Sobre a situação hipotética descrita, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Caso Maria deixe de prestar as contas no prazo assinalado de 15 (quinze) dias úteis, Samuel será intimado a apresentá-las, não podendo o juiz determinar a realização de perícia para sua certificação."
+            },
+            {
+              "letra": "B",
+              "texto": "Ainda que Maria deixe de prestar as contas no prazo assinalado de 15 (quinze) dias úteis, lhe será lícito impugnar as contas que venham a ser apresentadas por Samuel."
+            },
+            {
+              "letra": "C",
+              "texto": "Maria poderá interpor recurso de apelação contra a sentença, ao fundamento de que o prazo previsto em lei para a prestação de contas é de 30 (trinta), e não 15 (quinze) dias úteis, como assinalado pelo juiz."
+            },
+            {
+              "letra": "D",
+              "texto": "Caso Maria venha a prestar as contas, deverá fazê-lo no prazo de 15 (quinze) dias úteis assinalado pelo juiz e de forma adequada, especificando-se as receitas, a aplicação das despesas e os investimentos, se houver."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O CPC exige que as contas, uma vez apresentadas em cumprimento à sentença de procedência da ação de exigir contas, observem forma adequada, especificando as receitas, a aplicação das despesas e os investimentos, se houver, instruídas com os documentos justificativos, dentro do prazo de 15 dias fixado pelo juiz.",
+          "explicacaoErradas": "A alternativa A erra ao afirmar que o juiz não poderia determinar perícia: se Maria não prestar as contas, Samuel apresentará as suas e, havendo necessidade de apuração técnica, é cabível a realização de perícia. A alternativa B erra porque a lei prevê exatamente o contrário: se o réu deixa de prestar contas no prazo fixado, perde o direito de impugnar as contas que vierem a ser apresentadas pelo autor. A alternativa C erra quanto ao prazo: a lei prevê 15 dias, e não 30, para a apresentação das contas após a sentença de procedência, de modo que não há fundamento para a apelação nesses termos.",
+          "pegadinha": "A pegadinha é achar que o réu que não presta contas no prazo ainda poderia impugnar livremente as contas apresentadas pelo autor — na verdade ele perde esse direito justamente por ter descumprido o prazo.",
+          "regraMemoria": "Quem não presta contas no prazo perde o direito de impugnar as contas do outro lado; e o prazo de apresentação é sempre 15 dias, com receitas, despesas e investimentos especificados."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Procedimentos Especiais",
+          "enunciado": "A General Food é uma reconhecida sociedade empresária britânica do ramo de alimentos presidida, desde 2018, pelo brasileiro Rodrigo Bottas. Em 2021, o jornal \"Folha de Londres\" publicou uma série de reportagens apontando irregularidades na gestão de Rodrigo Bottas, que foi imediatamente afastado da sociedade empresária. Ato contínuo, a General Food investigou as irregularidades suscitadas pelo jornal e, após confirmá-las, instaurou arbitragem na Inglaterra para obter indenização pelos prejuízos causados por seu antigo executivo. Após regular participação no referido procedimento, o Tribunal Arbitral proferiu sentença julgando procedente o pedido indenizatório da General Food. Como Rodrigo Bottas não tinha bens na Inglaterra, a General Food procurou um(a) advogado(a) para buscar informações sobre a possibilidade de executar a sentença arbitral estrangeira. Na qualidade de advogado(a) da General Food, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "A General Food deverá ajuizar ação de execução contra Rodrigo Bottas, uma vez que a sentença arbitral estrangeira é título executivo judicial."
+            },
+            {
+              "letra": "B",
+              "texto": "A General Food deverá instaurar arbitragem contra Rodrigo Bottas, uma vez que não são admissíveis a homologação e a execução de sentença arbitral estrangeira no Brasil."
+            },
+            {
+              "letra": "C",
+              "texto": "A General Food deverá ajuizar ação indenizatória contra Rodrigo Bottas, uma vez que não são possíveis a homologação e a execução de sentença arbitral estrangeira no Brasil."
+            },
+            {
+              "letra": "D",
+              "texto": "A General Food deverá apresentar pedido de homologação da sentença arbitral estrangeira contra Rodrigo Bottas antes de executar a referida decisão no Brasil."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Sentença arbitral estrangeira só pode ser reconhecida e executada no Brasil depois de homologada pelo Superior Tribunal de Justiça (competência prevista na Constituição e disciplinada pela Lei de Arbitragem, Lei 9.307/96, arts. 34 a 40). Sem essa homologação prévia, o título arbitral estrangeiro não produz efeitos executivos no território nacional, por isso o(a) advogado(a) deve primeiro pedir a homologação ao STJ para só então buscar a execução contra os bens de Rodrigo Bottas no Brasil.",
+          "explicacaoErradas": "A alternativa A erra ao tratar a sentença arbitral estrangeira como se já fosse, por si só, título executivo judicial exequível no Brasil, ignorando a etapa de homologação. As alternativas B e C partem da premissa falsa de que sentença arbitral estrangeira não pode ser homologada nem executada no Brasil — na verdade a Lei de Arbitragem admite expressamente esse reconhecimento, tornando desnecessário instaurar nova arbitragem ou ajuizar ação indenizatória autônoma.",
+          "pegadinha": "A pegadinha é confundir sentença arbitral estrangeira com sentença judicial estrangeira ou com título já pronto para execução — o candidato apressado esquece que existe uma etapa intermediária obrigatória de homologação no STJ.",
+          "regraMemoria": "Sentença arbitral estrangeira: primeiro HOMOLOGA no STJ, só depois executa no Brasil."
+        },
+        {
+          "territorio": "Processo Civil",
+          "tema": "Cumprimento de Sentença e Execução",
+          "enunciado": "Stefano Carneiro, após ganhar indenização de R$ 60.000,00 em processo judicial movido em face de Estevão Braga, inicia o cumprimento definitivo de sentença requerendo ao juízo competente que intime o devedor para o pagamento da condenação. No prazo para pagar, Estevão Braga reconhece o débito e solicita ao seu advogado que realize o depósito de trinta por cento do valor da execução, acrescido de custas e honorários do advogado, e que o restante seja parcelado em seis parcelas mensais, acrescidas de correção monetária e de juros de um por cento ao mês, pois soube que o Código de Processo Civil permite ao devedor o parcelamento nessas condições. Na condição de advogado(a) de Estevão Braga, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O parcelamento pretendido por Estevão é possível, independentemente da aceitação do exequente, pois é um direito do executado."
+            },
+            {
+              "letra": "B",
+              "texto": "O parcelamento pretendido por Estevão é possível, pois o reconhecimento do débito ocorreu dentro no prazo para pagar."
+            },
+            {
+              "letra": "C",
+              "texto": "O parcelamento pretendido por Estevão só é possível antes do início do cumprimento de sentença."
+            },
+            {
+              "letra": "D",
+              "texto": "O parcelamento pretendido por Estevão não se aplica ao cumprimento de sentença."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O CPC prevê o parcelamento da dívida (depósito de 30% mais parcelamento do restante) como benefício do executado apenas na execução de título executivo extrajudicial, sendo expressamente vedada sua aplicação ao cumprimento de sentença. Por isso, mesmo reconhecendo a dívida dentro do prazo, Estevão não tem esse direito no procedimento de cumprimento de sentença que Stefano iniciou.",
+          "explicacaoErradas": "As alternativas A e B tratam o parcelamento como um direito automático do executado nesse procedimento, o que está errado porque a regra do parcelamento simplesmente não se aplica ao cumprimento de sentença, independentemente de concordância do exequente ou do momento do reconhecimento do débito. A alternativa C também erra ao supor que bastaria agir antes do início da execução para o parcelamento ser cabível, quando na verdade o instituto é próprio da execução de título extrajudicial, não da fase de cumprimento de sentença.",
+          "pegadinha": "A pegadinha é achar que o parcelamento de dívida do CPC vale para qualquer execução — o detalhe decisivo é que a lei reserva esse benefício exclusivamente à execução de título extrajudicial, excluindo-o do cumprimento de sentença.",
+          "regraMemoria": "Parcelamento do art. 916 só existe na execução de título EXTRAJUDICIAL — no cumprimento de sentença, não rola."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
+          "enunciado": "João completou 20 anos e foi colocado em liberdade, após cumprir 3 anos de internação por medida socioeducativa em razão da prática de atos infracionais análogos ao estupro e furto, conforme sentença proferida pelo Juizado da Infância e da Juventude de sua Comarca. Ao ser solto da unidade de internação, foi preso em flagrante pela prática do crime de roubo, sendo que João nunca respondeu por outros crimes. Para os fins deste novo processo, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "João é primário e com bons antecedentes, ante a inaptidão de atos infracionais serem utilizados como circunstâncias judiciais ou induzirem reincidência."
+            },
+            {
+              "letra": "B",
+              "texto": "João é reincidente e com maus antecedentes, ante a pluralidade de infrações pretéritas, anteriores aos delitos de roubo."
+            },
+            {
+              "letra": "C",
+              "texto": "João é tecnicamente primário, porém, com maus antecedentes, sendo este único efeito possível gerado pela aplicação de medidas socioeducativas."
+            },
+            {
+              "letra": "D",
+              "texto": "João é reincidente ou com maus antecedentes, pois não é possível que a reincidência seja também considerada circunstância judicial, ainda que se tratem de condenações distintas."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Atos infracionais praticados por menor de idade não geram reincidência nem podem ser usados como maus antecedentes em processo criminal posterior, pois a medida socioeducativa tem natureza pedagógica e não penal — reincidência e antecedentes pressupõem condenação criminal anterior, o que não existe no caso de ato infracional. Assim, ao completar a maioridade e responder por roubo, João deve ser considerado primário e com bons antecedentes para esse novo processo.",
+          "explicacaoErradas": "A alternativa B erra ao tratar os atos infracionais pretéritos como geradores de reincidência e maus antecedentes, o que contraria a natureza não penal das medidas socioeducativas. A alternativa C acerta em parte ao reconhecer a primariedade técnica, mas erra ao afirmar que os maus antecedentes decorreriam da medida socioeducativa. A alternativa D contém uma afirmação genérica incorreta sobre reincidência e circunstâncias judiciais que não se aplica ao caso, já que aqui simplesmente não há qualquer condenação penal anterior de João.",
+          "pegadinha": "A pegadinha é achar que o histórico de atos infracionais graves (estupro e furto) 'pesa' contra o réu como se fossem crimes — mas juridicamente ato infracional nunca gera reincidência nem maus antecedentes.",
+          "regraMemoria": "Ato infracional NÃO é crime: nunca gera reincidência, nunca gera maus antecedentes."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Crimes contra a Administração Pública",
+          "enunciado": "Maciel teve sua prisão temporária prolongada sem motivo justo e excepcionalíssimo, por decisão de Xavier, diretor da unidade prisional em que Maciel estava custodiado. Esgotado o prazo legal para que ele fosse posto em liberdade, Xavier ignorou dolosamente o alvará de soltura por 5 (cinco) dias, com o objetivo de prejudicar Maciel, seu inimigo declarado. Sobre o procedimento de Xavier, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Ele praticou o crime de corrupção passiva privilegiada."
+            },
+            {
+              "letra": "B",
+              "texto": "Ele praticou o crime de abuso de autoridade."
+            },
+            {
+              "letra": "C",
+              "texto": "Ele praticou o crime de desobediência."
+            },
+            {
+              "letra": "D",
+              "texto": "Não praticou crime algum, tendo em vista que o alvará de soltura foi cumprido."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Deixar de cumprir, dolosamente e por prazo desarrazoado, o alvará de soltura de pessoa presa configura crime de abuso de autoridade, previsto na Lei 13.869/2019, pois se trata de agente público que prolonga a privação de liberdade além do necessário, sem justificativa legítima, com o específico fim de prejudicar a pessoa presa. O diretor da unidade prisional atuou com dolo específico de perseguição, elemento típico dessa lei.",
+          "explicacaoErradas": "A alternativa A não se aplica porque corrupção passiva pressupõe vantagem indevida solicitada ou recebida pelo funcionário, o que não ocorreu aqui. A alternativa C está incorreta porque desobediência exige o descumprimento de ordem de quem não tem função de garantir o próprio cumprimento (e além disso é subsidiária, cedendo à lei especial de abuso de autoridade). A alternativa D erra ao ignorar que o atraso doloso e injustificado de cinco dias, por si só, já configura o crime, ainda que o alvará tenha sido cumprido ao final.",
+          "pegadinha": "A pegadinha é pensar que, como o alvará acabou sendo cumprido, não haveria crime — mas o abuso de autoridade se consuma pelo próprio retardamento doloso e imotivado da soltura, independentemente de esta ocorrer depois.",
+          "regraMemoria": "Segurou o alvará de soltura de propósito? Isso é abuso de autoridade, mesmo que solte depois."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Crimes contra a Pessoa",
+          "enunciado": "Pablo (13 anos) e Luís (19 anos), amigos de longa data, decidiram cometer suicídio. Durante todo o período em que conversaram sobre o tema, sempre condicionaram a realização do ato à presença de ambos, sendo certo que diariamente um instigava o outro a praticar o ato. No dia combinado, os dois se dirigiram à principal ponte da cidade e se posicionaram no vão central. Afastados um do outro, apenas se olharam para iniciar a contagem até se jogarem. Os dois pularam ao mesmo tempo. Apesar da altura ser a mesma, Pablo ficou por como 90 dias no hospital e ao retornar teve diagnosticada a sua tetraplegia, perdendo completamente os movimentos dos braços e das pernas. Luís, por sua vez, sofreu apenas algumas escoriações. Sobre a participação de Luís no caso narrado, assinale a afirmativa correta, conforme expressa previsão legal.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Deverá responder pelo crime de instigação ao suicídio qualificado pelo resultado morte."
+            },
+            {
+              "letra": "B",
+              "texto": "Será responsabilizado nas penas do crime de lesão corporal gravíssima."
+            },
+            {
+              "letra": "C",
+              "texto": "Incidiu na conduta de tentativa de instigação ao suicídio."
+            },
+            {
+              "letra": "D",
+              "texto": "Não será responsabilizado, porque será beneficiado pelo instituto do perdão judicial, independentemente de as consequências da infração o terem atingido de forma grave."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "No crime do art. 122 do Código Penal (induzimento, instigação ou auxílio a suicídio), quando da conduta resulta lesão corporal grave ou gravíssima na vítima, a lei prevê pena diferenciada, atrelada aos patamares de gravidade da lesão corporal. Como Pablo ficou tetraplégico (lesão gravíssima, por debilidade/perda permanente de função de membro), Luís, que o instigou reciprocamente ao ato, responde nesse patamar mais grave de pena, correspondente à lesão corporal gravíssima causada pelo ato.",
+          "explicacaoErradas": "A alternativa A está errada porque não houve morte de nenhum dos dois, então não há que se falar em resultado morte na conduta de Luís. A alternativa C está incorreta porque o crime de instigação ao suicídio é condicionado ao resultado (lesão grave/gravíssima ou morte) e não admite a forma tentada nesses moldes, sendo o resultado lesivo efetivo o que define a punição. A alternativa D erra porque o perdão judicial nesse crime só beneficia quem, ao instigar o outro, sofre ele próprio consequências graves — como Luís teve apenas escoriações leves, ele não preenche esse requisito.",
+          "pegadinha": "A pegadinha é achar que, por ter havido reciprocidade e mera 'brincadeira' entre amigos, não haveria responsabilização de Luís — mas a gravidade da lesão sofrida por Pablo define diretamente a pena aplicável a quem o instigou.",
+          "regraMemoria": "Instigação a suicídio: a pena de quem instiga segue a gravidade do resultado na vítima, não o resultado sofrido por quem instigou."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
+          "enunciado": "Paulo estava desempregado, precisando de dinheiro, quando, dentro do metrô, avistou uma mulher com a bolsa entreaberta e a carteira à mostra. Paulo decidiu pegar a carteira, sem que ninguém visse. Durante a empreitada criminosa, Paulo inseriu a mão na bolsa da mulher e segurou a carteira. Porém, com crise de consciência, Paulo decidiu por livre e espontânea vontade não prosseguir na empreitada criminosa. Diante dos fatos narrados, é correto afirmar que Paulo deve ser beneficiado pelo instituto do(a):",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "arrependimento posterior."
+            },
+            {
+              "letra": "B",
+              "texto": "desistência voluntária."
+            },
+            {
+              "letra": "C",
+              "texto": "tentativa."
+            },
+            {
+              "letra": "D",
+              "texto": "arrependimento eficaz."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Paulo já havia iniciado a execução do furto (inseriu a mão na bolsa e segurou a carteira), mas interrompeu voluntariamente a conduta antes de consumar a subtração, por vontade própria e não por circunstância externa. Essa é exatamente a hipótese de desistência voluntária (art. 15 do CP), pelo qual o agente só responde pelos atos já praticados, e como esses atos isolados não configuram crime autônomo, Paulo não responde pelo furto.",
+          "explicacaoErradas": "A alternativa A (arrependimento posterior) não se aplica porque esse instituto pressupõe crime já consumado com posterior reparação do dano, o que não ocorreu aqui. A alternativa C (tentativa) está errada porque a desistência voluntária, por expressa opção legal, afasta a punição por tentativa, respondendo o agente apenas pelos atos já praticados isoladamente. A alternativa D (arrependimento eficaz) não cabe porque esse instituto pressupõe que a execução do crime já tenha se esgotado, exigindo do agente uma ação positiva para evitar o resultado, o que não é o caso de quem apenas para no meio do ato.",
+          "pegadinha": "A pegadinha é confundir 'parar no meio do ato' (desistência voluntária) com 'impedir um resultado que já estava em curso' (arrependimento eficaz) — a diferença está no momento em que o agente atua.",
+          "regraMemoria": "Parou sozinho ANTES de terminar o crime = desistência voluntária. Já tinha terminado e evitou o resultado = arrependimento eficaz."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Teoria Geral do Crime",
+          "enunciado": "Caio, lutador de MMA, estava na praia quando viu uma senhora ser agredida por um terceiro. Caio foi em direção ao agressor e tentou persuadi-lo a parar com as agressões, mas o agressor não deu ouvidos e continuou a agredir a senhora. Dessa forma, Caio não viu outra alternativa a não ser desferir um soco no agressor para afastá-lo da senhora e imobilizá-lo em seguida, até a chegada da polícia. Diante do exposto, a conduta de Caio pode ser beneficiada pela exclusão da:",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "tipicidade em razão da coação física irresistível."
+            },
+            {
+              "letra": "B",
+              "texto": "culpabilidade em razão da coação moral irresistível."
+            },
+            {
+              "letra": "C",
+              "texto": "ilicitude em razão do exercício regular de um direito."
+            },
+            {
+              "letra": "D",
+              "texto": "ilicitude por legítima defesa."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "Caio usou força para repelir agressão injusta, atual e em curso contra a senhora, de forma proporcional ao necessário para fazer cessar a agressão — isso caracteriza legítima defesa de terceiro, que exclui a ilicitude da conduta nos termos do art. 25 do Código Penal. A legítima defesa pode ser exercida em favor de outra pessoa, não apenas em defesa própria.",
+          "explicacaoErradas": "A alternativa A está errada porque não houve qualquer coação física contra Caio, que agiu por vontade própria ao intervir. A alternativa B também não se aplica, pois não havia coação moral irresistível direcionada a Caio, e esse instituto excluiria a culpabilidade, não a ilicitude. A alternativa C erra porque exercício regular de direito pressupõe uma faculdade jurídica específica sendo exercida, e não a reação a uma agressão injusta em curso, hipótese que se enquadra tecnicamente como legítima defesa.",
+          "pegadinha": "A pegadinha é confundir legítima defesa com exercício regular de direito só porque a intenção de Caio era 'ajudar' — mas o elemento decisivo é a reação a uma agressão injusta atual, que é a marca da legítima defesa, ainda que em favor de terceiro.",
+          "regraMemoria": "Repeliu agressão injusta e atual contra alguém, de forma proporcional? Legítima defesa (de terceiro), exclui a ilicitude."
+        },
+        {
+          "territorio": "Direito Penal",
+          "tema": "Penas e Extinção da Punibilidade",
+          "enunciado": "Paulo nasceu em outubro de 1990. Em julho de 2011, Paulo cometeu o delito de homicídio simples contra um vizinho. O Ministério Público ofereceu denúncia no ano de 2022. Sobre a hipótese apresentada, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Ocorreu a prescrição da pretensão punitiva no ano de 2021, pois, no caso de Paulo, a prescrição é reduzida pela metade."
+            },
+            {
+              "letra": "B",
+              "texto": "A prescrição da pretensão punitiva só ocorrerá em 20 anos da data dos fatos, ou seja, no ano de 2031."
+            },
+            {
+              "letra": "C",
+              "texto": "Por se tratar de crime hediondo, o prazo prescricional da prescrição da pretensão punitiva é acrescido de 1/3, de forma que a prescrição ocorrerá somente no ano de 2024."
+            },
+            {
+              "letra": "D",
+              "texto": "Por se tratar de crime hediondo, o crime cometido por Paulo é imprescritível."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Paulo tinha 20 anos ao tempo do crime (era menor de 21 anos), o que reduz pela metade os prazos prescricionais, conforme regra específica do Código Penal para agentes menores de 21 anos na data do fato. Como o homicídio simples tem pena máxima de 20 anos, o prazo prescricional geral de 20 anos cai para 10 anos; contados a partir de julho de 2011, a prescrição da pretensão punitiva já havia se consumado em 2021, antes do oferecimento da denúncia em 2022.",
+          "explicacaoErradas": "A alternativa B ignora a redução pela metade do prazo prescricional aplicável a quem era menor de 21 anos ao tempo do crime, calculando erroneamente o prazo cheio de 20 anos. A alternativa C inventa um acréscimo de 1/3 ao prazo prescricional por suposta hediondez, o que não existe nessa forma para o cálculo da prescrição, além de o homicídio simples (não qualificado) não ser crime hediondo. A alternativa D também erra ao classificar o homicídio simples como hediondo e ao afirmar imprescritibilidade, que no ordenamento brasileiro se restringe a hipóteses constitucionais específicas (como racismo), não abrangendo homicídio.",
+          "pegadinha": "A pegadinha é esquecer de checar a idade do agente ao tempo do fato — o benefício da redução do prazo prescricional pela metade é fácil de passar despercebido se o candidato só olhar a pena do crime.",
+          "regraMemoria": "Réu com menos de 21 anos na data do crime: prazo de prescrição cai pela METADE — sempre confira a idade no fato, não hoje."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Competência e Foro",
+          "enunciado": "Adamastor, Juiz Federal em exercício na Seção Judiciária do Rio de Janeiro, vinculada ao Tribunal Regional Federal da Segunda Região, ajuizou queixa-crime contra o advogado Bráulio, que foi distribuída à 20ª Vara Federal Criminal da Seção Judiciária do Rio de Janeiro. Nessa queixa-crime, Adamastor imputou a prática do crime de calúnia a Bráulio, pois este teria dito em uma entrevista, dada na cidade de Porto Alegre/RS, que Adamastor recebeu vantagem econômica indevida para beneficiar determinada parte em sentença que prolatou. Após a citação pessoal de Bráulio, este ofereceu resposta à acusação opondo exceção da verdade. Assinale a opção que indica o órgão jurisdicional competente para o qual deve ser direcionada essa exceção processual.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "20ª Vara Federal Criminal da Seção Judiciária do Rio de Janeiro."
+            },
+            {
+              "letra": "B",
+              "texto": "Tribunal Regional Federal da 4ª Região, com sede em Porto Alegre/RS."
+            },
+            {
+              "letra": "C",
+              "texto": "Tribunal Regional Federal da 2ª Região, com sede no Rio de Janeiro/RJ."
+            },
+            {
+              "letra": "D",
+              "texto": "Tribunal de Justiça do Estado do Rio de Janeiro."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Como a calúnia imputada envolve suposta corrupção de um juiz federal no exercício de suas funções, a exceção da verdade, se acolhida, equivaleria a reconhecer a prática de crime pela própria autoridade ofendida. Por isso a competência para julgar essa exceção segue o foro por prerrogativa de função do ofendido: como Adamastor é juiz federal vinculado ao TRF da 2ª Região, é esse Tribunal (sede no Rio de Janeiro) o competente para julgar a exceção da verdade, e não o juízo de primeiro grau onde tramita a queixa-crime.",
+          "explicacaoErradas": "A alternativa A está errada porque a vara federal de origem não tem competência para julgar exceção da verdade que discute conduta funcional de um juiz federal, matéria reservada ao tribunal com competência originária sobre ele. A alternativa B erra ao vincular a competência ao local onde a entrevista foi dada (Porto Alegre), quando o critério relevante é o foro por prerrogativa de função do ofendido, e não o local da conduta de quem fez a declaração. A alternativa D está incorreta porque Adamastor é juiz federal, sujeito à Justiça Federal, e não à Justiça Estadual, não havendo competência do Tribunal de Justiça.",
+          "pegadinha": "A pegadinha é olhar para o local da entrevista (Porto Alegre) e pensar que ele definiria o foro competente, quando na verdade o que importa é o foro por prerrogativa de função da autoridade cuja conduta está sendo, em tese, comprovada pela exceção da verdade.",
+          "regraMemoria": "Exceção da verdade que discute crime de autoridade com foro privilegiado vai para o TRIBUNAL competente para julgar essa autoridade — esqueça o local do fato."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Execução Penal",
+          "enunciado": "Júnior foi condenado pelo delito de latrocínio tentado, na modalidade tentada, a uma pena de 8 (oito) anos e 6 (seis) meses de reclusão, a ser cumprida em regime inicial fechado, já tendo a sentença transitado em julgado, sem nulidade. Júnior inicia a execução das penas e procura você, na qualidade de advogado(a). Assinale a afirmativa que apresenta, corretamente, a orientação jurídica que possibilita reduzir o tempo de encarceramento de Júnior.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Postular o perdão do ofendido e, assim, reduzir sua pena."
+            },
+            {
+              "letra": "B",
+              "texto": "Aguardar o decreto presidencial de comutação de pena."
+            },
+            {
+              "letra": "C",
+              "texto": "Requerer a classificação de Júnior para trabalho e estudo no sistema carcerário, a fim de viabilizar a remição de penas."
+            },
+            {
+              "letra": "D",
+              "texto": "Pleitear um decreto de anistia no âmbito da Assembleia Legislativa do seu Estado."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "A remição de pena pelo trabalho ou pelo estudo é instrumento previsto na Lei de Execução Penal (Lei 7.210/84) que efetivamente reduz o tempo de cumprimento da pena, sendo a orientação jurídica correta e imediatamente disponível para Júnior requerer sua classificação para atividades laborais ou educacionais no sistema prisional.",
+          "explicacaoErradas": "A alternativa A está errada porque latrocínio é crime de ação penal pública incondicionada, não havendo instituto de perdão do ofendido capaz de reduzir a pena. A alternativa B depende de ato discricionário do Poder Executivo (indulto/comutação), que costuma ser vedado ou restrito a crimes hediondos e equiparados como o latrocínio, não sendo uma orientação jurídica segura ou proativa a se aguardar. A alternativa D está incorreta porque anistia é matéria de competência privativa da União (por lei federal), e não de Assembleia Legislativa estadual, que não tem competência para legislar sobre direito penal.",
+          "pegadinha": "A pegadinha é confundir os institutos de clemência (indulto, comutação, anistia), que dependem de atos de outros Poderes e nem sempre alcançam crimes hediondos, com a remição, que é direito subjetivo do preso a ser efetivamente buscado pelo trabalho ou estudo.",
+          "regraMemoria": "Quer reduzir pena na prática, sem depender de terceiros? Trabalho e estudo geram REMIÇÃO de pena."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Provas no Processo Penal",
+          "enunciado": "Osvaldo foi denunciado pela prática do crime de estelionato em coautoria com Flávio. Durante a instrução processual, o Juízo ouviu três testemunhas da acusação, e, uma delas, Fabiana, apresentou versão conflitante com as apresentadas pelas defesas. Por isso, o Ministério Público requereu a realização de acareação prevista no Art. 229 do CPP, entre Osvaldo, Flávio e Fabiana. A defesa de Osvaldo informou que o acusado não iria participar da acareação, mas o Ministério Público insistiu com o Juízo que determinasse que Osvaldo se submetesse ao ato, sob pena de incidir nas penas do crime de desobediência. Sobre o caso narrado, assinale a afirmativa que indica o princípio que você, como advogado(a) de Osvaldo, deve alegar em defesa do seu cliente.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "O da ampla defesa veda a realização de acareação entre testemunhas de defesa e acusação, pois cada parte tem o ônus de provar os fatos que alega."
+            },
+            {
+              "letra": "B",
+              "texto": "O da fundamentação das decisões exige que, ao determinar a realização de uma prova, o Juízo indique concretamente as razões que a justifiquem, sob pena de nulidade."
+            },
+            {
+              "letra": "C",
+              "texto": "O da presunção de inocência impede a participação do réu no procedimento de acareação, ainda que a ele se apresente voluntariamente."
+            },
+            {
+              "letra": "D",
+              "texto": "O da não autoincriminação ampara a pretensão de Osvaldo de não se submeter à produção de provas que exigem participação ativa do denunciado, tal como a acareação."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "O princípio da não autoincriminação (nemo tenetur se detegere) garante ao acusado o direito de não produzir prova contra si mesmo, o que inclui a possibilidade de recusar-se a participar de atos de produção de prova que exijam sua colaboração ativa, como a acareação. Por isso Osvaldo pode se recusar a participar do ato sem que isso configure crime de desobediência.",
+          "explicacaoErradas": "A alternativa A está errada porque a ampla defesa não veda a realização de acareação entre testemunhas de acusação e de defesa, sendo esse um meio de prova regularmente admitido no processo penal. A alternativa B trata de um princípio geral (fundamentação das decisões) que não é o fundamento específico para a recusa de participação de Osvaldo no ato. A alternativa C está incorreta porque a presunção de inocência não impediria a participação voluntária do réu na acareação — o que a lei protege é justamente a faculdade de recusa, e não uma vedação absoluta mesmo com concordância do acusado.",
+          "pegadinha": "A pegadinha é achar que qualquer princípio genérico de defesa serviria como fundamento — o ponto específico e correto é a garantia de não produzir prova contra si mesmo, que autoriza a recusa a atos que exijam participação ativa do próprio acusado.",
+          "regraMemoria": "Réu pode recusar acareação: ninguém é obrigado a colaborar ativamente contra si mesmo (não autoincriminação)."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Recursos Penais",
+          "enunciado": "Fabrício foi preso em flagrante pela prática do crime de roubo, tendo havido a regular conversão do flagrante em prisão preventiva. Contudo, passados mais de dois anos, a instrução processual não logrou finalizar a oitiva das testemunhas de acusação, pois o Ministério Público insiste na oitiva de policiais que, constantemente, faltam à audiência por motivos pessoais, alegando férias ou licença. Fabrício permanece preso preventivamente, o que ensejou impetração de habeas corpus para o Tribunal de Justiça competente. O Tribunal de Justiça, em decisão colegiada, denegou o habeas corpus. Identifique, corretamente, a medida judicial a ser proposta para o caso narrado.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Recurso odinário constitucional, dirigido ao Superior Tribunal de Justiça."
+            },
+            {
+              "letra": "B",
+              "texto": "Recurso de apelação, dirigido ao Superior Tribunal de Justiça."
+            },
+            {
+              "letra": "C",
+              "texto": "Agravo interno, dirigido para o Tribunal de Justiça."
+            },
+            {
+              "letra": "D",
+              "texto": "Recurso extraordinário, dirigido ao Supremo Tribunal Federal."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Quando o Tribunal de Justiça, em decisão colegiada, denega habeas corpus decidido em única instância, o recurso cabível é o recurso ordinário constitucional dirigido ao Superior Tribunal de Justiça, conforme previsão da Constituição Federal, que atribui a esse Tribunal a competência para julgar em grau recursal ordinário os habeas corpus denegados pelos tribunais estaduais e federais.",
+          "explicacaoErradas": "A alternativa B está errada porque apelação não é o recurso cabível para impugnar decisão de tribunal em habeas corpus, e o STJ não julga apelações dessa natureza. A alternativa C erra porque agravo interno serve para impugnar decisão monocrática (de relator), e não decisão colegiada proferida pelo próprio órgão colegiado do Tribunal de Justiça. A alternativa D está incorreta porque o recurso extraordinário ao STF pressupõe questão constitucional após esgotadas as vias ordinárias cabíveis, sendo aqui o recurso ordinário ao STJ a via imediatamente adequada.",
+          "pegadinha": "A pegadinha é confundir recurso ordinário constitucional com recurso extraordinário — o nome parece indicar 'menor importância', mas é justamente o recurso cabível para HC denegado por tribunal de segunda instância, dirigido ao STJ.",
+          "regraMemoria": "HC denegado por Tribunal de Justiça em decisão colegiada = recurso ORDINÁRIO constitucional para o STJ."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Prisões e Medidas Cautelares",
+          "enunciado": "André, primário, subtraiu o computador de Gustavo, enquanto este estava distraído em via pública, em uma sexta-feira. Na terça-feira da semana seguinte, após consultar as câmeras de vigilância, Gustavo identificou André como o responsável pela subtração, e acionou a Polícia Civil que, com base nas declarações de Gustavo, abordou André em via pública e com ele encontrou o computador subtraído dias antes. André foi, então, preso em flagrante pelo delito de receptação, na modalidade \"conduzir\" produto de furto. As penas do furto e da receptação são de 1 a 4 anos. Como advogado(a) de André, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Deve ser postulado o relaxamento da prisão em flagrante, porque André praticou apenas o delito de furto, crime de natureza instantânea, inexistindo situação flagrancial."
+            },
+            {
+              "letra": "B",
+              "texto": "Deve ser postulada a liberdade provisória, pois, não obstante ter praticado dois delitos em concurso material, ainda assim é cabível a suspensão condicional do processo."
+            },
+            {
+              "letra": "C",
+              "texto": "André praticou delito de furto em concurso formal com receptação, o que autoriza a prisão em flagrante pelo delito de natureza permanente, mas é cabível a liberdade provisória, mediante fiança."
+            },
+            {
+              "letra": "D",
+              "texto": "André praticou apenas o delito de receptação, cuja pena máxima é igual a quatro anos, por isso, não é cabível a prisão preventiva, devendo ser postulada a liberdade provisória."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "André praticou apenas o crime de furto, que se consumou no momento da subtração, dias antes de ser abordado — trata-se de crime instantâneo já exaurido, sem qualquer situação de flagrância no momento da abordagem policial (não houve perseguição logo após o fato, apenas identificação posterior por câmeras). Além disso, não há receptação, pois ninguém pode receptar o produto do próprio crime que cometeu (autorreceptação é impunível), de modo que a prisão em flagrante deve ser relaxada por ausência de situação de flagrante.",
+          "explicacaoErradas": "A alternativa B está errada porque não há dois delitos em concurso material — há apenas o furto, sendo impossível a receptação pelo próprio autor do crime antecedente. A alternativa C também erra ao imaginar concurso formal entre furto e receptação, hipótese logicamente inviável quando se trata da mesma pessoa e do mesmo objeto. A alternativa D está incorreta porque André não praticou receptação (apenas furto), e o problema central do caso não é a possibilidade de prisão preventiva, mas a ilegalidade da prisão em flagrante por ausência de situação flagrancial.",
+          "pegadinha": "A pegadinha é a tentativa de enquadrar o fato como receptação por 'conduzir' o bem — mas quem furta não pode depois receptar o mesmo objeto que ele próprio subtraiu, e o furto, sendo instantâneo, já havia se consumado dias antes, sem flagrância possível.",
+          "regraMemoria": "Ninguém receipta o que ele mesmo furtou — e furto é crime instantâneo: sem perseguição logo após o fato, não há flagrante dias depois."
+        },
+        {
+          "territorio": "Processo Penal",
+          "tema": "Ação Penal",
+          "enunciado": "Arthur, Bruno, Fernanda e Camille foram acusados de furto simples praticado em 2020. Arthur foi definitivamente condenado, Bruno foi condenado, porém, recorreu e ainda não houve decisão definitiva. Fernanda aceitou suspensão condicional do processo, já cumprida, e Camille foi absolvida, tendo recurso do Ministério Público, ainda não julgado. Em julho de 2023, sobreveio acusação de uso de documento particular falso contra os quatro. Considerando preenchidos os demais requisitos, e considerando apenas os antecedentes criminais mencionados, assinale a opção que indica quem podem celebrar Acordo de Não Persecução Penal.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Arthur e Bruno."
+            },
+            {
+              "letra": "B",
+              "texto": "Arthur e Fernanda."
+            },
+            {
+              "letra": "C",
+              "texto": "Bruno e Camille."
+            },
+            {
+              "letra": "D",
+              "texto": "Fernanda e Camille."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O Acordo de Não Persecução Penal não pode ser oferecido a quem é reincidente nem a quem foi beneficiado, nos últimos cinco anos, por transação penal, suspensão condicional do processo ou outro ANPP. Arthur está impedido por ser reincidente (condenação definitiva anterior); Fernanda está impedida por ter cumprido suspensão condicional do processo dentro do período de cinco anos. Já Bruno, cuja condenação anterior não transitou em julgado, não é reincidente (por força da presunção de inocência), e Camille, que foi absolvida (ainda pendente apenas recurso do Ministério Público), não tem qualquer condenação ou benefício anterior que a impeça — por isso apenas Bruno e Camille podem celebrar o ANPP.",
+          "explicacaoErradas": "A alternativa A inclui Arthur, que está impedido por ser reincidente em razão de condenação já definitiva. A alternativa B inclui Fernanda, impedida por ter usufruído recentemente de suspensão condicional do processo. A alternativa D exclui Bruno, tratando-o como impedido, quando na verdade, sem trânsito em julgado, ele não pode ser considerado reincidente nem ter isso usado contra si.",
+          "pegadinha": "A pegadinha é tratar condenação sem trânsito em julgado (caso de Bruno) como se já gerasse reincidência, e esquecer que suspensão condicional do processo já cumprida (caso de Fernanda) também é impeditivo para novo ANPP dentro de cinco anos.",
+          "regraMemoria": "ANPP: sem trânsito em julgado não é reincidência; mas sursis processual e ANPP anteriores nos últimos 5 anos travam o novo acordo."
+        },
+        {
+          "territorio": "Direito Previdenciário",
+          "tema": "Benefícios Previdenciários",
+          "enunciado": "Marina, empregada doméstica, é casada com Pedro, trabalhador avulso. Ambos são pessoas de baixa renda. O casal possui 2 (dois) filhos, um com 7 (sete) anos e outro com 15 (quinze) anos, sendo este inválido. Marina contribui para a Previdência Social há 2 (dois) anos e Pedro iniciou a contribuição há 4 (quatro) meses. Diante do caso narrado, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Pedro não possui a carência mínima para receber o benefício do salário-família."
+            },
+            {
+              "letra": "B",
+              "texto": "Marina e Pedro não fazem jus ao salário-família por possuírem um filho maior de 14 (quatorze) anos."
+            },
+            {
+              "letra": "C",
+              "texto": "Marina e Pedro têm direito ao benefício do salário-família, na proporção do respectivo número de filhos."
+            },
+            {
+              "letra": "D",
+              "texto": "Pedro, na qualidade de trabalhador avulso, não possui direito ao benefício do salário-família."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O salário-família é devido aos segurados empregados e trabalhadores avulsos de baixa renda, por filho menor de 14 anos ou inválido de qualquer idade, e independe de carência mínima de contribuições. Como Marina e Pedro se enquadram nessas condições e têm um filho de 7 anos e outro de 15 anos inválido (que também gera direito ao benefício, independentemente da idade, por sua invalidez), ambos fazem jus ao salário-família na proporção do número de filhos que cada um comprova como dependente.",
+          "explicacaoErradas": "A alternativa A está errada porque o salário-família não exige carência mínima de contribuições, bastando a qualidade de segurado de baixa renda com dependente que se enquadre nos requisitos. A alternativa B erra ao ignorar que a exceção do limite de 14 anos é justamente a invalidez, que garante o benefício independentemente da idade do filho. A alternativa D está incorreta porque o trabalhador avulso é expressamente equiparado ao empregado para fins de direito ao salário-família.",
+          "pegadinha": "A pegadinha é aplicar o limite de 14 anos ao filho inválido de 15 anos, esquecendo que a invalidez afasta esse limite etário para fins de salário-família.",
+          "regraMemoria": "Salário-família: filho até 14 anos OU inválido de qualquer idade — e não exige carência."
+        },
+        {
+          "territorio": "Direito Previdenciário",
+          "tema": "Benefícios Previdenciários",
+          "enunciado": "Henrique e Amanda foram casados por 30 anos. Em 02/03/2022, Amanda, que era segurada obrigatória do Regime Geral de Previdência Social, veio a óbito. Henrique fez o requerimento de pensão por morte ao INSS no dia 02/05/2022. Segundo a Lei nº 8213/91, assinale a afirmativa que indica a data a partir da qual Henrique terá direito ao benefício.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Do requerimento, já que foi requerido 60 dias após o óbito."
+            },
+            {
+              "letra": "B",
+              "texto": "Do óbito, já que foi requerido em até 90 dias após o óbito."
+            },
+            {
+              "letra": "C",
+              "texto": "Da decisão judicial, já que Henrique perdeu o prazo para requerer o benefício administrativamente."
+            },
+            {
+              "letra": "D",
+              "texto": "Do óbito, independentemente da data em que foi feito o requerimento."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "Segundo a Lei nº 8.213/91, quando o requerimento da pensão por morte é feito por dependente maior de 16 anos dentro do prazo de 90 dias contados do óbito, o benefício retroage à data do óbito. Como Henrique requereu o benefício 60 dias após a morte de Amanda, dentro desse prazo, ele terá direito à pensão desde a data do óbito.",
+          "explicacaoErradas": "A alternativa A está errada porque, tendo sido o requerimento feito dentro dos 90 dias, o termo inicial é a data do óbito, e não a data do requerimento (essa regra só vale quando o prazo de 90 dias é ultrapassado). A alternativa C não se aplica, pois Henrique não perdeu prazo administrativo algum, tendo requerido tempestivamente. A alternativa D está incorreta porque, embora o benefício retroaja ao óbito neste caso específico, a retroação não é sempre automática 'independentemente da data do requerimento' — ela depende justamente da observância do prazo legal de 90 dias.",
+          "pegadinha": "A pegadinha é achar que a pensão por morte sempre retroage ao óbito não importa quando for requerida — na verdade isso só vale dentro do prazo de 90 dias; passado esse prazo, o termo inicial passa a ser a data do próprio requerimento.",
+          "regraMemoria": "Pensão por morte: requereu em até 90 dias do óbito? Recebe desde o óbito. Depois disso, só a partir do requerimento."
+        },
+        {
+          "territorio": "Direito do Trabalho",
+          "tema": "Jornada e Descanso",
+          "enunciado": "Uma família, composta de pai, mãe e uma filha, respectivamente Jorge, Paula e Rita, trabalha na mesma sociedade empresária como funcionários do departamento de produção. Rita tem 16 anos de idade, estuda na parte da manhã em uma escola vizinha ao local de trabalho, e está cursando o primeiro ano do ensino médio. Os pais são responsáveis por Rita, que não conta com nenhum outro funcionário. Os três procuraram você, como advogado(a), porque desejam fazer coincidir as férias escolares de Rita, no mês de julho, com as férias de Jorge e Paula, a fim de viabilizar uma viagem familiar. Entretanto, o empregador indeferiu o requerimento das férias de Jorge e Paula, tendo deferido apenas as de Rita. Sobre o direito às férias, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Cabe o ajuizamento de reclamação trabalhista requerendo que o juiz marque as férias dos 3 membros da mesma família, pois Rita tem direito às férias no período escolar e deverá ser acompanhada pelos pais."
+            },
+            {
+              "letra": "B",
+              "texto": "Cabe aos empregados a designação do período de férias, inexistindo direito ao empregador de indeferi-las."
+            },
+            {
+              "letra": "C",
+              "texto": "Os três poderão gozar férias juntos, mas Rita não terá direito de requerer férias concomitantemente com o período de férias escolares."
+            },
+            {
+              "letra": "D",
+              "texto": "Rita tem direito a fazer coincidir suas férias no emprego com as férias escolares e seus pais terão direito a gozar férias no mesmo período, desde que isso não resulte prejuízo para o serviço, causa do indeferimento pelo empregador."
+            }
+          ],
+          "respostaCorreta": 3,
+          "explicacaoCorreta": "A CLT assegura ao empregado menor de idade estudante o direito de fazer coincidir suas férias com as férias escolares, e também prevê que membros de uma mesma família que trabalhem no mesmo estabelecimento têm direito a gozar férias no mesmo período, desde que isso não cause prejuízo ao serviço. Assim, Jorge e Paula só podem ter o pedido de férias conjuntas negado se houver efetivo prejuízo à empresa, e não por mera liberalidade do empregador.",
+          "explicacaoErradas": "A alternativa A está errada porque não cabe ao juiz simplesmente 'marcar' as férias substituindo a avaliação do empregador sobre eventual prejuízo ao serviço, sem que esse fundamento seja analisado. A alternativa B ignora que o empregador tem, sim, o poder de fixar a época das férias (ficando a fixação, em regra, a critério dele), respeitadas as exceções legais. A alternativa C contraria expressamente a regra que garante à empregada estudante menor de idade o direito de coincidir férias com o período escolar.",
+          "pegadinha": "A pegadinha é achar que o direito da família de tirar férias juntas é absoluto — a lei condiciona esse direito à ausência de prejuízo ao serviço, o que justifica que o empregador possa, fundamentadamente, negar o pedido dos pais.",
+          "regraMemoria": "Menor estudante: férias coincidem com a escola. Família junto na mesma empresa: férias juntas, SALVO prejuízo ao serviço."
+        },
+        {
+          "territorio": "Direito do Trabalho",
+          "tema": "Relação de Emprego",
+          "enunciado": "Você, como advogado, trabalha no setor de recursos humanos de uma grande empresa multinacional. Como o gerente do setor está de férias, e é ele, na condição de gerente, que defere ou indefere as licenças reivindicadas pelos funcionários, a secretária do setor, agora, lhe indagou sobre as solicitações de quatro funcionários: o primeiro está com o contrato suspenso por doença, em gozo de benefício previdenciário de auxílio doença comum e requer pagamento de salário; o segundo requereu o abono de um dia de trabalho, em razão de doação de sangue; o terceiro formulou requerimento de dispensa para ser ouvido como testemunha na Justiça do Trabalho em audiência presencial e, o quarto e último, aduziu que o primo faleceu e requereu a dispensa do dia de trabalho. Sobre as solicitações, considerando o teor da legislação trabalhista em vigor, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Na hipótese de falecimento do primo, sendo parente do funcionário, a dispensa ao trabalho é devida por um dia."
+            },
+            {
+              "letra": "B",
+              "texto": "Em caso de doação de sangue voluntária, devidamente comprovada, o empregado tem direito a um dia de licença remunerada a cada 12 meses."
+            },
+            {
+              "letra": "C",
+              "texto": "O empregado em gozo de auxílio doença tem direito a receber a complementação salarial da diferença entre o benefício previdenciário e o salário."
+            },
+            {
+              "letra": "D",
+              "texto": "A ausência ao trabalho para comparecimento em juízo refere-se tão somente aos casos de o empregado ser parte na demanda, mas não para servir como testemunha."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A CLT garante ao empregado o direito de deixar de comparecer ao serviço, sem prejuízo do salário, por até um dia a cada período de 12 meses, em razão de doação voluntária de sangue devidamente comprovada. Por isso, entre as quatro solicitações, essa é a que corresponde exatamente à previsão legal de falta abonada.",
+          "explicacaoErradas": "A alternativa A está errada porque a falta abonada por falecimento de parente, na CLT, é restrita a determinados graus de parentesco (como cônjuge, ascendente, descendente e irmão) e não alcança primos. A alternativa C está incorreta porque, durante o auxílio-doença comum, o contrato de trabalho fica suspenso e o empregado não tem direito a receber complementação salarial do empregador, apenas o benefício previdenciário. A alternativa D está errada porque a CLT garante a falta abonada para comparecimento a juízo tanto na condição de parte quanto na de testemunha.",
+          "pegadinha": "A pegadinha é achar que qualquer parente (como primo) dá direito a falta abonada por luto — a lei lista taxativamente os graus de parentesco que geram esse direito, e primo não está entre eles.",
+          "regraMemoria": "Doação de sangue comprovada: 1 dia de folga remunerada a cada 12 meses."
+        },
+        {
+          "territorio": "Direito do Trabalho",
+          "tema": "Estabilidades e Garantias de Emprego",
+          "enunciado": "Determinada sociedade empresária possui cerca de 100 funcionários e, em razão de mudança na direção, decidiu realizar algumas dispensas. Ocorre que alguns dos funcionários indicados para a dispensa são detentores de garantias no emprego, sendo uma em decorrência de gestação; outra por ser dirigente sindical; outro por ser membro da Comissão Interna de Prevenção de Acidentes (CIPA) eleito pelos empregados. Além desses casos existe um quarto funcionário, que informou não poder ser dispensado por também ser membro da CIPA, indicado pelo próprio empregador. Diante disso, a sociedade empresária consultou você, como advogado(a), para saber os períodos e as possibilidades de dispensa. A esse respeito, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Todas as modalidades de estabilidade ou garantia de emprego possuem a mesma duração."
+            },
+            {
+              "letra": "B",
+              "texto": "A estabilidade gestante dá-se da confirmação da gravidez até cinco meses após o parto; e a do membro da CIPA eleito pelos empregados, dá-se do registro da candidatura até um ano após o término do mandato, assim como a do dirigente sindical."
+            },
+            {
+              "letra": "C",
+              "texto": "Os empregados representantes da CIPA, seja o eleito pelos empregados, seja o indicado como representante do empregador, têm garantia no emprego até um ano após o término do mandato."
+            },
+            {
+              "letra": "D",
+              "texto": "O conhecimento por parte do empregador do estado gravídico da empregada gestante é requisito para o reconhecimento da estabilidade."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A estabilidade da gestante vai da confirmação da gravidez até cinco meses após o parto; a do dirigente sindical e a do membro da CIPA eleito pelos empregados vão do registro da candidatura até um ano após o fim do mandato. Essas são as regras corretas de duração de cada garantia mencionada no enunciado.",
+          "explicacaoErradas": "A alternativa A está errada porque as estabilidades têm durações e marcos iniciais distintos, não sendo todas iguais. A alternativa C erra ao estender a estabilidade também ao representante da CIPA indicado pelo próprio empregador, que não possui essa garantia, pois já representa os interesses do empregador, não fazendo sentido protegê-lo contra dispensa por ele mesmo. A alternativa D está incorreta porque a estabilidade da gestante é objetiva e independe do conhecimento do empregador sobre o estado gravídico, conforme entendimento consolidado do TST.",
+          "pegadinha": "A pegadinha é estender a estabilidade da CIPA ao membro indicado pelo empregador — só o representante ELEITO pelos empregados tem essa garantia.",
+          "regraMemoria": "CIPA: só o eleito pelos empregados tem estabilidade — o indicado pelo patrão, não. Gestante tem estabilidade mesmo que o patrão não saiba da gravidez."
+        },
+        {
+          "territorio": "Direito do Trabalho",
+          "tema": "Remuneração e Verbas Rescisórias",
+          "enunciado": "Plínio Salgado ficou afastado do trabalho por 8 meses em benefício previdenciário decorrente de doença ocupacional relacionada ao trabalho. Ao retornar após a alta médica, foi informado que não teria direito ao gozo de férias, pois necessitaria cumprir mais um ano de trabalho, bem como seu FGTS deixou de ser depositado, já que não houve trabalho. Além disso, seu salário permaneceu congelado, por não haver contraprestação no período do aumento espontâneo concedido pelo empregador aos empregados que estavam ativos. Na qualidade de advogado(a) de Plínio, assinale a opção que, corretamente, contempla os efetivos direitos de seu cliente.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Plínio apenas faz jus aos depósitos do FGTS do período do afastamento, bem como ao reajuste salarial concedido pelo empregador."
+            },
+            {
+              "letra": "B",
+              "texto": "Plínio faz jus aos depósitos do FGTS do período de afastamento, bem como ao reajuste salarial concedido pelo empregador e ao cômputo do período de afastamento no período aquisitivo de férias."
+            },
+            {
+              "letra": "C",
+              "texto": "Plínio não tem direito ao reajuste salarial, pois não houve contraprestação no período do aumento espontâneo, não se tratando de norma coletiva."
+            },
+            {
+              "letra": "D",
+              "texto": "Plínio não tem direito aos valores de FGTS do período, pois em gozo do benefício previdenciário não há cômputo do tempo de serviço."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Durante o afastamento por auxílio-doença decorrente de acidente ou doença ocupacional, a lei determina a manutenção dos depósitos de FGTS na conta vinculada do trabalhador, e a jurisprudência trabalhista garante a extensão de reajustes salariais concedidos pelo empregador durante esse período, para não penalizar quem está afastado por razão ligada ao próprio trabalho. Já quanto às férias, a CLT prevê que o afastamento por mais de seis meses recebendo benefício previdenciário por acidente de trabalho faz o empregado perder o direito ao período aquisitivo em curso, sendo necessário reiniciar a contagem — por isso Plínio só tem direito ao FGTS e ao reajuste salarial, mas não às férias daquele período.",
+          "explicacaoErradas": "A alternativa B está errada ao incluir o cômputo do afastamento no período aquisitivo de férias, contrariando a regra que faz o empregado perder esse direito quando o afastamento por acidente de trabalho supera seis meses. A alternativa C nega o direito ao reajuste salarial sob o argumento de ausência de contraprestação, mas a jurisprudência não permite que o empregado afastado por acidente de trabalho seja prejudicado quanto a esse direito. A alternativa D nega os depósitos de FGTS, contrariando a regra legal que impõe sua manutenção durante o afastamento por acidente de trabalho.",
+          "pegadinha": "A pegadinha é achar que 'não houve trabalho, então nada é devido' — mas por se tratar de afastamento por doença OCUPACIONAL (equiparada a acidente de trabalho), a lei protege especialmente o FGTS e o reajuste salarial, ainda que retire o direito às férias daquele período aquisitivo específico.",
+          "regraMemoria": "Afastado por acidente/doença do trabalho: FGTS e reajuste continuam, mas afastamento maior que 6 meses zera o período aquisitivo de férias."
+        },
+        {
+          "territorio": "Direito do Trabalho",
+          "tema": "Jornada e Descanso",
+          "enunciado": "Em determinada sociedade empresária trabalham, entre outras, as seguintes pessoas: José, que é teletrabalhador e recebe salário por produção; Vanilda, que trabalha externamente sem que o empregador consiga controlar o seu horário, situação que foi anotada em sua CTPS e na ficha de registro de empregados; Regina, que exerce a função de gerente, comanda um grupo de 45 pessoas, é dispensada da marcação de ponto e recebe salário de R$ 8.000,00 acrescido de gratificação de função de R$ 4.000,00. De acordo com a CLT, em relação ao direito a horas extras, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Somente José terá direito a horas extras, caso ultrapasse a jornada constitucional."
+            },
+            {
+              "letra": "B",
+              "texto": "Nenhum dos empregados indicados no enunciado terá direito a horas extras."
+            },
+            {
+              "letra": "C",
+              "texto": "Vanilda e Regina terão direito a horas extras, caso ultrapassem a jornada constitucional."
+            },
+            {
+              "letra": "D",
+              "texto": "José e Regina terão direito a horas extras, caso ultrapassem a jornada constitucional."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A CLT exclui do capítulo de duração do trabalho (e, portanto, do direito a horas extras) os empregados em teletrabalho remunerados por produção ou tarefa, os que exercem atividade externa incompatível com a fixação de horário (desde que isso conste devidamente anotado), e os exercentes de cargo de confiança com gratificação de função de pelo menos 40% do salário do cargo efetivo. José, Vanilda e Regina se enquadram, cada um, em uma dessas exceções legais, de modo que nenhum deles tem direito a horas extras.",
+          "explicacaoErradas": "As alternativas A, C e D erram ao atribuir direito a horas extras a um ou mais desses empregados, ignorando que cada um deles se enquadra em uma hipótese legal de exclusão do controle de jornada: José por ser teletrabalhador remunerado por produção, Vanilda por atividade externa incompatível com controle de horário devidamente registrada, e Regina por exercer cargo de gestão com gratificação de função superior a 40% do salário.",
+          "pegadinha": "A pegadinha é lembrar de apenas uma das três exceções (por exemplo, só o trabalho externo) e esquecer que o enunciado reuniu propositalmente as três hipóteses clássicas de exclusão do direito a horas extras na mesma questão.",
+          "regraMemoria": "Sem controle de horas extras: teletrabalho por produção, trabalho externo incompatível com horário, e cargo de confiança com gratificação de 40%+."
+        },
+        {
+          "territorio": "Processo do Trabalho",
+          "tema": "Recursos Trabalhistas",
+          "enunciado": "De uma sentença trabalhista, que julgou o pedido procedente em parte, somente o reclamante recorreu. No prazo de 8 dias da intimação acerca do recurso, a sociedade empresária apresentou contrarrazões ao recurso ordinário e recurso ordinário adesivo. Do recurso adesivo, o juiz concedeu vista ao reclamante, que se manifestou desistindo do recurso principal. Diante do caso retratado e dos termos da legislação em vigor, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Não existe previsão de recurso adesivo na CLT e, por isso, ele não pode ser interposto na Justiça do Trabalho."
+            },
+            {
+              "letra": "B",
+              "texto": "O recurso adesivo pode ser manejado na seara trabalhista, e, com a desistência do recurso principal, o adesivo será admitido e apreciado pelo TRT."
+            },
+            {
+              "letra": "C",
+              "texto": "O recurso adesivo, com a desistência do recurso principal, não poderá ser conhecido, ocorrendo assim o trânsito em julgado da sentença."
+            },
+            {
+              "letra": "D",
+              "texto": "A desistência do recurso principal dependerá da concordância da parte contrária, porque isso pode gerar consequência ao recurso adesivo."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "O recurso adesivo é admitido na Justiça do Trabalho por aplicação subsidiária do CPC, exigindo sucumbência recíproca — presente no caso, já que o pedido foi julgado procedente em parte. Contudo, o recurso adesivo é subordinado ao recurso principal: se este é objeto de desistência pela parte que o interpôs, o recurso adesivo perde seu suporte e não pode ser conhecido, operando-se o trânsito em julgado da sentença.",
+          "explicacaoErradas": "A alternativa A está errada porque, mesmo sem previsão expressa na CLT, o recurso adesivo é admitido na Justiça do Trabalho por aplicação subsidiária do CPC. A alternativa B erra ao afirmar que o recurso adesivo será conhecido e apreciado mesmo com a desistência do recurso principal, quando na verdade essa desistência retira o suporte processual do adesivo. A alternativa D está incorreta porque a desistência do recurso principal, em regra, não depende de concordância da parte contrária, sendo ato unilateral do recorrente.",
+          "pegadinha": "A pegadinha é esquecer que o recurso adesivo é essencialmente dependente do recurso principal — desistindo deste, o adesivo cai junto, mesmo que já tenha sido apresentado regularmente.",
+          "regraMemoria": "Recurso adesivo é 'carona': se o principal desiste, o adesivo desce junto e não é conhecido."
+        },
+        {
+          "territorio": "Processo do Trabalho",
+          "tema": "Execução Trabalhista",
+          "enunciado": "O Município de Sete Lagoas/MG foi condenado de forma subsidiária numa reclamação trabalhista envolvendo terceirização. Sendo infrutífera a execução contra o prestador de serviços, a execução foi direcionada em desfavor do Município, que pretende ajuizar embargos à execução questionando os cálculos. Sobre o caso, de acordo com a Lei de Regência, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Será obrigatório garantir o juízo, porque não há privilégios na Justiça do Trabalho."
+            },
+            {
+              "letra": "B",
+              "texto": "É desnecessária a garantia do juízo diante da natureza jurídica do executado."
+            },
+            {
+              "letra": "C",
+              "texto": "Para serem admitidos os embargos, o Município deverá depositar metade do valor exequendo."
+            },
+            {
+              "letra": "D",
+              "texto": "O juízo precisa ser garantido com seguro fiança judicial para não abalar as finanças do ente público."
+            }
+          ],
+          "respostaCorreta": 1,
+          "explicacaoCorreta": "A Fazenda Pública, por sua natureza jurídica e pelo regime de pagamento por precatório, não se submete à penhora de bens, sendo por isso desnecessária a garantia do juízo para que o Município oponha embargos à execução questionando os cálculos. Essa é uma prerrogativa processual própria dos entes públicos.",
+          "explicacaoErradas": "A alternativa A está errada justamente porque existe, sim, esse privilégio processual em favor da Fazenda Pública, dispensando a garantia do juízo. A alternativa C inventa uma exigência de depósito de metade do valor executado que não corresponde ao regime de execução contra a Fazenda Pública. A alternativa D também está incorreta, pois não se exige seguro-garantia ou qualquer outra forma de garantia do juízo para o ente público embargar a execução.",
+          "pegadinha": "A pegadinha é aplicar ao ente público a regra geral de garantia do juízo válida para executados privados, esquecendo o regime diferenciado da Fazenda Pública, que paga por precatório e não sofre penhora.",
+          "regraMemoria": "Fazenda Pública embarga execução SEM precisar garantir o juízo — ela paga por precatório, não sofre penhora."
+        },
+        {
+          "territorio": "Processo do Trabalho",
+          "tema": "Provas no Processo do Trabalho",
+          "enunciado": "John estava empregado em uma sociedade empresária de óleo e gás, mas foi injustamente dispensado por justa causa, com base em uma falsa acusação de consumo de álcool a bordo da plataforma, no dia 20/03/2023. Você, como advogado(a) de John, ajuizou reclamação trabalhista e a única testemunha do seu cliente não fala nem entende português. Você a arrolou como testemunha, e já requereu e obteve o benefício da gratuidade de justiça. Sobre seu requerimento para a produção da prova, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Você deverá requerer ao juiz um intérprete, que será custeado pela ré, se sucumbente no objeto da prova, ou pela União, se você for a parte sucumbente."
+            },
+            {
+              "letra": "B",
+              "texto": "Deverá ser requerido ao juiz um intérprete, que, independentemente da gratuidade de justiça, deverá ser custeado pela parte a quem o depoimento interessar."
+            },
+            {
+              "letra": "C",
+              "texto": "Considerando que seu cliente fala inglês, ele poderá servir de intérprete pelo princípio da economia processual."
+            },
+            {
+              "letra": "D",
+              "texto": "A gratuidade de justiça não alcança o intérprete, sendo apenas para custas e perícias judiciais, logo a parte autora deverá custear a despesa processual."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Ao ser necessário intérprete para o depoimento de testemunha que não fala português, o custeio dessa despesa recai sobre a parte sucumbente no objeto daquela prova; se a parte que arrolou a testemunha (beneficiária da gratuidade de justiça) for a sucumbente, a despesa é suportada pela União, já que ela não pode ser obrigada a arcar com custas processuais em razão do benefício concedido.",
+          "explicacaoErradas": "A alternativa B está incorreta ao afirmar que o custeio recairia sobre a parte interessada no depoimento independentemente da gratuidade de justiça, ignorando a proteção que esse benefício confere contra o adiantamento e o pagamento de despesas processuais. A alternativa C não é juridicamente adequada, pois a testemunha deve ser isenta e o depoimento deve ser fidedigno, não sendo apropriado que a própria parte sirva de intérprete de sua testemunha. A alternativa D está errada porque a gratuidade de justiça abrange as despesas com intérprete, não se limitando a custas e perícias.",
+          "pegadinha": "A pegadinha é achar que a gratuidade de justiça só cobre custas processuais e honorários periciais, esquecendo que ela também alcança despesas com intérprete/tradutor.",
+          "regraMemoria": "Intérprete: paga quem perde no ponto da prova; se o beneficiário da gratuidade perder, quem paga é a União."
+        },
+        {
+          "territorio": "Processo do Trabalho",
+          "tema": "Recursos Trabalhistas",
+          "enunciado": "Determinada sociedade empresária, sua cliente, recebeu a visita de fiscais do trabalho, os quais apontaram haver irregularidades quanto às condições de trabalho de alguns empregados, bem como entenderam irregular, no dia, estarem nas dependências da empresa pessoas prestadoras de serviço por intermédio de MEI – Micro Empreendedor Individual. Diante disso, foram lavrados dois autos de infração aplicando multas severas, sendo concedido prazo de 30 dias para pagamento, sob pena de fechamento do estabelecimento. Não foi facultado à sua cliente nenhum direito à ampla defesa, sendo certo que, de fato, nada foi verificado pelos fiscais. A sociedade empresária tem a documentação de todas as condições de trabalho e alega que os prestadores de serviço são autônomos. Assinale a opção que indica a medida jurídica cabível que, com urgência, aos interesses da sua cliente de sustar os autos de infração.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Mandado de Segurança na Justiça do Trabalho."
+            },
+            {
+              "letra": "B",
+              "texto": "Agravo de Petição na Justiça do Trabalho."
+            },
+            {
+              "letra": "C",
+              "texto": "Mandado de Segurança na Justiça Federal."
+            },
+            {
+              "letra": "D",
+              "texto": "Agravo de Instrumento na Justiça do Trabalho."
+            }
+          ],
+          "respostaCorreta": 0,
+          "explicacaoCorreta": "Compete à Justiça do Trabalho processar e julgar as ações relativas a penalidades administrativas impostas por órgãos de fiscalização das relações de trabalho, sendo o mandado de segurança a via adequada e urgente para sustar os efeitos dos autos de infração, especialmente diante da alegação de ausência de contraditório e de erro na fiscalização.",
+          "explicacaoErradas": "A alternativa B está errada porque o agravo de petição é recurso próprio da fase de execução trabalhista, não servindo para impugnar ato administrativo de fiscalização. A alternativa C erra ao dirigir a ação para a Justiça Federal, quando a competência para julgar penalidades impostas por fiscalização do trabalho é da Justiça do Trabalho. A alternativa D está incorreta porque o agravo de instrumento serve para destrancar recurso trancado, não para atacar diretamente um auto de infração administrativo.",
+          "pegadinha": "A pegadinha é pensar em Justiça Federal só porque a fiscalização é feita por órgão federal — mas a Constituição atribuiu essa competência especificamente à Justiça do Trabalho.",
+          "regraMemoria": "Multa de fiscalização do trabalho: mandado de segurança na Justiça do TRABALHO, não na Federal."
+        },
+        {
+          "territorio": "Processo do Trabalho",
+          "tema": "Provas no Processo do Trabalho",
+          "enunciado": "Em uma reclamação trabalhista na qual o reclamante postula apenas o pagamento das verbas devidas pela extinção do contrato, a sociedade empresária alegou em sua defesa que nada seria devido porque o ex-empregado praticou uma falta grave e, por isso, foi dispensado por justa causa. Na audiência de instrução, cada parte conduziu duas testemunhas e, após ouvir os depoimentos pessoais, e considerando a tese de contestação, o juiz decidiu ouvir primeiramente as testemunhas do reclamado e após as do reclamante. Diante dos fatos e da previsão contida na CLT, assinale a afirmativa correta.",
+          "alternativas": [
+            {
+              "letra": "A",
+              "texto": "Errou o juiz, pois de acordo com a CLT as testemunhas do reclamante devem ser ouvidas antes daquelas conduzidas pelo reclamado, haja vista o direito de defesa."
+            },
+            {
+              "letra": "B",
+              "texto": "Uma vez que a CLT não dispõe sobre a ordem de produção das provas, fica a critério do magistrado a definição, inclusive a ordem de produção da prova oral e a quantidade de testemunhas admitidas."
+            },
+            {
+              "letra": "C",
+              "texto": "O juiz tem o poder de alterar a ordem de realização das provas, inclusive a oitiva das testemunhas, tendo em vista as alegações das partes e adequando-as às necessidades do conflito."
+            },
+            {
+              "letra": "D",
+              "texto": "A forma realizada pelo magistrado nulificou a produção das provas e a sentença, que poderá ser anulada para que a instrução seja refeita com renovação das provas na ordem correta."
+            }
+          ],
+          "respostaCorreta": 2,
+          "explicacaoCorreta": "Quando a defesa alega fato extintivo do direito do autor, como a justa causa, o ônus de provar esse fato é do próprio empregador, o que autoriza o juiz, no exercício de seus amplos poderes de direção e instrução do processo, a adequar a ordem de produção da prova oral às necessidades do caso concreto — ouvindo primeiro as testemunhas de quem tem o ônus de provar o fato controvertido central.",
+          "explicacaoErradas": "A alternativa A está errada por aplicar rigidamente a ordem padrão da CLT sem considerar que, no caso de fato extintivo alegado pelo réu, o ônus da prova é dele, justificando a inversão. A alternativa B está imprecisa ao dizer que a CLT nada dispõe sobre a ordem de oitiva, quando na verdade há regra geral, mas ela comporta adequação pelo juiz conforme o caso. A alternativa D está incorreta porque a inversão da ordem, justificada pelo ônus da prova, não gera nulidade nem prejuízo às partes, não havendo motivo para anular a instrução ou a sentença.",
+          "pegadinha": "A pegadinha é aplicar cegamente a regra geral de que as testemunhas do reclamante sempre depõem primeiro, sem perceber que o ônus da prova sobre o fato central (justa causa) era do reclamado, o que justifica a inversão pelo juiz.",
+          "regraMemoria": "Quem tem o ônus de provar o fato central (aqui, a justa causa) pode ter suas testemunhas ouvidas primeiro — o juiz pode adequar a ordem."
         }
       ]
     }

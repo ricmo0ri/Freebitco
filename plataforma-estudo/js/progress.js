@@ -82,11 +82,20 @@ var Progress = (function () {
     }
   }
 
+  // Mesma prioridade usada no resto do app (ProximoPasso, getTemasFracos):
+  // quem precisa de atenção primeiro aparece primeiro na lista.
+  var PRIORIDADE_STATUS_MAPA = { critico: 0, fraco: 1, sem_dados: 2, desenvolvimento: 3, dominado: 4 };
+
   function renderMapaOab() {
     if (!els.mapaLista || !window.DB) return;
     DB.getAll('disciplinas').then(function (disciplinas) {
       var mapa = Fraquezas.getMapaTerritorios(disciplinas);
-      mapa.sort(function (a, b) { return b.pct - a.pct; });
+      mapa.sort(function (a, b) {
+        var pa = PRIORIDADE_STATUS_MAPA[a.status];
+        var pb = PRIORIDADE_STATUS_MAPA[b.status];
+        if (pa !== pb) return pa - pb;
+        return a.pct - b.pct;
+      });
 
       els.mapaLista.innerHTML = '';
       mapa.forEach(function (item) {

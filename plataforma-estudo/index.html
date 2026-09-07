@@ -34,6 +34,12 @@
     <section id="view-missao" class="view" data-view="missao">
       <h2 class="view-title">Escolha sua missão</h2>
 
+      <div id="proximo-passo-card" class="revisao-card" hidden>
+        <p class="revisao-titulo" id="proximo-passo-titulo"></p>
+        <p class="proximo-passo-texto" id="proximo-passo-texto"></p>
+        <button id="proximo-passo-btn" class="btn btn-primary" hidden></button>
+      </div>
+
       <div id="revisao-inteligente-card" class="revisao-card" hidden>
         <p class="revisao-titulo" id="revisao-titulo">📚 Você precisa revisar</p>
         <ul id="revisao-lista" class="revisao-lista"></ul>
@@ -493,6 +499,16 @@
     </div>
   </div>
 
+  <div id="historia-overlay" class="bemestar-overlay" hidden>
+    <div class="bemestar-card">
+      <h3 id="historia-titulo"></h3>
+      <p id="historia-texto"></p>
+      <div class="bemestar-acoes">
+        <button id="historia-botao" class="btn btn-primary"></button>
+      </div>
+    </div>
+  </div>
+
   <div id="conquista-toast" class="conquista-toast" hidden role="status" aria-live="polite">
     <span class="conquista-toast-icone" aria-hidden="true">🏆</span>
     <p id="conquista-toast-mensagem" class="conquista-toast-mensagem"></p>
@@ -512,9 +528,12 @@
 <script src="js/questoesSeed.js"></script>
 <script src="js/leiSecaSeed.js"></script>
 <script src="js/resumoFacilSeed.js"></script>
+<script src="js/historiaSeed.js"></script>
 <script src="js/perfil.js"></script>
 <script src="js/fraquezas.js"></script>
 <script src="js/revisao.js"></script>
+<script src="js/proximopasso.js"></script>
+<script src="js/historia.js"></script>
 <script src="js/questaoCard.js"></script>
 <script src="js/bemestar.js"></script>
 <script src="js/timer.js"></script>

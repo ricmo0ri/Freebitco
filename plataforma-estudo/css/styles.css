@@ -1425,3 +1425,9 @@ body.low-stim .conquista-toast.toast-entrando { transform: translate(-50%, 0); }
   font-size: 1.05rem;
 }
 .revisao-card .btn-primary { width: 100%; }
+
+#proximo-passo-card { border-color: var(--accent2); }
+.proximo-passo-texto {
+  margin: 0 0 14px;
+  color: var(--ink-soft);
+}

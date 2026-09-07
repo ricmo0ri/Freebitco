@@ -79,6 +79,8 @@ var App = (function () {
 
     if (window.Bemestar) Bemestar.init();
     if (window.Revisao) Revisao.init();
+    if (window.ProximoPasso) ProximoPasso.init();
+    if (window.Historia) Historia.init();
     Perfil.init();
     Timer.init();
     Flashcards.init();

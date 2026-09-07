@@ -216,6 +216,7 @@ var Disciplinas = (function () {
     Doutrina.setDisciplina(disciplina.id);
     if (window.LeiSeca) LeiSeca.setDisciplina(disciplina.id);
     if (window.ResumoFacil) ResumoFacil.setDisciplina(disciplina.id);
+    if (window.Historia) Historia.mostrarLoreTerritorio(disciplina);
     showSubtab('flashcards');
   }
 

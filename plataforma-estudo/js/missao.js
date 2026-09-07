@@ -109,6 +109,7 @@ var Missao = (function () {
         ? 'Você dominou: ' + tema + (nomeTerritorio ? ' (' + nomeTerritorio + ')' : '') + '!'
         : 'Você dominou: ' + (nomeTerritorio || 'este assunto') + '!';
       if (window.Bemestar) Bemestar.mostrarToastConquista(mensagem);
+      if (window.Historia) Historia.celebrarReinoLibertado(disciplinaId, disciplinas);
     });
   }
 
@@ -189,6 +190,7 @@ var Missao = (function () {
   function renderTerritorios() {
     renderMetaDiariaMini();
     renderContinuarMissao();
+    if (window.ProximoPasso) ProximoPasso.render();
     if (window.Revisao) Revisao.render();
     return DB.getAll('disciplinas').then(function (disciplinas) {
       els.territoriosList.innerHTML = '';
@@ -551,6 +553,7 @@ var Missao = (function () {
     renderTerritorios: renderTerritorios,
     calcularXp: calcularXp,
     registrarResposta: registrarResposta,
-    iniciarComFila: iniciarComFila
+    iniciarComFila: iniciarComFila,
+    iniciarMissao: iniciarMissao
   };
 })();

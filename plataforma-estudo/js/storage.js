@@ -21,7 +21,11 @@ var Storage = (function () {
     ultimaMissao: 'estudoTdah.ultimaMissao',
     somConquistas: 'estudoTdah.somConquistas',
     temasDominados: 'estudoTdah.temasDominados',
-    leiSecaRespostas: 'estudoTdah.leiSecaRespostas'
+    leiSecaRespostas: 'estudoTdah.leiSecaRespostas',
+    historiaIntroVista: 'estudoTdah.historiaIntroVista',
+    historiaTerritoriosVistos: 'estudoTdah.historiaTerritoriosVistos',
+    reinosLibertados: 'estudoTdah.reinosLibertados',
+    historiaFinalVista: 'estudoTdah.historiaFinalVista'
   };
 
   function read(key, fallback) {

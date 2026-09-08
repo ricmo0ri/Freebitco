@@ -25,10 +25,10 @@ var ProximoPasso = (function () {
   ];
 
   var TEXTO_STATUS = {
-    critico: function (item) { return 'Você está tendo bastante dificuldade aqui (' + item.pct + '% de acerto). Um bom lugar pra focar agora.'; },
-    fraco: function (item) { return 'Ainda não está redondo (' + item.pct + '% de acerto). Um empurrão aqui já ajuda bastante.'; },
+    critico: function (item) { return 'Você está tendo bastante dificuldade aqui (' + item.pct + '% de acerto nas últimas ' + item.total + ' questões). Um bom lugar pra focar agora.'; },
+    fraco: function (item) { return 'Ainda não está redondo (' + item.pct + '% de acerto nas últimas ' + item.total + ' questões). Um empurrão aqui já ajuda bastante.'; },
     sem_dados: function () { return 'Você ainda não visitou este reino. Bom lugar pra começar!'; },
-    desenvolvimento: function (item) { return 'Está no caminho certo (' + item.pct + '%), mas ainda dá pra evoluir.'; }
+    desenvolvimento: function (item) { return 'Está no caminho certo (' + item.pct + '% de acerto nas últimas ' + item.total + ' questões), mas ainda dá pra evoluir.'; }
   };
 
   function escolher(mapa, ordemPorId) {

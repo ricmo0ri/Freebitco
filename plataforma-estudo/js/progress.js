@@ -101,7 +101,9 @@ var Progress = (function () {
       mapa.forEach(function (item) {
         var li = document.createElement('li');
         li.className = 'mapa-oab-item';
-        var texto = item.total > 0 ? item.nome + ' — ' + item.pct + '%' : item.nome + ' — sem dados ainda';
+        var texto = item.total > 0
+          ? item.nome + ' — ' + item.pct + '% de acerto (últimas ' + item.total + (item.total === 1 ? ' questão' : ' questões') + ')'
+          : item.nome + ' — sem dados ainda';
         li.textContent = item.emoji + ' ' + texto;
         els.mapaLista.appendChild(li);
       });

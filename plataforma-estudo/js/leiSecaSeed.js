@@ -3,7 +3,7 @@
 // complementa as questões de aplicação de caso concreto com um treino
 // específico de memorização de texto de lei.
 var LeiSecaSeed = (function () {
-  var SEED_VERSION_ATUAL = 3;
+  var SEED_VERSION_ATUAL = 4;
 
   var DISPOSITIVOS = [
   {
@@ -990,6 +990,942 @@ var LeiSecaSeed = (function () {
     "regraMemoria": "Perder a qualidade de SEGURADO = caducidade, é definitivo, não é 'pausa'.",
     "seedVersion": 2
   },
+  {
+    "lei": "Constituição Federal de 1988",
+    "dispositivo": "Art. 195, caput",
+    "territorio": "Direito Previdenciário",
+    "subtema": "Custeio da Seguridade Social",
+    "textoCorreto": "A seguridade social será financiada por toda a sociedade, de forma direta e indireta, nos termos da lei, mediante recursos provenientes dos orçamentos da União, dos Estados, do Distrito Federal e dos Municípios, e das seguintes contribuições sociais.",
+    "versaoErrada1": "A seguridade social será financiada por toda a sociedade, de forma direta ou indireta, nos termos da lei, mediante recursos provenientes dos orçamentos da União, dos Estados, do Distrito Federal e dos Municípios, e das seguintes contribuições sociais.",
+    "versaoErrada2": "A seguridade social será financiada por toda a sociedade, de forma direta e indireta, nos termos da lei, mediante recursos provenientes dos orçamentos da União, dos Estados e dos Municípios, e das seguintes contribuições sociais.",
+    "explicacaoDiferenca": "O caput do art. 195 estabelece financiamento DIRETO E INDIRETO simultaneamente (as duas formas coexistem: contribuições específicas de forma direta e recursos orçamentários que também compõem o custeio de forma indireta) - trocar 'e' por 'ou' sugere que bastaria uma das formas, o que distorce o caráter solidário e múltiplo do custeio da seguridade. Além disso, o dispositivo lista expressamente os QUATRO entes federativos (União, Estados, Distrito Federal e Municípios) como fontes orçamentárias; omitir o Distrito Federal exclui indevidamente um ente que também contribui obrigatoriamente para o custeio, o que é relevante pois o DF acumula competências estaduais e municipais.",
+    "regraMemoria": "Seguridade = TODA a sociedade banca, de forma DIRETA E INDIRETA, com os 4 entes: União, Estados, DF e Municípios - ninguém fica de fora.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Lei de Benefícios da Previdência Social (Lei 8.213/1991)",
+    "dispositivo": "Art. 19",
+    "territorio": "Direito Previdenciário",
+    "subtema": "Acidente de Trabalho",
+    "textoCorreto": "Acidente do trabalho é o que ocorre pelo exercício do trabalho a serviço de empresa ou de empregador doméstico ou pelo exercício do trabalho dos segurados referidos no inciso VII do art. 11 desta Lei, provocando lesão corporal ou perturbação funcional que cause a morte ou a perda ou redução, permanente ou temporária, da capacidade para o trabalho.",
+    "versaoErrada1": "Acidente do trabalho é o que ocorre pelo exercício do trabalho a serviço de empresa ou de empregador doméstico ou pelo exercício do trabalho dos segurados referidos no inciso VII do art. 11 desta Lei, provocando lesão corporal ou perturbação funcional que cause a morte ou a perda ou redução, permanente e temporária, da capacidade para o trabalho.",
+    "versaoErrada2": "Acidente do trabalho é o que ocorre pelo exercício do trabalho a serviço de empresa ou de empregador doméstico ou pelo exercício do trabalho dos segurados referidos no inciso VI do art. 11 desta Lei, provocando lesão corporal ou perturbação funcional que cause a morte ou a perda ou redução, permanente ou temporária, da capacidade para o trabalho.",
+    "explicacaoDiferenca": "A redução da capacidade laborativa decorrente de acidente de trabalho pode ser PERMANENTE OU TEMPORÁRIA (situações alternativas e excludentes entre si, já que a mesma lesão não pode ser as duas coisas ao mesmo tempo) - trocar 'ou' por 'e' torna a frase logicamente incoerente e desvirtua a classificação legal do dano. Também é essencial a remissão correta ao inciso VII do art. 11, que trata do SEGURADO ESPECIAL (trabalhador rural em regime de economia familiar); o inciso VI refere-se ao trabalhador avulso, categoria distinta, de modo que a troca do inciso altera o real alcance subjetivo da norma.",
+    "regraMemoria": "Acidente de trabalho gera incapacidade PERMANENTE OU TEMPORÁRIA (uma ou outra) - e a remissão é ao inciso VII (segurado especial), não ao VI (avulso).",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código de Defesa do Consumidor (Lei 8.078/1990)",
+    "dispositivo": "Art. 6º, III",
+    "territorio": "Direito do Consumidor",
+    "subtema": "Direitos Básicos e Informação",
+    "textoCorreto": "São direitos básicos do consumidor a informação adequada e clara sobre os diferentes produtos e serviços, com especificação correta de quantidade, características, composição, qualidade, tributos incidentes e preço, bem como sobre os riscos que apresentem.",
+    "versaoErrada1": "São direitos básicos do consumidor a informação adequada ou clara sobre os diferentes produtos e serviços, com especificação correta de quantidade, características, composição, qualidade, tributos incidentes e preço, bem como sobre os riscos que apresentem.",
+    "versaoErrada2": "São direitos básicos do consumidor a informação adequada e clara sobre os diferentes produtos e serviços, com especificação correta de quantidade, características, composição, qualidade e preço, bem como sobre os riscos que apresentem.",
+    "explicacaoDiferenca": "A informação devida ao consumidor deve ser, cumulativamente, ADEQUADA E CLARA - são dois requisitos que se somam, não alternativas; trocar 'e' por 'ou' permitiria que uma informação apenas clara (mas inadequada) ou apenas adequada (mas confusa) já satisfizesse o dever de informação, o que é insuficiente. Também é elemento expresso do direito básico a especificação dos TRIBUTOS INCIDENTES sobre o produto/serviço (importante para o consumidor conhecer a carga tributária embutida no preço); omitir esse item retira do rol legal uma informação que o fornecedor é obrigado a prestar.",
+    "regraMemoria": "Informação do consumidor tem que ser ADEQUADA E CLARA (as duas juntas) e inclui até os TRIBUTOS - preço sem imposto mostrado não é informação completa.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código de Defesa do Consumidor (Lei 8.078/1990)",
+    "dispositivo": "Art. 39, caput e I",
+    "territorio": "Direito do Consumidor",
+    "subtema": "Práticas e Contratos de Consumo",
+    "textoCorreto": "É vedado ao fornecedor de produtos ou serviços, dentre outras práticas abusivas, condicionar o fornecimento de produto ou de serviço ao fornecimento de outro produto ou serviço, bem como, sem justa causa, a limites quantitativos.",
+    "versaoErrada1": "É vedado ao fornecedor de produtos ou serviços, dentre outras práticas abusivas, condicionar o fornecimento de produto ou de serviço ao fornecimento de outro produto ou serviço, bem como, com justa causa, a limites quantitativos.",
+    "versaoErrada2": "É vedado ao fornecedor de produtos ou serviços, dentre outras práticas abusivas, condicionar o fornecimento de produto ou de serviço ao fornecimento de outro produto ou serviço, bem como, sem justa causa, a limites qualitativos.",
+    "explicacaoDiferenca": "A vedação à imposição de limites quantitativos na venda só é afastada quando houver JUSTA CAUSA (por exemplo, escassez do produto no mercado); a redação 'com justa causa' inverte a lógica da norma, dando a entender que a prática seria vedada justamente quando há justificativa, quando na verdade é o oposto - a existência de justa causa é o que EXCLUI a abusividade. Da mesma forma, o inciso I trata de limites QUANTITATIVOS (quantidade de produto vendida), e não 'qualitativos' - a troca desvia o foco da norma, que é coibir a limitação arbitrária da quantidade adquirida pelo consumidor, e não questões de qualidade do produto.",
+    "regraMemoria": "Limitar quantidade SEM justa causa é abusivo; COM justa causa (ex.: estoque limitado), pode. E o limite proibido é o QUANTITATIVO, não o de qualidade.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Civil (Lei 10.406/2002)",
+    "dispositivo": "Art. 1.142",
+    "territorio": "Direito Empresarial",
+    "subtema": "Nome Empresarial e Estabelecimento",
+    "textoCorreto": "Considera-se estabelecimento todo complexo de bens organizado, para exercício da empresa, por empresário, ou por sociedade empresária.",
+    "versaoErrada1": "Considera-se estabelecimento todo conjunto de bens organizado, para exercício da empresa, por empresário, ou por sociedade empresária.",
+    "versaoErrada2": "Considera-se estabelecimento todo complexo de bens organizado, para exercício da empresa, por empresário, e por sociedade empresária.",
+    "explicacaoDiferenca": "A lei utiliza o termo técnico COMPLEXO de bens (não mero 'conjunto'), expressão que a doutrina empresarial associa a uma universalidade de fato/direito unificada por uma destinação específica, com sentido jurídico mais preciso do que uma simples soma de bens ('conjunto'). Além disso, o estabelecimento pode ser organizado alternativamente por empresário individual OU por sociedade empresária (a norma se aplica a qualquer um dos dois sujeitos de direito empresarial); trocar 'ou' por 'e' sugeriria, erroneamente, que o mesmo estabelecimento precisaria pertencer simultaneamente às duas figuras.",
+    "regraMemoria": "Estabelecimento é COMPLEXO de bens (não simples conjunto), organizado por empresário OU sociedade empresária - um ou outro, nunca os dois ao mesmo tempo.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Civil (Lei 10.406/2002)",
+    "dispositivo": "Art. 887",
+    "territorio": "Direito Empresarial",
+    "subtema": "Títulos de Crédito e Contratos Empresariais",
+    "textoCorreto": "O título de crédito, documento necessário ao exercício do direito literal e autônomo nele contido, somente produz efeito quando preencha os requisitos da lei.",
+    "versaoErrada1": "O título de crédito, documento necessário ao exercício do direito literal ou autônomo nele contido, somente produz efeito quando preencha os requisitos da lei.",
+    "versaoErrada2": "O título de crédito, documento necessário ao exercício do direito literal e autônomo nele contido, produz efeito ainda que não preencha os requisitos da lei.",
+    "explicacaoDiferenca": "Os princípios da literalidade e da autonomia são cumulativos e caracterizam conjuntamente os títulos de crédito - trocar 'e' por 'ou' sugeriria que bastaria um dos atributos, quando na verdade ambos coexistem sempre no mesmo título. Já a segunda alteração inverte completamente a regra de eficácia: o título de crédito SOMENTE produz efeitos QUANDO preenche os requisitos legais (formalismo essencial dos títulos de crédito); afirmar que produz efeito 'ainda que não preencha' contraria o próprio fundamento da força executiva e circulatória do título.",
+    "regraMemoria": "Título de crédito = literal E autônomo (os dois sempre juntos), e SÓ vale se preencher os requisitos da lei - sem forma, sem força.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Lei da Propriedade Industrial (Lei 9.279/1996)",
+    "dispositivo": "Art. 6º, caput",
+    "territorio": "Direito Empresarial",
+    "subtema": "Propriedade Industrial",
+    "textoCorreto": "Ao autor de invenção ou modelo de utilidade será assegurado o direito de obter a patente que lhe garanta a propriedade, nas condições estabelecidas nesta Lei.",
+    "versaoErrada1": "Ao autor de invenção ou desenho industrial será assegurado o direito de obter a patente que lhe garanta a propriedade, nas condições estabelecidas nesta Lei.",
+    "versaoErrada2": "Ao autor de invenção ou modelo de utilidade poderá ser assegurado o direito de obter a patente que lhe garanta a propriedade, nas condições estabelecidas nesta Lei.",
+    "explicacaoDiferenca": "A patente, na LPI, protege apenas INVENÇÃO e MODELO DE UTILIDADE; o desenho industrial é protegido por REGISTRO, não por patente - trocar 'modelo de utilidade' por 'desenho industrial' cria uma contradição técnica grave, pois desenho industrial jamais é 'patenteado'. Além disso, o direito de obter a patente é assegurado de forma cogente ('será assegurado'), constituindo direito subjetivo do inventor que preencha os requisitos legais; substituir por 'poderá ser assegurado' transforma um direito garantido em mera faculdade discricionária, o que não corresponde ao sistema de patentes.",
+    "regraMemoria": "Invenção e modelo de utilidade levam PATENTE; desenho industrial leva REGISTRO. E a patente 'SERÁ' assegurada - é direito, não favor.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Lei de Recuperação de Empresas e Falência (Lei 11.101/2005)",
+    "dispositivo": "Art. 47",
+    "territorio": "Direito Empresarial",
+    "subtema": "Recuperação Judicial e Falência",
+    "textoCorreto": "A recuperação judicial tem por objetivo viabilizar a superação da situação de crise econômico-financeira do devedor, a fim de permitir a manutenção da fonte produtora, do emprego dos trabalhadores e dos interesses dos credores, promovendo, assim, a preservação da empresa, sua função social e o estímulo à atividade econômica.",
+    "versaoErrada1": "A recuperação judicial tem por objetivo viabilizar a superação da situação de crise econômico-financeira do devedor, a fim de permitir a manutenção da fonte produtora, do emprego dos trabalhadores ou dos interesses dos credores, promovendo, assim, a preservação da empresa, sua função social e o estímulo à atividade econômica.",
+    "versaoErrada2": "A recuperação judicial tem por objetivo viabilizar a superação da situação de crise econômico-financeira do devedor, a fim de permitir a manutenção da fonte produtora, do emprego dos trabalhadores e dos interesses dos credores, promovendo, assim, a preservação da empresa, sua função social e o estímulo à livre concorrência.",
+    "explicacaoDiferenca": "O art. 47 elenca três interesses que a recuperação judicial deve proteger CUMULATIVAMENTE: a fonte produtora, o emprego dos trabalhadores E os interesses dos credores - a lógica do instituto é conciliar todos esses interesses ao mesmo tempo; trocar 'e' por 'ou' sugeriria que bastaria atender a um deles, esvaziando a função conciliadora da recuperação judicial. Da mesma forma, a finalidade legal expressa é o ESTÍMULO À ATIVIDADE ECONÔMICA (manter a empresa funcionando e gerando riqueza), e não o estímulo 'à livre concorrência', que é objetivo típico do direito concorrencial (CADE), não da recuperação de empresas.",
+    "regraMemoria": "Recuperação judicial protege fonte produtora, emprego E credores - tudo junto - visando estimular a ATIVIDADE ECONÔMICA, não a concorrência.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Civil (Lei 10.406/2002)",
+    "dispositivo": "Art. 389",
+    "territorio": "Direito Civil",
+    "subtema": "Obrigações",
+    "textoCorreto": "Não cumprida a obrigação, responde o devedor por perdas e danos, mais juros e atualização monetária segundo índices oficiais regularmente estabelecidos, e honorários de advogado.",
+    "versaoErrada1": "Não cumprida a obrigação, responde o devedor por perdas e danos, mais juros e atualização monetária segundo índices de mercado livremente pactuados, e honorários de advogado.",
+    "versaoErrada2": "Não cumprida a obrigação, responde o devedor por perdas e danos, mais juros e atualização monetária segundo índices oficiais regularmente estabelecidos.",
+    "explicacaoDiferenca": "A atualização monetária devida em caso de inadimplemento deve seguir ÍNDICES OFICIAIS REGULARMENTE ESTABELECIDOS (parâmetro objetivo e público), e não índices 'de mercado livremente pactuados', o que abriria margem para arbítrio das partes ou do credor na atualização do débito. Além disso, a norma inclui expressamente os HONORÁRIOS DE ADVOGADO como consequência do inadimplemento (verba devida ao credor lesado); omitir essa parte final retira do texto uma verba que a lei expressamente garante.",
+    "regraMemoria": "Inadimplemento = perdas e danos + juros + correção por índice OFICIAL + honorários de advogado - esse último não pode sumir do combo.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Civil (Lei 10.406/2002)",
+    "dispositivo": "Art. 421",
+    "territorio": "Direito Civil",
+    "subtema": "Contratos",
+    "textoCorreto": "A liberdade contratual será exercida nos limites da função social do contrato.",
+    "versaoErrada1": "A liberdade contratual será exercida em razão e nos limites da função social do contrato.",
+    "versaoErrada2": "A liberdade contratual será exercida nos limites da função social da empresa.",
+    "explicacaoDiferenca": "Essa é a redação atual do art. 421, dada pela Lei da Liberdade Econômica (Lei 13.874/2019), que retirou a expressão 'em razão e' presente na redação originária do Código Civil de 2002. A redação revogada ('em razão E nos limites') dava à função social também um papel de FUNDAMENTO/CAUSA da liberdade contratual, enquanto a redação vigente a trata apenas como LIMITE externo, reforçando a autonomia privada - usar a redação antiga é um erro clássico de banca que testa a reforma legislativa. Da mesma forma, o dispositivo fala em função social DO CONTRATO, instituto distinto da função social DA EMPRESA (ligada à preservação da atividade produtiva), tratando-se de conceitos que não se confundem.",
+    "regraMemoria": "Desde 2019: liberdade contratual só encontra LIMITE (não mais 'razão e limite') na função social do CONTRATO - não da empresa.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Civil (Lei 10.406/2002)",
+    "dispositivo": "Art. 1.228, caput",
+    "territorio": "Direito Civil",
+    "subtema": "Direitos Reais",
+    "textoCorreto": "O proprietário tem a faculdade de usar, gozar e dispor da coisa, e o direito de reavê-la do poder de quem quer que injustamente a possua ou detenha.",
+    "versaoErrada1": "O proprietário tem a faculdade de usar, gozar ou dispor da coisa, e o direito de reavê-la do poder de quem quer que injustamente a possua ou detenha.",
+    "versaoErrada2": "O proprietário tem a faculdade de usar, gozar e dispor da coisa, e o direito de reavê-la do poder de quem quer que justamente a possua ou detenha.",
+    "explicacaoDiferenca": "Os atributos do domínio (usar, gozar e dispor - o clássico jus utendi, fruendi et abutendi) são cumulativos e compõem, em conjunto, o conteúdo do direito de propriedade; trocar 'e' por 'ou' sugeriria que o proprietário teria apenas uma dessas faculdades isoladamente, reduzindo indevidamente o âmbito do direito de propriedade. Já a ação reivindicatória (direito de reaver a coisa) somente cabe contra quem a possua ou detenha INJUSTAMENTE; retirar o prefixo de negação e afirmar 'justamente' inverte completamente a regra, pois o possuidor de boa-fé com justo título não pode ser compelido a devolver a coisa por mera reivindicação.",
+    "regraMemoria": "Propriedade = usar, gozar E dispor (os três juntos) + reaver de quem possui INJUSTAMENTE - posse justa não se reivindica.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Civil (Lei 10.406/2002)",
+    "dispositivo": "Art. 1.511",
+    "territorio": "Direito Civil",
+    "subtema": "Família",
+    "textoCorreto": "O casamento estabelece comunhão plena de vida, com base na igualdade de direitos e deveres dos cônjuges.",
+    "versaoErrada1": "O casamento estabelece comunhão parcial de vida, com base na igualdade de direitos e deveres dos cônjuges.",
+    "versaoErrada2": "O casamento estabelece comunhão plena de vida, com base na igualdade de direitos e deveres dos companheiros.",
+    "explicacaoDiferenca": "O art. 1.511 fala em comunhão PLENA de vida (união existencial completa entre os cônjuges), expressão propositalmente parecida com 'comunhão parcial de bens' (um dos regimes patrimoniais do casamento) para confundir o candidato - trocar 'plena' por 'parcial' mistura indevidamente o plano existencial do casamento com o plano patrimonial do regime de bens. Além disso, o dispositivo trata do CASAMENTO e por isso usa o termo CÔNJUGES; 'companheiros' é o termo técnico usado para a UNIÃO ESTÁVEL, instituto distinto do casamento, ainda que a jurisprudência lhes reconheça efeitos equiparados.",
+    "regraMemoria": "Casamento gera comunhão PLENA de vida entre CÔNJUGES - não confundir com comunhão PARCIAL (regime de bens) nem com COMPANHEIROS (união estável).",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Civil (Lei 10.406/2002)",
+    "dispositivo": "Art. 1.784",
+    "territorio": "Direito Civil",
+    "subtema": "Sucessões",
+    "textoCorreto": "Aberta a sucessão, a herança transmite-se, desde logo, aos herdeiros legítimos e testamentários.",
+    "versaoErrada1": "Aberta a sucessão, a herança transmite-se, após o inventário, aos herdeiros legítimos e testamentários.",
+    "versaoErrada2": "Aberta a sucessão, a herança transmite-se, desde logo, aos herdeiros legítimos ou testamentários.",
+    "explicacaoDiferenca": "O art. 1.784 consagra o PRINCÍPIO DA SAISINE: a transmissão da herança ocorre automaticamente e imediatamente com a morte ('desde logo'), independentemente de qualquer ato dos herdeiros ou da abertura de inventário; afirmar que a transmissão ocorre 'após o inventário' inverte a lógica do instituto, já que o inventário é procedimento posterior de partilha, não condição para a transmissão. Também é cumulativa a referência aos herdeiros LEGÍTIMOS E TESTAMENTÁRIOS, pois ambas as categorias podem coexistir na mesma sucessão (parte dos bens por testamento, parte por sucessão legítima); trocar 'e' por 'ou' sugeriria uma exclusão recíproca entre as duas espécies de herdeiros que não existe na lei.",
+    "regraMemoria": "Saisine: a herança passa 'DESDE LOGO' com a morte (não espera inventário), para herdeiros legítimos E testamentários (podem coexistir).",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Lei Geral de Proteção de Dados (Lei 13.709/2018)",
+    "dispositivo": "Art. 6º, caput e I",
+    "territorio": "Direito Civil",
+    "subtema": "Proteção de Dados/LGPD",
+    "textoCorreto": "As atividades de tratamento de dados pessoais deverão observar a boa-fé e o princípio da finalidade: realização do tratamento para propósitos legítimos, específicos, explícitos e informados ao titular, sem possibilidade de tratamento posterior de forma incompatível com essas finalidades.",
+    "versaoErrada1": "As atividades de tratamento de dados pessoais deverão observar a boa-fé e o princípio da finalidade: realização do tratamento para propósitos legítimos, específicos, explícitos e informados ao titular, com possibilidade de tratamento posterior de forma incompatível com essas finalidades.",
+    "versaoErrada2": "As atividades de tratamento de dados pessoais deverão observar a boa-fé e o princípio da finalidade: realização do tratamento para propósitos legítimos, específicos e informados ao titular, sem possibilidade de tratamento posterior de forma incompatível com essas finalidades.",
+    "explicacaoDiferenca": "O princípio da finalidade veda expressamente o tratamento posterior INCOMPATÍVEL com as finalidades originalmente informadas ('sem possibilidade'); inverter para 'com possibilidade' anularia toda a proteção do princípio, permitindo o chamado 'desvio de finalidade' que a LGPD busca justamente coibir. Além disso, o inciso I exige que os propósitos sejam, cumulativamente, legítimos, específicos, EXPLÍCITOS e informados ao titular - a explicitação é requisito autônomo (a finalidade não pode ser apenas presumida ou implícita); omitir 'explícitos' retira uma exigência que garante transparência mínima ao titular dos dados.",
+    "regraMemoria": "Finalidade na LGPD: propósitos legítimos, específicos, EXPLÍCITOS e informados - e jamais pode haver tratamento posterior incompatível com eles.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Penal (Decreto-Lei 2.848/1940)",
+    "dispositivo": "Art. 5º, caput",
+    "territorio": "Direito Penal",
+    "subtema": "Aplicação da Lei Penal",
+    "textoCorreto": "Aplica-se a lei brasileira, sem prejuízo de convenções, tratados e regras de direito internacional, ao crime cometido no território nacional.",
+    "versaoErrada1": "Aplica-se a lei brasileira, com prejuízo de convenções, tratados e regras de direito internacional, ao crime cometido no território nacional.",
+    "versaoErrada2": "Aplica-se exclusivamente a lei brasileira, sem prejuízo de convenções, tratados e regras de direito internacional, ao crime cometido no território nacional.",
+    "explicacaoDiferenca": "A expressão \"sem prejuízo de\" consagra a territorialidade TEMPERADA (ou mitigada): a lei brasileira se aplica ao crime cometido no território nacional, mas isso não afasta convenções, tratados e regras de direito internacional (como imunidades diplomáticas). Trocar por \"com prejuízo de\" inverte essa lógica, dando a entender que a lei brasileira prevalece em detrimento dos tratados, eliminando as exceções internacionais que o próprio artigo reconhece. Da mesma forma, inserir \"exclusivamente\" cria uma contradição interna: se apenas a lei brasileira valesse, não haveria espaço para a ressalva \"sem prejuízo de tratados\" que vem logo em seguida — descrevendo a territorialidade como absoluta, quando na verdade é temperada.",
+    "regraMemoria": "Território nacional é a regra, mas SEM PREJUÍZO de tratados: territorialidade é TEMPERADA, nunca absoluta ou exclusiva.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Penal (Decreto-Lei 2.848/1940)",
+    "dispositivo": "Art. 29, caput",
+    "territorio": "Direito Penal",
+    "subtema": "Concurso de Pessoas e de Crimes",
+    "textoCorreto": "Quem, de qualquer modo, concorre para o crime incide nas penas a este cominadas, na medida de sua culpabilidade.",
+    "versaoErrada1": "Quem, de qualquer modo, concorre para o crime incide nas penas a este cominadas, na medida de sua participação.",
+    "versaoErrada2": "Quem concorre diretamente para o crime incide nas penas a este cominadas, na medida de sua culpabilidade.",
+    "explicacaoDiferenca": "O CP adotou a teoria monista (unitária) mitigada: todos os concorrentes respondem pelo mesmo crime, mas cada um é apenado na medida de sua CULPABILIDADE (juízo de reprovação individual sobre a conduta de cada agente), e não na medida de sua \"participação\" enquanto grau quantitativo de contribuição — esse segundo conceito é tratado separadamente pelo §1º do próprio artigo (participação de menor importância), que reduz a pena, não a mede. Além disso, a expressão \"de qualquer modo\" é essencial para abranger contribuições diretas e indiretas, materiais e morais; restringir a conduta a \"diretamente\" excluiria indevidamente do concurso de pessoas quem colabora de forma indireta (por exemplo, fornecendo informações ou incentivo moral).",
+    "regraMemoria": "Concurso de pessoas: DE QUALQUER MODO (direto ou indireto) + pena na medida da CULPABILIDADE, não da 'participação'.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Penal (Decreto-Lei 2.848/1940)",
+    "dispositivo": "Art. 121, caput",
+    "territorio": "Direito Penal",
+    "subtema": "Crimes contra a Pessoa",
+    "textoCorreto": "Matar alguém: Pena - reclusão, de seis a vinte anos.",
+    "versaoErrada1": "Matar alguém: Pena - reclusão, de seis a doze anos.",
+    "versaoErrada2": "Tentar matar alguém: Pena - reclusão, de seis a vinte anos.",
+    "explicacaoDiferenca": "A pena do homicídio simples consumado é reclusão de 6 a 20 anos; reduzir o intervalo para \"6 a 12 anos\" corresponde a outra sanção, mais branda, o que subestimaria a gravidade legal do crime mais grave do Código Penal. Já transformar \"matar\" em \"tentar matar\" ignora a regra da tentativa (art. 14, parágrafo único, CP): quando o crime não se consuma por circunstâncias alheias à vontade do agente, a pena do tipo consumado é obrigatoriamente diminuída de 1/3 a 2/3 — logo, a tentativa de homicídio jamais é punida com a mesma pena cheia de 6 a 20 anos do homicídio consumado.",
+    "regraMemoria": "Homicídio simples consumado = reclusão de 6 a 20 anos; tentativa sempre reduz a pena, nunca repete o intervalo.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Penal (Decreto-Lei 2.848/1940)",
+    "dispositivo": "Art. 155, caput",
+    "territorio": "Direito Penal",
+    "subtema": "Crimes contra o Patrimônio",
+    "textoCorreto": "Subtrair, para si ou para outrem, coisa alheia móvel: Pena - reclusão, de um a quatro anos, e multa.",
+    "versaoErrada1": "Subtrair, para si ou para outrem, coisa alheia móvel: Pena - reclusão, de um a quatro anos, ou multa.",
+    "versaoErrada2": "Subtrair, para si ou para outrem, coisa alheia: Pena - reclusão, de um a quatro anos, e multa.",
+    "explicacaoDiferenca": "A pena do furto é cumulativa: reclusão E multa, aplicadas sempre em conjunto; trocar por \"ou multa\" tornaria a multa uma sanção alternativa, permitindo (erroneamente) que o juiz aplicasse apenas a pena pecuniária isoladamente, o que a redação legal não autoriza. Além disso, a palavra \"móvel\" é elemento essencial do tipo: o furto só recai sobre coisa MÓVEL; suprimir esse termo ampliaria indevidamente o crime a bens imóveis, que são protegidos por outros dispositivos (como o esbulho possessório do art. 161, §1º, II, do CP).",
+    "regraMemoria": "Furto = coisa alheia MÓVEL + pena de reclusão E multa (nunca 'ou').",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Penal (Decreto-Lei 2.848/1940)",
+    "dispositivo": "Art. 213, caput",
+    "territorio": "Direito Penal",
+    "subtema": "Crimes contra a Dignidade Sexual",
+    "textoCorreto": "Constranger alguém, mediante violência ou grave ameaça, a ter conjunção carnal ou a praticar ou permitir que com ele se pratique outro ato libidinoso: Pena - reclusão, de 6 (seis) a 10 (dez) anos.",
+    "versaoErrada1": "Constranger alguém, mediante violência e grave ameaça, a ter conjunção carnal ou a praticar ou permitir que com ele se pratique outro ato libidinoso: Pena - reclusão, de 6 (seis) a 10 (dez) anos.",
+    "versaoErrada2": "Constranger alguém, mediante violência ou grave ameaça, a ter conjunção carnal ou a praticar outro ato libidinoso: Pena - reclusão, de 6 (seis) a 10 (dez) anos.",
+    "explicacaoDiferenca": "O tipo exige violência OU grave ameaça como meios alternativos — basta um deles para configurar o constrangimento; trocar por \"e\" tornaria os dois meios cumulativos, exigindo simultaneamente violência física e ameaça, o que restringiria indevidamente a configuração do crime (dificultando, por exemplo, o reconhecimento do estupro cometido só mediante grave ameaça). Também é elemento do tipo abranger tanto \"praticar\" quanto \"permitir que com ele se pratique\" outro ato libidinoso — a vítima constrangida a apenas permitir, em postura passiva, também sofre estupro; suprimir essa parte excluiria indevidamente essa modalidade de constrangimento do tipo penal.",
+    "regraMemoria": "Estupro: violência OU grave ameaça (basta 1); conjunção carnal OU praticar OU permitir outro ato libidinoso — condutas alternativas.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Penal (Decreto-Lei 2.848/1940)",
+    "dispositivo": "Art. 312, caput",
+    "territorio": "Direito Penal",
+    "subtema": "Crimes contra a Administração Pública",
+    "textoCorreto": "Apropriar-se o funcionário público de dinheiro, valor ou qualquer outro bem móvel, público ou particular, de que tem a posse em razão do cargo, ou desviá-lo, em proveito próprio ou alheio: Pena - reclusão, de dois a doze anos, e multa.",
+    "versaoErrada1": "Apropriar-se o funcionário público de dinheiro, valor ou qualquer outro bem móvel, público ou particular, de que tem a posse em razão do cargo, ou desviá-lo, em proveito próprio ou alheio: Pena - reclusão, de dois a doze anos, ou multa.",
+    "versaoErrada2": "Apropriar-se o funcionário público de dinheiro, valor ou qualquer outro bem móvel, público ou particular, de que tem a posse em razão do cargo, em proveito próprio ou alheio: Pena - reclusão, de dois a doze anos, e multa.",
+    "explicacaoDiferenca": "A pena do peculato é cumulativa: reclusão E multa; trocar por \"ou multa\" tornaria a pena pecuniária alternativa e facultativa, o que contraria a redação legal, que impõe as duas sanções conjuntamente. Além disso, o tipo do peculato-apropriação tem dois núcleos verbais alternativos: \"apropriar-se\" (reter a coisa para si) OU \"desviá-la\" (dar-lhe destinação diversa da devida, ainda que em proveito de terceiro, sem necessariamente retê-la). Suprimir o núcleo \"ou desviá-lo\" restringiria indevidamente o crime apenas à modalidade de apropriação, excluindo o peculato-desvio, que é igualmente punido com a mesma pena.",
+    "regraMemoria": "Peculato = apropriar-se OU desviar (dois núcleos) + pena de reclusão E multa (nunca 'ou').",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Penal (Decreto-Lei 2.848/1940)",
+    "dispositivo": "Art. 107, I",
+    "territorio": "Direito Penal",
+    "subtema": "Penas e Extinção da Punibilidade",
+    "textoCorreto": "Extingue-se a punibilidade pela morte do agente.",
+    "versaoErrada1": "Extingue-se a punibilidade pela morte da vítima.",
+    "versaoErrada2": "Suspende-se a punibilidade pela morte do agente.",
+    "explicacaoDiferenca": "É a morte do AGENTE (autor do crime) que extingue a punibilidade, em razão do princípio de que a pena não pode passar da pessoa do condenado (art. 5º, XLV, CF); a morte da VÍTIMA não extingue nada — em regra, o processo prossegue normalmente (podendo, inclusive, ser elemento do próprio tipo penal, como no homicídio). Também é fundamental que o efeito seja de EXTINÇÃO, definitiva e irreversível (comprovada por certidão de óbito), e não mera \"suspensão\", que sugeriria um efeito temporário e reversível que a lei não prevê para essa hipótese.",
+    "regraMemoria": "Morre o AGENTE, extingue a punibilidade (pena não passa da pessoa); morte da vítima não extingue coisa nenhuma.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código de Processo Penal (Decreto-Lei 3.689/1941)",
+    "dispositivo": "Art. 24, caput",
+    "territorio": "Processo Penal",
+    "subtema": "Ação Penal",
+    "textoCorreto": "Nos crimes de ação pública, esta será promovida por denúncia do Ministério Público.",
+    "versaoErrada1": "Nos crimes de ação pública, esta será promovida por queixa do Ministério Público.",
+    "versaoErrada2": "Nos crimes de ação pública condicionada, esta será promovida por denúncia do Ministério Público.",
+    "explicacaoDiferenca": "A ação penal pública é sempre promovida por DENÚNCIA do Ministério Público — jamais por \"queixa\", peça privativa da ação penal privada, oferecida pelo próprio ofendido ou seu representante legal (art. 30 do CPP). Trocar \"denúncia\" por \"queixa\" inverteria completamente a titularidade da ação. Já o dispositivo trata da ação pública em geral (incondicionada e condicionada); inserir a palavra \"condicionada\" restringiria indevidamente o alcance da regra, sugerindo que ela não se aplicaria também à ação pública incondicionada.",
+    "regraMemoria": "Ação pública é sempre por DENÚNCIA do MP — queixa é coisa de ação penal privada.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código de Processo Penal (Decreto-Lei 3.689/1941)",
+    "dispositivo": "Art. 155, caput",
+    "territorio": "Processo Penal",
+    "subtema": "Provas no Processo Penal",
+    "textoCorreto": "O juiz formará sua convicção pela livre apreciação da prova produzida em contraditório judicial, não podendo fundamentar sua decisão exclusivamente nos elementos informativos colhidos na investigação, ressalvadas as provas cautelares, não repetíveis e antecipadas.",
+    "versaoErrada1": "O juiz formará sua convicção pela livre apreciação da prova produzida em contraditório judicial, não podendo fundamentar sua decisão nos elementos informativos colhidos na investigação, ressalvadas as provas cautelares, não repetíveis e antecipadas.",
+    "versaoErrada2": "O juiz formará sua convicção pela livre apreciação da prova produzida em contraditório judicial, não podendo fundamentar sua decisão exclusivamente nos elementos informativos colhidos na investigação, ressalvadas as provas não repetíveis e antecipadas.",
+    "explicacaoDiferenca": "A palavra \"exclusivamente\" é o núcleo da regra: o juiz PODE usar elementos colhidos na investigação para corroborar a prova produzida em contraditório, só não pode fundamentar a decisão SOMENTE neles; remover essa palavra sugeriria (erroneamente) uma proibição absoluta de qualquer uso de elementos investigativos, mesmo como reforço de outras provas. Além disso, a lei prevê três categorias de prova excepcionadas dessa restrição — CAUTELARES, não repetíveis e antecipadas; suprimir \"cautelares\" restringiria indevidamente as exceções legais, como se uma prova cautelar (por exemplo, uma interceptação telefônica judicialmente autorizada) não pudesse, sozinha, fundamentar a condenação.",
+    "regraMemoria": "Investigação nunca é prova EXCLUSIVA, só corrobora — exceto a cautelar, a não repetível e a antecipada.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código de Processo Penal (Decreto-Lei 3.689/1941)",
+    "dispositivo": "Art. 406, caput",
+    "territorio": "Processo Penal",
+    "subtema": "Procedimentos (comum e júri)",
+    "textoCorreto": "O juiz, ao receber a denúncia ou a queixa, ordenará a citação do acusado para responder a acusação, por escrito, no prazo de 10 (dez) dias.",
+    "versaoErrada1": "O juiz, ao receber a denúncia ou a queixa, ordenará a citação do acusado para responder a acusação, por escrito, no prazo de 5 (cinco) dias.",
+    "versaoErrada2": "O juiz, ao receber a denúncia ou a queixa, poderá ordenar a citação do acusado para responder a acusação, por escrito, no prazo de 10 (dez) dias.",
+    "explicacaoDiferenca": "O prazo correto para a resposta escrita à acusação no procedimento do júri é de 10 DIAS; reduzi-lo para 5 dias diminuiria indevidamente o tempo de defesa, comprimindo o exercício do contraditório e da ampla defesa. Além disso, ao receber denúncia ou queixa não rejeitada liminarmente, o juiz TEM O DEVER de ordenar a citação — é ato vinculado (\"ordenará\") —, não uma faculdade discricionária (\"poderá ordenar\"); trocar o verbo sugeriria que o juiz poderia simplesmente deixar de citar o acusado, o que violaria garantia constitucional básica.",
+    "regraMemoria": "Recebida a denúncia no júri: citação é OBRIGATÓRIA (ordenará) e a resposta escrita tem prazo de 10 dias.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código de Processo Penal (Decreto-Lei 3.689/1941)",
+    "dispositivo": "Art. 593, caput, I",
+    "territorio": "Processo Penal",
+    "subtema": "Recursos Penais",
+    "textoCorreto": "Caberá apelação no prazo de 5 (cinco) dias das sentenças definitivas de condenação ou absolvição proferidas por juiz singular.",
+    "versaoErrada1": "Caberá apelação no prazo de 10 (dez) dias das sentenças definitivas de condenação ou absolvição proferidas por juiz singular.",
+    "versaoErrada2": "Caberá apelação no prazo de 5 (cinco) dias das decisões interlocutórias de condenação ou absolvição proferidas por juiz singular.",
+    "explicacaoDiferenca": "O prazo para interpor a apelação é de 5 DIAS; ampliá-lo para 10 dias concederia um prazo recursal maior do que o previsto em lei (os 10 dias, na sistemática do CPP, dizem respeito à apresentação das razões, não à interposição do recurso). Além disso, a apelação do inciso I do art. 593 cabe de SENTENÇAS DEFINITIVAS — que julgam o mérito, condenando ou absolvendo —, e não de \"decisões interlocutórias\", que resolvem questões incidentais sem julgar o mérito e que, em regra, comportam recurso em sentido estrito (art. 581), não apelação.",
+    "regraMemoria": "Apelação = 5 dias, sempre contra SENTENÇA DEFINITIVA de juiz singular, nunca contra decisão interlocutória.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Lei de Execução Penal (Lei 7.210/1984)",
+    "dispositivo": "Art. 1º",
+    "territorio": "Processo Penal",
+    "subtema": "Execução Penal",
+    "textoCorreto": "A execução penal tem por objetivo efetivar as disposições de sentença ou decisão criminal e proporcionar condições para a harmônica integração social do condenado e do internado.",
+    "versaoErrada1": "A execução penal tem por objetivo efetivar as disposições de sentença ou decisão criminal ou proporcionar condições para a harmônica integração social do condenado e do internado.",
+    "versaoErrada2": "A execução penal tem por objetivo efetivar as disposições de sentença ou decisão criminal e proporcionar condições para a harmônica reintegração social do condenado e do internado.",
+    "explicacaoDiferenca": "Os dois objetivos da execução penal — efetivar as disposições da sentença/decisão criminal E proporcionar condições de integração social — são CUMULATIVOS, compondo a dupla finalidade (retributiva e ressocializadora) da execução; trocar \"e\" por \"ou\" tornaria os objetivos alternativos, como se bastasse cumprir apenas um deles para satisfazer a lei. Além disso, o texto fala em harmônica INTEGRAÇÃO social, não \"reintegração\": a escolha do legislador reconhece que muitos apenados nunca estiveram verdadeiramente integrados à sociedade, de modo que o objetivo é promover essa integração, e não simplesmente \"devolver\" uma condição social que, para muitos, nunca existiu.",
+    "regraMemoria": "LEP art. 1º: efetivar a sentença E proporcionar INTEGRAÇÃO social — nunca 'ou', nunca 'reintegração'.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código de Processo Penal (Decreto-Lei 3.689/1941)",
+    "dispositivo": "Art. 563",
+    "territorio": "Processo Penal",
+    "subtema": "Nulidades",
+    "textoCorreto": "Nenhum ato será declarado nulo, se da nulidade não resultar prejuízo para a acusação ou para a defesa.",
+    "versaoErrada1": "Nenhum ato será declarado nulo, se da nulidade não resultar prejuízo para a acusação e para a defesa.",
+    "versaoErrada2": "Todo ato será declarado nulo, se da nulidade não resultar prejuízo para a acusação ou para a defesa.",
+    "explicacaoDiferenca": "A conjunção \"ou\" é essencial: basta prejuízo para QUALQUER das partes (acusação OU defesa) para que a nulidade seja reconhecida; exigir prejuízo simultâneo a ambas (\"e\") tornaria a demonstração do prejuízo muito mais difícil, esvaziando na prática o princípio pas de nullité sans grief. Já inverter \"Nenhum ato será declarado nulo\" para \"Todo ato será declarado nulo\" destrói o próprio princípio, transformando a exceção (nulidade condicionada à prova de prejuízo, sob a lógica da instrumentalidade das formas) na regra geral (nulidade automática de qualquer irregularidade).",
+    "regraMemoria": "Sem prejuízo para acusação OU defesa, não há nulidade — pas de nullité sans grief.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Resolução CONAMA 237/1997",
+    "dispositivo": "Art. 1º, I",
+    "territorio": "Direito Ambiental",
+    "subtema": "Licenciamento Ambiental",
+    "textoCorreto": "Licenciamento Ambiental: procedimento administrativo pelo qual o órgão ambiental competente licencia a localização, instalação, ampliação e a operação de empreendimentos e atividades utilizadoras de recursos ambientais consideradas efetiva ou potencialmente poluidoras.",
+    "versaoErrada1": "Licenciamento Ambiental: procedimento administrativo pelo qual o órgão ambiental competente autoriza a localização, instalação, ampliação e a operação de empreendimentos e atividades utilizadoras de recursos ambientais consideradas efetiva ou potencialmente poluidoras.",
+    "versaoErrada2": "Licenciamento Ambiental: procedimento administrativo pelo qual o órgão ambiental competente licencia a localização, instalação, ampliação e a operação de empreendimentos e atividades utilizadoras de recursos ambientais consideradas efetiva e potencialmente poluidoras.",
+    "explicacaoDiferenca": "A versão 1 troca o verbo 'licencia' por 'autoriza': licenciamento e autorização são institutos distintos no Direito Ambiental — a autorização é ato precário, unilateral e mais simples (ex.: autorização de supressão de vegetação, de transporte de produtos perigosos), enquanto o licenciamento é o procedimento complexo, faseado (LP, LI, LO) e específico para empreendimentos utilizadores de recursos ambientais efetiva ou potencialmente poluidores, previsto expressamente na definição legal. A versão 2 troca o conectivo 'ou' por 'e' em 'efetiva ou potencialmente poluidoras': a redação correta é disjuntiva, abrangendo tanto atividades que já poluem quanto as que apenas têm potencial de poluir; exigir cumulativamente as duas condições restringiria indevidamente o alcance do licenciamento, excluindo atividades apenas potencialmente poluidoras.",
+    "regraMemoria": "Licenciamento AMBIENTAL sempre LICENCIA (não autoriza) atividades efetiva OU potencialmente poluidoras — poluição real já basta.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Lei do Sistema Nacional de Unidades de Conservação (Lei 9.985/2000)",
+    "dispositivo": "Art. 2º, I",
+    "territorio": "Direito Ambiental",
+    "subtema": "Espaços Territoriais Protegidos",
+    "textoCorreto": "Unidade de Conservação: espaço territorial e seus recursos ambientais, incluindo as águas jurisdicionais, com características naturais relevantes, legalmente instituído pelo Poder Público, com objetivos de conservação e limites definidos, sob regime especial de administração, ao qual se aplicam garantias adequadas de proteção.",
+    "versaoErrada1": "Unidade de Conservação: espaço territorial e seus recursos ambientais, incluindo as águas jurisdicionais, com características naturais relevantes, instituído pelo Poder Público, com objetivos de conservação e limites definidos, sob regime especial de administração, ao qual se aplicam garantias adequadas de proteção.",
+    "versaoErrada2": "Unidade de Conservação: espaço territorial e seus recursos ambientais, incluindo as águas jurisdicionais, com características naturais relevantes, legalmente instituído pelo Poder Público, com objetivos de conservação e limites definidos, sob regime ordinário de administração, ao qual se aplicam garantias adequadas de proteção.",
+    "explicacaoDiferenca": "A versão 1 suprime o advérbio 'legalmente' antes de 'instituído pelo Poder Público': a lei exige que a criação da unidade de conservação decorra de ato formal com base legal (lei ou decreto fundamentado em lei), não bastando mero ato administrativo informal ou de fato — retirar essa exigência fragiliza a segurança jurídica sobre a própria existência da UC. A versão 2 troca 'regime especial de administração' por 'regime ordinário de administração': o que caracteriza a unidade de conservação é justamente estar sujeita a um regime diferenciado e mais protetivo do que o aplicável aos demais espaços territoriais, com restrições próprias de uso e gestão; chamá-lo de 'ordinário' descaracteriza essa nota distintiva do conceito.",
+    "regraMemoria": "UC = espaço LEGALMENTE instituído pelo Poder Público, sob regime ESPECIAL (nunca comum/ordinário) de administração.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Florestal (Lei 12.651/2012)",
+    "dispositivo": "Art. 3º, II",
+    "territorio": "Direito Ambiental",
+    "subtema": "Código Florestal",
+    "textoCorreto": "Área de Preservação Permanente - APP: área protegida, coberta ou não por vegetação nativa, com a função ambiental de preservar os recursos hídricos, a paisagem, a estabilidade geológica e a biodiversidade.",
+    "versaoErrada1": "Área de Preservação Permanente - APP: área de uso sustentável, coberta ou não por vegetação nativa, com a função ambiental de preservar os recursos hídricos, a paisagem, a estabilidade geológica e a biodiversidade.",
+    "versaoErrada2": "Área de Preservação Permanente - APP: área protegida, coberta ou não por vegetação nativa, com a função ambiental de recuperar os recursos hídricos, a paisagem, a estabilidade geológica e a biodiversidade.",
+    "explicacaoDiferenca": "A versão 1 substitui 'área protegida' por 'área de uso sustentável': esta última é categoria própria do SNUC (Lei 9.985/2000), destinada a compatibilizar conservação com exploração sustentável dos recursos naturais, admitindo uso econômico direto — o que é incompatível com a APP, cujo regime é essencialmente restritivo, vedando em regra a supressão de vegetação e o uso direto do solo. A versão 2 troca o verbo 'preservar' por 'recuperar': a função legal da APP é evitar a degradação (caráter preventivo/conservacionista), e não apenas promover a restauração de área já degradada — 'recuperar' é o verbo próprio de áreas degradadas ou da função da Reserva Legal em recomposição, não da definição nuclear de APP.",
+    "regraMemoria": "APP é área PROTEGIDA (não 'de uso sustentável') cuja função é PRESERVAR (não apenas recuperar) recursos hídricos, paisagem, solo e biodiversidade.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Lei de Processo Administrativo Federal (Lei 9.784/1999)",
+    "dispositivo": "Art. 50, caput e I",
+    "territorio": "Direito Administrativo",
+    "subtema": "Atos Administrativos",
+    "textoCorreto": "Os atos administrativos deverão ser motivados, com indicação dos fatos e dos fundamentos jurídicos, quando neguem, limitem ou afetem direitos ou interesses.",
+    "versaoErrada1": "Os atos administrativos poderão ser motivados, com indicação dos fatos e dos fundamentos jurídicos, quando neguem, limitem ou afetem direitos ou interesses.",
+    "versaoErrada2": "Os atos administrativos deverão ser motivados, com indicação dos fatos ou dos fundamentos jurídicos, quando neguem, limitem ou afetem direitos ou interesses.",
+    "explicacaoDiferenca": "A versão 1 troca 'deverão' por 'poderão': a motivação, nas hipóteses do art. 50, é um dever jurídico vinculado da Administração — não uma faculdade discricionária —, sendo sua ausência causa de nulidade do ato; transformar em faculdade esvazia a própria função de controle da motivação. A versão 2 troca a conjunção aditiva 'e' por 'ou' em 'indicação dos fatos e dos fundamentos jurídicos': a motivação válida exige a indicação cumulativa tanto dos fatos (motivo de fato) quanto do fundamento jurídico (motivo de direito) que embasam o ato; permitir apenas um dos dois tornaria a motivação incompleta e insuficiente para viabilizar o controle de legalidade.",
+    "regraMemoria": "Motivação é dever (DEVERÃO, nunca 'poderão'), e exige fatos E fundamentos jurídicos juntos, nunca só um dos dois.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Tributário Nacional (Lei 5.172/1966)",
+    "dispositivo": "Art. 78, caput",
+    "territorio": "Direito Administrativo",
+    "subtema": "Poderes Administrativos",
+    "textoCorreto": "Considera-se poder de polícia atividade da administração pública que, limitando ou disciplinando direito, interesse ou liberdade, regula a prática de ato ou abstenção de fato, em razão de interesse público.",
+    "versaoErrada1": "Considera-se poder de polícia atividade da administração pública que, limitando ou disciplinando direito, interesse e liberdade, regula a prática de ato ou abstenção de fato, em razão de interesse público.",
+    "versaoErrada2": "Considera-se poder de polícia atividade da administração pública que, limitando ou disciplinando direito, interesse ou liberdade, regula a prática de ato ou abstenção de direito, em razão de interesse público.",
+    "explicacaoDiferenca": "A versão 1 troca o 'ou' por 'e' entre 'direito, interesse e liberdade': o poder de polícia pode incidir sobre qualquer um desses bens jurídicos isoladamente (direito, interesse OU liberdade), não sendo necessário que os três estejam simultaneamente presentes para caracterizar o exercício do poder de polícia. A versão 2 troca 'abstenção de fato' por 'abstenção de direito': o objeto regulado pelo poder de polícia é a conduta material do particular — praticar ou deixar de praticar um ato de fato (uma conduta concreta) —, e não uma 'abstenção de direito', expressão sem correspondência com o texto legal e que desvirtua a natureza do conceito, voltado a condutas fáticas e não a titularidades jurídicas.",
+    "regraMemoria": "Poder de polícia: direito, interesse OU liberdade (basta um) — regula ato ou abstenção de FATO (conduta), não de direito.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Lei de Concessões e Permissões de Serviços Públicos (Lei 8.987/1995)",
+    "dispositivo": "Art. 6º, caput",
+    "territorio": "Direito Administrativo",
+    "subtema": "Serviços Públicos e Concessões",
+    "textoCorreto": "Toda concessão ou permissão pressupõe a prestação de serviço adequado ao pleno atendimento dos usuários, conforme estabelecido nesta Lei, nas normas pertinentes e no respectivo contrato.",
+    "versaoErrada1": "Toda concessão e permissão pressupõe a prestação de serviço adequado ao pleno atendimento dos usuários, conforme estabelecido nesta Lei, nas normas pertinentes e no respectivo contrato.",
+    "versaoErrada2": "Toda concessão ou permissão admite a prestação de serviço adequado ao pleno atendimento dos usuários, conforme estabelecido nesta Lei, nas normas pertinentes e no respectivo contrato.",
+    "explicacaoDiferenca": "A versão 1 troca 'ou' por 'e' em 'concessão ou permissão': a norma se aplica a cada uma dessas modalidades de delegação isoladamente (concessão OU permissão), não exigindo a coexistência de ambas em um mesmo negócio jurídico; a redação com 'e' sugere, de forma equivocada, que a regra só valeria para contratos que fossem simultaneamente concessão e permissão. A versão 2 troca 'pressupõe' por 'admite': a prestação de serviço adequado não é uma mera possibilidade contratual, mas uma exigência legal necessária e inafastável de toda concessão ou permissão — 'pressupõe' indica uma condição essencial e obrigatória, enquanto 'admite' sugere uma faculdade que poderia não se verificar.",
+    "regraMemoria": "Toda concessão OU permissão PRESSUPÕE (exige, não apenas admite) serviço adequado ao usuário.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Lei Geral de Desapropriação (Decreto-Lei 3.365/1941)",
+    "dispositivo": "Art. 2º, caput",
+    "territorio": "Direito Administrativo",
+    "subtema": "Intervenção do Estado na Propriedade",
+    "textoCorreto": "Mediante declaração de utilidade pública, todos os bens poderão ser desapropriados pela União, pelos Estados, Municípios, Distrito Federal e Territórios.",
+    "versaoErrada1": "Mediante declaração de utilidade pública, todos os bens deverão ser desapropriados pela União, pelos Estados, Municípios, Distrito Federal e Territórios.",
+    "versaoErrada2": "Mediante declaração de utilidade social, todos os bens poderão ser desapropriados pela União, pelos Estados, Municípios, Distrito Federal e Territórios.",
+    "explicacaoDiferenca": "A versão 1 troca 'poderão' por 'deverão': a desapropriação, mesmo após a declaração de utilidade pública, continua sendo ato discricionário do Poder Público quanto à conveniência e ao momento de efetivá-la — a declaração apenas autoriza, não obriga a desapropriação, que depende de decisão administrativa posterior (e do efetivo pagamento da indenização). A versão 2 troca 'utilidade pública' por 'utilidade social': são fundamentos jurídicos distintos — a desapropriação por utilidade pública é regida pelo Decreto-Lei 3.365/1941 (obras, serviços e necessidades gerais da Administração), enquanto a desapropriação por interesse/utilidade social é disciplinada pela Lei 4.132/1962, voltada a finalidades como reforma agrária e justa distribuição da propriedade — os regimes têm hipóteses e procedimentos próprios.",
+    "regraMemoria": "DL 3.365/41 = utilidade PÚBLICA, e a declaração só PERMITE (não obriga) a desapropriação.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Estatuto do Servidor Público Federal (Lei 8.112/1990)",
+    "dispositivo": "Art. 121",
+    "territorio": "Direito Administrativo",
+    "subtema": "Agentes Públicos e Regime Disciplinar",
+    "textoCorreto": "O servidor responde civil, penal e administrativamente pelo exercício irregular de suas atribuições.",
+    "versaoErrada1": "O servidor responde civil, penal ou administrativamente pelo exercício irregular de suas atribuições.",
+    "versaoErrada2": "O servidor responde civil e penalmente pelo exercício irregular de suas atribuições.",
+    "explicacaoDiferenca": "A versão 1 troca 'e' por 'ou' entre as esferas de responsabilização: a responsabilidade civil, penal e administrativa do servidor são independentes e cumulativas (podendo incidir as três ao mesmo tempo pelo mesmo fato), e não alternativas como sugere o 'ou' — o servidor pode responder simultaneamente nas três esferas, com base na independência das instâncias. A versão 2 simplesmente omite a responsabilidade administrativa, mencionando apenas 'civil e penalmente': isso elimina uma das três esferas de responsabilização expressamente previstas no art. 121, dando a falsa impressão de que o processo administrativo disciplinar não seria uma consequência autônoma possível do exercício irregular das atribuições.",
+    "regraMemoria": "Servidor responde civil, penal E administrativamente — três esferas cumulativas, nenhuma de fora.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Constituição Federal de 1988",
+    "dispositivo": "Art. 37, § 6º",
+    "territorio": "Direito Administrativo",
+    "subtema": "Responsabilidade Civil do Estado",
+    "textoCorreto": "As pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa.",
+    "versaoErrada1": "As pessoas jurídicas de direito público e as de direito privado responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa.",
+    "versaoErrada2": "As pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito de regresso contra o responsável nos casos de dolo ou má-fé.",
+    "explicacaoDiferenca": "A versão 1 omite a expressão 'prestadoras de serviços públicos' após 'as de direito privado': a responsabilidade objetiva do art. 37, §6º, só alcança as pessoas jurídicas de direito privado quando estas prestam serviços públicos (concessionárias, permissionárias, empresas públicas e sociedades de economia mista prestadoras de serviço público) — sem essa qualificação, o dispositivo passaria a abranger indevidamente qualquer pessoa jurídica de direito privado, inclusive as que exploram atividade econômica em sentido estrito, que se submetem à responsabilidade civil comum. A versão 2 troca 'culpa' por 'má-fé' no fundamento do direito de regresso: a lei exige apenas dolo ou culpa (que inclui negligência, imprudência e imperícia) do agente para o cabimento da ação regressiva, um padrão mais amplo — exigir 'má-fé' (conceito mais estrito, ligado à intenção de prejudicar) dificultaria indevidamente o direito de regresso do Estado nos casos de mera culpa do agente.",
+    "regraMemoria": "Responsabilidade objetiva do art. 37 §6º só para PJ de direito privado PRESTADORA de serviço público; regresso cabe em dolo OU CULPA (não só má-fé).",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Constituição Federal de 1988",
+    "dispositivo": "Art. 70, caput",
+    "territorio": "Direito Administrativo",
+    "subtema": "Controle da Administração",
+    "textoCorreto": "A fiscalização contábil, financeira, orçamentária, operacional e patrimonial da União e das entidades da administração direta e indireta, quanto à legalidade, legitimidade, economicidade, aplicação das subvenções e renúncia de receitas, será exercida pelo Congresso Nacional, mediante controle externo, e pelo sistema de controle interno de cada Poder.",
+    "versaoErrada1": "A fiscalização contábil, financeira, orçamentária, operacional e patrimonial da União e das entidades da administração direta e indireta, quanto à legalidade, eficiência, economicidade, aplicação das subvenções e renúncia de receitas, será exercida pelo Congresso Nacional, mediante controle externo, e pelo sistema de controle interno de cada Poder.",
+    "versaoErrada2": "A fiscalização contábil, financeira, orçamentária, operacional e patrimonial da União e das entidades da administração direta e indireta, quanto à legalidade, legitimidade, economicidade, aplicação das subvenções e renúncia de receitas, será exercida pelo Tribunal de Contas da União, mediante controle externo, e pelo sistema de controle interno de cada Poder.",
+    "explicacaoDiferenca": "A versão 1 troca 'legitimidade' por 'eficiência' entre os critérios de fiscalização: o texto literal do art. 70 da CF elenca legalidade, legitimidade e economicidade (além de aplicação das subvenções e renúncia de receitas) como parâmetros do controle; 'eficiência' é princípio da Administração Pública previsto no art. 37, caput (incluído pela EC 19/98), mas não figura no rol literal do art. 70 — a troca é uma pegadinha clássica de banca que mistura dispositivos constitucionais distintos. A versão 2 substitui 'Congresso Nacional' por 'Tribunal de Contas da União' como titular do controle externo: quem exerce o controle externo é o Poder Legislativo (Congresso Nacional), e o TCU atua apenas como órgão auxiliar desse controle (art. 71, CF) — atribuir ao TCU a titularidade do controle externo é erro comum e relevante, pois inverte a relação de auxílio entre os dois órgãos.",
+    "regraMemoria": "Art. 70: legalidade, LEGITIMIDADE e economicidade (não 'eficiência'); controle externo é do CONGRESSO, o TCU só AUXILIA.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Constituição Federal de 1988",
+    "dispositivo": "Art. 2º",
+    "territorio": "Direito Constitucional",
+    "subtema": "Organização dos Poderes",
+    "textoCorreto": "São Poderes da União, independentes e harmônicos entre si, o Legislativo, o Executivo e o Judiciário.",
+    "versaoErrada1": "São Poderes da União, independentes e harmônicos entre si, o Executivo, o Legislativo e o Judiciário.",
+    "versaoErrada2": "São Poderes da União, independentes entre si, o Legislativo, o Executivo e o Judiciário.",
+    "explicacaoDiferenca": "Na versão errada 1, a ordem de enumeração foi alterada para 'o Executivo, o Legislativo e o Judiciário'; a literalidade do art. 2º segue a ordem Legislativo, Executivo e Judiciário, e a banca frequentemente cobra exatamente essa sequência para testar memorização literal. Na versão errada 2, foi suprimida a palavra 'harmônicos', restando apenas 'independentes entre si'; isso é juridicamente relevante porque a separação de poderes brasileira não é de independência absoluta, mas de independência COM harmonia (sistema de freios e contrapesos, com mecanismos de controle recíproco entre os Poderes); retirar a harmonia desfigura o modelo constitucional de tripartição funcional.",
+    "regraMemoria": "LEJU: Legislativo, Executivo, Judiciário — nessa ordem — e sempre INDEPENDENTES E HARMÔNICOS entre si (nunca só independentes).",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Constituição Federal de 1988",
+    "dispositivo": "Art. 102, I, a",
+    "territorio": "Direito Constitucional",
+    "subtema": "Controle de Constitucionalidade",
+    "textoCorreto": "Compete ao Supremo Tribunal Federal, precipuamente, a guarda da Constituição, cabendo-lhe processar e julgar, originariamente, a ação direta de inconstitucionalidade de lei ou ato normativo federal ou estadual e a ação declaratória de constitucionalidade de lei ou ato normativo federal.",
+    "versaoErrada1": "Compete ao Supremo Tribunal Federal, precipuamente, a guarda da Constituição, cabendo-lhe processar e julgar, originariamente, a ação direta de inconstitucionalidade de lei ou ato normativo federal ou estadual e a ação declaratória de constitucionalidade de lei ou ato normativo federal ou estadual.",
+    "versaoErrada2": "Compete ao Supremo Tribunal Federal, precipuamente, a guarda da Constituição, cabendo-lhe processar e julgar a ação direta de inconstitucionalidade de lei ou ato normativo federal ou estadual e a ação declaratória de constitucionalidade de lei ou ato normativo federal.",
+    "explicacaoDiferenca": "Na versão errada 1, acrescentou-se 'ou estadual' ao objeto da ação declaratória de constitucionalidade; isso é relevante porque a ADC, diferentemente da ADI, só pode ter por objeto lei ou ato normativo FEDERAL — não existe ADC de lei estadual (lei estadual inconstitucional em face da CF é impugnável por ADI, nunca por ADC); a redação correta faz essa distinção propositalmente assimétrica entre ADI (federal ou estadual) e ADC (só federal). Na versão errada 2, suprimiu-se a palavra 'originariamente'; ela indica que essa competência do STF é de instância única, exercida diretamente perante a Corte, sem passar por outros órgãos antes; omiti-la sugere, incorretamente, que essas ações poderiam chegar ao STF em grau de recurso.",
+    "regraMemoria": "ADI: lei federal OU estadual. ADC: só lei FEDERAL. E o STF julga isso ORIGINARIAMENTE (direto na Corte, sem recurso antes).",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Constituição Federal de 1988",
+    "dispositivo": "Art. 193",
+    "territorio": "Direito Constitucional",
+    "subtema": "Ordem Social e Econômica",
+    "textoCorreto": "A ordem social tem como base o primado do trabalho, e como objetivo o bem-estar e a justiça sociais.",
+    "versaoErrada1": "A ordem social tem como base o valor social do trabalho, e como objetivo o bem-estar e a justiça sociais.",
+    "versaoErrada2": "A ordem social tem como base o primado do trabalho, e como objetivo o bem-estar ou a justiça sociais.",
+    "explicacaoDiferenca": "Na versão errada 1, 'primado do trabalho' foi trocado por 'valor social do trabalho'; essa última expressão pertence ao art. 1º, IV, da CF (fundamento da República, ao lado da livre iniciativa), enquanto o art. 193 usa deliberadamente 'primado do trabalho' para atribuir precedência ao trabalho na organização da ordem social — são dispositivos próximos em conteúdo, mas com redações e funções distintas que a banca explora para confundir o candidato. Na versão errada 2, o conectivo 'e' entre os objetivos foi trocado por 'ou'; bem-estar e justiça sociais são objetivos CUMULATIVOS da ordem social, não alternativos, de modo que a troca sugeriria, contra o texto constitucional, que bastaria perseguir apenas um deles.",
+    "regraMemoria": "Art. 193: PRIMADO do trabalho (não 'valor social', que é do art. 1º, IV) + bem-estar E justiça sociais, sempre os dois juntos.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Constituição Federal de 1988",
+    "dispositivo": "Art. 12, II, b",
+    "territorio": "Direito Constitucional",
+    "subtema": "Nacionalidade e Direitos Políticos",
+    "textoCorreto": "São brasileiros naturalizados os estrangeiros de qualquer nacionalidade, residentes na República Federativa do Brasil há mais de quinze anos ininterruptos e sem condenação penal, desde que requeiram a nacionalidade brasileira.",
+    "versaoErrada1": "São brasileiros naturalizados os estrangeiros de qualquer nacionalidade, residentes na República Federativa do Brasil há mais de dez anos ininterruptos e sem condenação penal, desde que requeiram a nacionalidade brasileira.",
+    "versaoErrada2": "São brasileiros naturalizados os estrangeiros de qualquer nacionalidade, residentes na República Federativa do Brasil há mais de quinze anos ininterruptos e sem condenação penal transitada em julgado, desde que requeiram a nacionalidade brasileira.",
+    "explicacaoDiferenca": "Na versão errada 1, o prazo de residência foi reduzido de 'quinze anos' para 'dez anos'; o prazo constitucional exato da naturalização extraordinária é de QUINZE anos ininterruptos, e reduzi-lo confunde esse requisito com prazos de outras modalidades de naturalização previstas em lei ordinária, alterando um elemento objetivo central do dispositivo. Na versão errada 2, acrescentou-se 'transitada em julgado' à exigência de ausência de condenação penal; o texto constitucional exige apenas 'sem condenação penal', sem essa qualificação, de modo que adicioná-la ampliaria indevidamente o universo de estrangeiros aptos à naturalização (incluindo quem responde a condenação ainda não definitiva), além do que a literalidade autoriza.",
+    "regraMemoria": "Naturalização extraordinária: QUINZE anos ININTERRUPTOS + SEM condenação penal (sem exigir trânsito em julgado) + requerimento do interessado.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código de Processo Civil (Lei 13.105/2015)",
+    "dispositivo": "Art. 42",
+    "territorio": "Processo Civil",
+    "subtema": "Competência e Partes",
+    "textoCorreto": "As causas cíveis serão processadas e decididas pelo juiz nos limites de sua competência, ressalvado às partes o direito de instituir juízo arbitral, na forma da lei.",
+    "versaoErrada1": "As causas cíveis serão processadas e decididas pelo juiz nos limites de sua competência, ressalvado ao autor o direito de instituir juízo arbitral, na forma da lei.",
+    "versaoErrada2": "As causas cíveis serão processadas ou decididas pelo juiz nos limites de sua competência, ressalvado às partes o direito de instituir juízo arbitral, na forma da lei.",
+    "explicacaoDiferenca": "Na versão errada 1, 'às partes' foi trocado por 'ao autor'; isso é relevante porque o direito de submeter a causa a juízo arbitral depende de convenção de arbitragem, ato consensual que exige a manifestação de vontade de AMBAS as partes, não sendo prerrogativa exclusiva do autor da demanda. Na versão errada 2, o conectivo 'e' entre 'processadas' e 'decididas' foi trocado por 'ou'; a expressão correta indica que o juiz exerce cumulativamente as duas atividades sobre a causa (conduzir o processo e julgá-lo), e trocar por 'ou' sugeriria, incorretamente, que bastaria uma delas.",
+    "regraMemoria": "Juízo arbitral é direito das PARTES (as duas, não só do autor); e o juiz PROCESSA E DECIDE a causa, as duas coisas.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código de Processo Civil (Lei 13.105/2015)",
+    "dispositivo": "Art. 319, caput, I e II",
+    "territorio": "Processo Civil",
+    "subtema": "Petição Inicial e Resposta do Réu",
+    "textoCorreto": "A petição inicial indicará: I - o juízo a que é dirigida; II - os nomes, os prenomes, o estado civil, a existência de união estável, a profissão, o número de inscrição no Cadastro de Pessoas Físicas ou no Cadastro Nacional da Pessoa Jurídica, o endereço eletrônico, o domicílio e a residência do autor e do réu.",
+    "versaoErrada1": "A petição inicial indicará: I - o juízo a que é dirigida; II - os nomes, os prenomes, o estado civil, a profissão, o número de inscrição no Cadastro de Pessoas Físicas ou no Cadastro Nacional da Pessoa Jurídica, o endereço eletrônico, o domicílio e a residência do autor e do réu.",
+    "versaoErrada2": "A petição inicial indicará: I - o juiz a que é dirigida; II - os nomes, os prenomes, o estado civil, a existência de união estável, a profissão, o número de inscrição no Cadastro de Pessoas Físicas ou no Cadastro Nacional da Pessoa Jurídica, o endereço eletrônico, o domicílio e a residência do autor e do réu.",
+    "explicacaoDiferenca": "Na versão errada 1, foi suprimida a expressão 'a existência de união estável' do inciso II; essa exigência é uma inovação do CPC/2015 em relação ao CPC/1973 (que só exigia o estado civil), e omiti-la faz o dispositivo regredir ao regime revogado, ignorando o reconhecimento expresso da união estável como dado qualificador das partes na petição inicial. Na versão errada 2, 'juízo' foi trocado por 'juiz' no inciso I; a petição inicial é endereçada ao JUÍZO (o órgão jurisdicional, a vara competente), e não ao 'juiz' como pessoa física do magistrado, já que o titular do cargo pode variar por distribuição, substituição, licença etc.",
+    "regraMemoria": "Petição inicial vai pro JUÍZO (o órgão, não a pessoa do juiz), e o inciso II não esqueceu ninguém: estado civil E união estável, os dois.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código de Processo Civil (Lei 13.105/2015)",
+    "dispositivo": "Art. 373, caput, I e II",
+    "territorio": "Processo Civil",
+    "subtema": "Provas",
+    "textoCorreto": "O ônus da prova incumbe: I - ao autor, quanto ao fato constitutivo de seu direito; II - ao réu, quanto à existência de fato impeditivo, modificativo ou extintivo do direito do autor.",
+    "versaoErrada1": "O ônus da prova incumbe: I - ao réu, quanto ao fato constitutivo de seu direito; II - ao autor, quanto à existência de fato impeditivo, modificativo ou extintivo do direito do réu.",
+    "versaoErrada2": "O ônus da prova incumbe: I - ao autor, quanto ao fato constitutivo de seu direito; II - ao réu, quanto à existência de fato impeditivo ou extintivo do direito do autor.",
+    "explicacaoDiferenca": "Na versão errada 1, os polos autor e réu foram invertidos entre os incisos; pela regra correta, o AUTOR prova o fato constitutivo de seu próprio direito (a origem da pretensão) e o RÉU prova fatos impeditivos, modificativos ou extintivos desse direito (defesa de mérito indireto); inverter os polos faz o réu ter de provar o direito alheio do autor e o autor ter de provar as defesas do réu, subvertendo a lógica da distribuição estática do ônus da prova. Na versão errada 2, foi suprimida a palavra 'modificativo' da lista de fatos que o réu pode provar; o rol do inciso II é composto por TRÊS categorias cumulativas (impeditivo, modificativo e extintivo), e excluir 'modificativo' restringiria indevidamente as defesas do réu, deixando de fora, por exemplo, fatos como novação ou pagamento parcial, que apenas modificam (sem impedir ou extinguir) o direito do autor.",
+    "regraMemoria": "Quem alega, prova: AUTOR prova o que CONSTITUI seu direito; RÉU prova o que IMPEDE, MODIFICA ou EXTINGUE — os três, não só dois.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código de Processo Civil (Lei 13.105/2015)",
+    "dispositivo": "Art. 502",
+    "territorio": "Processo Civil",
+    "subtema": "Sentença e Coisa Julgada",
+    "textoCorreto": "Denomina-se coisa julgada material a autoridade que torna imutável e indiscutível a decisão de mérito não mais sujeita a recurso.",
+    "versaoErrada1": "Denomina-se coisa julgada formal a autoridade que torna imutável e indiscutível a decisão de mérito não mais sujeita a recurso.",
+    "versaoErrada2": "Denomina-se coisa julgada material a autoridade que torna imutável e indiscutível a decisão não mais sujeita a recurso.",
+    "explicacaoDiferenca": "Na versão errada 1, 'coisa julgada material' foi trocada por 'coisa julgada formal'; a coisa julgada FORMAL é a imutabilidade da decisão apenas DENTRO do processo em que foi proferida (preclusão máxima, impedindo novos recursos naquele feito), enquanto a coisa julgada MATERIAL, definida no art. 502, projeta seus efeitos para FORA do processo, impedindo nova discussão da mesma questão em qualquer outra demanda — são institutos distintos e a troca descreve o conceito errado. Na versão errada 2, foi suprimida a expressão 'de mérito' antes de 'decisão'; sem essa qualificação, o dispositivo passaria a abranger também decisões meramente processuais (terminativas, sem resolução do mérito), que transitam em julgado apenas formalmente, mas jamais fazem coisa julgada material, sendo a natureza de mérito da decisão elemento essencial do conceito legal.",
+    "regraMemoria": "Coisa julgada MATERIAL = imutável FORA do processo, e só de decisão DE MÉRITO. Sem mérito, só há coisa julgada formal.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código de Processo Civil (Lei 13.105/2015)",
+    "dispositivo": "Art. 1.009, caput",
+    "territorio": "Processo Civil",
+    "subtema": "Recursos",
+    "textoCorreto": "Da sentença cabe apelação.",
+    "versaoErrada1": "Da sentença cabe agravo de instrumento.",
+    "versaoErrada2": "Da decisão interlocutória cabe apelação.",
+    "explicacaoDiferenca": "Na versão errada 1, 'apelação' foi trocada por 'agravo de instrumento'; o recurso cabível contra SENTENÇA é a apelação (art. 1.009), enquanto o agravo de instrumento é cabível contra DECISÕES INTERLOCUTÓRIAS nas hipóteses do art. 1.015 — usar agravo contra sentença é erro de cabimento recursal que pode levar ao não conhecimento do recurso por inadequação da via eleita. Na versão errada 2, 'sentença' foi trocada por 'decisão interlocutória', invertendo o mesmo binômio: contra decisão interlocutória cabe agravo de instrumento, e não apelação; afirmar que cabe apelação de interlocutória generaliza indevidamente esse recurso para hipóteses que a lei reserva ao agravo.",
+    "regraMemoria": "SENTENÇA cabe APELAÇÃO. Decisão interlocutória cabe AGRAVO de instrumento. Não troque os dois.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código de Processo Civil (Lei 13.105/2015)",
+    "dispositivo": "Art. 700, caput",
+    "territorio": "Processo Civil",
+    "subtema": "Procedimentos Especiais",
+    "textoCorreto": "A ação monitória pode ser proposta por aquele que afirmar, com base em prova escrita sem eficácia de título executivo, ter direito de exigir do devedor capaz adimplemento de obrigação.",
+    "versaoErrada1": "A ação monitória pode ser proposta por aquele que afirmar, com base em prova escrita com eficácia de título executivo, ter direito de exigir do devedor capaz adimplemento de obrigação.",
+    "versaoErrada2": "A ação monitória pode ser proposta por aquele que afirmar, com base em prova testemunhal sem eficácia de título executivo, ter direito de exigir do devedor capaz adimplemento de obrigação.",
+    "explicacaoDiferenca": "Na versão errada 1, 'sem eficácia de título executivo' foi trocada por 'com eficácia de título executivo'; o pressuposto específico da ação monitória é justamente a existência de prova escrita SEM eficácia executiva — se o credor já possui título executivo, judicial ou extrajudicial, a via adequada é a execução, não a ação monitória, de modo que a troca descaracteriza a própria razão de ser do procedimento monitório. Na versão errada 2, 'prova escrita' foi trocada por 'prova testemunhal'; a lei exige prova ESCRITA (documental) como lastro mínimo do pedido monitório, apoiado em cognição sumária documental, e a substituição por prova testemunhal contraria essa exigência legal, pois testemunhas não bastam para instruir a petição inicial dessa ação.",
+    "regraMemoria": "Monitória = prova ESCRITA e SEM eficácia executiva. Se já tem título executivo, é EXECUÇÃO, não monitória.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Consolidação das Leis do Trabalho (Decreto-Lei 5.452/1943)",
+    "dispositivo": "Art. 459, § 1º",
+    "territorio": "Direito do Trabalho",
+    "subtema": "Remuneração e Verbas Rescisórias",
+    "textoCorreto": "Quando o pagamento houver sido estipulado por mês, deverá ser efetuado, o mais tardar, até o quinto dia útil do mês subsequente ao vencido.",
+    "versaoErrada1": "Quando o pagamento houver sido estipulado por mês, deverá ser efetuado, o mais tardar, até o décimo dia útil do mês subsequente ao vencido.",
+    "versaoErrada2": "Quando o pagamento houver sido estipulado por mês, deverá ser efetuado, o mais tardar, até o quinto dia corrido do mês subsequente ao vencido.",
+    "explicacaoDiferenca": "O prazo legal para pagamento do salário mensal é até o 5º (quinto) dia útil do mês seguinte ao vencido, e não o 10º; dobrar o prazo para 'décimo dia útil' significaria tolerar cinco dias úteis a mais de atraso sem caracterizar mora salarial, o que não corresponde à lei e prejudicaria o trabalhador na contagem de juros, correção e eventual multa por atraso. Já trocar 'dia útil' por 'dia corrido' altera a forma de contagem do prazo: dias úteis excluem sábados, domingos e feriados, enquanto dias corridos contam todos os dias do calendário; dependendo do mês, isso pode antecipar ou atrasar indevidamente a data-limite real do pagamento em relação à exigida por lei.",
+    "regraMemoria": "Salário mensal: até o 5º dia ÚTIL do mês seguinte — nunca 'dia corrido' e nunca 10º.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Consolidação das Leis do Trabalho (Decreto-Lei 5.452/1943)",
+    "dispositivo": "Art. 157, caput e I",
+    "territorio": "Direito do Trabalho",
+    "subtema": "Segurança e Saúde no Trabalho",
+    "textoCorreto": "Cabe às empresas cumprir e fazer cumprir as normas de segurança e medicina do trabalho.",
+    "versaoErrada1": "Cabe às empresas cumprir ou fazer cumprir as normas de segurança e medicina do trabalho.",
+    "versaoErrada2": "Cabe aos empregados cumprir e fazer cumprir as normas de segurança e medicina do trabalho.",
+    "explicacaoDiferenca": "O art. 157, I impõe às empresas duas obrigações cumulativas: cumprir (observar pessoalmente) e fazer cumprir (fiscalizar/exigir de terceiros e empregados) as normas de segurança e medicina do trabalho; trocar 'e' por 'ou' transformaria essas obrigações em alternativas, permitindo que a empresa se desincumbisse apenas fiscalizando terceiros sem observar ela própria as normas, o que esvazia o dever legal. Já atribuir a obrigação 'aos empregados' em vez de 'às empresas' inverte o polo passivo do dever: é o empregador o responsável institucional por implantar e fazer observar as normas de segurança (o art. 158 trata, à parte, dos deveres específicos dos empregados, que são mais restritos, como usar EPI e observar as instruções).",
+    "regraMemoria": "Empresa deve cumprir E fazer cumprir (cumulativo) — a obrigação é da empresa, não do empregado.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Consolidação das Leis do Trabalho (Decreto-Lei 5.452/1943)",
+    "dispositivo": "Art. 611, caput",
+    "territorio": "Direito do Trabalho",
+    "subtema": "Direito Coletivo do Trabalho",
+    "textoCorreto": "Convenção Coletiva de Trabalho é o acordo de caráter normativo, pelo qual dois ou mais Sindicatos representativos de categorias econômicas e profissionais estipulam condições de trabalho aplicáveis, no âmbito das respectivas representações, às relações individuais de trabalho.",
+    "versaoErrada1": "Convenção Coletiva de Trabalho é o acordo de caráter normativo, pelo qual um ou mais Sindicatos representativos de categorias profissionais e as respectivas empresas estipulam condições de trabalho aplicáveis, no âmbito das respectivas representações, às relações individuais de trabalho.",
+    "versaoErrada2": "Convenção Coletiva de Trabalho é o acordo de caráter normativo, pelo qual dois ou mais Sindicatos representativos de categorias econômicas e profissionais estipulam condições de trabalho aplicáveis, no âmbito das respectivas representações, às relações coletivas de trabalho.",
+    "explicacaoDiferenca": "A Convenção Coletiva de Trabalho (CCT) é firmada entre dois ou mais SINDICATOS (categoria econômica de um lado, categoria profissional de outro); descrever o pacto como celebrado entre 'um sindicato profissional e as respectivas empresas' descreve, na verdade, o Acordo Coletivo de Trabalho (ACT, art. 611-A/611, §1º), instrumento distinto quanto aos legitimados a negociar. Já trocar 'relações individuais de trabalho' por 'relações coletivas de trabalho' erra o objeto de aplicação da norma: a CCT (assim como o ACT) fixa condições que incidem sobre os contratos individuais de cada empregado da categoria, e não sobre relações coletivas em si.",
+    "regraMemoria": "CCT = sindicato x sindicato; ACT = sindicato x empresa(s). E as duas regulam contratos INDIVIDUAIS de trabalho.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Consolidação das Leis do Trabalho (Decreto-Lei 5.452/1943)",
+    "dispositivo": "Art. 2º, § 2º",
+    "territorio": "Direito do Trabalho",
+    "subtema": "Grupo Econômico e Terceirização",
+    "textoCorreto": "Sempre que uma ou mais empresas, tendo, embora, cada uma delas, personalidade jurídica própria, estiverem sob a direção, controle ou administração de outra, ou ainda quando, mesmo guardando cada uma sua autonomia, integrem grupo econômico, serão responsáveis solidariamente pelas obrigações decorrentes da relação de emprego.",
+    "versaoErrada1": "Sempre que uma ou mais empresas, tendo, embora, cada uma delas, personalidade jurídica própria, estiverem sob a direção, controle ou administração de outra, ou ainda quando, mesmo guardando cada uma sua autonomia, integrem grupo econômico, serão responsáveis subsidiariamente pelas obrigações decorrentes da relação de emprego.",
+    "versaoErrada2": "Sempre que uma ou mais empresas, tendo, embora, cada uma delas, personalidade jurídica própria, estiverem sob a direção, controle ou administração de outra, ou ainda quando, desde que percam sua autonomia, integrem grupo econômico, serão responsáveis solidariamente pelas obrigações decorrentes da relação de emprego.",
+    "explicacaoDiferenca": "A configuração de grupo econômico trabalhista gera responsabilidade SOLIDÁRIA entre as empresas integrantes, e não subsidiária: isso significa que o trabalhador pode cobrar a dívida trabalhista integralmente de qualquer uma delas, sem observar ordem de preferência ou benefício de ordem, ao contrário do que ocorreria na responsabilidade subsidiária (onde primeiro se cobra do devedor principal). Já a segunda alteração inverte a lógica da lei: o texto correto diz que a empresa integra grupo econômico 'mesmo guardando cada uma sua autonomia' (ou seja, a autonomia jurídica de cada empresa NÃO impede o reconhecimento do grupo); afirmar que isso só ocorre 'desde que percam sua autonomia' exige exatamente o contrário do que a norma exige, dificultando indevidamente o reconhecimento do grupo econômico.",
+    "regraMemoria": "Grupo econômico = solidariedade (qualquer uma paga tudo), e a autonomia de cada empresa NÃO afasta o grupo.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Consolidação das Leis do Trabalho (Decreto-Lei 5.452/1943)",
+    "dispositivo": "Art. 391-A",
+    "territorio": "Direito do Trabalho",
+    "subtema": "Estabilidades e Garantias de Emprego",
+    "textoCorreto": "A confirmação do estado de gravidez advindo no curso do contrato de trabalho, ainda que durante o prazo do aviso prévio trabalhado ou indenizado, garante à empregada gestante a estabilidade provisória prevista na alínea b do inciso II do art. 10 do Ato das Disposições Constitucionais Transitórias.",
+    "versaoErrada1": "A confirmação do estado de gravidez advindo no curso do contrato de trabalho, desde que durante o prazo do aviso prévio trabalhado, excluído o indenizado, garante à empregada gestante a estabilidade provisória prevista na alínea b do inciso II do art. 10 do Ato das Disposições Constitucionais Transitórias.",
+    "versaoErrada2": "A comunicação do estado de gravidez advindo no curso do contrato de trabalho, ainda que durante o prazo do aviso prévio trabalhado ou indenizado, garante à empregada gestante a estabilidade provisória prevista na alínea b do inciso II do art. 10 do Ato das Disposições Constitucionais Transitórias.",
+    "explicacaoDiferenca": "O art. 391-A foi criado justamente para superar o entendimento (então na Súmula 244, III, do TST) de que a gravidez ocorrida durante o aviso prévio indenizado não geraria estabilidade; por isso a lei garante a estabilidade tanto no aviso prévio trabalhado QUANTO no indenizado, e excluir o indenizado ('excluído o indenizado') reintroduz exatamente a restrição que a norma quis eliminar, negando a garantia à gestante nesse período. Já trocar 'confirmação' por 'comunicação' desloca o marco do direito: o que gera a estabilidade é a confirmação médica/objetiva da gravidez, independentemente de a empregada ter comunicado o fato ao empregador (o desconhecimento do empregador não afasta o direito, conforme entendimento consolidado do TST) — exigir 'comunicação' condicionaria indevidamente a garantia ao aviso prévio dado pela própria gestante.",
+    "regraMemoria": "Grávida no aviso prévio trabalhado OU indenizado tem estabilidade; o que importa é a gravidez CONFIRMADA, não comunicada.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Constituição Federal de 1988",
+    "dispositivo": "Art. 114, I",
+    "territorio": "Processo do Trabalho",
+    "subtema": "Competência da Justiça do Trabalho",
+    "textoCorreto": "Compete à Justiça do Trabalho processar e julgar as ações oriundas da relação de trabalho, abrangidos os entes de direito público externo e da administração pública direta e indireta da União, dos Estados, do Distrito Federal e dos Municípios.",
+    "versaoErrada1": "Compete à Justiça do Trabalho processar e julgar as ações oriundas da relação de emprego, abrangidos os entes de direito público externo e da administração pública direta e indireta da União, dos Estados, do Distrito Federal e dos Municípios.",
+    "versaoErrada2": "Compete à Justiça do Trabalho processar e julgar as ações oriundas da relação de trabalho, excluídos os entes de direito público externo e da administração pública direta e indireta da União, dos Estados, do Distrito Federal e dos Municípios.",
+    "explicacaoDiferenca": "A EC 45/2004 ampliou deliberadamente a competência da Justiça do Trabalho de 'relação de emprego' (vínculo empregatício típico, com subordinação) para 'relação de trabalho' (gênero mais amplo, que abrange também prestadores autônomos, avulsos e outras formas de trabalho); voltar ao termo 'relação de emprego' restringe indevidamente essa competência, contrariando a redação atual do dispositivo. Já trocar 'abrangidos' por 'excluídos' inverte o sentido da norma: o texto constitucional inclui expressamente os entes de direito público externo e a administração pública direta e indireta no âmbito da competência trabalhista, e não os exclui dela.",
+    "regraMemoria": "Art. 114, I: é 'relação de TRABALHO' (não só emprego), e ENTES PÚBLICOS entram, não ficam de fora.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Consolidação das Leis do Trabalho (Decreto-Lei 5.452/1943)",
+    "dispositivo": "Art. 818, caput",
+    "territorio": "Processo do Trabalho",
+    "subtema": "Provas no Processo do Trabalho",
+    "textoCorreto": "O ônus da prova incumbe a quem alega o fato, tanto no que diz respeito ao direito material quanto ao direito processual.",
+    "versaoErrada1": "O ônus da prova incumbe a quem nega o fato, tanto no que diz respeito ao direito material quanto ao direito processual.",
+    "versaoErrada2": "O ônus da prova incumbe a quem alega o fato, exclusivamente no que diz respeito ao direito material.",
+    "explicacaoDiferenca": "A regra geral do ônus da prova atribui o encargo probatório a quem ALEGA o fato (afirma sua existência), e não a quem o nega; inverter esse critério ('a quem nega') contraria a lógica processual básica, pois normalmente é impossível ou excessivamente gravoso exigir a prova de um fato negativo. Já restringir a regra 'exclusivamente' ao direito material retira do dispositivo sua abrangência sobre o direito processual (por exemplo, a prova de fatos relativos a pressupostos processuais e condições da ação), quando a norma expressamente estende o mesmo critério de distribuição do ônus a ambas as esferas, material e processual.",
+    "regraMemoria": "Ônus da prova é de quem ALEGA (não de quem nega), e vale tanto pro direito material quanto pro processual.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Consolidação das Leis do Trabalho (Decreto-Lei 5.452/1943)",
+    "dispositivo": "Art. 876, caput",
+    "territorio": "Processo do Trabalho",
+    "subtema": "Execução Trabalhista",
+    "textoCorreto": "As decisões passadas em julgado ou das quais não tenha havido recurso com efeito suspensivo; os acordos, quando não cumpridos; os termos de ajuste de conduta firmados perante o Ministério Público do Trabalho e os termos de conciliação firmados perante as Comissões de Conciliação Prévia serão executados pela forma estabelecida neste Capítulo.",
+    "versaoErrada1": "As decisões passadas em julgado ou das quais não tenha havido recurso com efeito devolutivo; os acordos, quando não cumpridos; os termos de ajuste de conduta firmados perante o Ministério Público do Trabalho e os termos de conciliação firmados perante as Comissões de Conciliação Prévia serão executados pela forma estabelecida neste Capítulo.",
+    "versaoErrada2": "As decisões passadas em julgado ou das quais não tenha havido recurso com efeito suspensivo; os acordos, quando não cumpridos; os termos de ajuste de conduta firmados perante o Ministério Público Federal e os termos de conciliação firmados perante as Comissões de Conciliação Prévia serão executados pela forma estabelecida neste Capítulo.",
+    "explicacaoDiferenca": "O dispositivo permite a execução de decisões contra as quais não houve recurso com efeito SUSPENSIVO, justamente porque esse tipo de recurso impede a execução imediata; recursos com efeito meramente DEVOLUTIVO, ao contrário, não suspendem a exigibilidade da decisão, de modo que trocar 'suspensivo' por 'devolutivo' inverte a lógica da norma (tornaria executável exatamente o que ainda está suspenso, e inexecutável o que já poderia ser executado). Já trocar 'Ministério Público do Trabalho' por 'Ministério Público Federal' erra o órgão legitimado a firmar o termo de ajuste de conduta trabalhista: é o MPT, ramo especializado do Ministério Público da União com atribuição na esfera trabalhista, e não o MPF, que atua perante a Justiça Federal em matérias distintas.",
+    "regraMemoria": "Executa-se o que não tem recurso com efeito SUSPENSIVO; o TAC trabalhista é do Ministério Público do TRABALHO.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Consolidação das Leis do Trabalho (Decreto-Lei 5.452/1943)",
+    "dispositivo": "Art. 856, caput",
+    "territorio": "Processo do Trabalho",
+    "subtema": "Dissídios Coletivos",
+    "textoCorreto": "A instância será instaurada mediante representação escrita ao Presidente do Tribunal, aduzindo o motivo do dissídio e o ramo da atividade, quando for suscitada por associação sindical, empregador, ou empregadores em número mínimo de 3 (três), ou pela Procuradoria da Justiça do Trabalho, ou de ofício, à vista de representação.",
+    "versaoErrada1": "A instância será instaurada mediante representação escrita ao Presidente do Tribunal, aduzindo o motivo do dissídio e o ramo da atividade, quando for suscitada por associação sindical, empregador, ou empregadores em número mínimo de 5 (cinco), ou pela Procuradoria da Justiça do Trabalho, ou de ofício, à vista de representação.",
+    "versaoErrada2": "A instância será instaurada mediante representação verbal ao Presidente do Tribunal, aduzindo o motivo do dissídio e o ramo da atividade, quando for suscitada por associação sindical, empregador, ou empregadores em número mínimo de 3 (três), ou pela Procuradoria da Justiça do Trabalho, ou de ofício, à vista de representação.",
+    "explicacaoDiferenca": "A lei exige número mínimo de 3 (três) empregadores para que estes, isoladamente (sem associação sindical), possam suscitar a instauração de instância em dissídio coletivo; elevar esse número para 5 (cinco) cria um requisito mais rigoroso do que o previsto em lei, dificultando indevidamente o acesso de grupos menores de empregadores a esse mecanismo. Já exigir 'representação verbal' contraria a exigência de FORMA ESCRITA do requerimento ao Presidente do Tribunal, que é solenidade prevista expressamente no dispositivo e serve para documentar de modo seguro o motivo do dissídio e o ramo de atividade envolvidos.",
+    "regraMemoria": "Dissídio coletivo: representação sempre ESCRITA, e o mínimo de empregadores isolados é 3 (três).",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Lei das Eleições (Lei 9.504/1997)",
+    "dispositivo": "Art. 36, caput",
+    "territorio": "Direito Eleitoral",
+    "subtema": "Propaganda Eleitoral",
+    "textoCorreto": "A propaganda eleitoral somente é permitida após o dia 15 de agosto do ano da eleição.",
+    "versaoErrada1": "A propaganda eleitoral somente é permitida após o dia 15 de julho do ano da eleição.",
+    "versaoErrada2": "A propaganda eleitoral é permitida após o dia 15 de agosto do ano da eleição.",
+    "explicacaoDiferenca": "A versão 1 antecipa a data-limite de 15 de agosto para 15 de julho, confundindo com o período das convenções partidárias (20 de julho a 5 de agosto), quando ainda não é lícito fazer propaganda eleitoral — errar essa data faria parecer regular uma propaganda que, na verdade, é extemporânea e sujeita a multa. A versão 2 suprime o advérbio 'somente', enfraquecendo o caráter de exclusividade temporal da regra: sem ele, o dispositivo sugere apenas um marco a partir do qual a propaganda é permitida, obscurecendo que qualquer propaganda ANTES dessa data é expressamente vedada.",
+    "regraMemoria": "Propaganda eleitoral só nasce em 15 de agosto — antes disso é 'extemporânea' e dá multa.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Lei Complementar de Inelegibilidades (LC 64/1990)",
+    "dispositivo": "Art. 3º, caput",
+    "territorio": "Direito Eleitoral",
+    "subtema": "Ações Eleitorais",
+    "textoCorreto": "Caberá a qualquer candidato, a partido político, coligação ou ao Ministério Público impugnar o pedido de registro de candidato, dando os motivos por que não deve ser deferido.",
+    "versaoErrada1": "Caberá a qualquer candidato, a partido político ou ao Ministério Público impugnar o pedido de registro de candidato, dando os motivos por que não deve ser deferido.",
+    "versaoErrada2": "Caberá a qualquer candidato, a partido político, coligação ou ao Ministério Público recorrer do pedido de registro de candidato, dando os motivos por que não deve ser deferido.",
+    "explicacaoDiferenca": "A versão 1 retira 'coligação' do rol de legitimados, mas a coligação também tem legitimidade ativa para a Ação de Impugnação de Registro de Candidatura, ao lado de candidato, partido político e Ministério Público — excluí-la reduz indevidamente o polo ativo da ação. A versão 2 troca o verbo 'impugnar' por 'recorrer', mas o instrumento cabível nessa fase processual é a impugnação ao registro (ação de conhecimento autônoma, com rito e prazos próprios da LC 64/90), e não um recurso, que pressupõe decisão anterior a ser reformada — a confusão entre os dois institutos altera o procedimento e os prazos aplicáveis.",
+    "regraMemoria": "Registro de candidato: qualquer candidato + partido + coligação + MP podem IMPUGNAR (não 'recorrer') em 5 dias.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Lei dos Partidos Políticos (Lei 9.096/1995)",
+    "dispositivo": "Art. 1º",
+    "territorio": "Direito Eleitoral",
+    "subtema": "Partidos Políticos e Financiamento",
+    "textoCorreto": "O partido político, pessoa jurídica de direito privado, destina-se a assegurar, no interesse do regime democrático, a autenticidade do sistema representativo e a defender os direitos fundamentais definidos na Constituição Federal.",
+    "versaoErrada1": "O partido político, pessoa jurídica de direito privado, destina-se a assegurar, no interesse do regime democrático, a autenticidade do sistema representativo ou a defender os direitos fundamentais definidos na Constituição Federal.",
+    "versaoErrada2": "O partido político, pessoa jurídica de direito público, destina-se a assegurar, no interesse do regime democrático, a autenticidade do sistema representativo e a defender os direitos fundamentais definidos na Constituição Federal.",
+    "explicacaoDiferenca": "A versão 1 troca o conectivo aditivo 'e' pelo alternativo 'ou', transformando duas finalidades cumulativas do partido político — assegurar a autenticidade do sistema representativo E defender os direitos fundamentais — em finalidades alternativas, como se bastasse perseguir apenas uma delas. A versão 2 troca 'direito privado' por 'direito público', mas o art. 1º é expresso ao classificar o partido político como pessoa jurídica de DIREITO PRIVADO desde a CF/88 (que rompeu com o modelo anterior de partido-ente público), com reflexos práticos relevantes, como a ausência de imunidade tributária automática de ente estatal e o regime de responsabilidade civil aplicável a pessoas jurídicas privadas.",
+    "regraMemoria": "Partido político é PJ de direito PRIVADO que assegura autenticidade E defende direitos fundamentais — as duas coisas, não uma OU outra.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Constituição Federal de 1988",
+    "dispositivo": "Art. 165, caput, I a III",
+    "territorio": "Direito Financeiro",
+    "subtema": "Orçamento Público (LOA/LDO/PPA)",
+    "textoCorreto": "Leis de iniciativa do Poder Executivo estabelecerão: I - o plano plurianual; II - as diretrizes orçamentárias; III - os orçamentos anuais.",
+    "versaoErrada1": "Leis de iniciativa do Poder Legislativo estabelecerão: I - o plano plurianual; II - as diretrizes orçamentárias; III - os orçamentos anuais.",
+    "versaoErrada2": "Leis de iniciativa do Poder Executivo poderão estabelecer: I - o plano plurianual; II - as diretrizes orçamentárias; III - os orçamentos anuais.",
+    "explicacaoDiferenca": "A versão 1 atribui ao Poder Legislativo a iniciativa das leis orçamentárias, mas a CF reserva essa iniciativa PRIVATIVAMENTE ao Poder Executivo (art. 165, caput, c/c art. 84, XXIII) — um projeto de PPA, LDO ou LOA apresentado por parlamentar seria inconstitucional por vício de iniciativa. A versão 2 troca o verbo 'estabelecerão' (comando obrigatório) por 'poderão estabelecer' (mera faculdade), mas a edição das três leis orçamentárias é dever constitucional do Executivo, e não uma opção — a omissão de qualquer uma delas configura inconstitucionalidade por omissão.",
+    "regraMemoria": "PPA, LDO e LOA: iniciativa é SEMPRE do Executivo e é OBRIGATÓRIA (não facultativa).",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Constituição Federal de 1988",
+    "dispositivo": "Art. 100, caput",
+    "territorio": "Direito Financeiro",
+    "subtema": "Precatórios",
+    "textoCorreto": "Os pagamentos devidos pelas Fazendas Públicas Federal, Estaduais, Distrital e Municipais, em virtude de sentença judiciária, far-se-ão exclusivamente na ordem cronológica de apresentação dos precatórios e à conta dos créditos respectivos.",
+    "versaoErrada1": "Os pagamentos devidos pelas Fazendas Públicas Federal, Estaduais, Distrital e Municipais, em virtude de sentença judiciária, far-se-ão na ordem cronológica de apresentação dos precatórios e à conta dos créditos respectivos.",
+    "versaoErrada2": "Os pagamentos devidos pelas Fazendas Públicas Federal, Estaduais, Distrital e Municipais, em virtude de sentença judiciária, far-se-ão exclusivamente na ordem cronológica de vencimento dos precatórios e à conta dos créditos respectivos.",
+    "explicacaoDiferenca": "A versão 1 suprime o advérbio 'exclusivamente', enfraquecendo o caráter rígido e impessoal da ordem cronológica — essa exclusividade é o núcleo da garantia do art. 100, impedindo qualquer critério de preferência entre credores que não seja a data de apresentação (ressalvadas as exceções constitucionais expressas, como créditos de natureza alimentícia preferenciais). A versão 2 troca 'de apresentação' por 'de vencimento', mas o marco relevante para a fila de precatórios é a data em que o precatório é APRESENTADO/protocolado (até 1º de julho, para pagamento no exercício seguinte), conceito distinto de 'vencimento', que é estranho ao regime constitucional de precatórios.",
+    "regraMemoria": "Precatório paga por ordem cronológica de APRESENTAÇÃO, e só isso — 'exclusivamente', sem furar fila.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Lei Complementar de Responsabilidade Fiscal (LC 101/2000)",
+    "dispositivo": "Art. 48, caput",
+    "territorio": "Direito Financeiro",
+    "subtema": "Transparência Fiscal",
+    "textoCorreto": "São instrumentos de transparência da gestão fiscal, aos quais será dada ampla divulgação, inclusive em meios eletrônicos de acesso público: os planos, orçamentos e leis de diretrizes orçamentárias; as prestações de contas e o respectivo parecer prévio; o Relatório Resumido da Execução Orçamentária e o Relatório de Gestão Fiscal.",
+    "versaoErrada1": "São instrumentos de transparência da gestão fiscal, aos quais será dada ampla divulgação, inclusive em meios eletrônicos de acesso público: os planos, orçamentos e leis de diretrizes orçamentárias; as prestações de contas; o Relatório Resumido da Execução Orçamentária e o Relatório de Gestão Fiscal.",
+    "versaoErrada2": "São instrumentos de transparência da gestão fiscal, aos quais será dada ampla divulgação, inclusive em meios eletrônicos de acesso restrito: os planos, orçamentos e leis de diretrizes orçamentárias; as prestações de contas e o respectivo parecer prévio; o Relatório Resumido da Execução Orçamentária e o Relatório de Gestão Fiscal.",
+    "explicacaoDiferenca": "A versão 1 omite 'e o respectivo parecer prévio' ligado às prestações de contas, mas esse parecer (emitido pelo Tribunal de Contas) é parte indissociável do instrumento de transparência listado na lei — sem ele, a prestação de contas fica incompleta como mecanismo de controle externo. A versão 2 troca 'acesso público' por 'acesso restrito', o que contraria frontalmente a lógica da LRF: a transparência fiscal exige que os meios eletrônicos sejam de ACESSO PÚBLICO, irrestrito ao cidadão, sob pena de esvaziar o princípio da publicidade e da participação popular no controle das contas públicas.",
+    "regraMemoria": "Transparência fiscal = ampla divulgação em meio eletrônico de acesso PÚBLICO, e prestação de contas SEMPRE com parecer prévio junto.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Constituição Federal de 1988",
+    "dispositivo": "Art. 145, caput, I a III",
+    "territorio": "Direito Tributário",
+    "subtema": "Competência Tributária",
+    "textoCorreto": "A União, os Estados, o Distrito Federal e os Municípios poderão instituir os seguintes tributos: I - impostos; II - taxas; III - contribuição de melhoria, decorrente de obras públicas.",
+    "versaoErrada1": "A União, os Estados e os Municípios poderão instituir os seguintes tributos: I - impostos; II - taxas; III - contribuição de melhoria, decorrente de obras públicas.",
+    "versaoErrada2": "A União, os Estados, o Distrito Federal e os Municípios deverão instituir os seguintes tributos: I - impostos; II - taxas; III - contribuição de melhoria, decorrente de obras públicas.",
+    "explicacaoDiferenca": "A versão 1 retira o Distrito Federal do rol de entes competentes, mas o DF acumula as competências tributárias dos Estados e dos Municípios (art. 32, § 1º, da CF), podendo instituir normalmente os três tributos do art. 145 — excluí-lo desfigura essa competência cumulativa que é característica própria do Distrito Federal. A versão 2 troca 'poderão instituir' por 'deverão instituir', convertendo uma competência tributária facultativa em obrigação constitucional direta — na literalidade da CF, instituir tributo é exercício de uma faculdade do ente federado, e não um dever automático (ainda que a LRF, no art. 11, condicione o recebimento de transferências voluntárias à efetiva instituição dos impostos de competência constitucional do ente).",
+    "regraMemoria": "Competência tributária é PODER (faculdade), não dever — e o DF entra no bolo com competência cumulativa de Estado + Município.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Constituição Federal de 1988",
+    "dispositivo": "Art. 150, III, b",
+    "territorio": "Direito Tributário",
+    "subtema": "Limitações ao Poder de Tributar",
+    "textoCorreto": "Sem prejuízo de outras garantias asseguradas ao contribuinte, é vedado à União, aos Estados, ao Distrito Federal e aos Municípios cobrar tributos no mesmo exercício financeiro em que haja sido publicada a lei que os instituiu ou aumentou.",
+    "versaoErrada1": "Sem prejuízo de outras garantias asseguradas ao contribuinte, é vedado à União, aos Estados, ao Distrito Federal e aos Municípios cobrar tributos antes de decorridos noventa dias da data em que haja sido publicada a lei que os instituiu ou aumentou.",
+    "versaoErrada2": "Sem prejuízo de outras garantias asseguradas ao contribuinte, é vedado à União, aos Estados, ao Distrito Federal e aos Municípios cobrar tributos no mesmo exercício financeiro em que haja sido publicada a lei que os instituiu.",
+    "explicacaoDiferenca": "A versão 1 substitui a regra da anterioridade ANUAL (alínea 'b': vedação de cobrança no mesmo exercício financeiro da publicação da lei) pela redação da anterioridade NONAGESIMAL (alínea 'c': vedação de cobrança antes de decorridos noventa dias) — são duas garantias distintas e cumulativas do contribuinte, e confundi-las é um dos erros mais cobrados na prova da OAB. A versão 2 omite 'ou aumentou', restringindo a vedação apenas à instituição do tributo, mas a anterioridade também se aplica à majoração de tributo já existente — uma lei que apenas aumenta a alíquota de um imposto vigente também deve respeitar a anterioridade anual.",
+    "regraMemoria": "Anterioridade ANUAL (art. 150, III, b) é 'mesmo exercício'; a NONAGESIMAL (art. 150, III, c) é '90 dias' — e as duas valem tanto para instituir QUANTO para aumentar tributo.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Tributário Nacional (Lei 5.172/1966)",
+    "dispositivo": "Art. 142, caput",
+    "territorio": "Direito Tributário",
+    "subtema": "Lançamento e Crédito Tributário",
+    "textoCorreto": "Compete privativamente à autoridade administrativa constituir o crédito tributário pelo lançamento, assim entendido o procedimento administrativo tendente a verificar a ocorrência do fato gerador da obrigação correspondente, determinar a matéria tributável, calcular o montante do tributo devido, identificar o sujeito passivo e, sendo caso, propor a aplicação da penalidade cabível.",
+    "versaoErrada1": "Compete concorrentemente à autoridade administrativa constituir o crédito tributário pelo lançamento, assim entendido o procedimento administrativo tendente a verificar a ocorrência do fato gerador da obrigação correspondente, determinar a matéria tributável, calcular o montante do tributo devido, identificar o sujeito passivo e, sendo caso, propor a aplicação da penalidade cabível.",
+    "versaoErrada2": "Compete privativamente à autoridade administrativa constituir o crédito tributário pelo lançamento, assim entendido o ato administrativo tendente a verificar a ocorrência do fato gerador da obrigação correspondente, determinar a matéria tributável, calcular o montante do tributo devido, identificar o sujeito passivo e, sendo caso, propor a aplicação da penalidade cabível.",
+    "explicacaoDiferenca": "A versão 1 troca 'privativamente' por 'concorrentemente', mas o art. 142 é categórico ao atribuir a constituição do crédito tributário com EXCLUSIVIDADE à autoridade administrativa — mesmo no lançamento por homologação, em que o contribuinte antecipa o pagamento, a extinção definitiva do crédito depende do ato homologatório da autoridade, não havendo competência concorrente do particular. A versão 2 troca 'procedimento administrativo' por 'ato administrativo' — distinção literal clássica do CTN, que define o lançamento como PROCEDIMENTO (sequência encadeada de atos), e não como um ato isolado; é uma das divergências mais exploradas em prova, ainda que parte da doutrina moderna defenda o lançamento como ato administrativo.",
+    "regraMemoria": "Lançamento é competência PRIVATIVA (não concorrente) da autoridade, e o CTN chama isso de PROCEDIMENTO (não ato).",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Tributário Nacional (Lei 5.172/1966)",
+    "dispositivo": "Art. 32, caput",
+    "territorio": "Direito Tributário",
+    "subtema": "Impostos em Espécie",
+    "textoCorreto": "O imposto, de competência dos Municípios, sobre a propriedade predial e territorial urbana tem como fato gerador a propriedade, o domínio útil ou a posse de bem imóvel por natureza ou por acessão física, como definido na lei civil, localizado na zona urbana do Município.",
+    "versaoErrada1": "O imposto, de competência dos Municípios, sobre a propriedade predial e territorial urbana tem como fato gerador a propriedade, o domínio útil e a posse de bem imóvel por natureza ou por acessão física, como definido na lei civil, localizado na zona urbana do Município.",
+    "versaoErrada2": "O imposto, de competência dos Municípios, sobre a propriedade predial e territorial urbana tem como fato gerador a propriedade, o domínio útil ou a posse de bem imóvel por natureza ou por acessão física, como definido na lei civil, localizado na zona rural do Município.",
+    "explicacaoDiferenca": "A versão 1 troca o conectivo 'ou' por 'e' entre 'domínio útil' e 'a posse', sugerindo que seria necessário reunir cumulativamente propriedade, domínio útil e posse sobre o mesmo imóvel para configurar o fato gerador, quando na verdade basta QUALQUER um desses direitos isoladamente — são hipóteses alternativas de incidência. A versão 2 troca 'zona urbana' por 'zona rural', mas essa é justamente a linha divisória entre IPTU (imóvel urbano, competência municipal) e ITR (imóvel rural, competência federal) — localizar o fato gerador do IPTU na zona rural inverteria a própria competência tributária sobre o imóvel.",
+    "regraMemoria": "IPTU incide na zona URBANA sobre propriedade, domínio útil OU posse — qualquer um dos três já gera o imposto.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código Tributário Nacional (Lei 5.172/1966)",
+    "dispositivo": "Art. 151, caput e III",
+    "territorio": "Direito Tributário",
+    "subtema": "Processo Tributário",
+    "textoCorreto": "Suspendem a exigibilidade do crédito tributário as reclamações e os recursos, nos termos das leis reguladoras do processo tributário administrativo.",
+    "versaoErrada1": "Extinguem a exigibilidade do crédito tributário as reclamações e os recursos, nos termos das leis reguladoras do processo tributário administrativo.",
+    "versaoErrada2": "Suspendem a exigibilidade do crédito tributário as reclamações e os recursos, nos termos das leis reguladoras do processo tributário.",
+    "explicacaoDiferenca": "A versão 1 troca 'Suspendem' por 'Extinguem', mas as reclamações e recursos administrativos (art. 151, III) apenas SUSPENDEM a exigibilidade do crédito tributário enquanto pendente o julgamento administrativo — o crédito continua existindo e volta a ser exigível se o contribuinte perder; a extinção do crédito é hipótese distinta e taxativa, prevista no art. 156 do CTN (pagamento, prescrição, decadência etc.), e confundir os dois institutos altera completamente as consequências práticas para o contribuinte. A versão 2 omite a palavra 'administrativo' ao final, referindo-se genericamente ao 'processo tributário' — mas o efeito suspensivo do art. 151, III, é próprio das reclamações e recursos no âmbito do processo ADMINISTRATIVO tributário; um recurso ou ação no processo judicial não suspende a exigibilidade por si só, dependendo de depósito do montante integral ou de tutela/liminar (outras hipóteses do mesmo artigo).",
+    "regraMemoria": "Reclamação e recurso administrativo apenas SUSPENDEM (não extinguem) a exigibilidade — e só valem no processo ADMINISTRATIVO.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Convenção Interamericana para Prevenir, Punir e Erradicar a Violência contra a Mulher (Convenção de Belém do Pará, 1994)",
+    "dispositivo": "Art. 1",
+    "territorio": "Direitos Humanos",
+    "subtema": "Direitos de Grupos Vulneráveis",
+    "textoCorreto": "Para os efeitos desta Convenção, entender-se-á por violência contra a mulher qualquer ato ou conduta baseada no gênero, que cause morte, dano ou sofrimento físico, sexual ou psicológico à mulher, tanto na esfera pública como na privada.",
+    "versaoErrada1": "Para os efeitos desta Convenção, entender-se-á por violência contra a mulher qualquer ato ou conduta baseada no gênero, que cause morte, dano e sofrimento físico, sexual ou psicológico à mulher, tanto na esfera pública como na privada.",
+    "versaoErrada2": "Para os efeitos desta Convenção, entender-se-á por violência contra a mulher qualquer ato ou conduta baseada no sexo, que cause morte, dano ou sofrimento físico, sexual ou psicológico à mulher, tanto na esfera pública como na privada.",
+    "explicacaoDiferenca": "A versão errada 1 troca o 'ou' pelo 'e' entre 'morte, dano ou sofrimento', transformando uma lista alternativa em cumulativa: pelo texto correto basta UM desses resultados (morte, OU dano, OU sofrimento) para configurar violência; exigir os três ao mesmo tempo restringiria absurdamente o conceito. A versão errada 2 troca 'baseada no gênero' por 'baseada no sexo': a Convenção ancora deliberadamente o conceito em GÊNERO (construção social de papéis e relações de poder), não em SEXO (característica biológica), pois é justamente essa perspectiva de gênero que fundamenta o reconhecimento da violência contra a mulher como fenômeno estrutural, e não meramente biológico.",
+    "regraMemoria": "Violência de gênero: basta UM dos resultados (morte, dano OU sofrimento), física, sexual OU psicológica, em qualquer espaço - e a base é o GÊNERO, não o sexo.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Lei do Refúgio (Lei 9.474/1997)",
+    "dispositivo": "Art. 1º, I",
+    "territorio": "Direitos Humanos",
+    "subtema": "Refugiados e Migrantes",
+    "textoCorreto": "Será reconhecido como refugiado todo indivíduo que devido a fundados temores de perseguição por motivos de raça, religião, nacionalidade, grupo social ou opiniões políticas encontre-se fora de seu país de nacionalidade e não possa ou não queira acolher-se à proteção de tal país.",
+    "versaoErrada1": "Será reconhecido como refugiado todo indivíduo que devido a fundados temores de perseguição por motivos de raça, religião, nacionalidade, grupo social ou opiniões políticas encontre-se fora de seu país de nacionalidade e não possa e não queira acolher-se à proteção de tal país.",
+    "versaoErrada2": "Será reconhecido como refugiado todo indivíduo que devido a fundados temores de perseguição por motivos de raça, religião, nacionalidade, etnia ou opiniões políticas encontre-se fora de seu país de nacionalidade e não possa ou não queira acolher-se à proteção de tal país.",
+    "explicacaoDiferenca": "A versão errada 1 troca 'não possa ou não queira' por 'não possa e não queira', transformando uma condição alternativa em cumulativa: para o reconhecimento basta que o indivíduo NÃO POSSA (impossibilidade) OU NÃO QUEIRA (recusa fundada no temor) buscar a proteção do país de origem; exigir simultaneamente as duas situações inverteria o padrão de proteção, dificultando indevidamente o reconhecimento do status de refugiado. A versão errada 2 troca 'grupo social' por 'etnia': os motivos taxativos da definição (que replica a Convenção de 1951) são raça, religião, nacionalidade, GRUPO SOCIAL e opiniões políticas; 'etnia' não é o termo empregado pela lei, ainda que possa se relacionar com raça ou grupo social em certos casos.",
+    "regraMemoria": "Refugiado: basta NÃO PODER OU NÃO QUERER voltar; os motivos são raça, religião, nacionalidade, GRUPO SOCIAL ou opinião política.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Constituição Federal de 1988",
+    "dispositivo": "Art. 5º, § 3º",
+    "territorio": "Direitos Humanos",
+    "subtema": "Tratados Internacionais de Direitos Humanos",
+    "textoCorreto": "Os tratados e convenções internacionais sobre direitos humanos que forem aprovados, em cada Casa do Congresso Nacional, em dois turnos, por três quintos dos votos dos respectivos membros, serão equivalentes às emendas constitucionais.",
+    "versaoErrada1": "Os tratados e convenções internacionais sobre direitos humanos que forem aprovados, em cada Casa do Congresso Nacional, em dois turnos, por dois terços dos votos dos respectivos membros, serão equivalentes às emendas constitucionais.",
+    "versaoErrada2": "Os tratados e convenções internacionais sobre direitos humanos que forem aprovados, em cada Casa do Congresso Nacional, em turno único, por três quintos dos votos dos respectivos membros, serão equivalentes às emendas constitucionais.",
+    "explicacaoDiferenca": "A versão errada 1 troca 'três quintos' por 'dois terços': o quórum correto para o tratado de direitos humanos equivaler a emenda constitucional é de 3/5 dos votos, exatamente o mesmo quórum exigido para aprovar uma PEC (art. 60, §2º); 'dois terços' é o quórum usado em outras hipóteses constitucionais (como a admissibilidade de impeachment), não nesta. A versão errada 2 troca 'dois turnos' por 'turno único': o rito precisa reproduzir integralmente o procedimento de emenda constitucional, que exige votação em DOIS turnos em cada Casa; aprovar em turno único descaracterizaria a equiparação ao rito das PECs e tornaria o procedimento inválido para gerar o efeito de emenda.",
+    "regraMemoria": "Tratado de direitos humanos vira emenda constitucional: 3/5, em 2 turnos, em cada Casa - o rito é idêntico ao de uma PEC.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Declaração Universal dos Direitos Humanos (1948)",
+    "dispositivo": "Art. III",
+    "territorio": "Direitos Humanos",
+    "subtema": "Sistema Global de Proteção (ONU)",
+    "textoCorreto": "Todo indivíduo tem direito à vida, à liberdade e à segurança pessoal.",
+    "versaoErrada1": "Todo indivíduo tem direito à vida, à liberdade ou à segurança pessoal.",
+    "versaoErrada2": "Todo indivíduo tem direito à vida, à liberdade e à segurança social.",
+    "explicacaoDiferenca": "A versão errada 1 troca o 'e' pelo 'ou', sugerindo que os três direitos seriam alternativos, como se o indivíduo pudesse ser titular de apenas um deles; na verdade, vida, liberdade e segurança pessoal são cumulativos - todo indivíduo é titular dos três simultaneamente. A versão errada 2 troca 'segurança pessoal' por 'segurança social': o art. III trata da proteção contra ameaças à integridade e à vida da pessoa (segurança pessoal), enquanto 'segurança social' é objeto de outro dispositivo da Declaração (art. XXII, relativo à previdência e ao bem-estar social) - são direitos distintos previstos em artigos diferentes.",
+    "regraMemoria": "Vida, liberdade E segurança PESSOAL - os três juntos, e não confundir com segurança social (que é outro artigo).",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Convenção de Viena sobre o Direito dos Tratados (1969)",
+    "dispositivo": "Art. 26",
+    "territorio": "Direito Internacional",
+    "subtema": "Direito Internacional Público",
+    "textoCorreto": "Todo tratado em vigor obriga as partes e deve ser cumprido por elas de boa-fé.",
+    "versaoErrada1": "Todo tratado assinado obriga as partes e deve ser cumprido por elas de boa-fé.",
+    "versaoErrada2": "Todo tratado em vigor obriga as partes e deve ser cumprido por elas integralmente.",
+    "explicacaoDiferenca": "A versão errada 1 troca 'em vigor' por 'assinado': a obrigação plena de cumprimento (pacta sunt servanda) só nasce quando o tratado está EM VIGOR, isto é, após completado o processo de ratificação/adesão e demais formalidades; a mera assinatura gera apenas a obrigação mais limitada de não frustrar o objeto e a finalidade do tratado (art. 18 da própria Convenção de Viena), não a obrigação de cumprimento integral do art. 26. A versão errada 2 troca 'de boa-fé' por 'integralmente': o princípio pacta sunt servanda exige expressamente cumprimento de BOA-FÉ, elemento comportamental/ético que veda interpretações abusivas ou evasivas do tratado; substituir por 'integralmente' descaracteriza o fundamento ético da norma, ainda que a completude também seja esperada.",
+    "regraMemoria": "Pacta sunt servanda: tratado EM VIGOR (não apenas assinado) obriga, e o cumprimento deve ser de BOA-FÉ.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Lei de Migração (Lei 13.445/2017)",
+    "dispositivo": "Art. 4º, caput",
+    "territorio": "Direito Internacional",
+    "subtema": "Migração e Nacionalidade",
+    "textoCorreto": "Ao migrante é garantida no território nacional, em condição de igualdade com os nacionais, a inviolabilidade do direito à vida, à liberdade, à igualdade, à segurança e à propriedade.",
+    "versaoErrada1": "Ao estrangeiro é garantida no território nacional, em condição de igualdade com os nacionais, a inviolabilidade do direito à vida, à liberdade, à igualdade, à segurança e à propriedade.",
+    "versaoErrada2": "Ao migrante é garantida no território nacional, em condição de reciprocidade com os nacionais, a inviolabilidade do direito à vida, à liberdade, à igualdade, à segurança e à propriedade.",
+    "explicacaoDiferenca": "A versão errada 1 troca 'migrante' por 'estrangeiro': a Lei de Migração usa deliberadamente o termo mais amplo MIGRANTE, que compreende imigrante, emigrante, residente fronteiriço e apátrida (art. 1º, §1º), não se limitando à categoria mais restrita de 'estrangeiro'. A versão errada 2 troca 'igualdade' por 'reciprocidade': a Lei de Migração rompeu com o antigo paradigma do Estatuto do Estrangeiro (Lei 6.815/80), que condicionava certos direitos à reciprocidade entre países, consagrando em seu lugar o princípio da IGUALDADE de tratamento entre migrante e nacional; reintroduzir 'reciprocidade' contraria exatamente a mudança de paradigma promovida pela nova lei.",
+    "regraMemoria": "Lei de Migração: MIGRANTE (categoria ampla, não só estrangeiro) tem IGUALDADE - não reciprocidade - com o nacional.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código de Processo Civil (Lei 13.105/2015)",
+    "dispositivo": "Art. 26, caput, I e II",
+    "territorio": "Direito Internacional",
+    "subtema": "Cooperação Jurídica Internacional",
+    "textoCorreto": "A cooperação jurídica internacional será regida por tratado de que o Brasil faz parte e observará: I - o respeito às garantias do devido processo legal no Estado requerente; II - a igualdade de tratamento entre nacionais e estrangeiros, residentes ou não no Brasil, em relação ao acesso à justiça e à tramitação dos processos, assegurando-se assistência judiciária aos necessitados.",
+    "versaoErrada1": "A cooperação jurídica internacional será regida por tratado de que o Brasil faz parte e observará: I - o respeito às garantias do devido processo legal no Estado requerido; II - a igualdade de tratamento entre nacionais e estrangeiros, residentes ou não no Brasil, em relação ao acesso à justiça e à tramitação dos processos, assegurando-se assistência judiciária aos necessitados.",
+    "versaoErrada2": "A cooperação jurídica internacional será regida por tratado de que o Brasil faz parte e observará: I - o respeito às garantias do devido processo legal no Estado requerente; II - a igualdade de tratamento entre nacionais e estrangeiros, desde que residentes no Brasil, em relação ao acesso à justiça e à tramitação dos processos, assegurando-se assistência judiciária aos necessitados.",
+    "explicacaoDiferenca": "A versão errada 1 troca 'Estado requerente' por 'Estado requerido': a garantia do devido processo legal deve ser respeitada no Estado REQUERENTE, ou seja, aquele de onde parte o pedido de cooperação e onde tramita o processo de origem; inverter para 'requerido' desloca a garantia para o Estado que apenas presta auxílio, o que não corresponde ao texto legal. A versão errada 2 troca 'residentes ou não no Brasil' por 'desde que residentes no Brasil': a igualdade de tratamento vale para estrangeiros residentes OU NÃO no território nacional; condicionar a garantia à residência excluiria indevidamente estrangeiros não residentes do acesso à justiça em condições de igualdade.",
+    "regraMemoria": "Cooperação jurídica: devido processo se avalia no Estado REQUERENTE; igualdade vale resida ou não no Brasil.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Código de Processo Civil (Lei 13.105/2015)",
+    "dispositivo": "Art. 21, caput, I a III",
+    "territorio": "Direito Internacional",
+    "subtema": "Jurisdição e Competência Internacional",
+    "textoCorreto": "Compete à autoridade judiciária brasileira processar e julgar as ações em que: I - o réu, qualquer que seja a sua nacionalidade, estiver domiciliado no Brasil; II - no Brasil tiver de ser cumprida a obrigação; III - o fundamento seja fato ocorrido ou ato praticado no Brasil.",
+    "versaoErrada1": "Compete à autoridade judiciária brasileira processar e julgar as ações em que: I - o autor, qualquer que seja a sua nacionalidade, estiver domiciliado no Brasil; II - no Brasil tiver de ser cumprida a obrigação; III - o fundamento seja fato ocorrido ou ato praticado no Brasil.",
+    "versaoErrada2": "Compete à autoridade judiciária brasileira processar e julgar as ações em que: I - o réu, qualquer que seja a sua nacionalidade, estiver domiciliado no Brasil; II - no Brasil tiver de ser cumprida a obrigação; III - o fundamento seja fato ocorrido e ato praticado no Brasil.",
+    "explicacaoDiferenca": "A versão errada 1 troca 'réu' por 'autor' no inciso I: a competência concorrente da autoridade judiciária brasileira funda-se no domicílio do RÉU, aplicação do princípio actor sequitur forum rei (o autor deve propor a ação no foro do réu); trocar para 'autor' inverte completamente o critério de fixação da competência. A versão errada 2 troca o 'ou' pelo 'e' no inciso III: a hipótese é alternativa - basta que o fato tenha ocorrido OU que o ato tenha sido praticado no Brasil (por exemplo, um acidente ocorrido aqui, ou a celebração de um contrato aqui); exigir a ocorrência cumulativa de ambos restringiria indevidamente a competência da justiça brasileira.",
+    "regraMemoria": "Jurisdição brasileira: RÉU domiciliado aqui, obrigação cumprida aqui, OU fato/ato praticado aqui - três hipóteses alternativas.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Estatuto da Criança e do Adolescente (Lei 8.069/1990)",
+    "dispositivo": "Art. 98, caput e I a III",
+    "territorio": "Direito da Criança e do Adolescente",
+    "subtema": "Medidas de Proteção",
+    "textoCorreto": "As medidas de proteção à criança e ao adolescente são aplicáveis sempre que os direitos reconhecidos nesta Lei forem ameaçados ou violados: I - por ação ou omissão da sociedade ou do Estado; II - por falta, omissão ou abuso dos pais ou responsável; III - em razão de sua conduta.",
+    "versaoErrada1": "As medidas de proteção à criança e ao adolescente são aplicáveis sempre que os direitos reconhecidos nesta Lei forem ameaçados e violados: I - por ação ou omissão da sociedade ou do Estado; II - por falta, omissão ou abuso dos pais ou responsável; III - em razão de sua conduta.",
+    "versaoErrada2": "As medidas de proteção à criança e ao adolescente são aplicáveis sempre que os direitos reconhecidos nesta Lei forem ameaçados ou violados: I - por ação ou omissão da sociedade ou do Estado; II - por falta, omissão ou abuso dos pais ou responsável; III - em razão da conduta dos pais.",
+    "explicacaoDiferenca": "A versão errada 1 troca 'ameaçados ou violados' por 'ameaçados e violados': a incidência das medidas de proteção é alternativa - basta a AMEAÇA ao direito, sem necessidade de violação já consumada, o que reforça o caráter preventivo do Estatuto; exigir cumulativamente ameaça e violação restringiria a proteção apenas a casos de dano já concretizado. A versão errada 2 altera o inciso III, atribuindo aos pais o que a lei atribui à própria criança/adolescente: o inciso III trata da hipótese em que a MEDIDA DE PROTEÇÃO decorre da própria conduta do menor (não como punição, já que ele é sujeito de direitos, não infrator penal), hipótese distinta do inciso II, que trata de falta, omissão ou abuso dos pais ou responsável; confundir as duas hipóteses distorce a estrutura do artigo.",
+    "regraMemoria": "Medida de proteção cabe se o direito for AMEAÇADO OU VIOLADO - por Estado/sociedade, pelos pais, ou pela própria conduta da criança/adolescente.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Estatuto da Criança e do Adolescente (Lei 8.069/1990)",
+    "dispositivo": "Art. 39, § 1º",
+    "territorio": "Direito da Criança e do Adolescente",
+    "subtema": "Adoção e Família Substituta",
+    "textoCorreto": "A adoção é medida excepcional e irrevogável, à qual se deve recorrer apenas quando esgotados os recursos de manutenção da criança ou adolescente na família natural ou extensa.",
+    "versaoErrada1": "A adoção é medida excepcional e revogável, à qual se deve recorrer apenas quando esgotados os recursos de manutenção da criança ou adolescente na família natural ou extensa.",
+    "versaoErrada2": "A adoção é medida excepcional e irrevogável, à qual se deve recorrer apenas quando esgotados os recursos de manutenção da criança ou adolescente na família natural ou substituta.",
+    "explicacaoDiferenca": "A versão errada 1 troca 'irrevogável' por 'revogável': a irrevogabilidade é atributo essencial da adoção (reforçado também pelo art. 48 do ECA), o que a distingue de outras modalidades de colocação em família substituta, como guarda e tutela, que podem ser revogadas; dizer que a adoção é 'revogável' desnaturaria completamente o instituto e sua função de dar estabilidade definitiva ao vínculo de filiação. A versão errada 2 troca 'família extensa' por 'família substituta': a lei manda esgotar os recursos de manutenção na família NATURAL (pais biológicos) ou EXTENSA (parentes próximos, como avós) antes de recorrer à adoção; como a própria adoção é uma modalidade de família SUBSTITUTA, a troca tornaria a frase circular e sem sentido (esgotar recursos na família substituta antes de recorrer à adoção, que é forma de família substituta).",
+    "regraMemoria": "Adoção é excepcional e IRREVOGÁVEL - só depois de esgotar a família NATURAL ou EXTENSA, nunca a substituta.",
+    "seedVersion": 4
+  },
+  {
+    "lei": "Estatuto da Criança e do Adolescente (Lei 8.069/1990)",
+    "dispositivo": "Art. 131",
+    "territorio": "Direito da Criança e do Adolescente",
+    "subtema": "Conselho Tutelar",
+    "textoCorreto": "O Conselho Tutelar é órgão permanente e autônomo, não jurisdicional, encarregado pela sociedade de zelar pelo cumprimento dos direitos da criança e do adolescente, definidos nesta Lei.",
+    "versaoErrada1": "O Conselho Tutelar é órgão permanente e autônomo, jurisdicional, encarregado pela sociedade de zelar pelo cumprimento dos direitos da criança e do adolescente, definidos nesta Lei.",
+    "versaoErrada2": "O Conselho Tutelar é órgão temporário e autônomo, não jurisdicional, encarregado pela sociedade de zelar pelo cumprimento dos direitos da criança e do adolescente, definidos nesta Lei.",
+    "explicacaoDiferenca": "A versão errada 1 troca 'não jurisdicional' por 'jurisdicional': o Conselho Tutelar tem natureza ADMINISTRATIVA, sem poder de decidir como órgão do Poder Judiciário; suas atribuições (art. 136 do ECA) limitam-se a medidas administrativas, encaminhamentos e requisições, não podendo, por exemplo, decretar a perda do poder familiar, medida que compete exclusivamente ao juiz; afirmar que é 'jurisdicional' outorgaria ao órgão poderes que a própria lei expressamente lhe nega. A versão errada 2 troca 'permanente' por 'temporário': o Conselho Tutelar é órgão PERMANENTE, com existência contínua em cada Município, ainda que seus membros (conselheiros tutelares) exerçam mandato de 4 anos; dizer que o órgão é 'temporário' sugeriria uma estrutura efêmera, o que contraria sua natureza de órgão municipal de existência permanente.",
+    "regraMemoria": "Conselho Tutelar: PERMANENTE e autônomo, mas NÃO JURISDICIONAL - jamais decide como um juiz.",
+    "seedVersion": 4
+  },
 ];
 
   // Preenche o subtema em itens de lei seca já inseridos antes de o campo
@@ -997,18 +1933,26 @@ var LeiSecaSeed = (function () {
   // seedado for revista depois). Casa pela chave disciplinaId+dispositivo,
   // já que o id gravado no banco é aleatório e não rastreia de volta pra
   // entrada correspondente em DISPOSITIVOS.
+  // Chave inclui `lei` além de território+dispositivo porque leis diferentes
+  // podem coincidir no número do artigo (ex.: "Art. 2º, caput" existe tanto
+  // na Lei 9.784/1999 quanto no Decreto-Lei 3.365/1941, ambos em Direito
+  // Administrativo) — sem a lei, as duas entradas colidiriam na mesma chave.
+  function chaveItem(disciplinaId, lei, dispositivo) {
+    return disciplinaId + '::' + lei + '::' + dispositivo;
+  }
+
   function atualizarSubtemas(idPorNome) {
     return DB.getAll('leiSeca').then(function (existentes) {
       var porChave = {};
       existentes.forEach(function (item) {
-        porChave[item.disciplinaId + '::' + item.dispositivo] = item;
+        porChave[chaveItem(item.disciplinaId, item.lei, item.dispositivo)] = item;
       });
 
       var atualizacoes = [];
       DISPOSITIVOS.forEach(function (d) {
         var disciplinaId = idPorNome[d.territorio];
         if (!disciplinaId) return;
-        var existente = porChave[disciplinaId + '::' + d.dispositivo];
+        var existente = porChave[chaveItem(disciplinaId, d.lei, d.dispositivo)];
         if (!existente) return;
         if (d.subtema && existente.subtema !== d.subtema) {
           existente.subtema = d.subtema;

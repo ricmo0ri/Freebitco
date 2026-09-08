@@ -359,9 +359,14 @@
             ou um "e" por "ou" — treinar isso separa quem decorou de quem só entendeu o assunto.
           </p>
           <p class="hint-text" id="leiseca-progresso"></p>
+          <div class="card-panel" id="leiseca-picker" hidden>
+            <p class="hint-text">Escolha um assunto pra praticar, ou treine todos misturados:</p>
+            <div id="leiseca-subtema-lista" class="subtema-picker-lista"></div>
+          </div>
           <div class="card-panel" id="leiseca-panel">
             <p id="leiseca-empty" class="empty-state">Nenhum dispositivo de lei seca cadastrado ainda para este território.</p>
             <div id="leiseca-card" class="flashcard" hidden>
+              <button id="leiseca-trocar-assunto" class="btn btn-secondary" hidden>🔀 Trocar assunto</button>
               <p class="flashcard-label" id="leiseca-origem"></p>
               <p class="caso-absurdo" id="leiseca-caso" hidden></p>
               <p class="flashcard-text" id="leiseca-enunciado"></p>

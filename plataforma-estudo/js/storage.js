@@ -14,6 +14,7 @@ var Storage = (function () {
     questoesSeedVersion: 'estudoTdah.questoesSeedVersion',
     leiSecaSeedVersion: 'estudoTdah.leiSecaSeedVersion',
     resumoFacilSeedVersion: 'estudoTdah.resumoFacilSeedVersion',
+    doutrinaSeedVersion: 'estudoTdah.doutrinaSeedVersion',
     lowStim: 'estudoTdah.lowStim',
     tema: 'estudoTdah.tema',
     metaDiariaQuestoes: 'estudoTdah.metaDiariaQuestoes',

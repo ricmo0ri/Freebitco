@@ -4,6 +4,7 @@
 var Doutrina = (function () {
   var els = {};
   var disciplinaId = null;
+  var disciplinaNome = null;
 
   function loadTodas() {
     if (!disciplinaId) return Promise.resolve([]);
@@ -47,6 +48,10 @@ var Doutrina = (function () {
 
         var summary = document.createElement('summary');
         summary.textContent = (d.tema ? '[' + d.tema + '] ' : '') + d.titulo;
+        if (window.PrioridadeOab && disciplinaNome && d.tema) {
+          var badgePrioridade = PrioridadeOab.criarBadge(PrioridadeOab.getPrioridadeSubtema(disciplinaNome, d.tema));
+          if (badgePrioridade) summary.appendChild(badgePrioridade);
+        }
         item.appendChild(summary);
 
         var conteudo = document.createElement('p');
@@ -67,7 +72,12 @@ var Doutrina = (function () {
 
   function setDisciplina(id) {
     disciplinaId = id;
-    renderList();
+    disciplinaNome = null;
+    DB.getAll('disciplinas').then(function (disciplinas) {
+      var d = disciplinas.find(function (item) { return item.id === id; });
+      disciplinaNome = d ? d.nome : null;
+      return renderList();
+    });
   }
 
   function getDisciplinaId() {

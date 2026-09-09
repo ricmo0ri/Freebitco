@@ -99,7 +99,7 @@ var App = (function () {
     if (window.Bemestar) Bemestar.iniciarVigiaHiperfoco();
 
     Disciplinas.init().then(function () {
-      return Promise.all([QuestoesSeed.seedar(), LeiSecaSeed.seedar(), ResumoFacilSeed.seedar()]);
+      return Promise.all([QuestoesSeed.seedar(), LeiSecaSeed.seedar(), ResumoFacilSeed.seedar(), DoutrinaSeed.seedar()]);
     }).then(function () {
       if (window.Missao) Missao.renderTerritorios();
     });

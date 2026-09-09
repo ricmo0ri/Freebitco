@@ -7,6 +7,7 @@
 var LeiSeca = (function () {
   var els = {};
   var disciplinaId = null;
+  var disciplinaNome = null;
   var todosItens = []; // todos os dispositivos do território, antes do filtro por assunto
   var fila = [];
   var indice = 0;
@@ -173,6 +174,10 @@ var LeiSeca = (function () {
       btn.type = 'button';
       btn.className = 'tema-btn';
       btn.textContent = grupo.subtema + ' (' + grupo.total + ')';
+      if (window.PrioridadeOab && disciplinaNome) {
+        var badgePrioridade = PrioridadeOab.criarBadge(PrioridadeOab.getPrioridadeSubtema(disciplinaNome, grupo.subtema));
+        if (badgePrioridade) btn.appendChild(badgePrioridade);
+      }
       btn.addEventListener('click', function () { iniciarPratica(grupo.subtema); });
       els.pickerLista.appendChild(btn);
     });
@@ -200,8 +205,13 @@ var LeiSeca = (function () {
 
   function setDisciplina(id) {
     disciplinaId = id;
+    disciplinaNome = null;
     if (els.trocarBtn) els.trocarBtn.hidden = true;
-    carregarItens().then(function (itens) {
+    Promise.all([DB.getAll('disciplinas'), carregarItens()]).then(function (resultados) {
+      var disciplinas = resultados[0];
+      var itens = resultados[1];
+      var d = disciplinas.find(function (item) { return item.id === id; });
+      disciplinaNome = d ? d.nome : null;
       todosItens = itens;
       renderPicker();
     });

@@ -1177,6 +1177,25 @@ body.low-stim .resumo-facil-item:hover {
 .dificuldade-tag.media { background: var(--amber-wash); color: var(--amber); }
 .dificuldade-tag.dificil { background: var(--oxblood-wash); color: var(--oxblood); }
 
+/* Selo de prioridade OAB: quanto o assunto historicamente cai na prova
+   (estatística de frequência das provas 32ª-47ª, não desempenho do
+   usuário — por isso usa letra em vez de emoji de acerto/erro). */
+.prioridade-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 1px 7px;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.prioridade-badge.bloco-S { background: var(--oxblood-wash); color: var(--oxblood); }
+.prioridade-badge.bloco-A { background: var(--amber-wash); color: var(--amber); }
+.prioridade-badge.bloco-B { background: var(--gold-wash); color: var(--gold); }
+.prioridade-badge.bloco-C { background: var(--forest-wash); color: var(--forest); }
+
 /* Modo baixo estímulo: desatura os acentos e corta animações/transições,
    para dias de sobrecarga sensorial. */
 body.low-stim {

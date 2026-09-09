@@ -220,6 +220,10 @@ var Missao = (function () {
         label.textContent = (d.territorio || d.nome) + dot;
         btn.appendChild(medalha);
         btn.appendChild(label);
+        if (window.PrioridadeOab) {
+          var badgePrioridade = PrioridadeOab.criarBadge(PrioridadeOab.getPrioridadeTerritorio(d.nome));
+          if (badgePrioridade) btn.appendChild(badgePrioridade);
+        }
 
         btn.addEventListener('click', function () { iniciarMissao(d.id, d.territorio || d.nome); });
         li.appendChild(btn);

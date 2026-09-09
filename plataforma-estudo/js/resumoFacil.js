@@ -5,6 +5,7 @@
 var ResumoFacil = (function () {
   var els = {};
   var disciplinaId = null;
+  var disciplinaNome = null;
 
   function loadTodos() {
     if (!disciplinaId) return Promise.resolve([]);
@@ -22,6 +23,10 @@ var ResumoFacil = (function () {
 
         var summary = document.createElement('summary');
         summary.textContent = r.subtema;
+        if (window.PrioridadeOab && disciplinaNome) {
+          var badgePrioridade = PrioridadeOab.criarBadge(PrioridadeOab.getPrioridadeSubtema(disciplinaNome, r.subtema));
+          if (badgePrioridade) summary.appendChild(badgePrioridade);
+        }
         item.appendChild(summary);
 
         var texto = document.createElement('p');
@@ -43,7 +48,12 @@ var ResumoFacil = (function () {
 
   function setDisciplina(id) {
     disciplinaId = id;
-    renderList();
+    disciplinaNome = null;
+    DB.getAll('disciplinas').then(function (disciplinas) {
+      var d = disciplinas.find(function (item) { return item.id === id; });
+      disciplinaNome = d ? d.nome : null;
+      return renderList();
+    });
   }
 
   function init() {

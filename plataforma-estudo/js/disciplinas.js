@@ -182,6 +182,10 @@ var Disciplinas = (function () {
         open.type = 'button';
         open.className = 'item-text disciplina-open-btn';
         preencherComMedalha(open, disciplina.icone, disciplina.territorio || disciplina.nome, disciplina.cor);
+        if (window.PrioridadeOab) {
+          var badgePrioridade = PrioridadeOab.criarBadge(PrioridadeOab.getPrioridadeTerritorio(disciplina.nome));
+          if (badgePrioridade) open.appendChild(badgePrioridade);
+        }
         open.addEventListener('click', function () { openDisciplina(disciplina); });
 
         var del = document.createElement('button');

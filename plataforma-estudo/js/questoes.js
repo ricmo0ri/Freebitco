@@ -7,6 +7,7 @@ var Questoes = (function () {
   var currentQuestao = null;
   var selectedAltIndex = null;
   var altRowCount = 0;
+  var questoesCarregadas = [];
 
   function letra(index) {
     return String.fromCharCode(65 + index); // 0 -> A, 1 -> B, ...
@@ -117,7 +118,12 @@ var Questoes = (function () {
   function deleteQuestao(id) {
     DB.remove('questoes', id).then(function () {
       renderList();
-      renderReview();
+      // Só sorteia outra questão se a removida era a que estava em tela;
+      // caso contrário, manter a questão escolhida (ou sorteada) que o
+      // usuário já está respondendo.
+      if (currentQuestao && currentQuestao.id === id) {
+        renderReview();
+      }
       if (window.Chefoes) Chefoes.setDisciplina(disciplinaId);
     });
   }
@@ -134,25 +140,53 @@ var Questoes = (function () {
     };
   }
 
+  // Mostra uma questão específica no card de prática (usado tanto pelo
+  // sorteio aleatório quanto pela escolha manual na lista "Todas as
+  // questões").
+  function renderQuestao(questao) {
+    currentQuestao = questao;
+    selectedAltIndex = null;
+
+    if (!currentQuestao) {
+      els.empty.hidden = false;
+      els.card.hidden = true;
+      return;
+    }
+
+    els.empty.hidden = true;
+    els.card.hidden = false;
+    els.proximaBtn.hidden = true;
+
+    QuestaoCard.render(refs(), currentQuestao, function (i) {
+      selectedAltIndex = i;
+      els.confirmBtn.disabled = false;
+    });
+
+    marcarSelecionadaNaLista(currentQuestao.id);
+  }
+
   function renderReview() {
     return loadQuestoes().then(function (questoes) {
-      currentQuestao = questoes.length ? questoes[Math.floor(Math.random() * questoes.length)] : null;
-      selectedAltIndex = null;
+      var sorteada = questoes.length ? questoes[Math.floor(Math.random() * questoes.length)] : null;
+      renderQuestao(sorteada);
+    });
+  }
 
-      if (!currentQuestao) {
-        els.empty.hidden = false;
-        els.card.hidden = true;
-        return;
-      }
+  // Carrega a questão escolhida pelo usuário na lista "Todas as questões"
+  // e mostra ela no card de prática, em vez de esperar o sorteio aleatório.
+  function escolherQuestao(id) {
+    var questao = questoesCarregadas.filter(function (q) { return q.id === id; })[0];
+    if (!questao) return;
+    renderQuestao(questao);
+    if (els.card && els.card.scrollIntoView) {
+      els.card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 
-      els.empty.hidden = true;
-      els.card.hidden = false;
-      els.proximaBtn.hidden = true;
-
-      QuestaoCard.render(refs(), currentQuestao, function (i) {
-        selectedAltIndex = i;
-        els.confirmBtn.disabled = false;
-      });
+  function marcarSelecionadaNaLista(id) {
+    if (!els.list) return;
+    Array.prototype.forEach.call(els.list.querySelectorAll('.questao-select-btn'), function (btn) {
+      btn.classList.toggle('selecionada', btn.dataset.questaoId === id);
     });
   }
 
@@ -168,15 +202,20 @@ var Questoes = (function () {
 
   function renderList() {
     return loadQuestoes().then(function (questoes) {
+      questoesCarregadas = questoes;
       els.total.textContent = String(questoes.length);
       els.list.innerHTML = '';
       questoes.forEach(function (q) {
         var li = document.createElement('li');
-        var text = document.createElement('span');
-        text.className = 'item-text';
+        var text = document.createElement('button');
+        text.type = 'button';
+        text.className = 'item-text questao-select-btn';
+        text.dataset.questaoId = q.id;
         var preview = q.enunciado.length > 60 ? q.enunciado.slice(0, 60) + '…' : q.enunciado;
         var prefixo = q.tema ? '[' + q.tema + '] ' : (q.provaOrigem ? '[' + q.provaOrigem + '] ' : '');
         text.textContent = prefixo + preview;
+        text.title = 'Responder esta questão agora';
+        text.addEventListener('click', function () { escolherQuestao(q.id); });
 
         var dificuldadeLabels = { facil: 'Fácil', media: 'Média', dificil: 'Difícil' };
         var tag = document.createElement('span');
@@ -193,6 +232,7 @@ var Questoes = (function () {
         li.appendChild(del);
         els.list.appendChild(li);
       });
+      marcarSelecionadaNaLista(currentQuestao ? currentQuestao.id : null);
     });
   }
 

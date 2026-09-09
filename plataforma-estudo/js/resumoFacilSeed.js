@@ -3,7 +3,7 @@
 // pensado como a primeira parada antes de encarar questões e lei seca,
 // pra quem precisa de uma porta de entrada mais leve no assunto.
 var ResumoFacilSeed = (function () {
-  var SEED_VERSION_ATUAL = 3;
+  var SEED_VERSION_ATUAL = 4;
 
   var RESUMOS = [
   {
@@ -1013,6 +1013,216 @@ var ResumoFacilSeed = (function () {
     "resumoSimples": "O Brasil é formado por vários \"pedaços\" que se organizam sozinhos, como a União, os Estados e os Municípios, cada um cuidando da sua parte com autonomia. Mas existem situações muito graves e excepcionais, como uma grave desordem, um risco à integridade do país, ou um desrespeito muito sério às regras básicas, em que esse \"pedaço\" para de conseguir se organizar direito sozinho. Nesses casos raros, a União pode entrar temporariamente pra colocar ordem num Estado, ou um Estado pode fazer isso num Município dentro dele, tomando conta da situação até tudo se normalizar. Essa intervenção existe como um recurso de emergência, não algo do dia a dia, porque tirar a autonomia de um ente federado é uma medida séria que só se justifica quando não sobra outra saída. Depois que o problema é resolvido, a autonomia volta ao normal, como se tivesse sido só \"emprestada\" por um tempo e devolvida em seguida.",
     "exemplo": "É como quando os pais deixam a criança arrumar o próprio quarto sozinha, mas ela some numa bagunça tão grande que nem consegue mais andar lá dentro. Aí os pais entram, ajudam a organizar tudo, e assim que o quarto volta ao normal, devolvem pra criança a tarefa de cuidar dele sozinha de novo.",
     "seedVersion": 3
+  },
+  {
+    "territorio": "Ética",
+    "subtema": "Sigilo Profissional e Inviolabilidade",
+    "resumoSimples": "É o dever que o advogado tem de guardar segredo sobre tudo que ele fica sabendo por causa da profissão, mesmo coisas bem delicadas que o cliente contou pra ele em confiança. Isso existe porque, pra se defender direito, o cliente precisa contar a verdade inteira pro advogado, até os pedaços ruins - e ninguém conta isso se tiver medo de que vá parar na boca do mundo. Por causa desse mesmo motivo, o escritório do advogado, seus papéis e suas comunicações ligadas ao trabalho são invioláveis: ninguém pode simplesmente entrar lá e vasculhar tudo, porque isso quebraria a confiança que sustenta a profissão inteira. No fim das contas, essa proteção não é um privilégio do advogado, é uma garantia pro cliente.",
+    "exemplo": "Imagina que você conta um segredo pro seu melhor amigo, tipo que quebrou o vaso da vovó sem querer. Se ele sair contando pra todo mundo, você nunca mais vai confiar nele pra contar nada. Com o advogado é igual: se ele pudesse espalhar os segredos do cliente, ninguém contaria a verdade toda pra ele, e aí ele não conseguiria ajudar direito. Por isso o escritório dele funciona como uma caixinha de segredos que ninguém de fora pode abrir.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Ética",
+    "subtema": "Processo Disciplinar na OAB",
+    "resumoSimples": "Quando alguém acha que um advogado cometeu uma falta ética, não dá pra simplesmente puni-lo de cara - existe um caminho organizado pra apurar isso com cuidado. Primeiro alguém faz uma reclamação formal, contando o que achou que aconteceu. Depois, o advogado acusado tem direito de se explicar e se defender antes de qualquer decisão. Só então um grupo de advogados mais experientes, o Tribunal de Ética, analisa os dois lados e decide se realmente houve erro e o que fazer a respeito. Essa ordem existe porque toda pessoa acusada de algo merece a chance de contar sua versão antes de ser julgada - ninguém pode ser condenado sem antes poder se explicar.",
+    "exemplo": "É como quando dois irmãos brigam e a mãe não sai distribuindo castigo na hora. Primeiro ela escuta quem reclamou, depois escuta o lado do outro irmão, e só depois de ouvir os dois é que decide se vai ter castigo e qual vai ser. Ninguém fica de castigo sem antes poder contar o que realmente aconteceu.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Ética",
+    "subtema": "Estrutura da OAB (Federal, Seccional, Subseção)",
+    "resumoSimples": "A OAB é organizada em camadas, parecido com bonecas russas que ficam uma dentro da outra. Lá no topo fica o Conselho Federal, que cuida das regras gerais que valem pra todo o Brasil. Em cada estado existe um Conselho Seccional, responsável pelos advogados daquele estado especificamente. E dentro dos estados, em cidades ou regiões, ficam as Subseções, que resolvem os assuntos mais do dia a dia, bem mais pertinho de cada advogado. Essa divisão existe porque o Brasil é enorme, e seria impossível uma sede só em Brasília dar conta de resolver tudo de todo mundo - por isso cada nível cuida do tamanho de problema que faz sentido pra ele.",
+    "exemplo": "Pensa numa rede de escolas espalhada pelo país: existe uma diretoria geral que define as regras pra todas as escolas (Conselho Federal), a diretoria de cada escola da cidade que cuida do que é daquela escola (Seccional), e a coordenação de cada turma que resolve o dia a dia da sala (Subseção). A coordenadora não precisa incomodar a diretoria geral pra resolver uma briguinha de sala de aula.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Ética",
+    "subtema": "Postulação e Atividades Privativas",
+    "resumoSimples": "Existem coisas na Justiça que só o advogado pode fazer em nome de outra pessoa, como entrar com uma ação em juízo ou dar uma orientação jurídica formal. Isso existe pra proteger quem precisa de ajuda: o Direito é cheio de prazo, regra técnica e detalhe que um erro pode prejudicar bastante quem está se defendendo, então só quem estudou e tem habilitação pode assumir essa responsabilidade pelos outros. Só que existem exceções pra situações urgentes e simples, como pedir a soltura de alguém preso de forma injusta através de um habeas corpus: nesse caso qualquer pessoa pode fazer sozinha, sem precisar de advogado, porque a urgência de proteger a liberdade é mais importante do que a exigência técnica.",
+    "exemplo": "É como pilotar um avião cheio de passageiros - só quem tem carteira de piloto pode fazer isso, porque um erro pode ser perigoso pra muita gente. Mas se alguém está se afogando na piscina, qualquer pessoa pode pular pra ajudar, mesmo sem ser salva-vidas profissional, porque a urgência de salvar uma vida vale mais do que a regra normal.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito Constitucional",
+    "subtema": "Repartição de Competências Federativas",
+    "resumoSimples": "O Brasil é organizado em governo federal (União), estados e municípios, e a Constituição decide o que cada um deles pode fazer. Algumas coisas só a União pode cuidar sozinha, como as forças armadas ou a moeda do país. Outras ficam também nas mãos dos estados e municípios, porque interessam mais de perto a cada lugar, como o transporte da cidade ou a segurança de um estado. E existem assuntos que todos cuidam juntos, cada um fazendo sua parte, como saúde e educação. Essa divisão existe porque nem tudo precisa ser decidido do mesmo jeito pro país inteiro - assuntos locais ficam melhor resolvidos por quem está mais perto do problema.",
+    "exemplo": "É como organizar as tarefas de uma casa grande: o pai cuida das contas mais importantes da casa toda, cada filho cuida da arrumação do próprio quarto, e a limpeza da sala todo mundo ajuda junto. Ninguém faz tudo sozinho, e cada tarefa vai pra quem faz mais sentido cuidar dela.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito Constitucional",
+    "subtema": "ADI, ADC e ADPF",
+    "resumoSimples": "São três jeitos diferentes de perguntar direto pro Supremo Tribunal Federal se algo está de acordo com a Constituição, sem precisar passar por um processo comum na Justiça. A ADI serve pra pedir que uma lei seja considerada inválida porque contraria a Constituição. A ADC é o contrário: serve pra confirmar que uma lei está certinha, quando existe muita dúvida e discussão sobre ela pelo país. Já a ADPF entra quando o problema não é bem sobre uma lei específica, mas sobre um direito fundamental muito importante sendo desrespeitado, sem outro jeito de resolver isso rapidamente. As três existem pra manter a Constituição sempre valendo acima de tudo, resolvendo essas dúvidas de forma direta no tribunal mais alto do país.",
+    "exemplo": "Imagina uma competição de jogos com um regulamento oficial. A ADI é tipo reclamar 'essa regra nova que inventaram fere o regulamento, tira ela'. A ADC é tipo perguntar antes 'essa regra que criamos está certinha com o regulamento, pode confirmar?'. E a ADPF é quando o problema não é bem uma regra nova, mas alguém está desrespeitando algo essencial do jogo e só o juiz principal pode resolver.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito Constitucional",
+    "subtema": "Poder Executivo, Legislativo e Judiciário",
+    "resumoSimples": "O poder de comandar o país é dividido em três partes, pra ninguém ficar mandando em tudo sozinho. O Executivo (Presidente, governadores, prefeitos) cuida de administrar o país e colocar as leis em prática no dia a dia. O Legislativo (Congresso, Assembleias, Câmaras) é quem cria as leis. E o Judiciário (juízes e tribunais) resolve as brigas e diz quem tem razão quando existe dúvida ou desobediência à lei. Eles são independentes, cada um faz sua parte sem o outro mandar nele, mas ficam de olho uns nos outros e podem corrigir exageros - é o que se chama de freios e contrapesos. Essa divisão existe porque, se uma só pessoa ou grupo tivesse todo esse poder junto, seria fácil abusar dele e ninguém conseguiria impedir.",
+    "exemplo": "Pensa numa casa onde um irmão decide as regras, outro fiscaliza se elas estão sendo cumpridas, e o terceiro julga quando tem briga sobre quem desrespeitou a regra. Nenhum dos três manda nos outros dois, mas cada um pode chamar atenção se algum exagerar, assim ninguém vira o mandão da casa sozinho.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito Constitucional",
+    "subtema": "Sanção, Veto e Medida Provisória",
+    "resumoSimples": "Depois que o Congresso aprova um projeto de lei, ele segue pro Presidente decidir. Se ele concordar, assina e a lei passa a valer, isso é a sanção. Se ele achar que tem algo errado, pode recusar aquele projeto, inteiro ou só uma parte, isso é o veto, e aí o Congresso pode discutir de novo e até derrubar essa recusa. Só que existem situações urgentes e importantes demais pra esperar todo esse trâmite demorado - nesses casos o Presidente pode criar uma regra que já passa a valer na hora, chamada medida provisória, mas ela é temporária e depois precisa ser confirmada pelo Congresso, senão perde a validade. Esse jeito de funcionar existe pra equilibrar a rapidez que uma emergência exige com o cuidado de sempre ouvir quem representa o povo.",
+    "exemplo": "É como quando as crianças da escola votam uma regra nova pro recreio e levam pro diretor aprovar. Se ele gostar, carimba e ela vale (sanção). Se achar ruim, ele devolve dizendo que não pode (veto), e as crianças podem tentar convencer ele de novo. Mas se surge uma emergência, tipo uma torneira quebrada, o diretor pode criar uma regra provisória na hora, e depois explicar pras crianças votarem se aquilo continua valendo ou não.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito Civil",
+    "subtema": "Prescrição e Decadência Civil",
+    "resumoSimples": "Algumas coisas na vida têm um relógio invisível: se a pessoa não faz alguma coisa dentro de um tempo razoável, ela perde a chance pra sempre. É isso que acontece com a prescrição e a decadência, só que de dois jeitos diferentes. Na prescrição, a pessoa tinha um direito de reclamar de algo, como cobrar uma dívida, mas demorou tanto pra ir atrás disso que a lei diz: agora já não dá mais pra pedir ajuda da Justiça pra isso. Na decadência, é o próprio direito que tinha prazo de validade pra ser usado, tipo um convite que só vale até certo dia - se a pessoa não usa aquele direito dentro do prazo, ele simplesmente desaparece, mesmo sem ninguém ter feito nada de errado. A lei cria esses prazos porque não seria justo deixar todo mundo esperando pra sempre, sem saber se alguém vai aparecer reclamando de um problema antigo. Passado tempo suficiente, as provas vão sumindo, os detalhes vão sendo esquecidos, e é preciso um ponto final pra dar estabilidade pra vida de todo mundo.",
+    "exemplo": "Pensa num vale-brinquedo que veio de brinde numa caixa de cereal, escrito bem grande: troque até o dia 30. Se a criança não for buscar o brinquedo até essa data, o vale perde a validade e o direito de trocar acaba - isso é como a decadência. Agora pensa numa outra criança que emprestou um brinquedo pro coleguinha e não pediu de volta por anos e anos, deixando o tempo passar sem falar nada; quando finalmente for cobrar, pode ser tarde demais pra reclamar com a professora, porque ela demorou demais pra agir - isso é como a prescrição.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito Civil",
+    "subtema": "Boa-Fé Objetiva e Revisão Contratual",
+    "resumoSimples": "Quando duas pessoas fazem um combinado, elas não prometem só cumprir a letra exata do que foi dito - elas também prometem se tratar com lealdade, contando a verdade, ajudando uma a outra e não pregando peças escondidas no meio do caminho. Isso é a boa-fé: um dever de jogar limpo, mesmo que o combinado não tenha escrito isso em nenhuma linha. Por isso, se alguém usa um detalhe pequeno do contrato pra prejudicar o outro de um jeito desleal, ou esconde uma informação importante, a lei considera isso errado, mesmo que a pessoa não tenha, tecnicamente, quebrado nenhuma cláusula. Só que às vezes acontece uma coisa completamente inesperada, que ninguém podia prever quando o combinado foi feito, e que torna cumprir aquilo extremamente injusto e pesado pra um dos lados. Nesses casos, a lei permite pedir pra rever as condições do contrato, ou até desfazer o combinado, porque manter a palavra dada não pode significar carregar um peso absurdo, que ninguém imaginava existir. A ideia central é: contrato é combinado de confiança, não é uma armadilha, e imprevistos gigantes merecem uma segunda olhada.",
+    "exemplo": "Pensa em duas crianças que combinam trocar figurinhas toda semana, sempre no mesmo valor. Se uma delas começa a esconder as figurinhas raras que tem, fingindo não ter nenhuma, ela está quebrando a confiança do combinado, mesmo sem ter dito nenhuma mentira escrita num papel - isso é falta de boa-fé. Agora imagina que essa mesma troca semanal virou uma promessa de entregar 10 figurinhas por semana, mas de repente a fábrica parou de vender o álbum e as figurinhas sumiram das lojas - não seria justo obrigar a criança a continuar entregando 10 toda semana, porque aconteceu algo que ninguém podia adivinhar, e o combinado precisa ser ajustado.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito Civil",
+    "subtema": "União Estável e Alimentos",
+    "resumoSimples": "Duas pessoas não precisam passar no cartório e assinar todos os papéis do casamento pra formar uma família de verdade perante a lei. Quando um casal vive junto de um jeito público, contínuo e duradouro, com a intenção clara de construir uma vida em comum, a lei reconhece isso como união estável e dá a esse casal praticamente as mesmas proteções de quem é casado, como direito a herança e a dividir bens. Isso existe porque o que importa pra lei não é só o papel assinado, mas o compromisso real que as pessoas assumem uma com a outra no dia a dia. Já os alimentos são outra forma de proteção da família: quando alguém não consegue se sustentar sozinho - um filho pequeno, um cônjuge, um companheiro ou até um pai idoso - e tem um parente que pode ajudar financeiramente, a lei obriga esse parente a contribuir com uma quantia, calculada olhando pra quem precisa e pra quem pode pagar. A ideia é simples: ninguém deve ficar desamparado se tem alguém da própria família com condições de ajudar.",
+    "exemplo": "É como duas pessoas que, mesmo sem fazer festa de casamento nem assinar nenhum papel, moram juntas há anos, dividem as contas, criam os filhos juntas e todo mundo na rua sabe que elas são uma família - a lei enxerga isso como uma família de verdade, com os mesmos direitos de quem casou no papel. E pensa numa criança que ainda não sabe se cuidar sozinha: se o pai tem dinheiro sobrando mas não dá nem o lanche da escola pra ela, é justo que ele seja obrigado a ajudar, dando uma mesada proporcional ao que ele pode pagar e ao que ela realmente precisa.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Processo Civil",
+    "subtema": "Penhora e Impenhorabilidade",
+    "resumoSimples": "Quando uma pessoa deve dinheiro e não paga, mesmo depois de ser cobrada pela Justiça, é possível que um juiz autorize tomar bens dela pra vender e usar o dinheiro pra pagar a dívida - isso se chama penhora. Mas a lei não deixa tomar absolutamente tudo, porque isso destruiria a vida da pessoa e da família dela, em vez de só cobrar o que é devido. Por isso existem bens protegidos, chamados impenhoráveis, que nunca podem ser tomados pra pagar dívida, como o salário, até um certo limite, e a casa onde a família mora, mesmo que seja o único bem de valor que a pessoa tenha. A ideia por trás disso é encontrar um equilíbrio: quem tem uma dívida precisa pagar, mas ninguém pode ficar sem teto, sem comida ou sem as ferramentas do próprio trabalho só porque não conseguiu quitar uma conta. A lei protege o mínimo necessário pra uma vida digna, mesmo quando existe uma dívida real pra ser cobrada.",
+    "exemplo": "Imagina uma criança que quebrou o brinquedo do amiguinho e precisa pagar por ele com a mesada. É justo que ela entregue parte da mesada até cobrir o estrago - isso é como a penhora. Mas não seria justo tirar dela o cobertor que usa pra dormir ou o prato de comida do jantar só pra pagar mais rápido - existem coisas básicas que ninguém pode tirar de uma pessoa, nem quando ela deve algo a alguém, e é exatamente isso que a impenhorabilidade garante com a casa e o salário de quem trabalha.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Processo Civil",
+    "subtema": "Contestação e Preliminares",
+    "resumoSimples": "Quando alguém é processado, tem um prazo certo pra se defender, apresentando ao juiz por escrito todos os argumentos que tem naquele momento - essa defesa se chama contestação, e ela não pode ser feita aos poucos, um argumento de cada vez, mais tarde. Dentro dessa defesa, existem dois tipos de argumento bem diferentes. Primeiro vêm as preliminares, que são questões sobre se o processo pode até continuar existindo daquele jeito - por exemplo, se foi movido no lugar certo, se quem processou tinha o direito de fazer isso, ou se falta algum documento essencial. Só depois de resolver essas questões é que o juiz entra no que interessa de verdade: quem tem razão sobre o problema em si. Isso existe porque não faz sentido gastar tempo discutindo detalhes do problema principal se existe algo básico errado logo na porta de entrada do processo, tipo um defeito que pode encerrar tudo antes mesmo de começar a discussão de mérito.",
+    "exemplo": "Pensa numa competição de pipa que só pode acontecer se a criança trouxer a autorização assinada pelos pais. Antes de julgar se a pipa dela é a mais bonita, o organizador precisa checar se ela tem a autorização certa e se está inscrita na categoria certa - isso é como as preliminares. Só depois de passar por essa checagem inicial é que faz sentido discutir se a pipa dela realmente merece ganhar o prêmio.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Processo Civil",
+    "subtema": "Ônus da Prova e Perícia",
+    "resumoSimples": "Num processo, não basta só dizer que alguma coisa aconteceu - é preciso provar. Mas nem toda prova precisa vir da mesma pessoa: geralmente, quem afirma um fato importante pra defender o próprio pedido é quem tem a responsabilidade de trazer as provas dele, enquanto quem se defende precisa provar os fatos que usa pra se livrar daquela acusação. Isso existe pra não deixar ninguém tendo que provar o impossível, tipo provar que algo nunca aconteceu. Às vezes, porém, o fato discutido é tão técnico que nem o juiz nem as partes têm conhecimento suficiente pra entender sozinhos - imagina calcular se uma rachadura numa parede foi causada por obra do vizinho ou por um problema antigo do prédio. Nesses casos, entra em cena um perito, um especialista escolhido pra examinar aquele detalhe técnico e explicar pro juiz, num laudo, o que realmente aconteceu, servindo como um guia confiável pra ajudar na decisão.",
+    "exemplo": "É como numa discussão sobre quem quebrou o vaso da sala: quem diz que foi o irmão precisa mostrar alguma prova disso, tipo ter visto a cena, e quem é acusado pode mostrar provas de que estava em outro cômodo na hora. Agora, se a dúvida é saber por que exatamente o vaso rachou por dentro, pode ser preciso chamar alguém que entende de cerâmica pra examinar o caco e explicar pros pais o que realmente aconteceu - esse especialista chamado pra ajudar é como o perito de um processo.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Processo Civil",
+    "subtema": "Apelação e Embargos de Declaração",
+    "resumoSimples": "Quando um juiz dá a decisão final de um processo, a parte que não ficou satisfeita não precisa aceitar aquilo como última palavra - ela pode pedir pra um tribunal, formado por juízes diferentes, olhar o caso de novo, com calma, e decidir se aquela sentença estava certa. Esse pedido de revisão mais completo é a apelação, e nele dá pra discutir de novo praticamente tudo o que foi decidido. Só que existe também um recurso bem mais simples e rápido, chamado embargos de declaração, que não pede pra ninguém mudar de ideia sobre quem tem razão - ele serve só pra avisar o próprio juiz que a decisão ficou confusa, contraditória, ou que esqueceu de responder alguma coisa que devia ter sido decidida. É como pedir pra alguém esclarecer o que já disse, sem abrir uma discussão nova. A diferença central é essa: um recurso pede pra rediscutir o mérito inteiro num lugar diferente, o outro só pede pra arrumar um defeito pontual na própria decisão, no mesmo lugar onde ela foi tomada.",
+    "exemplo": "Imagina que a professora deu uma nota final pro trabalho e a criança acha que ela avaliou tudo errado - ela pode pedir pra coordenação pedagógica reavaliar o trabalho inteiro, com outros olhos; isso é como a apelação. Mas se a professora só esqueceu de colocar a nota de uma das perguntas, ou escreveu duas notas diferentes pro mesmo trabalho, a criança não precisa pedir uma reavaliação completa - só precisa voltar na própria professora e pedir pra ela esclarecer ou corrigir aquele detalhe. Isso é como os embargos de declaração.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Processo Penal",
+    "subtema": "Prazos e Encerramento do Inquérito",
+    "resumoSimples": "A polícia não pode investigar um crime pra sempre, sem prazo, guardando o caso na gaveta indefinidamente. Por isso existe um tempo certo pra ela juntar as provas, ouvir as pessoas envolvidas e descobrir o que aconteceu, antes de mandar tudo pronto pro Ministério Público decidir o próximo passo. Esse prazo é bem mais curto quando o suspeito já está preso, porque ninguém pode ficar trancado esperando enquanto a investigação anda devagar - isso seria muito injusto. Quando a pessoa está solta, dá pra esperar um pouco mais, já que ela não está perdendo a liberdade nesse meio tempo. Se a polícia não conseguir terminar no prazo, ela pode pedir mais tempo, explicando o motivo da demora. No fim, o que importa é equilibrar o tempo de fazer um trabalho bem-feito com o direito da pessoa de não ficar esperando pra sempre.",
+    "exemplo": "Pense numa gincana em que um time precisa montar um quebra-cabeça antes de mostrar pro professor. Se um dos jogadores estiver 'de castigo' esperando o resultado, o professor dá um tempo bem curtinho pra não deixar ninguém esperando à toa. Mas se todo mundo já foi liberado pro recreio, dá pra ter um pouquinho mais de calma pra terminar o quebra-cabeça direitinho.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Processo Penal",
+    "subtema": "Denúncia, Queixa e Condições da Ação",
+    "resumoSimples": "Quando um crime acontece, alguém precisa contar pro juiz 'olha, isso aqui aconteceu, e essa pessoa deve responder por isso' - e essa peça pode vir de dois lugares diferentes. Na maioria das vezes, quem faz essa acusação é o Ministério Público, que representa toda a sociedade, e o papel dele se chama denúncia. Só que em alguns casos mais pessoais, é a própria vítima quem escolhe processar, através de um advogado, e aí o nome muda pra queixa. Não importa quem escreve, essa peça precisa contar direitinho o que aconteceu, quem é o suspeito e quais provas existem, senão o juiz nem aceita começar o processo. É como preencher um formulário completo: faltando informação essencial, ele simplesmente não pode ser aceito.",
+    "exemplo": "Imagina que alguém quebrou o brinquedo de um coleguinha na escola. Se for uma bagunça que afeta a turma toda, é a diretora quem chama atenção e resolve, tipo o Ministério Público. Mas se for algo mais pessoal, tipo um apelido que só magoou aquele coleguinha, aí é ele mesmo quem decide se vai reclamar pra diretora, contando exatamente o que aconteceu.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Processo Penal",
+    "subtema": "Audiência de Custódia",
+    "resumoSimples": "Quando alguém é pego cometendo um crime na hora e levado preso, essa pessoa não pode simplesmente ficar trancada sem ninguém 'de fora' olhar pro que aconteceu. Por isso, bem rapidinho, ela precisa ser levada na frente de um juiz, pra ele conversar pessoalmente com ela. Nesse encontro, o juiz confere três coisas: se a prisão foi feita do jeito certo, se a pessoa não sofreu nenhum tipo de maltrato enquanto estava presa, e o que fazer dali pra frente - se ela continua presa, se pode responder o processo solta, ou se cabe alguma outra medida no meio do caminho. É como um freio de segurança bem rápido, pra garantir que ninguém fique preso por engano ou de um jeito errado sem que um juiz saiba.",
+    "exemplo": "É como quando um professor precisa conferir pessoalmente, assim que alguém é levado pra sala da direção, se tudo aconteceu do jeito certo e se a criança está bem. Ele não deixa a criança esperando dias sentada lá - conversa logo, olha se está tudo certo, e decide na hora o que vai acontecer a seguir.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Processo Penal",
+    "subtema": "Corpo de Delito e Reconhecimento de Pessoas",
+    "resumoSimples": "Quando um crime deixa marcas físicas - tipo um ferimento, um objeto quebrado ou qualquer vestígio que dá pra examinar - não basta só alguém contar o que aconteceu, é preciso que um especialista analise essas provas de verdade. Isso existe porque palavras podem confundir, mas uma marca física, quando bem examinada, ajuda a confirmar o que realmente aconteceu. Já quando é preciso descobrir se uma testemunha reconhece o suspeito, existe um jeito certo de fazer isso, sem forçar a resposta: a pessoa que está reconhecendo primeiro descreve como era o suspeito, e depois olha pra ele ao lado de outras pessoas parecidas, nunca sozinho isolado, pra não ficar óbvio demais quem é 'o escolhido'. Isso evita que alguém aponte a pessoa errada só porque estava na sua frente.",
+    "exemplo": "É como quando a professora encontra um vaso quebrado e, antes de acusar alguém, ela examina os pedaços pra entender direito o que aconteceu, em vez de acreditar só no primeiro palpite. E se for pra descobrir quem fez, ela não aponta uma criança sozinha e pergunta 'foi ela?' - ela coloca várias crianças parecidas enfileiradas, pra quem viu apontar com calma quem realmente reconhece, sem ser induzido.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Processo do Trabalho",
+    "subtema": "Recurso Ordinário e Recurso de Revista",
+    "resumoSimples": "Quando alguém perde uma parte do caso na Justiça do Trabalho, pode pedir pra um tribunal maior olhar de novo - esse pedido básico de 'revisão' se chama recurso ordinário, e é o caminho comum, usado quase toda vez que alguém não concorda com a decisão. Só que existe outro tipo de recurso, mais especial, chamado recurso de revista, que só serve pra levar a discussão pro tribunal mais alto quando dois tribunais diferentes decidiram a mesma questão de lei de jeitos diferentes. Esse recurso não é pra brigar de novo sobre os fatos do caso, mas sim pra deixar a interpretação da lei igual pra todo mundo no país, sem cada lugar decidindo de um jeito distinto pra mesma regra.",
+    "exemplo": "É como quando um aluno não concorda com a nota da prova e pede pra outro professor conferir de novo - isso é o recurso comum, que quase todo mundo pode pedir. Mas se duas escolas diferentes estiverem corrigindo a mesma questão de jeitos totalmente opostos, alguém mais experiente da secretaria de educação precisa entrar e decidir qual é o jeito certo de corrigir aquela questão pra sempre, pra ninguém ficar confuso.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito do Trabalho",
+    "subtema": "Fraude e Nulidade na Relação de Emprego",
+    "resumoSimples": "Existem alguns direitos do trabalhador que são tão importantes que a pessoa não pode simplesmente abrir mão deles, nem que 'combine' isso com o patrão. Então, se um contrato ou um jeitinho é criado só pra fingir que aquele direito não existe ou pra disfarçar a real situação de trabalho, esse acordo não vale nada, mesmo que os dois tenham assinado embaixo concordando. Isso existe porque, na prática, o empregado costuma estar em desvantagem na hora de negociar, e pode acabar 'aceitando' perder direitos só pra conseguir ou manter o emprego. Por isso a lei protege a pessoa mesmo contra a vontade dela mesma nesse tipo de situação, garantindo que a regra de verdade continue valendo.",
+    "exemplo": "Imagina que um combinado da escola diz que toda criança tem direito a um lanche no recreio. Se um colega mais forte convencer outro a 'abrir mão' do lanche pra continuar brincando no grupo, isso não pode valer, porque o direito ao lanche é importante demais pra depender de pressão ou combinação escondida - a escola garante o lanche de qualquer jeito.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito do Trabalho",
+    "subtema": "Intervalos Intra e Interjornada",
+    "resumoSimples": "Trabalhar o dia inteiro sem nenhuma pausa faz mal pra saúde e pra atenção de qualquer pessoa, por isso existem dois descansos obrigatórios diferentes. Um deles acontece durante o próprio dia de trabalho, geralmente na hora do almoço, pra pessoa comer com calma e recarregar as energias - isso é o intervalo intrajornada. O outro acontece entre o fim de um dia de trabalho e o começo do outro, garantindo um tempo mínimo de descanso completo antes de voltar de novo - isso é o intervalo interjornada. Sem essas pausas, a pessoa corre risco de se cansar demais, cometer erros ou até se machucar no trabalho, então esses descansos não são só um 'favor' da empresa, são uma exigência mesmo.",
+    "exemplo": "É como na escola, que tem o intervalinho do recreio no meio das aulas pra comer e descansar um pouco (isso é o intra), e depois tem a noite inteira de sono entre um dia de aula e o outro, pra acordar descansado de novo (isso é o inter). Sem esses dois descansos, ninguém consegue prestar atenção direito nem no dia seguinte.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito Administrativo",
+    "subtema": "Dispensa e Inexigibilidade de Licitação",
+    "resumoSimples": "Quando o governo precisa comprar alguma coisa ou contratar alguém, a regra normal é fazer uma disputa justa entre várias empresas, pra escolher a melhor proposta e ninguém favorecer o amigo. Mas existem dois casos em que dá pra pular essa disputa. No primeiro, chamado de dispensa, a disputa até seria possível, só que a lei entende que não vale a pena fazer todo esse processo - porque o valor é pequeno demais, ou porque é uma emergência e não dá tempo de esperar. No segundo, chamado de inexigibilidade, a disputa é simplesmente impossível de existir, porque só tem um fornecedor capaz de entregar aquilo, então não tem quem competir com quem. A diferença central é essa: na dispensa, dava pra competir mas a lei libera; na inexigibilidade, nem dava pra competir porque só existe uma opção. Essas exceções existem pra que o governo não fique travado em situações urgentes ou impossíveis, mas elas continuam exigindo explicação por escrito, justamente pra evitar que virem desculpa pra comprar de qualquer jeito.",
+    "exemplo": "Imagina que a escola precisa comprar giz de cera urgente porque acabou no meio da aula: não dá tempo de pedir orçamento pra três lojas, então a professora compra na papelaria mais perto - isso é dispensa. Agora imagina que a escola quer contratar aquele único palhaço da cidade que sabe fazer o show específico que as crianças pediram: não existe outro palhaço igual pra competir com ele, então não tem disputa possível - isso é inexigibilidade.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito Tributário",
+    "subtema": "Impostos da União, Estados e Municípios",
+    "resumoSimples": "O Brasil é organizado em três níveis de governo - o governo do país inteiro, o governo de cada estado e o governo de cada cidade - e cada um deles tem despesas diferentes pra cuidar, como estradas, hospitais, escolas e coleta de lixo. Pra que cada um consiga pagar suas próprias contas, a Constituição já separou de antemão quais impostos cada nível pode cobrar, evitando que todos cobrem a mesma coisa da mesma pessoa ao mesmo tempo. O imposto de renda, por exemplo, é cobrado pelo governo federal, porque envolve algo que acontece em qualquer lugar do país. O imposto sobre o carro é do estado, porque tem a ver com o território estadual, como as estradas que ele cuida. Já o imposto sobre a casa é da cidade, porque é a prefeitura quem cuida das ruas e da infraestrutura ao redor daquele imóvel. Essa divisão evita brigas e confusão, porque cada governo sabe exatamente qual fatia lhe pertence.",
+    "exemplo": "É como se em casa cada pessoa tivesse uma tarefa certa pra cuidar do dinheiro guardado: o pai cuida do dinheiro do aluguel, a mãe cuida do dinheiro do mercado, e o filho mais velho cuida do dinheiro da mesada dos irmãos menores. Ninguém mexe na parte do outro, porque já ficou combinado antes quem é responsável por qual gasto.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito Tributário",
+    "subtema": "Imunidades Tributárias",
+    "resumoSimples": "Existem algumas coisas que o governo nunca pode cobrar imposto, porque a própria Constituição, que é a regra mais importante de todas, já disse que ali é proibido cobrar. Isso é diferente de quando uma lei comum decide, por bondade, deixar de cobrar de alguém por um tempo - isso é chamado de isenção, e pode ser mudado depois. A imunidade é mais forte: ela protege valores que a sociedade considera importantes demais pra serem prejudicados por um imposto, como a liberdade religiosa, o acesso a livros e informação, e o equilíbrio entre os próprios governos. Por isso um governo não cobra imposto do outro governo, uma igreja não paga imposto sobre o templo, e um livro não paga imposto só por existir e circular. A ideia é que certas atividades são tão valiosas pra todo mundo que cobrar dinheiro por elas atrapalharia mais do que ajudaria.",
+    "exemplo": "É como se a família combinasse uma regra fixa, escrita bem grande na porta da geladeira, dizendo que ninguém nunca pode cobrar dinheiro dos avós pra eles entrarem em casa, custe o que custar. Diferente de quando os pais apenas avisam que, por enquanto, o irmão mais novo está liberado de pagar pela sobremesa - isso pode mudar amanhã, mas a regra da porta da geladeira, não.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito Tributário",
+    "subtema": "Sujeito Passivo e Fato Gerador",
+    "resumoSimples": "Todo tributo só nasce quando alguma coisa específica acontece na vida real, e essa coisa que dispara a cobrança se chama fato gerador. Por exemplo, vender uma mercadoria, ganhar salário ou ser dono de um carro são situações que, quando acontecem, fazem o tributo surgir automaticamente. Depois de identificar o que aconteceu, a lei também precisa dizer quem vai ter que pagar por isso, e essa pessoa é chamada de sujeito passivo. Às vezes quem paga é exatamente quem viveu a situação, e às vezes a lei escolhe outra pessoa pra pagar no lugar dela, por facilidade de fiscalização. Esses dois conceitos andam sempre juntos: primeiro precisa acontecer o fato que a lei escolheu como gatilho, e só depois se descobre, olhando a mesma lei, quem tem a obrigação de colocar a mão no bolso.",
+    "exemplo": "É como uma regra da casa que diz: toda vez que alguém comer o último pedaço de bolo (esse é o gatilho, o fato que acontece), quem comeu tem que lavar a forma (essa pessoa é quem vai responder por aquilo). O gatilho e o responsável sempre vêm em par: sem o bolo ser comido, ninguém lava nada, e depois que é comido, já está definido de antemão quem segura a esponja.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito Empresarial",
+    "subtema": "Registro do Empresário",
+    "resumoSimples": "Antes de começar a vender produtos ou prestar serviços de forma profissional, quem decide virar empresário precisa se cadastrar oficialmente em um órgão próprio, como se fosse tirar uma carteirinha que comprova que aquele negócio existe de verdade. Esse registro é importante porque, sem ele, o negócio funciona de forma informal, sem nome protegido, sem conseguir emitir nota fiscal direito e sem várias garantias que a lei só dá pra quem seguiu o caminho certo. Depois de registrado, o empresário passa a ter um nome empresarial só dele, protegido contra outra pessoa usar igual, e ganha acesso a coisas como empréstimos em banco, participação em licitações e benefícios fiscais. O registro também serve pra dar transparência: qualquer pessoa pode consultar e saber que aquele negócio é real, quem é o responsável por ele e desde quando está funcionando. É basicamente o jeito de sair da informalidade e passar a operar dentro das regras que protegem tanto o empresário quanto quem compra dele.",
+    "exemplo": "É como a diferença entre vender bolinho escondido no portão de casa, sem ninguém saber direito quem é o responsável, e abrir uma barraquinha registrada na feira, com uma placa oficial, um número certinho e um espaço garantido só seu. Na barraquinha registrada, todo mundo sabe quem procurar se o bolinho vier estragado, e ninguém mais pode chegar e roubar o nome que você escolheu pra sua marca.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito Empresarial",
+    "subtema": "Responsabilidade dos Sócios",
+    "resumoSimples": "Quando um negócio dá errado e fica devendo dinheiro pra muita gente, surge a pergunta: quem vai pagar essa conta, só a empresa ou também o bolso pessoal de cada sócio? A resposta depende do tipo de sociedade que os sócios escolheram lá no começo. Em alguns tipos, a responsabilidade de cada sócio é limitada, ou seja, ele só arrisca perder o que já investiu no negócio, e seus bens pessoais - casa, carro, poupança - ficam protegidos. Em outros tipos, a responsabilidade é ilimitada, o que significa que, se o dinheiro da empresa não for suficiente, os credores podem ir atrás dos bens pessoais dos sócios também. Essa escolha muda completamente o nível de risco que cada pessoa aceita assumir ao entrar num negócio, e por isso é uma das decisões mais importantes na hora de montar uma sociedade.",
+    "exemplo": "É como duas crianças que combinam de dividir os prejuízos se quebrarem um vaso jogando bola: numa combinação, cada uma só perde o dinheiro da mesada que já tinha separado pra brincadeira; na outra combinação, se a mesada não for suficiente pra pagar o vaso, elas prometeram usar até o cofrinho de aniversário guardado no quarto. O risco que cada uma aceitou correr é bem diferente, mesmo jogando a mesma bola.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito Empresarial",
+    "subtema": "Requisitos e Efeitos da Falência",
+    "resumoSimples": "Uma empresa não é declarada falida só porque está devendo dinheiro; é preciso que ela esteja numa situação grave o bastante, como não conseguir pagar dívidas significativas e não ter jeito de se reorganizar sozinha. Quando um juiz confirma essa situação, a empresa entra oficialmente em falência, e a partir daí muita coisa muda na vida dela. Os antigos donos deixam de tomar as decisões do dia a dia, porque um administrador nomeado pelo processo passa a cuidar de tudo no lugar deles. Os bens da empresa são reunidos e depois vendidos, e o dinheiro arrecadado é usado pra pagar quem tinha direito de receber, seguindo uma ordem de prioridade definida em lei - por exemplo, salários de funcionários costumam vir antes de outras dívidas. A ideia por trás de tudo isso é organizar uma bagunça financeira de um jeito justo, pra que ninguém saia levando vantagem sobre os outros credores.",
+    "exemplo": "É como quando um grupo de amigos monta uma barraca de limonada, ela vai muito mal e fica devendo pra todo mundo que emprestou copo, açúcar e limão. Em vez de cada amigo brigar sozinho pra receber de volta, alguém de fora assume, vende tudo que sobrou da barraca - a mesa, os copos, a jarra - e distribui o dinheiro entre os credores numa ordem combinada, começando por quem mais precisava receber primeiro.",
+    "seedVersion": 4
+  },
+  {
+    "territorio": "Direito Penal",
+    "subtema": "Excludentes de Ilicitude e Culpabilidade",
+    "resumoSimples": "Nem toda vez que alguém faz algo parecido com um crime a lei considera aquilo errado. Existem situações em que a própria lei diz que não houve crime nenhum, porque a pessoa agiu de um jeito que, apesar de parecer grave, era justificado - como se defender de um ataque ou agir pra escapar de um perigo muito sério que não criou por conta própria. Isso é diferente de outra situação, em que o fato realmente aconteceu e é considerado errado, mas a pessoa que fez não pode ser culpada e punida por causa de alguma condição especial dela, como não ter capacidade de entender o que estava fazendo, ou ter se enganado, sem culpa, sobre o que a lei permitia. No primeiro caso, a lei apaga o próprio erro; no segundo, o erro continua existindo, só que a punição não recai sobre aquela pessoa específica. Essa diferença importa porque muda completamente as consequências: quando não há crime, ninguém é responsabilizado; quando há crime mas não há culpa, a pessoa pode até receber outro tipo de tratamento, mas não a pena comum.",
+    "exemplo": "Pense numa criança que empurra outra pra ela não cair de um buraco: por fora parece um empurrão, mas ali não teve nada de errado, porque foi pra proteger. Agora pense numa criança tão pequena que nem entende que quebrar o brinquedo do amigo de propósito é errado: o brinquedo quebrou de verdade, só que ninguém espera que aquela criança seja tratada como se tivesse feito por maldade, porque ela ainda não tem noção suficiente pra ser cobrada por isso.",
+    "seedVersion": 4
   },
 ];
 

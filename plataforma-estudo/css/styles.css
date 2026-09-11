@@ -1286,6 +1286,43 @@ body.low-stim .view-title {
 
 .continuar-missao-box { margin-bottom: 12px; }
 
+.sessoes-hoje-widget {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 14px;
+}
+.sessoes-hoje-label {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin-right: 2px;
+}
+.sessao-chip {
+  display: inline-block;
+  font-size: 0.8rem;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 10px;
+  color: var(--ink);
+}
+
+.link-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: none;
+  border: none;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  text-decoration: underline;
+  padding: 8px 0 16px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.link-button:hover { color: var(--ink); }
+
 .meta-diaria-widget {
   font-size: 0.85rem;
   color: var(--ink-soft);

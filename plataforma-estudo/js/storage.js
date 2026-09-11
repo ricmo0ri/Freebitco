@@ -26,7 +26,8 @@ var Storage = (function () {
     historiaIntroVista: 'estudoTdah.historiaIntroVista',
     historiaTerritoriosVistos: 'estudoTdah.historiaTerritoriosVistos',
     reinosLibertados: 'estudoTdah.reinosLibertados',
-    historiaFinalVista: 'estudoTdah.historiaFinalVista'
+    historiaFinalVista: 'estudoTdah.historiaFinalVista',
+    sessoesConcluidas: 'estudoTdah.sessoesConcluidas'
   };
 
   function read(key, fallback) {
@@ -150,6 +151,31 @@ var Storage = (function () {
     write(KEYS.metaDiariaQuestoes, Math.max(1, Number(valor) || 10));
   }
 
+  // Registro leve de sessões/missões concluídas no dia — vira o checklist
+  // "hoje você já fez" na tela de missão, reforçando continuidade sem impor
+  // uma meta fixa (evita a culpa de "não bati a meta").
+  function registrarSessaoConcluida(sessao) {
+    var todas = read(KEYS.sessoesConcluidas, []);
+    todas.push({
+      date: todayStr(),
+      label: sessao.label || '',
+      minutos: sessao.minutos || 0,
+      respondidas: sessao.respondidas || 0,
+      acertos: sessao.acertos || 0,
+      xp: sessao.xp || 0
+    });
+    var limite = new Date();
+    limite.setDate(limite.getDate() - 30);
+    var limiteStr = limite.toISOString().slice(0, 10);
+    todas = todas.filter(function (s) { return s.date >= limiteStr; });
+    write(KEYS.sessoesConcluidas, todas);
+  }
+
+  function getSessoesHoje() {
+    var hoje = todayStr();
+    return read(KEYS.sessoesConcluidas, []).filter(function (s) { return s.date === hoje; });
+  }
+
   return {
     KEYS: KEYS,
     read: read,
@@ -159,6 +185,8 @@ var Storage = (function () {
     getQuestoesRespondidasHoje: getQuestoesRespondidasHoje,
     getMetaDiariaQuestoes: getMetaDiariaQuestoes,
     setMetaDiariaQuestoes: setMetaDiariaQuestoes,
+    registrarSessaoConcluida: registrarSessaoConcluida,
+    getSessoesHoje: getSessoesHoje,
     recordActivity: recordActivity,
     getStreaks: getStreaks,
     getLastNDaysCounts: getLastNDaysCounts

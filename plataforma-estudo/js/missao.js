@@ -7,6 +7,7 @@ var Missao = (function () {
   var els = {};
   var sessao = null; // estado da missão em andamento
   var preguicaAtual = null; // {questao, selecionado}
+  var preguicaSessao = null; // acumulado de respostas do modo preguiça, pra virar 1 chip só em "hoje você já fez"
 
   // ---------- utilidades de seleção ----------
 
@@ -124,6 +125,37 @@ var Missao = (function () {
     els.metaDiariaMini.textContent = texto;
   }
 
+  // Labels de missão já vêm com um emoji próprio (ex: "🧠 Revisão
+  // inteligente", "🧨 Modo Preguiça"); nomes de território vêm crus, então
+  // ganham um 🎯 genérico pra manter o chip com a mesma cara.
+  function labelComEmoji(label) {
+    return /^\p{Emoji}/u.test(label) ? label : '🎯 ' + label;
+  }
+
+  function renderSessoesHoje() {
+    if (!els.sessoesHojeWidget) return;
+    var sessoes = Storage.getSessoesHoje();
+    if (sessoes.length === 0) {
+      els.sessoesHojeWidget.hidden = true;
+      els.sessoesHojeWidget.innerHTML = '';
+      return;
+    }
+    els.sessoesHojeWidget.hidden = false;
+    els.sessoesHojeWidget.innerHTML = '';
+
+    var label = document.createElement('span');
+    label.className = 'sessoes-hoje-label';
+    label.textContent = 'Hoje você já fez:';
+    els.sessoesHojeWidget.appendChild(label);
+
+    sessoes.forEach(function (s) {
+      var chip = document.createElement('span');
+      chip.className = 'sessao-chip';
+      chip.textContent = '✅ ' + labelComEmoji(s.label) + (s.minutos ? ' (' + s.minutos + ' min)' : '');
+      els.sessoesHojeWidget.appendChild(chip);
+    });
+  }
+
   function renderContinuarMissao() {
     if (!els.continuarBox) return;
     var ultima = Storage.read(Storage.KEYS.ultimaMissao, null);
@@ -189,9 +221,13 @@ var Missao = (function () {
 
   function renderTerritorios() {
     renderMetaDiariaMini();
+    renderSessoesHoje();
     renderContinuarMissao();
+    // Sempre volta pro estado recolhido: a recomendação é o caminho
+    // principal, a lista de territórios é a exceção — que deve exigir um
+    // toque a mais toda vez, em vez de ficar aberta competindo com ela.
+    if (els.escolherOutroPainel) els.escolherOutroPainel.hidden = true;
     if (window.ProximoPasso) ProximoPasso.render();
-    if (window.Revisao) Revisao.render();
     return DB.getAll('disciplinas').then(function (disciplinas) {
       els.territoriosList.innerHTML = '';
       if (disciplinas.length === 0) {
@@ -401,6 +437,16 @@ var Missao = (function () {
     var aproveitamento = numRespondidas > 0 ? Math.round((sessao.acertos / numRespondidas) * 100) : 0;
     var resumo = Fraquezas.getResumoGeral();
 
+    if (numRespondidas > 0) {
+      Storage.registrarSessaoConcluida({
+        label: sessao.label,
+        minutos: sessao.minutosTotais,
+        respondidas: numRespondidas,
+        acertos: sessao.acertos,
+        xp: sessao.xpTotal + bonusConclusao
+      });
+    }
+
     var itens = [];
     itens.push('🏆 XP ganho: ' + (sessao.xpTotal + bonusConclusao));
     itens.push('📚 Território: ' + sessao.label);
@@ -455,6 +501,7 @@ var Missao = (function () {
       els.battle.hidden = true;
       els.relatorio.hidden = true;
       els.preguicaPanel.hidden = false;
+      preguicaSessao = { respondidas: 0, acertos: 0, xpTotal: 0 };
       proximaQuestaoPreguica(questoes);
     });
   }
@@ -490,12 +537,27 @@ var Missao = (function () {
     var xp = calcularXp(questao, acertou);
     registrarResposta(questao, acertou, xp);
 
+    if (preguicaSessao) {
+      preguicaSessao.respondidas += 1;
+      if (acertou) preguicaSessao.acertos += 1;
+      preguicaSessao.xpTotal += xp.xp;
+    }
+
     QuestaoCard.showFeedback(refsPreguica(), questao, preguicaAtual.selecionado);
     els.pContinuar.hidden = false;
     if (els.pPularBtn) els.pPularBtn.hidden = true;
 
     els.pSimBtn.onclick = function () { proximaQuestaoPreguica(questoes); };
     els.pNaoBtn.onclick = function () {
+      if (preguicaSessao && preguicaSessao.respondidas > 0) {
+        Storage.registrarSessaoConcluida({
+          label: '🧨 Modo Preguiça',
+          respondidas: preguicaSessao.respondidas,
+          acertos: preguicaSessao.acertos,
+          xp: preguicaSessao.xpTotal
+        });
+      }
+      preguicaSessao = null;
       els.preguicaPanel.hidden = true;
       els.picker.hidden = false;
       renderTerritorios();
@@ -508,8 +570,11 @@ var Missao = (function () {
     els.aleatorioBtn = document.getElementById('missao-aleatorio-btn');
     els.preguicaBtn = document.getElementById('modo-preguica-btn');
     els.metaDiariaMini = document.getElementById('meta-diaria-mini');
+    els.sessoesHojeWidget = document.getElementById('sessoes-hoje-widget');
     els.continuarBox = document.getElementById('continuar-missao-box');
     els.continuarBtn = document.getElementById('continuar-missao-btn');
+    els.escolherOutroToggle = document.getElementById('escolher-outro-toggle');
+    els.escolherOutroPainel = document.getElementById('escolher-outro-painel');
 
     els.battle = document.getElementById('missao-battle');
     els.progresso = document.getElementById('missao-progresso');
@@ -542,6 +607,12 @@ var Missao = (function () {
     els.pContinuar = document.getElementById('preguica-continuar');
     els.pSimBtn = document.getElementById('preguica-sim');
     els.pNaoBtn = document.getElementById('preguica-nao');
+
+    if (els.escolherOutroToggle) {
+      els.escolherOutroToggle.addEventListener('click', function () {
+        els.escolherOutroPainel.hidden = !els.escolherOutroPainel.hidden;
+      });
+    }
 
     els.aleatorioBtn.addEventListener('click', function () { iniciarMissao(null, 'Missão Aleatória'); });
     els.preguicaBtn.addEventListener('click', iniciarModoPreguica);

@@ -36,14 +36,9 @@
 
       <div id="proximo-passo-card" class="revisao-card" hidden>
         <p class="revisao-titulo" id="proximo-passo-titulo"></p>
+        <ul id="proximo-passo-lista" class="revisao-lista" hidden></ul>
         <p class="proximo-passo-texto" id="proximo-passo-texto"></p>
         <button id="proximo-passo-btn" class="btn btn-primary" hidden></button>
-      </div>
-
-      <div id="revisao-inteligente-card" class="revisao-card" hidden>
-        <p class="revisao-titulo" id="revisao-titulo">📚 Você precisa revisar</p>
-        <ul id="revisao-lista" class="revisao-lista"></ul>
-        <button id="revisao-agora-btn" class="btn btn-primary" hidden></button>
       </div>
 
       <div class="duration-picker" role="group" aria-label="Duração da missão">
@@ -73,12 +68,16 @@
 
       <div id="missao-picker">
         <p class="meta-diaria-widget" id="meta-diaria-mini"></p>
+        <div id="sessoes-hoje-widget" class="sessoes-hoje-widget" hidden></div>
         <div id="continuar-missao-box" class="continuar-missao-box" hidden>
           <button id="continuar-missao-btn" class="btn btn-primary"></button>
         </div>
-        <h3 class="section-subtitle">Escolha um território</h3>
-        <button id="missao-aleatorio-btn" class="btn btn-primary missao-aleatorio-btn">🎲 Missão aleatória (prioriza fraquezas)</button>
-        <ul id="missao-territorios-list" class="simple-list territorios-list"></ul>
+        <button id="escolher-outro-toggle" type="button" class="link-button">🔀 Quero escolher outro território</button>
+        <div id="escolher-outro-painel" hidden>
+          <h3 class="section-subtitle">Escolha um território</h3>
+          <button id="missao-aleatorio-btn" class="btn btn-primary missao-aleatorio-btn">🎲 Missão aleatória (prioriza fraquezas)</button>
+          <ul id="missao-territorios-list" class="simple-list territorios-list"></ul>
+        </div>
       </div>
 
       <div id="missao-battle" class="card-panel" hidden>

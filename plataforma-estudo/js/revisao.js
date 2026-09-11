@@ -1,9 +1,11 @@
 // Revisão inteligente: em vez do usuário ter que lembrar "preciso revisar
-// aquilo de 12 dias atrás", a plataforma observa erros, aproveitamento por
-// território, tempo desde o último contato e dificuldade, e já monta uma
-// sessão curta e pronta pra clicar.
+// aquilo de 12 dias atrás", calcula uma sessão curta e pronta a partir dos
+// erros, aproveitamento por território, tempo desde o último contato e
+// dificuldade. Não renderiza nada sozinho — ProximoPasso consome
+// getRecomendacao() pra decidir a ÚNICA recomendação mostrada na tela de
+// missão (revisão vs. território novo), em vez de duas sugestões
+// concorrentes.
 var Revisao = (function () {
-  var els = {};
   var TAMANHO_ALVO = 8;
   var PESO_DIFICULDADE = { dificil: 2, media: 1, facil: 0 };
 
@@ -41,54 +43,20 @@ var Revisao = (function () {
     return Math.max(3, Math.round(quantidade * 1));
   }
 
-  function render() {
-    if (!els.card) return;
+  // Retorna uma Promise que resolve para { fracos, fila, minutos } quando há
+  // uma revisão válida pra sugerir, ou null quando não há fraqueza nenhuma
+  // ou nenhuma questão correspondente pra montar a fila.
+  function getRecomendacao() {
     var fracos = Fraquezas.getTemasFracos(3);
+    if (fracos.length === 0) return Promise.resolve(null);
 
-    if (fracos.length === 0) {
-      els.card.hidden = false;
-      els.lista.innerHTML = '';
-      els.titulo.textContent = '🎉 Nenhuma fraqueza detectada por enquanto';
-      els.agoraBtn.hidden = true;
-      return;
-    }
-
-    els.card.hidden = false;
-    els.titulo.textContent = '📚 Você precisa revisar';
-    els.lista.innerHTML = '';
-    fracos.forEach(function (f) {
-      var li = document.createElement('li');
-      li.className = 'revisao-item';
-      li.textContent = f.emoji + ' ' + f.tema + ' — ' + f.pct + '%';
-      els.lista.appendChild(li);
-    });
-
-    Promise.all([DB.getAll('questoes')]).then(function (resultados) {
-      var questoesTodas = resultados[0];
+    return DB.getAll('questoes').then(function (questoesTodas) {
       var respostas = Storage.read(Storage.KEYS.questaoRespostas, []);
       var fila = montarFila(questoesTodas, respostas, fracos);
-
-      if (fila.length === 0) {
-        els.agoraBtn.hidden = true;
-        return;
-      }
-      var minutos = estimarMinutos(fila.length);
-      els.agoraBtn.hidden = false;
-      els.agoraBtn.textContent = '▶️ Revisar agora — ' + minutos + ' min';
-      els.agoraBtn.onclick = function () {
-        Missao.iniciarComFila(fila, '🧠 Revisão inteligente', minutos);
-      };
+      if (fila.length === 0) return null;
+      return { fracos: fracos, fila: fila, minutos: estimarMinutos(fila.length) };
     });
   }
 
-  function init() {
-    els.card = document.getElementById('revisao-inteligente-card');
-    els.titulo = document.getElementById('revisao-titulo');
-    els.lista = document.getElementById('revisao-lista');
-    els.agoraBtn = document.getElementById('revisao-agora-btn');
-    if (!els.card) return;
-    render();
-  }
-
-  return { init: init, render: render };
+  return { getRecomendacao: getRecomendacao };
 })();

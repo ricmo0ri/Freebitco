@@ -311,6 +311,29 @@ var Missao = (function () {
     });
   }
 
+  // Inicia uma missão restrita a um subconjunto de temas dentro de um
+  // território — usado pela Trilha OAB 48 pra focar só no assunto
+  // recomendado, em vez do território inteiro. Se nenhuma questão do
+  // território tiver um desses temas (assunto ainda sem conteúdo
+  // cadastrado), cai de volta pro território inteiro em vez de travar.
+  function iniciarMissaoPorTemas(disciplinaId, temas, label) {
+    DB.getAllByIndex('questoes', 'disciplinaId', disciplinaId).then(function (questoes) {
+      if (questoes.length === 0) {
+        alert('Ainda não há questões cadastradas aí. Adicione algumas na aba Território antes de encarar essa missão.');
+        return;
+      }
+      var filtradas = temas && temas.length
+        ? questoes.filter(function (q) { return temas.indexOf(q.tema || 'Geral') !== -1; })
+        : [];
+      var pool = filtradas.length > 0 ? filtradas : questoes;
+
+      var minutos = Timer.getSelectedMinutes();
+      var quantidade = MINUTOS_PARA_QUESTOES[minutos] || 6;
+      var fila = priorizarQuestoes(pool, quantidade);
+      iniciarComFila(fila, label, minutos);
+    });
+  }
+
   function refsMissao() {
     return {
       casoAbsurdo: els.caso,
@@ -629,6 +652,7 @@ var Missao = (function () {
     calcularXp: calcularXp,
     registrarResposta: registrarResposta,
     iniciarComFila: iniciarComFila,
-    iniciarMissao: iniciarMissao
+    iniciarMissao: iniciarMissao,
+    iniciarMissaoPorTemas: iniciarMissaoPorTemas
   };
 })();

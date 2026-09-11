@@ -124,6 +124,7 @@ var Fraquezas = (function () {
 
   return {
     STATUS_META: STATUS_META,
+    classificar: classificar,
     getStatusPorTema: getStatusPorTema,
     getStatusDoTema: getStatusDoTema,
     getTemasFracos: getTemasFracos,

@@ -1514,3 +1514,14 @@ body.low-stim .conquista-toast.toast-entrando { transform: translate(-50%, 0); }
   margin: 0 0 14px;
   color: var(--ink-soft);
 }
+.trilha-posicao-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 8px;
+  color: var(--ink-soft);
+  vertical-align: middle;
+}

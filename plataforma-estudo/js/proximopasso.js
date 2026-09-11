@@ -1,9 +1,15 @@
 // "Seu próximo passo": em vez de escolher um território às cegas — ou pior,
 // ver duas sugestões concorrentes (revisão + território novo) empilhadas
 // com a lista inteira de territórios logo abaixo — a plataforma aponta UMA
-// única coisa pra fazer agora. Decide entre revisar o que já foi errado
-// (Revisao.getRecomendacao) ou avançar num território novo
-// (Fraquezas.getMapaTerritorios), nunca as duas ao mesmo tempo.
+// única coisa pra fazer agora. A ordem de prioridade é:
+//   1. Trilha OAB 48 (TrilhaOab48.getProximoItem) — a fila única de 114
+//      assuntos que o próprio usuário priorizou pensando na prova; sempre
+//      que ela tiver um próximo item (não dominado), é ele que manda.
+//   2. Revisão inteligente (Revisao.getRecomendacao) — cobre fraquezas
+//      fora da trilha (ex: território criado pelo próprio usuário).
+//   3. Próximo território por fraqueza (Fraquezas.getMapaTerritorios) —
+//      fallback genérico, só entra em cena se as duas anteriores não
+//      tiverem nada a sugerir.
 var ProximoPasso = (function () {
   var els = {};
 
@@ -50,6 +56,29 @@ var ProximoPasso = (function () {
     return candidatos[0];
   }
 
+  function renderTrilha(item) {
+    els.lista.hidden = true;
+    els.lista.innerHTML = '';
+
+    els.titulo.innerHTML = '';
+    els.titulo.appendChild(document.createTextNode(item.nivelInfo.emoji + ' Sua trilha OAB: ' + item.territorio + ' — ' + item.assunto + ' '));
+    var posicao = document.createElement('span');
+    posicao.className = 'trilha-posicao-badge';
+    posicao.textContent = item.posicao + '/' + item.total114;
+    els.titulo.appendChild(posicao);
+    if (window.PrioridadeOab) {
+      var badgePrioridade = PrioridadeOab.criarBadge(PrioridadeOab.getPrioridadeTerritorio(item.territorio));
+      if (badgePrioridade) els.titulo.appendChild(badgePrioridade);
+    }
+
+    els.texto.textContent = item.texto;
+    els.btn.hidden = false;
+    els.btn.textContent = '▶️ Estudar agora';
+    els.btn.onclick = function () {
+      Missao.iniciarMissaoPorTemas(item.disciplinaId, item.temas, item.territorio + ' — ' + item.assunto);
+    };
+  }
+
   function renderRevisao(recomendacao) {
     els.lista.hidden = false;
     els.lista.innerHTML = '';
@@ -89,39 +118,48 @@ var ProximoPasso = (function () {
     };
   }
 
+  function renderFallback(disciplinas) {
+    if (disciplinas.length === 0) { els.card.hidden = true; return; }
+
+    var ordemPorId = {};
+    disciplinas.forEach(function (d) {
+      var idx = ORDEM_SUGERIDA.indexOf(d.nome);
+      ordemPorId[d.id] = idx === -1 ? 999 : idx;
+    });
+
+    var mapa = Fraquezas.getMapaTerritorios(disciplinas);
+    var escolhido = escolherTerritorio(mapa, ordemPorId);
+
+    els.card.hidden = false;
+    if (!escolhido) {
+      els.lista.hidden = true;
+      els.titulo.textContent = '🏆 Todos os reinos dominados!';
+      els.texto.textContent = 'Continue revisando de vez em quando pra não enferrujar.';
+      els.btn.hidden = true;
+      return;
+    }
+
+    renderNovoTerritorio(escolhido);
+  }
+
   function render() {
     if (!els.card) return;
-    var recomendacaoRevisao = window.Revisao ? Revisao.getRecomendacao() : Promise.resolve(null);
-
-    recomendacaoRevisao.then(function (recomendacao) {
-      if (recomendacao) {
+    DB.getAll('disciplinas').then(function (disciplinas) {
+      var itemTrilha = window.TrilhaOab48 ? TrilhaOab48.getProximoItem(disciplinas) : null;
+      if (itemTrilha) {
         els.card.hidden = false;
-        renderRevisao(recomendacao);
+        renderTrilha(itemTrilha);
         return;
       }
 
-      return DB.getAll('disciplinas').then(function (disciplinas) {
-        if (disciplinas.length === 0) { els.card.hidden = true; return; }
-
-        var ordemPorId = {};
-        disciplinas.forEach(function (d) {
-          var idx = ORDEM_SUGERIDA.indexOf(d.nome);
-          ordemPorId[d.id] = idx === -1 ? 999 : idx;
-        });
-
-        var mapa = Fraquezas.getMapaTerritorios(disciplinas);
-        var escolhido = escolherTerritorio(mapa, ordemPorId);
-
-        els.card.hidden = false;
-        if (!escolhido) {
-          els.lista.hidden = true;
-          els.titulo.textContent = '🏆 Todos os reinos dominados!';
-          els.texto.textContent = 'Continue revisando de vez em quando pra não enferrujar.';
-          els.btn.hidden = true;
+      var recomendacaoRevisao = window.Revisao ? Revisao.getRecomendacao() : Promise.resolve(null);
+      recomendacaoRevisao.then(function (recomendacao) {
+        if (recomendacao) {
+          els.card.hidden = false;
+          renderRevisao(recomendacao);
           return;
         }
-
-        renderNovoTerritorio(escolhido);
+        renderFallback(disciplinas);
       });
     });
   }

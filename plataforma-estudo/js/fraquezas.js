@@ -1,0 +1,134 @@
+// Mapa de fraquezas: classifica cada tema (assunto) com base no histórico
+// real de respostas, não em um acerto isolado. Usado para colorir temas
+// dentro de um território e para priorizar o que entra nas missões.
+var Fraquezas = (function () {
+  var JANELA = 8; // considera só as últimas N respostas de cada tema
+
+  function agruparRespostas() {
+    var respostas = Storage.read(Storage.KEYS.questaoRespostas, []);
+    var grupos = {};
+    respostas.forEach(function (r) {
+      if (!r.disciplinaId) return;
+      var tema = r.tema || 'Geral';
+      var chave = r.disciplinaId + '::' + tema;
+      if (!grupos[chave]) {
+        grupos[chave] = { disciplinaId: r.disciplinaId, tema: tema, respostas: [] };
+      }
+      grupos[chave].respostas.push(r);
+    });
+    return grupos;
+  }
+
+  function classificar(respostas) {
+    var recentes = respostas.slice(-JANELA);
+    var total = recentes.length;
+    var acertos = recentes.filter(function (r) { return r.acertou; }).length;
+    var pct = total ? Math.round((acertos / total) * 100) : 0;
+
+    var status;
+    if (total < 3) {
+      status = 'desenvolvimento';
+    } else if (pct < 40) {
+      status = 'critico';
+    } else if (pct < 65) {
+      status = 'fraco';
+    } else if (pct < 85 || total < 4) {
+      status = 'desenvolvimento';
+    } else {
+      status = 'dominado';
+    }
+
+    return { total: total, acertos: acertos, pct: pct, status: status };
+  }
+
+  var STATUS_META = {
+    critico: { emoji: '🔴', label: 'Crítico' },
+    fraco: { emoji: '🟠', label: 'Fraco' },
+    desenvolvimento: { emoji: '🟡', label: 'Em desenvolvimento' },
+    dominado: { emoji: '🟢', label: 'Dominado' }
+  };
+
+  function getStatusPorTema(disciplinaId) {
+    var grupos = agruparRespostas();
+    var resultado = [];
+    Object.keys(grupos).forEach(function (chave) {
+      var grupo = grupos[chave];
+      if (grupo.disciplinaId !== disciplinaId) return;
+      var info = classificar(grupo.respostas);
+      resultado.push(Object.assign({ tema: grupo.tema, disciplinaId: disciplinaId }, info, STATUS_META[info.status]));
+    });
+    resultado.sort(function (a, b) { return a.pct - b.pct; });
+    return resultado;
+  }
+
+  // Status de um único assunto (disciplina+tema), usado para detectar o
+  // momento exato em que ele passa a "Dominado" logo após uma resposta.
+  function getStatusDoTema(disciplinaId, tema) {
+    var grupos = agruparRespostas();
+    var grupo = grupos[disciplinaId + '::' + (tema || 'Geral')];
+    if (!grupo) return null;
+    var info = classificar(grupo.respostas);
+    return Object.assign({ tema: grupo.tema, disciplinaId: disciplinaId }, info, STATUS_META[info.status]);
+  }
+
+  function getTemasFracos(limit) {
+    var grupos = agruparRespostas();
+    var resultado = [];
+    Object.keys(grupos).forEach(function (chave) {
+      var grupo = grupos[chave];
+      var info = classificar(grupo.respostas);
+      if (info.status === 'critico' || info.status === 'fraco') {
+        resultado.push(Object.assign({ tema: grupo.tema, disciplinaId: grupo.disciplinaId }, info, STATUS_META[info.status]));
+      }
+    });
+    resultado.sort(function (a, b) { return a.pct - b.pct; });
+    return limit ? resultado.slice(0, limit) : resultado;
+  }
+
+  function getResumoGeral() {
+    var grupos = agruparRespostas();
+    var itens = Object.keys(grupos).map(function (chave) {
+      var grupo = grupos[chave];
+      var info = classificar(grupo.respostas);
+      return Object.assign({ tema: grupo.tema, disciplinaId: grupo.disciplinaId }, info, STATUS_META[info.status]);
+    });
+    var maisFraco = itens
+      .filter(function (i) { return i.status === 'critico' || i.status === 'fraco'; })
+      .sort(function (a, b) { return a.pct - b.pct; })[0] || null;
+    var maisForte = itens
+      .filter(function (i) { return i.status === 'dominado'; })
+      .sort(function (a, b) { return b.pct - a.pct; })[0] || null;
+    return { maisFraco: maisFraco, maisForte: maisForte };
+  }
+
+  // Visão por território (não por tema) para o "mapa da OAB": agrega TODAS
+  // as respostas do território, não só de um tema. Usar getStatusPorTema(d.id)[0]
+  // pegava sempre o pior tema individual (array ordenado ascendente por pct),
+  // então um território com 10 acertos em "Tema A" e só 1 erro isolado em
+  // "Tema B" (tema livre, digitado ao cadastrar questão própria) aparecia
+  // travado em 0%, mesmo com ótimo desempenho geral.
+  function getMapaTerritorios(disciplinas) {
+    var todasRespostas = Storage.read(Storage.KEYS.questaoRespostas, []);
+    return disciplinas.map(function (d) {
+      var respostasDoTerritorio = todasRespostas.filter(function (r) { return r.disciplinaId === d.id; });
+      if (respostasDoTerritorio.length === 0) {
+        return {
+          disciplinaId: d.id, nome: d.territorio || d.nome, icone: d.icone, cor: d.cor,
+          total: 0, pct: 0, status: 'sem_dados', emoji: '⚪', label: 'Sem dados ainda'
+        };
+      }
+      var info = classificar(respostasDoTerritorio);
+      return Object.assign({ disciplinaId: d.id, nome: d.territorio || d.nome, icone: d.icone, cor: d.cor }, info, STATUS_META[info.status]);
+    });
+  }
+
+  return {
+    STATUS_META: STATUS_META,
+    classificar: classificar,
+    getStatusPorTema: getStatusPorTema,
+    getStatusDoTema: getStatusDoTema,
+    getTemasFracos: getTemasFracos,
+    getResumoGeral: getResumoGeral,
+    getMapaTerritorios: getMapaTerritorios
+  };
+})();

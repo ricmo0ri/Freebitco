@@ -4,7 +4,7 @@
 // chefões por tema, XP/combo e estatística de fraquezas — não é um passo à
 // parte, é como o motor de questões já funciona pra qualquer questão.
 var QuestoesSeed = (function () {
-  var SEED_VERSION_ATUAL = 10;
+  var SEED_VERSION_ATUAL = 11;
 
   var PROVAS = [
     {
@@ -1462,10 +1462,10 @@ var QuestoesSeed = (function () {
             }
           ],
           "respostaCorreta": 2,
-          "explicacaoCorreta": "Pelo art. 526, §§1º e 2º, do CPC, o devedor pode depositar espontaneamente o valor que entende devido antes de intimado para cumprir a sentença; se o credor não impugnar o valor no prazo, presume-se aceito como quitação integral da obrigação.",
-          "explicacaoErradas": "A multa e os honorários de 10% do art. 523, §1º, do CPC pressupõem intimação regular para cumprimento voluntário não atendida, o que não é o caso de depósito espontâneo (afastando A). O levantamento não depende necessariamente de decisão prévia sobre suficiência quando não há impugnação (afastando B). O cumprimento pode ser iniciado por iniciativa do próprio devedor, sem necessidade de manifestação prévia do credor (afastando D).",
-          "pegadinha": "A armadilha é achar que valor menor que a condenação nunca poderia quitar a obrigação — mas a inércia do credor em impugnar o depósito espontâneo tem efeito de aceitação tácita.",
-          "regraMemoria": "Depósito espontâneo sem impugnação em 15 dias vira quitação — quem não reclama, aceita."
+          "explicacaoCorreta": "Alternativa C está correta. O art. 526, caput, do CPC permite que o devedor, antes de ser intimado para cumprimento de sentença, compareça em juízo e ofereça o pagamento do valor que entende devido. Nos termos do §1º, o credor será ouvido no prazo de 5 (cinco) dias sobre o depósito, podendo impugná-lo. Mas, conforme o §3º, se o credor não se opuser ao valor depositado — ainda que inferior ao total da condenação —, o juiz declarará satisfeita a obrigação e extinguirá o processo.",
+          "explicacaoErradas": "A: está errada porque, nos termos do art. 526, §2º, do CPC, concluindo o juiz pela insuficiência do depósito, a multa e os honorários de 10% incidem sobre a DIFERENÇA entre o valor depositado e o devido, e não sobre o valor total devido. B: está errada porque o art. 526, §1º, do CPC autoriza o credor a impugnar o valor SEM PREJUÍZO do levantamento imediato da parcela incontroversa — ou seja, Juciara já pode levantar a parte que reconhece como devida, não precisa esperar a decisão do juiz sobre a suficiência do depósito para levantar qualquer valor. D: está errada porque o próprio art. 526, caput, do CPC autoriza o devedor a comparecer e depositar espontaneamente ANTES de ser intimado, por iniciativa própria, sem depender de manifestação prévia da parte autora.",
+          "pegadinha": "A armadilha é achar que um valor menor que a condenação nunca poderia quitar a obrigação — mas a inércia do credor em impugnar o depósito espontâneo, no prazo de 5 dias, tem efeito de aceitação tácita, ainda que o valor seja inferior ao da condenação.",
+          "regraMemoria": "Depósito espontâneo (art. 526, CPC): o devedor pode depositar ANTES de ser intimado. O credor tem 5 dias para impugnar, mas já pode levantar a parte incontroversa desde logo. Se não impugnar, quitação total — mesmo com valor menor que a condenação."
         },
         {
           "territorio": "Processo Civil",
@@ -29034,14 +29034,21 @@ var QuestoesSeed = (function () {
           var existente = porChave[prova.provaOrigem + '::' + q.enunciado];
           if (!existente) return;
           var mudou = false;
-          if (q.explicacaoCorreta && !existente.explicacaoCorreta) {
+          // Sincroniza sempre com o conteúdo mais atual de PROVAS, não só
+          // quando o campo estiver vazio — questões já semeadas em
+          // instalações antigas precisam receber correções de conteúdo
+          // (ex: uma explicação com erro de citação legal) quando o texto
+          // de origem muda, não só a primeira vez que o campo é escrito.
+          // Não há UI de edição manual desses campos pra questões
+          // pré-cadastradas, então sobrescrever é seguro.
+          if (q.explicacaoCorreta && q.explicacaoCorreta !== existente.explicacaoCorreta) {
             existente.explicacaoCorreta = q.explicacaoCorreta;
             existente.explicacaoErradas = q.explicacaoErradas || '';
             existente.pegadinha = q.pegadinha || '';
             existente.regraMemoria = q.regraMemoria || '';
             mudou = true;
           }
-          if (q.tema && !existente.tema) {
+          if (q.tema && q.tema !== existente.tema) {
             existente.tema = q.tema;
             mudou = true;
           }

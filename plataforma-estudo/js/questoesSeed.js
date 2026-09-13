@@ -29052,6 +29052,14 @@ var QuestoesSeed = (function () {
             existente.tema = q.tema;
             mudou = true;
           }
+          // Corrige o próprio gabarito (respostaCorreta) quando uma revisão
+          // encontra um erro de digitação/transcrição do gabarito oficial —
+          // do contrário quem já respondeu essa questão continuaria vendo a
+          // alternativa errada marcada como certa para sempre.
+          if (typeof q.respostaCorreta === 'number' && q.respostaCorreta !== existente.respostaCorreta) {
+            existente.respostaCorreta = q.respostaCorreta;
+            mudou = true;
+          }
           if (mudou) atualizacoes.push(DB.put('questoes', existente));
         });
       });

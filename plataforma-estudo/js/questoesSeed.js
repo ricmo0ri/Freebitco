@@ -4,7 +4,7 @@
 // chefões por tema, XP/combo e estatística de fraquezas — não é um passo à
 // parte, é como o motor de questões já funciona pra qualquer questão.
 var QuestoesSeed = (function () {
-  var SEED_VERSION_ATUAL = 11;
+  var SEED_VERSION_ATUAL = 12;
 
   var PROVAS = [
     {
@@ -14637,34 +14637,6 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito do Consumidor",
-          "tema": "Responsabilidade pelo Fato/Vício",
-          "enunciado": "Diego ofereceu papinha industrializada para seu filho que apresentou sintomas de diarreia e vômito algumas horas depois. Ao observar a data de validade do produto, identificou que estava vencida. O produto havia sido adquirido naquela manhã na padaria vizinha e, ao retornar ao local, observou que os demais potinhos de papinha disponíveis na prateleira estavam com a data de validade adequada para o consumo. Indagando o comerciante, Diego foi informado de que os produtos estavam na mesma caixa lacrada enviada pelo fabricante naquela manhã e alegou que também foi vítima de tal erro do fabricante. Embora se conformasse e lamentasse a infelicidade de ter adquirido justamente o pote com data vencida, Diego procurou você como advogado (a) para saber se alguma providência jurídica poderia ser tomada. Diante desses fatos, assinale a opção correta.",
-          "alternativas": [
-            {
-              "letra": "A",
-              "texto": "O comerciante não responde pelo evento danoso na medida em que também foi prejudicado ao receber do fabricante o produto com a data de validade expirada."
-            },
-            {
-              "letra": "B",
-              "texto": "Cuida-se de vício da segurança do produto, respondendo o comerciante objetivamente por ter disponibilizado o produto para venda, podendo ainda o fabricante ser responsabilizado, não podendo alegar culpa de terceiro."
-            },
-            {
-              "letra": "C",
-              "texto": "Incide excludente de responsabilidade do fabricante e do comerciante por culpa da vítima que não observou o prazo de validade antes de consumir o produto."
-            },
-            {
-              "letra": "D",
-              "texto": "Cuida-se de responsabilidade objetiva do fabricante do produto, recaindo sobre o comerciante a responsabilidade subsidiária."
-            }
-          ],
-          "respostaCorreta": 1,
-          "explicacaoCorreta": "A alternativa B está correta. Trata-se de vício de segurança do produto (fato do produto), que causou dano à saúde do consumidor. O comerciante responde objetivamente porque, nos termos do art. 13, III, do CDC, é responsável quando não conserva adequadamente produtos perecíveis, hipótese em que se insere a venda de produto com prazo de validade vencido. O fabricante também pode ser responsabilizado objetivamente (art. 12, CDC), não lhe sendo lícito invocar como excludente a 'culpa de terceiro' representada pelo próprio comerciante, integrante da cadeia de fornecimento.",
-          "explicacaoErradas": "A) Erra ao isentar o comerciante sob o argumento de que ele também foi 'vítima': a lei lhe impõe o dever de fiscalizar a validade de produtos perecíveis antes de expô-los à venda, respondendo objetivamente por essa falha, independentemente de o produto ter chegado já vencido do fabricante. C) Erra ao alegar culpa exclusiva da vítima: Diego não tinha como identificar o vício, já que o produto estava lacrado na caixa original do fabricante, não havendo qualquer conduta negligente do consumidor apta a excluir a responsabilidade. D) Erra ao classificar a responsabilidade do comerciante como meramente subsidiária: no caso de produto perecível vencido, a responsabilidade do comerciante é objetiva e direta (art. 13, III, CDC), não subsidiária à do fabricante.",
-          "pegadinha": "A banca tenta convencer o candidato de que o fato de o comerciante ter recebido o lote já vencido, lacrado pelo fabricante, configuraria excludente por fato de terceiro — mas o CDC atribui ao comerciante o dever autônomo de fiscalizar prazos de validade de produtos perecíveis, tornando-o responsável direto por essa falha.",
-          "regraMemoria": "Comerciante que vende produto perecível vencido responde objetivamente (art. 13, III, CDC) — receber o lote lacrado do fabricante não é excludente de responsabilidade."
-        },
-        {
-          "territorio": "Direito do Consumidor",
           "tema": "Práticas e Contratos de Consumo",
           "enunciado": "Carlos foi internado para tratamento de saúde. Apresentava estado grave, sendo seus familiares informados sobre a limitação do tempo de internação. Junto à assinatura dos documentos de internação, o hospital exigiu dos familiares um depósito caução para assegurar a internação do paciente, caso extrapolado o dia-limite custeado pelo plano de saúde, o que fizeram prontamente. Os familiares de Carlos procuraram você, como advogado(a), informando o ocorrido e que, de fato, o contrato do seguro-saúde apresentava essa cláusula limitadora. Assinale a opção que apresenta a orientação correta dada para o caso.",
           "alternativas": [
@@ -15057,34 +15029,6 @@ var QuestoesSeed = (function () {
         },
         {
           "territorio": "Direito Penal",
-          "tema": "Aplicação da Lei Penal",
-          "enunciado": "Após rigorosa fiscalização, uma empresa provedora de Internet verificou que sua rede de wifi com senha bloqueada estava sendo indevidamente utilizada por um grupo de pessoas. Após notícia de fato formulada pela empresa, a Delegacia de Polícia instaurou Inquérito, tendo o Delegado Titular proferido relatório final pelo indiciamento dos envolvidos pelo crime de furto, na figura do Art. 155, § 3º, do Código Penal: “Equipara-se à coisa móvel a energia elétrica ou qualquer outra que tenha valor econômico”. Diante do caso descrito, é correto afirmar que o indiciamento pelo crime de furto é:",
-          "alternativas": [
-            {
-              "letra": "A",
-              "texto": "inadmissível, tendo em vista que no Direito Penal não cabe analogia in malam partem."
-            },
-            {
-              "letra": "B",
-              "texto": "admissível, tendo em vista que no Direito Penal cabe analogia in bonam partem."
-            },
-            {
-              "letra": "C",
-              "texto": "inadmissível, pois a conduta dos investigados constitui fato atípico, tendo em vista a incidência do Princípio da Legalidade Estrita."
-            },
-            {
-              "letra": "D",
-              "texto": "admissível, pois se trata de hipótese de interpretação analógica, cabível no Direito Penal."
-            }
-          ],
-          "respostaCorreta": 3,
-          "explicacaoCorreta": "A alternativa D está correta. O art. 155, §3º, do CP, ao equiparar a coisa móvel 'a energia elétrica ou qualquer outra que tenha valor econômico', utiliza uma fórmula casuística seguida de fórmula genérica que o próprio legislador previu, permitindo ao intérprete estender o conceito a hipóteses semelhantes com valor econômico, como o sinal de internet (wifi). Essa técnica é a interpretação analógica, expressamente admitida no Direito Penal, inclusive quando desfavorável ao réu, por não se confundir com a analogia (que pressupõe lacuna legislativa a ser integrada pelo juiz).",
-          "explicacaoErradas": "A) Erra ao classificar a hipótese como analogia in malam partem vedada: não há lacuna a ser preenchida por analogia, pois o próprio texto legal já contempla expressamente a extensão do conceito por meio da fórmula genérica, o que caracteriza interpretação analógica, e não analogia. B) Erra ao falar em analogia in bonam partem: além de não se tratar de analogia (mas de interpretação analógica), a extensão do conceito de coisa móvel para abranger o sinal de internet furtado não beneficia o réu, não podendo ser chamada de 'in bonam partem'. C) Erra ao alegar atipicidade por violação à legalidade estrita: não há violação à legalidade, pois o próprio tipo penal prevê expressamente essa extensão mediante fórmula casuística-genérica.",
-          "pegadinha": "A pegadinha está em confundir analogia (proibida in malam partem, por criar norma para preencher lacuna legislativa) com interpretação analógica (técnica legítima de interpretação de dispositivo que já contém fórmula casuística seguida de fórmula genérica prevista pelo próprio legislador, admitida mesmo que prejudicial ao réu).",
-          "regraMemoria": "Interpretação analógica ('energia elétrica ou qualquer outra de valor econômico') é sempre admitida, mesmo contra o réu — diferente da analogia, que é proibida in malam partem."
-        },
-        {
-          "territorio": "Direito Penal",
           "tema": "Penas e Extinção da Punibilidade",
           "enunciado": "Francisco, funcionário público concursado de uma autarquia federal, recebeu de seu órgão de atuação um notebook funcional, tendo assinado o livro de carga referente ao objeto e assumido o compromisso de zelar pelo bem da administração. Durante suas férias, Francisco viaja para uma pousada no interior do estado de São Paulo e leva o computador na mochila, uma vez que tinha o costume de assistir séries através do aparelho. Durante sua estadia na pousada, Francisco leva o notebook para a piscina e o coloca na mesa onde deixara seus demais pertences. Após se ausentar por cerca de 40 minutos para jogar uma partida de futebol, retorna para a piscina e constata que o notebook fora furtado. Desesperado, procura a administração do local que após analisar as câmeras de segurança não consegue identificar quem teria subtraído o computador. Diante dos fatos, o órgão funcional ao qual Francisco era vinculado instaura procedimento administrativo e, ato contínuo, encaminha pedido de instauração de Inquérito na Polícia Federal que culmina no oferecimento de denúncia por parte do Ministério Público Federal pela prática do crime de peculato culposo. Francisco procura a repartição pública e se oferece para pagar o valor referente ao notebook, o que é aceito, sendo certo que o ressarcimento ao erário se deu antes do julgamento da ação penal. Diante dos fatos narrados, é correto afirmar que Francisco",
           "alternativas": [
@@ -15110,34 +15054,6 @@ var QuestoesSeed = (function () {
           "explicacaoErradas": "(A) está errada porque inverte o momento da reparação: a redução de metade da pena (e não a extinção da punibilidade) só se aplica quando o ressarcimento ocorre APÓS a sentença irrecorrível, e não simplesmente 'após o recebimento da denúncia' — o marco relevante para a redução da pena é a sentença irrecorrível, não a denúncia. (C) está errada porque descreve mal o requisito da atenuante genérica do Art. 65, III, 'b', do CP: essa atenuante exige reparação do dano 'antes do julgamento' (e não antes do recebimento da denúncia); além disso, no peculato culposo aplica-se a regra especial do Art. 312, §3º, que é mais benéfica e afasta a necessidade de discutir a atenuante genérica. (D) está errada porque o arrependimento posterior (Art. 16 do CP) exige reparação do dano ou restituição da coisa até o recebimento da denúncia ou queixa (e não até a sentença), e é instituto de aplicação geral que cede lugar à regra especial do peculato culposo, mais favorável ao réu.",
           "pegadinha": "A banca aposta na confusão entre três institutos parecidos, mas com prazos diferentes: a regra especial do peculato culposo (Art. 312, §3º — reparação até a sentença irrecorrível extingue a punibilidade), o arrependimento posterior (Art. 16 — reparação até o recebimento da denúncia) e a atenuante genérica de reparação do dano (Art. 65, III, 'b' — reparação até o julgamento). Quem não souber os marcos temporais de cada um erra a questão.",
           "regraMemoria": "Peculato CULPOSO: ressarciu ANTES da sentença irrecorrível = extingue a punibilidade; ressarciu DEPOIS = reduz a pena pela metade (Art. 312, §3º, CP) — regra especial que afasta o arrependimento posterior e a atenuante genérica."
-        },
-        {
-          "territorio": "Direito Penal",
-          "tema": "Crimes contra a Pessoa",
-          "enunciado": "Maria, adolescente de 13 anos, procura seu tio Roberto e informa que está grávida, mas que não deseja ter o filho, motivo pelo qual pede sua ajuda para interromper a gravidez. Roberto, diante da solicitação de sua sobrinha, resolve ajudá-la e realiza a manobra abortiva, vindo a causar a morte do feto, chegando Maria a expelir o produto da concepção de seu corpo. Acerca da responsabilização penal de Roberto e Maria, assinale a afirmativa correta.",
-          "alternativas": [
-            {
-              "letra": "A",
-              "texto": "Maria responderá pelo ato infracional análogo ao crime de aborto praticado pela gestante e Roberto será responsabilizado como partícipe do crime de aborto praticado pela gestante, previsto no Art. 124 do CP."
-            },
-            {
-              "letra": "B",
-              "texto": "Maria não será responsabilizada penalmente e Roberto responderá pelo crime de aborto sem o consentimento da gestante, previsto no Art. 125 do CP."
-            },
-            {
-              "letra": "C",
-              "texto": "Maria será responsabilizada por ato infracional análogo ao crime de aborto praticado pela gestante e Roberto será responsabilizado pelo crime de aborto com o consentimento da gestante, previsto no Art. 126 do CP."
-            },
-            {
-              "letra": "D",
-              "texto": "Maria não será responsabilizada penalmente e Roberto será responsabilizado pelo crime de aborto com o consentimento da gestante, previsto no Art. 126 do CP."
-            }
-          ],
-          "respostaCorreta": 1,
-          "explicacaoCorreta": "Maria tem 13 anos, ou seja, é menor de 14 anos. Por analogia ao entendimento consolidado sobre a presunção de vulnerabilidade nos crimes contra a dignidade sexual (em que o consentimento do menor de 14 anos é considerado juridicamente inválido/irrelevante), o 'consentimento' de Maria para a realização do aborto por Roberto não produz efeitos jurídicos. Assim, o crime praticado por Roberto se enquadra no Art. 125 do CP — aborto provocado por terceiro SEM o consentimento (válido) da gestante —, que tem pena mais grave, e não no Art. 126 (aborto com consentimento). Como não há consentimento juridicamente válido, Maria figura como vítima, e não como corré, não sendo responsabilizada penalmente.",
-          "explicacaoErradas": "(A) está errada porque trata Maria como se tivesse praticado ato infracional análogo ao Art. 124 (autoaborto/aborto consentido) e Roberto como partícipe desse crime; isso pressupõe consentimento válido de Maria, o que não ocorre dada sua idade (menor de 14 anos), sendo Roberto autor do crime do Art. 125, e não partícipe do Art. 124. (C) está errada porque enquadra a conduta de Roberto no Art. 126 (aborto COM consentimento da gestante) e ainda responsabiliza Maria; ambos os pontos estão equivocados, pois o consentimento dela é inválido (afastando o Art. 126) e ela não comete crime algum. (D) acerta que Maria não é responsabilizada, mas erra ao enquadrar Roberto no Art. 126 (com consentimento) em vez do Art. 125 (sem consentimento válido), que é o tipo penal correto diante da invalidade do consentimento de menor de 14 anos.",
-          "pegadinha": "A banca tenta induzir o candidato a raciocinar de forma literal: como Maria 'pediu' e 'consentiu' com o aborto, o crime seria o do Art. 126 (aborto com consentimento). A pegadinha é que, sendo Maria menor de 14 anos, seu consentimento não tem validade jurídica — por analogia à vulnerabilidade sexual —, de modo que o crime de Roberto é, na verdade, o do Art. 125 (sem consentimento válido), mais grave, e Maria não responde por nada.",
-          "regraMemoria": "Consentimento de MENOR DE 14 ANOS para o próprio aborto é sempre juridicamente inválido: o terceiro que provoca o aborto responde sempre pelo Art. 125 do CP (sem consentimento), nunca pelo Art. 126 (com consentimento)."
         },
         {
           "territorio": "Processo Penal",
@@ -21518,62 +21434,6 @@ var QuestoesSeed = (function () {
       "explicacaoErradas": "B) restringe indevidamente a proteção ao município, quando, na verdade, ela abrange todo o território do Estado em que se deu o registro, já que a competência de arquivamento é estadual (Junta Comercial), não municipal. C) erra ao estender a proteção a todo o território nacional, o que só ocorreria mediante arquivamento complementar dos atos constitutivos nas Juntas Comerciais dos demais Estados, providência não mencionada no enunciado. D) inventa um critério de abrangência regional (\"Região Nordeste\") que não existe no sistema de registro empresarial brasileiro, organizado por Estados e suas respectivas Juntas Comerciais.",
       "pegadinha": "A banca explora a confusão entre a abrangência do registro (limitada, em regra, ao Estado da Junta Comercial competente) e uma suposta proteção automaticamente nacional só porque a empresa é uma sociedade regularmente constituída — a extensão nacional exige providência adicional (arquivamento complementar em outras Juntas), que não ocorreu no caso.",
       "regraMemoria": "Registro na Junta Comercial protege o nome empresarial nos limites do Estado daquela Junta; para virar proteção nacional, é preciso arquivar complementarmente nas Juntas Comerciais dos demais Estados."
-    },
-    {
-      "territorio": "Direito Empresarial",
-      "tema": "trespasse/arrendamento",
-      "enunciado": "Aspásia e Parisi, únicas sócias da sociedade Santa Salete Modas Ltda., decidiram que a sociedade arrendará seu estabelecimento à sociedade Monções Empreendimentos Imobiliários Ltda., pelo prazo de quatro anos. Em relação ao contrato de arrendamento, mesmo sendo reconhecida a autonomia da vontade às partes contratantes, existem normas legais relativas ao estabelecimento arrendado.\nAssinale a opção que apresenta, corretamente, uma dessas obrigações legais.",
-      "alternativas": [
-        {
-          "letra": "A",
-          "texto": "A sub-rogação do arrendatário nos contratos estipulados para exploração do estabelecimento, exceto aqueles de caráter pessoal."
-        },
-        {
-          "letra": "B",
-          "texto": "A obrigação de averbação do contrato de arrendamento no Registro de Imóveis e sua publicação em jornal de grande circulação."
-        },
-        {
-          "letra": "C",
-          "texto": "A proibição de o arrendatário do estabelecimento fazer concorrência ao arrendador durante o prazo do contrato, salvo disposição contratual diversa."
-        },
-        {
-          "letra": "D",
-          "texto": "A obrigação de o arrendatário responder pelo pagamento dos débitos anteriores ao arrendamento, desde que regularmente contabilizados, pelo prazo de um ano."
-        }
-      ],
-      "respostaCorreta": 2,
-      "explicacaoCorreta": "O Código Civil disciplina, nos arts. 1.144 a 1.149, obrigações legais atreladas à transferência da exploração do estabelecimento empresarial, aplicáveis não apenas ao trespasse (alienação definitiva), mas também, expressamente, ao arrendamento e ao usufruto do estabelecimento. Entre essas obrigações está a vedação de concorrência: o art. 1.147 do Código Civil, cujo parágrafo único estende a regra ao arrendamento e ao usufruto, prevê que, salvo disposição em contrário, quem passa a explorar o estabelecimento alheio fica proibido de fazer concorrência à parte que lhe cedeu essa exploração, durante o prazo do contrato — resguardando o fundo de comércio e a clientela vinculados ao estabelecimento cedido. Trata-se de norma supletiva, afastável por disposição contratual em sentido diverso, exatamente como consta na alternativa correta.",
-      "explicacaoErradas": "A) erra ao trazer a sub-rogação automática do arrendatário nos contratos de exploração do estabelecimento como obrigação legal do arrendamento: essa sub-rogação (art. 1.148 do CC) é regra pensada para a transferência definitiva de titularidade do trespasse, não sendo automaticamente aplicada, do mesmo modo, ao mero arrendamento, em que a titularidade do estabelecimento permanece com o arrendador. B) erra o órgão de registro: o contrato de arrendamento de estabelecimento deve ser averbado no Registro Público de Empresas Mercantis (Junta Comercial), à margem da inscrição do empresário, e publicado na imprensa oficial (art. 1.144 do CC) — não no Registro de Imóveis, tampouco havendo exigência específica de jornal de grande circulação. D) importa indevidamente para o arrendamento a regra de sucessão do adquirente nas dívidas anteriores regularmente contabilizadas (art. 1.146 do CC), típica do trespasse (transferência de titularidade), e não do simples arrendamento, em que o arrendador continua sendo o titular do estabelecimento e o devedor original das obrigações anteriores.",
-      "pegadinha": "A pegadinha está em achar que todas as regras do trespasse (sub-rogação em contratos, sucessão em dívidas, registro no Registro de Imóveis) se aplicam igualmente ao arrendamento — só algumas, como a vedação de concorrência e a exigência de averbação no Registro Público de Empresas Mercantis com publicação, foram expressamente estendidas pela lei ao arrendamento e ao usufruto do estabelecimento.",
-      "regraMemoria": "Nem toda regra do trespasse vale para o arrendamento do estabelecimento: só a vedação de concorrência (art. 1.147) e a averbação/publicação (art. 1.144) se estendem expressamente a ele; sucessão em dívidas (art. 1.146) e sub-rogação em contratos (art. 1.148) são típicas do trespasse, não do arrendamento."
-    },
-    {
-      "territorio": "Processo Civil",
-      "tema": "mediação",
-      "enunciado": "Olívia e José foram casados por 15 anos e tiveram duas filhas, Maria Eduarda, com 9 anos, e Maria Luiza, com 6.\nA manutenção do casamento não é mais da vontade do casal, razão pela qual decidiram se divorciar, propondo Olívia ação judicial para tanto. Porém, preocupados em manter a harmonia da família, o casal entendeu que o melhor caminho para resolver as questões legais atinentes à guarda, à visitação e aos alimentos das filhas seria a mediação.\nSobre a mediação judicial a ser realizada no presente caso, assinale a afirmativa correta.",
-      "alternativas": [
-        {
-          "letra": "A",
-          "texto": "Os mediadores que atuarão no caso deverão estar inscritos no cadastro de tribunal de justiça ou de tribunal regional federal, que manterá o registro dos profissionais habilitados."
-        },
-        {
-          "letra": "B",
-          "texto": "A mediação, meio de solução da controvérsia escolhido por Olívia e José, deverá seguir exclusivamente as regras procedimentais previstas em lei."
-        },
-        {
-          "letra": "C",
-          "texto": "O mediador que atuar no caso fica impedido pelo prazo de 2 anos, contados do término da última audiência em que atuou, de assessorar, representar ou patrocinar qualquer das partes."
-        },
-        {
-          "letra": "D",
-          "texto": "A escolha da mediação por Olívia e José é correta, pois o mediador atuará nos casos em que não houver vínculo anterior entre as partes."
-        }
-      ],
-      "respostaCorreta": 0,
-      "explicacaoCorreta": "A alternativa A está correta. Nos termos do art. 167, caput, do CPC, os mediadores e conciliadores judiciais devem estar inscritos em cadastro nacional e, também, em cadastro mantido pelo tribunal de justiça ou pelo tribunal regional federal da respectiva circunscrição, órgão responsável por registrar e credenciar os profissionais habilitados a atuar nos processos judiciais, garantindo capacitação mínima e controle de qualidade para o exercício da função.",
-      "explicacaoErradas": "B) Está errada porque a mediação não segue exclusivamente regras legais rígidas: o CPC consagra o princípio da autonomia da vontade e da informalidade (art. 166), permitindo às próprias partes, em conjunto com o mediador, definir regras procedimentais adequadas ao caso, quando a lei o permitir (art. 166, §4º). C) Está errada quanto ao prazo: o impedimento do mediador para assessorar, representar ou patrocinar qualquer das partes é de 1 (um) ano, contado do término da última audiência em que atuou (art. 172 do CPC), e não de 2 (dois) anos. D) Está errada porque inverte os papéis dos auxiliares da justiça: o CPC (art. 165, §§2º e 3º) reserva ao mediador, preferencialmente, os casos em que HÁ vínculo anterior entre as partes (como relações de família), justamente por seu método focado em restabelecer o diálogo; é o conciliador quem atua preferencialmente nos casos em que NÃO há vínculo anterior.",
-      "pegadinha": "A banca inverte conceitos centrais de mediação e conciliação e insere um número incorreto (prazo de impedimento) para testar se o candidato realmente domina a disciplina dos auxiliares da justiça, e não apenas memorizou que 'existem' mediação e conciliação como métodos consensuais.",
-      "regraMemoria": "Mediador atua quando HÁ vínculo anterior entre as partes (ex.: família); conciliador, quando NÃO há vínculo. Impedimento de ambos: 1 ano após a última audiência em que atuaram. Regras procedimentais: flexíveis, por autonomia da vontade — nunca 'exclusivamente legais'."
     },
     {
       "territorio": "Processo Civil",
@@ -29063,6 +28923,25 @@ var QuestoesSeed = (function () {
           if (mudou) atualizacoes.push(DB.put('questoes', existente));
         });
       });
+
+      // Remove questões que já foram semeadas mas depois saíram de PROVAS
+      // (ex.: banca anulou a questão após publicação do gabarito definitivo,
+      // e a auditoria de gabaritos removeu a entrada correspondente da fonte).
+      // Só mexe em provas que o app conhece — nunca em provaOrigem alheia.
+      var provaOrigensConhecidas = {};
+      var chavesValidas = {};
+      PROVAS.forEach(function (prova) {
+        provaOrigensConhecidas[prova.provaOrigem] = true;
+        prova.questoes.forEach(function (q) {
+          chavesValidas[prova.provaOrigem + '::' + q.enunciado] = true;
+        });
+      });
+      existentes.forEach(function (r) {
+        if (!provaOrigensConhecidas[r.provaOrigem]) return;
+        var chave = r.provaOrigem + '::' + r.enunciado;
+        if (!chavesValidas[chave]) atualizacoes.push(DB.remove('questoes', r.id));
+      });
+
       return Promise.all(atualizacoes);
     });
   }

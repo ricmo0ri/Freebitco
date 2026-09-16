@@ -4,7 +4,7 @@
 // chefões por tema, XP/combo e estatística de fraquezas — não é um passo à
 // parte, é como o motor de questões já funciona pra qualquer questão.
 var QuestoesSeed = (function () {
-  var SEED_VERSION_ATUAL = 12;
+  var SEED_VERSION_ATUAL = 13;
 
   var PROVAS = [
     {
@@ -11268,34 +11268,6 @@ var QuestoesSeed = (function () {
           "explicacaoErradas": "A: incorreta, pois a atividade de contador não está listada entre as incompatibilidades do art. 28 do EAOAB (que abrange, por exemplo, cargos com poder de polícia, direção de instituições financeiras, atividades policiais); logo, o exercício simultâneo é permitido. B: incorreta, pois o problema não está no meio de divulgação (muros, veículos etc.), mas na própria vedação de anunciar a advocacia em conjunto com outra atividade profissional, qualquer que seja o veículo utilizado. D: incorreta, pois mala direta, panfletos e formas assemelhadas de publicidade para captação de clientela são, em si, modalidades vedadas pelas normas éticas de publicidade da advocacia, independentemente de mencionarem ou não a atividade de contabilidade.",
           "pegadinha": "A banca tenta levar o candidato a associar a proibição à existência de incompatibilidade profissional (que não existe) ou a condicioná-la ao meio/local de divulgação, quando a vedação real é mais simples e específica: não se pode divulgar a advocacia conjuntamente com outra profissão.",
           "regraMemoria": "Advocacia com outra profissão: pode exercer junto, nunca pode anunciar junto."
-        },
-        {
-          "territorio": "Ética",
-          "tema": "Inscrição e Órgãos da OAB",
-          "enunciado": "Formalizou-se, no Tribunal Regional Eleitoral do Estado Alfa, a vacância de um dos cargos de juiz eleitoral, reservado constitucionalmente à classe de advogados. De igual modo, no Tribunal Regional Federal da Enésima Região, sediado na capital do mesmo Estado Alfa, com jurisdição nos Estados Alfa, Beta e Gama, foi também formalizada a vacância de um cargo de juiz federal do Tribunal Regional Federal, destinado à advocacia nos termos da Constituição Federal (quinto constitucional). Nesse hipotético cenário, que demandará a produção de duas listas de membros da advocacia para o futuro preenchimento dos cargos, assinale a afirmativa que descreve corretamente as competências dos órgãos da OAB.",
-          "alternativas": [
-            {
-              "letra": "A",
-              "texto": "A lista para o preenchimento do cargo no TRE do Estado Alfa ficará sob a incumbência do Conselho Seccional da OAB do respectivo Estado, competindo ao Conselho Federal da OAB elaborar a lista para o preenchimento do cargo no TRF da Enésima Região."
-            },
-            {
-              "letra": "B",
-              "texto": "A lista para o preenchimento do cargo no TRE do Estado Alfa ficará sob a incumbência do Conselho Seccional da OAB do respectivo Estado, competindo aos Conselhos Seccionais da OAB dos Estados Alfa, Beta e Gama a elaboração conjunta da lista para o preenchimento do cargo no TRF da Enésima Região."
-            },
-            {
-              "letra": "C",
-              "texto": "Uma vez que tanto a Justiça Eleitoral quanto a Justiça Federal pertencem ao Poder Judiciário da União, competirá ao Conselho Federal da OAB a elaboração das duas listas."
-            },
-            {
-              "letra": "D",
-              "texto": "Uma vez que tanto o TRE do Estado Alfa quanto a sede do TRF da Enésima Região estão situados no Estado Alfa, competirá ao Conselho Seccional da OAB desse Estado a elaboração das duas listas."
-            }
-          ],
-          "respostaCorreta": 0,
-          "explicacaoCorreta": "Compete ao Conselho Seccional da OAB elaborar a lista sêxtupla para o quinto constitucional de tribunais cuja jurisdição se limita a um único Estado (como o TRE, cuja competência é estadual); já para tribunais com jurisdição que abrange mais de um Estado (como o TRF de região composta por vários Estados), a elaboração da lista compete ao Conselho Federal da OAB, nos termos do Estatuto da Advocacia (art. 54, EAOAB, e Regulamento Geral).",
-          "explicacaoErradas": "B: incorreta, pois, para o TRF cuja jurisdição abrange mais de um Estado, a competência não é dos Conselhos Seccionais em conjunto, mas exclusivamente do Conselho Federal da OAB — não existe elaboração \"conjunta\" pelas seccionais nesse caso. C: incorreta, pois o critério legal não é a natureza federal do órgão judicial, mas a abrangência territorial de sua jurisdição; o TRE, embora integre a Justiça Eleitoral (ramo da Justiça da União), tem jurisdição circunscrita a um único Estado, o que atrai a competência do Conselho Seccional, e não do Conselho Federal. D: incorreta, pois o critério relevante não é a localização física da sede dos tribunais, mas a extensão territorial da jurisdição de cada um; o fato de ambos os tribunais estarem sediados no mesmo Estado é irrelevante para definir a competência da OAB.",
-          "pegadinha": "A banca tenta induzir o candidato a usar critérios equivocados — natureza federal do órgão ou localização da sede — quando o critério legal correto é a abrangência territorial da jurisdição do tribunal (um Estado = Seccional; mais de um Estado = Conselho Federal).",
-          "regraMemoria": "Tribunal com jurisdição em um só Estado, lista sempre do Seccional; tribunal com jurisdição em mais de um Estado, lista sempre do Conselho Federal."
         },
         {
           "territorio": "Ética",

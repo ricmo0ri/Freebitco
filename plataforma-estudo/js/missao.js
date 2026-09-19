@@ -334,6 +334,36 @@ var Missao = (function () {
     });
   }
 
+  // Mini Simulado: 1 questão de cada disciplina, na ordem embaralhada —
+  // um raio-x rápido de todas as matérias, priorizando dentro de cada
+  // uma o tema mais fraco (mesma lógica de priorizarQuestoes).
+  function iniciarMiniSimulado() {
+    Promise.all([DB.getAll('disciplinas'), DB.getAll('questoes')]).then(function (resultados) {
+      var disciplinas = resultados[0];
+      var todas = resultados[1];
+      var porDisciplina = {};
+      todas.forEach(function (q) {
+        if (!porDisciplina[q.disciplinaId]) porDisciplina[q.disciplinaId] = [];
+        porDisciplina[q.disciplinaId].push(q);
+      });
+
+      var fila = [];
+      disciplinas.forEach(function (d) {
+        var pool = porDisciplina[d.id];
+        if (!pool || !pool.length) return;
+        var escolhida = priorizarQuestoes(pool, 1)[0];
+        if (escolhida) fila.push(escolhida);
+      });
+
+      for (var i = fila.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tmp = fila[i]; fila[i] = fila[j]; fila[j] = tmp;
+      }
+
+      iniciarComFila(fila, '🧪 Mini Simulado (1 por matéria)', fila.length * 2);
+    });
+  }
+
   function refsMissao() {
     return {
       casoAbsurdo: els.caso,
@@ -591,6 +621,7 @@ var Missao = (function () {
     els.picker = document.getElementById('missao-picker');
     els.territoriosList = document.getElementById('missao-territorios-list');
     els.aleatorioBtn = document.getElementById('missao-aleatorio-btn');
+    els.miniSimuladoBtn = document.getElementById('mini-simulado-btn');
     els.preguicaBtn = document.getElementById('modo-preguica-btn');
     els.metaDiariaMini = document.getElementById('meta-diaria-mini');
     els.sessoesHojeWidget = document.getElementById('sessoes-hoje-widget');
@@ -638,6 +669,7 @@ var Missao = (function () {
     }
 
     els.aleatorioBtn.addEventListener('click', function () { iniciarMissao(null, 'Missão Aleatória'); });
+    if (els.miniSimuladoBtn) els.miniSimuladoBtn.addEventListener('click', iniciarMiniSimulado);
     els.preguicaBtn.addEventListener('click', iniciarModoPreguica);
     els.encerrarBtn.addEventListener('click', encerrarMissaoAgora);
     els.novaMissaoBtn.addEventListener('click', voltarParaPicker);

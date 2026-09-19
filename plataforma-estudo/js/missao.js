@@ -37,10 +37,19 @@ var Missao = (function () {
       resultado.push(q);
     });
 
-    var i2 = 0;
-    while (resultado.length < quantidade && questoes.length > 0 && i2 < 200) {
-      resultado.push(questoes[i2 % questoes.length]);
-      i2++;
+    // Se o poço (já sem repetição) não deu pra preencher a quantidade
+    // pedida, completa repetindo — mas sorteando a ordem de novo a cada
+    // volta, em vez de sempre ciclar 0,1,2... na mesma ordem fixa (o que
+    // fazia a sessão parecer sempre igual quando o tema tinha poucas
+    // questões cadastradas).
+    while (resultado.length < quantidade && pesadas.length > 0) {
+      for (var k = pesadas.length - 1; k > 0; k--) {
+        var jk = Math.floor(Math.random() * (k + 1));
+        var tk = pesadas[k]; pesadas[k] = pesadas[jk]; pesadas[jk] = tk;
+      }
+      for (var p = 0; p < pesadas.length && resultado.length < quantidade; p++) {
+        resultado.push(pesadas[p]);
+      }
     }
     return resultado;
   }
@@ -325,10 +334,24 @@ var Missao = (function () {
       var filtradas = temas && temas.length
         ? questoes.filter(function (q) { return temas.indexOf(q.tema || 'Geral') !== -1; })
         : [];
-      var pool = filtradas.length > 0 ? filtradas : questoes;
 
       var minutos = Timer.getSelectedMinutes();
       var quantidade = MINUTOS_PARA_QUESTOES[minutos] || 6;
+
+      // Poço do assunto vazio: usa o território inteiro. Poço pequeno
+      // (menor que a quantidade da missão): mistura o resto do território
+      // pra não repetir sempre a mesma meia dúzia de questões enquanto o
+      // assunto específico não tem conteúdo suficiente cadastrado.
+      var pool;
+      if (filtradas.length === 0) {
+        pool = questoes;
+      } else if (filtradas.length >= quantidade) {
+        pool = filtradas;
+      } else {
+        var resto = questoes.filter(function (q) { return filtradas.indexOf(q) === -1; });
+        pool = filtradas.concat(resto);
+      }
+
       var fila = priorizarQuestoes(pool, quantidade);
       iniciarComFila(fila, label, minutos);
     });
@@ -683,6 +706,7 @@ var Missao = (function () {
     renderTerritorios: renderTerritorios,
     calcularXp: calcularXp,
     registrarResposta: registrarResposta,
+    priorizarQuestoes: priorizarQuestoes,
     iniciarComFila: iniciarComFila,
     iniciarMissao: iniciarMissao,
     iniciarMissaoPorTemas: iniciarMissaoPorTemas

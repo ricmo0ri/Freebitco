@@ -4,7 +4,7 @@
 // chefões por tema, XP/combo e estatística de fraquezas — não é um passo à
 // parte, é como o motor de questões já funciona pra qualquer questão.
 var QuestoesSeed = (function () {
-  var SEED_VERSION_ATUAL = 17;
+  var SEED_VERSION_ATUAL = 18;
 
   var PROVAS = [
     {
@@ -29826,10 +29826,10 @@ var QuestoesSeed = (function () {
         }
       ],
       "respostaCorreta": 0,
-      "explicacaoCorreta": "A alternativa correta é a A. O caso descreve lesão (art. 157, CC): João, sob premente necessidade de dinheiro para quitar dívidas, vendeu bem valioso por preço manifestamente desproporcional ao primeiro comprador que apareceu. Sendo a lesão vício que gera anulabilidade (não nulidade), o negócio é válido e produz efeitos regulares desde a celebração até eventual decisão judicial que o desconstitua (arts. 171 e 177, CC) — o anulável não é natimorto, vale até ser anulado.",
+      "explicacaoCorreta": "A alternativa correta é a A. O caso descreve lesão (art. 157, CC): João, sob premente necessidade de dinheiro para quitar dívidas, vendeu bem valioso por preço manifestamente desproporcional ao primeiro comprador que apareceu. Sendo a lesão vício que gera anulabilidade (não nulidade), o negócio é válido e produz efeitos regulares desde a celebração até eventual decisão judicial que o desconstitua (arts. 171 e 177, CC) — o anulável não é natimorto, vale até ser anulado. Vale registrar que o caso é discutido na doutrina: o desconhecimento da autenticidade/valor da obra por ambas as partes também lembra o erro substancial sobre o objeto (arts. 138-139, CC). O que pesa a favor da lesão é o nexo entre a necessidade premente de dinheiro de João e a venda por preço muito abaixo do real — o motivo da venda ruim foi a urgência, não uma crença específica e equivocada sobre a pintura.",
       "explicacaoErradas": "B está errada porque o direito de pleitear a invalidação por vício de consentimento (fosse erro, fosse lesão) está sujeito a prazo decadencial de 4 anos (art. 178, II, CC), não sendo imprescritível. C está errada porque a lesão, ao contrário do dolo, não exige prova de que a outra parte quis se aproveitar da situação (dolo de aproveitamento); basta a desproporção manifesta somada ao estado de necessidade ou inexperiência do lesado (art. 157, caput). D está errada porque, havendo oferta de suplemento suficiente pelo comprador, a lei determina que 'não se decretará a anulação do negócio' (art. 157, §2º) — não se trata de uma escolha de João entre aceitar ou anular, mas de um impedimento legal à anulação.",
-      "pegadinha": "A banca tenta fazer o candidato confundir lesão com erro (pensando em prazo diferente ou em exigência de conluio do comprador) e também tenta fazer parecer que o negócio anulável já nasce sem efeitos, quando na verdade ele vale até ser desconstituído.",
-      "regraMemoria": "Lesão = desproporção + necessidade/inexperiência, sem precisar provar má-fé do outro; e negócio anulável vale até cair (não é nulo de pleno direito)."
+      "pegadinha": "A banca tenta fazer o candidato confundir lesão com erro (pensando em prazo diferente ou em exigência de conluio do comprador) e também tenta fazer parecer que o negócio anulável já nasce sem efeitos, quando na verdade ele vale até ser desconstituído. Atenção: o próprio enunciado é ambíguo entre os dois institutos — não trate este caso como modelo único para diferenciar lesão de erro; o que resolve a favor da lesão aqui é o nexo entre a necessidade de dinheiro de João e a desproporção, não a mera ausência de conhecimento sobre a pintura.",
+      "regraMemoria": "Lesão = desproporção (aferida pelos valores da época do negócio, art. 157, §1º) + necessidade/inexperiência de quem vende, sem precisar provar má-fé do outro; negócio anulável vale até cair. Se a venda ruim veio da urgência por dinheiro, pense em lesão; se veio de uma crença errada sobre uma qualidade essencial do bem, pense em erro (arts. 138-139, CC) — o mesmo fato pode admitir leituras diferentes, por isso não fixe este caso como único exemplo da distinção."
     },
     {
       "territorio": "Direito Civil",

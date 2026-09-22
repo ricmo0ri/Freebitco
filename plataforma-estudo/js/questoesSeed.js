@@ -4,7 +4,7 @@
 // chefões por tema, XP/combo e estatística de fraquezas — não é um passo à
 // parte, é como o motor de questões já funciona pra qualquer questão.
 var QuestoesSeed = (function () {
-  var SEED_VERSION_ATUAL = 16;
+  var SEED_VERSION_ATUAL = 17;
 
   var PROVAS = [
     {
@@ -31935,7 +31935,7 @@ var QuestoesSeed = (function () {
       "explicacaoCorreta": "A alternativa correta é a A. Tratando-se de servidor que ocupava exclusivamente cargo em comissão, o prazo prescricional da pretensão de aplicar as sanções da Lei nº 8.429/92 (redação vigente à época dos fatos) é de 5 anos, contados do término do exercício do cargo (art. 23, I). Segundo a jurisprudência do STJ, o terceiro (particular ou pessoa jurídica) que atua em conluio com o agente público se submete ao mesmo prazo prescricional aplicável a este. Como o prazo só começou a correr com a demissão de Garibaldo (abril/2019), e a ação já havia sido ajuizada em janeiro/2019, não há prescrição para nenhum dos réus.",
       "explicacaoErradas": "B está errada porque, para agente exclusivamente comissionado, o prazo não se conta da data da conduta, mas do término do exercício do cargo em comissão (art. 23, I, Lei nº 8.429/92, redação da época). C está errada pelo mesmo motivo: o prazo aplicável ao terceiro (Espertinha) acompanha o do agente público com quem agiu, e não corre isoladamente da data do ato. D está errada porque pessoas jurídicas que concorrem para a prática de ato de improbidade, ou dele se beneficiam, também respondem pela Lei nº 8.429/92 e podem sofrer suas sanções, inclusive a proibição de contratar com o Poder Público.",
       "pegadinha": "A pegadinha é tentar fazer contar o prazo prescricional a partir da data do ato de improbidade (2013), o que levaria à prescrição em 2018/2019 — mas, por se tratar de agente exclusivamente comissionado, o termo inicial é o fim do exercício do cargo (2019), e o terceiro segue esse mesmo marco.",
-      "regraMemoria": "Comissionado só perde o cargo em 2019? O relógio da prescrição da improbidade só começa a contar aí — e o particular que agiu junto 'anda' pelo mesmo relógio."
+      "regraMemoria": "Comissionado só perde o cargo em 2019? O relógio da prescrição da improbidade só começa a contar aí — e o particular que agiu junto 'anda' pelo mesmo relógio. (Atenção: essa é a regra de prescrição da redação ORIGINAL da Lei 8.429/92, vigente à época dos fatos desta questão — a Lei 14.230/2021 mudou o regime do art. 23 para um prazo geral de até 8 anos da ocorrência do fato.)"
     },
     {
       "territorio": "Direito Administrativo",
@@ -38642,10 +38642,10 @@ var QuestoesSeed = (function () {
         }
       ],
       "respostaCorreta": 2,
-      "explicacaoCorreta": "A alternativa correta é a C. O Estado agiu erradamente ao fundamentar a contratação em inexigibilidade de licitação, hipótese reservada aos casos de inviabilidade de competição (art. 25 da Lei nº 8.666/93). No caso, há diversas empresas aptas a executar a obra, logo a competição é viável. A hipótese correta era a dispensa de licitação por emergência (art. 24, IV, da Lei nº 8.666/93), cabível diante de situação que possa causar prejuízo ou comprometer a segurança de pessoas e bens, desde que observados os trâmites legais, como a instauração de processo administrativo justificando a urgência, o que efetivamente ocorreu no caso.",
+      "explicacaoCorreta": "A alternativa correta é a C. O Estado agiu erradamente ao fundamentar a contratação em inexigibilidade de licitação, hipótese reservada aos casos de inviabilidade de competição (à época da prova, art. 25 da Lei nº 8.666/93; hoje, o equivalente é o art. 74 da Lei nº 14.133/2021, já que a Lei 8.666/93 foi totalmente revogada a partir de 30/12/2023). No caso, há diversas empresas aptas a executar a obra, logo a competição é viável. A hipótese correta era a dispensa de licitação por emergência (à época, art. 24, IV, da Lei nº 8.666/93; hoje, art. 75, VIII, da Lei nº 14.133/2021), cabível diante de situação que possa causar prejuízo ou comprometer a segurança de pessoas e bens, desde que observados os trâmites legais, como a instauração de processo administrativo justificando a urgência, o que efetivamente ocorreu no caso.",
       "explicacaoErradas": "A está errada porque não há 'impossibilidade fática' de licitação: a competição entre empresas de construção civil é plenamente viável, apenas a urgência da situação justifica dispensar o certame (dispensa), e não a inexigibilidade (que pressupõe inviabilidade de competição). B está errada pelo mesmo motivo: mesmo reconhecendo a urgência, ela erra a classificação do resultado (não foi correto usar inexigibilidade), e a expressão 'corretamente' não se sustenta diante do enquadramento jurídico equivocado feito pelo Estado. D está errada porque a licitação prévia não era obrigatória na espécie, já que as circunstâncias de urgência e risco à segurança pública autorizavam legalmente a dispensa de licitação, dispensando-a legitimamente (só que por outro fundamento, dispensa, e não inexigibilidade).",
-      "pegadinha": "A pegadinha é confundir dispensa com inexigibilidade: a situação de urgência/emergência (risco de rebelião) é hipótese clássica de dispensa (art. 24, IV), pois a competição continua sendo viável; a inexigibilidade (art. 25) só cabe quando a competição é inviável, o que não é o caso de uma obra de construção civil comum.",
-      "regraMemoria": "Emergência com competição possível = dispensa (art. 24, IV); competição impossível = inexigibilidade (art. 25). Emergência nunca é motivo de inexigibilidade."
+      "pegadinha": "A pegadinha é confundir dispensa com inexigibilidade: a situação de urgência/emergência (risco de rebelião) é hipótese clássica de dispensa (hoje art. 75, VIII, da Lei 14.133/2021 — à época da prova, art. 24, IV, da já revogada Lei 8.666/93), pois a competição continua sendo viável; a inexigibilidade (hoje art. 74 da Lei 14.133/2021, à época art. 25 da Lei 8.666/93) só cabe quando a competição é inviável, o que não é o caso de uma obra de construção civil comum.",
+      "regraMemoria": "Emergência com competição possível = dispensa (hoje art. 75, VIII, da Lei 14.133/2021); competição impossível = inexigibilidade (hoje art. 74 da mesma lei). Emergência nunca é motivo de inexigibilidade — e atenção: a Lei 8.666/93, citada no enunciado desta questão (prova de 2019), foi totalmente revogada desde 30/12/2023."
     },
     {
       "territorio": "Direito Administrativo",
@@ -40103,11 +40103,25 @@ var QuestoesSeed = (function () {
           // de origem muda, não só a primeira vez que o campo é escrito.
           // Não há UI de edição manual desses campos pra questões
           // pré-cadastradas, então sobrescrever é seguro.
+          // Cada campo pedagógico é sincronizado de forma independente —
+          // uma correção pode mexer só na regraMemoria ou só na pegadinha
+          // (ex.: acrescentar uma ressalva sobre lei revogada) sem tocar em
+          // explicacaoCorreta, e antes isso não disparava a sincronização
+          // pra quem já tinha a questão salva com o texto antigo.
           if (q.explicacaoCorreta && q.explicacaoCorreta !== existente.explicacaoCorreta) {
             existente.explicacaoCorreta = q.explicacaoCorreta;
-            existente.explicacaoErradas = q.explicacaoErradas || '';
-            existente.pegadinha = q.pegadinha || '';
-            existente.regraMemoria = q.regraMemoria || '';
+            mudou = true;
+          }
+          if (q.explicacaoErradas && q.explicacaoErradas !== existente.explicacaoErradas) {
+            existente.explicacaoErradas = q.explicacaoErradas;
+            mudou = true;
+          }
+          if (q.pegadinha && q.pegadinha !== existente.pegadinha) {
+            existente.pegadinha = q.pegadinha;
+            mudou = true;
+          }
+          if (q.regraMemoria && q.regraMemoria !== existente.regraMemoria) {
+            existente.regraMemoria = q.regraMemoria;
             mudou = true;
           }
           if (q.tema && q.tema !== existente.tema) {

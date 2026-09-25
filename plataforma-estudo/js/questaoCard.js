@@ -16,6 +16,15 @@ var QuestaoCard = (function () {
       : questao.respostaCorreta;
   }
 
+  // Texto efetivo de um campo pedagógico (explicacaoCorreta ou
+  // explicacaoErradas) — a edição manual do usuário, se houver, prevalece
+  // sobre o texto original do banco.
+  function textoEfetivo(questao, campo) {
+    var edicao = questao.explicacaoManual;
+    if (edicao && typeof edicao[campo] === 'string') return edicao[campo];
+    return questao[campo];
+  }
+
   function render(refs, questao, onSelect) {
     refs.casoAbsurdo.hidden = !questao.casoAbsurdo;
     if (questao.casoAbsurdo) refs.casoAbsurdo.textContent = questao.casoAbsurdo;
@@ -69,15 +78,20 @@ var QuestaoCard = (function () {
 
     refs.metodo.innerHTML = '';
 
+    var explicacaoCorretaEfetiva = textoEfetivo(questao, 'explicacaoCorreta');
+    var explicacaoErradasEfetiva = textoEfetivo(questao, 'explicacaoErradas');
+    var explicacaoFoiEditada = !!(questao.explicacaoManual &&
+      (typeof questao.explicacaoManual.explicacaoCorreta === 'string' || typeof questao.explicacaoManual.explicacaoErradas === 'string'));
+
     var linhas = [];
     if (correcao) {
       linhas.push('🔧 Você corrigiu o gabarito desta questão: a alternativa certa passou a ser ' +
         questao.alternativas[respostaEfetiva].letra + '.' +
         (correcao.nota ? ' Sua nota: ' + correcao.nota : '') +
-        ' (as explicações abaixo ainda são as originais, escritas para o gabarito antes da sua correção.)');
+        (explicacaoFoiEditada ? '' : ' (as explicações abaixo ainda são as originais, escritas para o gabarito antes da sua correção.)'));
     }
-    if (questao.explicacaoCorreta) linhas.push('✅ Por que a correta está certa: ' + questao.explicacaoCorreta);
-    if (questao.explicacaoErradas) linhas.push('❌ Por que as outras estão erradas: ' + questao.explicacaoErradas);
+    if (explicacaoCorretaEfetiva) linhas.push('✅ Por que a correta está certa: ' + explicacaoCorretaEfetiva);
+    if (explicacaoErradasEfetiva) linhas.push('❌ Por que as outras estão erradas: ' + explicacaoErradasEfetiva);
     if (!acertou && questao.pegadinha) linhas.push('🧨 A pegadinha: ' + questao.pegadinha);
     if (questao.regraMemoria) linhas.push('🧠 Para guardar: ' + questao.regraMemoria);
 
@@ -90,12 +104,13 @@ var QuestaoCard = (function () {
       });
     }
 
-    // A correção manual de gabarito só faz sentido para questões reais do
-    // banco (com id gravado no IndexedDB) — as questões da Lei Seca são
-    // montadas na hora, embaralhadas a cada rodada, sem gabarito fixo pra
-    // corrigir.
+    // A correção manual de gabarito e a edição da explicação só fazem
+    // sentido para questões reais do banco (com id gravado no IndexedDB) —
+    // as questões da Lei Seca são montadas na hora, embaralhadas a cada
+    // rodada, sem gabarito ou explicação fixos pra corrigir.
     if (questao.id) {
       renderCorrecaoManual(refs, questao, selectedIndex, critico);
+      renderEdicaoExplicacao(refs, questao, selectedIndex, critico);
     }
 
     return acertou;
@@ -208,6 +223,123 @@ var QuestaoCard = (function () {
         nota: nota.value.trim(),
         data: new Date().toISOString()
       };
+      DB.put('questoes', questao).then(aoConcluir);
+    });
+
+    var cancelarBtn = document.createElement('button');
+    cancelarBtn.type = 'button';
+    cancelarBtn.className = 'btn btn-ghost';
+    cancelarBtn.textContent = 'Cancelar';
+    cancelarBtn.addEventListener('click', aoConcluir);
+
+    acoes.appendChild(salvarBtn);
+    acoes.appendChild(cancelarBtn);
+    form.appendChild(acoes);
+
+    return form;
+  }
+
+  // Painel de edição manual do "porquê" (por que a correta está certa /
+  // por que as outras estão erradas), anexado depois do painel de
+  // correção de gabarito. Guarda a edição em questao.explicacaoManual (só
+  // os campos que o usuário de fato mudou) e grava no IndexedDB — a partir
+  // daí, futuras atualizações do banco de questões não sobrescrevem mais
+  // esse(s) campo(s) desta questão.
+  function renderEdicaoExplicacao(refs, questao, selectedIndex, critico) {
+    var wrap = document.createElement('div');
+    wrap.className = 'correcao-manual';
+
+    function refazer() {
+      showFeedback(refs, questao, selectedIndex, critico);
+    }
+
+    var edicao = questao.explicacaoManual;
+    if (!edicao || (typeof edicao.explicacaoCorreta !== 'string' && typeof edicao.explicacaoErradas !== 'string')) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'btn-link';
+      btn.textContent = '✏️ Editar por que a resposta está certa ou errada';
+      btn.addEventListener('click', function () {
+        wrap.innerHTML = '';
+        wrap.appendChild(montarFormularioExplicacao(questao, refazer));
+      });
+      wrap.appendChild(btn);
+    } else {
+      var atual = document.createElement('p');
+      atual.className = 'correcao-manual-atual';
+      atual.textContent = '✏️ Você editou a explicação desta questão.';
+      wrap.appendChild(atual);
+
+      var acoes = document.createElement('div');
+      acoes.className = 'correcao-manual-acoes';
+
+      var editarBtn = document.createElement('button');
+      editarBtn.type = 'button';
+      editarBtn.className = 'btn-link';
+      editarBtn.textContent = 'Editar';
+      editarBtn.addEventListener('click', function () {
+        wrap.innerHTML = '';
+        wrap.appendChild(montarFormularioExplicacao(questao, refazer));
+      });
+
+      var removerBtn = document.createElement('button');
+      removerBtn.type = 'button';
+      removerBtn.className = 'btn-link';
+      removerBtn.textContent = 'Remover edição';
+      removerBtn.addEventListener('click', function () {
+        delete questao.explicacaoManual;
+        DB.put('questoes', questao).then(refazer);
+      });
+
+      acoes.appendChild(editarBtn);
+      acoes.appendChild(removerBtn);
+      wrap.appendChild(acoes);
+    }
+
+    refs.metodo.appendChild(wrap);
+  }
+
+  function montarFormularioExplicacao(questao, aoConcluir) {
+    var form = document.createElement('div');
+    form.className = 'correcao-manual-form';
+
+    var valorOriginalCorreta = textoEfetivo(questao, 'explicacaoCorreta') || '';
+    var valorOriginalErradas = textoEfetivo(questao, 'explicacaoErradas') || '';
+
+    var labelCorreta = document.createElement('label');
+    labelCorreta.textContent = 'Por que a correta está certa';
+    form.appendChild(labelCorreta);
+    var campoCorreta = document.createElement('textarea');
+    campoCorreta.rows = 3;
+    campoCorreta.value = valorOriginalCorreta;
+    form.appendChild(campoCorreta);
+
+    var labelErradas = document.createElement('label');
+    labelErradas.textContent = 'Por que as outras estão erradas';
+    form.appendChild(labelErradas);
+    var campoErradas = document.createElement('textarea');
+    campoErradas.rows = 3;
+    campoErradas.value = valorOriginalErradas;
+    form.appendChild(campoErradas);
+
+    var acoes = document.createElement('div');
+    acoes.className = 'correcao-manual-acoes';
+
+    var salvarBtn = document.createElement('button');
+    salvarBtn.type = 'button';
+    salvarBtn.className = 'btn btn-primary';
+    salvarBtn.textContent = 'Salvar explicação';
+    salvarBtn.addEventListener('click', function () {
+      var novaCorreta = campoCorreta.value.trim();
+      var novaErradas = campoErradas.value.trim();
+      // Só grava como edição manual o(s) campo(s) que o usuário de fato
+      // mudou — se ele só mexeu num dos dois, o outro continua livre pra
+      // receber correções futuras do banco de questões.
+      if (novaCorreta !== valorOriginalCorreta || novaErradas !== valorOriginalErradas) {
+        questao.explicacaoManual = questao.explicacaoManual || {};
+        if (novaCorreta !== valorOriginalCorreta) questao.explicacaoManual.explicacaoCorreta = novaCorreta;
+        if (novaErradas !== valorOriginalErradas) questao.explicacaoManual.explicacaoErradas = novaErradas;
+      }
       DB.put('questoes', questao).then(aoConcluir);
     });
 

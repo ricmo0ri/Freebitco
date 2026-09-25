@@ -40107,12 +40107,18 @@ var QuestoesSeed = (function () {
           // uma correção pode mexer só na regraMemoria ou só na pegadinha
           // (ex.: acrescentar uma ressalva sobre lei revogada) sem tocar em
           // explicacaoCorreta, e antes isso não disparava a sincronização
-          // pra quem já tinha a questão salva com o texto antigo.
-          if (q.explicacaoCorreta && q.explicacaoCorreta !== existente.explicacaoCorreta) {
+          // pra quem já tinha a questão salva com o texto antigo. Mas se o
+          // usuário já editou manualmente o "porquê" (explicacaoManual), a
+          // versão dele prevalece pro campo editado — igual ao que já
+          // acontece com o gabarito corrigido manualmente.
+          var explicacaoManual = existente.explicacaoManual || {};
+          if (typeof explicacaoManual.explicacaoCorreta !== 'string' &&
+              q.explicacaoCorreta && q.explicacaoCorreta !== existente.explicacaoCorreta) {
             existente.explicacaoCorreta = q.explicacaoCorreta;
             mudou = true;
           }
-          if (q.explicacaoErradas && q.explicacaoErradas !== existente.explicacaoErradas) {
+          if (typeof explicacaoManual.explicacaoErradas !== 'string' &&
+              q.explicacaoErradas && q.explicacaoErradas !== existente.explicacaoErradas) {
             existente.explicacaoErradas = q.explicacaoErradas;
             mudou = true;
           }

@@ -40131,8 +40131,11 @@ var QuestoesSeed = (function () {
           // Corrige o próprio gabarito (respostaCorreta) quando uma revisão
           // encontra um erro de digitação/transcrição do gabarito oficial —
           // do contrário quem já respondeu essa questão continuaria vendo a
-          // alternativa errada marcada como certa para sempre.
-          if (typeof q.respostaCorreta === 'number' && q.respostaCorreta !== existente.respostaCorreta) {
+          // alternativa errada marcada como certa para sempre. Mas se o
+          // usuário já corrigiu esse gabarito manualmente (correcaoManual),
+          // a escolha dele prevalece e futuras atualizações daqui não a
+          // sobrescrevem.
+          if (!existente.correcaoManual && typeof q.respostaCorreta === 'number' && q.respostaCorreta !== existente.respostaCorreta) {
             existente.respostaCorreta = q.respostaCorreta;
             mudou = true;
           }

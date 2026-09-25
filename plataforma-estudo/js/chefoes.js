@@ -128,7 +128,7 @@ var Chefoes = (function () {
   function confirmarGolpe() {
     if (!batalhaAtual || batalhaAtual.selecionado === null) return;
     var questao = batalhaAtual.questaoAtual;
-    var acertou = batalhaAtual.selecionado === questao.respostaCorreta;
+    var acertou = batalhaAtual.selecionado === QuestaoCard.respostaCorreta(questao);
     var resultado = Missao.calcularXp(questao, acertou);
     Missao.registrarResposta(questao, acertou, resultado);
 

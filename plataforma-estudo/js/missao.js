@@ -451,7 +451,7 @@ var Missao = (function () {
 
   function confirmarQuestaoAtual(questao) {
     if (sessao.selecionado === null) return;
-    var acertou = sessao.selecionado === questao.respostaCorreta;
+    var acertou = sessao.selecionado === QuestaoCard.respostaCorreta(questao);
     var comboAntes = sessao.combo;
     var resultado = calcularXp(questao, acertou);
 
@@ -609,7 +609,7 @@ var Missao = (function () {
   function confirmarPreguica(questoes) {
     if (preguicaAtual.selecionado === null) return;
     var questao = preguicaAtual.questao;
-    var acertou = preguicaAtual.selecionado === questao.respostaCorreta;
+    var acertou = preguicaAtual.selecionado === QuestaoCard.respostaCorreta(questao);
     var xp = calcularXp(questao, acertou);
     registrarResposta(questao, acertou, xp);
 

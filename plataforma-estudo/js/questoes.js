@@ -192,7 +192,7 @@ var Questoes = (function () {
 
   function confirmar() {
     if (selectedAltIndex === null || !currentQuestao) return;
-    var acertou = selectedAltIndex === currentQuestao.respostaCorreta;
+    var acertou = selectedAltIndex === QuestaoCard.respostaCorreta(currentQuestao);
     var resultado = Missao.calcularXp(currentQuestao, acertou);
     Missao.registrarResposta(currentQuestao, acertou, resultado);
 

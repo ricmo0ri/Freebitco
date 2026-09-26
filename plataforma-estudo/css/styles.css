@@ -1583,6 +1583,12 @@ body.low-stim .conquista-toast.toast-entrando { transform: translate(-50%, 0); }
   font-size: 0.95rem;
   color: var(--ink-soft);
 }
+.exame-countdown-aviso {
+  margin: 10px 0 0;
+  font-size: 0.85rem;
+  color: var(--oxblood);
+  font-weight: 700;
+}
 .exame-countdown-lista {
   list-style: none;
   margin: 0;

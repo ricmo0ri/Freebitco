@@ -125,7 +125,7 @@ var ImportarDoutrina = (function () {
     }
     var disciplinaId = Doutrina.getDisciplinaId();
     if (!disciplinaId) {
-      els.status.textContent = 'Abra um território antes de importar.';
+      els.status.textContent = 'Abra uma disciplina antes de importar.';
       return;
     }
 

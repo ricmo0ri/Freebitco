@@ -38,7 +38,7 @@ var Historia = (function () {
     Storage.write(Storage.KEYS.historiaTerritoriosVistos, vistos);
     if (!lore) return;
 
-    var nomeExibicao = disciplina.territorio || disciplina.nome;
+    var nomeExibicao = disciplina.nome;
     abrirOverlay('📜 ' + nomeExibicao, lore.abertura, 'Entendi, vamos estudar!');
   }
 
@@ -60,7 +60,7 @@ var Historia = (function () {
     Storage.write(Storage.KEYS.reinosLibertados, libertados);
 
     var lore = HistoriaSeed.LORE[d.nome];
-    var nomeExibicao = d.territorio || d.nome;
+    var nomeExibicao = d.nome;
     var mensagem = '🗺️ Reino libertado: ' + nomeExibicao + '! ' + (lore ? lore.liberado : '');
     if (window.Bemestar) Bemestar.mostrarToastConquista(mensagem);
 

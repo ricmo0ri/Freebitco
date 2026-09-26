@@ -171,7 +171,7 @@ var Disciplinas = (function () {
       if (disciplinas.length === 0) {
         var empty = document.createElement('p');
         empty.className = 'empty-state';
-        empty.textContent = 'Nenhum território ainda. Adicione o primeiro acima.';
+        empty.textContent = 'Nenhuma disciplina ainda. Adicione a primeira acima.';
         els.list.appendChild(empty);
         return;
       }
@@ -181,7 +181,7 @@ var Disciplinas = (function () {
         var open = document.createElement('button');
         open.type = 'button';
         open.className = 'item-text disciplina-open-btn';
-        preencherComMedalha(open, disciplina.icone, disciplina.territorio || disciplina.nome, disciplina.cor);
+        preencherComMedalha(open, disciplina.icone, disciplina.nome, disciplina.cor);
         if (window.PrioridadeOab) {
           var badgePrioridade = PrioridadeOab.criarBadge(PrioridadeOab.getPrioridadeTerritorio(disciplina.nome));
           if (badgePrioridade) open.appendChild(badgePrioridade);
@@ -208,7 +208,7 @@ var Disciplinas = (function () {
   function openDisciplina(disciplina) {
     els.listView.hidden = true;
     els.detailView.hidden = false;
-    preencherComMedalha(els.detailTitle, disciplina.icone, disciplina.territorio || disciplina.nome, disciplina.cor);
+    preencherComMedalha(els.detailTitle, disciplina.icone, disciplina.nome, disciplina.cor);
     if (disciplina.cor) {
       els.detailTitle.style.setProperty('--accent-territorio', disciplina.cor);
     } else {

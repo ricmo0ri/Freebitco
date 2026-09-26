@@ -78,9 +78,9 @@
         <div id="continuar-missao-box" class="continuar-missao-box" hidden>
           <button id="continuar-missao-btn" class="btn btn-primary"></button>
         </div>
-        <button id="escolher-outro-toggle" type="button" class="link-button">🔀 Quero escolher outro território</button>
+        <button id="escolher-outro-toggle" type="button" class="link-button">🔀 Quero escolher outra disciplina</button>
         <div id="escolher-outro-painel" hidden>
-          <h3 class="section-subtitle">Escolha um território</h3>
+          <h3 class="section-subtitle">Escolha uma disciplina</h3>
           <button id="missao-aleatorio-btn" class="btn btn-primary missao-aleatorio-btn">🎲 Missão aleatória (prioriza fraquezas)</button>
           <button id="mini-simulado-btn" class="btn btn-secondary missao-aleatorio-btn">🧪 Mini Simulado (1 questão por matéria)</button>
           <ul id="missao-territorios-list" class="simple-list territorios-list"></ul>
@@ -135,15 +135,15 @@
       </div>
     </section>
 
-    <!-- TERRITÓRIO (DISCIPLINAS: FLASHCARDS + QUESTÕES + CHEFÃO) -->
+    <!-- DISCIPLINAS (FLASHCARDS + QUESTÕES + CHEFÃO) -->
     <section id="view-estudo" class="view" data-view="estudo">
 
       <div id="disciplinas-list-view">
-        <h2 class="view-title">Territórios</h2>
+        <h2 class="view-title">Disciplinas</h2>
 
         <form id="disciplina-form" class="inline-form">
-          <label for="disciplina-input" class="visually-hidden">Novo território</label>
-          <input id="disciplina-input" type="text" placeholder="Novo território/disciplina..." required>
+          <label for="disciplina-input" class="visually-hidden">Nova disciplina</label>
+          <input id="disciplina-input" type="text" placeholder="Nova disciplina..." required>
           <button type="submit" class="btn btn-primary">Adicionar</button>
         </form>
 
@@ -153,11 +153,11 @@
       </div>
 
       <div id="importar-prova-view" hidden>
-        <button id="importar-prova-voltar" class="btn btn-ghost back-btn">&larr; Territórios</button>
+        <button id="importar-prova-voltar" class="btn btn-ghost back-btn">&larr; Disciplinas</button>
         <h2 class="view-title">📥 Importar prova em PDF</h2>
         <p class="hint-text">
           Funciona com PDFs de prova com texto selecionável (não escaneados). A extração é automática, mas
-          a classificação por disciplina não é — você escolhe o território de cada questão na revisão abaixo.
+          a classificação por disciplina não é — você escolhe a disciplina de cada questão na revisão abaixo.
         </p>
 
         <form id="importar-form" class="import-panel">
@@ -176,15 +176,15 @@
           <label for="importar-prova-origem">Prova de origem (aplicada a todas)</label>
           <input id="importar-prova-origem" type="text">
           <h3>Revise antes de importar</h3>
-          <p class="hint-text">Desmarque o que não quiser importar, e escolha o território de cada questão.</p>
+          <p class="hint-text">Desmarque o que não quiser importar, e escolha a disciplina de cada questão.</p>
           <ul id="importar-revisao-lista" class="simple-list import-lista"></ul>
           <button id="importar-confirmar-btn" class="btn btn-primary">Importar questões selecionadas</button>
         </div>
       </div>
 
       <div id="disciplina-detail-view" hidden>
-        <button id="back-to-disciplinas" class="btn btn-ghost back-btn">&larr; Territórios</button>
-        <h2 class="view-title" id="disciplina-detail-title">Território</h2>
+        <button id="back-to-disciplinas" class="btn btn-ghost back-btn">&larr; Disciplinas</button>
+        <h2 class="view-title" id="disciplina-detail-title">Disciplina</h2>
 
         <div class="subtab-bar" role="tablist">
           <button class="subtab-btn active" data-subtab="flashcards">Flashcards</button>
@@ -371,7 +371,7 @@
             <div id="leiseca-subtema-lista" class="subtema-picker-lista"></div>
           </div>
           <div class="card-panel" id="leiseca-panel">
-            <p id="leiseca-empty" class="empty-state">Nenhum dispositivo de lei seca cadastrado ainda para este território.</p>
+            <p id="leiseca-empty" class="empty-state">Nenhum dispositivo de lei seca cadastrado ainda para esta disciplina.</p>
             <div id="leiseca-card" class="flashcard" hidden>
               <button id="leiseca-trocar-assunto" class="btn btn-secondary" hidden>🔀 Trocar assunto</button>
               <p class="flashcard-label" id="leiseca-origem"></p>
@@ -393,7 +393,7 @@
             Antes de encarar questões e lei seca, um resumo bem simples de cada assunto — como se alguém estivesse
             te explicando do zero, com um exemplo fácil de lembrar.
           </p>
-          <p id="resumo-facil-empty" class="empty-state">Nenhum resumo fácil cadastrado ainda para este território.</p>
+          <p id="resumo-facil-empty" class="empty-state">Nenhum resumo fácil cadastrado ainda para esta disciplina.</p>
           <div id="resumo-facil-list"></div>
         </div>
       </div>
@@ -528,7 +528,7 @@
 
   <nav class="tabbar" id="tabbar">
     <button class="tab-btn active" data-view="missao" aria-pressed="true">🎮 Missão</button>
-    <button class="tab-btn" data-view="estudo" aria-pressed="false">🗺️ Território</button>
+    <button class="tab-btn" data-view="estudo" aria-pressed="false">📚 Disciplinas</button>
     <button class="tab-btn" data-view="tarefas" aria-pressed="false">Tarefas</button>
     <button class="tab-btn" data-view="progresso" aria-pressed="false">🏅 Perfil</button>
   </nav>

@@ -210,12 +210,12 @@ var ImportarProva = (function () {
         select.className = 'import-disciplina';
         var optPadrao = document.createElement('option');
         optPadrao.value = '';
-        optPadrao.textContent = '— escolher território —';
+        optPadrao.textContent = '— escolher disciplina —';
         select.appendChild(optPadrao);
         disciplinas.forEach(function (d) {
           var opt = document.createElement('option');
           opt.value = d.id;
-          opt.textContent = (d.icone || '📖') + ' ' + (d.territorio || d.nome);
+          opt.textContent = (d.icone || '📖') + ' ' + d.nome;
           select.appendChild(opt);
         });
 
@@ -265,7 +265,7 @@ var ImportarProva = (function () {
 
     Promise.all(pendentes).then(function () {
       els.status.textContent = pendentes.length + ' questões importadas.' +
-        (puladasSemTerritorio ? ' ' + puladasSemTerritorio + ' puladas por falta de território escolhido.' : '');
+        (puladasSemTerritorio ? ' ' + puladasSemTerritorio + ' puladas por falta de disciplina escolhida.' : '');
       els.revisaoPanel.hidden = true;
       if (window.Missao) Missao.renderTerritorios();
     });

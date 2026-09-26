@@ -113,12 +113,12 @@ var Fraquezas = (function () {
       var respostasDoTerritorio = todasRespostas.filter(function (r) { return r.disciplinaId === d.id; });
       if (respostasDoTerritorio.length === 0) {
         return {
-          disciplinaId: d.id, nome: d.territorio || d.nome, icone: d.icone, cor: d.cor,
+          disciplinaId: d.id, nome: d.nome, icone: d.icone, cor: d.cor,
           total: 0, pct: 0, status: 'sem_dados', emoji: '⚪', label: 'Sem dados ainda'
         };
       }
       var info = classificar(respostasDoTerritorio);
-      return Object.assign({ disciplinaId: d.id, nome: d.territorio || d.nome, icone: d.icone, cor: d.cor }, info, STATUS_META[info.status]);
+      return Object.assign({ disciplinaId: d.id, nome: d.nome, icone: d.icone, cor: d.cor }, info, STATUS_META[info.status]);
     });
   }
 

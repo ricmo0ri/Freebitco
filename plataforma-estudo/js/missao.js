@@ -113,7 +113,7 @@ var Missao = (function () {
 
     DB.getAll('disciplinas').then(function (disciplinas) {
       var d = disciplinas.find(function (x) { return x.id === disciplinaId; });
-      var nomeTerritorio = d ? (d.territorio || d.nome) : '';
+      var nomeTerritorio = d ? d.nome : '';
       var temSubtema = tema && tema !== 'Geral';
       var mensagem = temSubtema
         ? 'Você dominou: ' + tema + (nomeTerritorio ? ' (' + nomeTerritorio + ')' : '') + '!'
@@ -242,7 +242,7 @@ var Missao = (function () {
       if (disciplinas.length === 0) {
         var vazio = document.createElement('p');
         vazio.className = 'empty-state';
-        vazio.textContent = 'Nenhum território ainda. Crie uma disciplina na aba Território.';
+        vazio.textContent = 'Nenhuma disciplina ainda. Crie uma na aba Disciplinas.';
         els.territoriosList.appendChild(vazio);
         return;
       }
@@ -262,7 +262,7 @@ var Missao = (function () {
         if (d.cor) medalha.style.setProperty('--accent-territorio', d.cor);
         var dot = temFraco ? ' 🔴' : (dominado ? ' 🟢' : '');
         var label = document.createElement('span');
-        label.textContent = (d.territorio || d.nome) + dot;
+        label.textContent = d.nome + dot;
         btn.appendChild(medalha);
         btn.appendChild(label);
         if (window.PrioridadeOab) {
@@ -270,7 +270,7 @@ var Missao = (function () {
           if (badgePrioridade) btn.appendChild(badgePrioridade);
         }
 
-        btn.addEventListener('click', function () { iniciarMissao(d.id, d.territorio || d.nome); });
+        btn.addEventListener('click', function () { iniciarMissao(d.id, d.nome); });
         li.appendChild(btn);
         els.territoriosList.appendChild(li);
       });
@@ -281,7 +281,7 @@ var Missao = (function () {
 
   function iniciarComFila(fila, label, minutosTotais) {
     if (fila.length === 0) {
-      alert('Ainda não há questões cadastradas aí. Adicione algumas na aba Território antes de encarar essa missão.');
+      alert('Ainda não há questões cadastradas aí. Adicione algumas na aba Disciplinas antes de encarar essa missão.');
       return;
     }
     sessao = {
@@ -309,7 +309,7 @@ var Missao = (function () {
 
     carregar.then(function (questoes) {
       if (questoes.length === 0) {
-        alert('Ainda não há questões cadastradas aí. Adicione algumas na aba Território antes de encarar essa missão.');
+        alert('Ainda não há questões cadastradas aí. Adicione algumas na aba Disciplinas antes de encarar essa missão.');
         return;
       }
 
@@ -328,7 +328,7 @@ var Missao = (function () {
   function iniciarMissaoPorTemas(disciplinaId, temas, label) {
     DB.getAllByIndex('questoes', 'disciplinaId', disciplinaId).then(function (questoes) {
       if (questoes.length === 0) {
-        alert('Ainda não há questões cadastradas aí. Adicione algumas na aba Território antes de encarar essa missão.');
+        alert('Ainda não há questões cadastradas aí. Adicione algumas na aba Disciplinas antes de encarar essa missão.');
         return;
       }
       var filtradas = temas && temas.length
@@ -525,13 +525,13 @@ var Missao = (function () {
 
     var itens = [];
     itens.push('🏆 XP ganho: ' + (sessao.xpTotal + bonusConclusao));
-    itens.push('📚 Território: ' + sessao.label);
+    itens.push('📚 Disciplina: ' + sessao.label);
     itens.push('🎯 Questões respondidas: ' + numRespondidas);
     itens.push('📈 Aproveitamento: ' + aproveitamento + '%');
     itens.push('🔴 Principal fraqueza: ' + (resumo.maisFraco ? resumo.maisFraco.tema + ' (' + resumo.maisFraco.pct + '%)' : 'nenhuma detectada ainda'));
     itens.push('🟢 Principal evolução: ' + (resumo.maisForte ? resumo.maisForte.tema + ' (' + resumo.maisForte.pct + '%)' : 'continue respondendo para revelar'));
     itens.push('⚠️ Pegadinha aprendida: ' + (sessao.pegadinhaAprendida || 'nenhuma armadilha nova desta vez'));
-    itens.push('🔥 Próxima missão: ' + (resumo.maisFraco ? 'ataque o tema "' + resumo.maisFraco.tema + '"' : 'escolha qualquer território e continue'));
+    itens.push('🔥 Próxima missão: ' + (resumo.maisFraco ? 'ataque o tema "' + resumo.maisFraco.tema + '"' : 'escolha qualquer disciplina e continue'));
 
     els.relatorioConteudo.innerHTML = '';
     itens.forEach(function (texto) {
@@ -570,7 +570,7 @@ var Missao = (function () {
   function iniciarModoPreguica() {
     DB.getAll('questoes').then(function (questoes) {
       if (questoes.length === 0) {
-        alert('Ainda não há nenhuma questão cadastrada em nenhum território. Adicione ao menos uma para o Modo Preguiça funcionar.');
+        alert('Ainda não há nenhuma questão cadastrada em nenhuma disciplina. Adicione ao menos uma para o Modo Preguiça funcionar.');
         return;
       }
       els.picker.hidden = true;

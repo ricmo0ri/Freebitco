@@ -11,44 +11,59 @@ var Missao = (function () {
 
   // ---------- utilidades de seleção ----------
 
-  function priorizarQuestoes(questoes, quantidade) {
-    if (questoes.length === 0) return [];
-    var fracos = Fraquezas.getTemasFracos();
-    var fracosSet = {};
-    fracos.forEach(function (f) { fracosSet[f.disciplinaId + '::' + f.tema] = true; });
-
+  function pesarEEmbaralhar(questoes, fracosSet) {
     var pesadas = [];
     questoes.forEach(function (q) {
       var chave = q.disciplinaId + '::' + (q.tema || 'Geral');
       var peso = fracosSet[chave] ? 3 : 1;
       for (var i = 0; i < peso; i++) pesadas.push(q);
     });
-
     for (var i = pesadas.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
       var tmp = pesadas[i]; pesadas[i] = pesadas[j]; pesadas[j] = tmp;
     }
+    return pesadas;
+  }
+
+  // Nunca repete uma questão que o usuário já respondeu (acertando ou
+  // errando) enquanto ainda sobrar alguma inédita nesse poço — só volta a
+  // sortear entre as já respondidas depois que todas as inéditas tiverem
+  // sido usadas. Sem isso, sortear direto do poço inteiro a cada missão
+  // fazia a mesma meia dúzia de questões reaparecer com frequência, mesmo
+  // com um banco grande.
+  function priorizarQuestoes(questoes, quantidade) {
+    if (questoes.length === 0) return [];
+    var fracos = Fraquezas.getTemasFracos();
+    var fracosSet = {};
+    fracos.forEach(function (f) { fracosSet[f.disciplinaId + '::' + f.tema] = true; });
+
+    var respondidas = {};
+    Storage.read(Storage.KEYS.questaoRespostas, []).forEach(function (r) { respondidas[r.questaoId] = true; });
+    var naoRespondidas = questoes.filter(function (q) { return !respondidas[q.id]; });
+    var jaRespondidas = questoes.filter(function (q) { return respondidas[q.id]; });
+
+    var ordem = pesarEEmbaralhar(naoRespondidas, fracosSet).concat(pesarEEmbaralhar(jaRespondidas, fracosSet));
 
     var vistos = {};
     var resultado = [];
-    pesadas.forEach(function (q) {
+    ordem.forEach(function (q) {
       if (resultado.length >= quantidade || vistos[q.id]) return;
       vistos[q.id] = true;
       resultado.push(q);
     });
 
-    // Se o poço (já sem repetição) não deu pra preencher a quantidade
-    // pedida, completa repetindo — mas sorteando a ordem de novo a cada
-    // volta, em vez de sempre ciclar 0,1,2... na mesma ordem fixa (o que
-    // fazia a sessão parecer sempre igual quando o tema tinha poucas
-    // questões cadastradas).
-    while (resultado.length < quantidade && pesadas.length > 0) {
-      for (var k = pesadas.length - 1; k > 0; k--) {
+    // Se mesmo somando inéditas + já respondidas não deu pra preencher a
+    // quantidade pedida (poço menor que o tamanho da missão), completa
+    // repetindo dentro da própria sessão — sorteando a ordem de novo a
+    // cada volta, em vez de sempre ciclar 0,1,2... na mesma ordem fixa.
+    var pesadasTotal = pesarEEmbaralhar(questoes, fracosSet);
+    while (resultado.length < quantidade && pesadasTotal.length > 0) {
+      for (var k = pesadasTotal.length - 1; k > 0; k--) {
         var jk = Math.floor(Math.random() * (k + 1));
-        var tk = pesadas[k]; pesadas[k] = pesadas[jk]; pesadas[jk] = tk;
+        var tk = pesadasTotal[k]; pesadasTotal[k] = pesadasTotal[jk]; pesadasTotal[jk] = tk;
       }
-      for (var p = 0; p < pesadas.length && resultado.length < quantidade; p++) {
-        resultado.push(pesadas[p]);
+      for (var p = 0; p < pesadasTotal.length && resultado.length < quantidade; p++) {
+        resultado.push(pesadasTotal[p]);
       }
     }
     return resultado;

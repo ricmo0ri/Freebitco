@@ -7,7 +7,16 @@ var Perfil = (function () {
     { titulo: 'Advogado Aprendiz', min: 500 },
     { titulo: 'Defensor da Constituição', min: 900 },
     { titulo: 'Mestre das Leis', min: 1500 },
-    { titulo: 'Guardião da OAB', min: 2500 }
+    { titulo: 'Guardião da OAB', min: 2500 },
+    { titulo: 'Conselheiro Seccional', min: 4000 },
+    { titulo: 'Conselheiro Federal', min: 6500 },
+    { titulo: 'Jurisconsulto', min: 10000 },
+    { titulo: 'Doutrinador', min: 15000 },
+    { titulo: 'Notório Saber Jurídico', min: 21000 },
+    { titulo: 'Vice-Presidente da OAB', min: 28000 },
+    { titulo: 'Presidente da OAB', min: 38000 },
+    { titulo: 'Patrono dos Advogados', min: 55000 },
+    { titulo: 'Lenda do Direito', min: 80000 }
   ];
 
   var els = {};

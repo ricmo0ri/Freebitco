@@ -369,6 +369,16 @@
           <div class="card-panel" id="leiseca-picker" hidden>
             <p class="hint-text">Escolha um assunto pra praticar, ou treine todos misturados:</p>
             <div id="leiseca-subtema-lista" class="subtema-picker-lista"></div>
+
+            <button id="leiseca-checklist-toggle" type="button" class="link-button">📋 Marcar o que eu já sei</button>
+            <div id="leiseca-checklist" hidden>
+              <p class="hint-text">
+                Marque os dispositivos que você já sabe de cor — eles saem da fila de prática (mas continuam
+                listados aqui, e você pode desmarcar quando quiser revisar de novo).
+              </p>
+              <input id="leiseca-checklist-busca" type="text" class="leiseca-checklist-busca" placeholder="🔎 Buscar por artigo ou lei...">
+              <div id="leiseca-checklist-lista" class="leiseca-checklist-lista"></div>
+            </div>
           </div>
           <div class="card-panel" id="leiseca-panel">
             <p id="leiseca-empty" class="empty-state">Nenhum dispositivo de lei seca cadastrado ainda para esta disciplina.</p>

@@ -145,6 +145,10 @@ var LeiSeca = (function () {
     renderAtual();
   }
 
+  function contarPendentes(itens) {
+    return itens.filter(function (item) { return !item.jaSei; }).length;
+  }
+
   function renderPicker() {
     if (!els.picker) return;
     els.pickerLista.innerHTML = '';
@@ -165,15 +169,16 @@ var LeiSeca = (function () {
     var btnTodos = document.createElement('button');
     btnTodos.type = 'button';
     btnTodos.className = 'tema-btn';
-    btnTodos.textContent = '📚 Todos os assuntos (' + todosItens.length + ')';
+    btnTodos.textContent = '📚 Todos os assuntos (' + contarPendentes(todosItens) + '/' + todosItens.length + ')';
     btnTodos.addEventListener('click', function () { iniciarPratica(null); });
     els.pickerLista.appendChild(btnTodos);
 
     agruparPorSubtema(todosItens).forEach(function (grupo) {
+      var itensGrupo = todosItens.filter(function (item) { return (item.subtema || 'Geral') === grupo.subtema; });
       var btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'tema-btn';
-      btn.textContent = grupo.subtema + ' (' + grupo.total + ')';
+      btn.textContent = grupo.subtema + ' (' + contarPendentes(itensGrupo) + '/' + grupo.total + ')';
       if (window.PrioridadeOab && disciplinaNome) {
         var badgePrioridade = PrioridadeOab.criarBadge(PrioridadeOab.getPrioridadeSubtema(disciplinaNome, grupo.subtema));
         if (badgePrioridade) btn.appendChild(badgePrioridade);
@@ -181,6 +186,8 @@ var LeiSeca = (function () {
       btn.addEventListener('click', function () { iniciarPratica(grupo.subtema); });
       els.pickerLista.appendChild(btn);
     });
+
+    renderChecklist();
   }
 
   function iniciarPratica(subtema) {
@@ -188,13 +195,75 @@ var LeiSeca = (function () {
       ? todosItens.filter(function (item) { return (item.subtema || 'Geral') === subtema; })
       : todosItens;
 
+    // Prioriza o que ainda não foi marcado como "já sei"; só volta a
+    // incluir os marcados se esse escopo tiver sido todo marcado (senão a
+    // prática travaria numa fila vazia).
+    var pendentes = itens.filter(function (item) { return !item.jaSei; });
+    var pool = pendentes.length > 0 ? pendentes : itens;
+
     sessao = { respondidas: 0, acertos: 0 };
-    fila = embaralhar(itens);
+    fila = embaralhar(pool);
     indice = 0;
 
     els.picker.hidden = true;
     if (els.trocarBtn) els.trocarBtn.hidden = false;
     renderAtual();
+  }
+
+  // ---------- checklist "já sei" ----------
+
+  var buscaChecklist = '';
+
+  function normalizar(texto) {
+    return (texto || '').toLowerCase();
+  }
+
+  function toggleJaSei(item) {
+    item.jaSei = !item.jaSei;
+    DB.put('leiSeca', item).then(renderPicker);
+  }
+
+  function renderChecklist() {
+    if (!els.checklistLista) return;
+    els.checklistLista.innerHTML = '';
+
+    var termo = normalizar(buscaChecklist);
+    var porSubtema = {};
+    todosItens.forEach(function (item) {
+      var s = item.subtema || 'Geral';
+      (porSubtema[s] = porSubtema[s] || []).push(item);
+    });
+
+    var achouAlgum = false;
+    Object.keys(porSubtema).sort().forEach(function (subtema) {
+      var itensFiltrados = porSubtema[subtema].filter(function (item) {
+        if (!termo) return true;
+        return normalizar(item.dispositivo).indexOf(termo) !== -1 || normalizar(item.lei).indexOf(termo) !== -1;
+      });
+      if (itensFiltrados.length === 0) return;
+      achouAlgum = true;
+
+      var titulo = document.createElement('p');
+      titulo.className = 'leiseca-checklist-subtema';
+      titulo.textContent = subtema;
+      els.checklistLista.appendChild(titulo);
+
+      itensFiltrados.forEach(function (item) {
+        var row = document.createElement('button');
+        row.type = 'button';
+        row.className = 'leiseca-checklist-item' + (item.jaSei ? ' marcado' : '');
+        row.textContent = (item.jaSei ? '✅ ' : '⬜ ') + item.lei + ' — ' + item.dispositivo;
+        row.addEventListener('click', function () { toggleJaSei(item); });
+        els.checklistLista.appendChild(row);
+      });
+    });
+
+    if (!achouAlgum) {
+      var vazio = document.createElement('p');
+      vazio.className = 'empty-state';
+      vazio.textContent = 'Nenhum dispositivo encontrado pra essa busca.';
+      els.checklistLista.appendChild(vazio);
+    }
   }
 
   function voltarParaEscolha() {
@@ -207,6 +276,10 @@ var LeiSeca = (function () {
     disciplinaId = id;
     disciplinaNome = null;
     if (els.trocarBtn) els.trocarBtn.hidden = true;
+    buscaChecklist = '';
+    if (els.checklistBusca) els.checklistBusca.value = '';
+    if (els.checklist) els.checklist.hidden = true;
+    if (els.checklistToggle) els.checklistToggle.textContent = '📋 Marcar o que eu já sei';
     Promise.all([DB.getAll('disciplinas'), carregarItens()]).then(function (resultados) {
       var disciplinas = resultados[0];
       var itens = resultados[1];
@@ -232,10 +305,25 @@ var LeiSeca = (function () {
     els.picker = document.getElementById('leiseca-picker');
     els.pickerLista = document.getElementById('leiseca-subtema-lista');
     els.trocarBtn = document.getElementById('leiseca-trocar-assunto');
+    els.checklistToggle = document.getElementById('leiseca-checklist-toggle');
+    els.checklist = document.getElementById('leiseca-checklist');
+    els.checklistBusca = document.getElementById('leiseca-checklist-busca');
+    els.checklistLista = document.getElementById('leiseca-checklist-lista');
 
     els.confirmBtn.addEventListener('click', confirmar);
     els.proximaBtn.addEventListener('click', proximo);
     els.trocarBtn.addEventListener('click', voltarParaEscolha);
+
+    els.checklistToggle.addEventListener('click', function () {
+      var abrindo = els.checklist.hidden;
+      els.checklist.hidden = !abrindo;
+      els.checklistToggle.textContent = abrindo ? '🔼 Fechar lista de dispositivos' : '📋 Marcar o que eu já sei';
+      if (abrindo) renderChecklist();
+    });
+    els.checklistBusca.addEventListener('input', function () {
+      buscaChecklist = els.checklistBusca.value;
+      renderChecklist();
+    });
   }
 
   return { init: init, setDisciplina: setDisciplina };

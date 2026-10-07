@@ -4,7 +4,7 @@
 // chefões por tema, XP/combo e estatística de fraquezas — não é um passo à
 // parte, é como o motor de questões já funciona pra qualquer questão.
 var QuestoesSeed = (function () {
-  var SEED_VERSION_ATUAL = 19;
+  var SEED_VERSION_ATUAL = 20;
 
   var PROVAS = [
     {
@@ -8792,34 +8792,6 @@ var QuestoesSeed = (function () {
           "explicacaoErradas": "As demais alternativas erram ao aplicar a antiga tabela proporcional às horas do art. 58-A (revogada), ao negar férias ao trabalhador parcial ou ao condicionar o direito à previsão em norma coletiva — o direito decorre diretamente da lei.",
           "pegadinha": "A pegadinha é lembrar da regra antiga (férias reduzidas proporcionalmente para tempo parcial) — ela não existe mais desde a reforma de 2017; hoje é tudo igual, 30 dias.",
           "regraMemoria": "Tempo parcial não é mais 'férias parciais': depois de 2017, todo mundo sem falta tem os mesmos 30 dias."
-        },
-        {
-          "territorio": "Direito do Trabalho",
-          "tema": "Jornada e Descanso",
-          "enunciado": "Em sede de acordo coletivo, firmado em janeiro de 2024 e com vigência de dois anos, entre uma sociedade empresária e o sindicato da categoria profissional, constou cláusula determinando que o tempo de deslocamento dos empregados do portão até o interior da sociedade empresária, onde se situa o relógio de ponto, seria computado na jornada de trabalho. Isso porque o deslocamento é feito em transporte fornecido pela sociedade empresária e dura cerca de 20 minutos. Sobre a jornada, não consta mais nada na norma coletiva. A sociedade empresária, por liberalidade, mantém salas de recreação, biblioteca e uma capela. A utilização desses espaços antes e após o trabalho e durante os intervalos é facultada aos empregados. Em razão do ajuizamento de uma ação trabalhista por um ex- empregado, a sociedade empresária indagou a você, como advogado(a), se todos esses períodos, seja o de deslocamento, seja o tempo despendido nos espaços mencionados, deveriam integrar a jornada de trabalho. Acerca do tema, com base na CLT, assinale a afirmativa correta.",
-          "alternativas": [
-            {
-              "letra": "A",
-              "texto": "Todos os períodos não se computam na jornada de trabalho dos empregados."
-            },
-            {
-              "letra": "B",
-              "texto": "Apenas o tempo de utilização da capela deve ser computado na jornada, pois o Estado é laico."
-            },
-            {
-              "letra": "C",
-              "texto": "Apenas o período de deslocamento deve integrar a jornada por força da norma coletiva. Os demais períodos não são considerados tempo à disposição."
-            },
-            {
-              "letra": "D",
-              "texto": "O período de deslocamento assim como o período de utilização da biblioteca, voltado para o estudo, devem ser computados na jornada. Os demais períodos não são computados na jornada."
-            }
-          ],
-          "respostaCorreta": 2,
-          "explicacaoCorreta": "A alternativa C está correta: o tempo de deslocamento em condução fornecida pela empresa integra a jornada apenas porque há disposição expressa em acordo coletivo nesse sentido; o uso facultativo de salas de recreação, biblioteca e capela, fora da jornada e sem qualquer obrigatoriedade ou controle do empregador, não caracteriza tempo à disposição (art. 4º, CLT). Atenção: a antiga Súmula 429 do TST chegava a esse mesmo resultado só pela lei/jurisprudência (deslocamento interno acima de 10 min contava automaticamente), mas foi cancelada pelo TST em 2025 (Resolução 225/2025) por incompatibilidade com a reforma trabalhista — por isso hoje o deslocamento só conta se, como no enunciado, houver previsão expressa em acordo ou convenção coletiva (art. 611-A, I, CLT).",
-          "explicacaoErradas": "As demais alternativas erram ao computar ou não computar o deslocamento sem atentar para a norma coletiva, ou ao tentar diferenciar os espaços de lazer/estudo entre si — nenhum deles gera tempo à disposição, pois falta a subordinação exigida pelo art. 4º da CLT.",
-          "pegadinha": "A pegadinha é achar que 'biblioteca é estudo, logo conta como trabalho' — mas o critério não é a natureza do espaço, é ser uso facultativo e sem controle do empregador; nenhum desses ambientes gera tempo à disposição. Cuidado também com a Súmula 429/TST: ela foi cancelada em 2025, então não cite mais 'deslocamento acima de 10 minutos conta automaticamente' como regra geral — hoje depende de previsão no acordo/convenção coletiva.",
-          "regraMemoria": "Só conta como jornada o que a norma coletiva mandar contar (aqui, só o transporte, já que a Súmula 429/TST que mandava contar isso por lei foi cancelada em 2025) — sala de lazer, biblioteca e capela de uso livre não são 'trabalho disfarçado'."
         },
         {
           "territorio": "Processo do Trabalho",

@@ -4,7 +4,7 @@
 // chefões por tema, XP/combo e estatística de fraquezas — não é um passo à
 // parte, é como o motor de questões já funciona pra qualquer questão.
 var QuestoesSeed = (function () {
-  var SEED_VERSION_ATUAL = 18;
+  var SEED_VERSION_ATUAL = 19;
 
   var PROVAS = [
     {
@@ -8816,10 +8816,10 @@ var QuestoesSeed = (function () {
             }
           ],
           "respostaCorreta": 2,
-          "explicacaoCorreta": "A alternativa C está correta: o tempo de deslocamento em condução fornecida pela empresa integra a jornada apenas porque há disposição expressa em acordo coletivo nesse sentido; o uso facultativo de salas de recreação, biblioteca e capela, fora da jornada e sem qualquer obrigatoriedade ou controle do empregador, não caracteriza tempo à disposição (art. 4º, CLT).",
+          "explicacaoCorreta": "A alternativa C está correta: o tempo de deslocamento em condução fornecida pela empresa integra a jornada apenas porque há disposição expressa em acordo coletivo nesse sentido; o uso facultativo de salas de recreação, biblioteca e capela, fora da jornada e sem qualquer obrigatoriedade ou controle do empregador, não caracteriza tempo à disposição (art. 4º, CLT). Atenção: a antiga Súmula 429 do TST chegava a esse mesmo resultado só pela lei/jurisprudência (deslocamento interno acima de 10 min contava automaticamente), mas foi cancelada pelo TST em 2025 (Resolução 225/2025) por incompatibilidade com a reforma trabalhista — por isso hoje o deslocamento só conta se, como no enunciado, houver previsão expressa em acordo ou convenção coletiva (art. 611-A, I, CLT).",
           "explicacaoErradas": "As demais alternativas erram ao computar ou não computar o deslocamento sem atentar para a norma coletiva, ou ao tentar diferenciar os espaços de lazer/estudo entre si — nenhum deles gera tempo à disposição, pois falta a subordinação exigida pelo art. 4º da CLT.",
-          "pegadinha": "A pegadinha é achar que 'biblioteca é estudo, logo conta como trabalho' — mas o critério não é a natureza do espaço, é ser uso facultativo e sem controle do empregador; nenhum desses ambientes gera tempo à disposição.",
-          "regraMemoria": "Só conta como jornada o que a norma coletiva mandar contar (aqui, só o transporte) — sala de lazer, biblioteca e capela de uso livre não são 'trabalho disfarçado'."
+          "pegadinha": "A pegadinha é achar que 'biblioteca é estudo, logo conta como trabalho' — mas o critério não é a natureza do espaço, é ser uso facultativo e sem controle do empregador; nenhum desses ambientes gera tempo à disposição. Cuidado também com a Súmula 429/TST: ela foi cancelada em 2025, então não cite mais 'deslocamento acima de 10 minutos conta automaticamente' como regra geral — hoje depende de previsão no acordo/convenção coletiva.",
+          "regraMemoria": "Só conta como jornada o que a norma coletiva mandar contar (aqui, só o transporte, já que a Súmula 429/TST que mandava contar isso por lei foi cancelada em 2025) — sala de lazer, biblioteca e capela de uso livre não são 'trabalho disfarçado'."
         },
         {
           "territorio": "Processo do Trabalho",

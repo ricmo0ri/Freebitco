@@ -16,6 +16,7 @@ var Storage = (function () {
     resumoFacilSeedVersion: 'estudoTdah.resumoFacilSeedVersion',
     doutrinaSeedVersion: 'estudoTdah.doutrinaSeedVersion',
     flashcardsSeedVersion: 'estudoTdah.flashcardsSeedVersion',
+    questionarioSeedVersion: 'estudoTdah.questionarioSeedVersion',
     lowStim: 'estudoTdah.lowStim',
     tema: 'estudoTdah.tema',
     metaDiariaQuestoes: 'estudoTdah.metaDiariaQuestoes',

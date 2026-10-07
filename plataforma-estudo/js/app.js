@@ -91,6 +91,7 @@ var App = (function () {
     Doutrina.init();
     ImportarProva.init();
     ImportarDoutrina.init();
+    Questionario.init();
     Missao.init();
     Tasks.init();
     Progress.init();
@@ -99,7 +100,7 @@ var App = (function () {
     if (window.Bemestar) Bemestar.iniciarVigiaHiperfoco();
 
     Disciplinas.init().then(function () {
-      return Promise.all([QuestoesSeed.seedar(), LeiSecaSeed.seedar(), ResumoFacilSeed.seedar(), DoutrinaSeed.seedar(), FlashcardsSeed.seedar()]);
+      return Promise.all([QuestoesSeed.seedar(), LeiSecaSeed.seedar(), ResumoFacilSeed.seedar(), DoutrinaSeed.seedar(), FlashcardsSeed.seedar(), QuestionarioSeed.seedar()]);
     }).then(function () {
       if (window.Missao) Missao.renderTerritorios();
     });

@@ -220,6 +220,7 @@ var Disciplinas = (function () {
     Doutrina.setDisciplina(disciplina.id);
     if (window.LeiSeca) LeiSeca.setDisciplina(disciplina.id);
     if (window.ResumoFacil) ResumoFacil.setDisciplina(disciplina.id);
+    if (window.Questionario) Questionario.setDisciplina(disciplina.id);
     if (window.Historia) Historia.mostrarLoreTerritorio(disciplina);
     showSubtab('flashcards');
   }
@@ -241,6 +242,7 @@ var Disciplinas = (function () {
     els.subviewDoutrina.classList.toggle('active', name === 'doutrina');
     els.subviewLeiSeca.classList.toggle('active', name === 'leiseca');
     els.subviewResumoFacil.classList.toggle('active', name === 'resumofacil');
+    els.subviewQuestionario.classList.toggle('active', name === 'questionario');
   }
 
   function init() {
@@ -258,6 +260,7 @@ var Disciplinas = (function () {
     els.subviewDoutrina = document.getElementById('subview-doutrina');
     els.subviewLeiSeca = document.getElementById('subview-leiseca');
     els.subviewResumoFacil = document.getElementById('subview-resumofacil');
+    els.subviewQuestionario = document.getElementById('subview-questionario');
 
     els.form.addEventListener('submit', function (evt) {
       evt.preventDefault();

@@ -193,6 +193,7 @@
           <button class="subtab-btn" data-subtab="doutrina">📖 Doutrina</button>
           <button class="subtab-btn" data-subtab="leiseca">📜 Lei Seca</button>
           <button class="subtab-btn" data-subtab="resumofacil">🧠 Resumo Fácil</button>
+          <button class="subtab-btn" data-subtab="questionario">🎯 Questionário 48º</button>
         </div>
 
         <!-- Subview: Flashcards -->
@@ -406,6 +407,35 @@
           <p id="resumo-facil-empty" class="empty-state">Nenhum resumo fácil cadastrado ainda para esta disciplina.</p>
           <div id="resumo-facil-list"></div>
         </div>
+
+        <!-- Subview: Questionário 48º (questões inéditas, estilo FGV) -->
+        <div id="subview-questionario" class="subview">
+          <p class="hint-text">
+            Questões inéditas, escritas no estilo da FGV (enunciado + 4 alternativas), nível médio/difícil,
+            pensadas no que pode cair no 48º Exame — não são de provas reais, são treino extra além do banco
+            oficial.
+          </p>
+          <p class="hint-text" id="questionario-progresso"></p>
+          <div class="card-panel" id="questionario-picker" hidden>
+            <p class="hint-text">Escolha um assunto pra praticar, ou treine todos misturados:</p>
+            <div id="questionario-tema-lista" class="subtema-picker-lista"></div>
+          </div>
+          <div class="card-panel" id="questionario-panel">
+            <p id="questionario-empty" class="empty-state">Nenhuma questão inédita cadastrada ainda para esta disciplina.</p>
+            <div id="questionario-card" class="flashcard" hidden>
+              <button id="questionario-trocar-assunto" class="btn btn-secondary" hidden>🔀 Trocar assunto</button>
+              <p class="flashcard-label" id="questionario-origem">Questão</p>
+              <p class="caso-absurdo" id="questionario-caso" hidden></p>
+              <p class="flashcard-text" id="questionario-enunciado"></p>
+              <div id="questionario-alternativas" class="alternativas-list"></div>
+              <p class="hint-text atalhos-hint">⌨️ Atalhos: 1-4 escolhe · Enter confirma/avança</p>
+              <button id="questionario-confirmar" class="btn btn-primary" disabled>Confirmar resposta</button>
+              <p id="questionario-feedback" class="questao-feedback" hidden></p>
+              <div id="questionario-metodo" class="metodo-feedback" hidden></div>
+              <button id="questionario-proxima" class="btn btn-secondary" hidden>Próxima questão</button>
+            </div>
+          </div>
+        </div>
       </div>
 
     </section>
@@ -553,6 +583,7 @@
 <script src="js/prioridadeOab.js"></script>
 <script src="js/doutrinaSeed.js"></script>
 <script src="js/flashcardsSeed.js"></script>
+<script src="js/questionarioSeed.js"></script>
 <script src="js/historiaSeed.js"></script>
 <script src="js/perfil.js"></script>
 <script src="js/fraquezas.js"></script>
@@ -568,6 +599,7 @@
 <script src="js/flashcards.js"></script>
 <script src="js/questoes.js"></script>
 <script src="js/leiSeca.js"></script>
+<script src="js/questionario.js"></script>
 <script src="js/resumoFacil.js"></script>
 <script src="js/chefoes.js"></script>
 <script src="js/doutrina.js"></script>

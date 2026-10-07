@@ -558,10 +558,15 @@ button:hover > .icon-medalha {
   padding: 5px;
   border-radius: 999px;
   border: 1px solid var(--line);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
+.subtab-bar::-webkit-scrollbar { display: none; }
 .subtab-btn {
-  flex: 1;
-  padding: 10px 8px;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding: 10px 14px;
   border-radius: 999px;
   border: none;
   background: transparent;

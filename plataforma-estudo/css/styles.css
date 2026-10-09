@@ -1191,6 +1191,17 @@ body.low-stim .resumo-facil-item:hover {
   flex-direction: column;
   gap: 14px;
 }
+.backup-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.backup-row label.btn {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
 .tema-picker {
   background: var(--surface);
   border: 1px solid var(--line);

@@ -102,10 +102,17 @@ var DB = (function () {
     });
   }
 
+  function clear(storeName) {
+    return store(storeName, 'readwrite').then(function (s) {
+      return wrapRequest(s.clear());
+    });
+  }
+
   return {
     getAll: getAll,
     getAllByIndex: getAllByIndex,
     put: put,
+    clear: clear,
     remove: remove,
     removeAllByIndex: removeAllByIndex
   };

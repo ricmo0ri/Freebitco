@@ -535,6 +535,19 @@
 
       <h3>Atividade dos últimos 7 dias</h3>
       <div class="week-chart" id="week-chart" aria-hidden="true"></div>
+
+      <h3>💾 Backup e Restauração</h3>
+      <p class="hint-text">
+        Esse app guarda seu progresso no próprio navegador, preso à pasta exata onde estes arquivos estão.
+        Se você mover ou trocar de pasta (ex: ao receber uma atualização), o progresso não acompanha
+        automaticamente — faça backup antes de trocar, e importe o arquivo na cópia nova pra recuperar tudo.
+      </p>
+      <div class="backup-row">
+        <button id="backup-exportar-btn" class="btn btn-ghost">📤 Exportar backup</button>
+        <label for="backup-importar-input" class="btn btn-ghost">📥 Importar backup</label>
+        <input id="backup-importar-input" type="file" accept="application/json" hidden>
+      </div>
+      <p id="backup-status" class="hint-text"></p>
     </section>
 
   </main>
@@ -610,6 +623,7 @@
 <script src="js/tasks.js"></script>
 <script src="js/progress.js"></script>
 <script src="js/preferencias.js"></script>
+<script src="js/backup.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

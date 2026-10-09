@@ -96,6 +96,7 @@ var App = (function () {
     Tasks.init();
     Progress.init();
     Preferencias.init();
+    Backup.init();
     initAtalhosTeclado();
     if (window.Bemestar) Bemestar.iniciarVigiaHiperfoco();
 

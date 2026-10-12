@@ -77,9 +77,23 @@ var ProximoPasso = (function () {
     els.btn.onclick = function () {
       Missao.iniciarMissaoPorTemas(item.disciplinaId, item.temas, item.territorio + ' — ' + item.assunto);
     };
+
+    if (els.ajustarToggle) {
+      els.ajustarToggle.hidden = false;
+      if (els.ajustarInput) els.ajustarInput.value = item.posicao;
+    }
+  }
+
+  // Esconde o ajuste de posição da trilha quando ela não é a fonte da
+  // sugestão atual (revisão inteligente ou fallback por fraqueza) — não
+  // faz sentido "pular posição" de algo que não é a trilha fixa de 114.
+  function esconderAjusteTrilha() {
+    if (els.ajustarToggle) els.ajustarToggle.hidden = true;
+    if (els.ajustarForm) els.ajustarForm.hidden = true;
   }
 
   function renderRevisao(recomendacao) {
+    esconderAjusteTrilha();
     els.lista.hidden = false;
     els.lista.innerHTML = '';
     recomendacao.fracos.forEach(function (f) {
@@ -99,6 +113,7 @@ var ProximoPasso = (function () {
   }
 
   function renderNovoTerritorio(escolhido) {
+    esconderAjusteTrilha();
     els.lista.hidden = true;
     els.lista.innerHTML = '';
 
@@ -132,6 +147,7 @@ var ProximoPasso = (function () {
 
     els.card.hidden = false;
     if (!escolhido) {
+      esconderAjusteTrilha();
       els.lista.hidden = true;
       els.titulo.textContent = '🏆 Todos os reinos dominados!';
       els.texto.textContent = 'Continue revisando de vez em quando pra não enferrujar.';
@@ -170,7 +186,30 @@ var ProximoPasso = (function () {
     els.lista = document.getElementById('proximo-passo-lista');
     els.texto = document.getElementById('proximo-passo-texto');
     els.btn = document.getElementById('proximo-passo-btn');
+    els.ajustarToggle = document.getElementById('trilha-ajustar-toggle');
+    els.ajustarForm = document.getElementById('trilha-ajustar-form');
+    els.ajustarInput = document.getElementById('trilha-ajustar-input');
+    els.ajustarSalvar = document.getElementById('trilha-ajustar-salvar');
     if (!els.card) return;
+
+    if (els.ajustarToggle) {
+      els.ajustarToggle.addEventListener('click', function () {
+        els.ajustarForm.hidden = !els.ajustarForm.hidden;
+      });
+    }
+    if (els.ajustarSalvar) {
+      els.ajustarSalvar.addEventListener('click', function () {
+        var valor = parseInt(els.ajustarInput.value, 10);
+        if (!valor || valor < 1 || valor > 114) {
+          alert('Digite uma posição entre 1 e 114.');
+          return;
+        }
+        Storage.write(Storage.KEYS.trilhaOab48PosicaoInicio, valor);
+        els.ajustarForm.hidden = true;
+        render();
+      });
+    }
+
     render();
   }
 

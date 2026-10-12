@@ -165,15 +165,25 @@ var TrilhaOab48 = (function () {
     return Fraquezas.classificar(respostas);
   }
 
-  // Acha o primeiro item da fila (na ordem definida acima) que ainda não
-  // está dominado — seja porque nunca foi estudado, seja porque um item
-  // já dominado antes voltou a ficar fraco/crítico. `disciplinas` é o
-  // array de DB.getAll('disciplinas').
+  // Acha o próximo item da fila que ainda não está dominado — seja porque
+  // nunca foi estudado, seja porque um item já dominado antes voltou a
+  // ficar fraco/crítico. `disciplinas` é o array de DB.getAll('disciplinas').
+  //
+  // A busca é circular a partir de `trilhaOab48PosicaoInicio` (1 = começo
+  // da fila, o padrão): permite recomeçar de uma posição específica (ex:
+  // alguém que perdeu o progresso salvo mas lembra que já tinha passado da
+  // posição 11) sem perder o restante da fila — ao passar da posição 114,
+  // volta pra 1 e segue o ciclo normalmente.
   function getProximoItem(disciplinas) {
     var disciplinaIdPorNome = {};
     disciplinas.forEach(function (d) { disciplinaIdPorNome[d.nome] = d.id; });
 
-    for (var i = 0; i < FILA.length; i++) {
+    var posicaoInicio = Storage.read(Storage.KEYS.trilhaOab48PosicaoInicio, 1);
+    var offset = posicaoInicio - 1;
+    if (!(offset >= 0 && offset < FILA.length)) offset = 0;
+
+    for (var passo = 0; passo < FILA.length; passo++) {
+      var i = (offset + passo) % FILA.length;
       var item = FILA[i];
       var disciplinaId = disciplinaIdPorNome[item.territorio];
       if (!disciplinaId) continue; // território não existe nessa instalação (ex: apagado pelo usuário)

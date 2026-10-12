@@ -17,6 +17,7 @@ var Storage = (function () {
     doutrinaSeedVersion: 'estudoTdah.doutrinaSeedVersion',
     flashcardsSeedVersion: 'estudoTdah.flashcardsSeedVersion',
     questionarioSeedVersion: 'estudoTdah.questionarioSeedVersion',
+    trilhaOab48PosicaoInicio: 'estudoTdah.trilhaOab48PosicaoInicio',
     lowStim: 'estudoTdah.lowStim',
     tema: 'estudoTdah.tema',
     metaDiariaQuestoes: 'estudoTdah.metaDiariaQuestoes',

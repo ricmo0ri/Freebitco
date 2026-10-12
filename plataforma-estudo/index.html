@@ -45,6 +45,13 @@
         <ul id="proximo-passo-lista" class="revisao-lista" hidden></ul>
         <p class="proximo-passo-texto" id="proximo-passo-texto"></p>
         <button id="proximo-passo-btn" class="btn btn-primary" hidden></button>
+        <button id="trilha-ajustar-toggle" type="button" class="link-button" hidden>📍 Pular para outra posição da trilha</button>
+        <div id="trilha-ajustar-form" class="trilha-ajustar-form" hidden>
+          <label for="trilha-ajustar-input">Recomeçar a trilha a partir da posição</label>
+          <input id="trilha-ajustar-input" type="number" min="1" max="114" step="1">
+          <button id="trilha-ajustar-salvar" class="btn btn-ghost">Salvar</button>
+          <p class="hint-text">Depois de passar pela posição 114, a trilha volta pra 1 e continua o ciclo.</p>
+        </div>
       </div>
 
       <div class="duration-picker" role="group" aria-label="Duração da missão">

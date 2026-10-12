@@ -1448,6 +1448,19 @@ body.low-stim .view-title {
 }
 .link-button:hover { color: var(--ink); }
 
+.trilha-ajustar-form {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.trilha-ajustar-form label { width: 100%; font-size: 0.85rem; color: var(--ink-soft); }
+.trilha-ajustar-form input { width: 70px; }
+.trilha-ajustar-form .hint-text { width: 100%; margin: 4px 0 0; }
+
 .meta-diaria-widget {
   font-size: 0.85rem;
   color: var(--ink-soft);

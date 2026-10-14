@@ -6,7 +6,7 @@
 // explicacaoManual, e remove quem sair da lista (ex.: questão trocada por
 // ficar desatualizada).
 var QuestionarioSeed = (function () {
-  var SEED_VERSION_ATUAL = 2;
+  var SEED_VERSION_ATUAL = 3;
   var PROVA_ORIGEM = 'Questionário Inédito — Preparação 48º Exame';
 
   var QUESTOES = [
@@ -4179,7 +4179,397 @@ var QuestionarioSeed = (function () {
       "pegadinha": "A pegadinha é supor que a imunidade exige que o próprio imóvel esteja diretamente afetado à atividade essencial da entidade, quando, na verdade, o STF admite a locação a terceiros, desde que a renda obtida seja revertida às finalidades essenciais.",
       "regraMemoria": "Súmula Vinculante 52: imóvel de entidade imune alugado a terceiro continua imune, se a renda do aluguel for usada na atividade essencial.",
       "seedVersion": 2
-    }
+    },
+    {
+      "territorio": "Ética",
+      "tema": "Postulação e Atividades Privativas",
+      "dificuldade": "media",
+      "enunciado": "Heitor foi preso em flagrante em uma delegacia do interior do Paraná e, no primeiro momento, não conseguiu contato com nenhum advogado. Sua irmã, Marisa, professora de música e sem qualquer formação jurídica, redigiu sozinha uma petição de habeas corpus em favor do irmão e a protocolou diretamente perante o Tribunal de Justiça, sem subscrição de advogado. Antes de examinar o mérito, o relator precisa decidir se a petição pode ser conhecida, diante da ausência de advogado subscrevendo a peça. Assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A petição pode ser conhecida, pois o habeas corpus pode ser impetrado por qualquer pessoa, independentemente de ser advogada, já que a Lei 8.906/94 exclui expressamente esse remédio constitucional da atividade privativa de advocacia, podendo a impetração ocorrer em qualquer instância ou tribunal."
+        },
+        {
+          "letra": "B",
+          "texto": "A petição é inadmissível, pois a capacidade postulatória é pressuposto processual indispensável a qualquer medida judicial, inclusive ao habeas corpus, de modo que a ausência de advogado subscrevendo a peça impede seu conhecimento, nos termos do art. 1º, I, do Estatuto da Advocacia."
+        },
+        {
+          "letra": "C",
+          "texto": "A petição somente poderá ser conhecida se Marisa comprovar relação de parentesco com Heitor até o segundo grau, exigência que a Lei 8.906/94 impõe para legitimar terceiros a impetrarem habeas corpus sem a assistência de advogado."
+        },
+        {
+          "letra": "D",
+          "texto": "A impetração sem advogado só é válida perante o juízo de primeiro grau, devendo, em caso de recurso dirigido ao Tribunal, haver regularização da representação processual por profissional inscrito na OAB."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "O art. 1º, §1º, da Lei 8.906/94 (Estatuto da Advocacia) estabelece que 'não se inclui na atividade privativa de advocacia a impetração de habeas corpus em qualquer instância ou tribunal'. Trata-se da principal exceção à privatividade postulatória do advogado: qualquer pessoa, advogada ou não, pode impetrar habeas corpus em seu favor ou de terceiro, em qualquer grau de jurisdição, sem necessidade de assinatura técnica.",
+      "explicacaoErradas": "A alternativa B inverte a regra: a própria lei afasta a exigência de capacidade postulatória técnica justamente para o habeas corpus, que é a exceção clássica à privatividade do art. 1º, I. A alternativa C inventa um requisito de parentesco que não existe na lei: a legitimidade para impetrar HC em favor de outrem independe de qualquer vínculo familiar ou documental. A alternativa D também é incorreta, pois o próprio §1º do art. 1º fala em 'qualquer instância ou tribunal', de modo que a dispensa de advogado não se limita ao primeiro grau, alcançando igualmente o processamento em tribunais.",
+      "pegadinha": "O examinador explora a tendência do candidato de aplicar a regra geral de que toda petição judicial exige advogado (art. 1º, I), ignorando a exceção expressa do §1º, e também testa se o candidato confunde essa exceção com uma hipótese limitada a parentes ou à primeira instância.",
+      "regraMemoria": "Habeas corpus dispensa advogado para qualquer pessoa, em qualquer instância ou tribunal — é a exceção mais cobrada à atividade privativa da advocacia.",
+      "seedVersion": 3
+    },
+    {
+      "territorio": "Ética",
+      "tema": "Postulação e Atividades Privativas",
+      "dificuldade": "dificil",
+      "enunciado": "Jurandir, auxiliar de produção, ajuizou reclamação trabalhista pessoalmente, sem constituir advogado, perante a Vara do Trabalho de Uberlândia, com fundamento no jus postulandi do art. 791 da CLT. Irresignado com a sentença, apresentou recurso ordinário ao Tribunal Regional do Trabalho, também sem advogado, recurso que foi regularmente conhecido. Anos depois, já transitada em julgado a decisão, Jurandir, ainda desacompanhado de advogado, ajuíza ação rescisória perante o próprio TRT para desconstituir o julgado e, paralelamente, pretende interpor recurso de revista diretamente ao Tribunal Superior do Trabalho. Com base no entendimento sumulado do TST sobre os limites do jus postulandi, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O jus postulandi de Jurandir era válido na reclamação e no recurso ordinário perante o TRT, mas não alcança a ação rescisória nem os recursos de competência do Tribunal Superior do Trabalho, hipóteses em que é indispensável a constituição de advogado."
+        },
+        {
+          "letra": "B",
+          "texto": "O jus postulandi previsto no art. 791 da CLT autoriza a parte a postular pessoalmente em todas as instâncias da Justiça do Trabalho, inclusive perante o Tribunal Superior do Trabalho, não havendo, segundo o entendimento sumulado, qualquer restrição recursal."
+        },
+        {
+          "letra": "C",
+          "texto": "O jus postulandi somente é válido na fase de conhecimento perante a Vara do Trabalho, sendo já indispensável a assistência de advogado para o recurso ordinário dirigido ao Tribunal Regional do Trabalho."
+        },
+        {
+          "letra": "D",
+          "texto": "A ação rescisória pode ser ajuizada pela própria parte sem advogado, por se tratar de ação autônoma de impugnação e não de recurso, sendo exigida a representação técnica apenas nos recursos dirigidos ao Tribunal Superior do Trabalho."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "A Súmula 425 do TST dispõe que 'o jus postulandi das partes, estabelecido no art. 791 da CLT, limita-se às Varas do Trabalho e aos Tribunais Regionais do Trabalho, não alcançando a ação rescisória, a ação cautelar, o mandado de segurança e os recursos de competência do Tribunal Superior do Trabalho'. Assim, Jurandir podia postular sem advogado na Vara e no TRT (em sede de recurso ordinário), mas tanto a ação rescisória quanto o recurso de revista ao TST exigem a constituição de advogado.",
+      "explicacaoErradas": "A alternativa B ignora a limitação expressa da Súmula 425, que exclui justamente o TST do alcance do jus postulandi. A alternativa C erra ao restringir a capacidade postulatória apenas à Vara do Trabalho, quando a súmula expressamente a estende ao recurso ordinário perante o TRT. A alternativa D explora a distinção técnica entre 'ação autônoma' e 'recurso', mas a própria Súmula 425 cita nominalmente a ação rescisória entre as hipóteses excluídas do jus postulandi, de modo que também nela é obrigatória a presença de advogado.",
+      "pegadinha": "O examinador testa se o candidato memoriza a súmula apenas como 'jus postulandi vale para a Justiça do Trabalho' sem saber onde a regra para, e explora a diferenciação técnica entre ação autônoma e recurso para induzir à alternativa D, quando a súmula exclui expressamente a ação rescisória da capacidade postulatória da própria parte.",
+      "regraMemoria": "Jus postulandi trabalhista vai até a Vara e o TRT; rescisória, cautelar, mandado de segurança e recursos ao TST sempre exigem advogado (Súmula 425/TST).",
+      "seedVersion": 3
+    },
+    {
+      "territorio": "Ética",
+      "tema": "Postulação e Atividades Privativas",
+      "dificuldade": "media",
+      "enunciado": "Patrícia, bacharel em Administração e sem inscrição nos quadros da OAB, presta serviços remunerados de 'consultoria jurídica' a pequenas empresas, elaborando pareceres sobre obrigações tributárias e redigindo contratos sob encomenda. Paralelamente, Patrícia também ajuíza em nome próprio, sem se fazer acompanhar de advogado, uma ação de cobrança de R$ 3.000,00 (valor inferior a 20 salários mínimos) perante o Juizado Especial Cível, e, após sentença desfavorável, pretende recorrer à Turma Recursal, novamente sozinha. Com base na Lei 8.906/94 e na Lei 9.099/95, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A atuação de Patrícia como consultora jurídica para terceiros configura exercício irregular de atividade privativa de advocacia; já sua postulação pessoal perante o Juizado Especial Cível é válida, por se tratar de causa de valor até 20 salários mínimos, mas o recurso à Turma Recursal exige a constituição de advogado, independentemente do valor da causa."
+        },
+        {
+          "letra": "B",
+          "texto": "Tanto a consultoria jurídica prestada por Patrícia quanto sua postulação pessoal no Juizado Especial Cível são lícitas, pois a Lei 9.099/95 afasta, de forma ampla, a privatividade da advocacia para causas de pequeno valor, em qualquer grau de jurisdição em que tramitem."
+        },
+        {
+          "letra": "C",
+          "texto": "A consultoria jurídica prestada por Patrícia é lícita, por não envolver postulação perante o Judiciário, sendo apenas sua atuação pessoal no Juizado Especial Cível irregular, já que a dispensa de advogado depende de prévia autorização judicial, e não apenas do valor da causa."
+        },
+        {
+          "letra": "D",
+          "texto": "Como a causa tramita no Juizado Especial Cível, a dispensa de advogado prevista na Lei 9.099/95 abrange toda a tramitação do feito, inclusive eventual recurso perante a Turma Recursal, por se tratar de órgão ainda vinculado à estrutura do próprio Juizado."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "O art. 1º, II, da Lei 8.906/94 inclui entre as atividades privativas de advocacia 'as atividades de consultoria, assessoria e direção jurídicas', de modo que a prestação habitual e remunerada desses serviços por não advogado caracteriza exercício irregular da profissão. Já o art. 9º da Lei 9.099/95 dispensa a assistência de advogado nas causas de valor até 20 salários mínimos perante o Juizado Especial Cível, mas o art. 41, §2º, da mesma lei exige que, no recurso, as partes sejam obrigatoriamente representadas por advogado, independentemente do valor da causa.",
+      "explicacaoErradas": "A alternativa B erra ao estender a dispensa de advogado a 'qualquer grau de jurisdição' e ao ignorar que a consultoria jurídica é atividade privativa por força do art. 1º, II, autônoma em relação à postulação em juízo. A alternativa C inventa uma exigência de autorização judicial prévia que a Lei 9.099/95 não prevê, bastando o valor da causa não superar 20 salários mínimos para a dispensa facultativa de advogado na primeira instância. A alternativa D confunde a Turma Recursal, órgão de segundo grau com competência recursal própria, com mera continuidade do procedimento de primeira instância, desconsiderando a exigência expressa de representação técnica na fase recursal.",
+      "pegadinha": "O examinador explora a ideia de que, por a causa tramitar em Juizado Especial, toda a dispensa de advogado se manteria até o fim do processo, inclusive em grau recursal, além de testar se o candidato percebe que consultoria jurídica (inciso II) é atividade privativa distinta da postulação em juízo (inciso I), sendo irregular mesmo sem qualquer processo judicial envolvido.",
+      "regraMemoria": "No Juizado Especial Cível, advogado é facultativo até 20 salários mínimos, mas sempre obrigatório no recurso à Turma Recursal, qualquer que seja o valor da causa; consultoria e assessoria jurídicas também são atividades privativas de advocacia.",
+      "seedVersion": 3
+    },
+    {
+      "territorio": "Ética",
+      "tema": "Ética e Disciplina",
+      "dificuldade": "media",
+      "enunciado": "O advogado Ricardo Bezerra foi denunciado perante o Tribunal de Ética e Disciplina de determinada Seccional da OAB, por suposta captação indevida de clientela. Ao final da instrução, o TED, por maioria de votos (decisão não unânime), aplicou-lhe a pena de censura. Irresignado, Ricardo pretende reverter a punição e instrui seu patrono a interpor recurso diretamente ao Conselho Federal da OAB, sem antes submeter a questão ao Conselho Seccional, sob o argumento de que isso tornaria o processo mais célere e evitaria o duplo exame da matéria pelo mesmo ramo da Ordem. Consultado sobre a viabilidade dessa estratégia e sobre o prazo aplicável, o advogado contratado para o caso deve orientar Ricardo no seguinte sentido. Assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A decisão do Tribunal de Ética e Disciplina desafia recurso ao Conselho Seccional, a ser interposto no prazo de 15 (quinze) dias contados da intimação, e, como regra geral, esse recurso terá efeito suspensivo; somente da decisão proferida pelo Conselho Seccional, se não unânime ou, sendo unânime, contrariar o Estatuto, o Regulamento Geral, o Código de Ética e Disciplina ou provimento, caberá novo recurso ao Conselho Federal."
+        },
+        {
+          "letra": "B",
+          "texto": "A estratégia é correta, pois a pena de censura, por sua gravidade, permite a supressão de instância, cabendo recurso direto ao Conselho Federal contra qualquer decisão condenatória proferida pelo Tribunal de Ética e Disciplina."
+        },
+        {
+          "letra": "C",
+          "texto": "O recurso cabível é, de fato, ao Conselho Seccional, mas o prazo é de 5 (cinco) dias contados da sessão de julgamento, e o recurso não terá efeito suspensivo, por se tratar de decisão de órgão técnico especializado."
+        },
+        {
+          "letra": "D",
+          "texto": "Por se tratar de pena de censura, a decisão do Tribunal de Ética e Disciplina é irrecorrível, cabendo apenas pedido de reconsideração ao próprio órgão prolator, sem possibilidade de reexame por outra instância da OAB."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "Nos termos do art. 76 do Estatuto da Advocacia (Lei nº 8.906/1994), cabe recurso ao Conselho Seccional de todas as decisões proferidas pelo Tribunal de Ética e Disciplina. O art. 75 somente autoriza recurso ao Conselho Federal contra decisões do Conselho Seccional que não tenham sido unânimes ou que, sendo unânimes, contrariem o próprio Estatuto, o Regulamento Geral, o Código de Ética e Disciplina ou provimento do Conselho Federal. Logo, a decisão do TED deve primeiro ser revista pelo Conselho Seccional, respeitado o prazo de 15 dias contado da intimação, e, como regra, o recurso tem efeito suspensivo (art. 77).",
+      "explicacaoErradas": "(B) está errada porque não existe supressão de instância por gravidade da pena: toda decisão do TED, inclusive a que aplica censura, submete-se primeiro ao Conselho Seccional. (C) erra o prazo (que é de 15 dias, e não de 5) e erra ao afirmar que o recurso não tem efeito suspensivo, quando a regra geral do art. 77 é exatamente a oposta. (D) está errada porque a decisão do TED não é irrecorrível; existe recurso próprio para o Conselho Seccional, e não mera reconsideração interna.",
+      "pegadinha": "O examinador tenta induzir o candidato a achar que uma pena mais grave (censura) autoriza 'pular' direto para o Conselho Federal, confundindo o candidato sobre a ordem hierárquica dos órgãos recursais (TED -> Conselho Seccional -> Conselho Federal, este último só em hipóteses restritas de não unanimidade ou contrariedade a norma expressa).",
+      "regraMemoria": "Decisão do TED só vai para o Conselho Federal depois de passar pelo Conselho Seccional; e só sobe se não foi unânime ou se, unânime, contrariou lei, regulamento, código de ética ou provimento.",
+      "seedVersion": 3
+    },
+    {
+      "territorio": "Ética",
+      "tema": "Ética e Disciplina",
+      "dificuldade": "dificil",
+      "enunciado": "Em uma mesma Seccional da OAB, dois processos disciplinares distintos chegam à fase recursal no mesmo mês. No primeiro, a advogada Camila Nogueira tem decretada, pelo Tribunal de Ética e Disciplina, sua suspensão preventiva, em razão de fortes indícios de apropriação de valores recebidos de cliente, e interpõe recurso contra essa decisão cautelar. No segundo, o advogado Marcos Vilela tem sua inscrição cancelada, por decisão unânime do Conselho Seccional, em razão de ter sido obtida mediante diploma de graduação falsificado, e também recorre, pretendendo permanecer inscrito até o julgamento final de seu recurso pelo Conselho Federal. Diante da sistemática recursal do processo disciplinar da OAB, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Nenhum dos dois recursos é dotado de efeito suspensivo automático, pois tanto a suspensão preventiva decretada pelo Tribunal de Ética e Disciplina quanto o cancelamento de inscrição obtida mediante prova falsa figuram entre as exceções legais à regra geral do efeito suspensivo dos recursos, permanecendo ambas as decisões eficazes durante o processamento dos recursos."
+        },
+        {
+          "letra": "B",
+          "texto": "Ambos os recursos têm efeito suspensivo automático, pois essa é a regra geral e absoluta aplicável a todo e qualquer recurso no âmbito do processo disciplinar da OAB, sem exceções."
+        },
+        {
+          "letra": "C",
+          "texto": "Apenas o recurso de Camila Nogueira tem efeito suspensivo, por se tratar de medida cautelar, que fica provisoriamente suspensa até o julgamento definitivo; o de Marcos Vilela não o tem, pois o cancelamento de inscrição por falsidade é sempre de aplicação imediata."
+        },
+        {
+          "letra": "D",
+          "texto": "Apenas o recurso de Marcos Vilela tem efeito suspensivo, por decorrer de decisão unânime do colegiado, que goza de presunção de acerto; o de Camila Nogueira não o tem, por se tratar de decisão monocrática do Presidente do Tribunal de Ética e Disciplina."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "O art. 77 do Estatuto da Advocacia estabelece que, como regra, os recursos no processo disciplinar da OAB têm efeito suspensivo, excetuadas expressamente três hipóteses: (i) recursos relativos a eleições, (ii) recursos contra a suspensão preventiva decidida pelo Tribunal de Ética e Disciplina e (iii) recursos contra o cancelamento da inscrição obtida com prova falsa. Os dois casos narrados correspondem exatamente às exceções (ii) e (iii), de modo que nenhum dos recursos suspende a eficácia da decisão recorrida.",
+      "explicacaoErradas": "(B) erra ao tratar o efeito suspensivo como regra absoluta e sem exceções, ignorando o rol do art. 77. (C) erra ao supor que a suspensão preventiva, por ser cautelar, teria efeito suspensivo quando recorrida — é exatamente o oposto, pois essa é uma das exceções legais. (D) erra ao criar um critério inexistente na lei (unanimidade do colegiado gerando efeito suspensivo) e ao descrever incorretamente a suspensão preventiva como decisão monocrática do Presidente, quando o enunciado deixa claro que foi decretada pelo próprio Tribunal de Ética e Disciplina.",
+      "pegadinha": "O examinador explora a intuição de que medida 'provisória' (suspensão preventiva) deveria ficar suspensa até o recurso ser julgado, e de que decisão 'unânime' seria mais forte e por isso suspenderia seus efeitos; na verdade a lei faz o movimento inverso, retirando o efeito suspensivo exatamente dessas duas situações mais sensíveis (risco à sociedade/clientes e fraude na própria inscrição).",
+      "regraMemoria": "Recurso disciplinar na OAB é suspensivo, EXCETO em três casos: eleições, suspensão preventiva do TED e cancelamento de inscrição por prova falsa — nessas três hipóteses, a decisão recorrida continua produzindo efeitos.",
+      "seedVersion": 3
+    },
+    {
+      "territorio": "Ética",
+      "tema": "Exercício da Advocacia",
+      "dificuldade": "media",
+      "enunciado": "Rodrigo, advogado, patrocina os interesses de Beatriz em ação de cobrança. Após desentendimento insuperável sobre a estratégia processual, Rodrigo decide renunciar ao mandato. Em 3 de fevereiro, notifica Beatriz por carta com aviso de recebimento, comunicando a renúncia, e junta aos autos a comprovação do envio, requerendo sua exclusão imediata do processo, sob o argumento de que \"a lei exige apenas a comunicação ao cliente, não a permanência no feito\". Decorridos doze dias da notificação, Beatriz ainda não constituiu novo advogado, e o processo continua tramitando normalmente. Assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Rodrigo cometeu infração disciplinar ao requerer sua exclusão imediata dos autos, pois o art. 5º, §3º, do Estatuto da Advocacia e o art. 112 do CPC impõem que, após notificada a renúncia, o advogado continue representando o mandante pelos dez dias seguintes, salvo se substituído antes; abandonar a causa antes desse prazo configura a infração do art. 34, XI, do Estatuto. Quanto a Beatriz, o simples decurso dos dez dias sem constituição de novo patrono não gera revelia automática nem suspende o feito: os atos processuais prosseguem normalmente, sujeitando-se a parte à preclusão apenas quanto aos atos que dependerem de capacidade postulatória."
+        },
+        {
+          "letra": "B",
+          "texto": "A conduta de Rodrigo foi correta, pois a notificação da renúncia já extingue de pleno direito o mandato e toda a responsabilidade do advogado perante o cliente e o juízo, bastando a comprovação do envio da comunicação para que o juiz determine sua exclusão imediata dos autos."
+        },
+        {
+          "letra": "C",
+          "texto": "Rodrigo não cometeu infração disciplinar, mas o processo deveria ter sido suspenso automaticamente a partir da juntada da renúncia até que Beatriz constituísse novo patrono, sob pena de nulidade de todos os atos praticados nesse ínterim."
+        },
+        {
+          "letra": "D",
+          "texto": "Rodrigo cometeu infração disciplinar, e o decurso in albis do prazo de dez dias sem que Beatriz constitua novo advogado acarreta sua revelia automática, com julgamento do mérito em seu desfavor, independentemente da prática de qualquer outro ato processual."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "O art. 5º, §3º, da Lei 8.906/1994 e o art. 112 do CPC estabelecem que o advogado que renuncia ao mandato continua, pelos dez dias seguintes à notificação, a representar o mandante, salvo se for substituído antes do término desse prazo. Pedir exclusão imediata dos autos, sem aguardar esse período, equivale a abandonar a causa antes de decorridos os dez dias da comunicação da renúncia, infração expressamente tipificada no art. 34, XI, do EAOAB. Quanto à parte, a ausência de constituição de novo patrono dentro do prazo não gera revelia (instituto ligado à falta de resposta à citação inicial) nem suspende o processo: os atos continuam a fluir, e a parte apenas se sujeita à preclusão dos atos que exigirem advogado.",
+      "explicacaoErradas": "(B) erra porque a mera comunicação da renúncia não libera o advogado de imediato: a responsabilidade e a representação persistem pelos dez dias legais, salvo substituição antecipada. (C) erra porque não há previsão de suspensão automática do processo em razão da renúncia; o feito segue seu curso regular. (D) erra ao equiparar a inércia da parte em constituir novo advogado à revelia, instituto próprio da ausência de contestação à citação inicial, e não da falta de procurador no curso do processo já instaurado.",
+      "pegadinha": "O examinador explora a confusão entre a extinção da responsabilidade do advogado pela simples notificação (errado) e a falsa ideia de que a inércia do cliente em constituir sucessor gera automaticamente revelia ou nulidade processual.",
+      "regraMemoria": "Renunciou, notificou, mas ainda responde por 10 dias — sair antes é abandono; e cliente omisso não gera revelia, só preclusão.",
+      "seedVersion": 3
+    },
+    {
+      "territorio": "Ética",
+      "tema": "Exercício da Advocacia",
+      "dificuldade": "dificil",
+      "enunciado": "Em duas ações penais distintas, perante a mesma Vara Criminal, os defensores manifestaram a intenção de deixar de patrocinar seus respectivos réus. Mateus, advogado constituído por procuração nos autos de Tales, protocolou petição renunciando ao mandato, comunicando previamente o cliente por escrito. Clarice, por sua vez, havia sido nomeada pelo juízo como defensora dativa de Igor, ante a ausência de advogado constituído e a inexistência de Defensoria Pública estruturada na comarca; esgotada sua disponibilidade para o caso, Clarice informou ao juízo não ter mais condições de continuar atuando e requereu sua substituição. Assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Mateus, por atuar em virtude de mandato, deve continuar representando Tales pelos dez dias seguintes à comunicação da renúncia, salvo se substituído antes (art. 5º, §3º, do EAOAB, c/c art. 112 do CPC), sujeitando-se a infração disciplinar se abandonar a causa antes desse prazo (art. 34, XI, EAOAB). Clarice, por ter sido designada por nomeação judicial e não vinculada por mandato outorgado pelo réu, não se submete a esse prazo de dez dias: cabe ao juiz, uma vez verificada a impossibilidade de sua continuidade, providenciar de imediato a nomeação de outro defensor a Igor, de modo a não deixar o réu sem defesa técnica."
+        },
+        {
+          "letra": "B",
+          "texto": "Ambos os defensores, por atuarem em processo penal, estão dispensados do prazo de dez dias do art. 5º, §3º, do EAOAB, uma vez que, no âmbito penal, vigora regra própria que permite o afastamento imediato de qualquer defensor, constituído ou dativo, mediante simples comunicação ao juízo, sem necessidade de nomeação de substituto."
+        },
+        {
+          "letra": "C",
+          "texto": "Mateus deve permanecer patrocinando Tales por prazo indeterminado, até que este manifeste expressamente a constituição de novo patrono, e Clarice, por também atuar em processo penal, deve aguardar o mesmo prazo de dez dias do art. 5º, §3º, do EAOAB antes de ser substituída, por força da equiparação entre advogado constituído e defensor dativo."
+        },
+        {
+          "letra": "D",
+          "texto": "Nenhum dos dois pode se afastar da respectiva causa sem autorização prévia do Tribunal de Ética e Disciplina da OAB, sendo nulos os atos processuais praticados até que o órgão disciplinar competente defira o pedido de afastamento."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "O prazo de dez dias do art. 5º, §3º, do EAOAB (e do art. 112 do CPC) pressupõe relação de mandato entre advogado e cliente, cabendo ao primeiro continuar representando o segundo até que este constitua sucessor ou decorra o prazo legal. Tratando-se de defensor dativo, nomeado diretamente pelo juízo por não haver advogado constituído nem Defensoria Pública estruturada, não há mandato outorgado pelo réu a reger o desligamento: compete ao próprio juiz, verificada a impossibilidade de o dativo continuar no encargo, prover de imediato a nomeação de substituto, de modo a preservar a defesa técnica do acusado sem solução de continuidade, nos moldes do regime de substituição de defensores previsto no CPP (arts. 263 e 265).",
+      "explicacaoErradas": "(B) erra ao afirmar que ambos estão dispensados do prazo de dez dias; a regra do art. 5º, §3º, do EAOAB continua a reger o advogado constituído mesmo em processo penal. (C) erra ao inverter as situações, impondo o prazo de dez dias à defensora dativa e dispensando-o do advogado constituído. (D) erra ao criar exigência inexistente de autorização prévia do Tribunal de Ética para o afastamento do patrono, condição que não encontra respaldo no Estatuto, no Código de Ética ou no CPC/CPP.",
+      "pegadinha": "O examinador tenta induzir à aplicação mecânica do prazo de dez dias do art. 5º, §3º, do EAOAB também ao defensor dativo, ignorando que essa regra pressupõe mandato outorgado pelo cliente, inexistente na nomeação judicial.",
+      "regraMemoria": "Advogado constituído tem mandato e 10 dias de responsabilidade; defensor dativo foi nomeado pelo juiz, que o substitui na hora, sem esse prazo.",
+      "seedVersion": 3
+    },
+    {
+      "territorio": "Ética",
+      "tema": "Exercício da Advocacia",
+      "dificuldade": "media",
+      "enunciado": "A advogada Luiza renunciou ao patrocínio de Eduardo em razão de inadimplemento dos honorários contratuais. Encerrada sua atuação, Eduardo solicitou a devolução dos documentos originais que havia entregado no início da causa (contrato social e provas documentais) e do saldo remanescente de um depósito judicial levantado em seu nome. Luiza recusou-se a devolver os documentos, alegando exercer direito de retenção até a quitação integral dos honorários vencidos, e também reteve o valor do depósito judicial para compensar o débito, sem que houvesse previsão contratual de compensação ou autorização de Eduardo nesse sentido. Assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A conduta de Luiza é irregular em ambos os pontos: a conclusão ou desistência da causa, tenha havido ou não extinção formal do mandato, obriga o advogado a devolver ao cliente os bens, valores e documentos que ainda estejam em seu poder e a prestar-lhe contas pormenorizadamente (art. 12 do Código de Ética e Disciplina), não lhe sendo lícito reter documentos como meio de coagir o cliente ao pagamento, tampouco compensar unilateralmente valores do cliente com o próprio crédito de honorários sem previsão contratual ou autorização expressa (art. 35, §2º, do CED), ressalvada apenas a parcela de honorários já paga referente aos serviços efetivamente prestados, que não se inclui entre os valores a restituir."
+        },
+        {
+          "letra": "B",
+          "texto": "A conduta de Luiza é correta em ambos os pontos, pois o Código de Ética e Disciplina autoriza expressamente o advogado a reter documentos e valores do cliente inadimplente até a quitação integral dos honorários, em exercício regular de direito de retenção nele previsto."
+        },
+        {
+          "letra": "C",
+          "texto": "Luiza pode reter os documentos de Eduardo até o pagamento integral dos honorários, por se tratar de direito de retenção expressamente previsto no Código de Ética como garantia do crédito, mas não poderia compensar o valor do depósito judicial sem autorização do cliente."
+        },
+        {
+          "letra": "D",
+          "texto": "Luiza não poderia reter os documentos de Eduardo, mas poderia compensar o valor do depósito judicial com os honorários devidos independentemente de previsão contratual ou autorização do cliente, por decorrer a verba diretamente da mesma causa em que atuou."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "O art. 12 do Código de Ética e Disciplina da OAB impõe ao advogado, concluída ou abandonada a causa, o dever de devolver ao cliente os bens, valores e documentos que ainda estejam em seu poder e de prestar contas detalhadas, ressalvada apenas a parcela de honorários já paga pelos serviços prestados. A retenção de documentos do cliente como forma de pressioná-lo ao pagamento não encontra amparo nesse dispositivo nem em qualquer outra norma do Estatuto ou do Código de Ética. Da mesma forma, o art. 35, §2º, do CED veda a compensação unilateral de valores do cliente com o crédito de honorários do advogado, somente a admitindo quando houver previsão contratual nesse sentido ou autorização expressa do cliente.",
+      "explicacaoErradas": "(B) erra ao afirmar a existência de um direito de retenção genérico sobre documentos e valores do cliente, inexistente no Código de Ética, que, ao contrário, impõe a devolução. (C) erra ao admitir a retenção dos documentos como se fosse direito assegurado pelo Código de Ética; a vedação alcança tanto a retenção de documentos quanto a compensação de valores. (D) erra ao autorizar a compensação do depósito judicial independentemente de previsão contratual ou autorização do cliente, justamente o requisito exigido pelo art. 35, §2º, do CED para que a compensação seja lícita.",
+      "pegadinha": "O examinador explora a crença comum de que o advogado teria uma espécie de 'direito de retenção' sobre autos, documentos ou valores do cliente como garantia informal do pagamento de honorários — prática vedada pelo Código de Ética, que exige devolução incondicional (ressalvada apenas a parcela de honorários já paga) e só permite compensação de valores com previsão contratual ou autorização expressa.",
+      "regraMemoria": "Documento e valor do cliente se devolvem sempre; honorários não pagos se cobram em ação própria, nunca retendo o que é do cliente.",
+      "seedVersion": 3
+    },
+    {
+      "territorio": "Ética",
+      "tema": "Incompatibilidades e Impedimentos",
+      "dificuldade": "media",
+      "enunciado": "Fabrício, juiz de direito titular de uma vara cível, ingressou na magistratura por concurso público logo após se bacharelar em Direito, nunca tendo se inscrito nos quadros da OAB. Em razão de problemas de saúde, obteve licença de sessenta dias, período em que ficará totalmente afastado do exercício da jurisdição, sem substituir nem ser substituído em audiências. Aproveitando o afastamento, Fabrício pretende ajuizar pessoalmente, subscrevendo a própria petição inicial, uma ação de indenização contra uma construtora, por entender que, como está apenas de licença e não estará praticando atos jurisdicionais nesse período, nada impede que atue em causa própria. Consultado a respeito, seu amigo Osvaldo, advogado, deve esclarecer que:",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Fabrício não pode exercer advocacia, nem mesmo em causa própria, pois os membros do Poder Judiciário têm incompatibilidade total com a advocacia, e essa incompatibilidade persiste ainda que o titular do cargo se afaste temporariamente de suas funções, como ocorre na licença."
+        },
+        {
+          "letra": "B",
+          "texto": "Como Fabrício está apenas em licença e não estará exercendo jurisdição no período, a incompatibilidade fica temporariamente suspensa, podendo ele patrocinar a própria causa sem necessidade de inscrição na OAB."
+        },
+        {
+          "letra": "C",
+          "texto": "A incompatibilidade de membros do Poder Judiciário com a advocacia alcança apenas o patrocínio de causas de terceiros, não se estendendo à defesa de interesse próprio, de modo que Fabrício pode atuar normalmente em causa própria."
+        },
+        {
+          "letra": "D",
+          "texto": "Fabrício poderia atuar validamente se obtivesse inscrição na OAB sob a condição de advogado licenciado da magistratura, regime que autoriza o exercício da advocacia apenas em causa própria durante afastamentos."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "O art. 28, II, do Estatuto da Advocacia (Lei 8.906/1994) torna a advocacia incompatível, mesmo em causa própria, com o exercício de cargo em órgão do Poder Judiciário. O §1º do mesmo artigo determina que essa incompatibilidade persiste mesmo que o ocupante do cargo se afaste temporariamente do exercício de suas funções. Logo, a licença de Fabrício não afasta a incompatibilidade: ele continua impedido de exercer qualquer atividade privativa de advogado, inclusive para defender interesse próprio em juízo.",
+      "explicacaoErradas": "B está errada porque confunde ausência de exercício efetivo da jurisdição com cessação do vínculo com o cargo; o §1º do art. 28 é expresso em afastar esse raciocínio ao manter a incompatibilidade durante afastamentos temporários. C está errada porque o próprio caput do art. 28 fulmina a advocacia 'mesmo em causa própria', não havendo exceção para defesa de interesse pessoal. D está errada porque o Estatuto não prevê nenhuma figura de 'advogado licenciado da magistratura'; enquanto ocupar cargo incompatível, a inscrição na OAB sequer pode ser deferida para esse fim, sendo a incompatibilidade causa impeditiva, e não uma situação regularizável por uma modalidade especial de inscrição.",
+      "pegadinha": "O examinador explora a ideia de que a licença (afastamento temporário, sem exercício de jurisdição) equivaleria a uma suspensão da incompatibilidade, levando o candidato a esquecer a regra expressa do §1º do art. 28, que mantém a vedação mesmo nesses casos.",
+      "regraMemoria": "Uma vez incompatível, sempre incompatível enquanto durar o cargo: nem licença, nem férias, nem causa própria afastam a proibição do art. 28, II e §1º.",
+      "seedVersion": 3
+    },
+    {
+      "territorio": "Ética",
+      "tema": "Incompatibilidades e Impedimentos",
+      "dificuldade": "dificil",
+      "enunciado": "Valquíria é sargento da Polícia Militar na ativa e também é bacharel em Direito, tendo concluído a graduação após seu ingresso na corporação. Ao ser surpreendida com o indeferimento de um pedido administrativo de reparação de danos a um bem pessoal, decide redigir e subscrever, ela própria, a petição inicial de uma ação judicial em causa própria contra o Estado, sem constituir advogado. Questionada por um colega sobre a regularidade dessa atuação, Valquíria responde que isso é permitido, pois teria lido, em reportagens de 2022, que uma alteração legislativa passou a autorizar policiais e militares da ativa a atuarem em causa própria, mediante inscrição especial na OAB. Diante desse cenário, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A incompatibilidade de militares da ativa com a advocacia é total e alcança até mesmo a causa própria; a alteração legislativa de 2022 que abria essa exceção para causa própria teve seus dispositivos declarados inconstitucionais pelo Supremo Tribunal Federal, de modo que Valquíria não pode atuar como fez."
+        },
+        {
+          "letra": "B",
+          "texto": "A exceção introduzida em 2022 para a atuação de policiais e militares em causa própria permanece plenamente vigente e eficaz, de modo que a conduta de Valquíria é regular, desde que ela obtenha a inscrição especial mencionada."
+        },
+        {
+          "letra": "C",
+          "texto": "A incompatibilidade do Estatuto da Advocacia com relação a militares da ativa restringe-se aos oficiais, não alcançando praças como sargentos e cabos, de forma que Valquíria poderia atuar normalmente em causa própria."
+        },
+        {
+          "letra": "D",
+          "texto": "Bastaria que Valquíria obtivesse afastamento temporário do serviço ativo, como férias regulamentares, para que pudesse validamente patrocinar a própria causa durante esse período, retomando a incompatibilidade ao final do afastamento."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "O art. 28, VI, do Estatuto da Advocacia (Lei 8.906/1994) torna a advocacia incompatível, mesmo em causa própria, com a condição de militar de qualquer natureza na ativa, o que abrange tanto integrantes das Forças Armadas quanto das Polícias Militares e dos Corpos de Bombeiros Militares. A Lei 14.365/2022 havia incluído os §§3º e 4º ao art. 28 para permitir que policiais e militares da ativa atuassem em causa própria mediante inscrição especial, mas o Supremo Tribunal Federal, ao julgar a ADI 7.227, declarou a inconstitucionalidade desses parágrafos, de modo que a incompatibilidade total voltou a prevalecer sem a exceção pretendida.",
+      "explicacaoErradas": "B está errada porque ignora a declaração de inconstitucionalidade proferida pelo STF, que retirou do ordenamento a exceção criada em 2022. C está errada porque o inciso VI fala em 'militares de qualquer natureza', sem distinguir posto, graduação ou hierarquia, abrangendo tanto oficiais quanto praças. D está errada porque, assim como ocorre com os demais incisos do art. 28, a incompatibilidade persiste mesmo durante afastamentos temporários do cargo ou função, nos termos do §1º do mesmo artigo, não sendo suspensa por férias ou licenças.",
+      "pegadinha": "A questão explora o conhecimento desatualizado de quem leu sobre a Lei 14.365/2022 na época de sua edição, mas não acompanhou o julgamento da ADI 7.227 pelo STF, que declarou inconstitucional justamente a exceção para causa própria que a banca testa.",
+      "regraMemoria": "Militar da ativa não advoga nem para si mesmo: incompatibilidade total do art. 28, VI, sem a exceção de causa própria, que o STF declarou inconstitucional.",
+      "seedVersion": 3
+    },
+    {
+      "territorio": "Ética",
+      "tema": "Honorários Advocatícios",
+      "dificuldade": "dificil",
+      "enunciado": "O advogado Jorge Andrade prestou, ao longo de três anos, serviços jurídicos contratuais e obteve êxito em diversas demandas para a sociedade empresária Têxtil Monte Azul Ltda., da qual é credor de honorários contratuais e sucumbenciais já vencidos. Antes do pagamento, a empresa teve sua falência decretada. Jorge habilita seu crédito no processo falimentar, pleiteando que o valor integral de seus honorários, que totaliza o equivalente a 420 salários mínimos, seja pago com a mesma prioridade conferida aos empregados da massa falida. O administrador judicial, ao analisar a habilitação, precisa decidir como classificar esse crédito. Assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Os honorários advocatícios, contratuais e sucumbenciais, vencidos até a data da decretação da falência, têm natureza alimentar e se equiparam a créditos trabalhistas para fins de habilitação, mas estão sujeitos ao limite de 150 salários mínimos por credor previsto no art. 83, I, da Lei nº 11.101/2005, devendo o valor excedente ser classificado como crédito quirografário."
+        },
+        {
+          "letra": "B",
+          "texto": "Por serem devidos a um advogado autônomo, pessoa física, e não a uma sociedade de advogados, os honorários de Jorge não se submetem a qualquer limite quantitativo, devendo ser pagos com prioridade máxima e em sua integralidade antes de qualquer outro credor da massa falida."
+        },
+        {
+          "letra": "C",
+          "texto": "Somente os honorários de sucumbência, por decorrerem de decisão judicial, equiparam-se a crédito trabalhista; os honorários contratuais, por terem origem em ajuste privado entre advogado e cliente, devem necessariamente ser habilitados como crédito quirografário, sem equiparação e sem o benefício do limite legal."
+        },
+        {
+          "letra": "D",
+          "texto": "Os honorários advocatícios vencidos antes da falência não podem ser habilitados no processo falimentar, devendo Jorge necessariamente ajuizar ação autônoma de cobrança contra os antigos sócios da sociedade falida, já que a decretação da falência extingue a possibilidade de habilitação de créditos dessa natureza."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "O Superior Tribunal de Justiça, em julgamento de recurso repetitivo (Tema 637), firmou a tese de que os créditos resultantes de honorários advocatícios, contratuais ou de sucumbência, têm natureza alimentar e se equiparam aos trabalhistas para efeito de habilitação em falência, observado o limite legal de 150 salários mínimos por credor fixado no art. 83, I, da Lei nº 11.101/2005 (o mesmo entendimento foi reafirmado para honorários titularizados por sociedade de advogados). O valor que exceder esse teto é classificado como crédito quirografário (art. 83, VI, da Lei nº 11.101/2005).",
+      "explicacaoErradas": "B erra porque a equiparação a crédito trabalhista, com seu respectivo limite de 150 salários mínimos, aplica-se tanto ao advogado autônomo quanto à sociedade de advogados, não havendo prioridade ilimitada para nenhum dos dois. C erra porque tanto os honorários contratuais quanto os sucumbenciais, vencidos até a decretação da falência, recebem o mesmo tratamento equiparado a crédito trabalhista, não havendo essa distinção na jurisprudência consolidada. D erra porque a habilitação do crédito no próprio processo falimentar é exatamente o caminho processual correto e necessário, sendo incompatível com a sistemática concursal exigir ação autônoma em vez da habilitação.",
+      "pegadinha": "A banca explora a confusão entre 'prioridade' e 'limite quantitativo': o candidato tende a achar que, por serem alimentares, os honorários têm preferência absoluta e ilimitada, quando na verdade a equiparação ao crédito trabalhista vem necessariamente acompanhada do teto de 150 salários mínimos por credor do art. 83, I.",
+      "regraMemoria": "Honorários (contratuais e sucumbenciais) vencidos até a falência = crédito trabalhista até 150 salários mínimos; o que passar disso vira quirografário.",
+      "seedVersion": 3
+    },
+    {
+      "territorio": "Ética",
+      "tema": "Sociedade de Advogados",
+      "dificuldade": "media",
+      "enunciado": "Caio, Décio e Elisa são sócios da sociedade \"Andrade & Pimentel Advogados Associados\", regularmente registrada na OAB, com participações societárias de 40%, 40% e 20%, respectivamente. Os sócios descobrem que Décio, à revelia dos demais, passou a exercer atividade incompatível com a advocacia, causando sérios prejuízos de imagem à sociedade. Caio e Elisa, detentores de 80% do capital social, deliberam pela exclusão de Décio, com fundamento em cláusula do contrato social que prevê essa hipótese. Sobre o procedimento de exclusão de sócio e seus efeitos na sociedade de advogados, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A exclusão de Décio pode ser deliberada pela maioria do capital social, mediante alteração do contrato social, desde que observadas as condições nele previstas, exigindo-se, para o registro da alteração contratual perante a OAB, a comprovação de que o excluído foi pessoalmente comunicado (ou, sendo isso impossível, certidão de cartório de títulos e documentos), apurando-se seus haveres na forma pactuada no contrato social."
+        },
+        {
+          "letra": "B",
+          "texto": "A exclusão de sócio de sociedade de advogados somente pode ocorrer mediante decisão unânime de todos os sócios, sendo inválida qualquer cláusula contratual que autorize a exclusão por deliberação de maioria do capital social."
+        },
+        {
+          "letra": "C",
+          "texto": "Como, após a exclusão de Décio, a sociedade permanecerá com dois sócios (Caio e Elisa), ela estará automaticamente dissolvida, por força da regra que exige a reconstituição da pluralidade de sócios em até 180 dias sob pena de dissolução."
+        },
+        {
+          "letra": "D",
+          "texto": "A exclusão de sócio em sociedade de advogados depende de prévio processo ético-disciplinar, com decisão transitada em julgado do Tribunal de Ética e Disciplina da Seccional reconhecendo falta grave, não bastando a simples deliberação societária prevista em contrato social."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "Nos termos da regulamentação do Conselho Federal da OAB sobre sociedades de advogados, a exclusão de sócio pode ser deliberada pela maioria do capital social, mediante alteração contratual, desde que observados os termos e condições expressamente previstos no contrato social; para o registro da alteração contratual exige-se prova de comunicação pessoal ao sócio excluído (ou, não sendo possível, certidão de oficial de registro de títulos e documentos), e o próprio contrato social deve prever a forma de cálculo e pagamento dos haveres devidos ao sócio excluído.",
+      "explicacaoErradas": "B erra porque a exclusão não exige unanimidade: a deliberação por maioria do capital social é expressamente admitida, desde que prevista e disciplinada no contrato social. C erra porque a regra de dissolução por decurso de prazo (180 dias) aplica-se apenas quando a sociedade é reduzida a um único sócio (unipessoalidade), hipótese distinta da do enunciado, em que remanescem dois sócios, de modo que a sociedade continua validamente constituída. D erra porque a exclusão societária de sócio, com base em cláusula contratual, é providência de natureza civil/contratual, independente e distinta do processo ético-disciplinar perante o Tribunal de Ética, que pode ou não ser instaurado paralelamente para apurar eventual infração ao Código de Ética.",
+      "pegadinha": "O examinador explora a confusão entre a regra de dissolução por unipessoalidade (que só incide quando resta um único sócio e não é sanada em 180 dias) e qualquer redução do quadro societário: aqui, restando dois sócios, a sociedade segue normalmente, não havendo dissolução automática.",
+      "regraMemoria": "Exclusão de sócio = maioria do capital social + comunicação pessoal + apuração de haveres pelo contrato; dissolução por prazo só quando sobra um sócio só.",
+      "seedVersion": 3
+    },
+    {
+      "territorio": "Ética",
+      "tema": "Honorários Advocatícios",
+      "dificuldade": "dificil",
+      "enunciado": "O advogado Henrique Salles atuou, em nome de Fábio Guimarães, em ação judicial que tramitou por anos, sem que as partes tivessem formalizado contrato escrito de honorários. A sentença favorável a Fábio transitou em julgado há seis anos. Fábio nunca efetuou qualquer pagamento a Henrique, que somente agora, ao perceber a inadimplência, pretende ajuizar ação de arbitramento cumulada com cobrança de honorários. Sobre a situação, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Como não houve contrato escrito, os honorários de Henrique devem ser fixados por arbitramento judicial, em remuneração compatível com o trabalho realizado e o valor econômico da causa, observados os critérios do art. 85 do CPC (grau de zelo do profissional, lugar de prestação do serviço, natureza e importância da causa, trabalho realizado e tempo exigido); entretanto, tendo decorrido mais de cinco anos do trânsito em julgado da sentença, a pretensão de Henrique já se encontra prescrita, nos termos do art. 25 do Estatuto da Advocacia."
+        },
+        {
+          "letra": "B",
+          "texto": "A ausência de contrato escrito de honorários é condição de validade da remuneração do advogado; sem esse instrumento, Henrique perde o direito de cobrar qualquer valor por seu trabalho, ainda que tenha obtido êxito na demanda."
+        },
+        {
+          "letra": "C",
+          "texto": "Mesmo sem contrato escrito, o arbitramento judicial deve necessariamente observar, como piso mínimo intransponível, o valor constante da tabela de honorários do Conselho Seccional da OAB do local da prestação do serviço, não podendo o juiz fixar quantia inferior a esse parâmetro."
+        },
+        {
+          "letra": "D",
+          "texto": "Por se tratar de honorários decorrentes de mandato judicial, a pretensão de cobrança de Henrique prescreve em dez anos, prazo geral do Código Civil, sendo inaplicável ao caso o prazo quinquenal previsto no Estatuto da Advocacia."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "Na falta de contrato escrito (ou de acordo entre as partes), o art. 22, §2º, do Estatuto da Advocacia determina que os honorários sejam fixados por arbitramento judicial, em remuneração compatível com o trabalho e o valor econômico da questão, observando-se obrigatoriamente os critérios do art. 85 do CPC (entre eles o grau de zelo do profissional, o lugar de prestação do serviço, a natureza e importância da causa e o trabalho/tempo exigidos). Quanto à cobrança, o art. 25 do Estatuto fixa prazo prescricional de cinco anos, contado, no caso de honorários relativos a serviços prestados em processo judicial, do trânsito em julgado da decisão que os fixar (ou, na espécie, do encerramento da prestação jurisdicional); tendo decorrido seis anos, a pretensão está prescrita.",
+      "explicacaoErradas": "B erra porque a ausência de contrato escrito não retira do advogado o direito à remuneração: apenas impõe que o valor seja fixado por arbitramento judicial, e não que o serviço tenha sido gratuito. C erra porque, desde a alteração promovida pela Lei nº 14.365/2022 no art. 22, §2º, do Estatuto, o arbitramento judicial passou a observar os critérios do art. 85 do CPC, não mais havendo referência legal à tabela de honorários do Conselho Seccional como piso obrigatório para esse arbitramento. D erra porque o prazo decenal do Código Civil é aplicado pela jurisprudência do STJ apenas a disputas de honorários entre advogados (por exemplo, em parcerias ou rateio), e não à relação entre advogado e cliente, à qual se aplica o prazo quinquenal específico do art. 25 do Estatuto da Advocacia.",
+      "pegadinha": "A banca testa se o candidato sabe que a redação atual do art. 22, §2º, do Estatuto (após a Lei nº 14.365/2022) não vincula mais o arbitramento judicial ao piso da tabela de honorários da OAB, tendo substituído essa referência pelos critérios do art. 85 do CPC — armadilha para quem decorou a redação antiga do dispositivo.",
+      "regraMemoria": "Sem contrato escrito: honorários por arbitramento judicial com critérios do art. 85 do CPC (não mais tabela da OAB); cobrança prescreve em 5 anos (art. 25 EAOAB), salvo disputa entre advogados (10 anos, regra geral do CC).",
+      "seedVersion": 3
+    },
   ];
 
   function atualizarConteudoPedagogico() {

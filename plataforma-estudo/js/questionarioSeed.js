@@ -6,7 +6,7 @@
 // explicacaoManual, e remove quem sair da lista (ex.: questão trocada por
 // ficar desatualizada).
 var QuestionarioSeed = (function () {
-  var SEED_VERSION_ATUAL = 3;
+  var SEED_VERSION_ATUAL = 4;
   var PROVA_ORIGEM = 'Questionário Inédito — Preparação 48º Exame';
 
   var QUESTOES = [
@@ -4569,6 +4569,396 @@ var QuestionarioSeed = (function () {
       "pegadinha": "A banca testa se o candidato sabe que a redação atual do art. 22, §2º, do Estatuto (após a Lei nº 14.365/2022) não vincula mais o arbitramento judicial ao piso da tabela de honorários da OAB, tendo substituído essa referência pelos critérios do art. 85 do CPC — armadilha para quem decorou a redação antiga do dispositivo.",
       "regraMemoria": "Sem contrato escrito: honorários por arbitramento judicial com critérios do art. 85 do CPC (não mais tabela da OAB); cobrança prescreve em 5 anos (art. 25 EAOAB), salvo disputa entre advogados (10 anos, regra geral do CC).",
       "seedVersion": 3
+    },
+    {
+      "territorio": "Processo Civil",
+      "tema": "Exceção de Pré-Executividade",
+      "dificuldade": "dificil",
+      "enunciado": "Marcos ajuíza execução de título extrajudicial (nota promissória) contra Ricardo, cobrando a quantia de R$ 50.000,00. Citado, Ricardo, sem oferecer garantia ao juízo, apresenta petição em que, com base em documento constante dos próprios autos, demonstra que o crédito exequendo já estava prescrito na data do ajuizamento da execução. Na mesma petição, Ricardo também alega que a assinatura da nota promissória foi obtida mediante coação, fato que, segundo ele próprio afirma, somente poderá ser demonstrado por prova testemunhal a ser colhida em audiência. O juiz determina que as partes se manifestem sobre o cabimento de cada uma das alegações veiculadas na petição de Ricardo. Assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A alegação de prescrição pode ser conhecida por meio de exceção de pré-executividade, por se tratar de matéria de ordem pública, cognoscível de ofício pelo juiz, e cuja comprovação prescinde de dilação probatória; já a alegação de coação, por depender de prova testemunhal, somente pode ser deduzida em embargos à execução, precedidos de garantia do juízo."
+        },
+        {
+          "letra": "B",
+          "texto": "Ambas as alegações podem ser veiculadas por exceção de pré-executividade, pois esse instrumento de defesa admite qualquer matéria, inclusive as que dependam de prova testemunhal, bastando que o executado não disponha de bens para garantir o juízo."
+        },
+        {
+          "letra": "C",
+          "texto": "Nenhuma das alegações pode ser veiculada por exceção de pré-executividade, pois a prescrição, ainda que comprovada documentalmente, é matéria de interesse exclusivo das partes e somente pode ser arguida em embargos à execução, após garantida a execução."
+        },
+        {
+          "letra": "D",
+          "texto": "A alegação de coação pode ser veiculada por exceção de pré-executividade, por constituir vício na formação do título executivo; já a prescrição, por ser matéria de ordem pública, deve ser reconhecida exclusivamente de ofício pelo juiz, não sendo cabível sua arguição pela parte por qualquer via."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "A jurisprudência do STJ (cuja orientação, consagrada na Súmula 393 para a execução fiscal, é estendida pela doutrina e pelos tribunais à execução comum) exige dois requisitos cumulativos para o cabimento da exceção de pré-executividade: um material, consistente em matéria de ordem pública cognoscível de ofício pelo juiz (nulidades, pressupostos processuais, condições da ação, prescrição, iliquidez ou inexigibilidade do título), e um formal, consistente na desnecessidade de dilação probatória, isto é, a alegação deve vir acompanhada de prova pré-constituída, em regra documental. A prescrição demonstrada por documento já constante dos autos atende a ambos os requisitos. Já a alegação de coação na formação do título, embora pudesse em tese ser conhecida de ofício caso fosse de prova documental incontroversa, aqui exige produção de prova testemunhal em audiência, de modo que não pode ser decidida sem dilação probatória, devendo ser deduzida em embargos à execução, via que pressupõe segurança do juízo (penhora, depósito ou caução suficientes).",
+      "explicacaoErradas": "(B) está errada porque a exceção de pré-executividade não serve para qualquer defesa independentemente de garantia do juízo; ela é via excepcional, restrita a matérias de ordem pública comprováveis sem dilação probatória, não abrangendo fatos que dependam de prova testemunhal. (C) está errada porque a prescrição é, sim, matéria de ordem pública cognoscível de ofício (art. 487, II, c/c art. 332, §1º, do CPC) e, quando comprovável documentalmente, pode ser arguida por simples petição, sem necessidade de embargos ou de garantia do juízo. (D) está errada por inverter as premissas: a coação depende de prova testemunhal e por isso não comporta exceção de pré-executividade, ao passo que a prescrição, sendo matéria de ordem pública, pode ser tanto reconhecida de ofício quanto arguida pela parte interessada, inclusive por exceção de pré-executividade quando comprovada documentalmente.",
+      "pegadinha": "A banca junta, na mesma petição, uma matéria que efetivamente comporta exceção de pré-executividade (prescrição provada por documento) com outra que, apesar de também ser relevante para a defesa, depende de prova testemunhal (coação). O candidato apressado tende a enquadrar as duas no mesmo regime só porque ambas aparecem na petição de defesa sem garantia do juízo, ignorando que o critério decisivo não é a natureza pública da matéria em abstrato, mas sim a possibilidade concreta de decidi-la sem produção de prova em audiência.",
+      "regraMemoria": "Pré-executividade cabe quando a defesa reúne matéria de ordem pública + prova pronta nos autos; se a matéria exigir prova em audiência (testemunhal, pericial), só embargos à execução, com garantia do juízo.",
+      "seedVersion": 4
+    },
+    {
+      "territorio": "Processo Civil",
+      "tema": "Impenhorabilidade do Bem de Família",
+      "dificuldade": "dificil",
+      "enunciado": "Benedito é proprietário do único imóvel residencial no qual mora com sua família. Contra ele tramitam, simultaneamente, três execuções distintas: (i) movida por Célia, locadora de imóvel comercial, cobrando aluguéis não pagos por sociedade empresária da qual Benedito foi fiador no respectivo contrato de locação; (ii) movida pela instituição financeira que concedeu a Benedito o financiamento utilizado exclusivamente para a aquisição de seu próprio imóvel residencial, em razão de parcelas do financiamento em aberto; e (iii) movida por Doralice, credora de empréstimo pessoal contraído por Benedito para reformar seu estabelecimento comercial, sem qualquer vínculo com o imóvel residencial. Em todas elas, os respectivos exequentes requerem a penhora do imóvel em que Benedito reside. Assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O imóvel pode ser penhorado nas execuções movidas por Célia e pela instituição financeira, pois a fiança prestada em contrato de locação e o financiamento destinado à aquisição do próprio bem configuram exceções legais à impenhorabilidade do bem de família; já na execução movida por Doralice, o imóvel permanece impenhorável, por se tratar de dívida comum, sem relação com o bem."
+        },
+        {
+          "letra": "B",
+          "texto": "O imóvel é impenhorável nas três execuções, pois a Lei nº 8.009/1990 não admite exceções à impenhorabilidade quando se trata do único imóvel residencial da família, em razão da proteção constitucional ao direito à moradia."
+        },
+        {
+          "letra": "C",
+          "texto": "O imóvel somente pode ser penhorado na execução movida pela instituição financeira, pois o Superior Tribunal de Justiça pacificou o entendimento de que a fiança em contrato de locação deixou de constituir exceção à impenhorabilidade do bem de família após a entrada em vigor do CPC/2015."
+        },
+        {
+          "letra": "D",
+          "texto": "O imóvel pode ser penhorado nas três execuções, pois a impenhorabilidade do bem de família somente protege o devedor contra execuções movidas por credores estranhos à relação obrigacional que ele próprio constituiu, não se aplicando quando a dívida foi contraída pelo próprio titular do imóvel."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "O art. 3º da Lei nº 8.009/1990 estabelece que a impenhorabilidade do bem de família não é oponível em determinadas hipóteses, entre as quais se destacam a execução movida por credor de pensão alimentícia, pelo credor do financiamento destinado à construção ou aquisição do próprio imóvel (inciso II) e pelo credor de pensão/obrigação decorrente de fiança concedida em contrato de locação (inciso VII). Quanto a este último ponto, a Súmula 549 do STJ dispõe expressamente que 'é válida a penhora de bem de família pertencente a fiador de contrato de locação'. Assim, tanto a execução de Célia (fiança locatícia) quanto a da instituição financeira (financiamento do próprio imóvel) recaem sobre exceções legais expressas, autorizando a penhora. Já a dívida de Doralice é obrigação comum, desvinculada do imóvel e sem enquadramento em qualquer hipótese do art. 3º, de modo que o bem permanece protegido pela impenhorabilidade.",
+      "explicacaoErradas": "(B) está errada porque a Lei nº 8.009/1990 contém rol de exceções expressas no art. 3º, não sendo a impenhorabilidade do bem de família absoluta; a proteção à moradia não afasta as exceções legalmente previstas. (C) está errada porque a Súmula 549 do STJ, que reconhece a validade da penhora do bem de família do fiador locatício, continua em pleno vigor mesmo após o CPC/2015, inclusive tendo sido reafirmada pelo STF no RE 612.360 (repercussão geral) quanto à sua constitucionalidade. (D) está errada porque o critério legal não é a origem subjetiva da dívida (se contraída pelo próprio titular ou por terceiro), mas o enquadramento em uma das hipóteses taxativas do art. 3º da Lei nº 8.009/1990; a dívida de empréstimo pessoal de Doralice, embora contraída pelo próprio Benedito, não se enquadra em nenhuma exceção legal e por isso não autoriza a penhora do bem de família.",
+      "pegadinha": "A banca cria três credores diferentes e tenta levar o candidato a aplicar um critério único e intuitivo (por exemplo, 'penhora sempre que a dívida for do próprio dono do imóvel', alternativa D) em vez do critério correto, que é a lista taxativa de exceções do art. 3º da Lei nº 8.009/1990. O candidato que não memorizou as hipóteses específicas (fiança locatícia e financiamento do próprio imóvel) tende a errar por generalizar demais ou por negar toda e qualquer exceção à impenhorabilidade.",
+      "regraMemoria": "Bem de família só pode ser penhorado nas exceções taxativas do art. 3º da Lei 8.009/90 — entre elas, financiamento do próprio imóvel e fiança em locação (Súmula 549/STJ). Fora dessas hipóteses, é impenhorável, mesmo sendo o devedor o próprio titular do bem.",
+      "seedVersion": 4
+    },
+    {
+      "territorio": "Processo Civil",
+      "tema": "Prescrição Intercorrente na Execução",
+      "dificuldade": "media",
+      "enunciado": "Em execução de título extrajudicial ajuizada por Fábio contra Norberto, frustradas as diligências de localização de bens penhoráveis em nome do executado, o juiz suspendeu o curso do processo, nos termos do art. 921, III, do CPC. Decorrido o prazo de um ano de suspensão, sem que Fábio tenha indicado bens penhoráveis e sem que tenha ocorrido, nesse intervalo, qualquer causa interruptiva ou suspensiva da prescrição, assinale a afirmativa correta a respeito do início do prazo de prescrição intercorrente.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Findo o prazo de um ano de suspensão previsto no art. 921, §1º, do CPC, os autos serão arquivados e, a partir daí, começa a correr automaticamente o prazo de prescrição intercorrente, correspondente ao mesmo prazo da prescrição da pretensão executiva, independentemente de nova intimação do exequente para esse fim específico."
+        },
+        {
+          "letra": "B",
+          "texto": "A prescrição intercorrente somente começa a correr a partir de intimação pessoal do exequente para que se manifeste sobre o arquivamento dos autos, não havendo início automático do prazo prescricional enquanto essa intimação específica não for promovida."
+        },
+        {
+          "letra": "C",
+          "texto": "Não há que se falar em prescrição intercorrente em execução de título extrajudicial movida por particular, tratando-se de instituto aplicável exclusivamente às execuções fiscais, por força do entendimento consolidado pelo STJ em sede de recursos repetitivos."
+        },
+        {
+          "letra": "D",
+          "texto": "O prazo de suspensão da execução por ausência de bens penhoráveis é indeterminado, somente se iniciando a contagem do prazo de prescrição intercorrente quando o próprio exequente requerer, voluntariamente, o arquivamento definitivo dos autos."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "Nos termos do art. 921, III e §1º, do CPC, não encontrados bens penhoráveis, o juiz suspenderá o processo pelo prazo de um ano, período durante o qual também fica suspenso o curso da prescrição. Decorrido esse prazo sem manifestação do exequente, os autos são arquivados (art. 921, §2º) e, conforme o §4º do mesmo dispositivo, começa a correr automaticamente o prazo de prescrição intercorrente, sem necessidade de intimação específica para esse fim. Essa automaticidade está em linha com a orientação firmada pelo STJ no Tema 566 (REsp 1.340.553/RS), segundo a qual o encerramento do prazo de suspensão, por si só, dá início à contagem do prazo prescricional, dispensando ato judicial ou intimação adicional do credor.",
+      "explicacaoErradas": "(B) está errada porque não se exige intimação pessoal específica do exequente para que o prazo de prescrição intercorrente passe a correr; o início do prazo é automático, decorrido o período de suspensão, conforme o art. 921, §4º, do CPC e a orientação do STJ. (C) está errada porque a prescrição intercorrente não é exclusiva das execuções fiscais; o próprio CPC disciplina o instituto de forma geral no art. 921, aplicável às execuções cíveis em geral, inclusive as movidas por particulares com base em título extrajudicial. (D) está errada porque o prazo de suspensão não é indeterminado: a lei fixa expressamente o prazo de um ano (art. 921, §1º), findo o qual os autos são arquivados e tem início automático o prazo prescricional, independentemente de requerimento do exequente nesse sentido.",
+      "pegadinha": "A banca explora a confusão entre o regime específico da execução fiscal sob a Lei nº 6.830/1980 (que, antes da consolidação jurisprudencial, exigia maior formalismo quanto à intimação da Fazenda Pública) e o regime geral do art. 921 do CPC, aplicável às execuções cíveis comuns, em que o início do prazo prescricional após o período de suspensão é automático. O candidato que associa a prescrição intercorrente apenas a atos formais de intimação, ou que acredita se tratar de instituto restrito à execução fiscal, tende a marcar as alternativas B ou C.",
+      "regraMemoria": "Sem bens penhoráveis: suspende-se a execução por 1 ano (art. 921, III e §1º, CPC); passado esse prazo, arquivam-se os autos e começa a correr, automaticamente, a prescrição intercorrente — sem necessidade de intimação especial do credor.",
+      "seedVersion": 4
+    },
+    {
+      "territorio": "Processo Civil",
+      "tema": "Cumprimento de Obrigação de Fazer/Não Fazer e Astreintes",
+      "dificuldade": "dificil",
+      "enunciado": "Marcos ajuizou ação em face da Construtora Horizonte Ltda., pleiteando a entrega de unidade imobiliária com habite-se regularizado. Na própria sentença, o juiz concedeu a tutela específica, determinando que a construtora regularizasse e entregasse o imóvel no prazo de 30 dias, sob pena de multa diária de R$ 1.000,00, desde logo fixada no título judicial. Transitada em julgado a decisão, a construtora foi intimada do início do prazo para cumprimento apenas na pessoa de seu advogado constituído nos autos. Decorridos 200 dias sem qualquer cumprimento, Marcos requereu, na fase de cumprimento de sentença, o bloqueio do valor acumulado da multa (R$ 200.000,00) e, ainda, que o juiz determinasse, de ofício, a expedição de ofícios ao cartório de registro de imóveis e a órgãos públicos competentes, de modo a viabilizar a regularização direta do bem independentemente da vontade da construtora. Esta, por sua vez, sustentou que o valor da multa se tornara exorbitante em comparação ao próprio valor do imóvel, requerendo sua redução, e alegou ainda que a multa jamais poderia ser cobrada, pois nunca houve intimação pessoal de seu representante legal, mas apenas de seu advogado. Diante desse cenário, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O juiz pode determinar, de ofício, medidas de apoio que assegurem a Marcos o resultado prático equivalente ao adimplemento, e pode também modificar o valor da multa que se tornou excessiva; contudo, a exigibilidade da multa já vencida pressupõe prévia intimação pessoal da construtora, não bastando a intimação realizada apenas na pessoa do advogado."
+        },
+        {
+          "letra": "B",
+          "texto": "A intimação do advogado constituído nos autos é suficiente para tornar exigível a multa cominatória, dispensando-se a intimação pessoal do devedor, uma vez que o advogado detém poderes de representação para a prática de todos os atos do processo, inclusive os que repercutem na esfera patrimonial do cliente."
+        },
+        {
+          "letra": "C",
+          "texto": "A multa cominatória somente poderia ter sido fixada na fase de cumprimento de sentença, sendo nula a sua fixação desde logo na própria sentença que reconheceu a obrigação de fazer, por ausência, naquele momento processual, de configuração do inadimplemento."
+        },
+        {
+          "letra": "D",
+          "texto": "O juiz está impedido de determinar, de ofício, qualquer medida de apoio não expressamente requerida pelas partes, de modo que a expedição de ofícios ao registro de imóveis e a órgãos públicos, à margem de pedido específico de Marcos nesse sentido, seria processualmente inadmissível."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "A alternativa A está correta porque reúne três regras do microssistema do cumprimento de obrigação de fazer. Primeiro, o art. 536, §1º, do CPC autoriza o juiz a determinar, de ofício ou a requerimento, as medidas necessárias à satisfação do exequente, inclusive para obtenção de tutela pelo resultado prático equivalente (como a expedição de ofícios a órgãos e cartórios), independentemente de essa medida específica ter sido pedida. Segundo, o art. 537, §1º, I, do CPC permite ao juiz, de ofício ou a requerimento, reduzir ou excluir a multa vincenda quando ela se tornar excessiva, não havendo imutabilidade do valor fixado. Terceiro, conforme entendimento consolidado do STJ (Súmula 410 e, mais recentemente, o Tema 1.296, julgado pela Corte Especial em sede de recursos repetitivos), a cobrança da multa cominatória pressupõe a prévia intimação pessoal do devedor para cumprimento da obrigação, não sendo suficiente a intimação feita apenas na pessoa do advogado.",
+      "explicacaoErradas": "A alternativa B está errada porque inverte a exigência jurisprudencial consolidada: a intimação do advogado nos autos não supre a necessidade de intimação pessoal do devedor para fins de exigibilidade da multa, exatamente por envolver efeito patrimonial direto e específico que extrapola a representação técnica do processo. A alternativa C está errada porque o art. 537, caput, do CPC expressamente autoriza que a multa seja aplicada na fase de conhecimento, em tutela provisória, na própria sentença, ou somente na fase de execução, sendo plenamente válida a fixação desde logo no título condenatório. A alternativa D está errada porque contraria diretamente o art. 536, §1º, do CPC, que autoriza atuação de ofício do juiz para a efetivação da tutela específica ou a obtenção de resultado prático equivalente, sem depender de requerimento da parte quanto à medida concreta adotada.",
+      "pegadinha": "A armadilha está em supor que, como o advogado representa a parte para todos os atos do processo, a intimação feita em seu nome também vale para fins de contagem do prazo e exigibilidade da multa. O candidato que não conhece a Súmula 410/STJ (recepcionada pelo CPC/2015 e reafirmada no Tema 1.296) marca a alternativa B por parecer tecnicamente correta sob a lógica geral da representação processual.",
+      "regraMemoria": "Astreintes: a fixação do valor é flexível (pode vir desde logo ou depois, e pode ser alterada ou excluída a qualquer tempo), mas a cobrança do valor vencido exige intimação PESSOAL do devedor — intimar só o advogado não basta.",
+      "seedVersion": 4
+    },
+    {
+      "territorio": "Processo Civil",
+      "tema": "Pagamento pela Fazenda Pública: Precatório e RPV",
+      "dificuldade": "dificil",
+      "enunciado": "Helena obteve sentença definitiva condenando o Município de Serra Alta a pagar-lhe R$ 150.000,00 a título de indenização por danos materiais e morais. A lei municipal que disciplina os créditos de pequeno valor fixou, para o Município de Serra Alta, o teto de R$ 40.000,00 para pagamento mediante Requisição de Pequeno Valor (RPV). Na fase de cumprimento de sentença, o advogado de Helena requereu ao juízo que expedisse, simultaneamente, (i) uma RPV no valor de R$ 40.000,00, correspondente ao teto municipal, para pagamento imediato, e (ii) um precatório relativo ao saldo remanescente de R$ 110.000,00, de modo a antecipar o recebimento de parte do crédito sem aguardar a fila de precatórios para a totalidade do valor. Requereu, ainda, que o precatório referente ao saldo fosse processado e pago com prioridade sobre precatórios de outros credores do mesmo ente já inscritos anteriormente, sob o argumento de que seu requerimento havia sido protocolado e processado com maior celeridade administrativa. Sobre a disciplina constitucional do pagamento de obrigações pecuniárias pela Fazenda Pública, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "É vedado o fracionamento, a repartição ou a quebra do valor da execução para que o pagamento seja feito, em parte, por RPV e, em outra parte, mediante precatório (art. 100, §8º, da CF); como o crédito de Helena supera o teto fixado pela lei municipal, ele deve ser pago integralmente por precatório, observada a ordem cronológica de apresentação, ressalvadas as preferências legais, salvo se Helena renunciar ao valor excedente ao teto para recebimento integral por RPV."
+        },
+        {
+          "letra": "B",
+          "texto": "O fracionamento pretendido por Helena é constitucionalmente válido, pois o art. 100, §8º, da CF veda apenas a expedição de precatórios complementares ou suplementares a valor já pago, nada dispondo sobre a divisão do crédito entre os regimes de RPV e de precatório."
+        },
+        {
+          "letra": "C",
+          "texto": "Helena tem direito a que seu precatório seja processado e pago antes de precatórios de credores que o antecederam, bastando a comprovação de que seu requerimento tramitou administrativamente com maior celeridade, já que a Constituição Federal não impõe rigidez quanto à ordem de pagamento dos precatórios."
+        },
+        {
+          "letra": "D",
+          "texto": "Ainda que Helena renunciasse expressamente ao valor excedente ao teto de RPV para receber a totalidade do crédito por essa via mais célere, tal renúncia configuraria, por si só, o fracionamento vedado pelo art. 100, §8º, da CF, equivalendo, na prática, ao pagamento do crédito em duas vias distintas."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "A alternativa A está correta. O art. 100, caput, da CF estabelece que o pagamento de obrigações pela Fazenda Pública decorrentes de decisão judicial transitada em julgado far-se-á, como regra, exclusivamente na ordem cronológica de apresentação dos precatórios. Os créditos classificados como de pequeno valor, conforme lei própria de cada ente federado (respeitado o piso mínimo do art. 100, §4º, da CF), são pagos por RPV, sem necessidade de precatório. O art. 100, §8º, da CF veda expressamente o fracionamento, a repartição ou a quebra do valor da execução para que parte seja paga por RPV e parte por precatório. Como o crédito de Helena (R$ 150.000,00) supera o teto de RPV do Município (R$ 40.000,00), a via correta é o precatório pela integralidade do valor, respeitada a ordem cronológica — salvo se ela, voluntariamente, renunciar ao valor que excede o teto, hipótese em que a jurisprudência admite o recebimento integral por RPV, por não se tratar de pagamento simultâneo em duas vias.",
+      "explicacaoErradas": "A alternativa B está errada porque o art. 100, §8º, da CF veda tanto a expedição de precatórios complementares ou suplementares de valor já pago quanto, expressamente, o fracionamento, a repartição ou a quebra do valor da execução para pagamento parcial por RPV e parcial por precatório — é exatamente essa segunda hipótese que Helena pretendia. A alternativa C está errada porque o pagamento de precatórios observa a ordem cronológica de apresentação como regra constitucional, não sendo lícito romper essa ordem com base em celeridade administrativa do próprio requerimento, fora das hipóteses legais de preferência. A alternativa D está errada porque a renúncia expressa ao valor excedente ao teto de RPV, para viabilizar o recebimento integral por essa via, não caracteriza o fracionamento vedado: não há, nesse caso, divisão do crédito entre dois regimes de pagamento simultâneos, mas opção do próprio credor por abrir mão do excedente.",
+      "pegadinha": "A pegadinha está em dois pontos: o candidato pode achar que dividir o crédito entre RPV (para receber logo uma parte) e precatório (para o resto) seria apenas uma estratégia processual engenhosa e não uma ilegalidade; e pode confundir a renúncia voluntária ao excedente — que é válida — com o fracionamento vedado, por acharem superficialmente semelhantes.",
+      "regraMemoria": "Regra geral de pagamento pela Fazenda Pública é o precatório, na ordem cronológica de apresentação; a RPV é exceção, limitada ao teto fixado em lei do próprio ente; é vedado fatiar o mesmo crédito entre RPV e precatório, mas o credor pode renunciar ao excedente para receber tudo por RPV.",
+      "seedVersion": 4
+    },
+    {
+      "territorio": "Processo Civil",
+      "tema": "Agravo de instrumento - taxatividade mitigada (Tema 988/STJ)",
+      "dificuldade": "dificil",
+      "enunciado": "Em ação de petição de herança cumulada com reconhecimento de paternidade post mortem ajuizada por Beatriz em face do espólio de seu suposto pai, o juízo indeferiu o pedido de produção antecipada da prova pericial de DNA, determinando que o exame fosse realizado apenas na fase de instrução, após a citação de todos os herdeiros e a estabilização da lide. Beatriz noticiou nos autos que o único material biológico do falecido disponível para a perícia está armazenado em laboratório e corre risco iminente de degradação, de modo que, se o exame não for realizado de imediato, a prova poderá se perder definitivamente, tornando inútil qualquer reforma da decisão em eventual recurso de apelação interposto ao final do processo. Inconformada, Beatriz pretende interpor agravo de instrumento contra essa decisão interlocutória, que não se amolda a nenhuma das hipóteses previstas literalmente nos incisos do art. 1.015 do CPC. Diante desse cenário, à luz da jurisprudência do STJ, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "É cabível o agravo de instrumento, pois, segundo a tese fixada pelo STJ no Tema 988 (REsp 1.696.396/MT e REsp 1.704.520/MT), o rol do art. 1.015 do CPC tem taxatividade mitigada, admitindo interpretação extensiva quando configurada a urgência decorrente da inutilidade do julgamento da questão em sede de apelação, como ocorre na hipótese de risco de perda definitiva da prova."
+        },
+        {
+          "letra": "B",
+          "texto": "Não é cabível o agravo de instrumento, uma vez que o STJ, ao julgar o Tema 988, reafirmou a taxatividade absoluta do rol do art. 1.015 do CPC, de modo que apenas as hipóteses nele literalmente descritas comportam a interposição do recurso."
+        },
+        {
+          "letra": "C",
+          "texto": "É cabível o agravo de instrumento, mas não em razão da urgência alegada, e sim porque a decisão que indefere a produção antecipada de prova se enquadra, por expressa previsão legal, na hipótese de tutela provisória do art. 1.015, I, do CPC."
+        },
+        {
+          "letra": "D",
+          "texto": "Não é cabível o agravo de instrumento, sendo o mandado de segurança a única via processual apta a impugnar de imediato decisões interlocutórias não previstas no rol do art. 1.015 do CPC, ainda que presente a urgência reconhecida pelo STJ no Tema 988."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "No julgamento do Tema 988 dos recursos repetitivos (REsp 1.696.396/MT e REsp 1.704.520/MT, j. em 2018, rel. Min. Nancy Andrighi), o STJ fixou a tese de que 'o rol do art. 1.015 do CPC é de taxatividade mitigada, por isso admite a interpretação extensiva/analógica para admitir a interposição de agravo de instrumento quando verificada a urgência decorrente da inutilidade do julgamento da questão no recurso de apelação'. No caso, o risco de perda irreversível do material genético torna o julgamento diferido para a apelação absolutamente inútil, caracterizando exatamente a urgência qualificada exigida pelo precedente, o que autoriza a interposição do agravo mesmo sem enquadramento literal em qualquer inciso do art. 1.015.",
+      "explicacaoErradas": "(B) está errada porque o STJ não manteve a taxatividade absoluta do rol: a própria tese do Tema 988 admite, excepcionalmente, interpretação extensiva diante de urgência qualificada. (C) está errada porque a decisão que indefere a produção antecipada de prova pericial não é uma tutela provisória de urgência ou de evidência (arts. 294 e seguintes do CPC); trata-se de hipótese distinta, de modo que o cabimento do agravo decorre da aplicação da tese da taxatividade mitigada, e não de um encaixe literal forçado no inciso I. (D) está errada porque, após o Tema 988, o remédio processual adequado para impugnar de imediato a decisão urgente não enquadrada literalmente no rol passou a ser o próprio agravo de instrumento, por interpretação extensiva, e não o mandado de segurança.",
+      "pegadinha": "A armadilha está em levar o candidato a um raciocínio binário: ou o rol do art. 1.015 é taxativo (logo, não cabe agravo fora dele) ou é meramente exemplificativo (logo, cabe sempre que houver prejuízo). O Tema 988 criou uma terceira via, intermediária: o rol continua taxativo, mas comporta leitura extensiva apenas diante de urgência qualificada pela inutilidade futura do reexame, e a alternativa C tenta seduzir o candidato a 'forçar' o enquadramento em um inciso existente (tutela provisória) em vez de reconhecer a hipótese excepcional do precedente.",
+      "regraMemoria": "Rol do art. 1.015 é taxativo, mas mitigado: urgência pela inutilidade futura do julgamento na apelação abre a porta do agravo de instrumento (Tema 988/STJ).",
+      "seedVersion": 4
+    },
+    {
+      "territorio": "Processo Civil",
+      "tema": "Recurso especial - filtro de relevância (art. 105, §2º, CF e art. 1.035-A, CPC)",
+      "dificuldade": "dificil",
+      "enunciado": "Em outubro de 2026, o Tribunal de Justiça do Estado de São Paulo publicou acórdão que, interpretando cláusula de reajuste de aluguel inserida em contrato de locação comercial celebrado entre duas sociedades empresárias, deu provimento à apelação da locadora Comercial Alfa Ltda. Inconformada, a locatária Beta Distribuidora Ltda. interpôs recurso especial ao Superior Tribunal de Justiça, indicando regularmente o dispositivo de lei federal supostamente violado e comprovando dissídio jurisprudencial, mas sem dedicar qualquer tópico do recurso à demonstração da relevância da questão de direito federal discutida. Considerando a disciplina em vigor desde 3 de setembro de 2026, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O recurso especial não deve ser conhecido nessa parte, pois, por força do art. 1.035-A do CPC, incluído pela Lei nº 15.484/2026 em regulamentação ao art. 105, §2º, da Constituição Federal (incluído pela Emenda Constitucional nº 125/2022), compete ao recorrente demonstrar a relevância da questão de direito federal infraconstitucional em tópico específico e fundamentado do recurso, sob pena de não conhecimento."
+        },
+        {
+          "letra": "B",
+          "texto": "O recurso especial deve ser conhecido normalmente, pois a exigência de demonstração de relevância da questão federal é restrita ao recurso extraordinário dirigido ao Supremo Tribunal Federal, não tendo sido estendida ao recurso especial pela Emenda Constitucional nº 125/2022."
+        },
+        {
+          "letra": "C",
+          "texto": "O recurso especial não deve ser conhecido, e essa decisão pode ser proferida monocraticamente pelo relator, independentemente de manifestação colegiada, sempre que entender ausente a relevância da questão federal discutida."
+        },
+        {
+          "letra": "D",
+          "texto": "O recurso especial deve ser conhecido, pois o filtro de relevância introduzido pela Lei nº 15.484/2026 somente se aplica a recursos especiais interpostos contra acórdãos publicados a partir de 1º de janeiro de 2027, não alcançando o acórdão publicado em outubro de 2026."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "A Emenda Constitucional nº 125/2022 incluiu o §2º no art. 105 da Constituição Federal, criando o requisito de relevância da questão de direito federal infraconstitucional como novo filtro de admissibilidade do recurso especial. A Lei nº 15.484/2026 regulamentou esse dispositivo e inseriu o art. 1.035-A no CPC, em vigor desde 3 de setembro de 2026 (trinta dias após sua publicação, em 4 de agosto de 2026), aplicável aos acórdãos recorridos publicados a partir dessa data. Por essa disciplina, cabe ao recorrente demonstrar a relevância em tópico específico e fundamentado do recurso especial, sob pena de não conhecimento.",
+      "explicacaoErradas": "(B) está errada porque a relevância da questão federal infraconstitucional é exatamente o novo filtro criado para o recurso especial pela EC 125/2022 e regulamentado pela Lei nº 15.484/2026; não se confunde com a repercussão geral, instituto já existente e próprio do recurso extraordinário. (C) está errada porque a ausência de relevância não pode ser decretada por decisão monocrática do relator: a lei exige manifestação de dois terços dos integrantes do órgão julgador competente para que se reconheça a falta de relevância. (D) está errada quanto à data de vigência: o filtro já estava em vigor desde 3 de setembro de 2026, alcançando acórdãos publicados a partir dessa data, o que inclui o acórdão de outubro de 2026 do enunciado.",
+      "pegadinha": "O examinando tende a confundir o novo filtro de relevância do recurso especial com a repercussão geral do recurso extraordinário, por serem institutos inspirados em lógica semelhante de racionalização do acesso aos tribunais superiores, e também a presumir, por analogia com a prática de outros requisitos de admissibilidade, que a ausência de relevância poderia ser decidida singularmente pelo relator, quando a lei exige quórum qualificado de dois terços do colegiado.",
+      "regraMemoria": "Relevância no recurso especial: tópico próprio e fundamentado no recurso, sob pena de não conhecimento; só dois terços do colegiado podem dizer que não há relevância.",
+      "seedVersion": 4
+    },
+    {
+      "territorio": "Processo Civil",
+      "tema": "Ação rescisória - prazo decadencial (art. 975, caput, CPC)",
+      "dificuldade": "media",
+      "enunciado": "Em ação de cobrança ajuizada por Fernando em face de Carlos, a sentença de mérito, julgando procedente o pedido, transitou em julgado em março de 2022, sem que Carlos houvesse impugnado o capítulo relativo ao mérito da condenação. Carlos, contudo, recorreu exclusivamente quanto ao capítulo da sentença que fixou os honorários advocatícios de sucumbência, recurso esse julgado pelo tribunal e transitado em julgado somente em junho de 2024. Em maio de 2026, Carlos ajuíza ação rescisória contra o capítulo de mérito da sentença, sustentando a ocorrência de violação manifesta de norma jurídica (art. 966, V, do CPC). Em contestação, Fernando alega que o direito de Carlos já estaria extinto, pois o prazo decadencial de dois anos deveria ter sido contado do trânsito em julgado do capítulo de mérito, ocorrido em março de 2022. Sobre a tempestividade da ação rescisória, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A ação rescisória é tempestiva, pois, nos termos do art. 975, caput, do CPC, o prazo decadencial de dois anos conta-se do trânsito em julgado da última decisão proferida no processo, ainda que relativa apenas a capítulo acessório, como os honorários advocatícios, e não necessariamente da decisão sobre o mérito objeto da rescisória."
+        },
+        {
+          "letra": "B",
+          "texto": "A ação rescisória é intempestiva, pois o prazo decadencial deve ser contado, capítulo a capítulo, a partir do trânsito em julgado de cada parcela autônoma da decisão, de modo que o trânsito em julgado do capítulo de honorários, por ser questão acessória e estranha ao mérito, não tem o condão de postergar o termo inicial do prazo para rescindir o capítulo de mérito."
+        },
+        {
+          "letra": "C",
+          "texto": "A ação rescisória é tempestiva, mas apenas porque Carlos fundamenta sua pretensão em violação manifesta de norma jurídica, hipótese em relação à qual o CPC estabelece prazo decadencial de cinco anos, e não de dois anos."
+        },
+        {
+          "letra": "D",
+          "texto": "A ação rescisória é intempestiva, porque o prazo decadencial, por se tratar de decadência legal, não se sujeita a qualquer regra de contagem vinculada a outras decisões proferidas no processo, devendo ser contado invariavelmente do trânsito em julgado da primeira decisão de mérito proferida nos autos."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "O art. 975, caput, do CPC estabelece que o direito à rescisão se extingue em dois anos contados do trânsito em julgado da última decisão proferida no processo, consolidando o entendimento que já constava da Súmula 401 do STJ. Não importa que a última decisão a transitar em julgado verse sobre matéria diversa do capítulo que se pretende rescindir (no caso, os honorários, e não o mérito): enquanto houver qualquer parcela do processo ainda pendente de trânsito em julgado, o prazo decadencial sequer começa a correr. Assim, o biênio de Carlos somente se iniciou em junho de 2024, estando a ação ajuizada em maio de 2026 dentro do prazo.",
+      "explicacaoErradas": "(B) está errada porque representa a tese rejeitada pela lei e pela jurisprudência: o art. 975, caput, do CPC adotou a contagem unitária do prazo a partir da última decisão proferida no processo, e não uma contagem fracionada por capítulo autônomo. (C) está errada porque o prazo quinquenal do art. 975, §2º, do CPC é excepcional e se aplica exclusivamente à ação rescisória fundada em prova nova (art. 966, VII, do CPC), contado da descoberta da prova; a hipótese de violação manifesta de norma jurídica (art. 966, V) segue a regra geral do biênio contado da última decisão do processo. (D) está errada porque inventa uma regra de contagem inexistente: o próprio CPC, no art. 975, caput, elegeu expressamente como termo inicial o trânsito em julgado da última decisão proferida no processo, e não da primeira decisão de mérito.",
+      "pegadinha": "O candidato tende a achar 'intuitivo' que o prazo para rescindir o capítulo de mérito deva ser contado do trânsito em julgado do próprio capítulo de mérito, ignorando que o art. 975, caput, do CPC manda contar o biênio da ÚLTIMA decisão proferida no processo como um todo, ainda que ela verse sobre matéria diversa (como os honorários), regra que incorpora a antiga Súmula 401 do STJ.",
+      "regraMemoria": "Prazo da rescisória: 2 anos contados da ÚLTIMA decisão do processo, não da decisão de mérito em si (art. 975, caput, CPC).",
+      "seedVersion": 4
+    },
+    {
+      "territorio": "Processo Civil",
+      "tema": "Embargos de Terceiro",
+      "dificuldade": "dificil",
+      "enunciado": "Marcos Almeida, devedor executado por Construtora Pinheiro Ltda., teve penhorado em sua matrícula um imóvel que, dois anos antes da execução, já havia vendido a Beatriz Sales mediante instrumento particular de compromisso de compra e venda, quitado integralmente, mas jamais levado ao Registro de Imóveis. Beatriz reside no imóvel desde então, exercendo posse mansa e pacífica. O bem foi levado a hasta pública e arrematado por Ricardo Nogueira; até o momento, a carta de arrematação ainda não foi assinada. Tomando conhecimento da arrematação apenas após o leilão, Beatriz pretende se defender da constrição. Sobre a hipótese, à luz do CPC, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "São cabíveis embargos de terceiro, pois a posse decorrente de compromisso de compra e venda não registrado é suficiente para legitimar a oposição, nos termos da Súmula 84 do STJ; o prazo para opor os embargos, nesta fase de execução, é de até 5 (cinco) dias depois da arrematação, desde que antes da assinatura da respectiva carta, sendo admissível tanto prova documental quanto testemunhal para demonstração da posse."
+        },
+        {
+          "letra": "B",
+          "texto": "Não são cabíveis embargos de terceiro, pois a ausência de registro do compromisso de compra e venda impede que Beatriz seja reconhecida como titular de direito incompatível com a penhora, sendo imprescindível, para a defesa possessória nessa via, a comprovação do domínio mediante título registrado."
+        },
+        {
+          "letra": "C",
+          "texto": "São cabíveis embargos de terceiro, mas o prazo para sua oposição, na fase de execução, é de 15 (quinze) dias contados da intimação da penhora, não guardando qualquer relação com o momento da arrematação do bem."
+        },
+        {
+          "letra": "D",
+          "texto": "São cabíveis embargos de terceiro, porém a defesa de Beatriz somente pode ser instruída com prova documental, sendo vedada, pelo rito sumário do procedimento, a produção de prova testemunhal para demonstração da posse."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "A alternativa A está correta porque reúne os três pontos centrais do instituto. Primeiro, a Súmula 84 do STJ dispõe que 'é admissível a oposição de embargos de terceiro fundados em alegação de posse advinda do compromisso de compra e venda de imóvel, ainda que desprovido do registro', de modo que Beatriz, mesmo sem título registrado, pode se valer dos embargos por deter posse incompatível com a constrição (arts. 674 e 675, CPC). Segundo, o art. 675 do CPC estabelece que, no cumprimento de sentença ou no processo de execução, os embargos podem ser opostos até 5 dias depois da adjudicação, da alienação por iniciativa particular ou da arrematação, mas sempre antes da assinatura da respectiva carta. Terceiro, o art. 677, caput e §1º, do CPC permite que a petição inicial seja instruída com prova documental da posse e com rol de testemunhas, sendo facultada inclusive a produção de prova da posse em audiência preliminar designada pelo juiz.",
+      "explicacaoErradas": "A alternativa B está errada porque confunde posse com domínio: os embargos de terceiro tutelam a posse (ou direito incompatível com a constrição), não exigindo necessariamente prova de propriedade registrada, conforme a própria Súmula 84 do STJ. A alternativa C está errada porque inverte o marco temporal do prazo: o termo final de 5 dias se conta da adjudicação, alienação ou arrematação (sempre antes da assinatura da carta), e não da intimação da penhora, que sequer é o evento disparador do prazo na fase de execução. A alternativa D está errada porque o art. 677 do CPC expressamente admite a produção de prova testemunhal (mediante rol de testemunhas e até em audiência preliminar) para demonstrar a posse, não havendo restrição à prova exclusivamente documental.",
+      "pegadinha": "A banca explora a confusão clássica entre posse e propriedade: o candidato desatento tende a achar que, sem registro do compromisso de compra e venda, o terceiro não teria 'direito' algum a proteger, ignorando que os embargos de terceiro tutelam justamente a posse. Também é comum o erro de atrelar o prazo de 5 dias à intimação da penhora (evento que já passou havia tempo) em vez de vinculá-lo à arrematação/adjudicação/alienação, e de supor, por ser um procedimento de rito mais célere, que a prova seria só documental.",
+      "regraMemoria": "Posse via compromisso de compra e venda não registrado já basta para embargos de terceiro (Súmula 84/STJ); prazo de 5 dias conta da adjudicação/alienação/arrematação, sempre antes da carta; prova pode ser documental e testemunhal.",
+      "seedVersion": 4
+    },
+    {
+      "territorio": "Processo Civil",
+      "tema": "Usucapião Extrajudicial",
+      "dificuldade": "media",
+      "enunciado": "Joaquim Teixeira possui, de forma mansa, pacífica e ininterrupta, com ânimo de dono, um lote urbano há mais de 18 anos, sem jamais ter sido contestado. Por meio de advogado, requer ao Registro de Imóveis da comarca o reconhecimento extrajudicial da usucapião, nos termos do art. 216-A da Lei nº 6.015/73 (incluído pelo CPC/2015), instruindo o pedido com ata notarial lavrada por tabelião atestando o tempo de posse, além de planta e memorial descritivo elaborados por profissional habilitado. Notificado pelo oficial de registro para se manifestar sobre a planta e o memorial, um dos confinantes comparece e discorda expressamente do pedido, afirmando que parte da área usucapienda invade seu terreno. Diante desse cenário, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Diante da impugnação expressa do confinante, o oficial de registro não pode prosseguir com o reconhecimento extrajudicial e deve remeter o requerimento ao juízo competente, podendo Joaquim buscar o reconhecimento da usucapião pela via judicial, já que a via extrajudicial é facultativa e não exclui o acesso à jurisdição."
+        },
+        {
+          "letra": "B",
+          "texto": "A discordância do confinante é irrelevante para o procedimento extrajudicial, pois a lei dispensa a anuência dos titulares de direitos registrados nos imóveis confinantes quando o pedido está instruído com ata notarial que atesta o tempo de posse, bastando esse documento para que o oficial proceda à matrícula em nome do usucapiente."
+        },
+        {
+          "letra": "C",
+          "texto": "O pedido deve ser indeferido em caráter definitivo, restando a Joaquim apenas a via da ação possessória contra o confinante, sendo vedado o ajuizamento de ação de usucapião após o insucesso da tentativa extrajudicial."
+        },
+        {
+          "letra": "D",
+          "texto": "A usucapião extrajudicial passou a ser a única via admitida para o reconhecimento da prescrição aquisitiva após o CPC/2015, tendo o art. 216-A da Lei nº 6.015/73 revogado tacitamente a possibilidade de ação judicial de usucapião."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "A alternativa A está correta. O art. 216-A da Lei 6.015/73 exige, entre os documentos que instruem o requerimento, a planta e o memorial descritivo assinados por profissional legalmente habilitado e também pelos titulares de direitos registrados no imóvel usucapiendo e nos imóveis confinantes, de modo que a anuência desses titulares é requisito do procedimento extrajudicial. Havendo impugnação de confinante (ou de qualquer outro titular de direito registrado), o oficial de registro não tem competência para dirimir o conflito e deve remeter os autos ao juízo competente da comarca, cabendo ao interessado adequar sua pretensão ao procedimento judicial. Isso decorre diretamente do próprio caput do art. 216-A, que prevê a via extrajudicial 'sem prejuízo da via jurisdicional': a tentativa extrajudicial frustrada não impede, em absoluto, que o interessado busque o reconhecimento da usucapião pela via judicial.",
+      "explicacaoErradas": "A alternativa B está errada porque o art. 216-A exige expressamente a assinatura dos confinantes (ou sua anuência obtida após notificação) na planta e no memorial descritivo; a ata notarial que atesta o tempo de posse não supre a ausência dessa anuência, não bastando para que o oficial, por conta própria, proceda ao registro em caso de oposição expressa. A alternativa C está errada porque superestima o efeito do insucesso da via extrajudicial: a lei não impõe a essa tentativa caráter de condição de procedibilidade nem gera coisa julgada material capaz de impedir o ajuizamento de ação de usucapião; o próprio sistema prevê a remessa ao juízo competente e a possibilidade de emenda da inicial para seguir pelo rito judicial. A alternativa D está errada porque inverte a relação entre as vias: o art. 216-A criou uma via adicional e facultativa, não exclusiva, convivendo com o processo judicial de usucapião, que continua plenamente cabível.",
+      "pegadinha": "A armadilha está em levar ao extremo a ideia de 'desjudicialização': o candidato apressado pode supor que, uma vez prevista a via extrajudicial, ela se tornou obrigatória ou exclusiva, ou que a impugnação de um confinante extingue definitivamente a pretensão do usucapiente. Na verdade, a via extrajudicial é uma alternativa facultativa e mais célere quando há consenso entre os envolvidos; havendo discordância de qualquer titular de direito registrado (incluindo confinante), o caminho natural é a remessa ao Judiciário, sem prejuízo do direito material de ação do possuidor.",
+      "regraMemoria": "Usucapião extrajudicial exige anuência expressa dos titulares registrados e dos confinantes; havendo impugnação, os autos vão ao juízo competente, e a via judicial de usucapião permanece sempre disponível, pois a via extrajudicial é facultativa, não exclusiva.",
+      "seedVersion": 4
+    },
+    {
+      "territorio": "Processo Civil",
+      "tema": "Incidente de Desconsideração da Personalidade Jurídica",
+      "dificuldade": "dificil",
+      "enunciado": "Marcos Vinícius ajuizou execução de título extrajudicial contra Metalúrgica Center Ltda., mas não foram localizados bens penhoráveis em nome da empresa. Já na fase de execução, o exequente requereu a instauração de incidente de desconsideração da personalidade jurídica para incluir no polo passivo o sócio administrador Breno Castilho, sob a alegação de confusão patrimonial entre o patrimônio pessoal do sócio e o da sociedade (art. 50 do Código Civil). O juízo recebeu o requerimento e determinou a citação de Breno. Diante desse cenário, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "O incidente é cabível também na fase de execução, hipótese em que, por ter sido requerido no curso do processo (e não na petição inicial), o processo ficará suspenso até sua resolução; Breno deverá ser citado para se manifestar e requerer provas no prazo de 15 dias, e o incidente será resolvido por decisão interlocutória, impugnável por agravo de instrumento."
+        },
+        {
+          "letra": "B",
+          "texto": "O incidente de desconsideração da personalidade jurídica somente pode ser instaurado durante a fase de conhecimento, sendo incabível em sede de execução de título extrajudicial, de modo que o requerimento de Marcos Vinícius deveria ter sido indeferido liminarmente."
+        },
+        {
+          "letra": "C",
+          "texto": "Como o incidente foi instaurado no curso do processo, e não requerido já na petição inicial, não haverá suspensão do processo, uma vez que a suspensão somente ocorre quando a desconsideração é pleiteada já na peça inicial."
+        },
+        {
+          "letra": "D",
+          "texto": "Breno deverá ser citado para apresentar manifestação no prazo de 15 dias, mas a decisão que resolver o incidente terá natureza de sentença, por extinguir uma relação jurídica autônoma dentro do processo, desafiando recurso de apelação."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "O art. 134, caput, do CPC admite a instauração do incidente de desconsideração em todas as fases do processo de conhecimento, no cumprimento de sentença e na execução fundada em título executivo extrajudicial. Como regra, a instauração do incidente suspende o processo (art. 134, §3º), salvo quando a desconsideração for requerida já na petição inicial (art. 134, §2º), situação em que não há suspensão. Instaurado o incidente, o sócio ou a pessoa jurídica é citado para se manifestar e requerer provas no prazo de 15 dias (art. 135). Concluída a instrução, o incidente é resolvido por decisão interlocutória (art. 136), impugnável por agravo de instrumento nos termos do art. 1.015, II, do CPC.",
+      "explicacaoErradas": "B está errada porque o art. 134, caput, expressamente autoriza a instauração do incidente também no cumprimento de sentença e na execução de título extrajudicial, não se restringindo à fase de conhecimento. C está errada porque inverte a regra legal: a suspensão do processo é a regra geral quando o incidente é instaurado no curso do processo; a dispensa da suspensão (e do próprio incidente, com citação direta do sócio) é que ocorre apenas quando a desconsideração já é requerida na petição inicial. D está errada porque a decisão que resolve o incidente tem natureza de decisão interlocutória, e não de sentença, sendo atacável por agravo de instrumento, e não por apelação.",
+      "pegadinha": "A banca inverte a lógica da suspensão processual (alternativa C), fazendo parecer que a suspensão só ocorreria quando o incidente é requerido na petição inicial. Na realidade é o oposto: pedir na petição inicial dispensa a instauração do incidente e a suspensão; pedir depois é que gera a suspensão até a resolução do incidente.",
+      "regraMemoria": "Pediu a desconsideração na petição inicial: não há incidente autônomo nem suspensão, só citação do sócio. Pediu depois, em qualquer fase (inclusive execução): instaura-se o incidente, suspende-se o processo, citação em 15 dias e decisão interlocutória agravável.",
+      "seedVersion": 4
+    },
+    {
+      "territorio": "Processo Civil",
+      "tema": "Estabilização da Tutela Antecipada Antecedente",
+      "dificuldade": "dificil",
+      "enunciado": "Construtora Horizonte Ltda. ajuizou, em caráter antecedente, pedido de tutela antecipada de urgência em face de Pedro Augusto, pleiteando a suspensão da inscrição de seu nome em cadastro de inadimplentes até a solução de divergência contratual. O juízo concedeu a liminar. Devidamente intimado, Pedro Augusto não interpôs agravo de instrumento nem qualquer outro recurso, e o processo foi extinto, nos termos do art. 304 do CPC, estabilizando-se os efeitos da tutela concedida. Um ano e sete meses depois, contados da ciência da decisão extintiva, Pedro Augusto, entendendo que o débito era legítimo e a suspensão indevida, pretende ajuizar ação autônoma para rever a tutela estabilizada. Sobre essa pretensão, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "Pedro Augusto pode ajuizar a ação autônoma, pois ainda não transcorreu o prazo de 2 (dois) anos contado da ciência da decisão que extinguiu o processo (art. 304, §5º, CPC); isso porque a decisão que concede a tutela antecipada estabilizada não faz coisa julgada (art. 304, §6º, CPC), podendo seus efeitos ser revistos, reformados ou invalidados por essa via."
+        },
+        {
+          "letra": "B",
+          "texto": "A pretensão de Pedro Augusto é incabível, pois, com a extinção do processo sem interposição de recurso, a decisão que concedeu a tutela antecipada transitou em julgado, de modo que sua insurgência somente seria viável por meio de ação rescisória, no prazo de 2 anos contado do trânsito em julgado."
+        },
+        {
+          "letra": "C",
+          "texto": "Pedro Augusto não pode mais rever a tutela estabilizada, porque o prazo para a ação autônoma prevista no art. 304 do CPC é decadencial de 1 (um) ano, contado da data da extinção do processo, prazo já esgotado na hipótese."
+        },
+        {
+          "letra": "D",
+          "texto": "A estabilização da tutela antecipada antecedente somente ocorre se, além da ausência de recurso do réu, o autor formular o pedido principal no prazo legal, convertendo a tutela em decisão definitiva; como isso não ocorreu, a tutela concedida já perdeu eficácia."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "Nos termos do art. 304, caput, do CPC, a tutela antecipada antecedente concedida se estabiliza quando não há interposição do recurso cabível contra a decisão que a concede, independentemente da formulação do pedido principal. O §5º do mesmo artigo faculta a qualquer das partes demandar a outra para rever, reformar ou invalidar a tutela estabilizada, por ação própria, no prazo de 2 (dois) anos, contado da ciência da decisão que extinguiu o processo. O §6º dispõe expressamente que a decisão que concede essa tutela não faz coisa julgada, o que viabiliza a revisão por ação autônoma, sem necessidade de ação rescisória.",
+      "explicacaoErradas": "B está errada porque confunde estabilização com coisa julgada material, expressamente afastada pelo art. 304, §6º; a via adequada não é a ação rescisória, mas a ação própria de revisão prevista no §5º. C está errada porque o prazo correto não é de 1 ano contado da extinção, mas de 2 anos contados da ciência da decisão extintiva, nos termos do art. 304, §5º. D está errada porque inverte a lógica do instituto: a própria utilidade da tutela antecedente estabilizada é justamente dispensar a formulação do pedido principal (art. 304, caput), bastando a ausência de recurso do réu para a estabilização ocorrer.",
+      "pegadinha": "A armadilha está em levar o candidato a achar que a ausência de recurso e a extinção do processo geram coisa julgada material, sujeitando a revisão a ação rescisória. O art. 304, §6º, afasta expressamente a coisa julgada, mantendo a tutela sujeita a ação própria de revisão no prazo de 2 anos do §5º.",
+      "regraMemoria": "Tutela estabilizada não é coisa julgada: pode ser revista por ação própria em até 2 anos, contados da ciência da decisão que extinguiu o processo — sem precisar de rescisória.",
+      "seedVersion": 4
+    },
+    {
+      "territorio": "Processo Civil",
+      "tema": "Tutela de Evidência (art. 311, III, CPC)",
+      "dificuldade": "media",
+      "enunciado": "Armazéns Gerais Porto Novo Ltda. recebeu, mediante contrato escrito de depósito voluntário devidamente assinado pelas partes, um lote de equipamentos industriais pertencentes à empresa Metal Fort Indústria e Comércio Ltda. Ao final do prazo contratual, a depositante solicitou a restituição dos bens, mas a depositária recusou-se a devolvê-los, alegando, sem qualquer amparo contratual, que os reteria até a quitação de um débito estranho ao contrato de depósito. Metal Fort ajuizou ação de busca e apreensão cumulada com reintegração de posse, instruiu a petição inicial com o contrato de depósito e requereu a concessão de tutela de evidência, com pedido de apreciação liminar, para a entrega imediata dos bens, sob cominação de multa diária. Sobre a tutela de evidência requerida, assinale a afirmativa correta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "A hipótese se amolda ao art. 311, III, do CPC (pedido reipersecutório fundado em prova documental adequada do contrato de depósito), de modo que o juiz, ao conceder a tutela de evidência, deve decretar a entrega do objeto custodiado, sob cominação de multa; por se enquadrar também na exceção do parágrafo único do art. 311, a tutela pode ser concedida liminarmente, independentemente de prévia oitiva da parte contrária e sem necessidade de demonstração de perigo de dano."
+        },
+        {
+          "letra": "B",
+          "texto": "A tutela de evidência somente poderia ser concedida após o decurso do prazo de defesa da depositária, pois nenhuma das hipóteses do art. 311 do CPC admite apreciação liminar, sendo imprescindível o contraditório prévio em qualquer caso."
+        },
+        {
+          "letra": "C",
+          "texto": "O pedido de Metal Fort não pode ser enquadrado como tutela de evidência, pois esse instituto pressupõe a demonstração de perigo de dano ou de risco ao resultado útil do processo, requisito ausente na narrativa, sendo cabível, no caso, apenas a tutela de urgência."
+        },
+        {
+          "letra": "D",
+          "texto": "A hipótese somente autorizaria a tutela de evidência se houvesse tese firmada em julgamento de casos repetitivos ou enunciado de súmula vinculante sobre contratos de depósito, requisito não demonstrado na narrativa, o que afasta a concessão da medida."
+        }
+      ],
+      "respostaCorreta": 0,
+      "explicacaoCorreta": "O art. 311, III, do CPC autoriza a concessão da tutela de evidência quando se tratar de pedido reipersecutório fundado em prova documental adequada do contrato de depósito, caso em que será decretada a ordem de entrega do objeto custodiado, sob cominação de multa. Além disso, o parágrafo único do art. 311 autoriza a decisão liminar justamente nas hipóteses dos incisos II e III, dispensando a prévia oitiva da parte contrária. Por se tratar de tutela de evidência, não se exige demonstração de perigo de dano ou risco ao resultado útil do processo (art. 311, caput).",
+      "explicacaoErradas": "B está errada porque o parágrafo único do art. 311 expressamente autoriza a apreciação liminar nas hipóteses dos incisos II e III, entre as quais se enquadra o caso do contrato de depósito. C está errada porque a tutela de evidência, por definição legal (art. 311, caput), dispensa a demonstração de perigo de dano ou risco ao resultado útil do processo, diferentemente da tutela de urgência. D está errada porque confunde os requisitos do inciso II (tese firmada em julgamento de casos repetitivos ou em súmula vinculante) com os do inciso III (prova documental adequada do contrato de depósito), hipótese distinta e efetivamente aplicável ao caso narrado.",
+      "pegadinha": "A armadilha consiste em misturar os requisitos específicos dos incisos II e III do art. 311 — levando o candidato a exigir tese repetitiva/súmula vinculante (próprios do inciso II) para um caso que, na verdade, depende apenas da prova documental do contrato de depósito (inciso III) — ou em supor, equivocadamente, que toda tutela de evidência exige contraditório prévio.",
+      "regraMemoria": "Contrato de depósito provado por documento = tutela de evidência do inciso III, com ordem de entrega sob multa, podendo ser concedida liminarmente (parágrafo único do art. 311, aplicável aos incisos II e III).",
+      "seedVersion": 4
     },
   ];
 

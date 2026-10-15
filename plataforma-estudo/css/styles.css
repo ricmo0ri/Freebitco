@@ -552,17 +552,14 @@ button:hover > .icon-medalha {
 
 .subtab-bar {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 18px;
   background: var(--surface-2);
   padding: 5px;
-  border-radius: 999px;
+  border-radius: 16px;
   border: 1px solid var(--line);
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
 }
-.subtab-bar::-webkit-scrollbar { display: none; }
 .subtab-btn {
   flex: 0 0 auto;
   white-space: nowrap;
